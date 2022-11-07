@@ -45,4 +45,6 @@ C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Deb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.pdb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.exe
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.pdb
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csprojResolveAssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.AssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.CoreCompileInputs.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.CopyComplete

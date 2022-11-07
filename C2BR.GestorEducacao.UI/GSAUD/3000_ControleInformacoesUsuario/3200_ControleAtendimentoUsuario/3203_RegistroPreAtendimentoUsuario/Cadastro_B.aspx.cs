@@ -1277,7 +1277,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         }
 
         protected void btn_SIGTAP_Click(object sender, EventArgs e)
-        {
+        {            
             AbreModalPadrao("AbreModalInfosSigtap();");
         }
         private void AbreModalPadrao(string funcao)

@@ -353,6 +353,11 @@ namespace C2BR.GestorEducacao.UI.GEDUC.F3000_CtrlOperacionalPedagogico.F3600_Ctr
             #region Bloco 1
             tb07.NU_NIS = decimal.TryParse(txtNisAlu.Text, out decimalRetorno) ? (decimal?)decimalRetorno : null;
             tb07.NO_ALU = txtNomeAlu.Text.ToUpper();
+
+            tb07.FL_NEGAT_SERASA = "N";
+            tb07.FL_NEGAT_CHEQUE = "N";
+            tb07.FL_NEGAT_SPC = "N";
+
             tb07.NO_APE_ALU = txtApelidoAlu.Text.ToUpper();
             tb07.CO_SEXO_ALU = ddlSexoAlu.SelectedValue != "" ? ddlSexoAlu.SelectedValue : null;
             tb07.DT_NASC_ALU = DateTime.TryParse(txtDataNascimentoAlu.Text, out dataRetorno) ? (DateTime?)dataRetorno : null;

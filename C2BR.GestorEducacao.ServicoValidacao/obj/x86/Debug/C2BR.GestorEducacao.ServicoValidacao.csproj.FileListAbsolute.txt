@@ -75,4 +75,7 @@ C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Deb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.csproj.GenerateResource.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.exe
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.pdb
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.csprojResolveAssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\bin\Debug\C2BR.GestorEducacao.BusinessEntities.dll.config
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.csproj.AssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.csproj.CoreCompileInputs.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.ServicoValidacao\obj\x86\Debug\C2BR.GestorEducacao.ServicoValidacao.csproj.CopyComplete

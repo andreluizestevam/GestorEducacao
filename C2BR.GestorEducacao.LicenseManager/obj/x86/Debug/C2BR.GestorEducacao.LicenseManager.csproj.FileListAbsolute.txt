@@ -101,4 +101,7 @@ C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\C2BR.GestorEducacao.LicenseManager.csproj.GenerateResource.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\LicenseManager.exe
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\LicenseManager.pdb
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\C2BR.GestorEducacao.LicenseManager.csprojResolveAssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\bin\Debug\C2BR.GestorEducacao.BusinessEntities.dll.config
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\C2BR.GestorEducacao.LicenseManager.csproj.AssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\C2BR.GestorEducacao.LicenseManager.csproj.CoreCompileInputs.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseManager\obj\x86\Debug\C2BR.GestorEducacao.LicenseManager.csproj.CopyComplete

@@ -718,7 +718,7 @@
     <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- DIV MODAL PARA ESCOLHER OS SIGTAP -->
     <%--<div class="window" id="janela1">--%>
     <div id="divLoadInfosSigtap" style="display: none; height: 435px !important;">
-        <myprocedimento:gestante ID="procedimento" runat="server" />
+        <myprocedimento:procedimento ID="procedimento" runat="server" />
 
        <%-- <asp:Label runat="server" ID="lblpesquisasigtab" Text="  Pesquisa  "></asp:Label>
         <asp:TextBox runat="server" ID="tbpesquisasigtab" Style="width: 530px;"></asp:TextBox>

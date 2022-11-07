@@ -280,3 +280,8 @@ C2BR.GestorEducacao.WebService/obj/Debug/C2BR.GestorEducacao.WebService.csproj.A
 C2BR.GestorEducacao.WebService/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 *.cache
 *.cache
+C2BR.GestorEducacao.Bios/obj/x86/Debug/C2BR.GestorEducacao.Bios.csproj.GenerateResource.Cache
+*.cache
+C2BR.GestorEducacao.Bios/obj/x86/Debug/C2BR.GestorEducacao.Bios.csprojResolveAssemblyReference.cache
+*.exe
+C2BR.GestorEducacao.Bios/obj/x86/Debug/*.*

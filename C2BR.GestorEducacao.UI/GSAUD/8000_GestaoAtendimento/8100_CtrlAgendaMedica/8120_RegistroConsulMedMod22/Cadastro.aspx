@@ -15,7 +15,6 @@
         {
             width: 990px;
         }
-
         input
         {
             height: 13px !important;

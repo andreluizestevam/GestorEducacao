@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Build\05112022_1653</_PublishTargetUrl>
-    <History>True|2022-11-05T19:57:43.3389579Z;True|2022-11-04T12:41:25.1328378-03:00;True|2022-11-03T10:07:16.4193289-03:00;True|2022-10-31T16:59:07.7114176-03:00;True|2022-10-27T15:41:14.4871875-03:00;True|2022-10-27T14:54:16.4565520-03:00;True|2022-10-25T14:56:57.6306548-03:00;False|2022-10-25T14:54:22.3567505-03:00;</History>
+    <_PublishTargetUrl>C:\Build\07112022_1752</_PublishTargetUrl>
+    <History>True|2022-11-07T20:54:58.7529874Z;True|2022-11-05T16:57:43.3389579-03:00;True|2022-11-04T12:41:25.1328378-03:00;True|2022-11-03T10:07:16.4193289-03:00;True|2022-10-31T16:59:07.7114176-03:00;True|2022-10-27T15:41:14.4871875-03:00;True|2022-10-27T14:54:16.4565520-03:00;True|2022-10-25T14:56:57.6306548-03:00;False|2022-10-25T14:54:22.3567505-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_GlobalResources/AppSettings.resx">
@@ -198,52 +198,52 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2021 16:13:18</publishTime>
     </File>
     <File Include="bin/Artem.GoogleMap.dll">
-      <publishTime>11/15/2021 16:14:10</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/Boleto.Net.dll">
-      <publishTime>10/19/2022 21:56:34</publishTime>
+      <publishTime>11/07/2022 13:59:37</publishTime>
     </File>
     <File Include="bin/Boleto.Net.pdb">
-      <publishTime>10/19/2022 21:56:34</publishTime>
+      <publishTime>11/07/2022 13:59:37</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.BusinessEntities.dll">
-      <publishTime>11/03/2022 10:05:45</publishTime>
+      <publishTime>11/07/2022 17:53:38</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.BusinessEntities.dll.config">
-      <publishTime>10/21/2022 13:49:15</publishTime>
+      <publishTime>11/07/2022 13:59:38</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.BusinessEntities.pdb">
-      <publishTime>11/03/2022 10:05:45</publishTime>
+      <publishTime>11/07/2022 17:53:38</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.DataBaseManagement.dll">
-      <publishTime>10/31/2022 16:57:41</publishTime>
+      <publishTime>11/07/2022 13:59:42</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.DataBaseManagement.pdb">
-      <publishTime>10/31/2022 16:57:41</publishTime>
+      <publishTime>11/07/2022 13:59:42</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.DLLRelatorioWeb.dll">
-      <publishTime>10/19/2022 21:56:30</publishTime>
+      <publishTime>11/07/2022 13:59:42</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.DLLRelatorioWeb.pdb">
-      <publishTime>10/19/2022 21:56:30</publishTime>
+      <publishTime>11/07/2022 13:59:42</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.LicenseValidator.dll">
-      <publishTime>11/03/2022 10:05:49</publishTime>
+      <publishTime>11/07/2022 17:53:43</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.LicenseValidator.pdb">
-      <publishTime>11/03/2022 10:05:49</publishTime>
+      <publishTime>11/07/2022 17:53:43</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.Reports.dll">
-      <publishTime>11/05/2022 16:56:20</publishTime>
+      <publishTime>11/07/2022 17:54:10</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.Reports.pdb">
-      <publishTime>11/05/2022 16:56:20</publishTime>
+      <publishTime>11/07/2022 17:54:10</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.UI.dll">
-      <publishTime>11/05/2022 16:57:22</publishTime>
+      <publishTime>11/07/2022 17:54:45</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.UI.pdb">
-      <publishTime>11/05/2022 16:57:22</publishTime>
+      <publishTime>11/07/2022 17:54:45</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v12.1.resources.dll">
       <publishTime>10/12/2022 13:07:23</publishTime>
@@ -447,10 +447,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/12/2022 13:07:36</publishTime>
     </File>
     <File Include="bin/Excel.dll">
-      <publishTime>11/15/2021 16:14:10</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
-      <publishTime>11/15/2021 16:14:10</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Data.v12.1.resources.dll">
       <publishTime>10/12/2022 13:07:23</publishTime>
@@ -519,19 +519,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/12/2022 13:07:36</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.ConnectionInfo.dll">
-      <publishTime>06/05/2015 12:47:42</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.ConnectionInfoExtended.dll">
       <publishTime>12/09/2010 18:31:02</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.Management.Sdk.Sfc.dll">
-      <publishTime>06/05/2015 12:56:06</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.Smo.dll">
-      <publishTime>06/05/2015 13:02:12</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.SmoExtended.dll">
-      <publishTime>06/05/2015 13:08:26</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.SqlEnum.dll">
       <publishTime>06/05/2015 13:11:26</publishTime>
@@ -603,7 +603,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/06/2021 15:41:24</publishTime>
     </File>
     <File Include="bin/System.Linq.Dynamic.dll">
-      <publishTime>11/15/2021 16:14:10</publishTime>
+      <publishTime>11/07/2022 14:00:06</publishTime>
     </File>
     <File Include="BrowserDesatualizado.aspx">
       <publishTime>11/15/2021 16:13:17</publishTime>
@@ -622,6 +622,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Componentes/BreadCrumb.aspx">
       <publishTime>11/15/2021 16:13:21</publishTime>
+    </File>
+    <File Include="Componentes/CadastroProcedimento.ascx">
+      <publishTime>11/07/2022 15:26:13</publishTime>
+    </File>
+    <File Include="Componentes/CadastroProcedimento.aspx">
+      <publishTime>11/07/2022 10:38:32</publishTime>
     </File>
     <File Include="Componentes/CadastroRespUsuario.ascx">
       <publishTime>11/15/2021 16:13:21</publishTime>
@@ -3633,7 +3639,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2021 16:13:53</publishTime>
     </File>
     <File Include="GSAUD/3000_ControleInformacoesUsuario/3200_ControleAtendimentoUsuario/3203_RegistroPreAtendimentoUsuario/Cadastro_B.aspx">
-      <publishTime>11/05/2022 16:52:57</publishTime>
+      <publishTime>11/07/2022 14:53:59</publishTime>
     </File>
     <File Include="GSAUD/3000_ControleInformacoesUsuario/3200_ControleAtendimentoUsuario/3203_RegistroPreAtendimentoUsuario/Cadastro_C.aspx">
       <publishTime>11/15/2021 16:13:53</publishTime>
@@ -3924,7 +3930,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/25/2022 11:04:59</publishTime>
     </File>
     <File Include="GSAUD/8000_GestaoAtendimento/8100_CtrlAgendaMedica/8120_RegistroConsulMedMod22/Cadastro.aspx">
-      <publishTime>11/05/2022 10:30:16</publishTime>
+      <publishTime>11/07/2022 14:22:36</publishTime>
     </File>
     <File Include="GSAUD/8000_GestaoAtendimento/8100_CtrlAgendaMedica/8130_ManutAgendamento/EdicaoAgendamento.aspx">
       <publishTime>11/15/2021 16:13:56</publishTime>
@@ -5967,7 +5973,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2021 16:13:17</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/26/2022 16:09:27</publishTime>
+      <publishTime>11/07/2022 16:59:29</publishTime>
     </File>
   </ItemGroup>
 </Project>

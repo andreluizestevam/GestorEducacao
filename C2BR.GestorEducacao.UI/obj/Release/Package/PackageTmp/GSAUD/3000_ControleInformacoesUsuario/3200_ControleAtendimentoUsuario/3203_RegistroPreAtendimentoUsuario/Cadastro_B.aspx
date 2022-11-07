@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/App_Masters/PadraoCadastros.Master"
     AutoEventWireup="true" CodeBehind="Cadastro_B.aspx.cs" Inherits="C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_ControleAtendimentoUsuario._3203_RegistroPreAtendimentoUsuario.Cadastro_B" %>
 
-<%@ Register TagPrefix="myGestante" TagName="gestante" Src="~/Componentes/Gestante.ascx" %>
-
+<%@ Register TagPrefix="myprocedimento" TagName="procedimento" Src="~/Componentes/CadastroProcedimento.ascx" %>
+      
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <style type="text/css">
@@ -396,10 +396,10 @@
         </asp:UpdatePanel>
         <li style="margin-top: 5px !important; height: 17px; width: 100%; text-align: center; text-transform: uppercase; margin-top: 0px; margin-left: auto; background-color: #B4EEB4; margin-bottom: 6px;">
 
-            <asp:Button runat="server" ID="btn_SIGTAP" Text="  SIGTAP  " Style="background-color: #ffff99; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 15PX; border-width: 0px; height: 17px !important;" OnClick="btn_SIGTAP_Click" ToolTip="Pesquisar procedimentos SIGTAP" />
+            <asp:Button runat="server" ID="btn_SIGTAP" Text="PROCEDIMENTOS" Style="background-color: #ffff99; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 15PX; border-width: 0px; height: 17px !important;" OnClick="btn_SIGTAP_Click" ToolTip="Pesquisar códigos procedimento" />
             <%--<a href="#janela1" rel="modal" style="background-color: #ffff99; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">SIGTAP  </a>--%>
 
-            <asp:Button runat="server" ID="btn_GESTANTE" Text="  GESTANTE  " Style="background-color: yellow; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 16PX; border-width: 0px; height: 17px !important;" OnClick="btn_GESTANTE_Click" ToolTip="Inserir dados da Gestante" />
+            <asp:Button runat="server" ID="btn_GESTANTE" Text="GESTANTE" Style="background-color: yellow; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 16PX; border-width: 0px; height: 17px !important;" OnClick="btn_GESTANTE_Click" ToolTip="Inserir dados da Gestante" />
             <%--<a href="#janela2" rel="modal" style="background-color: yellow; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">GESTANTE  </a>--%>
 
 
@@ -718,8 +718,9 @@
     <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- DIV MODAL PARA ESCOLHER OS SIGTAP -->
     <%--<div class="window" id="janela1">--%>
     <div id="divLoadInfosSigtap" style="display: none; height: 435px !important;">
+        <myprocedimento:procedimento ID="procedimento" runat="server" />
 
-        <asp:Label runat="server" ID="lblpesquisasigtab" Text="  Pesquisa  "></asp:Label>
+       <%-- <asp:Label runat="server" ID="lblpesquisasigtab" Text="  Pesquisa  "></asp:Label>
         <asp:TextBox runat="server" ID="tbpesquisasigtab" Style="width: 530px;"></asp:TextBox>
         <asp:ImageButton ID="imgCpfResp" runat="server" ImageUrl="~/Library/IMG/Gestor_BtnPesquisa.png" OnClick="imgCpfResp_Click" />
         <br />
@@ -755,15 +756,15 @@
         <div>
             <center>
                 <asp:Button runat="server" CssClass="btn" ID="btnclose" Text="  Fechar  " Style="height: 30px  !important; width: 80px !important;" />
-                <asp:Button runat="server" CssClass="btn" ID="btnincluir" Text=" Inserir SIGTAP no atendimento " OnClick="btnincluir_Click" Style="height: 31px !important; width: 160px !important;" />
+                <asp:Button runat="server" CssClass="btn" ID="btnincluir" Text=" Inserir CÓDIGO no atendimento " OnClick="btnincluir_Click" Style="height: 31px !important; width: 160px !important;" />
             </center>
         </div>
         <br />
         <div id="divHelpTxtLA">
             <p id="pAcesso" class="pAcesso">
-                Verifique os SIDTAP existentes no quadro acima para incluir no atendimento.
+                Verificar acima os códigos que deseja associar ao atendimento deste usuário.
             </p>
-        </div>
+        </div>--%>
     </div>
     <%--<div class="windowGestante" id="janela2" style="top: 65px; left: 85px; !important;">--%>
     <div id="divLoadInfosGestante" style="display: none; height: 400px !important; left: 15px !important;">
@@ -915,7 +916,7 @@
                 <div id="botoes" style="height: 0px;margin-left: 20px;">
                     <br /><br /><br /><br />
                     <div >
-                        <asp:Button runat="server" ID="btnhistorico" Text="HISTÓRICO DE MEDICAÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; background-color: #a7c9d5;border-style: none;float: left;font-family: Trebuchet MS;margin-left: -166px;height: 31px !important;width: 142px;"/>
+                        <asp:Button runat="server" ID="btnhistorico" Text="HISTÓRICO DE MEDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; background-color: #a7c9d5;border-style: none;float: left;font-family: Trebuchet MS;margin-left: -166px;height: 31px !important;width: 142px;"/>
                     </div>
                     <div style="width: 160px; float: left;">
                         <asp:Button runat="server" ID="btnproblemas" Text="PROBLEMAS E CONDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; height: 31px !important;width: 130px !important; "/>
@@ -943,11 +944,16 @@
                 close: function (type, data) { ($(this).parent().replaceWith("")); }
             });
         }
+
+
+
+
         function AbreModalInfosSigtap() {
-            $('#divLoadInfosSigtap').dialog({ autoopen: false, modal: true, width: 652, height: 350, resizable: false, title: "TABELA SIGTAP - PESQUISA",
-                //                open: function () { $('#divLoadInfosCadas').show(); }
-                open: function (type, data) { $(this).parent().appendTo("form"); },
-                close: function (type, data) { ($(this).parent().replaceWith("")); }
+            $('#divLoadInfosSigtap').dialog({
+                autoopen: false, modal: true, width: 652, height: 350, resizable: false, title: "CÓDIGO FATURAMENTO - PESQUISA",
+                open: function () { $('#divLoadInfosCadas').load("/Componentes/CadastroProcedimento.aspx"); }
+               // open: function (type, data) { $(this).parent().appendTo("form"); },
+                //close: function (type, data) { ($(this).parent().replaceWith("")); }
             });
         }
 

@@ -87,4 +87,6 @@ C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Deb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.application
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.exe
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.pdb
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.csprojResolveAssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.csproj.AssemblyReference.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.csproj.CoreCompileInputs.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Service\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Service.csproj.CopyComplete
