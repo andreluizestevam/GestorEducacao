@@ -1,0 +1,4 @@
+[Compiler]
+D=1
+[Linker]
+MapFile=3

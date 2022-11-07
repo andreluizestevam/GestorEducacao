@@ -1,0 +1,66 @@
+package gbCob7;
+
+{$R *.res}
+{$R 'c:\arquivos de programas\borland\delphi7\Imports\AgentObjects_TLB.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Delphi Boleto - Componentes para boleto bancário'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  rtl,
+  dbrtl,
+  bdertl,
+  indy,
+  vcljpg,
+  dclusr,
+  qrpt;
+
+contains
+  gbCobranca in 'gbCobranca.pas',
+  gbBoleto7 in 'gbBoleto7.pas' {Boleto: TQuickRep},
+  gbCob001 in 'gbCob001.pas',
+  gbCob021 in 'gbCob021.pas',
+  gbCob038 in 'gbCob038.pas',
+  gbCob104 in 'gbCob104.pas',
+  gbCob151 in 'gbCob151.pas',
+  gbCob237 in 'gbCob237.pas',
+  gbCob244 in 'gbCob244.pas',
+  gbCob275 in 'gbCob275.pas',
+  gbCob291 in 'gbCob291.pas',
+  gbCob320 in 'gbCob320.pas',
+  gbCob341 in 'gbCob341.pas',
+  gbCob347 in 'gbCob347.pas',
+  gbCob353 in 'gbCob353.pas',
+  gbCob356 in 'gbCob356.pas',
+  gbCob389 in 'gbCob389.pas',
+  gbCob394 in 'gbcob394.pas',
+  gbCob399 in 'gbCob399.pas',
+  gbCob409 in 'gbCob409.pas',
+  gbCob422 in 'gbCob422.pas',
+  gbCob453 in 'gbCob453.pas',
+  gbCob479 in 'gbCob479.pas',
+  gbCob745 in 'gbCob745.pas';
+ // AgentObjects_TLB in 'C:\Arquivos de programas\Borland\Delphi7\Imports\AgentObjects_TLB.pas';
+
+end.

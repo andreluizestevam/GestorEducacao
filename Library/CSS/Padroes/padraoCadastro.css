@@ -1,0 +1,19 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+}
+
+/*Classe para nova linha*/
+li .novaLinha
+{
+    clear:both;
+    margin-top: 5px;
+}
+
+/*Classe para linha comun*/
+li .linhaPadrao
+{
+    width:100%;
+    margin-top: 5px;
+}

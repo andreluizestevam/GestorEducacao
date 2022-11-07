@@ -1,0 +1,88 @@
+License Agreement
+
+THIS IS A CONTRACT. YOU SHOULD CAREFULLY READ ALL THE TERMS 
+AND CONDITIONS BEFORE INSTALLING THIS SOFTWARE. 
+BY INSTALLING THE SOFTWARE, YOU ACCEPT ALL THE TERMS AND 
+CONDITIONS OF THIS LICENSE. 
+
+This llionsoft End User License Agreement accompanies 
+the "llPDFLib" product and related explanatory materials ("SOFTWARE").
+The term "SOFTWARE" also shall include any upgrades, modified versions 
+or updates of the product licensed to you by llionsoft. 
+
+This Agreement does not apply to versions of the SOFTWARE 
+labeled as "Trial version".  
+
+GRANT OF LICENSE
+----------------
+The software supplied may be used by one person 
+on as many computer systems as that person uses. 
+
+Group programming projects making use of this software 
+must purchase a copy of the software for each member of 
+the group or purchase a site license.
+
+Users can create application base functionality of which 
+PDF document creation is part only if they have a "PDF Application" license.
+
+Applications built using our components are royalties free, 
+but if you need to create a development tool (as DCU, DLL, OCX etc..) 
+integrating this functionality you need to obtain a special license.
+
+We license our components per development workstation. Dual development 
+workstations will need 2 licenses. Site licenses allow use on unlimited 
+development workstations within your organization.
+
+COPYRIGHT
+---------
+The SOFTWARE is owned by llionsoft and is protected by copyright 
+laws of the Belarus Republic, international treaty provisions 
+and all other applicable national laws. The SOFTWARE is licensed, not sold.
+
+You may use trademarks only to identify printed output produced 
+by the SOFTWARE, in accordance with accepted trademark practice, 
+including identification of trademark owner's name. Such use of 
+any trademark does not give you any rights of ownership in that trademark. 
+ 
+You may not rent, lease, sub-license, transfer, or sell 
+the SOFTWARE. You may not translate, reverse engineer, decompile, 
+disassemble the SOFTWARE. 
+
+REDISTRIBUTABLE CODE
+--------------------
+You may freely include in an application the compiled code of libraries 
+and components supplied in the SOFTWARE, provided that your application 
+does not merely duplicate the functionality of the SOFTWARE and is not 
+a derivative work. 
+
+SOURCE CODE
+-----------
+If the SOFTWARE includes source code, you may not redistribute or 
+republish it. You may use this source code in the only purpose of 
+fixing bugs. Applications and components compiled from the altered 
+source code will support the same restrictions as redistributable 
+code mentioned above.
+
+NO WARRANTY
+-----------
+This documentation and the VCL are provided "as is" without warranty
+of any kind, either expressed or implied, including but not limited 
+to the implied warranties of merchantability and/or suitability for  
+a particular purpose. The user assumes the entire risk of any damage 
+caused by this software.
+
+GOVERNING LAW AND GENERAL PROVISIONS 
+------------------------------------
+This Agreement will be governed by the laws of the Belarus Republic, 
+excluding the application of its conflicts of law rules. If any part 
+of this Agreement is found void and unenforceable, it will not affect 
+the validity of the rest of the Agreement, which shall remain valid 
+and enforceable according to its terms. You may not ship, transfer, 
+or export the Software into any country or used in any manner prohibited 
+by any export laws, restrictions or regulations.  
+
+This Agreement shall automatically terminate upon failure by you to 
+comply with its terms. 
+
+Web site: http://www.llion.net 
+E-Mail:  llion@llion.net

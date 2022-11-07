@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02DEB820-D453-434D-844B-0BA9CF37F103}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C2BR.GestorEducacao.BusinessEntities</RootNamespace>
+    <AssemblyName>C2BR.GestorEducacao.BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\lib\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliares\BaseEntity.cs" />
+    <Compile Include="Auxiliares\ExtensionsHelper.cs" />
+    <Compile Include="Auxiliares\DynamicWhereClauseHelper.cs" />
+    <Compile Include="Auxiliar\SQLDirectAcess.cs" />
+    <Compile Include="Models\RelatorioPacienteProcedimento.cs" />
+    <Compile Include="MSSQLPORTAL\BasePortal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BasePortal.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MSSQL\ADMBOLETIM.cs" />
+    <Compile Include="MSSQL\ADMMODULO.cs" />
+    <Compile Include="MSSQL\AdmPerfilAcesso.cs" />
+    <Compile Include="MSSQL\AdmPerfilModulo.cs" />
+    <Compile Include="MSSQL\ADMUNIDBOLETIM.cs" />
+    <Compile Include="MSSQL\ADMUSUARIO.cs" />
+    <Compile Include="MSSQL\ADMUSUARIOESPECIAL.cs" />
+    <Compile Include="MSSQL\ArquivoCompartilhado.cs" />
+    <Compile Include="MSSQL\ArquivoCompartilhadoTB25_EMPRESA.cs" />
+    <Compile Include="MSSQL\ConteudoAjuda.cs" />
+    <Compile Include="MSSQL\GestorEntities.cs" />
+    <Compile Include="MSSQL\GestorEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestorEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MSSQL\TB232_PATRI_CARGA_ITEM.cs" />
+    <Compile Include="MSSQL\TBG076_FAMIL_BENEF.cs" />
+    <Compile Include="MSSQL\TBG101_ATESTADOS.cs" />
+    <Compile Include="MSSQL\TBG151_HISTO_SALAR_RESPO.cs" />
+    <Compile Include="MSSQL\TBS418_CLASS_PRONT.cs" />
+    <Compile Include="MSSQL\TBS460_AGEND_AVALI_PROFI.cs" />
+    <Compile Include="MSSQL\TBS459_ATEND_ANAMN_RAPID.cs" />
+    <Compile Include="MSSQL\TBS457_CLASS_TERAP.cs" />
+    <Compile Include="MSSQL\TBS176_ESUS_CADAS_DOMIC.cs" />
+    <Compile Include="MSSQL\TBS177_ESUS_DOMIC_FAMILIA.cs" />
+    <Compile Include="MSSQL\TBS456_INTER_REGIS_ATEND.cs" />
+    <Compile Include="MSSQL\TBS455_AGEND_PROF_INTER.cs" />
+    <Compile Include="MSSQL\TBS454_OBITO.cs" />
+    <Compile Include="MSSQL\TBS451_INTER_REGIST.cs" />
+    <Compile Include="MSSQL\TBS453_INTER_CID.cs" />
+    <Compile Include="MSSQL\TBS452_INTER_PROCE.cs" />
+    <Compile Include="MSSQL\TB426_PROTO_ACAO.cs" />
+    <Compile Include="MSSQL\TB427_PROTO_ACAO_ITENS.cs" />
+    <Compile Include="MSSQL\TBS448_ATEND_INTER_HOSPI.cs" />
+    <Compile Include="MSSQL\TBS449_ATEND_INTER_CID.cs" />
+    <Compile Include="MSSQL\TBS450_ATEND_INTER_PROCE_MEDIC.cs" />
+    <Compile Include="MSSQL\TBS442_TIPO_CARAT.cs" />
+    <Compile Include="MSSQL\TBS443_TIPO_INTER.cs" />
+    <Compile Include="MSSQL\TBS444_TIPO_REGIM.cs" />
+    <Compile Include="MSSQL\TBS445_TIPO_INDIC_ACIDE.cs" />
+    <Compile Include="MSSQL\TBS446_TIPO_DOENCA.cs" />
+    <Compile Include="MSSQL\TBS436_ITEM_PROTO_CID.cs" />
+    <Compile Include="MSSQL\TB324_LIMPEZA_PROCED.cs" />
+    <Compile Include="MSSQL\TB323_LIMPEZA_TIPO.cs" />
+    <Compile Include="MSSQL\TB174_DEPTO_TIPO.cs" />
+    <Compile Include="MSSQL\TBS223_CID.cs" />
+    <Compile Include="MSSQL\TBS433_EXAME_FISIC_ITEM.cs" />
+    <Compile Include="MSSQL\TBS432_EXAME_FISIC_SUB_GRUPO.cs" />
+    <Compile Include="MSSQL\TBS431_GRUPO_EXAME_FISIC.cs" />
+    <Compile Include="MSSQL\TB429_REFER_CUSTO.cs" />
+    <Compile Include="MSSQL\TB430_MENSA_ANOBASE.cs" />
+    <Compile Include="MSSQL\Image.cs" />
+    <Compile Include="MSSQL\Solicitacao.cs" />
+    <Compile Include="MSSQL\TB000_INSTITUICAO.cs" />
+    <Compile Include="MSSQL\TB009_RTF_DOCTOS.cs" />
+    <Compile Include="MSSQL\TB010_RTF_ARQUIVO.cs" />
+    <Compile Include="MSSQL\TB01_CURSO.cs" />
+    <Compile Include="MSSQL\TB02_MATERIA.cs" />
+    <Compile Include="MSSQL\TB03_COLABOR.cs" />
+    <Compile Include="MSSQL\TB045_NOS_NUM.cs" />
+    <Compile Include="MSSQL\TB052_RESERV_MATRI.cs" />
+    <Compile Include="MSSQL\TB055_SGRP2_CTA.cs" />
+    <Compile Include="MSSQL\TB05_GRD_HORAR.cs" />
+    <Compile Include="MSSQL\TB061_GRUPO_SOLIC.cs" />
+    <Compile Include="MSSQL\TB06_TURMAS.cs" />
+    <Compile Include="MSSQL\TB075_FAMILIA.cs" />
+    <Compile Include="MSSQL\TB079_HIST_ALUNO.cs" />
+    <Compile Include="MSSQL\TB07_ALUNO.cs" />
+    <Compile Include="MSSQL\TB086_TIPO_DOC.cs" />
+    <Compile Include="MSSQL\TB08_MATRCUR.cs" />
+    <Compile Include="MSSQL\TB092_RESER_MEDIC.cs" />
+    <Compile Include="MSSQL\TB094_ITEM_RESER_MEDIC.cs" />
+    <Compile Include="MSSQL\TB099_CENTRO_CUSTO.cs" />
+    <Compile Include="MSSQL\TB100_ESPECIALIZACAO.cs" />
+    <Compile Include="MSSQL\TB101_LOCALCOBRANCA.cs" />
+    <Compile Include="MSSQL\TB103_CLIENTE.cs" />
+    <Compile Include="MSSQL\TB104_CONT_CLIENTE.cs" />
+    <Compile Include="MSSQL\TB105_ATIVIDADES_EXTRAS.cs" />
+    <Compile Include="MSSQL\TB106_ATIVEXTRA_ALUNO.cs" />
+    <Compile Include="MSSQL\TB107_CADMATERIAS.cs" />
+    <Compile Include="MSSQL\TB108_RESPONSAVEL.cs" />
+    <Compile Include="MSSQL\TB109_DETAL_ENTRE .cs" />
+    <Compile Include="MSSQL\TB110_ORIGEM_MAT.cs" />
+    <Compile Include="MSSQL\TB111_PLANEJ_FINAN.cs" />
+    <Compile Include="MSSQL\TB112_PLANCUSTO.cs" />
+    <Compile Include="MSSQL\TB113_PARAM_CAIXA.cs" />
+    <Compile Include="MSSQL\TB114_FARDMAT.cs" />
+    <Compile Include="MSSQL\TB115_GRUPO_ESPECIALIDADE.cs" />
+    <Compile Include="MSSQL\TB116_TIPO_DEV_DOC.cs" />
+    <Compile Include="MSSQL\TB117_CODIGO_INTERNACIONAL_DOENCA.cs" />
+    <Compile Include="MSSQL\TB118_TIPO_RECEB.cs" />
+    <Compile Include="MSSQL\TB119_ATIV_PROF_TURMA.cs" />
+    <Compile Include="MSSQL\TB120_DOC_ALUNO_ENT.cs" />
+    <Compile Include="MSSQL\TB121_TIPO_DOC_MATRICULA.cs" />
+    <Compile Include="MSSQL\TB122_ALUNO_CREDI .cs" />
+    <Compile Include="MSSQL\TB123_EMPR_BIB_ITENS.cs" />
+    <Compile Include="MSSQL\TB124_TIPO_PRODUTO.cs" />
+    <Compile Include="MSSQL\TB126_HIST_ALUNO_AVAL.cs" />
+    <Compile Include="MSSQL\TB127_CATEG_FUNCI.cs" />
+    <Compile Include="MSSQL\TB128_FUNCA_FUNCI.cs" />
+    <Compile Include="MSSQL\TB129_CADTURMAS.cs" />
+    <Compile Include="MSSQL\TB130_HIST_EXT_ALUNO.cs" />
+    <Compile Include="MSSQL\TB131_TEMPO_AULA.cs" />
+    <Compile Include="MSSQL\TB132_FREQ_ALU.cs" />
+    <Compile Include="MSSQL\TB133_CLASS_CUR.cs" />
+    <Compile Include="MSSQL\TB134_USR_EMP.cs" />
+    <Compile Include="MSSQL\TB135_PROG_SOCIAIS.cs" />
+    <Compile Include="MSSQL\TB136_ALU_PROG_SOCIAIS.cs" />
+    <Compile Include="MSSQL\TB137_TAREFAS_AGENDA.cs" />
+    <Compile Include="MSSQL\TB138_INFORMATIVOS.cs" />
+    <Compile Include="MSSQL\TB139_SITU_TAREF_AGEND.cs" />
+    <Compile Include="MSSQL\TB140_PRIOR_TAREF_AGEND.cs" />
+    <Compile Include="MSSQL\TB141_LOG_FREQU_ALUNO.cs" />
+    <Compile Include="MSSQL\TB142_LOG_ATIV_PROF_TURMA.cs" />
+    <Compile Include="MSSQL\TB143_ATEST_MEDIC.cs" />
+    <Compile Include="MSSQL\TB144_NEGOCIACAO.cs" />
+    <Compile Include="MSSQL\TB145_NEGDOCNOVOS.cs" />
+    <Compile Include="MSSQL\TB146_NEGDOCANTIGOS.cs" />
+    <Compile Include="MSSQL\TB148_TIPO_BOLSA.cs" />
+    <Compile Include="MSSQL\TB149_PARAM_INSTI.cs" />
+    <Compile Include="MSSQL\TB14_DEPTO.cs" />
+    <Compile Include="MSSQL\TB150_TIPO_OCORR.cs" />
+    <Compile Include="MSSQL\TB151_OCORR_COLABOR.cs" />
+    <Compile Include="MSSQL\TB152_CALENDARIO_TIPO.cs" />
+    <Compile Include="MSSQL\TB153_TIPO_PLANT.cs" />
+    <Compile Include="MSSQL\TB154_PLANT_COLABOR.cs" />
+    <Compile Include="MSSQL\TB155_PLAN_MATR.cs" />
+    <Compile Include="MSSQL\TB156_FormaPagamento.cs" />
+    <Compile Include="MSSQL\TB157_CALENDARIO_ATIVIDADES.cs" />
+    <Compile Include="MSSQL\tb158_cheques.cs" />
+    <Compile Include="MSSQL\TB159_AGENDA_PLANT_COLABOR.cs" />
+    <Compile Include="MSSQL\TB15_FUNCAO.cs" />
+    <Compile Include="MSSQL\TB160_PERFIL_UNIDADE.cs" />
+    <Compile Include="MSSQL\TB161_SALA.cs" />
+    <Compile Include="MSSQL\TB162_CLAS_INST.cs" />
+    <Compile Include="MSSQL\TB163_SALA_USUARIO.cs" />
+    <Compile Include="MSSQL\TB164_INST_ESP.cs" />
+    <Compile Include="MSSQL\TB166_EDIFICACAO.cs" />
+    <Compile Include="MSSQL\TB167_QUILOMBO.cs" />
+    <Compile Include="MSSQL\TB168_ABST_AGUA.cs" />
+    <Compile Include="MSSQL\TB16_DIPLOMA.cs" />
+    <Compile Include="MSSQL\TB170_MENSAGEM.cs" />
+    <Compile Include="MSSQL\TB171_PREDIO.cs" />
+    <Compile Include="MSSQL\TB172_SERVICO.cs" />
+    <Compile Include="MSSQL\TB176_TIPO_OCUP.cs" />
+    <Compile Include="MSSQL\TB177_TIPO_TERRE.cs" />
+    <Compile Include="MSSQL\TB178_TIPO_DELIM_TERRE.cs" />
+    <Compile Include="MSSQL\TB179_TIPO_EDIFI.cs" />
+    <Compile Include="MSSQL\TB17_PLANO_AULA.cs" />
+    <Compile Include="MSSQL\TB180_TIPO_ESTAD_CONSERV.cs" />
+    <Compile Include="MSSQL\TB181_TIPO_COBER.cs" />
+    <Compile Include="MSSQL\TB182_TIPO_UNIDA.cs" />
+    <Compile Include="MSSQL\TB183_ORIGE_AGUA.cs" />
+    <Compile Include="MSSQL\TB184_FONTE_ENERG.cs" />
+    <Compile Include="MSSQL\TB185_GERAD_ENERG.cs" />
+    <Compile Include="MSSQL\TB186_SISTE_AQUEC.cs" />
+    <Compile Include="MSSQL\TB187_REDE_ESGOT.cs" />
+    <Compile Include="MSSQL\TB188_MONIT_CURSO_PROFE.cs" />
+    <Compile Include="MSSQL\TB189_AGEND_MONIT_PROFE.cs" />
+    <Compile Include="MSSQL\TB18_GRAUINS.cs" />
+    <Compile Include="MSSQL\TB190_LINHA_TRANSP.cs" />
+    <Compile Include="MSSQL\TB191_OCORR_ALUNO.cs" />
+    <Compile Include="MSSQL\TB192_CAIXA_LOGMOV.cs" />
+    <Compile Include="MSSQL\TB197_REMES_SOLIC.cs" />
+    <Compile Include="MSSQL\TB198_USR_UNID_FREQ.cs" />
+    <Compile Include="MSSQL\TB199_FREQ_FUNC.cs" />
+    <Compile Include="MSSQL\TB19_INFOR_CURSO.cs" />
+    <Compile Include="MSSQL\TB200_EQUIV_NOTA_CONCEITO.cs" />
+    <Compile Include="MSSQL\TB201_AVAL_MASTER.cs" />
+    <Compile Include="MSSQL\TB202_AVAL_DETALHE.cs" />
+    <Compile Include="MSSQL\TB203_ACERVO_AQUISICAO.cs" />
+    <Compile Include="MSSQL\TB204_ACERVO_ITENS.cs" />
+    <Compile Include="MSSQL\TB205_USUARIO_BIBLIOT.cs" />
+    <Compile Include="MSSQL\TB206_RESERVA_BIBLIOTECA.cs" />
+    <Compile Include="MSSQL\TB207_RESERVA_ITENS_BIBLIOTECA.cs" />
+    <Compile Include="MSSQL\TB208_CURSO_DOCTOS.cs" />
+    <Compile Include="MSSQL\TB209_HISTO_MATRICULA.cs" />
+    <Compile Include="MSSQL\TB20_TIPOCON.cs" />
+    <Compile Include="MSSQL\TB210_HIST_DIPLOMA.cs" />
+    <Compile Include="MSSQL\TB211_SOLIC_DIPLOMA.cs" />
+    <Compile Include="MSSQL\TB212_ITENS_PATRIMONIO.cs" />
+    <Compile Include="MSSQL\TB213_CLASSIF_PATR.cs" />
+    <Compile Include="MSSQL\TB214_ENTR_DOCUMENTO.cs" />
+    <Compile Include="MSSQL\TB215_PROGR_TIPO_SOCEDU.cs" />
+    <Compile Include="MSSQL\TB216_PATR_MOVEL.cs" />
+    <Compile Include="MSSQL\TB217_PATR_IMOVEL.cs" />
+    <Compile Include="MSSQL\TB21_TIPOCAL.cs" />
+    <Compile Include="MSSQL\TB224_CONTA_CORRENTE.cs" />
+    <Compile Include="MSSQL\TB225_CONTAS_UNIDADE.cs" />
+    <Compile Include="MSSQL\TB226_CARTEIRA_BANCO.cs" />
+    <Compile Include="MSSQL\TB227_DADOS_BOLETO_BANCARIO.cs" />
+    <Compile Include="MSSQL\TB228_PATRI_HISTO_MOVIM.cs" />
+    <Compile Include="MSSQL\TB229_TIPO_OCOR_PATRIMONIO.cs" />
+    <Compile Include="MSSQL\TB22_TIPOPAG.cs" />
+    <Compile Include="MSSQL\TB230_OCORR_PATRIMONIO.cs" />
+    <Compile Include="MSSQL\TB231_PATRI_HISTO_MOVIM_EXTERNA.cs" />
+    <Compile Include="MSSQL\TB235_CEP.cs" />
+    <Compile Include="MSSQL\TB236_LOG_ATIVIDADES.cs" />
+    <Compile Include="MSSQL\TB237_TIPO_PESSOA.cs" />
+    <Compile Include="MSSQL\TB238_TIPO_ENDERECO.cs" />
+    <Compile Include="MSSQL\TB239_TIPO_TELEFONE.cs" />
+    <Compile Include="MSSQL\TB240_TIPO_LOGRADOURO.cs" />
+    <Compile Include="MSSQL\TB241_ALUNO_ENDERECO.cs" />
+    <Compile Include="MSSQL\TB242_ALUNO_TELEFONE.cs" />
+    <Compile Include="MSSQL\TB246_UNIDADE_PERFIL_VAGAS.cs" />
+    <Compile Include="MSSQL\TB247_UNIDADE_PERFIL_DESEMPENHO.cs" />
+    <Compile Include="MSSQL\TB248_UNIDADE_SALAS_AULA.cs" />
+    <Compile Include="MSSQL\TB249_MENSAG_SMS.cs" />
+    <Compile Include="MSSQL\TB24_TPEMPRESA.cs" />
+    <Compile Include="MSSQL\TB250_OPERA.cs" />
+    <Compile Include="MSSQL\TB251_PLANO_OPERA.cs" />
+    <Compile Include="MSSQL\TB25_EMPRESA.cs" />
+    <Compile Include="MSSQL\TB260_GRUPO.cs" />
+    <Compile Include="MSSQL\TB261_SUBGRUPO.cs" />
+    <Compile Include="MSSQL\TB273_TIPO_ATIVIDADE.cs" />
+    <Compile Include="MSSQL\TB285_HIST_TRANS_ALUNO.cs" />
+    <Compile Include="MSSQL\TB285_INSTIT_TRANSF.cs" />
+    <Compile Include="MSSQL\TB286_MOVIM_TRANSF_FUNCI.cs" />
+    <Compile Include="MSSQL\TB286_TIPO_BENECIF.cs" />
+    <Compile Include="MSSQL\TB287_COLABOR_BENEF.cs" />
+    <Compile Include="MSSQL\TB289_DISP_VAGA_TURMA.cs" />
+    <Compile Include="MSSQL\TB291_TIPO_PATRIM.cs" />
+    <Compile Include="MSSQL\TB293_CUIDAD_SAUDE.cs" />
+    <Compile Include="MSSQL\TB294_RESTR_ALIMEN.cs" />
+    <Compile Include="MSSQL\TB295_CAIXA.cs" />
+    <Compile Include="MSSQL\TB296_CAIXA_MOVIMENTO.cs" />
+    <Compile Include="MSSQL\TB297_OPER_CAIXA.cs" />
+    <Compile Include="MSSQL\TB298_CONEXAO_WEB.cs" />
+    <Compile Include="MSSQL\TB299_PAISES.cs" />
+    <Compile Include="MSSQL\TB29_BANCO.cs" />
+    <Compile Include="MSSQL\TB300_QUADRO_HORAR_FUNCI.cs" />
+    <Compile Include="MSSQL\TB301_MURAL.cs" />
+    <Compile Include="MSSQL\TB302_DOTAC_GRUPO.cs" />
+    <Compile Include="MSSQL\TB303_DOTAC_SUBGRUPO.cs" />
+    <Compile Include="MSSQL\TB304_ORIGE_FINAN.cs" />
+    <Compile Include="MSSQL\TB305_DOTAC_ORCAM.cs" />
+    <Compile Include="MSSQL\TB306_AGEND_CONTATO.cs" />
+    <Compile Include="MSSQL\TB307_GRAFI_GERAL.cs" />
+    <Compile Include="MSSQL\TB308_GRAFI_USUAR.cs" />
+    <Compile Include="MSSQL\TB309_CONTR_EXPOR_DADOS.cs" />
+    <Compile Include="MSSQL\TB30_AGENCIA.cs" />
+    <Compile Include="MSSQL\TB310_REFER_CONTEUDO.cs" />
+    <Compile Include="MSSQL\TB311_REFER_ATIVID_AULAS.cs" />
+    <Compile Include="MSSQL\TB312_CONTR_COMPR.cs" />
+    <Compile Include="MSSQL\TB313_CATEG_CONTR.cs" />
+    <Compile Include="MSSQL\TB314_SUB_CATEG_CONTR.cs" />
+    <Compile Include="MSSQL\TB315_AGRUP_RECDESP.cs" />
+    <Compile Include="MSSQL\TB316_CBO_GRUPO.cs" />
+    <Compile Include="MSSQL\TB317_AGRUP_BOLSA.cs" />
+    <Compile Include="MSSQL\TB318_AGRUP_ATIVEXTRA.cs" />
+    <Compile Include="MSSQL\TB319_FLUXO_CAIXA.cs" />
+    <Compile Include="MSSQL\TB31_AREA_CONHEC.cs" />
+    <Compile Include="MSSQL\TB320_CTRL_FLUXO_CAIXA.cs" />
+    <Compile Include="MSSQL\TB321_ARQ_RET_BOLETO.cs" />
+    <Compile Include="MSSQL\TB322_ARQ_REM_BOLETO.cs" />
+    <Compile Include="MSSQL\TB32_CLASSIF_ACER.cs" />
+    <Compile Include="MSSQL\TB33_EDITORA.cs" />
+    <Compile Include="MSSQL\TB34_AUTOR.cs" />
+    <Compile Include="MSSQL\TB35_ACERVO.cs" />
+    <Compile Include="MSSQL\TB367_CATEG_PLANO_SAUDE.cs" />
+    <Compile Include="MSSQL\TB36_EMPR_BIBLIOT.cs" />
+    <Compile Include="MSSQL\TB37_RECDES_FIXA.cs" />
+    <Compile Include="MSSQL\TB38_CTA_PAGAR.cs" />
+    <Compile Include="MSSQL\TB39_HISTORICO.cs" />
+    <Compile Include="MSSQL\TB418_CONTR_EMAIL.cs" />
+    <Compile Include="MSSQL\TB419_EMAIL_USUAR_GEDUC.cs" />
+    <Compile Include="MSSQL\TB41_FORNEC.cs" />
+    <Compile Include="MSSQL\TB420_ANEXO_EMAIL.cs" />
+    <Compile Include="MSSQL\TB421_PARCEIROS.cs" />
+    <Compile Include="MSSQL\TB422_REGIS_OCORR_PARCE.cs" />
+    <Compile Include="MSSQL\TB423_EMAIL_USUAR_GEMPR.cs" />
+    <Compile Include="MSSQL\TB424_EMAIL_USUAR_GSAUD.cs" />
+    <Compile Include="MSSQL\TB425_EMAIL_USUAR_GPARC.cs" />
+    <Compile Include="MSSQL\TB43_GRD_CURSO.cs" />
+    <Compile Include="MSSQL\TB44_MODULO.cs" />
+    <Compile Include="MSSQL\TB47_CTA_RECEB.cs" />
+    <Compile Include="MSSQL\TB48_GRADE_ALUNO.cs" />
+    <Compile Include="MSSQL\TB49_NOTA_ATIV_ALUNO.cs" />
+    <Compile Include="MSSQL\TB53_GRP_CTA.cs" />
+    <Compile Include="MSSQL\TB54_SGRP_CTA.cs" />
+    <Compile Include="MSSQL\TB56_PLANOCTA.cs" />
+    <Compile Include="MSSQL\TB57_MOTIVCANC.cs" />
+    <Compile Include="MSSQL\TB59_GESTOR_UNIDAD.cs" />
+    <Compile Include="MSSQL\TB60_TIPO_IDIOMA.cs" />
+    <Compile Include="MSSQL\TB62_CURSO_FORM.cs" />
+    <Compile Include="MSSQL\TB63_ESPECIALIDADE.cs" />
+    <Compile Include="MSSQL\TB64_SOLIC_ATEND.cs" />
+    <Compile Include="MSSQL\TB65_HIST_SOLICIT.cs" />
+    <Compile Include="MSSQL\TB66_TIPO_SOLIC.cs" />
+    <Compile Include="MSSQL\TB67_MOTIVTRANC.cs" />
+    <Compile Include="MSSQL\TB68_COORD_CURSO.cs" />
+    <Compile Include="MSSQL\TB70_ITEM_AVAL.cs" />
+    <Compile Include="MSSQL\TB71_QUEST_AVAL.cs" />
+    <Compile Include="MSSQL\TB72_TIT_QUES_AVAL.cs" />
+    <Compile Include="MSSQL\TB73_TIPO_AVAL.cs" />
+    <Compile Include="MSSQL\TB74_UF.cs" />
+    <Compile Include="MSSQL\TB77_DPTO_CURSO.cs" />
+    <Compile Include="MSSQL\TB78_PESQ_AVAL.cs" />
+    <Compile Include="MSSQL\TB80_MASTERMATR.cs" />
+    <Compile Include="MSSQL\TB81_DATA_CTRL.cs" />
+    <Compile Include="MSSQL\TB82_DTCT_EMP.cs" />
+    <Compile Include="MSSQL\TB83_PARAMETRO.cs" />
+    <Compile Include="MSSQL\TB87_GRUPO_ITENS.cs" />
+    <Compile Include="MSSQL\TB88_SUBGRUPO_ITENS.cs" />
+    <Compile Include="MSSQL\TB89_UNIDADES.cs" />
+    <Compile Include="MSSQL\TB901_DESEMP_ESCOL.cs" />
+    <Compile Include="MSSQL\TB902_DESEMP_MATRI.cs" />
+    <Compile Include="MSSQL\TB904_CIDADE.cs" />
+    <Compile Include="MSSQL\TB905_BAIRRO.cs" />
+    <Compile Include="MSSQL\TB906_REGIAO.cs" />
+    <Compile Include="MSSQL\TB907_AREA.cs" />
+    <Compile Include="MSSQL\TB908_SUBAREA.cs" />
+    <Compile Include="MSSQL\TB90_PRODUTO.cs" />
+    <Compile Include="MSSQL\TB91_MOV_PRODUTO.cs" />
+    <Compile Include="MSSQL\TB93_MARCA.cs" />
+    <Compile Include="MSSQL\TB93_TIPO_MOVIMENTO.cs" />
+    <Compile Include="MSSQL\TB951_ESTAT_ESCOL.cs" />
+    <Compile Include="MSSQL\TB952_ESTAT_MODAL.cs" />
+    <Compile Include="MSSQL\TB953_ESTAT_SERIE.cs" />
+    <Compile Include="MSSQL\TB954_ESTAT_MATER.cs" />
+    <Compile Include="MSSQL\TB955_ESTAT_SERMAT.cs" />
+    <Compile Include="MSSQL\TB956_ESTAT_SERTUR.cs" />
+    <Compile Include="MSSQL\TB95_CATEGORIA.cs" />
+    <Compile Include="MSSQL\TB96_ESTOQUE.cs" />
+    <Compile Include="MSSQL\TB97_COR.cs" />
+    <Compile Include="MSSQL\TB98_TAMANHO.cs" />
+    <Compile Include="MSSQL\TBE196_OCORR_DISCI.cs" />
+    <Compile Include="MSSQL\TBE220_MATRCUR_PAGTO.cs" />
+    <Compile Include="MSSQL\TBE221_PAGTO_CARTAO.cs" />
+    <Compile Include="MSSQL\TBE222_PAGTO_CHEQUE.cs" />
+    <Compile Include="MSSQL\TBLOGIN.cs" />
+    <Compile Include="MSSQL\TBPROX_PASSOS.cs" />
+    <Compile Include="MSSQL\TBS174_AGEND_HORAR.cs" />
+    <Compile Include="MSSQL\TBS175_LOG_ALTER_AGENDA.cs" />
+    <Compile Include="MSSQL\TBS194_PRE_ATEND.cs" />
+    <Compile Include="MSSQL\TBS195_ENCAM_MEDIC.cs" />
+    <Compile Include="MSSQL\TBS195_ENCAM_MEDIC_B.cs" />
+    <Compile Include="MSSQL\TBS218_EXAME_MEDICO.cs" />
+    <Compile Include="MSSQL\TBS219_ATEND_MEDIC.cs" />
+    <Compile Include="MSSQL\TBS330_RECEI_ATEND_MEDIC.cs" />
+    <Compile Include="MSSQL\TBS331_SERVI_AMBULATORIAIS.cs" />
+    <Compile Include="MSSQL\TBS332_ATEND_SERV_AMBUL.cs" />
+    <Compile Include="MSSQL\TBS333_ATEST_MEDIC_PACIE.cs" />
+    <Compile Include="MSSQL\TBS334_DIAGN_ATEND_MEDIC.cs" />
+    <Compile Include="MSSQL\TBS335_ISDA_TIPO.cs" />
+    <Compile Include="MSSQL\TBS336_ISDA_ITENS.cs" />
+    <Compile Include="MSSQL\TBS337_TIPO_DORES.cs" />
+    <Compile Include="MSSQL\TBS338_CID_GERAL.cs" />
+    <Compile Include="MSSQL\TBS339_CAMPSAUDE.cs" />
+    <Compile Include="MSSQL\TBS340_CAMPSAUDE_COLABOR.cs" />
+    <Compile Include="MSSQL\TBS341_CAMP_ATEND.cs" />
+    <Compile Include="MSSQL\TBS343_MORTALIDADE.cs" />
+    <Compile Include="MSSQL\TBS345_VACINA.cs" />
+    <Compile Include="MSSQL\TBS346_PLANO_FINAN_CAMPAN.cs" />
+    <Compile Include="MSSQL\TBS347_CENTR_REGUL.cs" />
+    <Compile Include="MSSQL\TBS348_LOG_CENTR_REGUL.cs" />
+    <Compile Include="MSSQL\TBS349_CENTR_REGUL_OCORR.cs" />
+    <Compile Include="MSSQL\TBS350_ITEM_CENTR_REGUL.cs" />
+    <Compile Include="MSSQL\TBS353_VALOR_PROC_MEDIC_PROCE.cs" />
+    <Compile Include="MSSQL\TBS354_PROC_MEDIC_GRUPO.cs" />
+    <Compile Include="MSSQL\TBS355_PROC_MEDIC_SGRUP.cs" />
+    <Compile Include="MSSQL\TBS356_PROC_MEDIC_PROCE.cs" />
+    <Compile Include="MSSQL\TBS357_PROC_MEDIC_FINAN.cs" />
+    <Compile Include="MSSQL\TBS358_PROC_MEDIC_UNID.cs" />
+    <Compile Include="MSSQL\TBS359_VACIN_ATEND_CAMPA.cs" />
+    <Compile Include="MSSQL\TBS360_VACIN_CAMPSAUDE.cs" />
+    <Compile Include="MSSQL\TBS361_CONDI_PLANO_SAUDE.cs" />
+    <Compile Include="MSSQL\TBS362_ASSOC_PLANO_PROCE.cs" />
+    <Compile Include="MSSQL\TBS363_CONSUL_PAGTO.cs" />
+    <Compile Include="MSSQL\TBS364_PAGTO_CARTAO.cs" />
+    <Compile Include="MSSQL\TBS365_PAGTO_CHEQUE.cs" />
+    <Compile Include="MSSQL\TBS366_FUNCAO_SIMPL.cs" />
+    <Compile Include="MSSQL\TBS367_RECEP_SOLIC.cs" />
+    <Compile Include="MSSQL\TBS368_RECEP_SOLIC_ITENS.cs" />
+    <Compile Include="MSSQL\TBS369_RECEP_REGUL_ITENS.cs" />
+    <Compile Include="MSSQL\TBS370_PLANE_AVALI.cs" />
+    <Compile Include="MSSQL\TBS371_PESQU_AVALI_PROCE_SOLIC.cs" />
+    <Compile Include="MSSQL\TBS372_AGEND_AVALI.cs" />
+    <Compile Include="MSSQL\TBS373_AGEND_AVALI_ITENS.cs" />
+    <Compile Include="MSSQL\TBS374_LOG_ITENS_AGEND.cs" />
+    <Compile Include="MSSQL\TBS375_LOG_ALTER_STATUS_AGEND_HORAR.cs" />
+    <Compile Include="MSSQL\TBS376_AGENDA_FERIADOS.cs" />
+    <Compile Include="MSSQL\TBS377_INDIC_PACIENTES.cs" />
+    <Compile Include="MSSQL\TBS378_ASSOC_ITENS_AVALI_PROFI.cs" />
+    <Compile Include="MSSQL\TBS379_RESTR_ATEND.cs" />
+    <Compile Include="MSSQL\TBS380_LOG_ALTER_STATUS_AGEND_AVALI.cs" />
+    <Compile Include="MSSQL\TBS381_AVALI_RECEP.cs" />
+    <Compile Include="MSSQL\TBS382_INFOS_GERAIS.cs" />
+    <Compile Include="MSSQL\TBS383_INFOS_GERAIS_PACIENTE.cs" />
+    <Compile Include="MSSQL\TBS384_USUAR_APP.cs" />
+    <Compile Include="MSSQL\TBS385_CID_ANALI_PREVI.cs" />
+    <Compile Include="MSSQL\TBS386_ITENS_PLANE_AVALI.cs" />
+    <Compile Include="MSSQL\TBS387_DEFIC.cs" />
+    <Compile Include="MSSQL\TBS389_ASSOC_ITENS_PLANE_AGEND.cs" />
+    <Compile Include="MSSQL\TBS390_ATEND_AGEND.cs" />
+    <Compile Include="MSSQL\TBS391_QUEST_PESQU_ATEND.cs" />
+    <Compile Include="MSSQL\TBS392_ANEXO_ATEND.cs" />
+    <Compile Include="MSSQL\TBS393_FECHA_FINAN_PLANO.cs" />
+    <Compile Include="MSSQL\TBS394_RESUM_FINAN.cs" />
+    <Compile Include="MSSQL\TBS395_HISTO_VALOR_RESUM_FINAN.cs" />
+    <Compile Include="MSSQL\TBS396_ATEND_ORCAM.cs" />
+    <Compile Include="MSSQL\TBS397_ATEND_PROC_PLANO.cs" />
+    <Compile Include="MSSQL\TBS398_ATEND_EXAMES.cs" />
+    <Compile Include="MSSQL\TBS399_ATEND_MEDICAMENTOS.cs" />
+    <Compile Include="MSSQL\TBS400_PRONT_MASTER.cs" />
+    <Compile Include="MSSQL\TBS401_PRONT_INTENS.cs" />
+    <Compile Include="MSSQL\TBS402_OPER_DOCTOS.cs" />
+    <Compile Include="MSSQL\TBS403_LAUDOS.cs" />
+    <Compile Include="MSSQL\TBS404_CONTRATOS.cs" />
+    <Compile Include="MSSQL\TBS406_FORML_APLIC.cs" />
+    <Compile Include="MSSQL\TBS407_PLANOS_ALIMEN.cs" />
+    <Compile Include="MSSQL\TBS408_OCORR_PACIE.cs" />
+    <Compile Include="MSSQL\TBS409_PRE_AGEND.cs" />
+    <Compile Include="MSSQL\TBS410_COMISSAO.cs" />
+    <Compile Include="MSSQL\TBS411_EXAMES_ESTERNOS.cs" />
+    <Compile Include="MSSQL\TBS412_EXAME_GRUPO.cs" />
+    <Compile Include="MSSQL\TBS413_EXAME_SUBGR.cs" />
+    <Compile Include="MSSQL\TBS414_EXAME_ITENS_AVALI.cs" />
+    <Compile Include="MSSQL\TBS415_EXAME_ITENS_REFER.cs" />
+    <Compile Include="MSSQL\TBS416_EXAME_RESUL.cs" />
+    <Compile Include="MSSQL\TBS417_EXAME_RESUL_ITENS.cs" />
+    <Compile Include="MSSQL\TBS426_SERVI_AMBUL.cs" />
+    <Compile Include="MSSQL\TBS427_SERVI_AMBUL_ITENS.cs" />
+    <Compile Include="MSSQL\TBS428_APLIC_SERVI_AMBUL.cs" />
+    <Compile Include="MSSQL\TBS430_HISTO_AGEND_HORAR.cs" />
+    <Compile Include="MSSQL\TBS434_PROTO_CID.cs" />
+    <Compile Include="MSSQL\TBS435_CLASS_RISCO.cs" />
+    <Compile Include="MSSQL\TBS438_ITENS_ATENDIMENTO.cs" />
+    <Compile Include="MSSQL\TBS441_ATEND_HOSPIT_ITEN_PROTO_CID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\TBS458_TRATA_PLANO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\TBS461_ATEND_MODEL_PRESC_MEDIC.cs" />
+    <Compile Include="MSSQL\TBS462_ATEND_ENCAM_LIVRE.cs" />
+    <Compile Include="MSSQL\TBS463_PROC_MEDIC_ITENS.cs" />
+    <Compile Include="MSSQL\TBS476_VIA_APLIC.cs" />
+    <Compile Include="MSSQL\TBS477_LOCAL_APLIC.cs" />
+    <Compile Include="MSSQL\TBS47_CTA_RECEB.cs" />
+    <Compile Include="MSSQL\TBTIPO_GRAU_PARENT.cs" />
+    <Compile Include="MSSQL\TB_EQUIPE_NUCLEO_INST.cs" />
+    <Compile Include="MSSQL\TB_NUCLEO_INST.cs" />
+    <Compile Include="MSSQL\TB_QTDE_AULAS.cs" />
+    <Compile Include="MSSQL\TB_RESPON_MATERIA.cs" />
+    <Compile Include="MSSQL\TB_TIPO_AVAL_INST.cs" />
+    <Compile Include="MSSQL\TB_TRANSF_EXTERNA.cs" />
+    <Compile Include="MSSQL\TB_TRANSF_INTERNA.cs" />
+    <Compile Include="MSSQL\TESTE.cs" />
+    <Compile Include="MSSQL\TSN001_ARTIGOS.cs" />
+    <Compile Include="MSSQL\TSN002_BANNER.cs" />
+    <Compile Include="MSSQL\TSN003_PNE.cs" />
+    <Compile Include="MSSQL\TSN005_USUARIO.cs" />
+    <Compile Include="MSSQL\TSN007_FORMA_PAGTO.cs" />
+    <Compile Include="MSSQL\TSN008_ENDERECO.cs" />
+    <Compile Include="MSSQL\TSN009_CIDADE.cs" />
+    <Compile Include="MSSQL\TSN010_UF.cs" />
+    <Compile Include="MSSQL\TSN012_CREDENCIADOS.cs" />
+    <Compile Include="MSSQL\TSN013_PROFISSIONAIS.cs" />
+    <Compile Include="MSSQL\TSN014_TIPO_CREDENCIADO.cs" />
+    <Compile Include="MSSQL\TSN016_VALORES_SERVICO.cs" />
+    <Compile Include="MSSQL\TSN017_TIPO_SERVICO.cs" />
+    <Compile Include="MSSQL\TSN020_MEDICAMENTOS.cs" />
+    <Compile Include="MSSQL\VW079_HIST_ALUNO.cs" />
+    <Compile Include="MSSQL\VW47_CTA_RECEB.cs" />
+    <Compile Include="MSSQL\VW65_HIST_SOLIC.cs" />
+    <Compile Include="MSSQL\VW78_03_PESQ_AVAL.cs" />
+    <Compile Include="MSSQL\VW78_07_PESQ_AVAL.cs" />
+    <Compile Include="MSSQL\VW78_108_PESQ_AVAL.cs" />
+    <Compile Include="MSSQL\VW_ATENDIM_MES.cs" />
+    <Compile Include="MSSQL\VW_CONTR_MATRI.cs" />
+    <Compile Include="MSSQL\VW_DEMON_DISTR_FUNCI.cs" />
+    <Compile Include="MSSQL\VW_RESUM_FINAN_ATEND_COLAB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MSSQLPORTAL\BasePortal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BasePortal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <EntityDeploy Include="MSSQL\GestorEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GestorEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassDiagram5.cd" />
+    <None Include="Properties\DataSources\C2BR.GestorEducacao.BusinessEntities.MSSQL.GestorEntities.datasource" />
+    <None Include="Properties\DataSources\C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.BasePortal.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\C2BR.GestorEducacao.BusinessEntities.dll" />
+    <Content Include="bin\Debug\C2BR.GestorEducacao.BusinessEntities.pdb" />
+    <Content Include="MSSQL\GestorEntities.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

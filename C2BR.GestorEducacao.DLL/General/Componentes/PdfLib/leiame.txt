@@ -1,0 +1,26 @@
+Sobre o componente
+
+Este componente para geração de arquivos PDF (que também possui integração
+com o QuickReport) foi baixado junto com o pacote Delphi_Boleto, na
+versão alterado por um usuário deste, que possibilita a exportação para PDF.
+
+O pacote do delphi boleto que tem esta funcionalidade e possui o
+componente de geração de PDF foi baixado do endereço abaixo:
+
+URL:  http://www.lcanet.net/download/componentes/Boletos.zip
+Date: 2003/04/09 14:22
+
+
+Instalação
+
+1 - Descompacte os arquivos numa pasta
+2 - Abra o delphi, no menu Component, escolha Install Component
+3 - Na janela que aparecer, clique no primeiro botão Browse
+4 - Procure os arquivos llPDFReg.pas e QRPDFFilterReg.pas 
+    que estão dentro da pasta Sources da pasta
+    onde você descompactou os arquivos do componente.
+    Selecione-os e clique em abrir. Depois, clique em OK
+5 - Aparecerá uma mensagem pedindo confirmação para compilar o
+    pacote. Você deve responder que sim.
+6 - Se tudo correr bem, um componente será instalado numa paleta 
+    de nome Util e o outro na paleta QReport 

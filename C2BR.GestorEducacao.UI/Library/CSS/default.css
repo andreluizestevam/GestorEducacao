@@ -1,0 +1,134 @@
+﻿/*** ESTILOS COMUNS *************************************/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+
+/* ESTILOS COMUNS - ELEMENTOS BASICOS *******************/
+/********************************************************/
+/********************************************************/
+*
+{
+    margin: 0;
+    padding: 0;
+    font: normal normal normal 10px Tahoma, Verdana, Arial;
+}
+a, a:visited, a:link
+{
+    color: #666666;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #4F5DFF;
+    text-decoration: underline;
+}
+/* ESTILOS COMUNS - ELEMENTOS DE FORMULARIOS ************/
+/********************************************************/
+/********************************************************/
+select
+{
+    font-family: Arial;
+    border: 1px solid #BBBBBB;
+    font-size: 0.9em;
+    }
+
+h1
+{
+    font-size: 2.2em;
+}
+h2
+{
+    font-size: 2em;
+}
+h3
+{
+    font-size: 1.8em;
+}
+h4
+{
+    font-size: 1.6em;
+}
+h5
+{
+    font-size: 1.4em;
+}
+h6
+{
+    font-size: 1.2em;
+}
+strong { font-weight: bold; }
+input
+{
+    font-family: Arial;
+    border: 1px solid #BBBBBB;
+}
+textarea
+{
+    font-family: Arial;
+    border: 1px solid #BBBBBB;
+    resize: none;
+}
+
+input[disabled='disabled'], select[disabled='disabled'], textarea[disabled='disabled']
+{
+    background-color: #F9F9F9;
+}
+
+input[type='radio'], input[type='checkbox']
+{
+    border: 0;
+    vertical-align: middle;
+    width: 25px;
+}
+
+input[type='text']
+{
+    margin-bottom: 10px; /* Define a distância entre as linhas do formulário */
+}
+
+fieldset
+{
+    border: 1px solid #DDDDDD;
+    padding: -1px;
+}
+
+label
+{
+    display: block;
+}
+
+legend
+{
+    color: #B1B1B1;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+img
+{
+    border: none;
+    vertical-align: middle;
+}
+table
+{
+    border: solid 1px #CCCCCC;    
+}
+/* ESTILOS COMUNS - CLASSES *****************************/
+/********************************************************/
+/********************************************************/
+.boxCornerTitle
+{
+    background-color: #9BA5BF;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.boxCornerTitle h1 { font: normal normal bold 1.1em Arial; color: #FFF !important; }
+.boxCornerTitle span { text-transform: none; color: #FFF; }
+.moduloSelected { background-color: #DFE9FF !important; }
+.emptyDataContent { display: none; }
+/*#ulDados .ui-widget-header { border: 0 !important; background: none !important; }*/

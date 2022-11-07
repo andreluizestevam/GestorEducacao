@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ESTRUTURA */
+
+#totalContentWrapper{
+	width: 1001px;
+	height:auto;
+	margin: 0px auto 0px auto;
+	padding:0px;
+	}
+	
+#totalContentWrapper .header{
+	width: 100%;
+	height:291px;
+	margin: 0 auto 0 auto;
+	padding:0;
+	}
+
+#totalContentWrapper .header .sideH{
+	float:left;
+	width:350px;
+	height:291px;
+	
+	}
+	
+#totalContentWrapper .header .sideH .nomeCliente{
+	position:relative;
+	top:-135px;
+	left:26px;
+	color:WHITE;
+	font-weight:normal;
+	font-family:tahoma;
+	letter-spacing:1px;
+	font-size:13px;
+    }
+	
+#totalContentWrapper .header .sideH h1 a{
+	display:block;
+	float:left;
+	width:350px;
+	height:66px;
+	text-indent:-9999px;
+	background-image: url(/Library/IMG/Login/logo-escola-w.png);
+	background-repeat: no-repeat;
+	}
+	
+#totalContentWrapper .header .sideH .nomeCidadeCliente{
+	position:relative;
+	top:-94px;
+	left:250px;
+	color:white;
+	font-weight:normal;
+	font-family:tahoma;
+	letter-spacing:1px;
+	font-size:11px;
+    }
+
+#totalContentWrapper .header .sideH .menuPortal{
+	float:left;
+	width: 350px;
+	height:76px;
+	margin:0;
+	padding:0
+	}
+	
+#totalContentWrapper .header .sideH h3{
+	display:block;
+	float:left;
+	width:166px;
+	margin: -30px 0px 0px 20px;
+	padding:0;
+	font-family: tahoma;
+	font-size: 14px;
+	line-height:18px;
+	font-weight: bold;
+	color:#666;
+	}
+
+#totalContentWrapper .header .sideH p{
+	display:block;
+	float:left;
+	width: 166px;
+	margin: 10px 0px 0px 20px;
+	padding:0;
+	font-family:arial;
+	font-size:12px;
+	color:#666;
+	font-style:italic;
+	}
+	
+#totalContentWrapper .content{
+	width: 1001px;
+	height:308px;
+	margin:0;
+	padding:0;
+	}
+	
+#totalContentWrapper .content .boxAlunos{
+	float:left;
+	width: 1001px;
+	height:308px;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+	}
+
+#totalContentWrapper .footer{
+	width:999px;
+	height:50px;
+	margin: 2px 0 0 0;
+	padding:0;
+	background-image: url(/Library/IMG/Login/bkg-footer.png);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	}
+	
+#totalContentWrapper .footer p{
+	display:block;
+	float:left;
+	width:446px;
+	height:25px;
+	/*margin: 0 0 0 168px;*/
+	margin: 3px 0 0 100px;
+	padding:8px 10px 9px 0;
+	line-height: 11px;
+	font-family:arial;
+	font-size:10px;
+	font-weight:normal;
+	color:#666;
+	text-align: center;	
+	}
+	
+#totalContentWrapper .footer a.logoFooter{
+	display:block;
+	float:left;
+	width:101px;
+	height:50px;
+	margin: 0 0 0 12px;
+	padding:0;
+	background-image: url(/Library/IMG/Login/bkg-footerP-LOGO.png);
+	background-repeat: no-repeat;
+	text-align: center;	
+	text-indent:-9999px
+	}
+#totalContentWrapper .footer a.iCactos{
+	display:block;
+	float:left;
+	width:120px;
+	height:50px;
+	margin:5px 0 0 143px;
+	padding:0px;
+	background-image: url(/Library/IMG/Login/LogoICactos.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px
+	}
+	#totalContentWrapper .imagemLogo{
+	position: absolute;
+	z-index: 9999;
+	margin-left: 705px;
+	margin-top: -35px;
+}
+#totalContentWrapper .imagemLogo a.logousuario{
+	display:block;
+	float:left;
+	width:213px;
+	height:277px;
+	padding:0px;
+	/*background-image: url(/Library/IMG/Login/LogoUsuario.png);*/
+	text-indent:-9999px
+	}
+	
+#totalContentWrapper .footer a.sistema{
+	display:block;
+	float:left;
+	width:171px;
+	height:42px;
+	margin:4px 0 0 5px;
+	padding:0px;
+    background-image: url(/Library/IMG/Login/LogoEscolaW.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px
+	}
+	
+/* ge */
+
+body.ge{
+	background-image: url(/Library/IMG/Login/bkg-body-ge.png);
+	background-repeat: repeat-x;
+	}
+.ge #totalContentWrapper .header{
+	background-image: url(/Library/IMG/Login/header-ge.png);
+	background-repeat: no-repeat;
+	}
+.ge #totalContentWrapper .content .boxAlunos{
+	background-image: url(/Library/IMG/Login/img-ge.jpg);
+	background-repeat: no-repeat;
+	}
+.ge .credits p{
+	color:#0099CC;
+	}
+.ge #totalContentWrapper .header .menu1 ul{
+	display:block;
+	float:left;
+	width: 360px;
+	height:56px;
+	margin: 0 0px 0 291px;
+	padding:0;
+	}
+	
+	#totalContentWrapper .header .menu1 ul li{
+	
+	}
+	 #totalContentWrapper .header .menu1 ul li.menu1_1{
+		position:absolute;
+		margin: 0px 0px 0px 0px;
+	}
+	 #totalContentWrapper .header .menu1 ul li.menu1_2{
+		position:absolute;
+		margin: 0px 0px 0px 94px;
+		text-align: left;	
+	}
+	 #totalContentWrapper .header .menu1 ul li.menu1_3{
+		position:absolute;
+		margin: 0 0px 0 178px;
+	}
+	
+.ge #totalContentWrapper .header .formulario h3{
+	background-image: url(/Library/IMG/Login/bkg-form-h3ge.png);
+	background-repeat: no-repeat;
+	}

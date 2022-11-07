@@ -1,0 +1,3913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.Auxiliares.BaseEntity" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxiliares\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.Auxiliares.DynamicWhereClauseHelper" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAGAAAEIAAAAAAAAAAAAACAAAAABABAAABAA=</HashCode>
+      <FileName>Auxiliares\DynamicWhereClauseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.Auxiliares.ExtensionsHelper" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxiliares\ExtensionsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.Models.Paciente" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgIAAgAAAAIgAQCIAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\RelatorioPacienteProcedimento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.Models.Procedimento" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAEAAAAABAAAAAAAgEAIAA=</HashCode>
+      <FileName>Models\RelatorioPacienteProcedimento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ADMBOLETIM" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAAEBCEQQgAAEAAAAAmAACkAwSChAAACQAwBIAA=</HashCode>
+      <FileName>MSSQL\ADMBOLETIM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ADMMODULO" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>rRIpCOBrjYpQCCNQAMAAQEGGVYkUpoEBAbpSABIFBoU=</HashCode>
+      <FileName>MSSQL\ADMMODULO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.AdmPerfilAcesso" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAAAQBABQAEgAAQAIEAGgARmAg0AAAAAAACAEUBA=</HashCode>
+      <FileName>MSSQL\AdmPerfilAcesso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.AdmPerfilModulo" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEQAAIBAQQQAgBAAAIUAGggIGFIEAABAEFFAACUBA=</HashCode>
+      <FileName>MSSQL\AdmPerfilModulo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ADMUNIDBOLETIM" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAABAgQAAAAAYAIACOAgEEIAAAAAAABIIAAAAA=</HashCode>
+      <FileName>MSSQL\ADMUNIDBOLETIM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ADMUSUARIO" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9S/YEijern8UA2YdPxp9j1mktNn5ukSivlY0aNK+JsU=</HashCode>
+      <FileName>MSSQL\ADMUSUARIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ADMUSUARIOESPECIAL" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zUAQkZMRZoMUBHCAoLQQlBHkUpU1iFICCAgTSAEIJgM=</HashCode>
+      <FileName>MSSQL\ADMUSUARIOESPECIAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ArquivoCompartilhado" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIQYkAQBAAVIEAAIaEoQQFAECGgAAAACYAgBABAIkI=</HashCode>
+      <FileName>MSSQL\ArquivoCompartilhado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ArquivoCompartilhadoTB25_EMPRESA" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABAAQACAAAQgIBAEAAAECACCAAAAAAABAAAA=</HashCode>
+      <FileName>MSSQL\ArquivoCompartilhadoTB25_EMPRESA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.ConteudoAjuda" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MSSQL\ConteudoAjuda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.GestorEntities" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>////////3/9////////9//////////////////////8=</HashCode>
+      <FileName>MSSQL\GestorEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.Image" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAIAogRAAQAAAAAAEIAkGAAAEAQCEAAAAAEAAGIUE=</HashCode>
+      <FileName>MSSQL\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_EQUIPE_NUCLEO_INST" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>uMAABAIETABQCKBAECAEIAGBIEGEYCBAAARmAAADBEE=</HashCode>
+      <FileName>MSSQL\TB_EQUIPE_NUCLEO_INST.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_NUCLEO_INST" Collapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAABgIABDTQIAABAAAAAAMAAAEAIAEAAAAAAAAEAAE=</HashCode>
+      <FileName>MSSQL\TB_NUCLEO_INST.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_QTDE_AULAS" Collapsed="true">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6bdwPc4xBFMUfJmKj5Q4XF/lDpsNUP9RsAASgDWDUpM=</HashCode>
+      <FileName>MSSQL\TB_QTDE_AULAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_RESPON_MATERIA" Collapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oRAQEAYgDAMQBLCgAACSBBGwAQsWAEEYYAgHBEQgCAs=</HashCode>
+      <FileName>MSSQL\TB_RESPON_MATERIA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_TIPO_AVAL_INST" Collapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lsBAAAAApAEwAEDAAEAQCAMAhBHwBwAAIAAAAIAEAAA=</HashCode>
+      <FileName>MSSQL\TB_TIPO_AVAL_INST.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_TRANSF_EXTERNA" Collapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAURAUsEHgAaCGSCIsQVNyGhhOEAUNoKQAXCUUEICEE=</HashCode>
+      <FileName>MSSQL\TB_TRANSF_EXTERNA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB_TRANSF_INTERNA" Collapsed="true">
+    <Position X="30.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAsBEcEAVEBYCQBzIYBYIGHBgGMAAEIARBlAFEEwAoA=</HashCode>
+      <FileName>MSSQL\TB_TRANSF_INTERNA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB000_INSTITUICAO" Collapsed="true">
+    <Position X="32" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ytejPuZidfs7f05h/xLO0bX+dePAvvbs98uP41S+cvk=</HashCode>
+      <FileName>MSSQL\TB000_INSTITUICAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB009_RTF_DOCTOS" Collapsed="true">
+    <Position X="33.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gDAAQCAS54QYAgJgQRHIZAGllAUAAcBgAACBAQAVEAA=</HashCode>
+      <FileName>MSSQL\TB009_RTF_DOCTOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB01_CURSO" Collapsed="true">
+    <Position X="35.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>///W/////a//3t+//7f//rfnX/2/+ef7////fe52fX8=</HashCode>
+      <FileName>MSSQL\TB01_CURSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB010_RTF_ARQUIVO" Collapsed="true">
+    <Position X="37.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oBAgQAEABAQQMgAAAAAAAAuAAQEAAAhAAAAABAAgAAQ=</HashCode>
+      <FileName>MSSQL\TB010_RTF_ARQUIVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB011_DIA_VENCIM" Collapsed="true">
+    <Position X="39" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASIAIEgAAAAQEICQAAgAgAWBAAQAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB02_MATERIA" Collapsed="true">
+    <Position X="40.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xxCAsYYBFJZQCOKFANQQDrfgIKGlMpUEJADjiFgcB9s=</HashCode>
+      <FileName>MSSQL\TB02_MATERIA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB03_COLABOR" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9/f1//v/dmv////7/7/rvZ3//+/3/f/+/+/f////3/s=</HashCode>
+      <FileName>MSSQL\TB03_COLABOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB045_NOS_NUM" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pAQJMAQARAIQIBAQISCORBGASAs0ABAYBKAwEBAAoOQ=</HashCode>
+      <FileName>MSSQL\TB045_NOS_NUM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB05_GRD_HORAR" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wXAAGBYABQYSwICAQQAQBBmgCAEEYIFCIEACAAAkDBM=</HashCode>
+      <FileName>MSSQL\TB05_GRD_HORAR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB052_RESERV_MATRI" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pnuAXd15/0s+a6VU6X/tp+Hi/a955VXk2/em1RKs5O0=</HashCode>
+      <FileName>MSSQL\TB052_RESERV_MATRI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB055_SGRP2_CTA" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQQEQAAAFQAQAgAAKQABAgGBgUMQAAAAAAACIEAAQCA=</HashCode>
+      <FileName>MSSQL\TB055_SGRP2_CTA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB06_TURMAS" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gRBQVCMgRAI6mYQcIAABDBGhFEMUgZEAaAgjKEgsSM4=</HashCode>
+      <FileName>MSSQL\TB06_TURMAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB061_GRUPO_SOLIC" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgBTBgAQIBABAFCAIAOAABUEAAAAAKAAgAAGAAA=</HashCode>
+      <FileName>MSSQL\TB061_GRUPO_SOLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB07_ALUNO" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/3/r///////e7//u////f/+//v//df///////9////s=</HashCode>
+      <FileName>MSSQL\TB07_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB075_FAMILIA" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>s/oVf+KvDxNSyNKK5ji2wvFojP/6AQTUdGgwXXGQmTM=</HashCode>
+      <FileName>MSSQL\TB075_FAMILIA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB079_HIST_ALUNO" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/79v////////ff///+//////////X/////////////8=</HashCode>
+      <FileName>MSSQL\TB079_HIST_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB08_MATRCUR" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>46hUUXigHMpcOeeHdZR9pFfTwpN/f1NQitaiaQK+fNo=</HashCode>
+      <FileName>MSSQL\TB08_MATRCUR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB086_TIPO_DOC" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAgAAIAQBACQKACAIEIQgAECAAEAQAQAACAAAgQAAAA=</HashCode>
+      <FileName>MSSQL\TB086_TIPO_DOC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB092_RESER_MEDIC" Collapsed="true">
+    <Position X="21.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nkjfEuzl1odS1H5DUEFsVbmOE08cUxxCJwGuakykisg=</HashCode>
+      <FileName>MSSQL\TB092_RESER_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB094_ITEM_RESER_MEDIC" Collapsed="true">
+    <Position X="23.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAiECBBBgNxCqUqAkAIBFn8AgEEQCFQACACAEDAAEA=</HashCode>
+      <FileName>MSSQL\TB094_ITEM_RESER_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB099_CENTRO_CUSTO" Collapsed="true">
+    <Position X="25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>waAAYlAAhBBQIAABIIAlQgGLAEGQKIgDBAAAJgYEQAo=</HashCode>
+      <FileName>MSSQL\TB099_CENTRO_CUSTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB100_ESPECIALIZACAO" Collapsed="true">
+    <Position X="26.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACCAAMABQQQIAAAAABACgPABANAA0gAAEAACAQAKAk=</HashCode>
+      <FileName>MSSQL\TB100_ESPECIALIZACAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB101_LOCALCOBRANCA" Collapsed="true">
+    <Position X="28.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAYIsUQRDQQwEMiAMADIFeHGhAFCjmDJIWNoCgQ2IkA=</HashCode>
+      <FileName>MSSQL\TB101_LOCALCOBRANCA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB102_ITEM_ENTRE_MEDIC" Collapsed="true">
+    <Position X="30.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgACkCAgAjIIBBQAEEEIBBGEAIAEQCBgAAAKCADABAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB103_CLIENTE" Collapsed="true">
+    <Position X="32" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0QYWz0hYRAIwoAkAqcieUyXphFNmFHunCI5Xf5D0vwg=</HashCode>
+      <FileName>MSSQL\TB103_CLIENTE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB104_CONT_CLIENTE" Collapsed="true">
+    <Position X="33.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ghEAEABABUEwFACgCgAKggEQBAEBARAAAAgAIECQgAA=</HashCode>
+      <FileName>MSSQL\TB104_CONT_CLIENTE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB105_ATIVIDADES_EXTRAS" Collapsed="true">
+    <Position X="35.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAUBPAYIKAMDwSAAAOMkCFAgAAIAACAAYAJAAA=</HashCode>
+      <FileName>MSSQL\TB105_ATIVIDADES_EXTRAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB106_ATIVEXTRA_ALUNO" Collapsed="true">
+    <Position X="37.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAIEiAyRDYcAI4CAQBMJNHAEHMAgAQCAgQAABAIAAI=</HashCode>
+      <FileName>MSSQL\TB106_ATIVEXTRA_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB107_CADMATERIAS" Collapsed="true">
+    <Position X="39" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>koJAFAwhREJYCCBAAhAAJhHIAAECAAAAIQQEwIjACgM=</HashCode>
+      <FileName>MSSQL\TB107_CADMATERIAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB108_RESPONSAVEL" Collapsed="true">
+    <Position X="40.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/3W//9e/fX8X/99//f////3f/79de773+d95r//n//c=</HashCode>
+      <FileName>MSSQL\TB108_RESPONSAVEL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB109_DETAL_ENTRE" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tAgEEQAABIKQARAEAFEABBMAAQEBIACEAAAIAAAACAM=</HashCode>
+      <FileName>MSSQL\TB109_DETAL_ENTRE .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB109_MATER_PRE_REQUI" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARQSEBYAAAYAiIKAAgAQBBAgAAEcBAkCIAAQAABAAAM=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB110_ORIGEM_MAT" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAFBIAQAACAAAAAEQGAAANAQAQCIAAAAAAAAQA=</HashCode>
+      <FileName>MSSQL\TB110_ORIGEM_MAT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB111_PLANEJ_FINAN" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qHFIhUYUTQP9CjYo/4wNIgHIAskBF0oKAA4EABSfBs0=</HashCode>
+      <FileName>MSSQL\TB111_PLANEJ_FINAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB112_PLANCUSTO" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qnJIkEYkDQP9AhQo/4wJJhHIAg0BF0oLCAsABBSbCkQ=</HashCode>
+      <FileName>MSSQL\TB112_PLANCUSTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB113_PARAM_CAIXA" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAA0AACDiI4gAAEAQIYZBGEAAFAAQYgCAAACQAABAA=</HashCode>
+      <FileName>MSSQL\TB113_PARAM_CAIXA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB114_FARDMAT" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>w4HKESAQxoIVYMQAApjJLFO4AAcEQ8HEVAATCagEKIQ=</HashCode>
+      <FileName>MSSQL\TB114_FARDMAT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB115_GRUPO_ESPECIALIDADE" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEAAABAAQAAAIAACAACGAgAEIAAAAgAAAABAIQAA=</HashCode>
+      <FileName>MSSQL\TB115_GRUPO_ESPECIALIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB116_TIPO_DEV_DOC" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAABMBQAQEACAIAQAAgGAAAEQgAIBkAAAIgAAAAA=</HashCode>
+      <FileName>MSSQL\TB116_TIPO_DEV_DOC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB117_CODIGO_INTERNACIONAL_DOENCA" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACABAAABggQCAAWBAIIJCGhSAWAQAAEQAAAACKakAI=</HashCode>
+      <FileName>MSSQL\TB117_CODIGO_INTERNACIONAL_DOENCA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB118_TIPO_RECEB" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggACADAEBCBQSgAgCAAAABGAAAECCBEAAAAIAAAAJBQ=</HashCode>
+      <FileName>MSSQL\TB118_TIPO_RECEB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB119_ATIV_PROF_TURMA" Collapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>i9gDEA9tXAqQDYXiAFp6DBOqAAnE6dFJoCET3VBojjM=</HashCode>
+      <FileName>MSSQL\TB119_ATIV_PROF_TURMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB120_DOC_ALUNO_ENT" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkCgECAABAIYAAQAgQAIFFmACAMAAAAACAAAAAECAAA=</HashCode>
+      <FileName>MSSQL\TB120_DOC_ALUNO_ENT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB121_TIPO_DOC_MATRICULA" Collapsed="true">
+    <Position X="23.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gECgAAEABAAQIACAgAAAEAGAAAUAABIAAAAAIAIAABQ=</HashCode>
+      <FileName>MSSQL\TB121_TIPO_DOC_MATRICULA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB122_ALUNO_CREDI" Collapsed="true">
+    <Position X="25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gwAAgmUErAgQHJTAE4CcAAUiABkkUnFAICwGCAAKAAk=</HashCode>
+      <FileName>MSSQL\TB122_ALUNO_CREDI .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB123_EMPR_BIB_ITENS" Collapsed="true">
+    <Position X="26.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AwkBBCIdABSAIQAAQIAgAnECAFHCAMARAEAIEAAAIA=</HashCode>
+      <FileName>MSSQL\TB123_EMPR_BIB_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB124_TIPO_PRODUTO" Collapsed="true">
+    <Position X="28.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gwAAQAAABAARgAAAKAJBAAGJAIMQwCAAAAAAIAAIQAA=</HashCode>
+      <FileName>MSSQL\TB124_TIPO_PRODUTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB125_DADOSESCOLAR_ALU" Collapsed="true">
+    <Position X="30.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Vp0UGWAOGgIhMgbMBAKaV1QhTBIBBQqEiCAAJDtcECA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB126_HIST_ALUNO_AVAL" Collapsed="true">
+    <Position X="32" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>owAAAGIABAEQAJQIAAAIAAGwBAkEQAEAIAEiABAACBI=</HashCode>
+      <FileName>MSSQL\TB126_HIST_ALUNO_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB127_CATEG_FUNCI" Collapsed="true">
+    <Position X="33.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAgAAAQERAAQAAAAgIAoAAGADAkCAACCAAEAAUAADBE=</HashCode>
+      <FileName>MSSQL\TB127_CATEG_FUNCI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB128_FUNCA_FUNCI" Collapsed="true">
+    <Position X="35.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mAAAIIAARAAQgBAAAAAAAAGgIwEAACQBIGAAggAEABA=</HashCode>
+      <FileName>MSSQL\TB128_FUNCA_FUNCI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB129_CADTURMAS" Collapsed="true">
+    <Position X="37.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kQBMBBGBBBRYRIIAA4gIgCGRQYUUAhEEAECKGIAECcg=</HashCode>
+      <FileName>MSSQL\TB129_CADTURMAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB130_HIST_EXT_ALUNO" Collapsed="true">
+    <Position X="39" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6wkEUCaCFAORgJyBYABYJhvoQAkEBQFIMAIMAAAAIBM=</HashCode>
+      <FileName>MSSQL\TB130_HIST_EXT_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB131_TEMPO_AULA" Collapsed="true">
+    <Position X="40.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQAAEAIABAIeAKAAAQAABJGgAAEkoIEEIEACCAAEABI=</HashCode>
+      <FileName>MSSQL\TB131_TEMPO_AULA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB132_FREQ_ALU" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wBACIATATHASAKSAATEwAkGgCC8G4EJiACMDEB4Yajk=</HashCode>
+      <FileName>MSSQL\TB132_FREQ_ALU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB133_CLASS_CUR" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAAAAABAAQQAAAAAAgAAuQABEAAAAAAAEAAABKgAA=</HashCode>
+      <FileName>MSSQL\TB133_CLASS_CUR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB134_USR_EMP" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAACgABARAQQAgAAAQAYAAGAQAEBAACAAABAMEAIAAA=</HashCode>
+      <FileName>MSSQL\TB134_USR_EMP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB135_PROG_SOCIAIS" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>g0KykDhSRBMUQuhCERCrWUOT+I1oAtAWUt6ZlETVAPA=</HashCode>
+      <FileName>MSSQL\TB135_PROG_SOCIAIS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB136_ALU_PROG_SOCIAIS" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iiAAESAQJAIQQCyQAUBJHFGCAIMIAUAEBAQBAAAEIBA=</HashCode>
+      <FileName>MSSQL\TB136_ALU_PROG_SOCIAIS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB137_TAREFAS_AGENDA" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gxgCOAAUXx7YMEiEBgABFBVAEEGOQ0LIIEorgAkEBN0=</HashCode>
+      <FileName>MSSQL\TB137_TAREFAS_AGENDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB138_INFORMATIVOS" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jAiCgACKREIQHAhQAQIoRgGACAsAEIAoAAERCQoIJYg=</HashCode>
+      <FileName>MSSQL\TB138_INFORMATIVOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB139_SITU_TAREF_AGEND" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACEAQBAERAQIABCAAAIGAAJOAAAAAAAAAAAEQACA=</HashCode>
+      <FileName>MSSQL\TB139_SITU_TAREF_AGEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB14_DEPTO" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>w4z/97iF5Bl1UVgpYbptVwv+XKP1nnLg4plDr2FrVT4=</HashCode>
+      <FileName>MSSQL\TB14_DEPTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB140_PRIOR_TAREF_AGEND" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAEQAAABAAQBANAAAAAAAGACIEAEAAAAAAACAAAAAA=</HashCode>
+      <FileName>MSSQL\TB140_PRIOR_TAREF_AGEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB141_LOG_FREQU_ALUNO" Collapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIgBIAEBAMQAwAAFJAABAGEABEEQABQgAQCCAACCgA=</HashCode>
+      <FileName>MSSQL\TB141_LOG_FREQU_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB142_LOG_ATIV_PROF_TURMA" Collapsed="true">
+    <Position X="19.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAB0kBAAQAEAKGABAEBGAgAEUVCJAEEYDEQA7Rhk=</HashCode>
+      <FileName>MSSQL\TB142_LOG_ATIV_PROF_TURMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB143_ATEST_MEDIC" Collapsed="true">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gNCAHJAQZwVQWimAE4AIkAuCIEEAUEkEIQUbEANEBrA=</HashCode>
+      <FileName>MSSQL\TB143_ATEST_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB144_NEGOCIACAO" Collapsed="true">
+    <Position X="23.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gcIBQAQiBQAYAgAYIUC7IEGBAAMSFABRAHAAJBAQQAA=</HashCode>
+      <FileName>MSSQL\TB144_NEGOCIACAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB145_NEGDOCNOVOS" Collapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIIBQAQkBAAQAAAQACAgAAGAQAE2EAAAAIAAAQAAoEA=</HashCode>
+      <FileName>MSSQL\TB145_NEGDOCNOVOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB146_NEGDOCANTIGOS" Collapsed="true">
+    <Position X="26.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIIBQAQgBAAQAAAQQCAgAAGAQAE2EAAAAIAAAQAAoEA=</HashCode>
+      <FileName>MSSQL\TB146_NEGDOCANTIGOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB147_RESER_CONSU_MEDIC" Collapsed="true">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAkiCAkIQQoIQQAkRAJAAwCAACEQABgIEQCEAACQAk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB148_TIPO_BOLSA" Collapsed="true">
+    <Position X="30.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iSAIVChRRAZRBADIaBCIAEGAYQEAhShAUANIYQIHQAA=</HashCode>
+      <FileName>MSSQL\TB148_TIPO_BOLSA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB149_PARAM_INSTI" Collapsed="true">
+    <Position X="32" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/+//9///f/739//9////////+//////9///////ffv8=</HashCode>
+      <FileName>MSSQL\TB149_PARAM_INSTI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB15_FUNCAO" Collapsed="true">
+    <Position X="33.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qkCAAAIgBAQQICAAERgAKEmCQBEQBiCAgAAAASEJAAA=</HashCode>
+      <FileName>MSSQL\TB15_FUNCAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB150_TIPO_OCORR" Collapsed="true">
+    <Position X="35.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACBAABAAQAAAAAglBAgOASEMIEAEAAAAAAEAABAA=</HashCode>
+      <FileName>MSSQL\TB150_TIPO_OCORR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB151_OCORR_COLABOR" Collapsed="true">
+    <Position X="37.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAACAQTAAQABCCAQAYAAGAQEEgwAAAAAQEGBAUBIg=</HashCode>
+      <FileName>MSSQL\TB151_OCORR_COLABOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB152_CALENDARIO_TIPO" Collapsed="true">
+    <Position X="39" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iCGAAAQQBAETAAAAAEACAQGDBwFAAAAAAAIQQABEAAA=</HashCode>
+      <FileName>MSSQL\TB152_CALENDARIO_TIPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB153_TIPO_PLANT" Collapsed="true">
+    <Position X="40.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iEIACAEKTaAQPBAABQwISAmIEBGtSJJAAEhKEwQAAAE=</HashCode>
+      <FileName>MSSQL\TB153_TIPO_PLANT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB154_PLANT_COLABOR" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAEAAAAABCAQEAAAAAQAAAEAAAWEQAJAAAACQAAAAQA=</HashCode>
+      <FileName>MSSQL\TB154_PLANT_COLABOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.tb155_plan_matr" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gxAyKWAEpH6dBysABCAAT/2FBwEgkAIHQRUxA6AwQog=</HashCode>
+      <FileName>MSSQL\TB155_PLAN_MATR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB156_FormaPagamento" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>goACVAQATACQCCAAAECAMAmAAwkGAgAgAQUNAgAABgE=</HashCode>
+      <FileName>MSSQL\TB156_FormaPagamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB157_CALENDARIO_ATIVIDADES" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gJGACUABDgAYAQkAIQCIFAGqACUgAEAAAAICEAAACBA=</HashCode>
+      <FileName>MSSQL\TB157_CALENDARIO_ATIVIDADES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.tb158_cheques" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qQiQIAAwJwOYBg9oAZBPcEGeIAkIBFwAxJCCImAURFA=</HashCode>
+      <FileName>MSSQL\tb158_cheques.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB159_AGENDA_PLANT_COLABOR" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>maYwgSonXAxUFhAQTAYKVMOlzsGQLrMgeAB00AAAxJk=</HashCode>
+      <FileName>MSSQL\TB159_AGENDA_PLANT_COLABOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB16_DIPLOMA" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>26V8EAMVRgCQAqyKDUm9C1vgLZfNgAMDoCAkSkEAJRA=</HashCode>
+      <FileName>MSSQL\TB16_DIPLOMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB160_PERFIL_UNIDADE" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>siUBkQEwFCYyEggPBQIMBDGyACMIRAK4AEGEPgAAQWA=</HashCode>
+      <FileName>MSSQL\TB160_PERFIL_UNIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB161_SALA" Collapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gJ4KgAEAREQQAAAAQwAIiAGA0QEQBAgABBCQAAAgAQA=</HashCode>
+      <FileName>MSSQL\TB161_SALA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB162_CLAS_INST" Collapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAGAIBAAUQAAAAAAIAAGAAAMAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB162_CLAS_INST.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB163_SALA_USUARIO" Collapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gB5CggCARAAQAADEQiwSAAGAACEQBEgAAECYCBAgAAE=</HashCode>
+      <FileName>MSSQL\TB163_SALA_USUARIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB164_INST_ESP" Collapsed="true">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAEAACBIAQAAAAAAAAAEGAAAkAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>MSSQL\TB164_INST_ESP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB166_EDIFICACAO" Collapsed="true">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2184BXi6/o99yK2/TT/c0Hm9yb1+r7N9el42/5/o4/c=</HashCode>
+      <FileName>MSSQL\TB166_EDIFICACAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB167_QUILOMBO" Collapsed="true">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABAAQAAAAAgAEAAGAAAEAAACAAAgAAABAhBA=</HashCode>
+      <FileName>MSSQL\TB167_QUILOMBO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB168_ABST_AGUA" Collapsed="true">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAIABAARAAAACBAAAAGAAAEAAQAAIAAAAAAABAA=</HashCode>
+      <FileName>MSSQL\TB168_ABST_AGUA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB169_ESG_SANI" Collapsed="true">
+    <Position X="26.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACQAAAAAAAAAAAAACAAAABBAAAAAAkAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB17_PLANO_AULA" Collapsed="true">
+    <Position X="28.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zZKhEA7FREKVAIm4BGkQBRWggsXFY41VKBCDE0Uc64s=</HashCode>
+      <FileName>MSSQL\TB17_PLANO_AULA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB170_MENSAGEM" Collapsed="true">
+    <Position X="30.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBQiggAQZAAQAAAAAgQACCUAACEQBQgABAqYAEAABQE=</HashCode>
+      <FileName>MSSQL\TB170_MENSAGEM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB171_PREDIO" Collapsed="true">
+    <Position X="32" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABAAQAAACABCAEAGACAEAAAACAAAAAAAEBAA=</HashCode>
+      <FileName>MSSQL\TB171_PREDIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB172_SERVICO" Collapsed="true">
+    <Position X="33.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQACUAAABQKQAAAgBQAKzRGExDEIMBCIApmEKkAVBBg=</HashCode>
+      <FileName>MSSQL\TB172_SERVICO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB173_PERFIL_EMPRESA" Collapsed="true">
+    <Position X="35.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QKH8qGwDACASVygdZw4eDJHyTcBxZrAbpxTnCk0Qiik=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB174_DEPTO_TIPO" Collapsed="true">
+    <Position X="37.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hQUCAIwARAAQAAQARAIQIamQAAMQAAAgAEAOBEBgUKI=</HashCode>
+      <FileName>MSSQL\TB174_DEPTO_TIPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB176_TIPO_OCUPA" Collapsed="true">
+    <Position X="39" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAgBAAQAgAAAEAEAAGAAIEsAAQAkAAQCBAAAAA=</HashCode>
+      <FileName>MSSQL\TB176_TIPO_OCUP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB177_TIPO_TERRE" Collapsed="true">
+    <Position X="40.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mAAAIAAABACQABAAAEgAAAGABEFAAAAAEACgAAEAgAA=</HashCode>
+      <FileName>MSSQL\TB177_TIPO_TERRE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB178_TIPO_DELIM_TERRE" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQARAIBABQABAAAEAAAImAAAEAIAAAIIAAACQAAAA=</HashCode>
+      <FileName>MSSQL\TB178_TIPO_DELIM_TERRE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB179_TIPO_EDIFI" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAgAAAEABAIQCAAABAAAQAHAAJEAAiACAAAACEAAAAg=</HashCode>
+      <FileName>MSSQL\TB179_TIPO_EDIFI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB18_GRAUINS" Collapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgYIDAAQAQAAQEBAJIGAQAEQACQEAAILAAEAIhg=</HashCode>
+      <FileName>MSSQL\TB18_GRAUINS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB180_TIPO_ESTAD_CONSERV" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAoAAAAABAAQAIAAAAhgAAGAAAEAQDAAAEAABAAAECg=</HashCode>
+      <FileName>MSSQL\TB180_TIPO_ESTAD_CONSERV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB181_TIPO_COBER" Collapsed="true">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBQggAAEBAgQAAAAAAAAAgGgAAFAAAAAAAAAAIAASBg=</HashCode>
+      <FileName>MSSQL\TB181_TIPO_COBER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB182_TIPO_UNIDA" Collapsed="true">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCgAACAABAAQAAEAAEAACCGAAAEFAEAgEAAAAAQAQAA=</HashCode>
+      <FileName>MSSQL\TB182_TIPO_UNIDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB183_ORIGE_AGUA" Collapsed="true">
+    <Position X="11" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBgIAAAABQAQgAAAAAAEAIGAAAEAAAAAAAIAAAAQAKg=</HashCode>
+      <FileName>MSSQL\TB183_ORIGE_AGUA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB184_FONTE_ENERG" Collapsed="true">
+    <Position X="12.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAIABRgQKAoAAAAAAAGAAAEIAAAAACAAAAEAIIg=</HashCode>
+      <FileName>MSSQL\TB184_FONTE_ENERG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB185_GERAD_ENERG" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAEABQQQAAAMAAAAAAWAAAEBFACAAEAAIAABACg=</HashCode>
+      <FileName>MSSQL\TB185_GERAD_ENERG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB186_SISTE_AQUEC" Collapsed="true">
+    <Position X="16.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACIAAAABAAQAIAEAAgAAAGAAAUAAAAAAAAgAQAAgKw=</HashCode>
+      <FileName>MSSQL\TB186_SISTE_AQUEC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB186_TIPO_OCUPA_EDIFI" Collapsed="true">
+    <Position X="18" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAgABNAAAAGAAAAAAAgCAAAAQAABAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB187_REDE_ESGOT" Collapsed="true">
+    <Position X="19.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABBAUQAAAgQAAAAGAgAUAAAAEEAggACAAAAg=</HashCode>
+      <FileName>MSSQL\TB187_REDE_ESGOT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB188_MONIT_CURSO_PROFE" Collapsed="true">
+    <Position X="21.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gcAEGB6BBYIdGKKAEESUBBniAMEEwAFJKggKFAA5jIs=</HashCode>
+      <FileName>MSSQL\TB188_MONIT_CURSO_PROFE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB189_AGEND_MONIT_PROFE" Collapsed="true">
+    <Position X="23.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gwAQAgY4BAAUAMSgABIQAIGkwgcEVKFEJAgCAAADDAM=</HashCode>
+      <FileName>MSSQL\TB189_AGEND_MONIT_PROFE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB19_INFOR_CURSO" Collapsed="true">
+    <Position X="25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>g5SAEAcItKIwgIhAAAAABBGgADEEAAGgIhEIQAAJQAo=</HashCode>
+      <FileName>MSSQL\TB19_INFOR_CURSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB190_LINHA_TRANSP" Collapsed="true">
+    <Position X="26.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mgACABAQFCDQQCUKQNAQgAEARQWABQQBQIEAAIgEBEo=</HashCode>
+      <FileName>MSSQL\TB190_LINHA_TRANSP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB191_OCORR_ALUNO" Collapsed="true">
+    <Position X="28.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5wASEgAQTIoQBJCAI6gZBj2gQhEs1CUEFCQHiBUHLJs=</HashCode>
+      <FileName>MSSQL\TB191_OCORR_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB192_CAIXA_LOGMOV" Collapsed="true">
+    <Position X="30.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>vrgPsLqu7ys4ik9ARY3r9vHdzW1P0MNjTfUKzc62iJo=</HashCode>
+      <FileName>MSSQL\TB192_CAIXA_LOGMOV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB193_FORMAPAGAMENTO_LOG" Collapsed="true">
+    <Position X="32" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACFAQAWAQQCKgQAICAMpgAAwkGAgEiAQUtAgIGBgk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB197_REMES_SOLIC" Collapsed="true">
+    <Position X="33.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>m4AAWCCARIIVAKQABUAIFFHTGAMEAIEAEAIAACkAAKA=</HashCode>
+      <FileName>MSSQL\TB197_REMES_SOLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB198_USR_UNID_FREQ" Collapsed="true">
+    <Position X="35.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAJGCBITAISQDkAAQBITHGwAAkUQoDABAQHAVBEBIk=</HashCode>
+      <FileName>MSSQL\TB198_USR_UNID_FREQ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB199_FREQ_FUNC" Collapsed="true">
+    <Position X="37.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iICCMAIIXCdUgEAPjQBIRBGAR0G0Ql1FAASChTBCDMg=</HashCode>
+      <FileName>MSSQL\TB199_FREQ_FUNC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB20_TIPOCON" Collapsed="true">
+    <Position X="39" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABAAQAAQAAAIAAAGAAAEAAOAAAgAAAAAAEAA=</HashCode>
+      <FileName>MSSQL\TB20_TIPOCON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB200_EQUIV_NOTA_CONCEITO" Collapsed="true">
+    <Position X="40.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACFICAQBACUIEkAAYAIECGAQBFAUGBAAAABAAAFABA=</HashCode>
+      <FileName>MSSQL\TB200_EQUIV_NOTA_CONCEITO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB201_AVAL_MASTER" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIMABBYYTAEQCMCEgZAYoIGsAAUXUURAICUCAAQEDAM=</HashCode>
+      <FileName>MSSQL\TB201_AVAL_MASTER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB202_AVAL_DETALHE" Collapsed="true">
+    <Position X="2.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kMAIACAEBkAQAEAAgAAAgAOAAAUAEABAgAAEAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB202_AVAL_DETALHE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB203_ACERVO_AQUISICAO" Collapsed="true">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iRcgAUAHTGiyAIyogREpAAmyCAECBZwABAeQRhEkBIE=</HashCode>
+      <FileName>MSSQL\TB203_ACERVO_AQUISICAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB204_ACERVO_ITENS" Collapsed="true">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kgMDAATITAKyQBhKKQSZFQORmMWwAOAAAqQgADKAhPA=</HashCode>
+      <FileName>MSSQL\TB204_ACERVO_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB205_USUARIO_BIBLIOT" Collapsed="true">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hqR9U6CZVBL7hk0qr8g7Vvf3njPzr/24z/V5Gd7PmvA=</HashCode>
+      <FileName>MSSQL\TB205_USUARIO_BIBLIOT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB206_RESERVA_BIBLIOTECA" Collapsed="true">
+    <Position X="9.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAgABQIAVAAQEAAQIMAABCGgCAkIIBgEEMAgAYBEiJA=</HashCode>
+      <FileName>MSSQL\TB206_RESERVA_BIBLIOTECA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB207_RESERVA_ITENS_BIBLIOTECA" Collapsed="true">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAKAMASABAIyCAgLCACBFHGQCEFAAEABUEAggCAAABA=</HashCode>
+      <FileName>MSSQL\TB207_RESERVA_ITENS_BIBLIOTECA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB208_CURSO_DOCTOS" Collapsed="true">
+    <Position X="12.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gRCgEQIABAIQgIAAkAAAFBEkAAEEAAEAKAAEAAEAAAo=</HashCode>
+      <FileName>MSSQL\TB208_CURSO_DOCTOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB209_HISTO_MATRICULA" Collapsed="true">
+    <Position X="14.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAEgwAzAAQCIAAAYAoAkEAAkEAAAAAAIkFAAAAAoE=</HashCode>
+      <FileName>MSSQL\TB209_HISTO_MATRICULA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB21_TIPOCAL" Collapsed="true">
+    <Position X="16.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAFBAQIAAAAAAAgAGAAEEgACgAAAAAAAAIAAQ=</HashCode>
+      <FileName>MSSQL\TB21_TIPOCAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB210_HIST_DIPLOMA" Collapsed="true">
+    <Position X="18" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAACkEAATAAwgAAAAAgIgAGgCAEAAAAEEAUBAAAABog=</HashCode>
+      <FileName>MSSQL\TB210_HIST_DIPLOMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB211_SOLIC_DIPLOMA" Collapsed="true">
+    <Position X="19.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oSICFEJFTADRCKFAGQAYIEO4IAOEIAEEIAUXAABEFoM=</HashCode>
+      <FileName>MSSQL\TB211_SOLIC_DIPLOMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB212_ITENS_PATRIMONIO" Collapsed="true">
+    <Position X="21.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBZCFgEuLAIQkWkhIMuARBPCIaW4IYQFiDQEICGhHQE=</HashCode>
+      <FileName>MSSQL\TB212_ITENS_PATRIMONIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB213_CLASSIF_PATR" Collapsed="true">
+    <Position X="23.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAABAARAAAAAAAEEAGAAAEAAAACAAAAACAACAA=</HashCode>
+      <FileName>MSSQL\TB213_CLASSIF_PATR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB214_ENTR_DOCUMENTO" Collapsed="true">
+    <Position X="25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggQAkRRARIIYAgQgAgABAAEAJEEAAAEAEBgSAABABMA=</HashCode>
+      <FileName>MSSQL\TB214_ENTR_DOCUMENTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB215_PROGR_TIPO_SOCEDU" Collapsed="true">
+    <Position X="26.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAQJEAUAAACEEmAAAGADAUAwJEAIAAhAACEAIA=</HashCode>
+      <FileName>MSSQL\TB215_PROGR_TIPO_SOCEDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB216_PATR_MOVEL" Collapsed="true">
+    <Position X="28.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAgUAAABIAQAAAQBCCDAhHDAAEjAAECAAACIAQAAAY=</HashCode>
+      <FileName>MSSQL\TB216_PATR_MOVEL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB217_PATR_IMOVEL" Collapsed="true">
+    <Position X="30.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggACAIjSBAQQBQAiAAiHwwPACkEFQQDCAAB1AAlAAAI=</HashCode>
+      <FileName>MSSQL\TB217_PATR_IMOVEL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB22_TIPOPAG" Collapsed="true">
+    <Position X="32" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6AQAAgIDBAAQgAAAAAIAAAGAAAESIAEgCIABAgAIAAA=</HashCode>
+      <FileName>MSSQL\TB22_TIPOPAG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB224_CONTA_CORRENTE" Collapsed="true">
+    <Position X="33.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sQJpBAAQZkgRWSQgUYOCYCmggIFiYAQAFEAOAJEEgAE=</HashCode>
+      <FileName>MSSQL\TB224_CONTA_CORRENTE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB225_CONTAS_UNIDADE" Collapsed="true">
+    <Position X="35.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oACAEAAABAIRQAQAAIGABBGAAAEgTAAAAAACAAEAAAA=</HashCode>
+      <FileName>MSSQL\TB225_CONTAS_UNIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB226_CARTEIRA_BANCO" Collapsed="true">
+    <Position X="37.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mCACAAgALAAQAAAAABgEAAGAAAEGAABAABAEAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB226_CARTEIRA_BANCO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB227_DADOS_BOLETO_BANCARIO" Collapsed="true">
+    <Position X="39" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0YLAAAOQDE0wIIZCIFoFQAWgACmMCIGRJQCIQgEAACs=</HashCode>
+      <FileName>MSSQL\TB227_DADOS_BOLETO_BANCARIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB228_PATRI_HISTO_MOVIM" Collapsed="true">
+    <Position X="40.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAFAEAATCAQgDJQAABBEAWCJCGeQigINgQEQBAiBIE=</HashCode>
+      <FileName>MSSQL\TB228_PATRI_HISTO_MOVIM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB229_TIPO_OCOR_PATRIMONIO" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAgBAgQQAgAAAFAAAOACCEAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB229_TIPO_OCOR_PATRIMONIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB230_OCORR_PATRIMONIO" Collapsed="true">
+    <Position X="2.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAEAbEEQARCAAAAEEAWiQAEQwAAgAAQCDBAADIQ=</HashCode>
+      <FileName>MSSQL\TB230_OCORR_PATRIMONIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB231_PATRI_HISTO_MOVIM_EXTERNA" Collapsed="true">
+    <Position X="4" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAFAABTAASCCCAAQEIcAGCAAEAAoCgAhUFQECEBoE=</HashCode>
+      <FileName>MSSQL\TB231_PATRI_HISTO_MOVIM_EXTERNA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB235_CEP" Collapsed="true">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAQBEgIABgAQgQFAAAgAsAGAAQEAQigAlAAAAEAEAAI=</HashCode>
+      <FileName>MSSQL\TB235_CEP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB236_LOG_ATIVIDADES" Collapsed="true">
+    <Position X="7.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kBEAkIiABAsSgKhQAEQAVVdEIAEEQEDKAAACAAAAABo=</HashCode>
+      <FileName>MSSQL\TB236_LOG_ATIVIDADES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB237_TIPO_PESSOA" Collapsed="true">
+    <Position X="9.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gISBgAACBAAQGGAACAAQIgGNAAMAFAAAAAAAQACBCAA=</HashCode>
+      <FileName>MSSQL\TB237_TIPO_PESSOA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB238_TIPO_ENDERECO" Collapsed="true">
+    <Position X="11" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIDBQAABBAASECBIAAAUiAGFABMQBAAACAAAQACABAI=</HashCode>
+      <FileName>MSSQL\TB238_TIPO_ENDERECO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB239_TIPO_TELEFONE" Collapsed="true">
+    <Position X="12.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>goCBAAABBAAWUCAAIAAQAAGFAAMABgAgAABAQICAIQA=</HashCode>
+      <FileName>MSSQL\TB239_TIPO_TELEFONE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB24_TPEMPRESA" Collapsed="true">
+    <Position X="14.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAQMKBAAUAAAAABAIAAOAAAEABAJQAAAAQIBhAAA=</HashCode>
+      <FileName>MSSQL\TB24_TPEMPRESA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB240_TIPO_LOGRADOURO" Collapsed="true">
+    <Position X="16.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAEEAhAAQAAABAIgAAAGCAIEAAAAEAAYAAAAQAAA=</HashCode>
+      <FileName>MSSQL\TB240_TIPO_LOGRADOURO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB241_ALUNO_ENDERECO" Collapsed="true">
+    <Position X="18" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4MSBBAAABxEQwCEAARBYEEGFAAMCSAAAQAAAQCCEDAA=</HashCode>
+      <FileName>MSSQL\TB241_ALUNO_ENDERECO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB242_ALUNO_TELEFONE" Collapsed="true">
+    <Position X="19.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hMCRAkAARAQwQAAAAQsYAEGFAAMQIgAAACBRQgCAAQA=</HashCode>
+      <FileName>MSSQL\TB242_ALUNO_TELEFONE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB246_UNIDADE_PERFIL_VAGAS" Collapsed="true">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAIEJUAwFDASAwAMgUAIEAmIAEGAEAIgBEwgkAgWDoA=</HashCode>
+      <FileName>MSSQL\TB246_UNIDADE_PERFIL_VAGAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB247_UNIDADE_PERFIL_DESEMPENHO" Collapsed="true">
+    <Position X="23.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAAQFAARAEAAgIAgIAPAAAGAAUAANAAAgA0EFwA=</HashCode>
+      <FileName>MSSQL\TB247_UNIDADE_PERFIL_DESEMPENHO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB248_UNIDADE_SALAS_AULA" Collapsed="true">
+    <Position X="25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQBCAipShBAYoIABBVAMFIHBCEOcBCAYACAJHAAFIqM=</HashCode>
+      <FileName>MSSQL\TB248_UNIDADE_SALAS_AULA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB249_MENSAG_SMS" Collapsed="true">
+    <Position X="26.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAaAABQRAIQACAAIZJQFAGRAAGBAg5ACRAWQgAOAIE=</HashCode>
+      <FileName>MSSQL\TB249_MENSAG_SMS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB25_EMPRESA" Collapsed="true">
+    <Position X="28.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>///+/////+//P/9/////////f///////9//v9///9/8=</HashCode>
+      <FileName>MSSQL\TB25_EMPRESA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB250_OPERA" Collapsed="true">
+    <Position X="30.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iUiiCJEjDSAwRIgAToBYgF3UAoUSYTQiciAAwMIhAUA=</HashCode>
+      <FileName>MSSQL\TB250_OPERA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB251_PLANO_OPERA" Collapsed="true">
+    <Position X="32" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iUGCChEgHQQUBAwChqAIgF2wjqEQkAQgUDAAxEPjAEA=</HashCode>
+      <FileName>MSSQL\TB251_PLANO_OPERA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB260_GRUPO" Collapsed="true">
+    <Position X="33.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0IAGCIAIBIAwAAQCAAAAAAHAAAXEEKECFAEgAQAAIBA=</HashCode>
+      <FileName>MSSQL\TB260_GRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB261_SUBGRUPO" Collapsed="true">
+    <Position X="35.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAASSQgBAAQAAIAQBEAEAGCIAGAADQAAgAECgEAgAI=</HashCode>
+      <FileName>MSSQL\TB261_SUBGRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB273_TIPO_ATIVIDADE" Collapsed="true">
+    <Position X="37.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQFAJCQAhECQAEIgAICABAGASAEUBQAkAgADClAiBEA=</HashCode>
+      <FileName>MSSQL\TB273_TIPO_ATIVIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB285_HIST_TRANS_ALUNO" Collapsed="true">
+    <Position X="39" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iARAAIAARAAQAAAABYAIAEOAAAMCAAABAAAAAAQIAYA=</HashCode>
+      <FileName>MSSQL\TB285_HIST_TRANS_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB285_INSTIT_TRANSF" Collapsed="true">
+    <Position X="40.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAiAAYAFCDUQJDgCABAAAmYHQEAACAyABSgSAAGKoA=</HashCode>
+      <FileName>MSSQL\TB285_INSTIT_TRANSF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB286_MOVIM_TRANSF_FUNCI" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gdgaAAAURCiXhnYBAU2YRRGAAkMiAYKMSmRENAJkIJk=</HashCode>
+      <FileName>MSSQL\TB286_MOVIM_TRANSF_FUNCI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB286_TIPO_BENECIF" Collapsed="true">
+    <Position X="2.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAiAQAARTQQQAAAAAAkSKQGHAAEAAAAAAAQgQAIEBgA=</HashCode>
+      <FileName>MSSQL\TB286_TIPO_BENECIF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB287_COLABOR_BENEF" Collapsed="true">
+    <Position X="4" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gADAAAAATAAQAAAAAAABAAGFEAEABAAAAIQAQAAAhJA=</HashCode>
+      <FileName>MSSQL\TB287_COLABOR_BENEF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB289_DISP_VAGA_TURMA" Collapsed="true">
+    <Position X="5.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iQAAACAABIAQBMEEATAIAAGAEAEsAQEBgoAiWIQAGAg=</HashCode>
+      <FileName>MSSQL\TB289_DISP_VAGA_TURMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB29_BANCO" Collapsed="true">
+    <Position X="7.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABAAABAAQAAQAAgGAAAGAAAEAQIEAAZACAgAQgAA=</HashCode>
+      <FileName>MSSQL\TB29_BANCO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB291_TIPO_PATRIM" Collapsed="true">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAEABAAQAAAAIAAFSIGAAAEAgAAAAIAEAAAQAAA=</HashCode>
+      <FileName>MSSQL\TB291_TIPO_PATRIM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB293_CUIDAD_SAUDE" Collapsed="true">
+    <Position X="11" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sYCSgICQBCSUChHFSUGoAkmBAJMgoBWAA8PUBgBChAQ=</HashCode>
+      <FileName>MSSQL\TB293_CUIDAD_SAUDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB294_RESTR_ALIMEN" Collapsed="true">
+    <Position X="12.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAggERAABCCQAggAA4BMAEuEAgcCCoAIAUCAAAAIEDE=</HashCode>
+      <FileName>MSSQL\TB294_RESTR_ALIMEN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB295_CAIXA" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gycAEAEAxZJwBEIACUgAprnIRBUBEk40AACCIAwaH9Q=</HashCode>
+      <FileName>MSSQL\TB295_CAIXA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB296_CAIXA_MOVIMENTO" Collapsed="true">
+    <Position X="16.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>rqgPMLiurSs4iGdgRI3o5PHdiU1L0AMrCfUKxciWiAA=</HashCode>
+      <FileName>MSSQL\TB296_CAIXA_MOVIMENTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB297_OPER_CAIXA" Collapsed="true">
+    <Position X="18" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAAIBgDAAQCCBAAABAYCGEQQEACAMChBQAAAAAhAQ=</HashCode>
+      <FileName>MSSQL\TB297_OPER_CAIXA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB298_CONEXAO_WEB" Collapsed="true">
+    <Position X="19.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkwoIAQABAAQCAAACAAASMGQQBMABAgAAAAQAAQBQBg=</HashCode>
+      <FileName>MSSQL\TB298_CONEXAO_WEB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB299_PAISES" Collapsed="true">
+    <Position X="21.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBBAAgVABAAQCIAAAAAAAAGQAAMAAgCAAAAQAAABABA=</HashCode>
+      <FileName>MSSQL\TB299_PAISES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB30_AGENCIA" Collapsed="true">
+    <Position X="23.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oBAAAoCFJAAyQAQEAKGgAIGSIAEBWACAJpBCQAWAAEA=</HashCode>
+      <FileName>MSSQL\TB30_AGENCIA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB300_QUADRO_HORAR_FUNCI" Collapsed="true">
+    <Position X="25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gNpABIASDQAY2gABBSOIiAGDAAEIAAgAwGygAHEEDJI=</HashCode>
+      <FileName>MSSQL\TB300_QUADRO_HORAR_FUNCI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB301_MURAL" Collapsed="true">
+    <Position X="26.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tIGSAMCQ5AAYAaYRGQEIiRXHEgEgIAYAAEQABAUkAaU=</HashCode>
+      <FileName>MSSQL\TB301_MURAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB302_DOTAC_GRUPO" Collapsed="true">
+    <Position X="28.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAgQCAGBACQACIAAAAAABmAAAMCEEEEAAEAEADIAAA=</HashCode>
+      <FileName>MSSQL\TB302_DOTAC_GRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB303_DOTAC_SUBGRUPO" Collapsed="true">
+    <Position X="30.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGCRiICCFQBTABAAQQAAAEGBABkAIEACAAAAgwAAQQQ=</HashCode>
+      <FileName>MSSQL\TB303_DOTAC_SUBGRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB304_ORIGE_FINAN" Collapsed="true">
+    <Position X="32" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAjUgAYAPAFQACIABwgAKAGAAAEEAAAAADCgQAAACGk=</HashCode>
+      <FileName>MSSQL\TB304_ORIGE_FINAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB305_DOTAC_ORCAM" Collapsed="true">
+    <Position X="33.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4kgKA4AIxQMcoJKABoCroKWAqCmBBAAAgAAiwIIgCYA=</HashCode>
+      <FileName>MSSQL\TB305_DOTAC_ORCAM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB306_AGEND_CONTATO" Collapsed="true">
+    <Position X="35.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>t0AANAAARQARKBFEFCCYAQHBAAmkpAAIQAYEIACACgQ=</HashCode>
+      <FileName>MSSQL\TB306_AGEND_CONTATO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB307_GRAFI_GERAL" Collapsed="true">
+    <Position X="37.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACIAgCABAgQJlAAwCICAQGgAgEBBAAEgEGBCAxgFBA=</HashCode>
+      <FileName>MSSQL\TB307_GRAFI_GERAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB308_GRAFI_USUAR" Collapsed="true">
+    <Position X="39" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAChQEARAAQAAAIAAgQAAWAAAEBAAAAAAAAEAAAAQA=</HashCode>
+      <FileName>MSSQL\TB308_GRAFI_USUAR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB309_CONTR_EXPOR_DADOS" Collapsed="true">
+    <Position X="40.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAmBATAhWYAAAAAAgCKGlAhkoAQhAEQQgAABgAKA=</HashCode>
+      <FileName>MSSQL\TB309_CONTR_EXPOR_DADOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB31_AREA_CONHEC" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAQBAAQwAAAAFAAAAGAAAEAASAAAAoAACAEAAA=</HashCode>
+      <FileName>MSSQL\TB31_AREA_CONHEC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB310_REFER_CONTEUDO" Collapsed="true">
+    <Position X="2.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gSCAAEISRQYQBKARAFBgIAXjIANEACVAIwEkgRhMAps=</HashCode>
+      <FileName>MSSQL\TB310_REFER_CONTEUDO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB311_REFER_ATIVID_AULAS" Collapsed="true">
+    <Position X="4" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkiEAAABRAAQACAYAAAiAAGgKAGQAAAAAgQEACBAAJ0=</HashCode>
+      <FileName>MSSQL\TB311_REFER_ATIVID_AULAS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB312_CONTR_COMPR" Collapsed="true">
+    <Position X="5.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>rmUdPunyX9pzZQrVYYYrjtP70eNYo/REYKSXyBC0PIc=</HashCode>
+      <FileName>MSSQL\TB312_CONTR_COMPR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB313_CATEG_CONTR" Collapsed="true">
+    <Position X="7.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gMCBAAECBAAQAACAgAARUAGFAQEAAAAAAJCIQACABAA=</HashCode>
+      <FileName>MSSQL\TB313_CATEG_CONTR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB314_SUB_CATEG_CONTR" Collapsed="true">
+    <Position X="9.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gMCBAiAIBAAQAABIhAAQAAHFAAEBACAAAAAAQFCAAAA=</HashCode>
+      <FileName>MSSQL\TB314_SUB_CATEG_CONTR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB315_AGRUP_RECDESP" Collapsed="true">
+    <Position X="11" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEEEAAIABIMQAAAAhBAAAAGACAEABEAAACAAEiLAAAA=</HashCode>
+      <FileName>MSSQL\TB315_AGRUP_RECDESP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB316_CBO_GRUPO" Collapsed="true">
+    <Position X="12.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAMIAAAARIAQCACAAAIAAAGEAAEABAAABAgAAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB316_CBO_GRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB317_AGRUP_BOLSA" Collapsed="true">
+    <Position X="14.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAEAAQwBBEWIEQBAhAAgQOAAEEAIAAAhAGQIQwEAgA=</HashCode>
+      <FileName>MSSQL\TB317_AGRUP_BOLSA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB318_AGRUP_ATIVEXTRA" Collapsed="true">
+    <Position X="16.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAABoQBAQQCAABAAImABGAAAUKAAAEIABAABAEEAA=</HashCode>
+      <FileName>MSSQL\TB318_AGRUP_ATIVEXTRA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB319_FLUXO_CAIXA" Collapsed="true">
+    <Position X="18" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAKKAiBFRAQZgACAIGIAAIGAQAEEAEEAAuAEEAEAFAA=</HashCode>
+      <FileName>MSSQL\TB319_FLUXO_CAIXA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB32_CLASSIF_ACER" Collapsed="true">
+    <Position X="19.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAADAFBAQgACAAAAAAAGAAAFAACAAAAAAAAAAAKA=</HashCode>
+      <FileName>MSSQL\TB32_CLASSIF_ACER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB320_CTRL_FLUXO_CAIXA" Collapsed="true">
+    <Position X="21.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQgFAABCAUoAwAAQhMAAGAAAEAAAJAAA4MAAAAAAg=</HashCode>
+      <FileName>MSSQL\TB320_CTRL_FLUXO_CAIXA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB321_ARQ_RET_BOLETO" Collapsed="true">
+    <Position X="23.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sBZl0AAIBmMzawQggtmwBPGTAGEkUAHAEAEWAKMADSI=</HashCode>
+      <FileName>MSSQL\TB321_ARQ_RET_BOLETO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB322_ARQ_REM_BOLETO" Collapsed="true">
+    <Position X="25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+Bdn8OJaDjGz6wcmAP3PEXm3AGVkdRHt+6eWd6MEzuY=</HashCode>
+      <FileName>MSSQL\TB322_ARQ_REM_BOLETO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB323_LIMPEZA_TIPO" Collapsed="true">
+    <Position X="26.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAABAAwAGEAAQCIAAGAAAEjIAgAAAAgAAEAAAA=</HashCode>
+      <FileName>MSSQL\TB323_LIMPEZA_TIPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB324_LIMPEZA_PROCED" Collapsed="true">
+    <Position X="28.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQQAQBkARBCUACADBAAAAgGUOAEQAAghAACACEQgAao=</HashCode>
+      <FileName>MSSQL\TB324_LIMPEZA_PROCED.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB33_EDITORA" Collapsed="true">
+    <Position X="30.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAEQBAAQAAAAABAAAAGAAQEAACAAIAAAAIAEAAA=</HashCode>
+      <FileName>MSSQL\TB33_EDITORA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB34_AUTOR" Collapsed="true">
+    <Position X="32" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEAQBAAQRAAAACAAAAGAAAEAAiAAgAAAAAAEAAI=</HashCode>
+      <FileName>MSSQL\TB34_AUTOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB35_ACERVO" Collapsed="true">
+    <Position X="33.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wACCBADQDAASABmQAAAAEIOCDGEBAEAgBI2AQiAkJBE=</HashCode>
+      <FileName>MSSQL\TB35_ACERVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB36_EMPR_BIBLIOT" Collapsed="true">
+    <Position X="35.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAYAYAICRHJQEAAAAQAIAQGAgQEAAEFCAAAAAAAAAIA=</HashCode>
+      <FileName>MSSQL\TB36_EMPR_BIBLIOT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB367_CATEG_PLANO_SAUDE" Collapsed="true">
+    <Position X="37.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEGCGAEABQAwBBAgAoIAoFmECglYZI0kKCgQwggjAGA=</HashCode>
+      <FileName>MSSQL\TB367_CATEG_PLANO_SAUDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB37_RECDES_FIXA" Collapsed="true">
+    <Position X="39" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>44002BVTp1oSAhCEIeSrdhnzkoEVIgxnjLAUIDS0wAc=</HashCode>
+      <FileName>MSSQL\TB37_RECDES_FIXA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB38_CTA_PAGAR" Collapsed="true">
+    <Position X="40.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4iIREG3T1hp9lCLc+XQ5ltHj2Ms8Es9MB6EhE/g1738=</HashCode>
+      <FileName>MSSQL\TB38_CTA_PAGAR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB39_HISTORICO" Collapsed="true">
+    <Position X="0.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9QACAAAQBAAwIACAJAAIACGAAAEAAAAAAAAEAgQEAAA=</HashCode>
+      <FileName>MSSQL\TB39_HISTORICO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB41_FORNEC" Collapsed="true">
+    <Position X="2.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2gg2F3QwRDT45RECKfhDuIXCBEmRi+Ci0aAYF0U0Y2w=</HashCode>
+      <FileName>MSSQL\TB41_FORNEC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB418_CONTR_EMAIL" Collapsed="true">
+    <Position X="4" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAhkAWAAVVwQCEEIAgDCKgGUiAGBYCRYHCQAAAgQhIY=</HashCode>
+      <FileName>MSSQL\TB418_CONTR_EMAIL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB419_EMAIL_USUAR_GEDUC" Collapsed="true">
+    <Position X="5.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQBFQEAgBAgYSCAIAAEFIEGCCAMQAGAAAAAACQAAAAw=</HashCode>
+      <FileName>MSSQL\TB419_EMAIL_USUAR_GEDUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB420_ANEXO_EMAIL" Collapsed="true">
+    <Position X="7.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQgAIBAgQAAAAAAEAAAGAAAEAgEAABACAAEAAAAA=</HashCode>
+      <FileName>MSSQL\TB420_ANEXO_EMAIL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB421_PARCEIROS" Collapsed="true">
+    <Position X="9.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4ThH+dNODewd5eGGNG10u//DXXl2wrWN+t1/1LFMxZ4=</HashCode>
+      <FileName>MSSQL\TB421_PARCEIROS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB422_REGIS_OCORR_PARCE" Collapsed="true">
+    <Position X="11" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ogIQAAAAVyFRASCIDAAAAAGAQAERAAAABgRAARIgAIA=</HashCode>
+      <FileName>MSSQL\TB422_REGIS_OCORR_PARCE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB423_EMAIL_USUAR_GEMPR" Collapsed="true">
+    <Position X="12.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAIAAQRAiQSQAIAAEAAAGAAAEQAGAAAAAAAQAAAoA=</HashCode>
+      <FileName>MSSQL\TB423_EMAIL_USUAR_GEMPR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB424_EMAIL_USUAR_GSAUD" Collapsed="true">
+    <Position X="14.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAoBggYCAEIAAEBIEGCCAMwAGAAAAAAAQAAAAA=</HashCode>
+      <FileName>MSSQL\TB424_EMAIL_USUAR_GSAUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB425_EMAIL_USUAR_GPARC" Collapsed="true">
+    <Position X="16.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAABAgQCAAKAAUAECGAAAEQAmCCSAAAAQCkgAA=</HashCode>
+      <FileName>MSSQL\TB425_EMAIL_USUAR_GPARC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB426_PROTO_ACAO" Collapsed="true">
+    <Position X="18" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAyEgAJ4VIAQGAACAgMAABGEAIlQBCgggAgUAiAwAoE=</HashCode>
+      <FileName>MSSQL\TB426_PROTO_ACAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB427_PROTO_ACAO_ITENS" Collapsed="true">
+    <Position X="19.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wwACIBhQRCGYCAFABwgACAnUABsQAAgxQICSQMBwAoQ=</HashCode>
+      <FileName>MSSQL\TB427_PROTO_ACAO_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB429_REFER_CUSTO" Collapsed="true">
+    <Position X="21.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iMIEGCBYBwIwAAAAEgZABBmGAAFUDAiAIAgSAIgAAIA=</HashCode>
+      <FileName>MSSQL\TB429_REFER_CUSTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB43_GRD_CURSO" Collapsed="true">
+    <Position X="23.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0RwUczQBBAY4gNbDaQlQVBWHQ0GMkREKMmGGqRSKhok=</HashCode>
+      <FileName>MSSQL\TB43_GRD_CURSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB430_MENSA_ANOBASE" Collapsed="true">
+    <Position X="25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ghmCQAAQBBAQAIAARAEAAAGoIQ2EAgAAEAAEAiCEAAg=</HashCode>
+      <FileName>MSSQL\TB430_MENSA_ANOBASE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB44_MODULO" Collapsed="true">
+    <Position X="26.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wDnAgEM5XEB3AYVAIJ4IHAWgAAUlNAzjtuEjFoDdDAI=</HashCode>
+      <FileName>MSSQL\TB44_MODULO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB47_CTA_RECEB" Collapsed="true">
+    <Position X="28.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5zsd0e/6V0v//6fc8fW7plH/3ek8Xt9/vbWrV/20r/8=</HashCode>
+      <FileName>MSSQL\TB47_CTA_RECEB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB48_GRADE_ALUNO" Collapsed="true">
+    <Position X="30.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gxAAESYAHCIQCIWEAxAYBFFgAAMkChEAoAACSAAACAs=</HashCode>
+      <FileName>MSSQL\TB48_GRADE_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB49_NOTA_ATIV_ALUNO" Collapsed="true">
+    <Position X="32" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gJEEQkDFxIGUBCACQCBUgEWJBkshxQB0wAUHkx6IB4k=</HashCode>
+      <FileName>MSSQL\TB49_NOTA_ATIV_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB53_GRP_CTA" Collapsed="true">
+    <Position X="33.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hYAAYAAQBAAQggGAMCABAIGBAEUQMAAAKCIAIAgEQAA=</HashCode>
+      <FileName>MSSQL\TB53_GRP_CTA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB54_SGRP_CTA" Collapsed="true">
+    <Position X="35.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>g0AEQAEBBQAYCAAAMAAJAgGBggUQEBBACIAAIAgAQAA=</HashCode>
+      <FileName>MSSQL\TB54_SGRP_CTA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB56_PLANOCTA" Collapsed="true">
+    <Position X="37.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQQEQgAgDQEQIgAAIAABQIGBBAGUIAAgAAEAIx0gSAA=</HashCode>
+      <FileName>MSSQL\TB56_PLANOCTA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB57_MOTIVCANC" Collapsed="true">
+    <Position X="39" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgAABBAAQAAAIAQAEAAGAAAGAAAAMAAAAAAACAAA=</HashCode>
+      <FileName>MSSQL\TB57_MOTIVCANC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB59_GESTOR_UNIDAD" Collapsed="true">
+    <Position X="40.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIWAIQzAAQACEAAQAISAGAAEEggICgBAUlEBAEBog=</HashCode>
+      <FileName>MSSQL\TB59_GESTOR_UNIDAD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB60_TIPO_IDIOMA" Collapsed="true">
+    <Position X="0.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAFgAQAEAAQAACAAGACAEAFAAIAAAAABAAAAA=</HashCode>
+      <FileName>MSSQL\TB60_TIPO_IDIOMA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB62_CURSO_FORM" Collapsed="true">
+    <Position X="2.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gwEQUAGQzEIQJQgAoSEINpWEQkEsZEBPgG5CIAB2FJE=</HashCode>
+      <FileName>MSSQL\TB62_CURSO_FORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB63_ESPECIALIDADE" Collapsed="true">
+    <Position X="4" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAEgEQBiIQIAIAAIAARBGAAAEAAAABAEAAIAAgAgE=</HashCode>
+      <FileName>MSSQL\TB63_ESPECIALIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB64_SOLIC_ATEND" Collapsed="true">
+    <Position X="5.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2w0GEvYw5iIwTYWAF5waFDXmjAN8DEEA9OgGcghQXIc=</HashCode>
+      <FileName>MSSQL\TB64_SOLIC_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB65_HIST_SOLICIT" Collapsed="true">
+    <Position X="7.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>i/gZ/WAgbAqUCYYIFY6adhnaTEFE0RUDIAFFOiIODYM=</HashCode>
+      <FileName>MSSQL\TB65_HIST_SOLICIT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB66_TIPO_SOLIC" Collapsed="true">
+    <Position X="9.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gzARxgAwjAAQA4SgBQkqhgmKQAMYsk1mIKUMsiIODAE=</HashCode>
+      <FileName>MSSQL\TB66_TIPO_SOLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB67_MOTIVTRANC" Collapsed="true">
+    <Position X="11" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAAAABgEQAAACABAAAAGAAAEEABAAAAAAAAAAwAA=</HashCode>
+      <FileName>MSSQL\TB67_MOTIVTRANC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB68_COORD_CURSO" Collapsed="true">
+    <Position X="12.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCBAEAAIRAIZAwAEAAAABBGQAAEAQEQCAAABAAAEAAA=</HashCode>
+      <FileName>MSSQL\TB68_COORD_CURSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB70_ITEM_AVAL" Collapsed="true">
+    <Position X="14.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0IAIEEAEB0oQAACAQSAAhBGDAAFACgFAAQQAAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB70_ITEM_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB71_QUEST_AVAL" Collapsed="true">
+    <Position X="16.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAIBEAEB0AQAEAAAiAAoAGRAAEAAABAAUAAACAAAAA=</HashCode>
+      <FileName>MSSQL\TB71_QUEST_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB72_TIT_QUES_AVAL" Collapsed="true">
+    <Position X="18" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0IAIAAAEBkAQAAAAAEAAgAOACAEAAQBAAAABAAAAAAA=</HashCode>
+      <FileName>MSSQL\TB72_TIT_QUES_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB73_TIPO_AVAL" Collapsed="true">
+    <Position X="19.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIIAAAQATQIQEQgAAoIAiEGBEIEEAABAAAAARAAAAAA=</HashCode>
+      <FileName>MSSQL\TB73_TIPO_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB74_UF" Collapsed="true">
+    <Position X="21.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAgBAAYAAAgAAICAAGACAMAAAAACIAAAAAgAgg=</HashCode>
+      <FileName>MSSQL\TB74_UF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB77_DPTO_CURSO" Collapsed="true">
+    <Position X="23.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAECAIBAIYAAAAQAAADBGAAAUAAAAgQAEBAQAEAAA=</HashCode>
+      <FileName>MSSQL\TB77_DPTO_CURSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB78_PESQ_AVAL" Collapsed="true">
+    <Position X="25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iSAAEBYAFUMYIKCAAUAQBBGiIAEEQgFIIAADACwACkc=</HashCode>
+      <FileName>MSSQL\TB78_PESQ_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB80_MASTERMATR" Collapsed="true">
+    <Position X="26.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gwgAUioAFgMSDMYW47QJFFelSQMVTRFgKIACKyIA0Qs=</HashCode>
+      <FileName>MSSQL\TB80_MASTERMATR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB81_DATA_CTRL" Collapsed="true">
+    <Position X="28.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iRAANDagbiIUAIAIIYIwRJGkUCMECgUAKCAAECEAQBo=</HashCode>
+      <FileName>MSSQL\TB81_DATA_CTRL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB82_DTCT_EMP" Collapsed="true">
+    <Position X="30.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mgihffyhf7KeCIKpNZs4fpU3eCUG6vUBCDQdMjNQVJI=</HashCode>
+      <FileName>MSSQL\TB82_DTCT_EMP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB83_PARAMETRO" Collapsed="true">
+    <Position X="32" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>///////////////9/////3/9///9////////v///f/8=</HashCode>
+      <FileName>MSSQL\TB83_PARAMETRO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB87_GRUPO_ITENS" Collapsed="true">
+    <Position X="33.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQACQAAgBAAQAAAAoACBQAHBAAEQAAAAAAAIIBAAQAA=</HashCode>
+      <FileName>MSSQL\TB87_GRUPO_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB88_SUBGRUPO_ITENS" Collapsed="true">
+    <Position X="35.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQACQAEABAAQAAQAIACBAAHBADEQACAAAAAoIBAAwAA=</HashCode>
+      <FileName>MSSQL\TB88_SUBGRUPO_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB89_UNIDADES" Collapsed="true">
+    <Position X="37.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gYAgUAAABAAQAgAAIAChAgHFBAGQQCECEAAAIQgAQAA=</HashCode>
+      <FileName>MSSQL\TB89_UNIDADES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB90_PRODUTO" Collapsed="true">
+    <Position X="39" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>v5q73bq7LWvb3HrfLXj5+53nz+P603SfPSd/LS39xfs=</HashCode>
+      <FileName>MSSQL\TB90_PRODUTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB901_DESEMP_ESCOL" Collapsed="true">
+    <Position X="40.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oCBKJAJARgEQABCgAABCAQmIBgnxCQAACoBEAhSEAYA=</HashCode>
+      <FileName>MSSQL\TB901_DESEMP_ESCOL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB902_DESEMP_MATRI" Collapsed="true">
+    <Position X="0.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oCElPBgBVAGYCxbgQEAjADnQBHkYkgZQogAQIBSVVaI=</HashCode>
+      <FileName>MSSQL\TB902_DESEMP_MATRI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB904_CIDADE" Collapsed="true">
+    <Position X="2.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAAAIgBAAQAQAAAAACAQGQAAEEACAAEIAAAAAUAgA=</HashCode>
+      <FileName>MSSQL\TB904_CIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB905_BAIRRO" Collapsed="true">
+    <Position X="4" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAIGCBQAQAQAiAACCQUGACAEEAAAAEAAQAQA2QAI=</HashCode>
+      <FileName>MSSQL\TB905_BAIRRO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB906_REGIAO" Collapsed="true">
+    <Position X="5.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iQAAAAA4BAAwAgAACAAAAEGAAgEAAAAAQggBEAIAACA=</HashCode>
+      <FileName>MSSQL\TB906_REGIAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB907_AREA" Collapsed="true">
+    <Position X="7.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAAQAkBAAwSAAAACAAAFGAqAEQAIAAAggAAAIAACA=</HashCode>
+      <FileName>MSSQL\TB907_AREA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB908_SUBAREA" Collapsed="true">
+    <Position X="9.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAACgoBCQwCAAAAAAABEGAQAEAABQAAggAIAKAAAA=</HashCode>
+      <FileName>MSSQL\TB908_SUBAREA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB91_MOV_PRODUTO" Collapsed="true">
+    <Position X="11" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>uQAGUAgMBGIwBAEAMRAJ1JGBBAkUxOBCEAQKIABi2AA=</HashCode>
+      <FileName>MSSQL\TB91_MOV_PRODUTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB93_MARCA" Collapsed="true">
+    <Position X="12.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAQABABAAQAAACIAABHEOBEAEQACAAAAAAIAAAQAA=</HashCode>
+      <FileName>MSSQL\TB93_MARCA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB93_TIPO_MOVIMENTO" Collapsed="true">
+    <Position X="14.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQEEwAoAjAAQCAAAIAghEIGJAAEQAACQEggCoCQASAA=</HashCode>
+      <FileName>MSSQL\TB93_TIPO_MOVIMENTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB95_CATEGORIA" Collapsed="true">
+    <Position X="16.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yQACQQAABAAQgAAAIAMBAAGJAAMQECAAAgAAIAAAQBA=</HashCode>
+      <FileName>MSSQL\TB95_CATEGORIA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB951_ESTAT_ESCOL" Collapsed="true">
+    <Position X="18" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oiAAJQAARQEQAJCiAQAKAQmQhAnwCZAIAgBAABKEhIA=</HashCode>
+      <FileName>MSSQL\TB951_ESTAT_ESCOL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB952_ESTAT_MODAL" Collapsed="true">
+    <Position X="19.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oikAJQIARAEYABCkAQAKAQmQBAn0CZAIAgBACBCEhIg=</HashCode>
+      <FileName>MSSQL\TB952_ESTAT_MODAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB953_ESTAT_SERIE" Collapsed="true">
+    <Position X="21.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ojAAJQAARAEQARCgAAACAQmQBAnwCZCIAgBBAhKEhIg=</HashCode>
+      <FileName>MSSQL\TB953_ESTAT_SERIE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB954_ESTAT_MATER" Collapsed="true">
+    <Position X="23.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oiAAJUAARAEQABCgAAACgQmRBAnxiZAIAgBABBCEhIA=</HashCode>
+      <FileName>MSSQL\TB954_ESTAT_MATER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB955_ESTAT_SERMAT" Collapsed="true">
+    <Position X="25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ojAAJQCBRAEQABCgAAACAUnUBAnxCZAIAgBIgBiEhog=</HashCode>
+      <FileName>MSSQL\TB955_ESTAT_SERMAT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB956_ESTAT_SERTUR" Collapsed="true">
+    <Position X="26.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oiAAJQAARAGQABCgEAACIQnQBAnwCZAIIgBAgByEh4g=</HashCode>
+      <FileName>MSSQL\TB956_ESTAT_SERTUR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB96_ESTOQUE" Collapsed="true">
+    <Position X="28.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hQABRAAkBEAyAYJAMQANggGBAAEVUCDABAQiIIBDQEA=</HashCode>
+      <FileName>MSSQL\TB96_ESTOQUE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB97_COR" Collapsed="true">
+    <Position X="30.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQARAAIJAAQAAAACAACAQWAAAkAACFABAAAAgAAAAA=</HashCode>
+      <FileName>MSSQL\TB97_COR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TB98_TAMANHO" Collapsed="true">
+    <Position X="32" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAggRAAIJABQAAAAAAAQIgGgAAECACAAAAAAAIAAAAA=</HashCode>
+      <FileName>MSSQL\TB98_TAMANHO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBE196_OCORR_DISCI" Collapsed="true">
+    <Position X="33.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yUCCCAAQBQQQBRMAZoIQoAuQQgEw1BAgAKCQmUAlABA=</HashCode>
+      <FileName>MSSQL\TBE196_OCORR_DISCI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBE220_MATRCUR_PAGTO" Collapsed="true">
+    <Position X="35.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oNABUipYjyISWMAUGIEZLFOoiKGERSDtyugCKAIkChQ=</HashCode>
+      <FileName>MSSQL\TBE220_MATRCUR_PAGTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBE221_PAGTO_CARTAO" Collapsed="true">
+    <Position X="37.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0ACgDVAAhWAYIhEAABLAkGGAACkAyAAIIkgAAICMIgA=</HashCode>
+      <FileName>MSSQL\TBE221_PAGTO_CARTAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBE222_PAGTO_CHEQUE" Collapsed="true">
+    <Position X="39" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0gAgAAQAFGiYIgEAQAqAACGABCEAyCAAAgAAQICAIoA=</HashCode>
+      <FileName>MSSQL\TBE222_PAGTO_CHEQUE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBLOGIN" Collapsed="true">
+    <Position X="40.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEAAABAoYAAgAABAANBEgCAkAQFAAAAEJAAEAQRA=</HashCode>
+      <FileName>MSSQL\TBLOGIN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBPROX_PASSOS" Collapsed="true">
+    <Position X="0.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBCAgDAApoAQACrIAAANQAGJAAEAoaAiMAAEBBBBgJE=</HashCode>
+      <FileName>MSSQL\TBPROX_PASSOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS174_AGEND_HORAR" Collapsed="true">
+    <Position X="2.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>//26/r2z/rt//d6rH/+N/FG+f9/WfP73/Wre7zrz85c=</HashCode>
+      <FileName>MSSQL\TBS174_AGEND_HORAR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS175_LOG_ALTER_AGENDA" Collapsed="true">
+    <Position X="4" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gANAESAABgMUBIIAgABBhXWAACEOQCFEAQACAQQEAAQ=</HashCode>
+      <FileName>MSSQL\TBS175_LOG_ALTER_AGENDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS176_ESUS_CADAS_DOMIC" Collapsed="true">
+    <Position X="5.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>3h3Fd1MRVKB9ZFBKgxuy6R27CG3yI4ixgrHVKhpkZoI=</HashCode>
+      <FileName>MSSQL\TBS176_ESUS_CADAS_DOMIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS177_ESUS_DOMIC_FAMILIA" Collapsed="true">
+    <Position X="7.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCgBEQAEDEAQQBSoAgQECAGAGAUTACACAAAAhAQABgA=</HashCode>
+      <FileName>MSSQL\TBS177_ESUS_DOMIC_FAMILIA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS194_PRE_ATEND" Collapsed="true">
+    <Position X="9.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>11tjW+8pnYvy86fQ/+88zHeU/en6MPjue3v+/6vqpvc=</HashCode>
+      <FileName>MSSQL\TBS194_PRE_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS194_PRE_ATEND_B" Collapsed="true">
+    <Position X="11" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>11tjW+8pnYvS86fQ/+88zHYU/en6MPDue3v8/yvqpvc=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS195_ENCAM_MEDIC" Collapsed="true">
+    <Position X="12.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mwmrCSEkNAA1IK0QcUYKCKGkYBOPUKhgSWyOZoXCJCE=</HashCode>
+      <FileName>MSSQL\TBS195_ENCAM_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS195_ENCAM_MEDIC_B" Collapsed="true">
+    <Position X="14.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mwkrCSEkNAA1IK0QcUYKCKGkYJGPUKBgSWyOZoXCJBE=</HashCode>
+      <FileName>MSSQL\TBS195_ENCAM_MEDIC_B.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS218_EXAME_MEDICO" Collapsed="true">
+    <Position X="16.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAoAQAAATKAYAIIAiQAIUEGAIKUCIIEiABEgBTAAAAo=</HashCode>
+      <FileName>MSSQL\TBS218_EXAME_MEDICO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS219_ATEND_MEDIC" Collapsed="true">
+    <Position X="18" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kgACWyB0jic+RIwKEoIMFFGmKs0EaABCOWUCooIDsAI=</HashCode>
+      <FileName>MSSQL\TBS219_ATEND_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS223_CID" Collapsed="true">
+    <Position X="19.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAAACANowQACQAEBQEBMGAAAERAAAADAgihACAIEQ=</HashCode>
+      <FileName>MSSQL\TBS223_CID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS330_RECEI_ATEND_MEDIC" Collapsed="true">
+    <Position X="21.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>koAARiQIBSIYEATgAcoIGMGAIAUgFAJiABcgFAAAoIg=</HashCode>
+      <FileName>MSSQL\TBS330_RECEI_ATEND_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS331_SERVI_AMBULATORIAIS" Collapsed="true">
+    <Position X="23.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAgSMAAJQASBGAgC4AIBCmgAAEAAACAAKIABQAAAAA=</HashCode>
+      <FileName>MSSQL\TBS331_SERVI_AMBULATORIAIS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS332_ATEND_SERV_AMBUL" Collapsed="true">
+    <Position X="25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wggQaCBADiAYMYZAlQBMEEmEICUjAAAiCBGkFAACEAk=</HashCode>
+      <FileName>MSSQL\TBS332_ATEND_SERV_AMBUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS333_ATEST_MEDIC_PACIE" Collapsed="true">
+    <Position X="26.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkAAeDBgRSJYAGwABEgIVFuDoIUCAAAqA1EgACJyUAo=</HashCode>
+      <FileName>MSSQL\TBS333_ATEST_MEDIC_PACIE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS334_DIAGN_ATEND_MEDIC" Collapsed="true">
+    <Position X="28.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEQCABABucQAQEAAQIIEAGEAMUCAAAiAFEQACAQgAg=</HashCode>
+      <FileName>MSSQL\TBS334_DIAGN_ATEND_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS335_ISDA_TIPO" Collapsed="true">
+    <Position X="30.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gFEAGAAABUAYBAAgAoAAABmAAgEQAAygAGAQDgiAAAQ=</HashCode>
+      <FileName>MSSQL\TBS335_ISDA_TIPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS336_ISDA_ITENS" Collapsed="true">
+    <Position X="32" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hEFACAAAFwEQBAAgAoBAAFuAEIEQIighAKAQAgCAAIg=</HashCode>
+      <FileName>MSSQL\TBS336_ISDA_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS337_TIPO_DORES" Collapsed="true">
+    <Position X="33.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAACBRABxAQBaAAMoAAABmAIIEWYAgpACF4AgggAAw=</HashCode>
+      <FileName>MSSQL\TBS337_TIPO_DORES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS338_CID_GERAL" Collapsed="true">
+    <Position X="35.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBCAABCALAQQEAAJABAQBIGERBUAAAAAJKgABAAAAEo=</HashCode>
+      <FileName>MSSQL\TBS338_CID_GERAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS339_CAMPSAUDE" Collapsed="true">
+    <Position X="37.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>10AT6pOVpTSW5zoXSpLASduVEfUvTXWk5Poj5xFHkjY=</HashCode>
+      <FileName>MSSQL\TBS339_CAMPSAUDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS340_CAMPSAUDE_COLABOR" Collapsed="true">
+    <Position X="39" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iMDALRoxBTERlgAgloAgCCulKgeBQrIUIyBWBISAwAI=</HashCode>
+      <FileName>MSSQL\TBS340_CAMPSAUDE_COLABOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS341_CAMP_ATEND" Collapsed="true">
+    <Position X="40.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nsARGqKATSoQhwQCAQAI7jmACGMQSEASIBB2RhQAiBQ=</HashCode>
+      <FileName>MSSQL\TBS341_CAMP_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS342_MORBI_HOSPITALAR" Collapsed="true">
+    <Position X="0.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAEKFAgCIwAFQgUAKDNJgUhGAyQhAAEAexNAKCoOA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS343_MORTALIDADE" Collapsed="true">
+    <Position X="2.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wMAAgQygzokQAEKAAJACRgGEEDEBJASAFBSggRCCQIg=</HashCode>
+      <FileName>MSSQL\TBS343_MORTALIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS344_UTILI_RECURSOS" Collapsed="true">
+    <Position X="4" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kBAh0NBULBrQCBZgiDAKBBZQBQCQmgBMEBalYAQAYAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS345_VACINA" Collapsed="true">
+    <Position X="5.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iEAACAgABQAQBQAAQoQgABmJIIERKAkiAqISAgACQMI=</HashCode>
+      <FileName>MSSQL\TBS345_VACINA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS346_PLANO_FINAN_CAMPAN" Collapsed="true">
+    <Position X="7.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEBACAgCRQgaBgAAAqAggImC5AEmUICBDuICEAAAAsA=</HashCode>
+      <FileName>MSSQL\TBS346_PLANO_FINAN_CAMPAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS347_CENTR_REGUL" Collapsed="true">
+    <Position X="9.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ogECEQDFhQEQQCAAQKAoFBOQIEUAAAAiAAMBAhAAAAA=</HashCode>
+      <FileName>MSSQL\TBS347_CENTR_REGUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS348_LOG_CENTR_REGUL" Collapsed="true">
+    <Position X="11" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAZEQQBRBAAQACCEIABRDAmQGQUCAAAIAkAhAAAggAE=</HashCode>
+      <FileName>MSSQL\TBS348_LOG_CENTR_REGUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS349_CENTR_REGUL_OCORR" Collapsed="true">
+    <Position X="12.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2oCTQAoA1wgwSCAggEATWQHikBWAoIICCAkBANwAAAA=</HashCode>
+      <FileName>MSSQL\TBS349_CENTR_REGUL_OCORR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS350_ITEM_CENTR_REGUL" Collapsed="true">
+    <Position X="14.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ogQOEwHdhwAQQGGNZKBRfBmRuQUCRIEKIkEKolRghAE=</HashCode>
+      <FileName>MSSQL\TBS350_ITEM_CENTR_REGUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS353_VALOR_PROC_MEDIC_PROCE" Collapsed="true">
+    <Position X="16.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAxmBjCARAgckggELgQUpCOAAoUCAQiIJIBAAADREkM=</HashCode>
+      <FileName>MSSQL\TBS353_VALOR_PROC_MEDIC_PROCE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS354_PROC_MEDIC_GRUPO" Collapsed="true">
+    <Position X="18" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEkIKARABQAQJIAKYoACABmAAAGBAAAkASAAAgAAAAA=</HashCode>
+      <FileName>MSSQL\TBS354_PROC_MEDIC_GRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS355_PROC_MEDIC_SGRUP" Collapsed="true">
+    <Position X="19.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEgACiEAFwAQBCSAAoAAABmBAAEQAAAgICAAEgQAIAA=</HashCode>
+      <FileName>MSSQL\TBS355_PROC_MEDIC_SGRUP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS356_PROC_MEDIC_PROCE" Collapsed="true">
+    <Position X="21.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kYgRKMkQRcT0UHPACgK1xk3QOVGjPqK4XyiZdW7fIfI=</HashCode>
+      <FileName>MSSQL\TBS356_PROC_MEDIC_PROCE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS357_PROC_MEDIC_FINAN" Collapsed="true">
+    <Position X="23.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>osTaDTgJB4k0YCygY+YKrheEKQlwdIgiBAiU0gDmEAA=</HashCode>
+      <FileName>MSSQL\TBS357_PROC_MEDIC_FINAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS358_PROC_MEDIC_UNID" Collapsed="true">
+    <Position X="25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gMiCCAAQTQQRBEAAA8AMxBmAAwtCAIAgACAgogQhQQA=</HashCode>
+      <FileName>MSSQL\TBS358_PROC_MEDIC_UNID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS359_VACIN_ATEND_CAMPA" Collapsed="true">
+    <Position X="26.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jECCGCAABQIQAgAAgAAAhJmAAAkEQABAIIACAgAAACA=</HashCode>
+      <FileName>MSSQL\TBS359_VACIN_ATEND_CAMPA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS360_VACIN_CAMPSAUDE" Collapsed="true">
+    <Position X="28.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hFSCCAAABQAwBhggAoABoBmAAglQRIggICAQggAhEAA=</HashCode>
+      <FileName>MSSQL\TBS360_VACIN_CAMPSAUDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS361_CONDI_PLANO_SAUDE" Collapsed="true">
+    <Position X="30.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hIQqAiBARAkUgAhALgISZCOwBgEAAwIAMIIIBAQBAAA=</HashCode>
+      <FileName>MSSQL\TBS361_CONDI_PLANO_SAUDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS362_ASSOC_PLANO_PROCE" Collapsed="true">
+    <Position X="32" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEiiCmBARQkQhAgALoAQpCuAAgECAQAAKKAAwAARAAA=</HashCode>
+      <FileName>MSSQL\TBS362_ASSOC_PLANO_PROCE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS363_CONSUL_PAGTO" Collapsed="true">
+    <Position X="33.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>scBIC2Mpry9eV0Y0moFsUk+qi68GLwGluGkBqobjAAQ=</HashCode>
+      <FileName>MSSQL\TBS363_CONSUL_PAGTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS364_PAGTO_CARTAO" Collapsed="true">
+    <Position X="35.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0ACkDVCAhUAYIrkAABLAkGGAACkAyASIA0gAACCMIgA=</HashCode>
+      <FileName>MSSQL\TBS364_PAGTO_CARTAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS365_PAGTO_CHEQUE" Collapsed="true">
+    <Position X="37.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AAgAAQAFEiYMoEAQAqAACGABCEAyCQAAgAAQACAIoA=</HashCode>
+      <FileName>MSSQL\TBS365_PAGTO_CHEQUE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS366_FUNCAO_SIMPL" Collapsed="true">
+    <Position X="39" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wMCCCCAwBQAwBAAhAoIAoFmEAglQBIggACyQggAhAAA=</HashCode>
+      <FileName>MSSQL\TBS366_FUNCAO_SIMPL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS367_RECEP_SOLIC" Collapsed="true">
+    <Position X="40.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>itSCGDFABWIwFAQgQsIapF2MSmlQB4ggkCkQ0oCpCCA=</HashCode>
+      <FileName>MSSQL\TBS367_RECEP_SOLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS368_RECEP_SOLIC_ITENS" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFzSDAABBWIyFKAgRoJYoF2AKileFZo4uiOYhkBjmIQ=</HashCode>
+      <FileName>MSSQL\TBS368_RECEP_SOLIC_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS369_RECEP_REGUL_ITENS" Collapsed="true">
+    <Position X="2.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iNzyjAAABWKwFAAgSoIwoh2AKmnWF4hgECcQ4kghGAA=</HashCode>
+      <FileName>MSSQL\TBS369_RECEP_REGUL_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS370_PLANE_AVALI" Collapsed="true">
+    <Position X="4" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jlSCCKAABWIyBARhA4IYpB2ICinYBY4gECEQg4BhDAA=</HashCode>
+      <FileName>MSSQL\TBS370_PLANE_AVALI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS371_PESQU_AVALI_PROCE_SOLIC" Collapsed="true">
+    <Position X="5.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFSSKAABBWAwBhAgAoIRoBmACglQRIggMCEQgoAhDBA=</HashCode>
+      <FileName>MSSQL\TBS371_PESQU_AVALI_PROCE_SOLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS372_AGEND_AVALI" Collapsed="true">
+    <Position X="7.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+9eKu63C72J6jwZuNu78qvmuD3t2LN/yeK/S75LvzfU=</HashCode>
+      <FileName>MSSQL\TBS372_AGEND_AVALI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS373_AGEND_AVALI_ITENS" Collapsed="true">
+    <Position X="9.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFyCCAFIBWAwBAAgCoIQqFmAgglTjIggECkSggAhSQA=</HashCode>
+      <FileName>MSSQL\TBS373_AGEND_AVALI_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS374_LOG_ITENS_AGEND" Collapsed="true">
+    <Position X="11" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oC6QneFBnHC0bLbqARQ0wF3TcNGiT1pJhuir5vAoiEI=</HashCode>
+      <FileName>MSSQL\TBS374_LOG_ITENS_AGEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS375_LOG_ALTER_STATUS_AGEND_HORAR" Collapsed="true">
+    <Position X="12.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kkCCGSAQVQBQBDQCAsAYkAmsAgGTBAAIAClghACpCAQ=</HashCode>
+      <FileName>MSSQL\TBS375_LOG_ALTER_STATUS_AGEND_HORAR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS376_AGENDA_FERIADOS" Collapsed="true">
+    <Position X="14.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mHSCCQAAhWA4jAAgAoIQoBmAEglRBIgoECERggAhCAA=</HashCode>
+      <FileName>MSSQL\TBS376_AGENDA_FERIADOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS377_INDIC_PACIENTES" Collapsed="true">
+    <Position X="16.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFWSSQhABWA5FAAiJosQoFmMQgnQLIgpGiGcw0AlCAA=</HashCode>
+      <FileName>MSSQL\TBS377_INDIC_PACIENTES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS378_ASSOC_ITENS_AVALI_PROFI" Collapsed="true">
+    <Position X="18" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ilyCCwAABWAwBIAoIoKYqFmRCwtWRIppOCFzgoQjTTA=</HashCode>
+      <FileName>MSSQL\TBS378_ASSOC_ITENS_AVALI_PROFI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS379_RESTR_ATEND" Collapsed="true">
+    <Position X="19.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yFSCCAAABWAwBAAgAoIWtl2AAglYB4ggECEQggAhCAA=</HashCode>
+      <FileName>MSSQL\TBS379_RESTR_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS380_LOG_ALTER_STATUS_AGEND_AVALI" Collapsed="true">
+    <Position X="21.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kkaCGAEQVQDQBCAAHoABgAmAAgGCABAIACFAoAApAAQ=</HashCode>
+      <FileName>MSSQL\TBS380_LOG_ALTER_STATUS_AGEND_AVALI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS381_AVALI_RECEP" Collapsed="true">
+    <Position X="23.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iNSKCFAABWIwBAggQoIQoB+ASinSB4gkkSka0gAhCCA=</HashCode>
+      <FileName>MSSQL\TBS381_AVALI_RECEP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS382_INFOS_GERAIS" Collapsed="true">
+    <Position X="25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFWCCAAAJXAwBEAgEoIQoB2BAgnQBIigkCGQwgAlGAA=</HashCode>
+      <FileName>MSSQL\TBS382_INFOS_GERAIS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS383_INFOS_GERAIS_PACIENTE" Collapsed="true">
+    <Position X="26.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ikCCCCAABUAQBAQgAoIIgAuABgEAAgAAACEAgACBQAA=</HashCode>
+      <FileName>MSSQL\TBS383_INFOS_GERAIS_PACIENTE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS384_USUAR_APP" Collapsed="true">
+    <Position X="28.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>itSiCDAGBWAwLQQkEtIYoBmUBglVRIhwFCcyghCzbIA=</HashCode>
+      <FileName>MSSQL\TBS384_USUAR_APP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS385_CID_ANALI_PREVI" Collapsed="true">
+    <Position X="30.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFSCCAAAB2QwBAAgAoIQoBmADilSBIggECEQgoAlDAA=</HashCode>
+      <FileName>MSSQL\TBS385_CID_ANALI_PREVI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS386_ITENS_PLANE_AVALI" Collapsed="true">
+    <Position X="32" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ilyLmhIghWI0hMopYsOcqFmoiwtSTKhpUKExwgxhyzA=</HashCode>
+      <FileName>MSSQL\TBS386_ITENS_PLANE_AVALI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS387_DEFIC" Collapsed="true">
+    <Position X="33.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFSCKAAQDfAwBAAgAoI0oVmgAglQBIggECGQgwAhCAA=</HashCode>
+      <FileName>MSSQL\TBS387_DEFIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS389_ASSOC_ITENS_PLANE_AGEND" Collapsed="true">
+    <Position X="35.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAACQAAFAIQAAAAAAAAAAGAAAEAAgIgEAACAAAAAAA=</HashCode>
+      <FileName>MSSQL\TBS389_ASSOC_ITENS_PLANE_AGEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS390_ATEND_AGEND" Collapsed="true">
+    <Position X="37.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>md+zHyeKfe9232Z6V/qc5/nff2t6Ntruf+//9uvvTv4=</HashCode>
+      <FileName>MSSQL\TBS390_ATEND_AGEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS391_QUEST_PESQU_ATEND" Collapsed="true">
+    <Position X="39" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iHSCCACABWAxBBEgAoIQoBmAAglQBMggECEQiwAhCAA=</HashCode>
+      <FileName>MSSQL\TBS391_QUEST_PESQU_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS392_ANEXO_ATEND" Collapsed="true">
+    <Position X="40.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yHSCmAAABWAwBCEgioIQpHmQUgtSJawoMjUwgyAjClA=</HashCode>
+      <FileName>MSSQL\TBS392_ANEXO_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS393_FECHA_FINAN_PLANO" Collapsed="true">
+    <Position X="0.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>itzCSCEERXAwDASgAqIY4BnQCglWhIkgeWEQggCjCQA=</HashCode>
+      <FileName>MSSQL\TBS393_FECHA_FINAN_PLANO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS394_RESUM_FINAN" Collapsed="true">
+    <Position X="2.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFaiCAAIBWIwBCQgIpYQsF2DCmnQBZiiETMQogAhDAA=</HashCode>
+      <FileName>MSSQL\TBS394_RESUM_FINAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS395_HISTO_VALOR_RESUM_FINAN" Collapsed="true">
+    <Position X="4" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2lSCCAQQBWA0FAQoKqJQoBmYwwlQBIkgECEQgwAjCAE=</HashCode>
+      <FileName>MSSQL\TBS395_HISTO_VALOR_RESUM_FINAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS396_ATEND_ORCAM" Collapsed="true">
+    <Position X="5.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qOnODCBEVUQcDGEgEoZIiBnYigMSbAAJAOGIg1DjIOY=</HashCode>
+      <FileName>MSSQL\TBS396_ATEND_ORCAM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS397_ATEND_PROC_PLANO" Collapsed="true">
+    <Position X="7.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iGjKCABARUAQBEAAAoKAgAmAigECCAAAECEAkQABAAA=</HashCode>
+      <FileName>MSSQL\TBS397_ATEND_PROC_PLANO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS398_ATEND_EXAMES" Collapsed="true">
+    <Position X="9.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iHyCGDAADWiwBKAgAoIQoJuADwtSFIgsPSkQh0YhGGA=</HashCode>
+      <FileName>MSSQL\TBS398_ATEND_EXAMES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS399_ATEND_MEDICAMENTOS" Collapsed="true">
+    <Position X="11" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>meiCHCQILUIQBiAoCsIQgI2AIiECpKIIKakgg0RhgQA=</HashCode>
+      <FileName>MSSQL\TBS399_ATEND_MEDICAMENTOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS400_PRONT_MASTER" Collapsed="true">
+    <Position X="12.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qvyCCSAABWQwBARgA4IY4BnAAglURIhwEGESjwChigA=</HashCode>
+      <FileName>MSSQL\TBS400_PRONT_MASTER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS401_PRONT_INTENS" Collapsed="true">
+    <Position X="14.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFSCCgAwB2AyDAAsAqIwoBmAAglURIlgECESggQhGAA=</HashCode>
+      <FileName>MSSQL\TBS401_PRONT_INTENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS402_OPER_DOCTOS" Collapsed="true">
+    <Position X="16.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACgAEAABAAQAAgAwAAAEAGACAEAACAQSACAAAECAAA=</HashCode>
+      <FileName>MSSQL\TBS402_OPER_DOCTOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS403_LAUDOS" Collapsed="true">
+    <Position X="18" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGAAABAARBAQMAIwgAAAAGGAAAMkAAIAAAAAAJAAAOk=</HashCode>
+      <FileName>MSSQL\TBS403_LAUDOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS404_CONTRATOS" Collapsed="true">
+    <Position X="19.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iECGGAAgNUBQFgAAAsIggE2SAiMAAAJAAiEAoAgBBAA=</HashCode>
+      <FileName>MSSQL\TBS404_CONTRATOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS406_FORML_APLIC" Collapsed="true">
+    <Position X="21.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBRCMAAABABQEghAAAAgAIGCCAEABABAIIAAAQAgAAA=</HashCode>
+      <FileName>MSSQL\TBS406_FORML_APLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS407_PLANOS_ALIMEN" Collapsed="true">
+    <Position X="23.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBQCAFQkBAAUAAJAAAAIEQGABAEABBAAAFggAQAAAAA=</HashCode>
+      <FileName>MSSQL\TBS407_PLANOS_ALIMEN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS408_OCORR_PACIE" Collapsed="true">
+    <Position X="25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qsKiCCAAFWFQBTWIAoIYoAmAQiEBwACAAKWAgBIBAIA=</HashCode>
+      <FileName>MSSQL\TBS408_OCORR_PACIE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS409_PRE_AGEND" Collapsed="true">
+    <Position X="26.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9nMS3cHL5doavEWmWFL5pl/LrAtJq1PU6bOhuErn3eQ=</HashCode>
+      <FileName>MSSQL\TBS409_PRE_AGEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS410_COMISSAO" Collapsed="true">
+    <Position X="28.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>il7iTIAQRXz4pqAoj4LYoDmAAglSNrioECEYhgQhSYA=</HashCode>
+      <FileName>MSSQL\TBS410_COMISSAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS411_EXAMES_ESTERNOS" Collapsed="true">
+    <Position X="30.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nn6qKaiKB3N5DUSoCsP4oRmoi0vSDIkyMCkSwwYrKeI=</HashCode>
+      <FileName>MSSQL\TBS411_EXAMES_ESTERNOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS412_EXAME_GRUPO" Collapsed="true">
+    <Position X="32" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAkQChAAFIBwAABEwBBMAAGEAAFCAJACFAEBABAAgAA=</HashCode>
+      <FileName>MSSQL\TBS412_EXAME_GRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS413_EXAME_SUBGR" Collapsed="true">
+    <Position X="33.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAAAAFIAQABJAwAAEAIGAIAEBgBAAAAIAgAAgCKA=</HashCode>
+      <FileName>MSSQL\TBS413_EXAME_SUBGR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS414_EXAME_ITENS_AVALI" Collapsed="true">
+    <Position X="35.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAAHbAwAgEAyAAAAEGEABEAACAAAAEAAAAAAWA=</HashCode>
+      <FileName>MSSQL\TBS414_EXAME_ITENS_AVALI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS415_EXAME_ITENS_REFER" Collapsed="true">
+    <Position X="37.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggEgIAMEFICyIApAxAQAQDOAAAUBQAAAACCQgAChACE=</HashCode>
+      <FileName>MSSQL\TBS415_EXAME_ITENS_REFER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS416_EXAME_RESUL" Collapsed="true">
+    <Position X="39" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hEqCCQCARQATECMAAAAAgEuYgQMKgBAIACBQAJDgAKA=</HashCode>
+      <FileName>MSSQL\TBS416_EXAME_RESUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS417_EXAME_RESUL_ITENS" Collapsed="true">
+    <Position X="40.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>igoAIAEFRIERAAIAAIgARIGqEAWOjEAQAAA3wACEAKQ=</HashCode>
+      <FileName>MSSQL\TBS417_EXAME_RESUL_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS418_CLASS_PRONT" Collapsed="true">
+    <Position X="0.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iFSCCABAFWAwBBwoEoIQoBuAAqlQRIhgEDEQgkJhCAA=</HashCode>
+      <FileName>MSSQL\TBS418_CLASS_PRONT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS426_SERVI_AMBUL" Collapsed="true">
+    <Position X="2.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCiCDYAAjAAQBCCgAoAAgCGAQgECAECIACwggUQhBEE=</HashCode>
+      <FileName>MSSQL\TBS426_SERVI_AMBUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS427_SERVI_AMBUL_ITENS" Collapsed="true">
+    <Position X="4" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAiAAAAABISQAAAAAAAIQBGACAFCACCBaAAAQABCAAw=</HashCode>
+      <FileName>MSSQL\TBS427_SERVI_AMBUL_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS428_APLIC_SERVI_AMBUL" Collapsed="true">
+    <Position X="5.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIGBEYAAhY4QAgAiBAAAQAWBAAEIQNAECIEAIAgFwEE=</HashCode>
+      <FileName>MSSQL\TBS428_APLIC_SERVI_AMBUL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS430_HISTO_AGEND_HORAR" Collapsed="true">
+    <Position X="7.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kGAACQCALAEQAAgAAkAAEAGgATEAACBAGAJAAAKAAAA=</HashCode>
+      <FileName>MSSQL\TBS430_HISTO_AGEND_HORAR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS431_GRUPO_EXAME_FISIC" Collapsed="true">
+    <Position X="9.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAKQEwEADWAwAkAwgtIAIBeABAlRBaogMBQQggAkBBA=</HashCode>
+      <FileName>MSSQL\TBS431_GRUPO_EXAME_FISIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS432_EXAME_FISIC_SUB_GRUPO" Collapsed="true">
+    <Position X="11" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAiwECIADEAwAhAwAlEAIBOAhAlQmIggARwYggAwDBA=</HashCode>
+      <FileName>MSSQL\TBS432_EXAME_FISIC_SUB_GRUPO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS433_EXAME_FISIC_ITEM" Collapsed="true">
+    <Position X="12.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgCQEAAADUowBgGwAlAEIBeABAlQEIgkIRQQggAgBLI=</HashCode>
+      <FileName>MSSQL\TBS433_EXAME_FISIC_ITEM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS434_PROTO_CID" Collapsed="true">
+    <Position X="14.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gMCmDQAghwQwRAAhQpwwoBmAAklSUIggACgQggAhAAA=</HashCode>
+      <FileName>MSSQL\TBS434_PROTO_CID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS435_CLASS_RISCO" Collapsed="true">
+    <Position X="16.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACgAFYAQAAAAygKCgQGMAAEVJBnAYgsQoAIDGgA=</HashCode>
+      <FileName>MSSQL\TBS435_CLASS_RISCO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS436_ITEM_PROTO_CID" Collapsed="true">
+    <Position X="18" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACgBCBATAQYAAI5EmIRRAHlAAEEWASAkMgBIBBUDIY=</HashCode>
+      <FileName>MSSQL\TBS436_ITEM_PROTO_CID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS438_ITENS_ATENDIMENTO" Collapsed="true">
+    <Position X="19.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oyAKQQCIHgYQBIBIBqDEQAGLGAkoIAAACSiCATqGYRI=</HashCode>
+      <FileName>MSSQL\TBS438_ITENS_ATENDIMENTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS441_ATEND_HOSPIT_ITEN_PROTO_CID" Collapsed="true">
+    <Position X="21.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGCbCQIABQgQABIAUCBAhAugABEDGsAAAAARAQAAAIY=</HashCode>
+      <FileName>MSSQL\TBS441_ATEND_HOSPIT_ITEN_PROTO_CID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS442_TIPO_CARAT" Collapsed="true">
+    <Position X="23.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0FCSKQAABQFUCAIjAEUAgAmQAAUEQIBAAkACECEBQBg=</HashCode>
+      <FileName>MSSQL\TBS442_TIPO_CARAT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS443_TIPO_INTER" Collapsed="true">
+    <Position X="25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEDaSwAQJQkUAAAjAEQAkAngAAUEQJBEAoQSADEBAAA=</HashCode>
+      <FileName>MSSQL\TBS443_TIPO_INTER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS444_TIPO_REGIM" Collapsed="true">
+    <Position X="26.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wFCSCUEABQEUAIQngEQCgAmAEE0ESIBAAQACICEBQgA=</HashCode>
+      <FileName>MSSQL\TBS444_TIPO_REGIM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS445_TIPO_INDIC_ACIDE" Collapsed="true">
+    <Position X="28.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iECSSQAABQEUCAAjAEQAjEmAKQUEQIBAAQACACEFUBA=</HashCode>
+      <FileName>MSSQL\TBS445_TIPO_INDIC_ACIDE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS446_TIPO_DOENCA" Collapsed="true">
+    <Position X="30.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wECaCQAABSEUEIgjAEQAggmAAAUEQJBiACAiACERABA=</HashCode>
+      <FileName>MSSQL\TBS446_TIPO_DOENCA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS448_ATEND_INTER_HOSPI" Collapsed="true">
+    <Position X="32" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gSZBZQWABBI0FAwgmBAUQCmYBxWIUoGCBRgEIfQYEAA=</HashCode>
+      <FileName>MSSQL\TBS448_ATEND_INTER_HOSPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS449_ATEND_INTER_CID" Collapsed="true">
+    <Position X="33.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gRAAAQAABgQQBAIACQAABAGgiQkAMAAAAAABAAVAEAA=</HashCode>
+      <FileName>MSSQL\TBS449_ATEND_INTER_CID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS450_ATEND_INTER_PROCE_MEDIC" Collapsed="true">
+    <Position X="35.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQgAIQAABAIUAAQQBKAAASGADAGTAIA6AAUCQQGiAAI=</HashCode>
+      <FileName>MSSQL\TBS450_ATEND_INTER_PROCE_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS451_INTER_REGIST" Collapsed="true">
+    <Position X="37.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gcZBFSMFBBIQdQgoiAQEQAnYC4GIHoGCBcLIIDeQEEA=</HashCode>
+      <FileName>MSSQL\TBS451_INTER_REGIST.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS452_INTER_PROCE" Collapsed="true">
+    <Position X="39" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gSgAIQQABAIUAAQQJKAQASGABAGTIIAaAAECASCiAQA=</HashCode>
+      <FileName>MSSQL\TBS452_INTER_PROCE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS453_INTER_CID" Collapsed="true">
+    <Position X="40.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gDAAAQAABgQQAAIAgQAABAHgiQkEMAAAAAAAAaRAAQA=</HashCode>
+      <FileName>MSSQL\TBS453_INTER_CID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS454_OBITO" Collapsed="true">
+    <Position X="0.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gWCCCQAABQQQBAAAAowAiQmAAokBEAAQQCAAgQIBKAA=</HashCode>
+      <FileName>MSSQL\TBS454_OBITO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS455_AGEND_PROF_INTER" Collapsed="true">
+    <Position X="2.25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>h8CGSQlIHSOYBUAJBoFAgEmuWhEKAABmBSMD0CQDLwI=</HashCode>
+      <FileName>MSSQL\TBS455_AGEND_PROF_INTER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS456_INTER_REGIS_ATEND" Collapsed="true">
+    <Position X="4" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gN6SCyEgT6JQlQ5TA6aExEnaEQMspnCmQmAi1QqkBB4=</HashCode>
+      <FileName>MSSQL\TBS456_INTER_REGIS_ATEND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS457_CLASS_TERAP" Collapsed="true">
+    <Position X="5.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gVTyCQAABQAwBAAgAoAAoBmAAglQBKggCCAQggEhQAA=</HashCode>
+      <FileName>MSSQL\TBS457_CLASS_TERAP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS458_TRATA_PLANO" Collapsed="true">
+    <Position X="7.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kNSCCQAABQAwBCBgAoAAoBnAAglSFJgogGAQggChAAI=</HashCode>
+      <FileName>MSSQL\TBS458_TRATA_PLANO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS459_ATEND_ANAMN_RAPID" Collapsed="true">
+    <Position X="9.25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sPfCffq+reh/Xu4vX8pM/V375rv03bs8maz727c9rnI=</HashCode>
+      <FileName>MSSQL\TBS459_ATEND_ANAMN_RAPID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS460_AGEND_AVALI_PROFI" Collapsed="true">
+    <Position X="11" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gFSKCAEABQAQBAAIJoAAiBmAwglQBBogCCAQggAhACQ=</HashCode>
+      <FileName>MSSQL\TBS460_AGEND_AVALI_PROFI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS461_ATEND_MODEL_PRESC_MEDIC" Collapsed="true">
+    <Position X="12.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wCiCACBAbQAShABQAAMEDAHBFgEgQEgCKAAAFggEAIE=</HashCode>
+      <FileName>MSSQL\TBS461_ATEND_MODEL_PRESC_MEDIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS462_ATEND_ENCAM_LIVRE" Collapsed="true">
+    <Position X="14.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iHSCDAAIBWAwBCAgEoISoBmAAglSBMgoEGE0gwAhDAE=</HashCode>
+      <FileName>MSSQL\TBS462_ATEND_ENCAM_LIVRE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS463_PROC_MEDIC_ITENS" Collapsed="true">
+    <Position X="16.25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kVyDDIkqJ3UYJigPJoAJgF220i1XTElqGCNSqmArSFE=</HashCode>
+      <FileName>MSSQL\TBS463_PROC_MEDIC_ITENS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS464_ESTOQUE_INFORM_ITENS_SAUDE" Collapsed="true">
+    <Position X="18" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAgixEDoBSAUQaAADCIIQBACAAROUAAQDiCDCCCQACU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBS47_CTA_RECEB" Collapsed="true">
+    <Position X="19.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5vsR3P3+Vwv5/6be8+37v9n33en9V9d/PLWrd3087/s=</HashCode>
+      <FileName>MSSQL\TBS47_CTA_RECEB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TBTIPO_GRAU_PARENT" Collapsed="true">
+    <Position X="21.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAEADgAQAAAIAAEAAAEIAAEBEAAAAAAAAAIgAAg=</HashCode>
+      <FileName>MSSQL\TBTIPO_GRAU_PARENT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TEMP_ALUNOS" Collapsed="true">
+    <Position X="23.25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhgAhCAAQAAACQwAMAIIKCAAAAAAAABAMAAQgAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN001_ARTIGOS" Collapsed="true">
+    <Position X="26.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgQAAZAEQCCoAAAAAiAHAAAGAIBQgABKBAAIAAQE=</HashCode>
+      <FileName>MSSQL\TSN001_ARTIGOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN002_BANNER" Collapsed="true">
+    <Position X="28.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oyZJQ+Fgze4RdJA4gqoOBBGMGDHUayxmRYRHWHjBtwQ=</HashCode>
+      <FileName>MSSQL\TSN002_BANNER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN003_PNE" Collapsed="true">
+    <Position X="30.25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAKAAAAAJABRIIAAAAAAAAGAQAEAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>MSSQL\TSN003_PNE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN004_USUARIO_SENHA" Collapsed="true">
+    <Position X="32" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CICBCAIAAAEAIAIAAAQQAAAFBAAJAAAgAAAAQACABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN005_USUARIO" Collapsed="true">
+    <Position X="33.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iIKBiQAIDEASEBQIAAgQAcGFAQMCAOADRBaETQCBBGg=</HashCode>
+      <FileName>MSSQL\TSN005_USUARIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN006_HISTORICO_USUARIO_SERVICOS" Collapsed="true">
+    <Position X="35.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FBCAkRBRCgQJ4BJExsAewkAgUgEciQs5gB6AhDAELIw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN007_FORMA_PAGTO" Collapsed="true">
+    <Position X="37.25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAkAATBEA0AAEAIAAABAOAAIEAAAAQAAABAAAAAAA=</HashCode>
+      <FileName>MSSQL\TSN007_FORMA_PAGTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN008_ENDERECO" Collapsed="true">
+    <Position X="39" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wYCBBCABBAAUIGiAGIMaKBGNGAEAAYAgAB6ASACAAUQ=</HashCode>
+      <FileName>MSSQL\TSN008_ENDERECO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN009_CIDADE" Collapsed="true">
+    <Position X="40.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAABAAwAAAAAAAACwGAABEAAABBEAAAAQAgAAA=</HashCode>
+      <FileName>MSSQL\TSN009_CIDADE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN010_UF" Collapsed="true">
+    <Position X="0.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAMBBAAQAQAAIACCBAcACAEEAAAAAAAEAAAQAAA=</HashCode>
+      <FileName>MSSQL\TSN010_UF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN011_AGENDA_CREDENCIADO" Collapsed="true">
+    <Position X="2.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAiQIACACAAAEEABAIkgQCUgEgAAAACA4AQBAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN012_CREDENCIADOS" Collapsed="true">
+    <Position X="4" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sGJAsgZADIAQCNRAQRACBEHoAiVViUCRLIAIgAQRAkg=</HashCode>
+      <FileName>MSSQL\TSN012_CREDENCIADOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN013_PROFISSIONAIS">
+    <Position X="5.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gKiBCCQxXkRSEZmYkAASicmNBBEaAMARIA4BSQGJhCI=</HashCode>
+      <FileName>MSSQL\TSN013_PROFISSIONAIS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN014_TIPO_CREDENCIADO" Collapsed="true">
+    <Position X="7.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gICRAAABBAIYAAIAIABQBAOFkAEAAAAAAAQCQACAAAQ=</HashCode>
+      <FileName>MSSQL\TSN014_TIPO_CREDENCIADO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN015_SERVICOS_CREDENCIADO" Collapsed="true">
+    <Position X="9.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wIGBgSAAOGABAGAAoZhUmEcFA0FLgCYAwpYgSCiIhBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN016_VALORES_SERVICO" Collapsed="true">
+    <Position X="11" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5M2pBWAQbEJX42BogJrU0UHPagVPBhAgxLQ5SAiJlAg=</HashCode>
+      <FileName>MSSQL\TSN016_VALORES_SERVICO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN017_TIPO_SERVICO" Collapsed="true">
+    <Position X="12.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACgAQABJAAQABAEIAAEBAOVAAEAAACQgBAAQAAAABg=</HashCode>
+      <FileName>MSSQL\TSN017_TIPO_SERVICO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN019_AGENDA" Collapsed="true">
+    <Position X="14.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAACAAAJGBEBAAACACgAAAAAgQgABSBAEAABQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TSN020_MEDICAMENTOS" Collapsed="true">
+    <Position X="16.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iGAAAgAABIIQICCCAAAACAGABEEAAAQwABChAAACAQA=</HashCode>
+      <FileName>MSSQL\TSN020_MEDICAMENTOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW_ADM_Seguranca" Collapsed="true">
+    <Position X="18" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAyEgABECQAAAgAQAQEgAAIEFIGAAAEAASBAAEAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW_ATENDIM_MES" Collapsed="true">
+    <Position X="19.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>okEEAGADBAAQQRQAAADoAAmgk2kVT4BAAMKCcIAkAuA=</HashCode>
+      <FileName>MSSQL\VW_ATENDIM_MES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW_CONTR_MATRI" Collapsed="true">
+    <Position X="21.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>3579/fRP16Zf/fRnP7fZfl8vxff94zdTP8f9/q/fua4=</HashCode>
+      <FileName>MSSQL\VW_CONTR_MATRI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW_DEMON_DISTR_FUNCI" Collapsed="true">
+    <Position X="23.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hMAEE4phDu97Aj6gCLKDtREQ1DfJDmMAEWsUkIJAgAE=</HashCode>
+      <FileName>MSSQL\VW_DEMON_DISTR_FUNCI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW_RESUM_FINAN_ATEND_COLAB" Collapsed="true">
+    <Position X="25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oEAEAEADBAAQQRAAAABgAAkgkykES4BAAMICNAAkAqA=</HashCode>
+      <FileName>MSSQL\VW_RESUM_FINAN_ATEND_COLAB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW079_HIST_ALUNO" Collapsed="true">
+    <Position X="26.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pwsgeX8AZEdfSZWagIb7TlW4HimdAAVHIkUGqF7DKFs=</HashCode>
+      <FileName>MSSQL\VW079_HIST_ALUNO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW47_CTA_RECEB" Collapsed="true">
+    <Position X="28.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>rhZBEWw4BgJ5JgQUROBYDDGQTAE8EJQFELQBQZC2pME=</HashCode>
+      <FileName>MSSQL\VW47_CTA_RECEB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW65_HIST_SOLIC" Collapsed="true">
+    <Position X="30.25" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iwACVCAARCIUAIQABQgKBBHCWAEkgIEAAAUIAiIBhAQ=</HashCode>
+      <FileName>MSSQL\VW65_HIST_SOLIC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW78_03_PESQ_AVAL" Collapsed="true">
+    <Position X="32" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kYAAABAgRAAYIAAAAQIChAGAAAEAQgFIAAACAAYAAkA=</HashCode>
+      <FileName>MSSQL\VW78_03_PESQ_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW78_07_PESQ_AVAL" Collapsed="true">
+    <Position X="33.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>k4AAABAARAAYIQQAAQIAhAGAAAEAAgFIAAAAAAQAAkA=</HashCode>
+      <FileName>MSSQL\VW78_07_PESQ_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.VW78_108_PESQ_AVAL" Collapsed="true">
+    <Position X="35.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kYAAABAARAAYIAAAAUIAhAGAAAEAAgFICBQAAASAAkA=</HashCode>
+      <FileName>MSSQL\VW78_108_PESQ_AVAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.Solicitacao" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQABAAAgAAAAAAAEgAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MSSQL\Solicitacao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQL.TESTE" Collapsed="true">
+    <Position X="25" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MSSQL\TESTE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.BasePortal" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wYv7X/TA13nv5uv5nbv/s9qxzVM55QbKvyv0VX/de9M=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW000_USUARIOS" Collapsed="true">
+    <Position X="26.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>PgrlSMOItjFFKJSH+hjmmA8rKB9Qq0SEYKeQYwIKtkg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW000_USUHISTPSW" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAGBAAICAFAoABAQAAAAAAEAGAAkIQAAAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW000_USUXACESS" Collapsed="true">
+    <Position X="30.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBiAAACCAAAAAFAAABAAAAEAJAQAGAAAAAAIAAACBlA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW001_UNID_INFORM" Collapsed="true">
+    <Position X="32" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>19rp/16vm5EHCnabsOkxnHdLfsQWPwBSnfQcbsA5js4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW002_UNID_GESTOR" Collapsed="true">
+    <Position X="33.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QFBAAgKRAQMKCJABwgAgEDgLQERYABCEAIEUICIICiE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW003_UNID_MIDIA" Collapsed="true">
+    <Position X="35.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UFAEBAAECAjAIQBAABAAADAAEgAIIAACAAICAAkCAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW004_UNID_PERFIL" Collapsed="true">
+    <Position X="37.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8j0AgQEwECQiEwgOBAIQDTAyACIMREA4EmHUOgAAQWA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW005_UNID_COLAB" Collapsed="true">
+    <Position X="39" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HuKliK+Z19wrQerT2iUbeURfalc+Zjdv2bdUvOX7I0o=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW006_UNID_COLAB_MATER" Collapsed="true">
+    <Position X="40.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YhFQUAJACAtghBBBwAB0gDAHGSxBIKAEAIAA4gAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW007_UNID_SERVI" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QRACQAAAAQKAAAAgBAACzTAExDAIMBCIArkEKkAVBBg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW008_UNID_CONCE" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAIACAAAAAEIEAAgAAKADADAUAAFEBAAYABIAABBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW010_UF" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAgAAACAAAADAIAAAAACAAAAAAAAgg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW011_CIDADE" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAQAQAAAAACAQCQAAAEAAAAMAAAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW012_BAIRRO" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAAAQAQACAAACAQGACAAEAAAAEAAAAQAEQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW013_CEP" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBEhMAggAAgAFAAImCsACCACAAQggAlABAgEAAEAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW1000_GRAFI_FREQU_PRESE" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICIAAABCJeUAC5hAAQIEElFlABiIBYASAAQIDAWAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW1001_GRAFI_FREQU_FALTAS" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACACBAAAAACABIAASAJYECAAAEAAAAAAACAIIAoQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW101_MODAL_ENSINO" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wBAQCEAAgARAAAIIhABAADADACAAASQAEIgAQAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW102_SERIE_ENSINO" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QDcUBAEAEAoAEAAAgABAQLAHABAIACAEEIBBwAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW103_TURMA_ENSINO" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAQQIGAIALUwCAEgYBEIDMHFIBIICEcIKAgxAeEWEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW104_MATERIAS" Collapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAABoEBEAAAAgAAAAABDAAAABAAhoIQAgCgAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW105_GRADE_MATER" Collapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBASAAAgAAIBAAQAgABBgDBnEAAAADAEAOgAwCkAggI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW106_GRADE_HORAR" Collapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UBIwQAIxAAICiAQAkABAgDUHACBAICAEIMIixAEUQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW107_PLANO_AULAS" Collapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wzgRwAcUAgLom4sCiJxAI7JvJUjgbDEkoIASxoqPCoA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW108_ATIVID_CASA" Collapsed="true">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QFAQQgKLgEIIwIAAEARBIjBMEJJAoGQEAJAC8CgEIgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW109_PROVAS_TURMA" Collapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YVFYQgGAAEMAgBgoyQBgAHHHAUlIICBUxoAA0AgBBgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW110_CALENDARIO" Collapsed="true">
+    <Position X="30.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>TBFkIBEAEMIAJAAAgASAADAHAIAQBABAwIQQAgJKIEQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW111_MSG_UNIDAD" Collapsed="true">
+    <Position X="32" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SBgCCECAAEGQIQAAHMACADBABQADAECABQBRAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW112_CALEND_TIPO" Collapsed="true">
+    <Position X="33.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIEAAAAAAAAAgAAAgAAHBAAAAAAAAIEEAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW113_ATIVI_AULA" Collapsed="true">
+    <Position X="35.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6pARDAYZUssAiFIDzgBCFj0DAYwB4IAIIJoApESQQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW114_ATIVI_ESCOL" Collapsed="true">
+    <Position X="37.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZFABKJBDQ8lUKzAAgABagDlnAJgAAIiIQKhGpAoACgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW115_PLANO_AULA_CONTE_BIBLI" Collapsed="true">
+    <Position X="39" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAYCAAYAAIIRgFBwIAQjIAAAACBAIIEAARBAAAk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW116_TEMPO_AULA" Collapsed="true">
+    <Position X="40.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QJAQAAAAAAIGACAAgQBAALAHAAAgIKAEIMACyAgEAFA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW130_INFOR_RESPON" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>1mWtnRk6/4Fbe3I/qHIP/sET6P3Z4gjUO7PkIV+ZC8c=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW150_INFOR_ALUNO" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QyRMXz5ABzk8HAMGmxRBowWjl4FiMcQoAISPogqRygQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW151_DADOS_MATRIC" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YBBSSCQAAAMEiBQIoIBAITEHSChAICAkBIAQ0EQCCAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW152_ALUNO_FREQU" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIwPDAQAAiIEgMQAgATgGIEDUEQIcwICAIIAAESQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW153_ATIVID_ALUNO" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBCSyAEAYBIUgQAQAABAATWGRMJAJGQEAMAY8AQIEII=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW154_PROVAS_ALUNO" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YBFSSIiRGkMkgZAIiABAFnlHwAhIKCAEAIEAwQwBQgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW155_HISTOR_ALUNO" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACCAAAAFIEQABAAIRAWAFEwDQAvKEmAJJAgAxgIoo=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW156_OCORR_ALUNO" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQADaAAAAAMMAEAIhIBEIgMDAAIIwAAAAIAAAEAACIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW157_CUIDAD_SAUDE" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YBCaiICRACSEAhHRyEDiAHEDAIAggBWAA8YQBgBCBAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW158_OCORR_SAUDE" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ANDAGJIIoRFSWgCDkoIIgAoDIEUAUAkEIaUbMAJABmA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW159_ALTER_ENDER" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASXAoIboKLwopQwgFZAEAqQgCBISgojiCz4AQIeAMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW201_AREA_CONHEC" Collapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAAAAAgAAAAIAAgAAAAAADEAAAIAAAAIAAIAAIAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW202_CLASS_CONHEC" Collapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAACAAgAAAAFAAgAAAAEADAIAAAAAAAIAAICgIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW203_EDITORA" Collapsed="true">
+    <Position X="23.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAEQAgAAAABATAAAgAAAAIIAAAAAARAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW204_AUTOR" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAABACAgIAAAAADAAhBAAAAAIIAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW205_ACERVO_BIBL" Collapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0DjQEAKkBCa0EgooCBIKAX3MKAhIHRQUIEQIGgZTCI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW206_ACERVO_AULA" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HYqxKFArgCIDCgGQwEBIhTFNAEiABCDcAgUA6KhoAgk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW211_RESER_BIBL" Collapsed="true">
+    <Position X="30.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBCQAAEIBAAcABgAiBEgEjGHAQACAAAAgK8ALBAKBDM=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW212_EMPREST_BIBL" Collapsed="true">
+    <Position X="32" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBCBgAAIAABTABogjRAgITEHQAEAAAAAQIEAEBEaBmI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW301_REFEICOES" Collapsed="true">
+    <Position X="33.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UzAAACSAMAEMAACwAAAAACEAQMAEQAARAAAIBIAAAcA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW302_REFEI_INGRED" Collapsed="true">
+    <Position X="35.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FokAEAIACIAAAkACAAQAEAAAoMQAABWQAEiAAQARAUA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW303_CALEND_REFEI" Collapsed="true">
+    <Position X="37.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAACAAAAAAAAAAAAAEQMQCABgAAAAGAEAgQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW304_SUGEST_REFEI" Collapsed="true">
+    <Position X="39" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgSkAABAAAAAEBAAABAAAhCEEMEAAAAAAAAAAAgCEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW305_RESTR_ALIMEN" Collapsed="true">
+    <Position X="40.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAigEQIAACCwAjgAApBEAEIAAgQCCJAIIUCAAAAKECE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW306_REFEIC_USR" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>W4CQgAAAAAAAABAESBAIAAACQMBAAAAAAAABAABCAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW401_LINHA_TRANSP" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GgACABAAQCDAQCUKwNAQwAADRQSABQEBQIEAAAgEBEI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW402_LINHA_USR" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwCAAAAAAAAAABQISBAAEAAAAQAAAAABAAAAAAACAjA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW451_ROTA_TRANSP" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkAAkAEAQAAACAEAAyAAAQAAAAiAAAAEAABAAYAAoA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW452_ROTA_ITENS" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAEAAAEQAAAAADQABCQAAAAgAIBAEAAEEAQBAKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW452_ROTA_USR" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACCQAgAAAAAABAAABQAAAACAAAAAAAhEEQAAAQCAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW501_TIPO_SOLIC" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAwQAAAoAAAATAAAAAgAAYAAACgEAAggAABEYCA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW502_SOLIC_USR" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AETBBAUBLBAoABIgkFAQAAEBABIoIDCQwIA1YAB+TCQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW551_FREQU" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wRAQSAKsHcJEogQAoYhA2LlXADHIICAEQIAX0ElJAxA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW551_LANCA_FREQU" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wRAQSAKsDcJEogQAoYhA2LEXATHIYCAEQIAX0EFJoxA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW552_LANCA_NOTA" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wXY06AkkGIMVwGYAwKBAgD1fbchQoiAkJJQEwiVDAS0=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW552_NOTA" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wRYQ4IEgAAMBwAYAgKBAgDhHCEhAoiAEApAAwikDAmU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW554_ATIV_PROF_TURMA" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>g8AiEA9tWAuBDcfiAZh6DBoyJQDE6/FJoTAT3cBojhs=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW555_END_NOVO" Collapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASGCgASooTAggAgAEZAMAgUgCBICgiDCAyYAAKFCQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW601_HISTO_DESEMP" Collapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KQQQFAACCMsAaDDQlypKEAFPiCgK4KsIAogQ9UqAVgk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW602_BOLET_ESCOL" Collapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IMGcr1gBgAFo/7AAgRAKGNRLeCoMALIJoIDA6gkEApo=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW603_DADO_BOLETO" Collapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NBBTWCSAHAMtyBZQoKHOhBUXSAh9YDSPAKDi0YEgoMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW700_INSTITUICAO" Collapsed="true">
+    <Position X="30.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hLqkMIBJAAAADIQKihIBBEAPookBQQMBCMQMCAw+DQQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW800_FALE_CONOSCO" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASFAIQIgEEAABSZLoAIkIgAzBQYQA4IZgKWAZhyIAQg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW801_SMS" Collapsed="true">
+    <Position X="33.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIpIEABCAFQDCApAJgaEMUBEEQGgiQEBAAURgAIcgk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW802_ARQUIVOS" Collapsed="true">
+    <Position X="35.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZAACAVhIgDDABBABEDIACIMIQAARSEBAgpCIBAAAhQk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW803_ASSUN_CONTA" Collapsed="true">
+    <Position X="37.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAACAAAAAQAAAAgAACgAgDAAIABIAAQYCAiAQAAQI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW804_MIDIAS" Collapsed="true">
+    <Position X="39" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QqQBLgMEJMgRiKghABrFEAloABZBoILKAIoAQGTDCBQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW805_CLASSI_MATER" Collapsed="true">
+    <Position X="40.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAADACAAgABQCACAAAAEABAAAAAAQACAAAAACRACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW806_CLASS_MIDIA" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAQIAAIBAAAEAAIAAAAgAAgAAAAAAAAAEEBAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW807_MURAL" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9ZGSQMKEoIgYga4BHQEAmTBnkgBkYEdIIEwCBAEiIjY=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW808_EVENTOS_SOCIAS" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QDAAAAQICMgQCIghAJABBPEAgAwCAICIABgQQACAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW809_AULAS" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAEAAAAACQBAAAAAFAAAACAAgAoAAgg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW901_TIPO_LOGRADOURO" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEEAgAAAAAABAIAAAACCAIAAAAAEAAYAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW902_TIPO_OCORR" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAggFAAgIDCEIIAAAAAIAAAEAIBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2BR.GestorEducacao.BusinessEntities.MSSQLPORTAL.GW903_TIPO_ATIVI" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQFAJCAAAECAQEIgAICABAAASAAQBQAkAgABClAiBEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="C2BR.GestorEducacao.BusinessEntities.Auxiliares.DataBaseOperators" Collapsed="true">
+    <Position X="0.5" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Auxiliares\DynamicWhereClauseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,25 @@
+Eu utilizo aqui na empresa os bancos: Bradesco, HSBC e Brasil.
+Os boletos e as remessas foram aprovadas junto a esses bancos.
+Layouts utilizados:
+Bradesco - CNAB400
+HSBC - CNAB400
+Brasil - CNAB240
+
+Alterações:
+
+- Adicionei a propriedade RegistroBanco que é um nº que tem 
+  que ser informado no header de remessa do banco Bradesco,
+  que também foi alterado a unit
+
+- Alteração do layout do boleto, foi retirada a Ficha do Caixa 
+  que não se usa mais.
+
+- Na unit do Bradesco foi incorporada na remessa, uma opção de
+  instrução de cancelamento de envio de protesto, que está no novo 
+  manual do Banco. (ver na unit Instruções Protesto linha 207). Se
+  for verificada o TipoOcorrencia igual a toRemessaOutrasOcorrencias 
+  ele coloca na posição de protestar o código 9999. Eu acho que o 
+  ideal é criar uma nova opção no TipoOcorrencia.
+
+- Corrigida algumas informações das units dos bancos: Bradesco, HSBC
+  e Brasil

@@ -1,0 +1,8 @@
+﻿td.PageBorder_tlc {background-image:url(../IMG/Report/top-left-corner.png);}
+td.PageBorder_blc {background-image:url(../IMG/Report/bottom-left-corner.png);}
+td.PageBorder_trc {background-image:url(../IMG/Report/top-right-corner.png);}
+td.PageBorder_brc {background-image:url(../IMG/Report/bottom-right-corner.png);}
+td.PageBorder_t {background-image:url(../IMG/Report/top.png); background-repeat:repeat-x;}
+td.PageBorder_l {background-image:url(../IMG/Report/left.png); background-repeat:repeat-y;}
+td.PageBorder_b {background-image:url(../IMG/Report/bottom.png); background-repeat:repeat-x;}
+td.PageBorder_r {background-image:url(../IMG/Report/right.png); background-repeat:repeat-y;}

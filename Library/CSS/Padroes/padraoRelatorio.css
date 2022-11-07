@@ -1,0 +1,27 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+}
+
+.RelatorioDivCampos
+{
+    width:1000px;
+    text-align:center;
+    overflow:hidden;
+    height:600px;
+}
+
+/*Classe para nova linha*/
+div .RelatorioDivCampos ul li
+{
+    clear:both;
+    margin-top: 5px;
+}
+
+/*Classe para linha comun*/
+div .RelatorioDivCampos ul li .liLinhaPadrao
+{
+    width:100%;
+    margin-top: 5px;
+}

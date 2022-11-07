@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\NTI\Desktop\WebSite" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="07/14/2022 09:13:34" />
+    <file relUrl="bin/C2BR.GestorEducacao.DLLRelatorioWeb.pdb" publishTime="07/14/2022 08:53:51" />
+    <file relUrl="bin/C2BR.GestorEducacao.DLLRelatorioWeb.dll" publishTime="07/14/2022 08:53:51" />
+    <file relUrl="bin/C2BR.GestorEducacao.BusinessEntities.dll" publishTime="07/14/2022 08:52:47" />
+    <file relUrl="bin/C2BR.GestorEducacao.LicenseValidator.pdb" publishTime="07/14/2022 08:52:59" />
+    <file relUrl="bin/Boleto.Net.dll" publishTime="07/14/2022 08:53:05" />
+    <file relUrl="bin/C2BR.GestorEducacao.Reports.pdb" publishTime="07/14/2022 08:53:39" />
+    <file relUrl="bin/C2BR.GestorEducacao.UI.dll" publishTime="07/14/2022 08:55:11" />
+    <file relUrl="bin/C2BR.GestorEducacao.WebService.pdb" publishTime="07/14/2022 08:55:17" />
+    <file relUrl="bin/C2BR.GestorEducacao.UI.pdb" publishTime="07/14/2022 08:55:11" />
+    <file relUrl="PortalGestorWebService.asmx" publishTime="11/15/2021 16:14:09" />
+    <file relUrl="bin/C2BR.GestorEducacao.WebService.dll" publishTime="07/14/2022 08:55:17" />
+    <file relUrl="bin/System.Linq.Dynamic.dll" publishTime="11/15/2021 16:14:10" />
+    <file relUrl="bin/C2BR.GestorEducacao.DataBaseManagement.dll" publishTime="07/14/2022 08:52:52" />
+    <file relUrl="bin/Boleto.Net.pdb" publishTime="07/14/2022 08:53:05" />
+    <file relUrl="bin/C2BR.GestorEducacao.BusinessEntities.pdb" publishTime="07/14/2022 08:52:46" />
+    <file relUrl="bin/C2BR.GestorEducacao.DataBaseManagement.pdb" publishTime="07/14/2022 08:52:52" />
+    <file relUrl="bin/C2BR.GestorEducacao.LicenseValidator.dll" publishTime="07/14/2022 08:52:59" />
+    <file relUrl="bin/C2BR.GestorEducacao.Reports.dll" publishTime="07/14/2022 08:53:39" />
+    <file relUrl="bin/Artem.GoogleMap.dll" publishTime="11/15/2021 16:14:10" />
+  </publishProfile>
+</publishData>

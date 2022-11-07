@@ -1,0 +1,93 @@
+#totalContentWrapper .header .menu1 ul{
+	display:block;
+	float:left;
+	width: 300px;
+	height:56px;
+	margin: 0 0px 0 251px;
+	padding:0;
+	}
+
+#totalContentWrapper .header .menu1 li a{
+	display:block;
+	float: left;
+	width:auto;
+	height: 21px;
+	margin: 0 0 0 33px;
+	padding: 15px 0 10px 0;
+	text-transform: uppercase;
+	color:#eee;
+	font-family:arial;
+	font-size:10px;
+	line-height: 13px;
+	text-decoration:none;
+	}
+#totalContentWrapper .header .menu1 li a:hover{
+	color:#fff;
+	}
+#totalContentWrapper .header .menu1 li a span{
+	font-size: 12px;
+	font-weight:bold;
+	}
+#totalContentWrapper .header .sideH .menuPortal{
+	float:left;
+	width: 350px;
+	height:76px;
+	margin:0;
+	padding:0
+	}
+#totalContentWrapper .header .sideH .menuPortal ul{
+	display:block;
+	float:left;
+	width: 329px;
+	height:28px;
+	margin: 0px 0 0 19px;
+	}
+#totalContentWrapper .header .sideH .menuPortal li a{
+	display:block;
+	float:left;
+	width: 32px;
+	height:28px;
+	margin: 0 0 0 5px;
+	padding:0;
+	text-indent:-9999px;
+	}
+#totalContentWrapper .header .sideH .menuPortal li.pe a{
+	background-image: url(/Library/IMG/Login/icon-pe.png);
+	background-position: -32px 0;
+	background-repeat: no-repeat;	
+	}
+#totalContentWrapper .header .sideH .menuPortal li.pe a:hover{
+	background-image: url(/Library/IMG/Login/icon-pe.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	}
+#totalContentWrapper .header .sideH .menuPortal li.p a{
+	background-image: url(/Library/IMG/Login/icon-p.png);
+	background-position: -32px 0;
+	background-repeat: no-repeat;	
+	}
+#totalContentWrapper .header .sideH .menuPortal li.p a:hover{
+	background-image: url(/Library/IMG/Login/icon-p.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+#totalContentWrapper .header .sideH .menuPortal li.a a{
+	background-image: url(/Library/IMG/Login/icon-a.png);
+	background-position: -32px 0;
+	background-repeat: no-repeat;	
+	}
+#totalContentWrapper .header .sideH .menuPortal li.a a:hover{
+	background-image: url(/Library/IMG/Login/icon-a.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}
+#totalContentWrapper .header .sideH .menuPortal li.pr a{
+	background-image: url(/Library/IMG/Login/icon-pr.png);
+	background-position: -32px 0px;
+	background-repeat: no-repeat;	
+	}
+#totalContentWrapper .header .sideH .menuPortal li.pr a:hover{
+	background-image: url(/Library/IMG/Login/icon-pr.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	}

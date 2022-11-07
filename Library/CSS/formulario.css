@@ -1,0 +1,132 @@
+#totalContentWrapper .header .formulario{
+	float: right;
+	width:248px;
+	height:152px;
+	margin: 15px 40px 0 0;
+	padding:0;
+	background-image: url(/Library/IMG/Login/bkg-form.png);
+	background-repeat: no-repeat;
+	}
+#totalContentWrapper .header .formulario h3{
+	display:block;
+	float:left;
+	width:241px;
+	height:16px;
+	margin: 1px 0 0 0;
+	padding:11px 0 5px 0;
+	background-image: url(/Library/IMG/Login/bkg-form-h3.png);
+	background-repeat: no-repeat;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	text-indent:10px;
+	text-transform:uppercase;
+	letter-spacing:0.5px;
+	}
+
+#totalContentWrapper .header .formulario .input{
+	float:left;
+	width: 241px;
+	height: 30px;
+	margin: 8px 1px 0 1px;
+	padding: 0px;
+	}
+#totalContentWrapper .header .formulario .input.password{
+	margin-top:5px;
+	}
+#totalContentWrapper .header .formulario .input label{
+	display:block;
+	float:left;
+	width: 56px;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding:5px 0 5px 0;
+	font-family:arial;
+	font-size:12px;
+	color:#ccc;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:0.7px;
+	}
+
+#totalContentWrapper .header .formulario .input input{
+	display:block;
+	float:left;
+	width:163px;
+	height:22px;
+	margin: 0;
+	padding: 2px 0 2px 0;
+	font-family:arial;
+	font-size:13px;
+	color:#666;
+	border: 1px solid #ccc;
+	}
+/*#totalContentWrapper .header .formulario .input.text input{
+	height:17px;
+	
+}*/
+#totalContentWrapper .header .formulario .input.password input{
+	height:17px;
+	
+}
+#totalContentWrapper .header .formulario .submit{
+	float:left;
+	width: 241px;
+	height: auto;
+	margin: 5px 1px 0 1px;
+	padding: 0px;
+	}
+#totalContentWrapper .header .formulario .submit a.rescuePass{
+	display:block;
+	float:left;
+	width: 107px;
+	height:44px;
+	margin: 0 0 0 10px;
+	padding:0;
+	background-image: url(/Library/IMG/Login/btn-rescue-pass.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+	}
+
+#totalContentWrapper .header .formulario .submit a.rescuePass:hover{
+	background-image: url(/Library/IMG/Login/btn-rescue-pass-hover.png);
+	background-repeat: no-repeat;
+}
+#totalContentWrapper .header .formulario .submit .enviar{
+	display:block;
+	float:left;
+	width: 67px;
+	height:27px;
+	margin: 0 0 0 45px;
+	padding:0;
+	background-image: url(/Library/IMG/Login/btn-enviar-alunos.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+	border:none;
+	cursor:pointer;
+	}
+#totalContentWrapper .header .formulario .submit .enviar:hover{
+	background-image: url(/Library/IMG/Login/btn-enviar-alunos-hover.png);
+	background-repeat: no-repeat;	
+	}
+	
+	.divTelaFuncionalidadesCarregando
+    {
+        left: 50%;
+        margin-top: 225px;
+        position: absolute;
+        top: 10px;
+        display: none;
+    }  
+    
+    .divErroMsg
+    {
+        position: fixed; 
+        left: 400px; 
+        top: 100px;
+        background-color: #FDF5E6; 
+        border: 1px solid #BEBEBE;
+        padding: 5px 5px 10px 20px;
+    }
+

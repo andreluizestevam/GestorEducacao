@@ -1,0 +1,331 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PadraoCadastros.Master.cs"
+    Inherits="C2BR.GestorEducacao.UI.App_Masters.PadraoCadastros" %>
+
+<%@ Register Src="../Library/Componentes/BarraCadastro.ascx" TagName="BarraCadastro"
+    TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+<head runat="server">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Cadastro</title>
+    <link href="/Library/CSS/default.css" rel="stylesheet" type="text/css" />
+    <link href="/Library/CSS/intern.css" rel="stylesheet" type="text/css" />
+    <link href="/Library/CSS/Jquery.UI/customtheme/default.css" rel="stylesheet" type="text/css" />
+    <script src="/Library/JS/jquery.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.ui.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.form.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.corner.js" type="text/javascript"></script>
+    <script src="/Library/JS/ui.datepicker-pt-BR.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.jScrollPane.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.defaults.js" type="text/javascript"></script>
+    <script src="/Library/JS/ScrollableGridViewPlugin_ASP.NetAJAXmin.js" type="text/javascript"></script>
+    <script src="/Library/JS/ScrollableGridPlugin.js" type="text/javascript"></script>
+    <style type="text/css">
+        .divFormData
+        {
+            margin-top: 10px;
+        }
+        .ulDados
+        {
+            margin: auto !important;
+            margin-top: 20px !important;
+        }
+        .ulDadosOcorrencia
+        {
+            margin: auto !important;
+            margin-top: 20px !important;
+        }
+        .ulDadosOcorrencia li
+        {
+            float: left;
+            margin-right: 5px;
+        }
+
+        .ulDadosOcorrencia li .novaLinha
+        {
+            clear:both !important;
+            float:none !important;
+            margin-right: 5px;
+        }
+        .boxCornerTitle
+        {
+            background-color: #DFF1FF;
+            color: #999;
+            padding: 2px 0;
+            margin-bottom: 1px;
+            margin-top: 12px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #divHeaderFormData h1
+        {
+            color: #666666 !important;
+            font: normal normal bold 1.1em Arial;
+            margin-top: 1px;
+        }
+        #divFormButtons
+        {
+            position: fixed;
+            right: 0;
+            top: 24px;
+        }
+        .helpMessages
+        {
+            margin-top: 5px;
+            font-size: 11px !important;
+        }
+        .divMensagCamposObrig
+        {
+            font-size: 11px !important;
+        }
+        .divValidationSummary
+        {
+            cursor: move;
+            padding: 10px;
+            display: none;
+            width: 210px;
+            position: absolute;
+            top: 35px;
+            left: 0;
+        }
+        .divValidationSummary .divButtons
+        {
+            text-align: right;
+        }
+        .divValidationSummary .vsValidation
+        {
+            margin-left: 10px;
+        }
+        .divValidationSummary #divValidationSummaryContent
+        {
+            margin-bottom: 10px;
+        }
+        .divValidationSummary li
+        {
+            color: #666666;
+            line-height: 11px;
+            border-bottom: 1px solid #CFCFCF;
+            list-style-type: circle;
+            padding-bottom: 2px;
+        }
+        .requiredFieldStyle
+        {
+            border-left: solid 3px #F99 !important;
+        }
+        .validatorField
+        {
+            display: none !important;
+        }
+        .avisoGeralSistema
+        {
+            visibility: hidden;
+            text-align: center;
+        }
+        ..avisoGeralSistema p
+        {
+            text-align: center;
+        }
+        .liBtnOcor
+        {
+            background-color: #F1FFEF;
+            border: 1px solid #D2DFD1;
+            margin-top: 5px;
+            padding: 2px 3px 1px 3px;
+        }
+    </style>
+    <script type="text/javascript">
+//        function AbreModalOcorrencia() {
+//            $('#divRegOcorrencia').dialog({ autoopen: false, modal: true, width: 535, height: 480, resizable: false, title: "REGISTRO DE OCORRÊNCIA",
+//                open: function (type, data) { $(this).parent().appendTo("form"); },
+//                close: function (type, data) { ($(this).parent().replaceWith("")); }
+//            });
+//        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="frmMain" runat="server">
+    <div id="pageContainer">
+        <div id="avisoGeralSistema" class="avisoGeralSistema">
+            <p>
+            </p>
+        </div>
+        <div id="divHeaderFormData" class="boxCornerTitle">
+            <h1>
+                <%= Request.QueryString["moduloNome"] %></h1>
+        </div>
+        <div id="divOcorrencia" style="display:none; margin: -1.7% 0.7% 0px 0px; float:right; z-index:1000; position:relative;">
+            <asp:LinkButton ID="btnOcorrencia" runat="server" onclick="imgbRegisOcorr_OnClick" ValidationGroup="AbreOcorrencia">
+                <img title="Abre Registro de Ocorrência."
+                    alt="Icone de Pesquisa." 
+                    src="/Library/IMG/PGS_CentralRegulacao_Icone_InformacoesUsuario.png" 
+                    width="14" 
+                    height="14"/>
+                <label style="display:inline; vertical-align:text-top; cursor:pointer;">Ocorrência</label>
+            </asp:LinkButton>
+        </div>
+        <div id="helpMessages" class="helpMessages">
+            <div id="divMensagGenerica" class="divMensagGenerica">
+                <asp:Label runat="server" ID="lblMensagGenerica"></asp:Label>
+            </div>
+            <div id="divMensagCamposObrig" class="divMensagCamposObrig">
+                <asp:Label runat="server" ID="lblMensagCampoObrig" CssClass="divMensagCamposObrig"></asp:Label>
+            </div>
+        </div>
+        <div id="divFormData" class="divFormData">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="divFormButtons" class="divFormButtons">
+                <uc1:BarraCadastro ID="BarraCadastroRef" runat="server" />
+            </div>
+        </div>
+        <div id="divValidationSummary" class="divValidationSummary ui-state-error ui-corner-all">
+            <div id="divButtons" class="divButtons">
+                <a id="lnkClose" class="lnkClose" title="Fechar" href="#">[x]</a>
+            </div>
+            <div id="divValidationSummaryContent">
+                <span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
+                <strong>Inconsistências Encontradas:</strong>
+            </div>
+            <asp:ValidationSummary ID="vsValidation" CssClass="vsValidation" runat="server" />
+            <asp:Label runat="server" ID="lblMensagemErro" CssClass="errorMessage"></asp:Label>
+            <asp:Label runat="server" ID="lblMensagemSucesso" CssClass="successMessage"></asp:Label>
+        </div>
+    </div>
+    <div id="divRegOcorrencia" style="display: none;position:relative; margin-left: 5px; margin-bottom: 2px;">
+        <ul class="ulDadosOcorrencia" style="margin:0 0 0 0 !important; padding:0 0 0 0 !important;">
+            <li>
+                <label title="Paciente" class="lblObrigatorio" style="font-size: 11px; margin-bottom:3px;">Paciente</label>
+                <asp:DropDownList ID="drpPacOcorr" Visible="false" runat="server" Width="477px" style="margin-bottom:3px; font-size: 11px !important; height:20px !important;" OnSelectedIndexChanged="drpPacOcorr_OnSelectedIndexChanged" AutoPostBack="true" />
+                <asp:TextBox ID="txtPacOcorr" Width="472px" ValidationGroup="pesqPacOcorr" style="margin-bottom:3px; font-size: 11px; height:20px !important;" ToolTip="Digite o nome ou parte do nome do paciente" runat="server" />
+            </li>
+            <li style="margin-top: 19px; margin-left: 3px;">
+                <asp:ImageButton ID="imgbPesqPacOcorr" ValidationGroup="pesqPacOcorr" style="width:16px; height:16px !important;" runat="server" ImageUrl="~/Library/IMG/Gestor_BtnPesquisa.png"
+                    OnClick="imgbPesqPacOcorr_OnClick" />
+                <asp:ImageButton ID="imgbVoltarPesqOcorr" ValidationGroup="pesqPacOcorr" Width="16px" Height="16px" ImageUrl="~/Library/IMG/PGS_Desfazeer.ico"
+                    OnClick="imgbVoltarPesqOcorr_OnClick" Visible="false" runat="server" />
+            </li>
+            <li style="margin-bottom: 3px; margin-top: 7px;width: 502px; height: 24px !important; margin-right: 0px;
+                                        background-color: #d2ffc2; text-align: center;">
+                <label style="font-family: Tahoma; font-weight: bold; margin-top: 5px; font-size: 11px;">
+                    Histórico de Ocorrências do Paciente
+                </label>
+            </li>
+            <li style="margin-bottom: 5px">
+                <div id="divHistoricoAgenda" class="divGridData" style="height: 127px; width: 500px; overflow-y: scroll !important; border: 1px solid #ccc;">
+                    <asp:GridView ID="grdHistorOcorrPaciente" CssClass="grdBusca" runat="server" Style="width: 100%;"
+                    AutoGenerateColumns="false" ToolTip="Grade de histórico de agendamentos do(a) Paciente selecionado">
+                        <RowStyle CssClass="rowStyle" />
+                        <AlternatingRowStyle CssClass="alternatingRowStyle" />
+                        <EmptyDataRowStyle HorizontalAlign="Center" CssClass="emptyDataRowStyle" />
+                        <EmptyDataTemplate>
+                            Nenhum registro encontrado.<br />
+                        </EmptyDataTemplate>
+                        <Columns>
+                            <asp:BoundField DataField="DataOcorrencia" HeaderText="DATA/HORA">
+                                <ItemStyle Width="40px" HorizontalAlign="Left" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Tipo" HeaderText="TIPO">
+                                <ItemStyle Width="35px" HorizontalAlign="Left" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Ocorrencia" HeaderText="OCORRÊNCIA">
+                                <ItemStyle Width="200px" HorizontalAlign="Left" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Responsavel" HeaderText="RESPONSÁVEL">
+                                <ItemStyle Width="40px" HorizontalAlign="Left" />
+                            </asp:BoundField>
+                        </Columns>
+                    </asp:GridView>
+                </div>
+            </li>
+            <li style="clear: both;">
+                <label class="lblObrigatorio" title="Tipo da Ocorrência" style="font-size: 11px; margin-bottom:3px;">
+                    Tipo de Ocorrência</label>
+                <asp:DropDownList ID="ddlTipoOcorr" ToolTip="Informe o tipo da ocorrência" runat="server" Width="110px" style="margin-bottom:3px; font-size: 11px !important; height: 20px !important;" />
+            </li>
+            <li>
+                <label class="lblObrigatorio" title="Título da Ocorrência" style="font-size: 11px; margin-bottom:3px;">Título da Ocorrência</label>
+                <asp:TextBox ID="txtTituloOcorr" runat="server" CssClass="txtNomeAgencia"
+                    ToolTip="Informe o Título da Ocorrência" Width="380px" MaxLength="80" style="margin-bottom:3px; height: 18px !important; font-size: 11px;">
+                </asp:TextBox>
+            </li>
+            <li style="clear: both;">
+                <label title="Ocorrência" style="font-size: 11px; margin-bottom:3px;">Ocorrência</label>
+                <asp:TextBox ID="txtOcorrencia" runat="server" Columns="50" Rows="4" MaxLength="500" TextMode="MultiLine" ToolTip="Informe o fato ocorrido" style="width: 495px; height: 60px; font-size: 11px;">
+                </asp:TextBox>
+            </li>
+            <li style="clear: both;">
+                <label title="Ação Tomada" style="font-size: 11px; margin-bottom:3px;">Ação Tomada</label>
+                <asp:TextBox ID="txtAcaoOcorr" runat="server" Columns="50" Rows="4" MaxLength="250" TextMode="MultiLine" ToolTip="Informe, caso haja, a ação tomada para a ocorrido" style="width: 495px; height: 70px; font-size: 11px;">
+                </asp:TextBox>
+            </li>
+            <li class="liBtnOcor" style="clear:both; margin-left: 200px !important;">
+                <asp:LinkButton ID="lnkbRegistOcorr" runat="server" OnClick="lnkbRegistOcorr_OnClick" ValidationGroup="ValidacaoOcorrencia">
+                    <asp:Label runat="server" ID="Label3" Text="SALVAR OCORRÊNCIA" Style="margin-left: 4px; margin-right: 4px;"></asp:Label>
+                </asp:LinkButton>
+            </li>
+        </ul>
+    </div>
+    </form>
+    <script src="/Library/JS/jquery.ui.js" type="text/javascript"></script>
+    <script src="/Library/JS/ui.datepicker-pt-BR.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.maskedinput-1.2.2.min.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.maskMoney.0.2.js" type="text/javascript"></script>
+    <script src="/Library/JS/FormValidation.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //----> Faz a correção dos problemas de maxlength para textarea
+        function MaxLength(control, maxlength) {
+            if (maxlength != undefined && maxlength > 0) {
+                control.value = control.value.substr(0, maxlength);
+            }
+        }
+
+        $(window).resize(function () {
+            CriarCabecalhoFixoTabela();
+        });
+
+        $(document).ready(function () {
+
+            CriarCabecalhoFixoTabela();
+
+            $(".lnkClose").click(function (event) {
+                $(".divValidationSummary").attr("style", "display: none;");
+            });
+        });
+
+        function CriarCabecalhoFixoTabela() {
+            //Recupera as tabelas setadas com a classe headFixo
+            var $tables = $('.headFixo');
+
+            $tables.each(function () {
+                var table = $(this);
+
+                //Insere na tabela o cabeçalho caso tenha linhas e caso contrario trata o resultado vazio
+                if (table.find("tbody>tr>th").length > 0) {
+                    table.find("tbody").before("<thead><tr></tr></thead>");
+                    table.find("thead:first tr").append(table.find("th"));
+                    table.find("tbody tr:first").remove();
+                    table.removeClass('emptyData');
+                }
+                else {
+                    table.addClass('emptyData');
+                }
+
+                //Recupera as colunas da primeira linha
+                var $bodyCells = table.find('tbody tr:first').children();
+
+                // Recupera a largura de cada coluna da primeira linha
+                var colWidth = $bodyCells.map(function () {
+                    return $(this).width();
+                }).get();
+
+                // Recupera as colunas do cabeçalho e edita com os valores recuperados das colunas da primeira linha
+                table.find('thead tr').children().each(function (i, v) {
+                    $(v).width(colWidth[i]);
+                });
+            });
+        };
+    </script>
+</body>
+</html>

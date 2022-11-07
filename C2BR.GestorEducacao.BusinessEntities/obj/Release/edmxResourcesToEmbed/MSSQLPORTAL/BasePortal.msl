@@ -1,0 +1,1725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="BDPRGEModelStoreContainer" CdmEntityContainer="BasePortal">
+    <EntitySetMapping Name="GW000_USUARIOS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW000_USUARIOS">
+        <MappingFragment StoreEntitySet="GW000_USUARIOS">
+          <ScalarProperty Name="QT_SMS_TOTAL_USR" ColumnName="QT_SMS_TOTAL_USR" />
+          <ScalarProperty Name="QT_SMS_MES_USR" ColumnName="QT_SMS_MES_USR" />
+          <ScalarProperty Name="QT_SMS_MAXIM_USR" ColumnName="QT_SMS_MAXIM_USR" />
+          <ScalarProperty Name="DT_STATUS_USR" ColumnName="DT_STATUS_USR" />
+          <ScalarProperty Name="NR_TELEF_USR" ColumnName="NR_TELEF_USR" />
+          <ScalarProperty Name="DT_CADAS_USR" ColumnName="DT_CADAS_USR" />
+          <ScalarProperty Name="DE_EMAIL_USR" ColumnName="DE_EMAIL_USR" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="ID_INFORM_RESP" ColumnName="ID_INFORM_RESP" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="CO_STATUS_USUARIO" ColumnName="CO_STATUS_USUARIO" />
+          <ScalarProperty Name="FL_USR_REDE_RELAC" ColumnName="FL_USR_REDE_RELAC" />
+          <ScalarProperty Name="FL_USR_TRANSP_ESCOL" ColumnName="FL_USR_TRANSP_ESCOL" />
+          <ScalarProperty Name="FL_USR_MERENDA" ColumnName="FL_USR_MERENDA" />
+          <ScalarProperty Name="FL_USR_BIBLIOTECA" ColumnName="FL_USR_BIBLIOTECA" />
+          <ScalarProperty Name="NR_CPF_USR" ColumnName="NR_CPF_USR" />
+          <ScalarProperty Name="CO_MATRI_USR" ColumnName="CO_MATRI_USR" />
+          <ScalarProperty Name="NM_MAE_USR" ColumnName="NM_MAE_USR" />
+          <ScalarProperty Name="DT_NASCI_USR" ColumnName="DT_NASCI_USR" />
+          <ScalarProperty Name="NM_REDUZ_USR" ColumnName="NM_REDUZ_USR" />
+          <ScalarProperty Name="NR_IP_FIXO_USR" ColumnName="NR_IP_FIXO_USR" />
+          <ScalarProperty Name="DT_EXPIR_SENHA_USR" ColumnName="DT_EXPIR_SENHA_USR" />
+          <ScalarProperty Name="VL_CONTR_SENHA_USR" ColumnName="VL_CONTR_SENHA_USR" />
+          <ScalarProperty Name="VL_SENHA_USUARIO" ColumnName="VL_SENHA_USUARIO" />
+          <ScalarProperty Name="NM_LOGIN_USUARIO" ColumnName="NM_LOGIN_USUARIO" />
+          <ScalarProperty Name="NM_USUARIO" ColumnName="NM_USUARIO" />
+          <ScalarProperty Name="TP_USUARIO" ColumnName="TP_USUARIO" />
+          <ScalarProperty Name="ID_REFER_GEDUC_UNID" ColumnName="ID_REFER_GEDUC_UNID" />
+          <ScalarProperty Name="ID_REFER_GEDUC_USR" ColumnName="ID_REFER_GEDUC_USR" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW000_USUHISTPSW">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW000_USUHISTPSW">
+        <MappingFragment StoreEntitySet="GW000_USUHISTPSW">
+          <ScalarProperty Name="VL_SENHA_ANTIGA" ColumnName="VL_SENHA_ANTIGA" />
+          <ScalarProperty Name="DT_TERMI_PSW_ANTIGA" ColumnName="DT_TERMI_PSW_ANTIGA" />
+          <ScalarProperty Name="DT_INICIO_PSW_ANTIGA" ColumnName="DT_INICIO_PSW_ANTIGA" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_PSW_ANTIGAS" ColumnName="ID_PSW_ANTIGAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW000_USUXACESS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW000_USUXACESS">
+        <MappingFragment StoreEntitySet="GW000_USUXACESS">
+          <ScalarProperty Name="NR_ACESSO_USR" ColumnName="NR_ACESSO_USR" />
+          <ScalarProperty Name="HR_INICIO_ACESSO_USR" ColumnName="HR_INICIO_ACESSO_USR" />
+          <ScalarProperty Name="CO_IP_ACESSO_USR" ColumnName="CO_IP_ACESSO_USR" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="DT_ACESSO_USR" ColumnName="DT_ACESSO_USR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW001_UNID_INFORM">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW001_UNID_INFORM">
+        <MappingFragment StoreEntitySet="GW001_UNID_INFORM">
+          <ScalarProperty Name="DT_LACTO_FINAL_BIM4" ColumnName="DT_LACTO_FINAL_BIM4" />
+          <ScalarProperty Name="DT_LACTO_FINAL_BIM3" ColumnName="DT_LACTO_FINAL_BIM3" />
+          <ScalarProperty Name="DT_LACTO_FINAL_BIM2" ColumnName="DT_LACTO_FINAL_BIM2" />
+          <ScalarProperty Name="DT_LACTO_FINAL_BIM1" ColumnName="DT_LACTO_FINAL_BIM1" />
+          <ScalarProperty Name="DT_LACTO_INICI_BIM4" ColumnName="DT_LACTO_INICI_BIM4" />
+          <ScalarProperty Name="DT_LACTO_INICI_BIM3" ColumnName="DT_LACTO_INICI_BIM3" />
+          <ScalarProperty Name="DT_LACTO_INICI_BIM2" ColumnName="DT_LACTO_INICI_BIM2" />
+          <ScalarProperty Name="DT_LACTO_INICI_BIM1" ColumnName="DT_LACTO_INICI_BIM1" />
+          <ScalarProperty Name="DT_PERIO_FINAL_BIM4" ColumnName="DT_PERIO_FINAL_BIM4" />
+          <ScalarProperty Name="DT_PERIO_FINAL_BIM3" ColumnName="DT_PERIO_FINAL_BIM3" />
+          <ScalarProperty Name="DT_PERIO_FINAL_BIM2" ColumnName="DT_PERIO_FINAL_BIM2" />
+          <ScalarProperty Name="DT_PERIO_FINAL_BIM1" ColumnName="DT_PERIO_FINAL_BIM1" />
+          <ScalarProperty Name="DT_PERIO_INICI_BIM4" ColumnName="DT_PERIO_INICI_BIM4" />
+          <ScalarProperty Name="DT_PERIO_INICI_BIM3" ColumnName="DT_PERIO_INICI_BIM3" />
+          <ScalarProperty Name="DT_PERIO_INICI_BIM2" ColumnName="DT_PERIO_INICI_BIM2" />
+          <ScalarProperty Name="DT_PERIO_INICI_BIM1" ColumnName="DT_PERIO_INICI_BIM1" />
+          <ScalarProperty Name="FL_TIPO_NOTA" ColumnName="FL_TIPO_NOTA" />
+          <ScalarProperty Name="CO_SECT" ColumnName="CO_SECT" />
+          <ScalarProperty Name="CO_DIRET" ColumnName="CO_DIRET" />
+          <ScalarProperty Name="DE_PROPO_PEDAG" ColumnName="DE_PROPO_PEDAG" />
+          <ScalarProperty Name="DE_NOSSA_HISTO" ColumnName="DE_NOSSA_HISTO" />
+          <ScalarProperty Name="DE_QUEM_SOMOS" ColumnName="DE_QUEM_SOMOS" />
+          <ScalarProperty Name="HR_NOITE_SAIDA" ColumnName="HR_NOITE_SAIDA" />
+          <ScalarProperty Name="HR_NOITE_ENTRA" ColumnName="HR_NOITE_ENTRA" />
+          <ScalarProperty Name="HR_TARDE_SAIDA" ColumnName="HR_TARDE_SAIDA" />
+          <ScalarProperty Name="HR_TARDE_ENTRA" ColumnName="HR_TARDE_ENTRA" />
+          <ScalarProperty Name="HR_MANHA_SAIDA" ColumnName="HR_MANHA_SAIDA" />
+          <ScalarProperty Name="HR_MANHA_ENTRA" ColumnName="HR_MANHA_ENTRA" />
+          <ScalarProperty Name="DE_ENDER_FOTO_UNID" ColumnName="DE_ENDER_FOTO_UNID" />
+          <ScalarProperty Name="CO_MUNIC_IBGE_UNID" ColumnName="CO_MUNIC_IBGE_UNID" />
+          <ScalarProperty Name="DE_WEB_PAGE_UNID" ColumnName="DE_WEB_PAGE_UNID" />
+          <ScalarProperty Name="DE_EMAIL_SECRET_UNID" ColumnName="DE_EMAIL_SECRET_UNID" />
+          <ScalarProperty Name="DE_EMAIL_COORD_UNID" ColumnName="DE_EMAIL_COORD_UNID" />
+          <ScalarProperty Name="DE_EMAIL_DIRET_UNID" ColumnName="DE_EMAIL_DIRET_UNID" />
+          <ScalarProperty Name="DE_EMAIL_GERAL_UNID" ColumnName="DE_EMAIL_GERAL_UNID" />
+          <ScalarProperty Name="NR_TELEF_SECRE_UNID" ColumnName="NR_TELEF_SECRE_UNID" />
+          <ScalarProperty Name="NR_TELEF_COORD_UNID" ColumnName="NR_TELEF_COORD_UNID" />
+          <ScalarProperty Name="NR_TELEF_DIRET_UNID" ColumnName="NR_TELEF_DIRET_UNID" />
+          <ScalarProperty Name="NR_TELEF_GERAL_UNID" ColumnName="NR_TELEF_GERAL_UNID" />
+          <ScalarProperty Name="DE_ENDER_CEP_UNID" ColumnName="DE_ENDER_CEP_UNID" />
+          <ScalarProperty Name="DE_ENDER_ESTAD_UNID" ColumnName="DE_ENDER_ESTAD_UNID" />
+          <ScalarProperty Name="DE_ENDER_CIDAD_UNID" ColumnName="DE_ENDER_CIDAD_UNID" />
+          <ScalarProperty Name="DE_ENDER_BAIRR_UNID" ColumnName="DE_ENDER_BAIRR_UNID" />
+          <ScalarProperty Name="DE_ENDER_COMPL_UNID" ColumnName="DE_ENDER_COMPL_UNID" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_UNID" ColumnName="DE_ENDER_LOCAL_UNID" />
+          <ScalarProperty Name="CO_SIGLA_UNID" ColumnName="CO_SIGLA_UNID" />
+          <ScalarProperty Name="NO_REDUZ_UNID" ColumnName="NO_REDUZ_UNID" />
+          <ScalarProperty Name="NO_UNID" ColumnName="NO_UNID" />
+          <ScalarProperty Name="TP_UNID" ColumnName="TP_UNID" />
+          <ScalarProperty Name="NR_NIS_UNID" ColumnName="NR_NIS_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW002_UNID_GESTOR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW002_UNID_GESTOR">
+        <MappingFragment StoreEntitySet="GW002_UNID_GESTOR">
+          <ScalarProperty Name="DT_TERMI_ATIVI" ColumnName="DT_TERMI_ATIVI" />
+          <ScalarProperty Name="DT_INICI_ATIVI" ColumnName="DT_INICI_ATIVI" />
+          <ScalarProperty Name="DE_ENDER_FOTO_GESTOR" ColumnName="DE_ENDER_FOTO_GESTOR" />
+          <ScalarProperty Name="DE_EMAIL_GESTOR" ColumnName="DE_EMAIL_GESTOR" />
+          <ScalarProperty Name="NR_TELEF_FIXO_GESTOR" ColumnName="NR_TELEF_FIXO_GESTOR" />
+          <ScalarProperty Name="NR_TELEF_CELUL_GESTOR" ColumnName="NR_TELEF_CELUL_GESTOR" />
+          <ScalarProperty Name="NO_CARGO_GESTOR" ColumnName="NO_CARGO_GESTOR" />
+          <ScalarProperty Name="NO_APELIDO_GESTOR" ColumnName="NO_APELIDO_GESTOR" />
+          <ScalarProperty Name="NO_GESTOR" ColumnName="NO_GESTOR" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_UNID_GESTOR" ColumnName="ID_UNID_GESTOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW003_UNID_MIDIA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW003_UNID_MIDIA">
+        <MappingFragment StoreEntitySet="GW003_UNID_MIDIA">
+          <ScalarProperty Name="DT_SITUA_MIDIA" ColumnName="DT_SITUA_MIDIA" />
+          <ScalarProperty Name="FL_SITUA_MIDIA" ColumnName="FL_SITUA_MIDIA" />
+          <ScalarProperty Name="DT_CADAS_MIDIA" ColumnName="DT_CADAS_MIDIA" />
+          <ScalarProperty Name="DE_ENDER_MIDIA" ColumnName="DE_ENDER_MIDIA" />
+          <ScalarProperty Name="CO_TIPO_MIDIA" ColumnName="CO_TIPO_MIDIA" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_UNID_MIDIA" ColumnName="ID_UNID_MIDIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW004_UNID_PERFIL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW004_UNID_PERFIL">
+        <MappingFragment StoreEntitySet="GW004_UNID_PERFIL">
+          <ScalarProperty Name="DE_TERRE_OBSER" ColumnName="DE_TERRE_OBSER" />
+          <ScalarProperty Name="DE_TERRE_LONGI_SIGLA" ColumnName="DE_TERRE_LONGI_SIGLA" />
+          <ScalarProperty Name="DE_TERRE_LONGI_NUMER" ColumnName="DE_TERRE_LONGI_NUMER" />
+          <ScalarProperty Name="DE_TERRE_LATITU_SIGLA" ColumnName="DE_TERRE_LATITU_SIGLA" />
+          <ScalarProperty Name="DE_TERRE_LATITU_NUMER" ColumnName="DE_TERRE_LATITU_NUMER" />
+          <ScalarProperty Name="DE_TERRE_AVALI" ColumnName="DE_TERRE_AVALI" />
+          <ScalarProperty Name="QT_TERRE_AREA_VERDE" ColumnName="QT_TERRE_AREA_VERDE" />
+          <ScalarProperty Name="QT_TERRE_AREA_TOTAL" ColumnName="QT_TERRE_AREA_TOTAL" />
+          <ScalarProperty Name="QT_TERRE_AREA_LIVRE" ColumnName="QT_TERRE_AREA_LIVRE" />
+          <ScalarProperty Name="QT_TERRE_AREA_CONST" ColumnName="QT_TERRE_AREA_CONST" />
+          <ScalarProperty Name="CO_TERRE_TIPO_DELIM" ColumnName="CO_TERRE_TIPO_DELIM" />
+          <ScalarProperty Name="CO_TERRE_TIPO" ColumnName="CO_TERRE_TIPO" />
+          <ScalarProperty Name="CO_FLAG_ESTAC" ColumnName="CO_FLAG_ESTAC" />
+          <ScalarProperty Name="CO_FLAG_ESPOR" ColumnName="CO_FLAG_ESPOR" />
+          <ScalarProperty Name="CO_FLAG_ENERG" ColumnName="CO_FLAG_ENERG" />
+          <ScalarProperty Name="CO_FLAG_BIBLI" ColumnName="CO_FLAG_BIBLI" />
+          <ScalarProperty Name="CO_TIPO_OCUPA" ColumnName="CO_TIPO_OCUPA" />
+          <ScalarProperty Name="CO_TIPO_UNIDA" ColumnName="CO_TIPO_UNIDA" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW005_UNID_COLAB">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW005_UNID_COLAB">
+        <MappingFragment StoreEntitySet="GW005_UNID_COLAB">
+          <ScalarProperty Name="CO_ENDER_ESTAD_COLAB" ColumnName="CO_ENDER_ESTAD_COLAB" />
+          <ScalarProperty Name="CO_ENDER_CIDAD_COLAB" ColumnName="CO_ENDER_CIDAD_COLAB" />
+          <ScalarProperty Name="CO_ENDER_BAIRR_COLAB" ColumnName="CO_ENDER_BAIRR_COLAB" />
+          <ScalarProperty Name="DE_ENDER_COMPL_COLAB" ColumnName="DE_ENDER_COMPL_COLAB" />
+          <ScalarProperty Name="NU_ENDER_NUMER_COLAB" ColumnName="NU_ENDER_NUMER_COLAB" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_COLAB" ColumnName="DE_ENDER_LOCAL_COLAB" />
+          <ScalarProperty Name="CO_ENDER_CEP_COLAB" ColumnName="CO_ENDER_CEP_COLAB" />
+          <ScalarProperty Name="CO_CONJU_SANGU_FATOR_COLAB" ColumnName="CO_CONJU_SANGU_FATOR_COLAB" />
+          <ScalarProperty Name="CO_CONJU_SANGU_TIPO_COLAB" ColumnName="CO_CONJU_SANGU_TIPO_COLAB" />
+          <ScalarProperty Name="NR_CONJU_CPF_COLAB" ColumnName="NR_CONJU_CPF_COLAB" />
+          <ScalarProperty Name="CO_CONJU_SEXO_COLAB" ColumnName="CO_CONJU_SEXO_COLAB" />
+          <ScalarProperty Name="DT_CONJU_NASCI_COLAB" ColumnName="DT_CONJU_NASCI_COLAB" />
+          <ScalarProperty Name="NO_CONJU_COLAB" ColumnName="NO_CONJU_COLAB" />
+          <ScalarProperty Name="NR_CARTEI_SAUDE_COLAB" ColumnName="NR_CARTEI_SAUDE_COLAB" />
+          <ScalarProperty Name="CO_TITUL_ESTAD_COLAB" ColumnName="CO_TITUL_ESTAD_COLAB" />
+          <ScalarProperty Name="NO_TITUL_CIDAD_COLAB" ColumnName="NO_TITUL_CIDAD_COLAB" />
+          <ScalarProperty Name="NR_TITUL_ZONA_COLAB" ColumnName="NR_TITUL_ZONA_COLAB" />
+          <ScalarProperty Name="NR_TITUL_SECAO_COLAB" ColumnName="NR_TITUL_SECAO_COLAB" />
+          <ScalarProperty Name="NR_TITUL_NUMER_COLAB" ColumnName="NR_TITUL_NUMER_COLAB" />
+          <ScalarProperty Name="NO_PASSA_PAIS_COLAB" ColumnName="NO_PASSA_PAIS_COLAB" />
+          <ScalarProperty Name="CO_PASSA_NUMER_COLAB" ColumnName="CO_PASSA_NUMER_COLAB" />
+          <ScalarProperty Name="CO_RG_ESTAD_COLAB" ColumnName="CO_RG_ESTAD_COLAB" />
+          <ScalarProperty Name="DT_RG_EMISSA_COLAB" ColumnName="DT_RG_EMISSA_COLAB" />
+          <ScalarProperty Name="CO_RG_ORGAO_COLAB" ColumnName="CO_RG_ORGAO_COLAB" />
+          <ScalarProperty Name="CO_RG_NUMER_COLAB" ColumnName="CO_RG_NUMER_COLAB" />
+          <ScalarProperty Name="NR_TELEF_RAMAL_COLAB" ColumnName="NR_TELEF_RAMAL_COLAB" />
+          <ScalarProperty Name="NR_TELEF_TRABA_COLAB" ColumnName="NR_TELEF_TRABA_COLAB" />
+          <ScalarProperty Name="DE_CURSO_FORM_COLAB" ColumnName="DE_CURSO_FORM_COLAB" />
+          <ScalarProperty Name="CO_STATUS_GRAU_INSTR_COLAB" ColumnName="CO_STATUS_GRAU_INSTR_COLAB" />
+          <ScalarProperty Name="DE_GRAU_INSTR_COLAB" ColumnName="DE_GRAU_INSTR_COLAB" />
+          <ScalarProperty Name="CO_SANGU_TIPO_COLAB" ColumnName="CO_SANGU_TIPO_COLAB" />
+          <ScalarProperty Name="CO_SANGU_FATOR_COLAB" ColumnName="CO_SANGU_FATOR_COLAB" />
+          <ScalarProperty Name="DT_SITUA_COLAB" ColumnName="DT_SITUA_COLAB" />
+          <ScalarProperty Name="CO_SITUA_COLAB" ColumnName="CO_SITUA_COLAB" />
+          <ScalarProperty Name="DE_ENDER_IMAG_COLAB" ColumnName="DE_ENDER_IMAG_COLAB" />
+          <ScalarProperty Name="NR_CELUL_COLAB" ColumnName="NR_CELUL_COLAB" />
+          <ScalarProperty Name="NR_TELEF_COLAB" ColumnName="NR_TELEF_COLAB" />
+          <ScalarProperty Name="DE_EMAIL_COLAB" ColumnName="DE_EMAIL_COLAB" />
+          <ScalarProperty Name="NO_BAIRRO_COLAB" ColumnName="NO_BAIRRO_COLAB" />
+          <ScalarProperty Name="NO_ESTAD_CIVIL_COLAB" ColumnName="NO_ESTAD_CIVIL_COLAB" />
+          <ScalarProperty Name="CO_NATUR_UF_COLAB" ColumnName="CO_NATUR_UF_COLAB" />
+          <ScalarProperty Name="NO_NATUR_LOCAL_COLAB" ColumnName="NO_NATUR_LOCAL_COLAB" />
+          <ScalarProperty Name="CO_SEXO_COLAB" ColumnName="CO_SEXO_COLAB" />
+          <ScalarProperty Name="DT_NASCIM_COLAB" ColumnName="DT_NASCIM_COLAB" />
+          <ScalarProperty Name="NM_APELID_COLAB" ColumnName="NM_APELID_COLAB" />
+          <ScalarProperty Name="NM_COMPL_COLAB" ColumnName="NM_COMPL_COLAB" />
+          <ScalarProperty Name="NR_CPF_COLAB" ColumnName="NR_CPF_COLAB" />
+          <ScalarProperty Name="TP_COLAB" ColumnName="TP_COLAB" />
+          <ScalarProperty Name="CO_MATRI_COLAB" ColumnName="CO_MATRI_COLAB" />
+          <ScalarProperty Name="CO_UNID_FUNC" ColumnName="CO_UNID_FUNC" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW006_UNID_COLAB_MATER">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW006_UNID_COLAB_MATER">
+        <MappingFragment StoreEntitySet="GW006_UNID_COLAB_MATER">
+          <ScalarProperty Name="CO_SITUA_COLAB" ColumnName="CO_SITUA_COLAB" />
+          <ScalarProperty Name="DE_OBSER_COLAB" ColumnName="DE_OBSER_COLAB" />
+          <ScalarProperty Name="DT_FINAL_COLAB" ColumnName="DT_FINAL_COLAB" />
+          <ScalarProperty Name="DT_INICIO_COLAB" ColumnName="DT_INICIO_COLAB" />
+          <ScalarProperty Name="CO_CLASS_COLAB" ColumnName="CO_CLASS_COLAB" />
+          <ScalarProperty Name="ID_MATER_COLAB" ColumnName="ID_MATER_COLAB" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_UNID_COLAB_MATER" ColumnName="ID_UNID_COLAB_MATER" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW007_UNID_SERVI">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW007_UNID_SERVI">
+        <MappingFragment StoreEntitySet="GW007_UNID_SERVI">
+          <ScalarProperty Name="CO_SERVI_ARMAR" ColumnName="CO_SERVI_ARMAR" />
+          <ScalarProperty Name="CO_SERVI_VIGIA" ColumnName="CO_SERVI_VIGIA" />
+          <ScalarProperty Name="QT_SERVI_MEREN_CAPAC" ColumnName="QT_SERVI_MEREN_CAPAC" />
+          <ScalarProperty Name="CO_SERVI_MEREN" ColumnName="CO_SERVI_MEREN" />
+          <ScalarProperty Name="QT_SERVI_TRANSP_FUNCI" ColumnName="QT_SERVI_TRANSP_FUNCI" />
+          <ScalarProperty Name="CO_SERVI_TRANSP_FUNCI" ColumnName="CO_SERVI_TRANSP_FUNCI" />
+          <ScalarProperty Name="QT_SERVI_TRANSP_ESCOL" ColumnName="QT_SERVI_TRANSP_ESCOL" />
+          <ScalarProperty Name="CO_SERVI_TRANSP_ESCOL" ColumnName="CO_SERVI_TRANSP_ESCOL" />
+          <ScalarProperty Name="CO_SERVI_ODONT" ColumnName="CO_SERVI_ODONT" />
+          <ScalarProperty Name="CO_SERVI_CLINI" ColumnName="CO_SERVI_CLINI" />
+          <ScalarProperty Name="CO_SERVI_COLET_LIXO" ColumnName="CO_SERVI_COLET_LIXO" />
+          <ScalarProperty Name="CO_SERVI_ATIVI_COMUN" ColumnName="CO_SERVI_ATIVI_COMUN" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW008_UNID_CONCE">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW008_UNID_CONCE">
+        <MappingFragment StoreEntitySet="GW008_UNID_CONCE">
+          <ScalarProperty Name="ID_REGISTRO" ColumnName="ID_REGISTRO" />
+          <ScalarProperty Name="VL_NOTA_MAX" ColumnName="VL_NOTA_MAX" />
+          <ScalarProperty Name="VL_NOTA_MIN" ColumnName="VL_NOTA_MIN" />
+          <ScalarProperty Name="DE_CONCE" ColumnName="DE_CONCE" />
+          <ScalarProperty Name="CO_SIGLA_UNID_CONCE" ColumnName="CO_SIGLA_UNID_CONCE" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW010_UF">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW010_UF">
+        <MappingFragment StoreEntitySet="GW010_UF">
+          <ScalarProperty Name="DESCRICAOUF" ColumnName="DESCRICAOUF" />
+          <ScalarProperty Name="CODUF" ColumnName="CODUF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW011_CIDADE">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW011_CIDADE">
+        <MappingFragment StoreEntitySet="GW011_CIDADE">
+          <ScalarProperty Name="CO_UF" ColumnName="CO_UF" />
+          <ScalarProperty Name="NO_CIDADE" ColumnName="NO_CIDADE" />
+          <ScalarProperty Name="CO_CIDADE" ColumnName="CO_CIDADE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW012_BAIRRO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW012_BAIRRO">
+        <MappingFragment StoreEntitySet="GW012_BAIRRO">
+          <ScalarProperty Name="CO_UF" ColumnName="CO_UF" />
+          <ScalarProperty Name="NO_BAIRRO" ColumnName="NO_BAIRRO" />
+          <ScalarProperty Name="CO_CIDADE" ColumnName="CO_CIDADE" />
+          <ScalarProperty Name="CO_BAIRRO" ColumnName="CO_BAIRRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW013_CEP">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW013_CEP">
+        <MappingFragment StoreEntitySet="GW013_CEP">
+          <ScalarProperty Name="TP_LONGI_CEP" ColumnName="TP_LONGI_CEP" />
+          <ScalarProperty Name="NR_LONGI_CEP" ColumnName="NR_LONGI_CEP" />
+          <ScalarProperty Name="TP_LATIT_CEP" ColumnName="TP_LATIT_CEP" />
+          <ScalarProperty Name="NR_LATIT_CEP" ColumnName="NR_LATIT_CEP" />
+          <ScalarProperty Name="CO_BAIRR_CEP" ColumnName="CO_BAIRR_CEP" />
+          <ScalarProperty Name="CO_CIDAD_CEP" ColumnName="CO_CIDAD_CEP" />
+          <ScalarProperty Name="NO_ENDER_CEP" ColumnName="NO_ENDER_CEP" />
+          <ScalarProperty Name="DE_TIPO_LOGRA" ColumnName="DE_TIPO_LOGRA" />
+          <ScalarProperty Name="CO_CEP" ColumnName="CO_CEP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW1000_GRAFI_FREQU_PRESE">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW1000_GRAFI_FREQU_PRESE">
+        <MappingFragment StoreEntitySet="GW1000_GRAFI_FREQU_PRESE">
+          <ScalarProperty Name="B4_PORCE_ATESTA" ColumnName="B4_PORCE_ATESTA" />
+          <ScalarProperty Name="B4_PORCE_PRESEN" ColumnName="B4_PORCE_PRESEN" />
+          <ScalarProperty Name="B4_PORCE_FALTAS" ColumnName="B4_PORCE_FALTAS" />
+          <ScalarProperty Name="B3_PORCE_ATESTA" ColumnName="B3_PORCE_ATESTA" />
+          <ScalarProperty Name="B3_PORCE_PRESEN" ColumnName="B3_PORCE_PRESEN" />
+          <ScalarProperty Name="B3_PORCE_FALTAS" ColumnName="B3_PORCE_FALTAS" />
+          <ScalarProperty Name="B2_PORCE_ATESTA" ColumnName="B2_PORCE_ATESTA" />
+          <ScalarProperty Name="B2_PORCE_PRESEN" ColumnName="B2_PORCE_PRESEN" />
+          <ScalarProperty Name="B2_PORCE_FALTAS" ColumnName="B2_PORCE_FALTAS" />
+          <ScalarProperty Name="B1_PORCE_ATESTA" ColumnName="B1_PORCE_ATESTA" />
+          <ScalarProperty Name="B1_PORCE_PRESEN" ColumnName="B1_PORCE_PRESEN" />
+          <ScalarProperty Name="B1_PORCE_FALTAS" ColumnName="B1_PORCE_FALTAS" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="ID_TURMA" ColumnName="ID_TURMA" />
+          <ScalarProperty Name="ID_UNIDADE" ColumnName="ID_UNIDADE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW1001_GRAFI_FREQU_FALTAS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW1001_GRAFI_FREQU_FALTAS">
+        <MappingFragment StoreEntitySet="GW1001_GRAFI_FREQU_FALTAS">
+          <ScalarProperty Name="FALTAS_B4" ColumnName="FALTAS_B4" />
+          <ScalarProperty Name="FALTAS_B3" ColumnName="FALTAS_B3" />
+          <ScalarProperty Name="FALTAS_B2" ColumnName="FALTAS_B2" />
+          <ScalarProperty Name="FALTAS_B1" ColumnName="FALTAS_B1" />
+          <ScalarProperty Name="NU_MATRICULA" ColumnName="NU_MATRICULA" />
+          <ScalarProperty Name="ID_ALUNO" ColumnName="ID_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW101_MODAL_ENSINO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW101_MODAL_ENSINO">
+        <MappingFragment StoreEntitySet="GW101_MODAL_ENSINO">
+          <ScalarProperty Name="NR_IMPRE_MODAL" ColumnName="NR_IMPRE_MODAL" />
+          <ScalarProperty Name="CO_SIGLA_MODAL" ColumnName="CO_SIGLA_MODAL" />
+          <ScalarProperty Name="NM_REDUZ_MODAL" ColumnName="NM_REDUZ_MODAL" />
+          <ScalarProperty Name="NM_MODAL" ColumnName="NM_MODAL" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW102_SERIE_ENSINO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW102_SERIE_ENSINO">
+        <MappingFragment StoreEntitySet="GW102_SERIE_ENSINO">
+          <ScalarProperty Name="CO_PARAM_FREQ_TIPO" ColumnName="CO_PARAM_FREQ_TIPO" />
+          <ScalarProperty Name="NR_IMPRE_SERIE" ColumnName="NR_IMPRE_SERIE" />
+          <ScalarProperty Name="CO_SIGLA_SERIE" ColumnName="CO_SIGLA_SERIE" />
+          <ScalarProperty Name="NM_REDUZ_SERIE" ColumnName="NM_REDUZ_SERIE" />
+          <ScalarProperty Name="NM_SERIE" ColumnName="NM_SERIE" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW103_TURMA_ENSINO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW103_TURMA_ENSINO">
+        <MappingFragment StoreEntitySet="GW103_TURMA_ENSINO">
+          <ScalarProperty Name="CO_PERI_TUR" ColumnName="CO_PERI_TUR" />
+          <ScalarProperty Name="QT_ALUNO_TURMA" ColumnName="QT_ALUNO_TURMA" />
+          <ScalarProperty Name="IM_FOTO2" ColumnName="IM_FOTO2" />
+          <ScalarProperty Name="IM_FOTO1" ColumnName="IM_FOTO1" />
+          <ScalarProperty Name="FL_RESP_UNICO_TURMA" ColumnName="FL_RESP_UNICO_TURMA" />
+          <ScalarProperty Name="DE_REFER_SALA_AULA" ColumnName="DE_REFER_SALA_AULA" />
+          <ScalarProperty Name="CO_IDENT_SALA_AULA" ColumnName="CO_IDENT_SALA_AULA" />
+          <ScalarProperty Name="CO_MULTI_SERIE" ColumnName="CO_MULTI_SERIE" />
+          <ScalarProperty Name="NR_IMPRE_TURMA" ColumnName="NR_IMPRE_TURMA" />
+          <ScalarProperty Name="CO_SIGLA_TURMA" ColumnName="CO_SIGLA_TURMA" />
+          <ScalarProperty Name="NM_REDUZ_TURMA" ColumnName="NM_REDUZ_TURMA" />
+          <ScalarProperty Name="NM_TURMA" ColumnName="NM_TURMA" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW104_MATERIAS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW104_MATERIAS">
+        <MappingFragment StoreEntitySet="GW104_MATERIAS">
+          <ScalarProperty Name="CO_CLASS_BOLETIM" ColumnName="CO_CLASS_BOLETIM" />
+          <ScalarProperty Name="NM_REDUZ_MATER" ColumnName="NM_REDUZ_MATER" />
+          <ScalarProperty Name="CO_SIGLA_MATER" ColumnName="CO_SIGLA_MATER" />
+          <ScalarProperty Name="NM_MATER" ColumnName="NM_MATER" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW105_GRADE_MATER">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW105_GRADE_MATER">
+        <MappingFragment StoreEntitySet="GW105_GRADE_MATER">
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="QT_HORAS_ANO_MATER" ColumnName="QT_HORAS_ANO_MATER" />
+          <ScalarProperty Name="QT_AULAS_ANO_MATER" ColumnName="QT_AULAS_ANO_MATER" />
+          <ScalarProperty Name="FL_CLASS_APLIC_MATER" ColumnName="FL_CLASS_APLIC_MATER" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_GRADE_MATER" ColumnName="ID_GRADE_MATER" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW106_GRADE_HORAR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW106_GRADE_HORAR">
+        <MappingFragment StoreEntitySet="GW106_GRADE_HORAR">
+          <ScalarProperty Name="HR_TERMI_AULA_HORAR" ColumnName="HR_TERMI_AULA_HORAR" />
+          <ScalarProperty Name="HR_INICIO_AULA_HORAR" ColumnName="HR_INICIO_AULA_HORAR" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="CO_ANOREF_HORAR" ColumnName="CO_ANOREF_HORAR" />
+          <ScalarProperty Name="NR_TEMPO_AULA_HORAR" ColumnName="NR_TEMPO_AULA_HORAR" />
+          <ScalarProperty Name="TP_TURNO" ColumnName="TP_TURNO" />
+          <ScalarProperty Name="CO_DIA_SEMAN_HORAR" ColumnName="CO_DIA_SEMAN_HORAR" />
+          <ScalarProperty Name="ID_GRADE_MATER" ColumnName="ID_GRADE_MATER" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW107_PLANO_AULAS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW107_PLANO_AULAS">
+        <MappingFragment StoreEntitySet="GW107_PLANO_AULAS">
+          <ScalarProperty Name="ID_TIPO_ATIV" ColumnName="ID_TIPO_ATIV" />
+          <ScalarProperty Name="ID_ACERVO_AULA" ColumnName="ID_ACERVO_AULA" />
+          <ScalarProperty Name="CO_STATUS_ATIVI_PLANO" ColumnName="CO_STATUS_ATIVI_PLANO" />
+          <ScalarProperty Name="NU_TEMP_PLA_AULA" ColumnName="NU_TEMP_PLA_AULA" />
+          <ScalarProperty Name="DE_CONTE_REALIZ_ATIVI_PLANO" ColumnName="DE_CONTE_REALIZ_ATIVI_PLANO" />
+          <ScalarProperty Name="QT_REALIZ_HORAS_ATIVI_PLANO" ColumnName="QT_REALIZ_HORAS_ATIVI_PLANO" />
+          <ScalarProperty Name="HR_REALIZ_ATIVI_PLANO" ColumnName="HR_REALIZ_ATIVI_PLANO" />
+          <ScalarProperty Name="DT_REALIZ_ATIVI_PLANO" ColumnName="DT_REALIZ_ATIVI_PLANO" />
+          <ScalarProperty Name="DE_MATER_ATIVI_PLANO" ColumnName="DE_MATER_ATIVI_PLANO" />
+          <ScalarProperty Name="DE_METOD_ATIVI_PLANO" ColumnName="DE_METOD_ATIVI_PLANO" />
+          <ScalarProperty Name="DE_OBJET_ATIVI_PLANO" ColumnName="DE_OBJET_ATIVI_PLANO" />
+          <ScalarProperty Name="DE_TITUL_ATIVI_PLANO" ColumnName="DE_TITUL_ATIVI_PLANO" />
+          <ScalarProperty Name="CO_ANO_REF_PLA" ColumnName="CO_ANO_REF_PLA" />
+          <ScalarProperty Name="HR_FIM_AULA_PLANE" ColumnName="HR_FIM_AULA_PLANE" />
+          <ScalarProperty Name="HR_INICI_AULA_PLANE" ColumnName="HR_INICI_AULA_PLANE" />
+          <ScalarProperty Name="ID_PROFE_REALIZ_ATIVI_PLANO" ColumnName="ID_PROFE_REALIZ_ATIVI_PLANO" />
+          <ScalarProperty Name="QT_PLANEJ_HORAS_ATIVI_PLANO" ColumnName="QT_PLANEJ_HORAS_ATIVI_PLANO" />
+          <ScalarProperty Name="DT_PLANEJ_ATIVI_PLANO" ColumnName="DT_PLANEJ_ATIVI_PLANO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_REFER_GEDUC_PLANO_AULA" ColumnName="ID_REFER_GEDUC_PLANO_AULA" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_PLANO_AULA" ColumnName="ID_PLANO_AULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW108_ATIVID_CASA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW108_ATIVID_CASA">
+        <MappingFragment StoreEntitySet="GW108_ATIVID_CASA">
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="FL_TIPO_AVALI_ATIVI_CASA" ColumnName="FL_TIPO_AVALI_ATIVI_CASA" />
+          <ScalarProperty Name="CO_STATUS_ATIVI_CASA" ColumnName="CO_STATUS_ATIVI_CASA" />
+          <ScalarProperty Name="ID_PROFES_ATIVI_CASA" ColumnName="ID_PROFES_ATIVI_CASA" />
+          <ScalarProperty Name="DE_PESQU_ATIVI_CASA" ColumnName="DE_PESQU_ATIVI_CASA" />
+          <ScalarProperty Name="DE_OBJET_ATIVI_CASA" ColumnName="DE_OBJET_ATIVI_CASA" />
+          <ScalarProperty Name="DE_TITULO_ATIVI_CASA" ColumnName="DE_TITULO_ATIVI_CASA" />
+          <ScalarProperty Name="DT_PRAZO_ATIVI_CASA" ColumnName="DT_PRAZO_ATIVI_CASA" />
+          <ScalarProperty Name="DT_LANCA_ATIVI_CASA" ColumnName="DT_LANCA_ATIVI_CASA" />
+          <ScalarProperty Name="DT_ATIVI_CASA" ColumnName="DT_ATIVI_CASA" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_ATIVI_CASA" ColumnName="ID_ATIVI_CASA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW109_PROVAS_TURMA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW109_PROVAS_TURMA">
+        <MappingFragment StoreEntitySet="GW109_PROVAS_TURMA">
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="DT_REALIZ_PROVA_TURMA" ColumnName="DT_REALIZ_PROVA_TURMA" />
+          <ScalarProperty Name="DE_TIPO_PROVA" ColumnName="DE_TIPO_PROVA" />
+          <ScalarProperty Name="DE_CONTE_PROVA" ColumnName="DE_CONTE_PROVA" />
+          <ScalarProperty Name="CO_STATUS_PROVA_TURMA" ColumnName="CO_STATUS_PROVA_TURMA" />
+          <ScalarProperty Name="HR_PROVA_FIM" ColumnName="HR_PROVA_FIM" />
+          <ScalarProperty Name="HR_PROVA_INICIO" ColumnName="HR_PROVA_INICIO" />
+          <ScalarProperty Name="NU_TEMPO_AULA" ColumnName="NU_TEMPO_AULA" />
+          <ScalarProperty Name="DT_PROVA_TURMA" ColumnName="DT_PROVA_TURMA" />
+          <ScalarProperty Name="ID_COLAB_REALIZ_PROVA" ColumnName="ID_COLAB_REALIZ_PROVA" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_PROVA_TURMA" ColumnName="ID_PROVA_TURMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW110_CALENDARIO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW110_CALENDARIO">
+        <MappingFragment StoreEntitySet="GW110_CALENDARIO">
+          <ScalarProperty Name="DE_URL_ATIVID_CALEND" ColumnName="DE_URL_ATIVID_CALEND" />
+          <ScalarProperty Name="HR_ATIVID_CALEND" ColumnName="HR_ATIVID_CALEND" />
+          <ScalarProperty Name="DT_ATIVID_CALEND" ColumnName="DT_ATIVID_CALEND" />
+          <ScalarProperty Name="DE_OBSER_ATIVID_CALEND" ColumnName="DE_OBSER_ATIVID_CALEND" />
+          <ScalarProperty Name="NM_ATIVID_CALEND" ColumnName="NM_ATIVID_CALEND" />
+          <ScalarProperty Name="TP_DIA_ATIVID_CALEND" ColumnName="TP_DIA_ATIVID_CALEND" />
+          <ScalarProperty Name="ID_CALEND_TIPO" ColumnName="ID_CALEND_TIPO" />
+          <ScalarProperty Name="ID_REFER_GEDUC_CALEND" ColumnName="ID_REFER_GEDUC_CALEND" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_CALEN_ATIVID" ColumnName="ID_CALEN_ATIVID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW111_MSG_UNIDAD">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW111_MSG_UNIDAD">
+        <MappingFragment StoreEntitySet="GW111_MSG_UNIDAD">
+          <ScalarProperty Name="DE_URL_MSG_UNIDAD" ColumnName="DE_URL_MSG_UNIDAD" />
+          <ScalarProperty Name="DE_MSG_UNIDAD" ColumnName="DE_MSG_UNIDAD" />
+          <ScalarProperty Name="DT_TERMIN_PUBLIC_MSG" ColumnName="DT_TERMIN_PUBLIC_MSG" />
+          <ScalarProperty Name="DT_INICIO_PUBLIC_MSG" ColumnName="DT_INICIO_PUBLIC_MSG" />
+          <ScalarProperty Name="DT_CADAS_MSG_UNIDAD" ColumnName="DT_CADAS_MSG_UNIDAD" />
+          <ScalarProperty Name="TP_MSG_UNIDAD" ColumnName="TP_MSG_UNIDAD" />
+          <ScalarProperty Name="ID_REFER_GEDUC_MSGUNID" ColumnName="ID_REFER_GEDUC_MSGUNID" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_MSG_UNIDADE" ColumnName="ID_MSG_UNIDADE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW112_CALEND_TIPO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW112_CALEND_TIPO">
+        <MappingFragment StoreEntitySet="GW112_CALEND_TIPO">
+          <ScalarProperty Name="NO_CALEND_TIPO" ColumnName="NO_CALEND_TIPO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_CALEND_TIPO" ColumnName="ID_CALEND_TIPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW113_ATIVI_AULA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW113_ATIVI_AULA">
+        <MappingFragment StoreEntitySet="GW113_ATIVI_AULA">
+          <ScalarProperty Name="FL_LANCA_NOTA" ColumnName="FL_LANCA_NOTA" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="DE_RESUMO_ATIVI" ColumnName="DE_RESUMO_ATIVI" />
+          <ScalarProperty Name="HR_TERMI_ATIVI" ColumnName="HR_TERMI_ATIVI" />
+          <ScalarProperty Name="HR_INICI_ATIVI" ColumnName="HR_INICI_ATIVI" />
+          <ScalarProperty Name="NU_SEMES_LETIV" ColumnName="NU_SEMES_LETIV" />
+          <ScalarProperty Name="DT_REGIS_ATVI" ColumnName="DT_REGIS_ATVI" />
+          <ScalarProperty Name="FL_AULA_PLANE" ColumnName="FL_AULA_PLANE" />
+          <ScalarProperty Name="DE_TEMA_AULA" ColumnName="DE_TEMA_AULA" />
+          <ScalarProperty Name="NO_TEMPO_AULA" ColumnName="NO_TEMPO_AULA" />
+          <ScalarProperty Name="DT_REALI_ATIVI" ColumnName="DT_REALI_ATIVI" />
+          <ScalarProperty Name="ID_PLANO_AULA" ColumnName="ID_PLANO_AULA" />
+          <ScalarProperty Name="ID_MATER" ColumnName="ID_MATER" />
+          <ScalarProperty Name="ID_RESPO_COLAB" ColumnName="ID_RESPO_COLAB" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="ID_TURMA" ColumnName="ID_TURMA" />
+          <ScalarProperty Name="ID_SERIE" ColumnName="ID_SERIE" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_ATIVI_AULA" ColumnName="ID_ATIVI_AULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW114_ATIVI_ESCOL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW114_ATIVI_ESCOL">
+        <MappingFragment StoreEntitySet="GW114_ATIVI_ESCOL">
+          <ScalarProperty Name="ID_REGISTRO" ColumnName="ID_REGISTRO" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="CO_STATUS" ColumnName="CO_STATUS" />
+          <ScalarProperty Name="DE_JUSTI_AVALI" ColumnName="DE_JUSTI_AVALI" />
+          <ScalarProperty Name="FL_JUSTI_AVALI" ColumnName="FL_JUSTI_AVALI" />
+          <ScalarProperty Name="DT_ENTRE_AVALI" ColumnName="DT_ENTRE_AVALI" />
+          <ScalarProperty Name="DT_PREVI_AVALI" ColumnName="DT_PREVI_AVALI" />
+          <ScalarProperty Name="VL_NOTA_AVALI" ColumnName="VL_NOTA_AVALI" />
+          <ScalarProperty Name="FL_AVALI" ColumnName="FL_AVALI" />
+          <ScalarProperty Name="DT_CADAS" ColumnName="DT_CADAS" />
+          <ScalarProperty Name="DE_ATIVI_ESCOLA" ColumnName="DE_ATIVI_ESCOLA" />
+          <ScalarProperty Name="DE_TIPO" ColumnName="DE_TIPO" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="ID_SERIE" ColumnName="ID_SERIE" />
+          <ScalarProperty Name="ID_TURMA" ColumnName="ID_TURMA" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_ATIV_ESCOLA" ColumnName="ID_ATIV_ESCOLA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW115_PLANO_AULA_CONTE_BIBLI">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW115_PLANO_AULA_CONTE_BIBLI">
+        <MappingFragment StoreEntitySet="GW115_PLANO_AULA_CONTE_BIBLI">
+          <ScalarProperty Name="DE_LINK_EXTER" ColumnName="DE_LINK_EXTER" />
+          <ScalarProperty Name="CO_NIVEL_APREN" ColumnName="CO_NIVEL_APREN" />
+          <ScalarProperty Name="DE_REFER_CONTE" ColumnName="DE_REFER_CONTE" />
+          <ScalarProperty Name="NO_TITUL_REFER_CONTE" ColumnName="NO_TITUL_REFER_CONTE" />
+          <ScalarProperty Name="CO_TIPO_REFER_CONTE" ColumnName="CO_TIPO_REFER_CONTE" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_REFER_CONTE" ColumnName="ID_REFER_CONTE" />
+          <ScalarProperty Name="ID_PLANO_AULA" ColumnName="ID_PLANO_AULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW116_TEMPO_AULA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW116_TEMPO_AULA">
+        <MappingFragment StoreEntitySet="GW116_TEMPO_AULA">
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="HR_TERMI" ColumnName="HR_TERMI" />
+          <ScalarProperty Name="HR_INICIO" ColumnName="HR_INICIO" />
+          <ScalarProperty Name="NR_TEMPO" ColumnName="NR_TEMPO" />
+          <ScalarProperty Name="TP_TURNO" ColumnName="TP_TURNO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_TEMPO_AULA" ColumnName="ID_TEMPO_AULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW130_INFOR_RESPON">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW130_INFOR_RESPON">
+        <MappingFragment StoreEntitySet="GW130_INFOR_RESPON">
+          <ScalarProperty Name="CO_SITUA_RESP" ColumnName="CO_SITUA_RESP" />
+          <ScalarProperty Name="CO_ENDER_LONGI_RESP" ColumnName="CO_ENDER_LONGI_RESP" />
+          <ScalarProperty Name="CO_ENDER_LATIT_RESP" ColumnName="CO_ENDER_LATIT_RESP" />
+          <ScalarProperty Name="CO_ENDER_ESTAD_RESP" ColumnName="CO_ENDER_ESTAD_RESP" />
+          <ScalarProperty Name="CO_ENDER_CIDAD_RESP" ColumnName="CO_ENDER_CIDAD_RESP" />
+          <ScalarProperty Name="CO_ENDER_BAIRR_RESP" ColumnName="CO_ENDER_BAIRR_RESP" />
+          <ScalarProperty Name="DE_ENDER_COMPL_RESP" ColumnName="DE_ENDER_COMPL_RESP" />
+          <ScalarProperty Name="NU_ENDER_NUMER_RESP" ColumnName="NU_ENDER_NUMER_RESP" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_RESP" ColumnName="DE_ENDER_LOCAL_RESP" />
+          <ScalarProperty Name="CO_ENDER_CEP_RESP" ColumnName="CO_ENDER_CEP_RESP" />
+          <ScalarProperty Name="CO_CONJU_SANGU_FATOR_RESP" ColumnName="CO_CONJU_SANGU_FATOR_RESP" />
+          <ScalarProperty Name="CO_CONJU_SANGU_TIPO_RESP" ColumnName="CO_CONJU_SANGU_TIPO_RESP" />
+          <ScalarProperty Name="NR_CONJU_CPF_RESP" ColumnName="NR_CONJU_CPF_RESP" />
+          <ScalarProperty Name="CO_CONJU_SEXO_RESP" ColumnName="CO_CONJU_SEXO_RESP" />
+          <ScalarProperty Name="DT_CONJU_NASCI_RESP" ColumnName="DT_CONJU_NASCI_RESP" />
+          <ScalarProperty Name="NO_CONJU_RESP" ColumnName="NO_CONJU_RESP" />
+          <ScalarProperty Name="CO_TITUL_ESTAD_RESP" ColumnName="CO_TITUL_ESTAD_RESP" />
+          <ScalarProperty Name="NO_TITUL_CIDAD_RESP" ColumnName="NO_TITUL_CIDAD_RESP" />
+          <ScalarProperty Name="NR_TITUL_ZONA_RESP" ColumnName="NR_TITUL_ZONA_RESP" />
+          <ScalarProperty Name="NR_TITUL_SECAO_RESP" ColumnName="NR_TITUL_SECAO_RESP" />
+          <ScalarProperty Name="NR_TITUL_NUMER_RESP" ColumnName="NR_TITUL_NUMER_RESP" />
+          <ScalarProperty Name="NO_PASSA_PAIS_RESP" ColumnName="NO_PASSA_PAIS_RESP" />
+          <ScalarProperty Name="CO_PASSA_NUMER_RESP" ColumnName="CO_PASSA_NUMER_RESP" />
+          <ScalarProperty Name="CO_RG_ESTAD_RESP" ColumnName="CO_RG_ESTAD_RESP" />
+          <ScalarProperty Name="DT_RG_EMISSA_RESP" ColumnName="DT_RG_EMISSA_RESP" />
+          <ScalarProperty Name="CO_RG_ORGAO_RESP" ColumnName="CO_RG_ORGAO_RESP" />
+          <ScalarProperty Name="CO_RG_NUMER_RESP" ColumnName="CO_RG_NUMER_RESP" />
+          <ScalarProperty Name="NR_CARTEI_SAUDE_RESP" ColumnName="NR_CARTEI_SAUDE_RESP" />
+          <ScalarProperty Name="NR_CPF_RESP" ColumnName="NR_CPF_RESP" />
+          <ScalarProperty Name="DE_EMAIL_RESP" ColumnName="DE_EMAIL_RESP" />
+          <ScalarProperty Name="NR_TELEF_RAMAL_RESP" ColumnName="NR_TELEF_RAMAL_RESP" />
+          <ScalarProperty Name="NR_TELEF_TRABA_RESP" ColumnName="NR_TELEF_TRABA_RESP" />
+          <ScalarProperty Name="NR_TELEF_CELUL_RESP" ColumnName="NR_TELEF_CELUL_RESP" />
+          <ScalarProperty Name="NR_TELEF_FIXO_RESP" ColumnName="NR_TELEF_FIXO_RESP" />
+          <ScalarProperty Name="DE_CURSO_FORM_RESP" ColumnName="DE_CURSO_FORM_RESP" />
+          <ScalarProperty Name="CO_STATUS_GRAU_INSTR_RESP" ColumnName="CO_STATUS_GRAU_INSTR_RESP" />
+          <ScalarProperty Name="DE_GRAU_INSTR_RESP" ColumnName="DE_GRAU_INSTR_RESP" />
+          <ScalarProperty Name="DE_ESTAD_CIVIL_RESP" ColumnName="DE_ESTAD_CIVIL_RESP" />
+          <ScalarProperty Name="CO_SANGU_FATOR_RESP" ColumnName="CO_SANGU_FATOR_RESP" />
+          <ScalarProperty Name="CO_SANGU_TIPO_RESP" ColumnName="CO_SANGU_TIPO_RESP" />
+          <ScalarProperty Name="CO_ESTA_RESP" ColumnName="CO_ESTA_RESP" />
+          <ScalarProperty Name="NO_CIDA_RESP" ColumnName="NO_CIDA_RESP" />
+          <ScalarProperty Name="DT_NASC_RESP" ColumnName="DT_NASC_RESP" />
+          <ScalarProperty Name="CO_SEXO_RESP" ColumnName="CO_SEXO_RESP" />
+          <ScalarProperty Name="NO_APELID_RESP" ColumnName="NO_APELID_RESP" />
+          <ScalarProperty Name="NO_RESP" ColumnName="NO_RESP" />
+          <ScalarProperty Name="DE_ENDER_FOTO_RESP" ColumnName="DE_ENDER_FOTO_RESP" />
+          <ScalarProperty Name="NR_NIS_RESP" ColumnName="NR_NIS_RESP" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_REFER_GEDUC_RESP" ColumnName="ID_REFER_GEDUC_RESP" />
+          <ScalarProperty Name="ID_INFORM_RESP" ColumnName="ID_INFORM_RESP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW150_INFOR_ALUNO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW150_INFOR_ALUNO">
+        <MappingFragment StoreEntitySet="GW150_INFOR_ALUNO">
+          <ScalarProperty Name="ID_INFORM_RESP" ColumnName="ID_INFORM_RESP" />
+          <ScalarProperty Name="CO_UF_NATU_ALUNO" ColumnName="CO_UF_NATU_ALUNO" />
+          <ScalarProperty Name="DE_NATU_ALUNO" ColumnName="DE_NATU_ALUNO" />
+          <ScalarProperty Name="CO_STATUS_SANGUE_ALUNO" ColumnName="CO_STATUS_SANGUE_ALUNO" />
+          <ScalarProperty Name="CO_TIPO_SANGUE_ALUNO" ColumnName="CO_TIPO_SANGUE_ALUNO" />
+          <ScalarProperty Name="DE_ENDER_FOTO_ALUNO" ColumnName="DE_ENDER_FOTO_ALUNO" />
+          <ScalarProperty Name="CO_SITUA_ALUNO" ColumnName="CO_SITUA_ALUNO" />
+          <ScalarProperty Name="DE_EMAIL_ALUNO" ColumnName="DE_EMAIL_ALUNO" />
+          <ScalarProperty Name="NO_GRAU_PAREN_ALUNO" ColumnName="NO_GRAU_PAREN_ALUNO" />
+          <ScalarProperty Name="NR_TELEF_CELUL_ALUNO" ColumnName="NR_TELEF_CELUL_ALUNO" />
+          <ScalarProperty Name="NR_TELEF_FIXO_ALUNO" ColumnName="NR_TELEF_FIXO_ALUNO" />
+          <ScalarProperty Name="CO_ENDER_CEP_ALUNO" ColumnName="CO_ENDER_CEP_ALUNO" />
+          <ScalarProperty Name="DE_ENDER_ESTAD_ALUNO" ColumnName="DE_ENDER_ESTAD_ALUNO" />
+          <ScalarProperty Name="DE_ENDER_CIDAD_ALUNO" ColumnName="DE_ENDER_CIDAD_ALUNO" />
+          <ScalarProperty Name="DE_ENDER_BAIRR_ALUNO" ColumnName="DE_ENDER_BAIRR_ALUNO" />
+          <ScalarProperty Name="DE_ENDER_COMPL_ALUNO" ColumnName="DE_ENDER_COMPL_ALUNO" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_ALUNO" ColumnName="DE_ENDER_LOCAL_ALUNO" />
+          <ScalarProperty Name="NM_DEFIC_ALUNO" ColumnName="NM_DEFIC_ALUNO" />
+          <ScalarProperty Name="FL_DEFIC_ALUNO" ColumnName="FL_DEFIC_ALUNO" />
+          <ScalarProperty Name="CO_SEXO_ALUNO" ColumnName="CO_SEXO_ALUNO" />
+          <ScalarProperty Name="DT_NASC_ALUNO" ColumnName="DT_NASC_ALUNO" />
+          <ScalarProperty Name="NO_APELIDO_ALUNO" ColumnName="NO_APELIDO_ALUNO" />
+          <ScalarProperty Name="NO_ALUNO" ColumnName="NO_ALUNO" />
+          <ScalarProperty Name="NR_NIRE_ALUNO" ColumnName="NR_NIRE_ALUNO" />
+          <ScalarProperty Name="NR_NIS_ALUNO" ColumnName="NR_NIS_ALUNO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_REFER_GEDUC_ALUNO" ColumnName="ID_REFER_GEDUC_ALUNO" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW151_DADOS_MATRIC">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW151_DADOS_MATRIC">
+        <MappingFragment StoreEntitySet="GW151_DADOS_MATRIC">
+          <ScalarProperty Name="CO_SITUA_MATRIC" ColumnName="CO_SITUA_MATRIC" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="NR_POSIC_SALA" ColumnName="NR_POSIC_SALA" />
+          <ScalarProperty Name="NR_PAUTA_CHAMA" ColumnName="NR_PAUTA_CHAMA" />
+          <ScalarProperty Name="DT_MATRIC" ColumnName="DT_MATRIC" />
+          <ScalarProperty Name="CO_TURNO_MATRIC" ColumnName="CO_TURNO_MATRIC" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="NR_MATRIC" ColumnName="NR_MATRIC" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW152_ALUNO_FREQU">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW152_ALUNO_FREQU">
+        <MappingFragment StoreEntitySet="GW152_ALUNO_FREQU">
+          <ScalarProperty Name="NR_TEMPO_AULA_FREQU" ColumnName="NR_TEMPO_AULA_FREQU" />
+          <ScalarProperty Name="CO_CLASS_FREQU" ColumnName="CO_CLASS_FREQU" />
+          <ScalarProperty Name="FL_JUSTIF_FREQU" ColumnName="FL_JUSTIF_FREQU" />
+          <ScalarProperty Name="QT_CARGA_HORAR" ColumnName="QT_CARGA_HORAR" />
+          <ScalarProperty Name="TP_FREQU_ALUNO" ColumnName="TP_FREQU_ALUNO" />
+          <ScalarProperty Name="NR_MATRIC" ColumnName="NR_MATRIC" />
+          <ScalarProperty Name="HR_FIM_ATIVI" ColumnName="HR_FIM_ATIVI" />
+          <ScalarProperty Name="HR_INICI_ATIVI" ColumnName="HR_INICI_ATIVI" />
+          <ScalarProperty Name="DT_FREQU_ALUNO" ColumnName="DT_FREQU_ALUNO" />
+          <ScalarProperty Name="DE_TEMA_AULA" ColumnName="DE_TEMA_AULA" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_MATER" ColumnName="ID_MATER" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_FREQ_ALUNO" ColumnName="ID_FREQ_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW153_ATIVID_ALUNO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW153_ATIVID_ALUNO">
+        <MappingFragment StoreEntitySet="GW153_ATIVID_ALUNO">
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_ATIVI_CASA" ColumnName="ID_ATIVI_CASA" />
+          <ScalarProperty Name="CO_STATUS_ATIVI_ALUNO" ColumnName="CO_STATUS_ATIVI_ALUNO" />
+          <ScalarProperty Name="NR_NOTA_AVALI_ALUNO" ColumnName="NR_NOTA_AVALI_ALUNO" />
+          <ScalarProperty Name="DE_AVALI_ATIVI_ALUNO" ColumnName="DE_AVALI_ATIVI_ALUNO" />
+          <ScalarProperty Name="DE_OBSER_ATIVI_ALUNO" ColumnName="DE_OBSER_ATIVI_ALUNO" />
+          <ScalarProperty Name="HR_ENTRE_ATIVI_ALUNO" ColumnName="HR_ENTRE_ATIVI_ALUNO" />
+          <ScalarProperty Name="DT_ENTRE_ATIVI_ALUNO" ColumnName="DT_ENTRE_ATIVI_ALUNO" />
+          <ScalarProperty Name="NR_MATRIC" ColumnName="NR_MATRIC" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_ATIVI_ALUNO" ColumnName="ID_ATIVI_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW154_PROVAS_ALUNO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW154_PROVAS_ALUNO">
+        <MappingFragment StoreEntitySet="GW154_PROVAS_ALUNO">
+          <ScalarProperty Name="ID_ATIVI_AULA" ColumnName="ID_ATIVI_AULA" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="DE_OBSER_PROVA_ALUNO" ColumnName="DE_OBSER_PROVA_ALUNO" />
+          <ScalarProperty Name="VL_NOTA_PROVA_ALUNO" ColumnName="VL_NOTA_PROVA_ALUNO" />
+          <ScalarProperty Name="DE_AVALIA_PROVA_ALUNO" ColumnName="DE_AVALIA_PROVA_ALUNO" />
+          <ScalarProperty Name="HR_REALIZ_PROVA_ALUNO" ColumnName="HR_REALIZ_PROVA_ALUNO" />
+          <ScalarProperty Name="DT_REALIZ_PROVA_ALUNO" ColumnName="DT_REALIZ_PROVA_ALUNO" />
+          <ScalarProperty Name="NR_MATRIC" ColumnName="NR_MATRIC" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_PROVA_TURMA" ColumnName="ID_PROVA_TURMA" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_PROVAS_ALUNO" ColumnName="ID_PROVAS_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW155_HISTOR_ALUNO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW155_HISTOR_ALUNO">
+        <MappingFragment StoreEntitySet="GW155_HISTOR_ALUNO">
+          <ScalarProperty Name="VL_CONCEITO_BIM4" ColumnName="VL_CONCEITO_BIM4" />
+          <ScalarProperty Name="QT_FALTAS_BIM4_HISTOR" ColumnName="QT_FALTAS_BIM4_HISTOR" />
+          <ScalarProperty Name="VL_CONCEITO_BIM3" ColumnName="VL_CONCEITO_BIM3" />
+          <ScalarProperty Name="QT_FALTAS_BIM1_HISTOR" ColumnName="QT_FALTAS_BIM1_HISTOR" />
+          <ScalarProperty Name="VL_CONCEITO_BIM2" ColumnName="VL_CONCEITO_BIM2" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="VL_CONCEITO_BIM1" ColumnName="VL_CONCEITO_BIM1" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="QT_FALTAS_BIM3_HISTOR" ColumnName="QT_FALTAS_BIM3_HISTOR" />
+          <ScalarProperty Name="QT_FALTAS_BIM2_HISTOR" ColumnName="QT_FALTAS_BIM2_HISTOR" />
+          <ScalarProperty Name="VL_MEDIA_BIM4_HISTOR" ColumnName="VL_MEDIA_BIM4_HISTOR" />
+          <ScalarProperty Name="VL_MEDIA_BIM3_HISTOR" ColumnName="VL_MEDIA_BIM3_HISTOR" />
+          <ScalarProperty Name="VL_MEDIA_BIM2_HISTOR" ColumnName="VL_MEDIA_BIM2_HISTOR" />
+          <ScalarProperty Name="VL_MEDIA_BIM1_HISTOR" ColumnName="VL_MEDIA_BIM1_HISTOR" />
+          <ScalarProperty Name="NR_MATRIC" ColumnName="NR_MATRIC" />
+          <ScalarProperty Name="ID_HISTOR_ALUNO" ColumnName="ID_HISTOR_ALUNO" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW156_OCORR_ALUNO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW156_OCORR_ALUNO">
+        <MappingFragment StoreEntitySet="GW156_OCORR_ALUNO">
+          <ScalarProperty Name="FL_AVISO_RESP_OCORR" ColumnName="FL_AVISO_RESP_OCORR" />
+          <ScalarProperty Name="DE_ACAO_OCORR" ColumnName="DE_ACAO_OCORR" />
+          <ScalarProperty Name="DE_OCORR_ALUNO" ColumnName="DE_OCORR_ALUNO" />
+          <ScalarProperty Name="CO_SIGL_OCORR" ColumnName="CO_SIGL_OCORR" />
+          <ScalarProperty Name="DT_OCORR_ALUNO" ColumnName="DT_OCORR_ALUNO" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_OCORR_ALUNO" ColumnName="ID_OCORR_ALUNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW157_CUIDAD_SAUDE">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW157_CUIDAD_SAUDE">
+        <MappingFragment StoreEntitySet="GW157_CUIDAD_SAUDE">
+          <ScalarProperty Name="CO_STATUS_MEDICAC" ColumnName="CO_STATUS_MEDICAC" />
+          <ScalarProperty Name="FL_RECEITA_CUIDADO" ColumnName="FL_RECEITA_CUIDADO" />
+          <ScalarProperty Name="NR_TELEF_CELUL_MEDICO" ColumnName="NR_TELEF_CELUL_MEDICO" />
+          <ScalarProperty Name="NR_TELEF_FIXO_MEDICO" ColumnName="NR_TELEF_FIXO_MEDICO" />
+          <ScalarProperty Name="DT_RECEITA_CUIDADO" ColumnName="DT_RECEITA_CUIDADO" />
+          <ScalarProperty Name="NR_CRM_MEDICO_CUIDADO" ColumnName="NR_CRM_MEDICO_CUIDADO" />
+          <ScalarProperty Name="NM_MEDICO_CUIDADO" ColumnName="NM_MEDICO_CUIDADO" />
+          <ScalarProperty Name="DE_DOSE_REMEDIO_CUIDADO" ColumnName="DE_DOSE_REMEDIO_CUIDADO" />
+          <ScalarProperty Name="DE_OBSERV_CUIDADO" ColumnName="DE_OBSERV_CUIDADO" />
+          <ScalarProperty Name="NM_REMEDIO_CUIDADO" ColumnName="NM_REMEDIO_CUIDADO" />
+          <ScalarProperty Name="HR_APLICAC_CUIDADO" ColumnName="HR_APLICAC_CUIDADO" />
+          <ScalarProperty Name="TP_APLICAC_CUIDADO" ColumnName="TP_APLICAC_CUIDADO" />
+          <ScalarProperty Name="TP_CUIDADO_SAUDE" ColumnName="TP_CUIDADO_SAUDE" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_MEDICACAO" ColumnName="ID_MEDICACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW158_OCORR_SAUDE">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW158_OCORR_SAUDE">
+        <MappingFragment StoreEntitySet="GW158_OCORR_SAUDE">
+          <ScalarProperty Name="CO_UNID_FUNC" ColumnName="CO_UNID_FUNC" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="DT_CADAS" ColumnName="DT_CADAS" />
+          <ScalarProperty Name="DT_ENTRE_ATEST" ColumnName="DT_ENTRE_ATEST" />
+          <ScalarProperty Name="DE_OBS" ColumnName="DE_OBS" />
+          <ScalarProperty Name="DE_DOENC" ColumnName="DE_DOENC" />
+          <ScalarProperty Name="NO_CID" ColumnName="NO_CID" />
+          <ScalarProperty Name="QT_DIAS_LICEN" ColumnName="QT_DIAS_LICEN" />
+          <ScalarProperty Name="DE_RECEI" ColumnName="DE_RECEI" />
+          <ScalarProperty Name="NU_CRM_MEDIC" ColumnName="NU_CRM_MEDIC" />
+          <ScalarProperty Name="NO_MEDIC" ColumnName="NO_MEDIC" />
+          <ScalarProperty Name="DT_CONSU" ColumnName="DT_CONSU" />
+          <ScalarProperty Name="DE_HOSPI_CONSU" ColumnName="DE_HOSPI_CONSU" />
+          <ScalarProperty Name="TP_USU" ColumnName="TP_USU" />
+          <ScalarProperty Name="CO_USU" ColumnName="CO_USU" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_OCORR_SAUDE" ColumnName="ID_OCORR_SAUDE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW159_ALTER_ENDER">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW159_ALTER_ENDER">
+        <MappingFragment StoreEntitySet="GW159_ALTER_ENDER">
+          <ScalarProperty Name="NR_CPF_USR" ColumnName="NR_CPF_USR" />
+          <ScalarProperty Name="FLA_ALTER_ENDER" ColumnName="FLA_ALTER_ENDER" />
+          <ScalarProperty Name="IP_USER" ColumnName="IP_USER" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="DT_ALTER_ENDER" ColumnName="DT_ALTER_ENDER" />
+          <ScalarProperty Name="CO_TIPO_USUAR" ColumnName="CO_TIPO_USUAR" />
+          <ScalarProperty Name="CO_ENDER_ESTAD_NOVO" ColumnName="CO_ENDER_ESTAD_NOVO" />
+          <ScalarProperty Name="CO_ENDER_CIDAD_NOVO" ColumnName="CO_ENDER_CIDAD_NOVO" />
+          <ScalarProperty Name="CO_ENDER_BAIRR_NOVO" ColumnName="CO_ENDER_BAIRR_NOVO" />
+          <ScalarProperty Name="DE_ENDER_COMPL_NOVO" ColumnName="DE_ENDER_COMPL_NOVO" />
+          <ScalarProperty Name="NU_ENDER_NUMER_NOVO" ColumnName="NU_ENDER_NUMER_NOVO" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_NOVO" ColumnName="DE_ENDER_LOCAL_NOVO" />
+          <ScalarProperty Name="CO_ENDER_CEP_NOVO" ColumnName="CO_ENDER_CEP_NOVO" />
+          <ScalarProperty Name="CO_ENDER_ESTAD_ATUAL" ColumnName="CO_ENDER_ESTAD_ATUAL" />
+          <ScalarProperty Name="CO_ENDER_CIDAD_ATUAL" ColumnName="CO_ENDER_CIDAD_ATUAL" />
+          <ScalarProperty Name="CO_ENDER_BAIRR_ATUAL" ColumnName="CO_ENDER_BAIRR_ATUAL" />
+          <ScalarProperty Name="DE_ENDER_COMPL_ATUAL" ColumnName="DE_ENDER_COMPL_ATUAL" />
+          <ScalarProperty Name="NU_ENDER_NUMER_ATUAL" ColumnName="NU_ENDER_NUMER_ATUAL" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_ATUAL" ColumnName="DE_ENDER_LOCAL_ATUAL" />
+          <ScalarProperty Name="CO_ENDER_CEP_ATUAL" ColumnName="CO_ENDER_CEP_ATUAL" />
+          <ScalarProperty Name="CO_ALTER_ENDER" ColumnName="CO_ALTER_ENDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW201_AREA_CONHEC">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW201_AREA_CONHEC">
+        <MappingFragment StoreEntitySet="GW201_AREA_CONHEC">
+          <ScalarProperty Name="NM_AREA_CONHEC" ColumnName="NM_AREA_CONHEC" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_AREA_CONHEC" ColumnName="ID_AREA_CONHEC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW202_CLASS_CONHEC">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW202_CLASS_CONHEC">
+        <MappingFragment StoreEntitySet="GW202_CLASS_CONHEC">
+          <ScalarProperty Name="NM_CLASS_CONHEC" ColumnName="NM_CLASS_CONHEC" />
+          <ScalarProperty Name="ID_AREA_CONHEC" ColumnName="ID_AREA_CONHEC" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_CLASS_CONHEC" ColumnName="ID_CLASS_CONHEC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW203_EDITORA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW203_EDITORA">
+        <MappingFragment StoreEntitySet="GW203_EDITORA">
+          <ScalarProperty Name="NM_EDITORA" ColumnName="NM_EDITORA" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_EDITORA" ColumnName="ID_EDITORA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW204_AUTOR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW204_AUTOR">
+        <MappingFragment StoreEntitySet="GW204_AUTOR">
+          <ScalarProperty Name="NM_AUTOR" ColumnName="NM_AUTOR" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_AUTOR" ColumnName="ID_AUTOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW205_ACERVO_BIBL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW205_ACERVO_BIBL">
+        <MappingFragment StoreEntitySet="GW205_ACERVO_BIBL">
+          <ScalarProperty Name="NM_LOCAL_MIDIA_ACERVO_BIBL" ColumnName="NM_LOCAL_MIDIA_ACERVO_BIBL" />
+          <ScalarProperty Name="QT_RESER_TECNI_ACERVO_BIBLI" ColumnName="QT_RESER_TECNI_ACERVO_BIBLI" />
+          <ScalarProperty Name="TP_MIDIA_ACERVO_BIBL" ColumnName="TP_MIDIA_ACERVO_BIBL" />
+          <ScalarProperty Name="FL_RESER_TECNI_ACERVO_BIBL" ColumnName="FL_RESER_TECNI_ACERVO_BIBL" />
+          <ScalarProperty Name="NR_EDICAO_ACERVO_BIBL" ColumnName="NR_EDICAO_ACERVO_BIBL" />
+          <ScalarProperty Name="ID_AUTOR5" ColumnName="ID_AUTOR5" />
+          <ScalarProperty Name="ID_AUTOR4" ColumnName="ID_AUTOR4" />
+          <ScalarProperty Name="ID_AUTOR3" ColumnName="ID_AUTOR3" />
+          <ScalarProperty Name="ID_AUTOR2" ColumnName="ID_AUTOR2" />
+          <ScalarProperty Name="ID_AUTOR1" ColumnName="ID_AUTOR1" />
+          <ScalarProperty Name="ID_EDITORA" ColumnName="ID_EDITORA" />
+          <ScalarProperty Name="ID_AREA_CONHEC" ColumnName="ID_AREA_CONHEC" />
+          <ScalarProperty Name="ID_CLASS_CONHEC" ColumnName="ID_CLASS_CONHEC" />
+          <ScalarProperty Name="CO_STATUS_ACERVO_BIBL" ColumnName="CO_STATUS_ACERVO_BIBL" />
+          <ScalarProperty Name="QT_ACERV_EMPRE" ColumnName="QT_ACERV_EMPRE" />
+          <ScalarProperty Name="QT_ACERV_DISPO" ColumnName="QT_ACERV_DISPO" />
+          <ScalarProperty Name="DE_SINOPSE_ACERVO_BIBL" ColumnName="DE_SINOPSE_ACERVO_BIBL" />
+          <ScalarProperty Name="CO_ANO_EDICAO_ACERVO_BIBL" ColumnName="CO_ANO_EDICAO_ACERVO_BIBL" />
+          <ScalarProperty Name="NR_PAG_ACERVO_BIBL" ColumnName="NR_PAG_ACERVO_BIBL" />
+          <ScalarProperty Name="NO_TITULO_ACERVO_BIBL" ColumnName="NO_TITULO_ACERVO_BIBL" />
+          <ScalarProperty Name="CO_ISBN_ACERVO_BIBL" ColumnName="CO_ISBN_ACERVO_BIBL" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW206_ACERVO_AULA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW206_ACERVO_AULA">
+        <MappingFragment StoreEntitySet="GW206_ACERVO_AULA">
+          <ScalarProperty Name="QT_DURAC_AULA" ColumnName="QT_DURAC_AULA" />
+          <ScalarProperty Name="XX_DISCIPLINA" ColumnName="XX_DISCIPLINA" />
+          <ScalarProperty Name="XX_CLASSE" ColumnName="XX_CLASSE" />
+          <ScalarProperty Name="CO_STATUS_AULA" ColumnName="CO_STATUS_AULA" />
+          <ScalarProperty Name="DT_STATUS_AULA" ColumnName="DT_STATUS_AULA" />
+          <ScalarProperty Name="DT_CRIACAO_AULA" ColumnName="DT_CRIACAO_AULA" />
+          <ScalarProperty Name="DT_CADAST_AULA" ColumnName="DT_CADAST_AULA" />
+          <ScalarProperty Name="NM_ARQUI_MIDIA_AULA" ColumnName="NM_ARQUI_MIDIA_AULA" />
+          <ScalarProperty Name="TP_ARQUI_MIDIA_AULA" ColumnName="TP_ARQUI_MIDIA_AULA" />
+          <ScalarProperty Name="FL_INSTAL_SERVID" ColumnName="FL_INSTAL_SERVID" />
+          <ScalarProperty Name="FL_AS3" ColumnName="FL_AS3" />
+          <ScalarProperty Name="ID_REGIAO_APLICA" ColumnName="ID_REGIAO_APLICA" />
+          <ScalarProperty Name="ID_CLASS_CONHEC" ColumnName="ID_CLASS_CONHEC" />
+          <ScalarProperty Name="ID_AREA_CONHEC" ColumnName="ID_AREA_CONHEC" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="DE_OBSERV_AULA" ColumnName="DE_OBSERV_AULA" />
+          <ScalarProperty Name="DE_SINOPSE_AULA" ColumnName="DE_SINOPSE_AULA" />
+          <ScalarProperty Name="NO_TITULO_AULA" ColumnName="NO_TITULO_AULA" />
+          <ScalarProperty Name="ID_ACERVO_AULA" ColumnName="ID_ACERVO_AULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW211_RESER_BIBL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW211_RESER_BIBL">
+        <MappingFragment StoreEntitySet="GW211_RESER_BIBL">
+          <ScalarProperty Name="DT_STATUS_RESER_BIBL" ColumnName="DT_STATUS_RESER_BIBL" />
+          <ScalarProperty Name="CO_STATUS_RESER_BIBL" ColumnName="CO_STATUS_RESER_BIBL" />
+          <ScalarProperty Name="DE_OBSER_RESER_BIBL" ColumnName="DE_OBSER_RESER_BIBL" />
+          <ScalarProperty Name="DT_NECES_MAXIM_RESER_BIBL" ColumnName="DT_NECES_MAXIM_RESER_BIBL" />
+          <ScalarProperty Name="DT_RESER_BIBL" ColumnName="DT_RESER_BIBL" />
+          <ScalarProperty Name="TP_USUARIO" ColumnName="TP_USUARIO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="CO_ISBN_ACERVO_BIBL" ColumnName="CO_ISBN_ACERVO_BIBL" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="CO_CTRL_INTERNO" ColumnName="CO_CTRL_INTERNO" />
+          <ScalarProperty Name="ID_RESER_BIBL" ColumnName="ID_RESER_BIBL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW212_EMPREST_BIBL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW212_EMPREST_BIBL">
+        <MappingFragment StoreEntitySet="GW212_EMPREST_BIBL">
+          <ScalarProperty Name="DT_PREVI_DEVOL_EMPRE_BIBL" ColumnName="DT_PREVI_DEVOL_EMPRE_BIBL" />
+          <ScalarProperty Name="DE_OBSER_DEVOL_EMPRE_BIBL" ColumnName="DE_OBSER_DEVOL_EMPRE_BIBL" />
+          <ScalarProperty Name="DT_DEVOL_EMPRE_BIBL" ColumnName="DT_DEVOL_EMPRE_BIBL" />
+          <ScalarProperty Name="NR_EMPRE_BIBL" ColumnName="NR_EMPRE_BIBL" />
+          <ScalarProperty Name="CO_CTRL_INTERNO" ColumnName="CO_CTRL_INTERNO" />
+          <ScalarProperty Name="DT_EMPRE_BIBL" ColumnName="DT_EMPRE_BIBL" />
+          <ScalarProperty Name="TP_USUARIO" ColumnName="TP_USUARIO" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="CO_ISBN_ACERVO_BIBL" ColumnName="CO_ISBN_ACERVO_BIBL" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_EMPRE_BIBL" ColumnName="ID_EMPRE_BIBL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW301_REFEICOES">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW301_REFEICOES">
+        <MappingFragment StoreEntitySet="GW301_REFEICOES">
+          <ScalarProperty Name="QT_KCAL_REFEIC" ColumnName="QT_KCAL_REFEIC" />
+          <ScalarProperty Name="DE_SINOPSE_REFEIC" ColumnName="DE_SINOPSE_REFEIC" />
+          <ScalarProperty Name="TP_REFEIC" ColumnName="TP_REFEIC" />
+          <ScalarProperty Name="CO_IDENT_REFEIC" ColumnName="CO_IDENT_REFEIC" />
+          <ScalarProperty Name="NM_REDUZ_REFEIC" ColumnName="NM_REDUZ_REFEIC" />
+          <ScalarProperty Name="NM_REFEIC" ColumnName="NM_REFEIC" />
+          <ScalarProperty Name="ID_REFER_GEDUC_REFEIC" ColumnName="ID_REFER_GEDUC_REFEIC" />
+          <ScalarProperty Name="ID_REFEICAO" ColumnName="ID_REFEICAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW302_REFEI_INGRED">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW302_REFEI_INGRED">
+        <MappingFragment StoreEntitySet="GW302_REFEI_INGRED">
+          <ScalarProperty Name="QT_KCAL_INGRED" ColumnName="QT_KCAL_INGRED" />
+          <ScalarProperty Name="CO_UNIDAD_INGRED" ColumnName="CO_UNIDAD_INGRED" />
+          <ScalarProperty Name="CO_INGRED_REFEIC" ColumnName="CO_INGRED_REFEIC" />
+          <ScalarProperty Name="NM_REDUZ_INGRED_REFEIC" ColumnName="NM_REDUZ_INGRED_REFEIC" />
+          <ScalarProperty Name="NM_INGRED_REFEIC" ColumnName="NM_INGRED_REFEIC" />
+          <ScalarProperty Name="ID_REFER_GEDUC_INGRED_REFEIC" ColumnName="ID_REFER_GEDUC_INGRED_REFEIC" />
+          <ScalarProperty Name="ID_REFEICAO" ColumnName="ID_REFEICAO" />
+          <ScalarProperty Name="ID_INGRED_REFEIC" ColumnName="ID_INGRED_REFEIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW303_CALEND_REFEI">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW303_CALEND_REFEI">
+        <MappingFragment StoreEntitySet="GW303_CALEND_REFEI">
+          <ScalarProperty Name="ID_REFEICAO" ColumnName="ID_REFEICAO" />
+          <ScalarProperty Name="DT_CALEND_REFEIC" ColumnName="DT_CALEND_REFEIC" />
+          <ScalarProperty Name="ID_REFER_GEDUC_CALEND_REFEIC" ColumnName="ID_REFER_GEDUC_CALEND_REFEIC" />
+          <ScalarProperty Name="ID_CALEND_REFEIC" ColumnName="ID_CALEND_REFEIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW304_SUGEST_REFEI">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW304_SUGEST_REFEI">
+        <MappingFragment StoreEntitySet="GW304_SUGEST_REFEI">
+          <ScalarProperty Name="ID_REFEICAO" ColumnName="ID_REFEICAO" />
+          <ScalarProperty Name="DE_SUGES_REFEIC" ColumnName="DE_SUGES_REFEIC" />
+          <ScalarProperty Name="NM_SUGES_REFEIC" ColumnName="NM_SUGES_REFEIC" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_SUGES_REFEIC" ColumnName="ID_SUGES_REFEIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW305_RESTR_ALIMEN">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW305_RESTR_ALIMEN">
+        <MappingFragment StoreEntitySet="GW305_RESTR_ALIMEN">
+          <ScalarProperty Name="CO_GRAU_RESTR_ALIMEN" ColumnName="CO_GRAU_RESTR_ALIMEN" />
+          <ScalarProperty Name="DT_TERMI_RESTR_ALIMEN" ColumnName="DT_TERMI_RESTR_ALIMEN" />
+          <ScalarProperty Name="DT_INICIO_RESTR_ALIMEN" ColumnName="DT_INICIO_RESTR_ALIMEN" />
+          <ScalarProperty Name="DT_INFORM_RESTR_ALIMEN" ColumnName="DT_INFORM_RESTR_ALIMEN" />
+          <ScalarProperty Name="DE_RESTR_ALIMEN" ColumnName="DE_RESTR_ALIMEN" />
+          <ScalarProperty Name="NM_RESTR_ALIMEN" ColumnName="NM_RESTR_ALIMEN" />
+          <ScalarProperty Name="TP_RESTR_ALIMEN" ColumnName="TP_RESTR_ALIMEN" />
+          <ScalarProperty Name="ID_REFER_GEDUC_RESTR_ALIMEN" ColumnName="ID_REFER_GEDUC_RESTR_ALIMEN" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_RESTR_ALIMEN" ColumnName="ID_RESTR_ALIMEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW306_REFEIC_USR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW306_REFEIC_USR">
+        <MappingFragment StoreEntitySet="GW306_REFEIC_USR">
+          <ScalarProperty Name="ID_REFEICAO" ColumnName="ID_REFEICAO" />
+          <ScalarProperty Name="HR_REFEIC_USR" ColumnName="HR_REFEIC_USR" />
+          <ScalarProperty Name="DT_REFEIC_USR" ColumnName="DT_REFEIC_USR" />
+          <ScalarProperty Name="ID_REFER_GEDUC_REFEIC_USR" ColumnName="ID_REFER_GEDUC_REFEIC_USR" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_REFEIC_USR" ColumnName="ID_REFEIC_USR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW401_LINHA_TRANSP">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW401_LINHA_TRANSP">
+        <MappingFragment StoreEntitySet="GW401_LINHA_TRANSP">
+          <ScalarProperty Name="CO_SITUA_LINHA" ColumnName="CO_SITUA_LINHA" />
+          <ScalarProperty Name="DT_SITUA_LINHA" ColumnName="DT_SITUA_LINHA" />
+          <ScalarProperty Name="FL_INTEGR_LINHA" ColumnName="FL_INTEGR_LINHA" />
+          <ScalarProperty Name="VL_TARIFA_LINHA" ColumnName="VL_TARIFA_LINHA" />
+          <ScalarProperty Name="DE_OBSER_LINHA" ColumnName="DE_OBSER_LINHA" />
+          <ScalarProperty Name="DE_HORAR_LINHA" ColumnName="DE_HORAR_LINHA" />
+          <ScalarProperty Name="DE_ROTEI_LINHA" ColumnName="DE_ROTEI_LINHA" />
+          <ScalarProperty Name="NO_TITUL_LINHA" ColumnName="NO_TITUL_LINHA" />
+          <ScalarProperty Name="NU_LINHA" ColumnName="NU_LINHA" />
+          <ScalarProperty Name="TP_TRANSP_LINHA" ColumnName="TP_TRANSP_LINHA" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_LINHA_TRANSP" ColumnName="ID_LINHA_TRANSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW402_LINHA_USR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW402_LINHA_USR">
+        <MappingFragment StoreEntitySet="GW402_LINHA_USR">
+          <ScalarProperty Name="ID_LINHA_TRANSP" ColumnName="ID_LINHA_TRANSP" />
+          <ScalarProperty Name="ID_REFER_GEDUC_LINHA_USR" ColumnName="ID_REFER_GEDUC_LINHA_USR" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_LINHA_TRANSP_USR" ColumnName="ID_LINHA_TRANSP_USR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW451_ROTA_TRANSP">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW451_ROTA_TRANSP">
+        <MappingFragment StoreEntitySet="GW451_ROTA_TRANSP">
+          <ScalarProperty Name="NM_ROTA_TRANSP" ColumnName="NM_ROTA_TRANSP" />
+          <ScalarProperty Name="CO_ROTA_TRANSP" ColumnName="CO_ROTA_TRANSP" />
+          <ScalarProperty Name="TP_ROTA_TRANSP" ColumnName="TP_ROTA_TRANSP" />
+          <ScalarProperty Name="ID_REFER_GEDUC_ROTAS" ColumnName="ID_REFER_GEDUC_ROTAS" />
+          <ScalarProperty Name="ID_ROTA_TRANSP" ColumnName="ID_ROTA_TRANSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW452_ROTA_ITENS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW452_ROTA_ITENS">
+        <MappingFragment StoreEntitySet="GW452_ROTA_ITENS">
+          <ScalarProperty Name="NR_ORDEM_RUA_ROTA" ColumnName="NR_ORDEM_RUA_ROTA" />
+          <ScalarProperty Name="CO_CEP_RUA_ROTA" ColumnName="CO_CEP_RUA_ROTA" />
+          <ScalarProperty Name="NM_RUA_ROTA" ColumnName="NM_RUA_ROTA" />
+          <ScalarProperty Name="ID_REFER_GEDUC_RUAS" ColumnName="ID_REFER_GEDUC_RUAS" />
+          <ScalarProperty Name="ID_ROTA_TRANSP" ColumnName="ID_ROTA_TRANSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW452_ROTA_USR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW452_ROTA_USR">
+        <MappingFragment StoreEntitySet="GW452_ROTA_USR">
+          <ScalarProperty Name="ID_ROTA_TRANSP" ColumnName="ID_ROTA_TRANSP" />
+          <ScalarProperty Name="ID_REFER_GEDUC_ROTAUSR" ColumnName="ID_REFER_GEDUC_ROTAUSR" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_ROTA_TRANSP_USR" ColumnName="ID_ROTA_TRANSP_USR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW501_TIPO_SOLIC">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW501_TIPO_SOLIC">
+        <MappingFragment StoreEntitySet="GW501_TIPO_SOLIC">
+          <ScalarProperty Name="NO_PROCED_TIPO_SOLIC" ColumnName="NO_PROCED_TIPO_SOLIC" />
+          <ScalarProperty Name="VL_TIPO_SOLIC" ColumnName="VL_TIPO_SOLIC" />
+          <ScalarProperty Name="CO_SIGLA_TIPO_SOLIC" ColumnName="CO_SIGLA_TIPO_SOLIC" />
+          <ScalarProperty Name="NO_TIPO_SOLIC" ColumnName="NO_TIPO_SOLIC" />
+          <ScalarProperty Name="ID_REFER_GEDUC_TIPO_SOLIC" ColumnName="ID_REFER_GEDUC_TIPO_SOLIC" />
+          <ScalarProperty Name="ID_TIPO_SOLIC" ColumnName="ID_TIPO_SOLIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW502_SOLIC_USR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW502_SOLIC_USR">
+        <MappingFragment StoreEntitySet="GW502_SOLIC_USR">
+          <ScalarProperty Name="ID_TIPO_SOLIC" ColumnName="ID_TIPO_SOLIC" />
+          <ScalarProperty Name="NR_GEDUC_SOLIC_USR" ColumnName="NR_GEDUC_SOLIC_USR" />
+          <ScalarProperty Name="CO_STATUS_SOLIC_USR" ColumnName="CO_STATUS_SOLIC_USR" />
+          <ScalarProperty Name="NM_SOLIC_RECEB_SOLIC_USR" ColumnName="NM_SOLIC_RECEB_SOLIC_USR" />
+          <ScalarProperty Name="HR_ENTRE_SOLIC_USR" ColumnName="HR_ENTRE_SOLIC_USR" />
+          <ScalarProperty Name="DT_ENTRE_SOLIC_USR" ColumnName="DT_ENTRE_SOLIC_USR" />
+          <ScalarProperty Name="DT_FINAL_SOLIC_USR" ColumnName="DT_FINAL_SOLIC_USR" />
+          <ScalarProperty Name="FL_AVISAR_SMS_SOLIC_USR" ColumnName="FL_AVISAR_SMS_SOLIC_USR" />
+          <ScalarProperty Name="NR_TELEF_SOLIC_USR" ColumnName="NR_TELEF_SOLIC_USR" />
+          <ScalarProperty Name="DE_OBSER_SOLIC_USR" ColumnName="DE_OBSER_SOLIC_USR" />
+          <ScalarProperty Name="HR_SOLIC_USR" ColumnName="HR_SOLIC_USR" />
+          <ScalarProperty Name="DT_SOLIC_USR" ColumnName="DT_SOLIC_USR" />
+          <ScalarProperty Name="ID_REFER_GEDUC_SOLIC_USR" ColumnName="ID_REFER_GEDUC_SOLIC_USR" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID_SOLIC_USR" ColumnName="ID_SOLIC_USR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW551_FREQU">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW551_FREQU">
+        <MappingFragment StoreEntitySet="GW551_FREQU">
+          <ScalarProperty Name="CO_ATIV_PROF_TUR" ColumnName="CO_ATIV_PROF_TUR" />
+          <ScalarProperty Name="NR_IP_BAIXA_FREQU" ColumnName="NR_IP_BAIXA_FREQU" />
+          <ScalarProperty Name="NR_TEMPO" ColumnName="NR_TEMPO" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="DT_ANO_REFER" ColumnName="DT_ANO_REFER" />
+          <ScalarProperty Name="CO_REFER_FREQU" ColumnName="CO_REFER_FREQU" />
+          <ScalarProperty Name="DT_BAIXA_FREQU" ColumnName="DT_BAIXA_FREQU" />
+          <ScalarProperty Name="FL_BAIXA_FREQU" ColumnName="FL_BAIXA_FREQU" />
+          <ScalarProperty Name="ID_COLAB_BAIXA_FREQU" ColumnName="ID_COLAB_BAIXA_FREQU" />
+          <ScalarProperty Name="DT_CADAS_FREQU" ColumnName="DT_CADAS_FREQU" />
+          <ScalarProperty Name="NR_IP_LANCA_FREQU" ColumnName="NR_IP_LANCA_FREQU" />
+          <ScalarProperty Name="TP_FREQU" ColumnName="TP_FREQU" />
+          <ScalarProperty Name="DT_FREQU" ColumnName="DT_FREQU" />
+          <ScalarProperty Name="ID_COLAB_LANCA_FREQU" ColumnName="ID_COLAB_LANCA_FREQU" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_GRADE_MATER" ColumnName="ID_GRADE_MATER" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_FREQU" ColumnName="ID_FREQU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW551_LANCA_FREQU">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW551_LANCA_FREQU">
+        <MappingFragment StoreEntitySet="GW551_LANCA_FREQU">
+          <ScalarProperty Name="ID_FREQU" ColumnName="ID_FREQU" />
+          <ScalarProperty Name="CO_ATIV_PROF_TUR" ColumnName="CO_ATIV_PROF_TUR" />
+          <ScalarProperty Name="NR_TEMPO" ColumnName="NR_TEMPO" />
+          <ScalarProperty Name="CO_REFER_FREQU" ColumnName="CO_REFER_FREQU" />
+          <ScalarProperty Name="DT_BAIXA_FREQU" ColumnName="DT_BAIXA_FREQU" />
+          <ScalarProperty Name="FL_BAIXA_FREQU" ColumnName="FL_BAIXA_FREQU" />
+          <ScalarProperty Name="NR_IP_BAIXA_FREQU" ColumnName="NR_IP_BAIXA_FREQU" />
+          <ScalarProperty Name="ID_COLAB_BAIXA_FREQU" ColumnName="ID_COLAB_BAIXA_FREQU" />
+          <ScalarProperty Name="DT_CADAS_FREQU" ColumnName="DT_CADAS_FREQU" />
+          <ScalarProperty Name="NR_IP_LANCA_FREQU" ColumnName="NR_IP_LANCA_FREQU" />
+          <ScalarProperty Name="TP_FREQU" ColumnName="TP_FREQU" />
+          <ScalarProperty Name="DT_FREQU" ColumnName="DT_FREQU" />
+          <ScalarProperty Name="ID_COLAB_LANCA_FREQU" ColumnName="ID_COLAB_LANCA_FREQU" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_GRADE_MATER" ColumnName="ID_GRADE_MATER" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_LANCA_FREQU" ColumnName="ID_LANCA_FREQU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW552_LANCA_NOTA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW552_LANCA_NOTA">
+        <MappingFragment StoreEntitySet="GW552_LANCA_NOTA">
+          <ScalarProperty Name="CO_ANO_REFER" ColumnName="CO_ANO_REFER" />
+          <ScalarProperty Name="QT_FALTA_MEDIA" ColumnName="QT_FALTA_MEDIA" />
+          <ScalarProperty Name="FL_LANCA_MEDIA" ColumnName="FL_LANCA_MEDIA" />
+          <ScalarProperty Name="CO_REFER_NOTA" ColumnName="CO_REFER_NOTA" />
+          <ScalarProperty Name="DT_NOTA_CADAS" ColumnName="DT_NOTA_CADAS" />
+          <ScalarProperty Name="DT_BAIXA_NOTA" ColumnName="DT_BAIXA_NOTA" />
+          <ScalarProperty Name="FL_BAIXA_NOTA" ColumnName="FL_BAIXA_NOTA" />
+          <ScalarProperty Name="NR_IP_COLAB_BAIXA_NOTA" ColumnName="NR_IP_COLAB_BAIXA_NOTA" />
+          <ScalarProperty Name="ID_COLAB_BAIXA_NOTA" ColumnName="ID_COLAB_BAIXA_NOTA" />
+          <ScalarProperty Name="NR_IP_LANCA_NOTA" ColumnName="NR_IP_LANCA_NOTA" />
+          <ScalarProperty Name="FL_TIPO_NOTA" ColumnName="FL_TIPO_NOTA" />
+          <ScalarProperty Name="ID_TIPO_ATIV" ColumnName="ID_TIPO_ATIV" />
+          <ScalarProperty Name="VL_NOTA" ColumnName="VL_NOTA" />
+          <ScalarProperty Name="DT_LANCA_NOTA" ColumnName="DT_LANCA_NOTA" />
+          <ScalarProperty Name="ID_COLAB_LANCA_NOTA" ColumnName="ID_COLAB_LANCA_NOTA" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_GRADE_MATER" ColumnName="ID_GRADE_MATER" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_NOTA" ColumnName="ID_NOTA" />
+          <ScalarProperty Name="ID_LANCA_NOTA" ColumnName="ID_LANCA_NOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW552_NOTA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW552_NOTA">
+        <MappingFragment StoreEntitySet="GW552_NOTA">
+          <ScalarProperty Name="FL_BAIXA_NOTA" ColumnName="FL_BAIXA_NOTA" />
+          <ScalarProperty Name="CO_ANO_REFER" ColumnName="CO_ANO_REFER" />
+          <ScalarProperty Name="FL_LANCA_MEDIA" ColumnName="FL_LANCA_MEDIA" />
+          <ScalarProperty Name="ID_TIPO_ATIV" ColumnName="ID_TIPO_ATIV" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_GRADE_MATER" ColumnName="ID_GRADE_MATER" />
+          <ScalarProperty Name="CO_TIPO_ATIVI" ColumnName="CO_TIPO_ATIVI" />
+          <ScalarProperty Name="ID_COLAB_LANCA_NOTA" ColumnName="ID_COLAB_LANCA_NOTA" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="CO_REFER_NOTA" ColumnName="CO_REFER_NOTA" />
+          <ScalarProperty Name="DT_LANCA_NOTA" ColumnName="DT_LANCA_NOTA" />
+          <ScalarProperty Name="ID_NOTA" ColumnName="ID_NOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW554_ATIV_PROF_TURMA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW554_ATIV_PROF_TURMA">
+        <MappingFragment StoreEntitySet="GW554_ATIV_PROF_TURMA">
+          <ScalarProperty Name="FL_BAIXA_NOTA" ColumnName="FL_BAIXA_NOTA" />
+          <ScalarProperty Name="DT_BAIXA_NOTA" ColumnName="DT_BAIXA_NOTA" />
+          <ScalarProperty Name="NR_IP_COLAB_BAIXA_NOTA" ColumnName="NR_IP_COLAB_BAIXA_NOTA" />
+          <ScalarProperty Name="ID_COLAB_BAIXA_NOTA" ColumnName="ID_COLAB_BAIXA_NOTA" />
+          <ScalarProperty Name="FL_BAIXA_ATIV" ColumnName="FL_BAIXA_ATIV" />
+          <ScalarProperty Name="CO_REFER_ATIV" ColumnName="CO_REFER_ATIV" />
+          <ScalarProperty Name="ID_TIPO_ATIV" ColumnName="ID_TIPO_ATIV" />
+          <ScalarProperty Name="CO_IP_CADAST" ColumnName="CO_IP_CADAST" />
+          <ScalarProperty Name="DE_RES_ATIV" ColumnName="DE_RES_ATIV" />
+          <ScalarProperty Name="HR_TER_ATIV" ColumnName="HR_TER_ATIV" />
+          <ScalarProperty Name="HR_INI_ATIV" ColumnName="HR_INI_ATIV" />
+          <ScalarProperty Name="NU_SEM_LET" ColumnName="NU_SEM_LET" />
+          <ScalarProperty Name="CO_MODU_CUR" ColumnName="CO_MODU_CUR" />
+          <ScalarProperty Name="CO_ANO_MES_MAT" ColumnName="CO_ANO_MES_MAT" />
+          <ScalarProperty Name="CO_PLA_AULA" ColumnName="CO_PLA_AULA" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="FL_LANCA_NOTA" ColumnName="FL_LANCA_NOTA" />
+          <ScalarProperty Name="FL_AVALIA_ATIV" ColumnName="FL_AVALIA_ATIV" />
+          <ScalarProperty Name="FLA_AULA_PLAN" ColumnName="FLA_AULA_PLAN" />
+          <ScalarProperty Name="DE_FORMA_AVALI_ATIV" ColumnName="DE_FORMA_AVALI_ATIV" />
+          <ScalarProperty Name="DE_TEMA_AULA" ColumnName="DE_TEMA_AULA" />
+          <ScalarProperty Name="CO_TIPO_ATIV" ColumnName="CO_TIPO_ATIV" />
+          <ScalarProperty Name="DT_ATIV_REAL_TERM" ColumnName="DT_ATIV_REAL_TERM" />
+          <ScalarProperty Name="DT_ATIV_REAL" ColumnName="DT_ATIV_REAL" />
+          <ScalarProperty Name="CO_COL_ATIV" ColumnName="CO_COL_ATIV" />
+          <ScalarProperty Name="CO_ATIV_PROF_TUR" ColumnName="CO_ATIV_PROF_TUR" />
+          <ScalarProperty Name="CO_MAT" ColumnName="CO_MAT" />
+          <ScalarProperty Name="CO_COL" ColumnName="CO_COL" />
+          <ScalarProperty Name="CO_TUR" ColumnName="CO_TUR" />
+          <ScalarProperty Name="CO_CUR" ColumnName="CO_CUR" />
+          <ScalarProperty Name="CO_EMP" ColumnName="CO_EMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW555_END_NOVO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW555_END_NOVO">
+        <MappingFragment StoreEntitySet="GW555_END_NOVO">
+          <ScalarProperty Name="FL_ALTERA" ColumnName="FL_ALTERA" />
+          <ScalarProperty Name="NR_CPF_USR" ColumnName="NR_CPF_USR" />
+          <ScalarProperty Name="CO_TIPO_USUAR" ColumnName="CO_TIPO_USUAR" />
+          <ScalarProperty Name="IP_USER" ColumnName="IP_USER" />
+          <ScalarProperty Name="CO_ALUNO" ColumnName="CO_ALUNO" />
+          <ScalarProperty Name="CO_RESP" ColumnName="CO_RESP" />
+          <ScalarProperty Name="CO_ENDER_ESTAD_NOVO" ColumnName="CO_ENDER_ESTAD_NOVO" />
+          <ScalarProperty Name="CO_ENDER_CIDAD_NOVO" ColumnName="CO_ENDER_CIDAD_NOVO" />
+          <ScalarProperty Name="CO_ENDER_BAIRR_NOVO" ColumnName="CO_ENDER_BAIRR_NOVO" />
+          <ScalarProperty Name="DE_ENDER_COMPL_NOVO" ColumnName="DE_ENDER_COMPL_NOVO" />
+          <ScalarProperty Name="NU_ENDER_NUMER_NOVO" ColumnName="NU_ENDER_NUMER_NOVO" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_NOVO" ColumnName="DE_ENDER_LOCAL_NOVO" />
+          <ScalarProperty Name="CO_ENDER_CEP_NOVO" ColumnName="CO_ENDER_CEP_NOVO" />
+          <ScalarProperty Name="ID_ENDERECO" ColumnName="ID_ENDERECO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW601_HISTO_DESEMP">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW601_HISTO_DESEMP">
+        <MappingFragment StoreEntitySet="GW601_HISTO_DESEMP">
+          <ScalarProperty Name="ID_REGISTRO" ColumnName="ID_REGISTRO" />
+          <ScalarProperty Name="ST_SITUA" ColumnName="ST_SITUA" />
+          <ScalarProperty Name="VL_PROVA_FINAL" ColumnName="VL_PROVA_FINAL" />
+          <ScalarProperty Name="VL_FALTAS_B4" ColumnName="VL_FALTAS_B4" />
+          <ScalarProperty Name="VL_MEDIA_TURMA_B4" ColumnName="VL_MEDIA_TURMA_B4" />
+          <ScalarProperty Name="VL_MEDIA_ALUNO_B4" ColumnName="VL_MEDIA_ALUNO_B4" />
+          <ScalarProperty Name="VL_FALTAS_B3" ColumnName="VL_FALTAS_B3" />
+          <ScalarProperty Name="VL_MEDIA_TURMA_B3" ColumnName="VL_MEDIA_TURMA_B3" />
+          <ScalarProperty Name="VL_MEDIA_ALUNO_B3" ColumnName="VL_MEDIA_ALUNO_B3" />
+          <ScalarProperty Name="VL_FALTAS_B2" ColumnName="VL_FALTAS_B2" />
+          <ScalarProperty Name="VL_MEDIA_TURMA_B2" ColumnName="VL_MEDIA_TURMA_B2" />
+          <ScalarProperty Name="VL_MEDIA_ALUNO_B2" ColumnName="VL_MEDIA_ALUNO_B2" />
+          <ScalarProperty Name="VL_FALTAS_B1" ColumnName="VL_FALTAS_B1" />
+          <ScalarProperty Name="VL_MEDIA_TURMA_B1" ColumnName="VL_MEDIA_TURMA_B1" />
+          <ScalarProperty Name="VL_MEDIA_ALUNO_B1" ColumnName="VL_MEDIA_ALUNO_B1" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="ID_SERIE" ColumnName="ID_SERIE" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="ID_INFOR_ALU" ColumnName="ID_INFOR_ALU" />
+          <ScalarProperty Name="ID_TURMA" ColumnName="ID_TURMA" />
+          <ScalarProperty Name="ID_UNIDADE" ColumnName="ID_UNIDADE" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW602_BOLET_ESCOL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW602_BOLET_ESCOL">
+        <MappingFragment StoreEntitySet="GW602_BOLET_ESCOL">
+          <ScalarProperty Name="ID_REGISTRO" ColumnName="ID_REGISTRO" />
+          <ScalarProperty Name="DE_END_PDF_BOLETIM" ColumnName="DE_END_PDF_BOLETIM" />
+          <ScalarProperty Name="DE_END_IMG_BOLETIM" ColumnName="DE_END_IMG_BOLETIM" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="VL_PROVA_FINAL" ColumnName="VL_PROVA_FINAL" />
+          <ScalarProperty Name="VL_MEDIA_TURMA" ColumnName="VL_MEDIA_TURMA" />
+          <ScalarProperty Name="VL_NOTA_COMPOR_B4" ColumnName="VL_NOTA_COMPOR_B4" />
+          <ScalarProperty Name="VL_FREQU_B4" ColumnName="VL_FREQU_B4" />
+          <ScalarProperty Name="QT_FALTAS_B4" ColumnName="QT_FALTAS_B4" />
+          <ScalarProperty Name="VL_NOTA_RECUP_B4" ColumnName="VL_NOTA_RECUP_B4" />
+          <ScalarProperty Name="VL_NOTA_B4" ColumnName="VL_NOTA_B4" />
+          <ScalarProperty Name="VL_NOTA_COMPOR_B3" ColumnName="VL_NOTA_COMPOR_B3" />
+          <ScalarProperty Name="VL_FREQU_B3" ColumnName="VL_FREQU_B3" />
+          <ScalarProperty Name="QT_FALTAS_B3" ColumnName="QT_FALTAS_B3" />
+          <ScalarProperty Name="VL_NOTA_RECUP_B3" ColumnName="VL_NOTA_RECUP_B3" />
+          <ScalarProperty Name="VL_NOTA_B3" ColumnName="VL_NOTA_B3" />
+          <ScalarProperty Name="VL_NOTA_COMPOR_B2" ColumnName="VL_NOTA_COMPOR_B2" />
+          <ScalarProperty Name="VL_FREQU_B2" ColumnName="VL_FREQU_B2" />
+          <ScalarProperty Name="QT_FALTAS_B2" ColumnName="QT_FALTAS_B2" />
+          <ScalarProperty Name="VL_NOTA_RECUP_B2" ColumnName="VL_NOTA_RECUP_B2" />
+          <ScalarProperty Name="VL_NOTA_B2" ColumnName="VL_NOTA_B2" />
+          <ScalarProperty Name="VL_NOTA_COMPOR_B1" ColumnName="VL_NOTA_COMPOR_B1" />
+          <ScalarProperty Name="VL_FREQU_B1" ColumnName="VL_FREQU_B1" />
+          <ScalarProperty Name="QT_FALTAS_B1" ColumnName="QT_FALTAS_B1" />
+          <ScalarProperty Name="VL_NOTA_RECUP_B1" ColumnName="VL_NOTA_RECUP_B1" />
+          <ScalarProperty Name="VL_NOTA_B1" ColumnName="VL_NOTA_B1" />
+          <ScalarProperty Name="ID_UNID" ColumnName="ID_UNID" />
+          <ScalarProperty Name="NU_MATRICULA" ColumnName="NU_MATRICULA" />
+          <ScalarProperty Name="ID_ALUNO" ColumnName="ID_ALUNO" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW603_DADO_BOLETO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW603_DADO_BOLETO">
+        <MappingFragment StoreEntitySet="GW603_DADO_BOLETO">
+          <ScalarProperty Name="DE_HISTORICO" ColumnName="DE_HISTORICO" />
+          <ScalarProperty Name="CO_ANO_REF" ColumnName="CO_ANO_REF" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_SERIE_ENSINO" ColumnName="ID_SERIE_ENSINO" />
+          <ScalarProperty Name="ID_MODAL_ENSINO" ColumnName="ID_MODAL_ENSINO" />
+          <ScalarProperty Name="NU_CONVENIO" ColumnName="NU_CONVENIO" />
+          <ScalarProperty Name="DI_CONTA" ColumnName="DI_CONTA" />
+          <ScalarProperty Name="CO_CONTA" ColumnName="CO_CONTA" />
+          <ScalarProperty Name="DE_CORPO_BOLETO" ColumnName="DE_CORPO_BOLETO" />
+          <ScalarProperty Name="CO_CEDENTE" ColumnName="CO_CEDENTE" />
+          <ScalarProperty Name="IDEBANCO" ColumnName="IDEBANCO" />
+          <ScalarProperty Name="DI_AGENCIA" ColumnName="DI_AGENCIA" />
+          <ScalarProperty Name="CO_AGENCIA" ColumnName="CO_AGENCIA" />
+          <ScalarProperty Name="CO_EMP_UNID_CONT" ColumnName="CO_EMP_UNID_CONT" />
+          <ScalarProperty Name="CO_CARTEIRA" ColumnName="CO_CARTEIRA" />
+          <ScalarProperty Name="VR_DES_DOC" ColumnName="VR_DES_DOC" />
+          <ScalarProperty Name="CO_BARRA_DOC" ColumnName="CO_BARRA_DOC" />
+          <ScalarProperty Name="CO_NOS_NUM" ColumnName="CO_NOS_NUM" />
+          <ScalarProperty Name="VR_PAR_DOC" ColumnName="VR_PAR_DOC" />
+          <ScalarProperty Name="DT_VEN_DOC" ColumnName="DT_VEN_DOC" />
+          <ScalarProperty Name="ID_INFORM_RESP" ColumnName="ID_INFORM_RESP" />
+          <ScalarProperty Name="ID_INFOR_ALUNO" ColumnName="ID_INFOR_ALUNO" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="CO_EMP" ColumnName="CO_EMP" />
+          <ScalarProperty Name="DT_CAD_DOC" ColumnName="DT_CAD_DOC" />
+          <ScalarProperty Name="NU_PAR" ColumnName="NU_PAR" />
+          <ScalarProperty Name="NU_DOC" ColumnName="NU_DOC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW700_INSTITUICAO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW700_INSTITUICAO">
+        <MappingFragment StoreEntitySet="GW700_INSTITUICAO">
+          <ScalarProperty Name="IM_LOGO" ColumnName="IM_LOGO" />
+          <ScalarProperty Name="DE_HORAR_ATEND_INSTIT" ColumnName="DE_HORAR_ATEND_INSTIT" />
+          <ScalarProperty Name="DE_WEB_PAGE_INSTIT" ColumnName="DE_WEB_PAGE_INSTIT" />
+          <ScalarProperty Name="NR_TELEF_FIXO_INSTIT" ColumnName="NR_TELEF_FIXO_INSTIT" />
+          <ScalarProperty Name="DE_EMAIL_CONT_INSTIT" ColumnName="DE_EMAIL_CONT_INSTIT" />
+          <ScalarProperty Name="DE_EMAIL_GERAL_INSTIT" ColumnName="DE_EMAIL_GERAL_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_CEP_INSTIT" ColumnName="DE_ENDER_CEP_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_ESTAD_INSTIT" ColumnName="DE_ENDER_ESTAD_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_CIDAD_INSTIT" ColumnName="DE_ENDER_CIDAD_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_BAIRR_INSTIT" ColumnName="DE_ENDER_BAIRR_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_COMPL_INSTIT" ColumnName="DE_ENDER_COMPL_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_LOCAL_INSTIT" ColumnName="DE_ENDER_LOCAL_INSTIT" />
+          <ScalarProperty Name="DE_ENDER_FOTO_INSTIT" ColumnName="DE_ENDER_FOTO_INSTIT" />
+          <ScalarProperty Name="NO_REDUZ_INSTIT" ColumnName="NO_REDUZ_INSTIT" />
+          <ScalarProperty Name="NO_INSTIT" ColumnName="NO_INSTIT" />
+          <ScalarProperty Name="CO_SIGLA_INSTIT" ColumnName="CO_SIGLA_INSTIT" />
+          <ScalarProperty Name="TP_INSTIT" ColumnName="TP_INSTIT" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW800_FALE_CONOSCO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW800_FALE_CONOSCO">
+        <MappingFragment StoreEntitySet="GW800_FALE_CONOSCO">
+          <ScalarProperty Name="FL_ANEXO_FALE_CONOS" ColumnName="FL_ANEXO_FALE_CONOS" />
+          <ScalarProperty Name="DE_MENSA_FALE_CONOS" ColumnName="DE_MENSA_FALE_CONOS" />
+          <ScalarProperty Name="DE_ASSUN_FALE_CONOS" ColumnName="DE_ASSUN_FALE_CONOS" />
+          <ScalarProperty Name="DE_CARGO_USUAR_FALE_CONOS" ColumnName="DE_CARGO_USUAR_FALE_CONOS" />
+          <ScalarProperty Name="CO_CPFCNPJ_FALE_CONOS" ColumnName="CO_CPFCNPJ_FALE_CONOS" />
+          <ScalarProperty Name="NO_EMPRE_FALE_CONOS" ColumnName="NO_EMPRE_FALE_CONOS" />
+          <ScalarProperty Name="DE_EMAIL_FALE_CONOS" ColumnName="DE_EMAIL_FALE_CONOS" />
+          <ScalarProperty Name="NR_CELUL_FALE_CONOS" ColumnName="NR_CELUL_FALE_CONOS" />
+          <ScalarProperty Name="NR_TELEF_FALE_CONOS" ColumnName="NR_TELEF_FALE_CONOS" />
+          <ScalarProperty Name="NO_USUAR_FALE_CONOS" ColumnName="NO_USUAR_FALE_CONOS" />
+          <ScalarProperty Name="IP_USUAR_FALE_CONOS" ColumnName="IP_USUAR_FALE_CONOS" />
+          <ScalarProperty Name="DT_SOLIC_FALE_CONOS" ColumnName="DT_SOLIC_FALE_CONOS" />
+          <ScalarProperty Name="ID_CODIG_COLAB" ColumnName="ID_CODIG_COLAB" />
+          <ScalarProperty Name="ID_ASSUN_CONTAT" ColumnName="ID_ASSUN_CONTAT" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="ID_FALE_CONOS" ColumnName="ID_FALE_CONOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW801_SMS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW801_SMS">
+        <MappingFragment StoreEntitySet="GW801_SMS">
+          <ScalarProperty Name="FL_SMS_SUCESS" ColumnName="FL_SMS_SUCESS" />
+          <ScalarProperty Name="CO_STATUS" ColumnName="CO_STATUS" />
+          <ScalarProperty Name="DT_ENVIO_SMS" ColumnName="DT_ENVIO_SMS" />
+          <ScalarProperty Name="DE_MENSAG_SMS" ColumnName="DE_MENSAG_SMS" />
+          <ScalarProperty Name="ID_MENSAG_OPERAD" ColumnName="ID_MENSAG_OPERAD" />
+          <ScalarProperty Name="NO_RECEPT_SMS" ColumnName="NO_RECEPT_SMS" />
+          <ScalarProperty Name="NR_TELEF_RECEPT" ColumnName="NR_TELEF_RECEPT" />
+          <ScalarProperty Name="TP_RECEPT" ColumnName="TP_RECEPT" />
+          <ScalarProperty Name="CO_UNID_RECEPT" ColumnName="CO_UNID_RECEPT" />
+          <ScalarProperty Name="CO_RECEPTOR" ColumnName="CO_RECEPTOR" />
+          <ScalarProperty Name="TP_EMISSOR" ColumnName="TP_EMISSOR" />
+          <ScalarProperty Name="CO_UNID_EMISSOR" ColumnName="CO_UNID_EMISSOR" />
+          <ScalarProperty Name="CO_EMISSOR" ColumnName="CO_EMISSOR" />
+          <ScalarProperty Name="ID_MENSAG_SMS" ColumnName="ID_MENSAG_SMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW802_ARQUIVOS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW802_ARQUIVOS">
+        <MappingFragment StoreEntitySet="GW802_ARQUIVOS">
+          <ScalarProperty Name="ID_TIPO_ASSUNTO" ColumnName="ID_TIPO_ASSUNTO" />
+          <ScalarProperty Name="CO_ATIVO" ColumnName="CO_ATIVO" />
+          <ScalarProperty Name="DT_VALIDADE" ColumnName="DT_VALIDADE" />
+          <ScalarProperty Name="DT_PUBLICACAO" ColumnName="DT_PUBLICACAO" />
+          <ScalarProperty Name="DT_CRIACAO" ColumnName="DT_CRIACAO" />
+          <ScalarProperty Name="DE_URL_ARQUIVO" ColumnName="DE_URL_ARQUIVO" />
+          <ScalarProperty Name="DE_TIPO_ARQUIVO" ColumnName="DE_TIPO_ARQUIVO" />
+          <ScalarProperty Name="DE_ARQUIVO" ColumnName="DE_ARQUIVO" />
+          <ScalarProperty Name="NO_AUTOR" ColumnName="NO_AUTOR" />
+          <ScalarProperty Name="NO_ARQUIVO" ColumnName="NO_ARQUIVO" />
+          <ScalarProperty Name="CO_UNID_ORIGEM" ColumnName="CO_UNID_ORIGEM" />
+          <ScalarProperty Name="ID_INSTI" ColumnName="ID_INSTI" />
+          <ScalarProperty Name="ID_ARQUIVO" ColumnName="ID_ARQUIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW803_ASSUN_CONTA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW803_ASSUN_CONTA">
+        <MappingFragment StoreEntitySet="GW803_ASSUN_CONTA">
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="CO_SITU_ASSUNTO" ColumnName="CO_SITU_ASSUNTO" />
+          <ScalarProperty Name="CO_TIPO_ASSUN_CONTAT" ColumnName="CO_TIPO_ASSUN_CONTAT" />
+          <ScalarProperty Name="DE_ASSUN_CONTAT" ColumnName="DE_ASSUN_CONTAT" />
+          <ScalarProperty Name="ID_ASSUN_CONTAT" ColumnName="ID_ASSUN_CONTAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW804_MIDIAS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW804_MIDIAS">
+        <MappingFragment StoreEntitySet="GW804_MIDIAS">
+          <ScalarProperty Name="DT_CRIAC_MIDIA" ColumnName="DT_CRIAC_MIDIA" />
+          <ScalarProperty Name="DE_ENDER_MIDIA" ColumnName="DE_ENDER_MIDIA" />
+          <ScalarProperty Name="FL_ENDER_MIDIA" ColumnName="FL_ENDER_MIDIA" />
+          <ScalarProperty Name="DE_CONTE_MIDIA" ColumnName="DE_CONTE_MIDIA" />
+          <ScalarProperty Name="NO_TITUL_MIDIA" ColumnName="NO_TITUL_MIDIA" />
+          <ScalarProperty Name="CO_SITU_MIDIA" ColumnName="CO_SITU_MIDIA" />
+          <ScalarProperty Name="DT_TERMI" ColumnName="DT_TERMI" />
+          <ScalarProperty Name="DT_INICI" ColumnName="DT_INICI" />
+          <ScalarProperty Name="TP_MIDIA" ColumnName="TP_MIDIA" />
+          <ScalarProperty Name="ID_CLASS_MIDIA" ColumnName="ID_CLASS_MIDIA" />
+          <ScalarProperty Name="ID_EVENT_SOCIA" ColumnName="ID_EVENT_SOCIA" />
+          <ScalarProperty Name="ID_CLASS_MATER" ColumnName="ID_CLASS_MATER" />
+          <ScalarProperty Name="ID_MATER" ColumnName="ID_MATER" />
+          <ScalarProperty Name="ID_TURMA" ColumnName="ID_TURMA" />
+          <ScalarProperty Name="ID_SERIE" ColumnName="ID_SERIE" />
+          <ScalarProperty Name="ID_MODAL_ENSIN" ColumnName="ID_MODAL_ENSIN" />
+          <ScalarProperty Name="ID_UNID_INFOR" ColumnName="ID_UNID_INFOR" />
+          <ScalarProperty Name="ID_INST" ColumnName="ID_INST" />
+          <ScalarProperty Name="ID_MIDIA" ColumnName="ID_MIDIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW805_CLASSI_MATER">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW805_CLASSI_MATER">
+        <MappingFragment StoreEntitySet="GW805_CLASSI_MATER">
+          <ScalarProperty Name="NO_REDUZ_CLASS_MATER" ColumnName="NO_REDUZ_CLASS_MATER" />
+          <ScalarProperty Name="NO_CLASS_MATER" ColumnName="NO_CLASS_MATER" />
+          <ScalarProperty Name="ID_MATER" ColumnName="ID_MATER" />
+          <ScalarProperty Name="ID_CLASS_MATER" ColumnName="ID_CLASS_MATER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW806_CLASS_MIDIA">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW806_CLASS_MIDIA">
+        <MappingFragment StoreEntitySet="GW806_CLASS_MIDIA">
+          <ScalarProperty Name="NO_REDUZ_CLASS_MIDIA" ColumnName="NO_REDUZ_CLASS_MIDIA" />
+          <ScalarProperty Name="NO_CLASS_MIDIA" ColumnName="NO_CLASS_MIDIA" />
+          <ScalarProperty Name="ID_CLASS_MIDIA" ColumnName="ID_CLASS_MIDIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW807_MURAL">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW807_MURAL">
+        <MappingFragment StoreEntitySet="GW807_MURAL">
+          <ScalarProperty Name="DT_ATUAL_PORTAL" ColumnName="DT_ATUAL_PORTAL" />
+          <ScalarProperty Name="FL_ATUAL_PORTAL" ColumnName="FL_ATUAL_PORTAL" />
+          <ScalarProperty Name="DT_STATUS_MURAL" ColumnName="DT_STATUS_MURAL" />
+          <ScalarProperty Name="CO_STATUS_MURAL" ColumnName="CO_STATUS_MURAL" />
+          <ScalarProperty Name="CO_EMP_COL" ColumnName="CO_EMP_COL" />
+          <ScalarProperty Name="CO_COL" ColumnName="CO_COL" />
+          <ScalarProperty Name="CO_CUR" ColumnName="CO_CUR" />
+          <ScalarProperty Name="CO_MODU_CUR" ColumnName="CO_MODU_CUR" />
+          <ScalarProperty Name="ORG_CODIGO_ORGAO" ColumnName="ORG_CODIGO_ORGAO" />
+          <ScalarProperty Name="DE_URL_MURAL" ColumnName="DE_URL_MURAL" />
+          <ScalarProperty Name="TP_URL_MURAL" ColumnName="TP_URL_MURAL" />
+          <ScalarProperty Name="DT_FINAL_MURAL" ColumnName="DT_FINAL_MURAL" />
+          <ScalarProperty Name="DT_INICIO_MURAL" ColumnName="DT_INICIO_MURAL" />
+          <ScalarProperty Name="DT_CADAS_MURAL" ColumnName="DT_CADAS_MURAL" />
+          <ScalarProperty Name="NU_POSIC_MURAL" ColumnName="NU_POSIC_MURAL" />
+          <ScalarProperty Name="DE_AVISO_MURAL" ColumnName="DE_AVISO_MURAL" />
+          <ScalarProperty Name="NO_TITUL_MURAL" ColumnName="NO_TITUL_MURAL" />
+          <ScalarProperty Name="TP_MURAL" ColumnName="TP_MURAL" />
+          <ScalarProperty Name="ID_SERIE" ColumnName="ID_SERIE" />
+          <ScalarProperty Name="ID_TURMA_ENSINO" ColumnName="ID_TURMA_ENSINO" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_MURAL_TURMA" ColumnName="ID_MURAL_TURMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW808_EVENTOS_SOCIAS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW808_EVENTOS_SOCIAS">
+        <MappingFragment StoreEntitySet="GW808_EVENTOS_SOCIAS">
+          <ScalarProperty Name="CO_STATU" ColumnName="CO_STATU" />
+          <ScalarProperty Name="DT_TERMI" ColumnName="DT_TERMI" />
+          <ScalarProperty Name="DT_INIC" ColumnName="DT_INIC" />
+          <ScalarProperty Name="DE_EVENT_SOCIA" ColumnName="DE_EVENT_SOCIA" />
+          <ScalarProperty Name="NO_EVENT_SOCIA" ColumnName="NO_EVENT_SOCIA" />
+          <ScalarProperty Name="ID_SERIE" ColumnName="ID_SERIE" />
+          <ScalarProperty Name="ID_TURMA" ColumnName="ID_TURMA" />
+          <ScalarProperty Name="ID_INFOR_UNID" ColumnName="ID_INFOR_UNID" />
+          <ScalarProperty Name="ID_EVENT_SOCIA" ColumnName="ID_EVENT_SOCIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW809_AULAS">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW809_AULAS">
+        <MappingFragment StoreEntitySet="GW809_AULAS">
+          <ScalarProperty Name="DE_TITULO_AULA" ColumnName="DE_TITULO_AULA" />
+          <ScalarProperty Name="ID_MATERIA" ColumnName="ID_MATERIA" />
+          <ScalarProperty Name="ID_AULA" ColumnName="ID_AULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW901_TIPO_LOGRADOURO">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW901_TIPO_LOGRADOURO">
+        <MappingFragment StoreEntitySet="GW901_TIPO_LOGRADOURO">
+          <ScalarProperty Name="DE_TIPO_LOGRA" ColumnName="DE_TIPO_LOGRA" />
+          <ScalarProperty Name="CO_TIPO_LOGRA" ColumnName="CO_TIPO_LOGRA" />
+          <ScalarProperty Name="ID_TIPO_LOGRA" ColumnName="ID_TIPO_LOGRA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW902_TIPO_OCORR">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW902_TIPO_OCORR">
+        <MappingFragment StoreEntitySet="GW902_TIPO_OCORR">
+          <ScalarProperty Name="TP_USU" ColumnName="TP_USU" />
+          <ScalarProperty Name="DE_TIPO_OCORR" ColumnName="DE_TIPO_OCORR" />
+          <ScalarProperty Name="ID_INSTIT" ColumnName="ID_INSTIT" />
+          <ScalarProperty Name="CO_SIGL_OCORR" ColumnName="CO_SIGL_OCORR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GW903_TIPO_ATIVI">
+      <EntityTypeMapping TypeName="BDPRGEModel.GW903_TIPO_ATIVI">
+        <MappingFragment StoreEntitySet="GW903_TIPO_ATIVI">
+          <ScalarProperty Name="CO_SITUA_ATIV" ColumnName="CO_SITUA_ATIV" />
+          <ScalarProperty Name="FL_LANCA_NOTA_ATIV" ColumnName="FL_LANCA_NOTA_ATIV" />
+          <ScalarProperty Name="CO_PESO_ATIV" ColumnName="CO_PESO_ATIV" />
+          <ScalarProperty Name="CO_CLASS_ATIV" ColumnName="CO_CLASS_ATIV" />
+          <ScalarProperty Name="CO_SIGLA_ATIV" ColumnName="CO_SIGLA_ATIV" />
+          <ScalarProperty Name="DE_TIPO_ATIV" ColumnName="DE_TIPO_ATIV" />
+          <ScalarProperty Name="NO_TIPO_ATIV" ColumnName="NO_TIPO_ATIV" />
+          <ScalarProperty Name="ID_TIPO_ATIV" ColumnName="ID_TIPO_ATIV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

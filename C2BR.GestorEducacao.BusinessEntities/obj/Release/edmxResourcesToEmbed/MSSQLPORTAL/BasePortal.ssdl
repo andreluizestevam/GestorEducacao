@@ -1,0 +1,2031 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDPRGEModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="BDPRGEModelStoreContainer">
+    <EntitySet Name="GW000_USUARIOS" EntityType="BDPRGEModel.Store.GW000_USUARIOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW000_USUHISTPSW" EntityType="BDPRGEModel.Store.GW000_USUHISTPSW" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW000_USUXACESS" EntityType="BDPRGEModel.Store.GW000_USUXACESS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW001_UNID_INFORM" EntityType="BDPRGEModel.Store.GW001_UNID_INFORM" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW002_UNID_GESTOR" EntityType="BDPRGEModel.Store.GW002_UNID_GESTOR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW003_UNID_MIDIA" EntityType="BDPRGEModel.Store.GW003_UNID_MIDIA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW004_UNID_PERFIL" EntityType="BDPRGEModel.Store.GW004_UNID_PERFIL" store:Type="Tables" store:Schema="dbo" store:Name="GW004_UNID_PERFIL">
+      <DefiningQuery>SELECT 
+      [GW004_UNID_PERFIL].[ID_INFOR_UNID] AS [ID_INFOR_UNID], 
+      [GW004_UNID_PERFIL].[CO_TIPO_UNIDA] AS [CO_TIPO_UNIDA], 
+      [GW004_UNID_PERFIL].[CO_TIPO_OCUPA] AS [CO_TIPO_OCUPA], 
+      [GW004_UNID_PERFIL].[CO_FLAG_BIBLI] AS [CO_FLAG_BIBLI], 
+      [GW004_UNID_PERFIL].[CO_FLAG_ENERG] AS [CO_FLAG_ENERG], 
+      [GW004_UNID_PERFIL].[CO_FLAG_ESPOR] AS [CO_FLAG_ESPOR], 
+      [GW004_UNID_PERFIL].[CO_FLAG_ESTAC] AS [CO_FLAG_ESTAC], 
+      [GW004_UNID_PERFIL].[CO_TERRE_TIPO] AS [CO_TERRE_TIPO], 
+      [GW004_UNID_PERFIL].[CO_TERRE_TIPO_DELIM] AS [CO_TERRE_TIPO_DELIM], 
+      [GW004_UNID_PERFIL].[QT_TERRE_AREA_CONST] AS [QT_TERRE_AREA_CONST], 
+      [GW004_UNID_PERFIL].[QT_TERRE_AREA_LIVRE] AS [QT_TERRE_AREA_LIVRE], 
+      [GW004_UNID_PERFIL].[QT_TERRE_AREA_TOTAL] AS [QT_TERRE_AREA_TOTAL], 
+      [GW004_UNID_PERFIL].[QT_TERRE_AREA_VERDE] AS [QT_TERRE_AREA_VERDE], 
+      [GW004_UNID_PERFIL].[DE_TERRE_AVALI] AS [DE_TERRE_AVALI], 
+      [GW004_UNID_PERFIL].[DE_TERRE_LATITU_NUMER] AS [DE_TERRE_LATITU_NUMER], 
+      [GW004_UNID_PERFIL].[DE_TERRE_LATITU_SIGLA] AS [DE_TERRE_LATITU_SIGLA], 
+      [GW004_UNID_PERFIL].[DE_TERRE_LONGI_NUMER] AS [DE_TERRE_LONGI_NUMER], 
+      [GW004_UNID_PERFIL].[DE_TERRE_LONGI_SIGLA] AS [DE_TERRE_LONGI_SIGLA], 
+      [GW004_UNID_PERFIL].[DE_TERRE_OBSER] AS [DE_TERRE_OBSER]
+      FROM [dbo].[GW004_UNID_PERFIL] AS [GW004_UNID_PERFIL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW005_UNID_COLAB" EntityType="BDPRGEModel.Store.GW005_UNID_COLAB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW006_UNID_COLAB_MATER" EntityType="BDPRGEModel.Store.GW006_UNID_COLAB_MATER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW007_UNID_SERVI" EntityType="BDPRGEModel.Store.GW007_UNID_SERVI" store:Type="Tables" store:Schema="dbo" store:Name="GW007_UNID_SERVI">
+      <DefiningQuery>SELECT 
+      [GW007_UNID_SERVI].[ID_INFOR_UNID] AS [ID_INFOR_UNID], 
+      [GW007_UNID_SERVI].[CO_SERVI_ATIVI_COMUN] AS [CO_SERVI_ATIVI_COMUN], 
+      [GW007_UNID_SERVI].[CO_SERVI_COLET_LIXO] AS [CO_SERVI_COLET_LIXO], 
+      [GW007_UNID_SERVI].[CO_SERVI_CLINI] AS [CO_SERVI_CLINI], 
+      [GW007_UNID_SERVI].[CO_SERVI_ODONT] AS [CO_SERVI_ODONT], 
+      [GW007_UNID_SERVI].[CO_SERVI_TRANSP_ESCOL] AS [CO_SERVI_TRANSP_ESCOL], 
+      [GW007_UNID_SERVI].[QT_SERVI_TRANSP_ESCOL] AS [QT_SERVI_TRANSP_ESCOL], 
+      [GW007_UNID_SERVI].[CO_SERVI_TRANSP_FUNCI] AS [CO_SERVI_TRANSP_FUNCI], 
+      [GW007_UNID_SERVI].[QT_SERVI_TRANSP_FUNCI] AS [QT_SERVI_TRANSP_FUNCI], 
+      [GW007_UNID_SERVI].[CO_SERVI_MEREN] AS [CO_SERVI_MEREN], 
+      [GW007_UNID_SERVI].[QT_SERVI_MEREN_CAPAC] AS [QT_SERVI_MEREN_CAPAC], 
+      [GW007_UNID_SERVI].[CO_SERVI_VIGIA] AS [CO_SERVI_VIGIA], 
+      [GW007_UNID_SERVI].[CO_SERVI_ARMAR] AS [CO_SERVI_ARMAR]
+      FROM [dbo].[GW007_UNID_SERVI] AS [GW007_UNID_SERVI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW008_UNID_CONCE" EntityType="BDPRGEModel.Store.GW008_UNID_CONCE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW010_UF" EntityType="BDPRGEModel.Store.GW010_UF" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW011_CIDADE" EntityType="BDPRGEModel.Store.GW011_CIDADE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW012_BAIRRO" EntityType="BDPRGEModel.Store.GW012_BAIRRO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW013_CEP" EntityType="BDPRGEModel.Store.GW013_CEP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW1000_GRAFI_FREQU_PRESE" EntityType="BDPRGEModel.Store.GW1000_GRAFI_FREQU_PRESE" store:Type="Tables" store:Schema="dbo" store:Name="GW1000_GRAFI_FREQU_PRESE">
+      <DefiningQuery>SELECT 
+      [GW1000_GRAFI_FREQU_PRESE].[ID_UNIDADE] AS [ID_UNIDADE], 
+      [GW1000_GRAFI_FREQU_PRESE].[ID_TURMA] AS [ID_TURMA], 
+      [GW1000_GRAFI_FREQU_PRESE].[CO_ANO_REF] AS [CO_ANO_REF], 
+      [GW1000_GRAFI_FREQU_PRESE].[B1_PORCE_FALTAS] AS [B1_PORCE_FALTAS], 
+      [GW1000_GRAFI_FREQU_PRESE].[B1_PORCE_PRESEN] AS [B1_PORCE_PRESEN], 
+      [GW1000_GRAFI_FREQU_PRESE].[B1_PORCE_ATESTA] AS [B1_PORCE_ATESTA], 
+      [GW1000_GRAFI_FREQU_PRESE].[B2_PORCE_FALTAS] AS [B2_PORCE_FALTAS], 
+      [GW1000_GRAFI_FREQU_PRESE].[B2_PORCE_PRESEN] AS [B2_PORCE_PRESEN], 
+      [GW1000_GRAFI_FREQU_PRESE].[B2_PORCE_ATESTA] AS [B2_PORCE_ATESTA], 
+      [GW1000_GRAFI_FREQU_PRESE].[B3_PORCE_FALTAS] AS [B3_PORCE_FALTAS], 
+      [GW1000_GRAFI_FREQU_PRESE].[B3_PORCE_PRESEN] AS [B3_PORCE_PRESEN], 
+      [GW1000_GRAFI_FREQU_PRESE].[B3_PORCE_ATESTA] AS [B3_PORCE_ATESTA], 
+      [GW1000_GRAFI_FREQU_PRESE].[B4_PORCE_FALTAS] AS [B4_PORCE_FALTAS], 
+      [GW1000_GRAFI_FREQU_PRESE].[B4_PORCE_PRESEN] AS [B4_PORCE_PRESEN], 
+      [GW1000_GRAFI_FREQU_PRESE].[B4_PORCE_ATESTA] AS [B4_PORCE_ATESTA]
+      FROM [dbo].[GW1000_GRAFI_FREQU_PRESE] AS [GW1000_GRAFI_FREQU_PRESE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW1001_GRAFI_FREQU_FALTAS" EntityType="BDPRGEModel.Store.GW1001_GRAFI_FREQU_FALTAS" store:Type="Tables" store:Schema="dbo" store:Name="GW1001_GRAFI_FREQU_FALTAS">
+      <DefiningQuery>SELECT 
+      [GW1001_GRAFI_FREQU_FALTAS].[ID_ALUNO] AS [ID_ALUNO], 
+      [GW1001_GRAFI_FREQU_FALTAS].[NU_MATRICULA] AS [NU_MATRICULA], 
+      [GW1001_GRAFI_FREQU_FALTAS].[FALTAS_B1] AS [FALTAS_B1], 
+      [GW1001_GRAFI_FREQU_FALTAS].[FALTAS_B2] AS [FALTAS_B2], 
+      [GW1001_GRAFI_FREQU_FALTAS].[FALTAS_B3] AS [FALTAS_B3], 
+      [GW1001_GRAFI_FREQU_FALTAS].[FALTAS_B4] AS [FALTAS_B4]
+      FROM [dbo].[GW1001_GRAFI_FREQU_FALTAS] AS [GW1001_GRAFI_FREQU_FALTAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW101_MODAL_ENSINO" EntityType="BDPRGEModel.Store.GW101_MODAL_ENSINO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW102_SERIE_ENSINO" EntityType="BDPRGEModel.Store.GW102_SERIE_ENSINO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW103_TURMA_ENSINO" EntityType="BDPRGEModel.Store.GW103_TURMA_ENSINO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW104_MATERIAS" EntityType="BDPRGEModel.Store.GW104_MATERIAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW105_GRADE_MATER" EntityType="BDPRGEModel.Store.GW105_GRADE_MATER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW106_GRADE_HORAR" EntityType="BDPRGEModel.Store.GW106_GRADE_HORAR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW107_PLANO_AULAS" EntityType="BDPRGEModel.Store.GW107_PLANO_AULAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW108_ATIVID_CASA" EntityType="BDPRGEModel.Store.GW108_ATIVID_CASA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW109_PROVAS_TURMA" EntityType="BDPRGEModel.Store.GW109_PROVAS_TURMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW110_CALENDARIO" EntityType="BDPRGEModel.Store.GW110_CALENDARIO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW111_MSG_UNIDAD" EntityType="BDPRGEModel.Store.GW111_MSG_UNIDAD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW112_CALEND_TIPO" EntityType="BDPRGEModel.Store.GW112_CALEND_TIPO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW113_ATIVI_AULA" EntityType="BDPRGEModel.Store.GW113_ATIVI_AULA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW114_ATIVI_ESCOL" EntityType="BDPRGEModel.Store.GW114_ATIVI_ESCOL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW115_PLANO_AULA_CONTE_BIBLI" EntityType="BDPRGEModel.Store.GW115_PLANO_AULA_CONTE_BIBLI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW116_TEMPO_AULA" EntityType="BDPRGEModel.Store.GW116_TEMPO_AULA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW130_INFOR_RESPON" EntityType="BDPRGEModel.Store.GW130_INFOR_RESPON" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW150_INFOR_ALUNO" EntityType="BDPRGEModel.Store.GW150_INFOR_ALUNO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW151_DADOS_MATRIC" EntityType="BDPRGEModel.Store.GW151_DADOS_MATRIC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW152_ALUNO_FREQU" EntityType="BDPRGEModel.Store.GW152_ALUNO_FREQU" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW153_ATIVID_ALUNO" EntityType="BDPRGEModel.Store.GW153_ATIVID_ALUNO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW154_PROVAS_ALUNO" EntityType="BDPRGEModel.Store.GW154_PROVAS_ALUNO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW155_HISTOR_ALUNO" EntityType="BDPRGEModel.Store.GW155_HISTOR_ALUNO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW156_OCORR_ALUNO" EntityType="BDPRGEModel.Store.GW156_OCORR_ALUNO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW157_CUIDAD_SAUDE" EntityType="BDPRGEModel.Store.GW157_CUIDAD_SAUDE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW158_OCORR_SAUDE" EntityType="BDPRGEModel.Store.GW158_OCORR_SAUDE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW159_ALTER_ENDER" EntityType="BDPRGEModel.Store.GW159_ALTER_ENDER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW201_AREA_CONHEC" EntityType="BDPRGEModel.Store.GW201_AREA_CONHEC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW202_CLASS_CONHEC" EntityType="BDPRGEModel.Store.GW202_CLASS_CONHEC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW203_EDITORA" EntityType="BDPRGEModel.Store.GW203_EDITORA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW204_AUTOR" EntityType="BDPRGEModel.Store.GW204_AUTOR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW205_ACERVO_BIBL" EntityType="BDPRGEModel.Store.GW205_ACERVO_BIBL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW206_ACERVO_AULA" EntityType="BDPRGEModel.Store.GW206_ACERVO_AULA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW211_RESER_BIBL" EntityType="BDPRGEModel.Store.GW211_RESER_BIBL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW212_EMPREST_BIBL" EntityType="BDPRGEModel.Store.GW212_EMPREST_BIBL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW301_REFEICOES" EntityType="BDPRGEModel.Store.GW301_REFEICOES" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW302_REFEI_INGRED" EntityType="BDPRGEModel.Store.GW302_REFEI_INGRED" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW303_CALEND_REFEI" EntityType="BDPRGEModel.Store.GW303_CALEND_REFEI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW304_SUGEST_REFEI" EntityType="BDPRGEModel.Store.GW304_SUGEST_REFEI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW305_RESTR_ALIMEN" EntityType="BDPRGEModel.Store.GW305_RESTR_ALIMEN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW306_REFEIC_USR" EntityType="BDPRGEModel.Store.GW306_REFEIC_USR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW401_LINHA_TRANSP" EntityType="BDPRGEModel.Store.GW401_LINHA_TRANSP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW402_LINHA_USR" EntityType="BDPRGEModel.Store.GW402_LINHA_USR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW451_ROTA_TRANSP" EntityType="BDPRGEModel.Store.GW451_ROTA_TRANSP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW452_ROTA_ITENS" EntityType="BDPRGEModel.Store.GW452_ROTA_ITENS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW452_ROTA_USR" EntityType="BDPRGEModel.Store.GW452_ROTA_USR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW501_TIPO_SOLIC" EntityType="BDPRGEModel.Store.GW501_TIPO_SOLIC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW502_SOLIC_USR" EntityType="BDPRGEModel.Store.GW502_SOLIC_USR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW551_FREQU" EntityType="BDPRGEModel.Store.GW551_FREQU" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW551_LANCA_FREQU" EntityType="BDPRGEModel.Store.GW551_LANCA_FREQU" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW552_LANCA_NOTA" EntityType="BDPRGEModel.Store.GW552_LANCA_NOTA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW552_NOTA" EntityType="BDPRGEModel.Store.GW552_NOTA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW554_ATIV_PROF_TURMA" EntityType="BDPRGEModel.Store.GW554_ATIV_PROF_TURMA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW555_END_NOVO" EntityType="BDPRGEModel.Store.GW555_END_NOVO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW601_HISTO_DESEMP" EntityType="BDPRGEModel.Store.GW601_HISTO_DESEMP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW602_BOLET_ESCOL" EntityType="BDPRGEModel.Store.GW602_BOLET_ESCOL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW603_DADO_BOLETO" EntityType="BDPRGEModel.Store.GW603_DADO_BOLETO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW700_INSTITUICAO" EntityType="BDPRGEModel.Store.GW700_INSTITUICAO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW800_FALE_CONOSCO" EntityType="BDPRGEModel.Store.GW800_FALE_CONOSCO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW801_SMS" EntityType="BDPRGEModel.Store.GW801_SMS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW802_ARQUIVOS" EntityType="BDPRGEModel.Store.GW802_ARQUIVOS" store:Type="Tables" store:Schema="dbo" store:Name="GW802_ARQUIVOS">
+      <DefiningQuery>SELECT 
+      [GW802_ARQUIVOS].[ID_ARQUIVO] AS [ID_ARQUIVO], 
+      [GW802_ARQUIVOS].[ID_INSTI] AS [ID_INSTI], 
+      [GW802_ARQUIVOS].[CO_UNID_ORIGEM] AS [CO_UNID_ORIGEM], 
+      [GW802_ARQUIVOS].[NO_ARQUIVO] AS [NO_ARQUIVO], 
+      [GW802_ARQUIVOS].[NO_AUTOR] AS [NO_AUTOR], 
+      [GW802_ARQUIVOS].[DE_ARQUIVO] AS [DE_ARQUIVO], 
+      [GW802_ARQUIVOS].[DE_TIPO_ARQUIVO] AS [DE_TIPO_ARQUIVO], 
+      [GW802_ARQUIVOS].[DE_URL_ARQUIVO] AS [DE_URL_ARQUIVO], 
+      [GW802_ARQUIVOS].[DT_CRIACAO] AS [DT_CRIACAO], 
+      [GW802_ARQUIVOS].[DT_PUBLICACAO] AS [DT_PUBLICACAO], 
+      [GW802_ARQUIVOS].[DT_VALIDADE] AS [DT_VALIDADE], 
+      [GW802_ARQUIVOS].[CO_ATIVO] AS [CO_ATIVO], 
+      [GW802_ARQUIVOS].[ID_TIPO_ASSUNTO] AS [ID_TIPO_ASSUNTO]
+      FROM [dbo].[GW802_ARQUIVOS] AS [GW802_ARQUIVOS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW803_ASSUN_CONTA" EntityType="BDPRGEModel.Store.GW803_ASSUN_CONTA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW804_MIDIAS" EntityType="BDPRGEModel.Store.GW804_MIDIAS" store:Type="Tables" store:Schema="dbo" store:Name="GW804_MIDIAS">
+      <DefiningQuery>SELECT 
+      [GW804_MIDIAS].[ID_MIDIA] AS [ID_MIDIA], 
+      [GW804_MIDIAS].[ID_INST] AS [ID_INST], 
+      [GW804_MIDIAS].[ID_UNID_INFOR] AS [ID_UNID_INFOR], 
+      [GW804_MIDIAS].[ID_MODAL_ENSIN] AS [ID_MODAL_ENSIN], 
+      [GW804_MIDIAS].[ID_SERIE] AS [ID_SERIE], 
+      [GW804_MIDIAS].[ID_TURMA] AS [ID_TURMA], 
+      [GW804_MIDIAS].[ID_MATER] AS [ID_MATER], 
+      [GW804_MIDIAS].[ID_CLASS_MATER] AS [ID_CLASS_MATER], 
+      [GW804_MIDIAS].[ID_EVENT_SOCIA] AS [ID_EVENT_SOCIA], 
+      [GW804_MIDIAS].[ID_CLASS_MIDIA] AS [ID_CLASS_MIDIA], 
+      [GW804_MIDIAS].[TP_MIDIA] AS [TP_MIDIA], 
+      [GW804_MIDIAS].[DT_INICI] AS [DT_INICI], 
+      [GW804_MIDIAS].[DT_TERMI] AS [DT_TERMI], 
+      [GW804_MIDIAS].[CO_SITU_MIDIA] AS [CO_SITU_MIDIA], 
+      [GW804_MIDIAS].[NO_TITUL_MIDIA] AS [NO_TITUL_MIDIA], 
+      [GW804_MIDIAS].[DE_CONTE_MIDIA] AS [DE_CONTE_MIDIA], 
+      [GW804_MIDIAS].[FL_ENDER_MIDIA] AS [FL_ENDER_MIDIA], 
+      [GW804_MIDIAS].[DE_ENDER_MIDIA] AS [DE_ENDER_MIDIA], 
+      [GW804_MIDIAS].[DT_CRIAC_MIDIA] AS [DT_CRIAC_MIDIA]
+      FROM [dbo].[GW804_MIDIAS] AS [GW804_MIDIAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW805_CLASSI_MATER" EntityType="BDPRGEModel.Store.GW805_CLASSI_MATER" store:Type="Tables" store:Schema="dbo" store:Name="GW805_CLASSI_MATER">
+      <DefiningQuery>SELECT 
+      [GW805_CLASSI_MATER].[ID_CLASS_MATER] AS [ID_CLASS_MATER], 
+      [GW805_CLASSI_MATER].[ID_MATER] AS [ID_MATER], 
+      [GW805_CLASSI_MATER].[NO_CLASS_MATER] AS [NO_CLASS_MATER], 
+      [GW805_CLASSI_MATER].[NO_REDUZ_CLASS_MATER] AS [NO_REDUZ_CLASS_MATER]
+      FROM [dbo].[GW805_CLASSI_MATER] AS [GW805_CLASSI_MATER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW806_CLASS_MIDIA" EntityType="BDPRGEModel.Store.GW806_CLASS_MIDIA" store:Type="Tables" store:Schema="dbo" store:Name="GW806_CLASS_MIDIA">
+      <DefiningQuery>SELECT 
+      [GW806_CLASS_MIDIA].[ID_CLASS_MIDIA] AS [ID_CLASS_MIDIA], 
+      [GW806_CLASS_MIDIA].[NO_CLASS_MIDIA] AS [NO_CLASS_MIDIA], 
+      [GW806_CLASS_MIDIA].[NO_REDUZ_CLASS_MIDIA] AS [NO_REDUZ_CLASS_MIDIA]
+      FROM [dbo].[GW806_CLASS_MIDIA] AS [GW806_CLASS_MIDIA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW807_MURAL" EntityType="BDPRGEModel.Store.GW807_MURAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW808_EVENTOS_SOCIAS" EntityType="BDPRGEModel.Store.GW808_EVENTOS_SOCIAS" store:Type="Tables" store:Schema="dbo" store:Name="GW808_EVENTOS_SOCIAS">
+      <DefiningQuery>SELECT 
+      [GW808_EVENTOS_SOCIAS].[ID_EVENT_SOCIA] AS [ID_EVENT_SOCIA], 
+      [GW808_EVENTOS_SOCIAS].[ID_INFOR_UNID] AS [ID_INFOR_UNID], 
+      [GW808_EVENTOS_SOCIAS].[ID_TURMA] AS [ID_TURMA], 
+      [GW808_EVENTOS_SOCIAS].[ID_SERIE] AS [ID_SERIE], 
+      [GW808_EVENTOS_SOCIAS].[NO_EVENT_SOCIA] AS [NO_EVENT_SOCIA], 
+      [GW808_EVENTOS_SOCIAS].[DE_EVENT_SOCIA] AS [DE_EVENT_SOCIA], 
+      [GW808_EVENTOS_SOCIAS].[DT_INIC] AS [DT_INIC], 
+      [GW808_EVENTOS_SOCIAS].[DT_TERMI] AS [DT_TERMI], 
+      [GW808_EVENTOS_SOCIAS].[CO_STATU] AS [CO_STATU]
+      FROM [dbo].[GW808_EVENTOS_SOCIAS] AS [GW808_EVENTOS_SOCIAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW809_AULAS" EntityType="BDPRGEModel.Store.GW809_AULAS" store:Type="Tables" store:Schema="dbo" store:Name="GW809_AULAS">
+      <DefiningQuery>SELECT 
+      [GW809_AULAS].[ID_AULA] AS [ID_AULA], 
+      [GW809_AULAS].[ID_MATERIA] AS [ID_MATERIA], 
+      [GW809_AULAS].[DE_TITULO_AULA] AS [DE_TITULO_AULA]
+      FROM [dbo].[GW809_AULAS] AS [GW809_AULAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GW901_TIPO_LOGRADOURO" EntityType="BDPRGEModel.Store.GW901_TIPO_LOGRADOURO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW902_TIPO_OCORR" EntityType="BDPRGEModel.Store.GW902_TIPO_OCORR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GW903_TIPO_ATIVI" EntityType="BDPRGEModel.Store.GW903_TIPO_ATIVI" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="GW000_USUARIOS">
+    <Key>
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_REFER_GEDUC_USR" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_UNID" Type="int" Nullable="false" />
+    <Property Name="TP_USUARIO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NM_USUARIO" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="NM_LOGIN_USUARIO" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="VL_SENHA_USUARIO" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="VL_CONTR_SENHA_USR" Type="varchar" Nullable="false" MaxLength="18" />
+    <Property Name="DT_EXPIR_SENHA_USR" Type="datetime" Nullable="false" />
+    <Property Name="NR_IP_FIXO_USR" Type="varchar" MaxLength="16" />
+    <Property Name="NM_REDUZ_USR" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="DT_NASCI_USR" Type="datetime" Nullable="false" />
+    <Property Name="NM_MAE_USR" Type="varchar" MaxLength="80" />
+    <Property Name="CO_MATRI_USR" Type="varchar" MaxLength="20" />
+    <Property Name="NR_CPF_USR" Type="numeric" Precision="11" />
+    <Property Name="FL_USR_BIBLIOTECA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FL_USR_MERENDA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FL_USR_TRANSP_ESCOL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FL_USR_REDE_RELAC" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_STATUS_USUARIO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" />
+    <Property Name="ID_INFORM_RESP" Type="int" />
+    <Property Name="ID_CODIG_COLAB" Type="int" />
+    <Property Name="DE_EMAIL_USR" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DT_CADAS_USR" Type="datetime" Nullable="false" />
+    <Property Name="NR_TELEF_USR" Type="varchar" MaxLength="10" />
+    <Property Name="DT_STATUS_USR" Type="datetime" Nullable="false" />
+    <Property Name="QT_SMS_MAXIM_USR" Type="int" />
+    <Property Name="QT_SMS_MES_USR" Type="int" />
+    <Property Name="QT_SMS_TOTAL_USR" Type="int" />
+  </EntityType>
+  <EntityType Name="GW000_USUHISTPSW">
+    <Key>
+      <PropertyRef Name="ID_PSW_ANTIGAS" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_PSW_ANTIGAS" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="DT_INICIO_PSW_ANTIGA" Type="datetime" Nullable="false" />
+    <Property Name="DT_TERMI_PSW_ANTIGA" Type="datetime" Nullable="false" />
+    <Property Name="VL_SENHA_ANTIGA" Type="varchar" Nullable="false" MaxLength="18" />
+  </EntityType>
+  <EntityType Name="GW000_USUXACESS">
+    <Key>
+      <PropertyRef Name="DT_ACESSO_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="DT_ACESSO_USR" Type="datetime" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="CO_IP_ACESSO_USR" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="HR_INICIO_ACESSO_USR" Type="datetime" Nullable="false" />
+    <Property Name="NR_ACESSO_USR" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW001_UNID_INFORM">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NR_NIS_UNID" Type="int" Nullable="false" />
+    <Property Name="TP_UNID" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="NO_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NO_REDUZ_UNID" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CO_SIGLA_UNID" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="DE_ENDER_LOCAL_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_ENDER_COMPL_UNID" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="DE_ENDER_BAIRR_UNID" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_ENDER_CIDAD_UNID" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_ENDER_ESTAD_UNID" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="DE_ENDER_CEP_UNID" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="NR_TELEF_GERAL_UNID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="NR_TELEF_DIRET_UNID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="NR_TELEF_COORD_UNID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="NR_TELEF_SECRE_UNID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="DE_EMAIL_GERAL_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_EMAIL_DIRET_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_EMAIL_COORD_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_EMAIL_SECRET_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_WEB_PAGE_UNID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CO_MUNIC_IBGE_UNID" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="DE_ENDER_FOTO_UNID" Type="varchar" MaxLength="80" />
+    <Property Name="HR_MANHA_ENTRA" Type="varchar" MaxLength="5" />
+    <Property Name="HR_MANHA_SAIDA" Type="varchar" MaxLength="5" />
+    <Property Name="HR_TARDE_ENTRA" Type="varchar" MaxLength="5" />
+    <Property Name="HR_TARDE_SAIDA" Type="varchar" MaxLength="5" />
+    <Property Name="HR_NOITE_ENTRA" Type="varchar" MaxLength="5" />
+    <Property Name="HR_NOITE_SAIDA" Type="varchar" MaxLength="5" />
+    <Property Name="DE_QUEM_SOMOS" Type="text" />
+    <Property Name="DE_NOSSA_HISTO" Type="text" />
+    <Property Name="DE_PROPO_PEDAG" Type="text" />
+    <Property Name="CO_DIRET" Type="int" />
+    <Property Name="CO_SECT" Type="int" />
+    <Property Name="FL_TIPO_NOTA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_PERIO_INICI_BIM1" Type="date" />
+    <Property Name="DT_PERIO_INICI_BIM2" Type="date" />
+    <Property Name="DT_PERIO_INICI_BIM3" Type="date" />
+    <Property Name="DT_PERIO_INICI_BIM4" Type="date" />
+    <Property Name="DT_PERIO_FINAL_BIM1" Type="date" />
+    <Property Name="DT_PERIO_FINAL_BIM2" Type="date" />
+    <Property Name="DT_PERIO_FINAL_BIM3" Type="date" />
+    <Property Name="DT_PERIO_FINAL_BIM4" Type="date" />
+    <Property Name="DT_LACTO_INICI_BIM1" Type="date" />
+    <Property Name="DT_LACTO_INICI_BIM2" Type="date" />
+    <Property Name="DT_LACTO_INICI_BIM3" Type="date" />
+    <Property Name="DT_LACTO_INICI_BIM4" Type="date" />
+    <Property Name="DT_LACTO_FINAL_BIM1" Type="date" />
+    <Property Name="DT_LACTO_FINAL_BIM2" Type="date" />
+    <Property Name="DT_LACTO_FINAL_BIM3" Type="date" />
+    <Property Name="DT_LACTO_FINAL_BIM4" Type="date" />
+  </EntityType>
+  <EntityType Name="GW002_UNID_GESTOR">
+    <Key>
+      <PropertyRef Name="ID_UNID_GESTOR" />
+    </Key>
+    <Property Name="ID_UNID_GESTOR" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_CODIG_COLAB" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NO_GESTOR" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="NO_APELIDO_GESTOR" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NO_CARGO_GESTOR" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="NR_TELEF_CELUL_GESTOR" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="NR_TELEF_FIXO_GESTOR" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DE_EMAIL_GESTOR" Type="varchar" MaxLength="150" />
+    <Property Name="DE_ENDER_FOTO_GESTOR" Type="varchar" MaxLength="100" />
+    <Property Name="DT_INICI_ATIVI" Type="datetime" />
+    <Property Name="DT_TERMI_ATIVI" Type="datetime" />
+  </EntityType>
+  <EntityType Name="GW003_UNID_MIDIA">
+    <Key>
+      <PropertyRef Name="ID_UNID_MIDIA" />
+    </Key>
+    <Property Name="ID_UNID_MIDIA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="CO_TIPO_MIDIA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_ENDER_MIDIA" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DT_CADAS_MIDIA" Type="datetime" Nullable="false" />
+    <Property Name="FL_SITUA_MIDIA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_SITUA_MIDIA" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW004_UNID_PERFIL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW004_UNID_PERFIL">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="CO_TIPO_UNIDA" />
+      <PropertyRef Name="CO_TIPO_OCUPA" />
+      <PropertyRef Name="CO_FLAG_BIBLI" />
+      <PropertyRef Name="CO_FLAG_ENERG" />
+      <PropertyRef Name="CO_FLAG_ESPOR" />
+      <PropertyRef Name="CO_FLAG_ESTAC" />
+      <PropertyRef Name="CO_TERRE_TIPO" />
+      <PropertyRef Name="CO_TERRE_TIPO_DELIM" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="CO_TIPO_UNIDA" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="CO_TIPO_OCUPA" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="CO_FLAG_BIBLI" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_FLAG_ENERG" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_FLAG_ESPOR" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_FLAG_ESTAC" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_TERRE_TIPO" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="CO_TERRE_TIPO_DELIM" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="QT_TERRE_AREA_CONST" Type="numeric" Scale="2" />
+    <Property Name="QT_TERRE_AREA_LIVRE" Type="numeric" Scale="2" />
+    <Property Name="QT_TERRE_AREA_TOTAL" Type="numeric" Scale="2" />
+    <Property Name="QT_TERRE_AREA_VERDE" Type="numeric" Scale="2" />
+    <Property Name="DE_TERRE_AVALI" Type="varchar" MaxLength="500" />
+    <Property Name="DE_TERRE_LATITU_NUMER" Type="varchar" MaxLength="50" />
+    <Property Name="DE_TERRE_LATITU_SIGLA" Type="char" MaxLength="1" />
+    <Property Name="DE_TERRE_LONGI_NUMER" Type="varchar" MaxLength="50" />
+    <Property Name="DE_TERRE_LONGI_SIGLA" Type="char" MaxLength="1" />
+    <Property Name="DE_TERRE_OBSER" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="GW005_UNID_COLAB">
+    <Key>
+      <PropertyRef Name="ID_INSTIT" />
+      <PropertyRef Name="ID_CODIG_COLAB" />
+    </Key>
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_CODIG_COLAB" Type="int" Nullable="false" />
+    <Property Name="CO_UNID_FUNC" Type="int" Nullable="false" />
+    <Property Name="CO_MATRI_COLAB" Type="varchar" MaxLength="15" />
+    <Property Name="TP_COLAB" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NR_CPF_COLAB" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="NM_COMPL_COLAB" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="NM_APELID_COLAB" Type="varchar" MaxLength="20" />
+    <Property Name="DT_NASCIM_COLAB" Type="date" Nullable="false" />
+    <Property Name="CO_SEXO_COLAB" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NO_NATUR_LOCAL_COLAB" Type="varchar" MaxLength="40" />
+    <Property Name="CO_NATUR_UF_COLAB" Type="char" MaxLength="2" />
+    <Property Name="NO_ESTAD_CIVIL_COLAB" Type="varchar" MaxLength="30" />
+    <Property Name="NO_BAIRRO_COLAB" Type="varchar" MaxLength="60" />
+    <Property Name="DE_EMAIL_COLAB" Type="varchar" MaxLength="100" />
+    <Property Name="NR_TELEF_COLAB" Type="char" MaxLength="10" />
+    <Property Name="NR_CELUL_COLAB" Type="char" MaxLength="10" />
+    <Property Name="DE_ENDER_IMAG_COLAB" Type="varchar" MaxLength="100" />
+    <Property Name="CO_SITUA_COLAB" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_SITUA_COLAB" Type="datetime" Nullable="false" />
+    <Property Name="CO_SANGU_FATOR_COLAB" Type="char" MaxLength="1" />
+    <Property Name="CO_SANGU_TIPO_COLAB" Type="char" MaxLength="2" />
+    <Property Name="DE_GRAU_INSTR_COLAB" Type="varchar" MaxLength="40" />
+    <Property Name="CO_STATUS_GRAU_INSTR_COLAB" Type="char" MaxLength="1" />
+    <Property Name="DE_CURSO_FORM_COLAB" Type="varchar" MaxLength="60" />
+    <Property Name="NR_TELEF_TRABA_COLAB" Type="char" MaxLength="10" />
+    <Property Name="NR_TELEF_RAMAL_COLAB" Type="varchar" MaxLength="6" />
+    <Property Name="CO_RG_NUMER_COLAB" Type="varchar" MaxLength="20" />
+    <Property Name="CO_RG_ORGAO_COLAB" Type="varchar" MaxLength="12" />
+    <Property Name="DT_RG_EMISSA_COLAB" Type="datetime" />
+    <Property Name="CO_RG_ESTAD_COLAB" Type="varchar" MaxLength="2" />
+    <Property Name="CO_PASSA_NUMER_COLAB" Type="varchar" MaxLength="20" />
+    <Property Name="NO_PASSA_PAIS_COLAB" Type="varchar" MaxLength="60" />
+    <Property Name="NR_TITUL_NUMER_COLAB" Type="varchar" MaxLength="15" />
+    <Property Name="NR_TITUL_SECAO_COLAB" Type="varchar" MaxLength="6" />
+    <Property Name="NR_TITUL_ZONA_COLAB" Type="varchar" MaxLength="6" />
+    <Property Name="NO_TITUL_CIDAD_COLAB" Type="varchar" MaxLength="60" />
+    <Property Name="CO_TITUL_ESTAD_COLAB" Type="char" MaxLength="2" />
+    <Property Name="NR_CARTEI_SAUDE_COLAB" Type="varchar" MaxLength="20" />
+    <Property Name="NO_CONJU_COLAB" Type="varchar" MaxLength="80" />
+    <Property Name="DT_CONJU_NASCI_COLAB" Type="datetime" />
+    <Property Name="CO_CONJU_SEXO_COLAB" Type="varchar" MaxLength="9" />
+    <Property Name="NR_CONJU_CPF_COLAB" Type="char" MaxLength="11" />
+    <Property Name="CO_CONJU_SANGU_TIPO_COLAB" Type="char" MaxLength="2" />
+    <Property Name="CO_CONJU_SANGU_FATOR_COLAB" Type="char" MaxLength="1" />
+    <Property Name="CO_ENDER_CEP_COLAB" Type="char" MaxLength="8" />
+    <Property Name="DE_ENDER_LOCAL_COLAB" Type="varchar" MaxLength="100" />
+    <Property Name="NU_ENDER_NUMER_COLAB" Type="numeric" Precision="5" />
+    <Property Name="DE_ENDER_COMPL_COLAB" Type="varchar" MaxLength="40" />
+    <Property Name="CO_ENDER_BAIRR_COLAB" Type="int" />
+    <Property Name="CO_ENDER_CIDAD_COLAB" Type="int" />
+    <Property Name="CO_ENDER_ESTAD_COLAB" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="GW006_UNID_COLAB_MATER">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_UNID_COLAB_MATER" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_UNID_COLAB_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_ANO_REF" Type="int" Nullable="false" />
+    <Property Name="ID_CODIG_COLAB" Type="int" Nullable="false" />
+    <Property Name="ID_MATER_COLAB" Type="int" />
+    <Property Name="CO_CLASS_COLAB" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_INICIO_COLAB" Type="datetime" />
+    <Property Name="DT_FINAL_COLAB" Type="datetime" />
+    <Property Name="DE_OBSER_COLAB" Type="varchar" MaxLength="300" />
+    <Property Name="CO_SITUA_COLAB" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW007_UNID_SERVI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW007_UNID_SERVI">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="CO_SERVI_ATIVI_COMUN" />
+      <PropertyRef Name="CO_SERVI_COLET_LIXO" />
+      <PropertyRef Name="CO_SERVI_CLINI" />
+      <PropertyRef Name="CO_SERVI_ODONT" />
+      <PropertyRef Name="CO_SERVI_TRANSP_ESCOL" />
+      <PropertyRef Name="CO_SERVI_TRANSP_FUNCI" />
+      <PropertyRef Name="CO_SERVI_MEREN" />
+      <PropertyRef Name="CO_SERVI_VIGIA" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="CO_SERVI_ATIVI_COMUN" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SERVI_COLET_LIXO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SERVI_CLINI" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SERVI_ODONT" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SERVI_TRANSP_ESCOL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="QT_SERVI_TRANSP_ESCOL" Type="int" />
+    <Property Name="CO_SERVI_TRANSP_FUNCI" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="QT_SERVI_TRANSP_FUNCI" Type="int" />
+    <Property Name="CO_SERVI_MEREN" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="QT_SERVI_MEREN_CAPAC" Type="int" />
+    <Property Name="CO_SERVI_VIGIA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SERVI_ARMAR" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW008_UNID_CONCE">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_SIGLA_UNID_CONCE" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="DE_CONCE" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="VL_NOTA_MIN" Type="numeric" Nullable="false" Precision="4" Scale="2" />
+    <Property Name="VL_NOTA_MAX" Type="numeric" Nullable="false" Precision="4" Scale="2" />
+    <Property Name="ID_REGISTRO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW010_UF">
+    <Key>
+      <PropertyRef Name="CODUF" />
+    </Key>
+    <Property Name="CODUF" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="DESCRICAOUF" Type="char" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="GW011_CIDADE">
+    <Key>
+      <PropertyRef Name="CO_CIDADE" />
+    </Key>
+    <Property Name="CO_CIDADE" Type="int" Nullable="false" />
+    <Property Name="NO_CIDADE" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="CO_UF" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="GW012_BAIRRO">
+    <Key>
+      <PropertyRef Name="CO_BAIRRO" />
+    </Key>
+    <Property Name="CO_BAIRRO" Type="int" Nullable="false" />
+    <Property Name="CO_CIDADE" Type="int" Nullable="false" />
+    <Property Name="NO_BAIRRO" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="CO_UF" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="GW013_CEP">
+    <Key>
+      <PropertyRef Name="CO_CEP" />
+    </Key>
+    <Property Name="CO_CEP" Type="int" Nullable="false" />
+    <Property Name="DE_TIPO_LOGRA" Type="varchar" MaxLength="60" />
+    <Property Name="NO_ENDER_CEP" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="CO_CIDAD_CEP" Type="int" Nullable="false" />
+    <Property Name="CO_BAIRR_CEP" Type="int" Nullable="false" />
+    <Property Name="NR_LATIT_CEP" Type="numeric" Precision="10" Scale="7" />
+    <Property Name="TP_LATIT_CEP" Type="char" MaxLength="1" />
+    <Property Name="NR_LONGI_CEP" Type="numeric" Precision="10" Scale="7" />
+    <Property Name="TP_LONGI_CEP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW1000_GRAFI_FREQU_PRESE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW1000_GRAFI_FREQU_PRESE">
+    <Key>
+      <PropertyRef Name="ID_UNIDADE" />
+      <PropertyRef Name="ID_TURMA" />
+      <PropertyRef Name="CO_ANO_REF" />
+    </Key>
+    <Property Name="ID_UNIDADE" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA" Type="int" Nullable="false" />
+    <Property Name="CO_ANO_REF" Type="int" Nullable="false" />
+    <Property Name="B1_PORCE_FALTAS" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="B1_PORCE_PRESEN" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="B1_PORCE_ATESTA" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="B2_PORCE_FALTAS" Type="nchar" MaxLength="10" />
+    <Property Name="B2_PORCE_PRESEN" Type="nchar" MaxLength="10" />
+    <Property Name="B2_PORCE_ATESTA" Type="nchar" MaxLength="10" />
+    <Property Name="B3_PORCE_FALTAS" Type="nchar" MaxLength="10" />
+    <Property Name="B3_PORCE_PRESEN" Type="nchar" MaxLength="10" />
+    <Property Name="B3_PORCE_ATESTA" Type="nchar" MaxLength="10" />
+    <Property Name="B4_PORCE_FALTAS" Type="nchar" MaxLength="10" />
+    <Property Name="B4_PORCE_PRESEN" Type="nchar" MaxLength="10" />
+    <Property Name="B4_PORCE_ATESTA" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW1001_GRAFI_FREQU_FALTAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW1001_GRAFI_FREQU_FALTAS">
+    <Key>
+      <PropertyRef Name="ID_ALUNO" />
+      <PropertyRef Name="NU_MATRICULA" />
+    </Key>
+    <Property Name="ID_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NU_MATRICULA" Type="nchar" Nullable="false" MaxLength="15" />
+    <Property Name="FALTAS_B1" Type="int" />
+    <Property Name="FALTAS_B2" Type="int" />
+    <Property Name="FALTAS_B3" Type="int" />
+    <Property Name="FALTAS_B4" Type="int" />
+  </EntityType>
+  <EntityType Name="GW101_MODAL_ENSINO">
+    <Key>
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+    </Key>
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_MODAL" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="NM_REDUZ_MODAL" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CO_SIGLA_MODAL" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="NR_IMPRE_MODAL" Type="numeric" Precision="2" />
+  </EntityType>
+  <EntityType Name="GW102_SERIE_ENSINO">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_SERIE" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="NM_REDUZ_SERIE" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CO_SIGLA_SERIE" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="NR_IMPRE_SERIE" Type="numeric" Precision="2" />
+    <Property Name="CO_PARAM_FREQ_TIPO" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW103_TURMA_ENSINO">
+    <Key>
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+    </Key>
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_TURMA" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="NM_REDUZ_TURMA" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CO_SIGLA_TURMA" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="NR_IMPRE_TURMA" Type="numeric" Precision="2" />
+    <Property Name="CO_MULTI_SERIE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_IDENT_SALA_AULA" Type="varchar" MaxLength="6" />
+    <Property Name="DE_REFER_SALA_AULA" Type="varchar" MaxLength="40" />
+    <Property Name="FL_RESP_UNICO_TURMA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="IM_FOTO1" Type="varchar" MaxLength="30" />
+    <Property Name="IM_FOTO2" Type="varchar" MaxLength="30" />
+    <Property Name="QT_ALUNO_TURMA" Type="int" />
+    <Property Name="CO_PERI_TUR" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW104_MATERIAS">
+    <Key>
+      <PropertyRef Name="ID_MATERIA" />
+    </Key>
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_MATER" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="CO_SIGLA_MATER" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="NM_REDUZ_MATER" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CO_CLASS_BOLETIM" Type="numeric" Nullable="false" Precision="1" />
+  </EntityType>
+  <EntityType Name="GW105_GRADE_MATER">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_GRADE_MATER" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_GRADE_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="FL_CLASS_APLIC_MATER" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="QT_AULAS_ANO_MATER" Type="numeric" Precision="4" />
+    <Property Name="QT_HORAS_ANO_MATER" Type="numeric" Precision="4" />
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW106_GRADE_HORAR">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_GRADE_MATER" />
+      <PropertyRef Name="CO_DIA_SEMAN_HORAR" />
+      <PropertyRef Name="TP_TURNO" />
+      <PropertyRef Name="NR_TEMPO_AULA_HORAR" />
+      <PropertyRef Name="CO_ANOREF_HORAR" />
+    </Key>
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_GRADE_MATER" Type="int" Nullable="false" />
+    <Property Name="CO_DIA_SEMAN_HORAR" Type="numeric" Nullable="false" Precision="1" />
+    <Property Name="TP_TURNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NR_TEMPO_AULA_HORAR" Type="numeric" Nullable="false" Precision="1" />
+    <Property Name="CO_ANOREF_HORAR" Type="numeric" Nullable="false" Precision="4" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="HR_INICIO_AULA_HORAR" Type="varchar" MaxLength="8" />
+    <Property Name="HR_TERMI_AULA_HORAR" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="GW107_PLANO_AULAS">
+    <Key>
+      <PropertyRef Name="ID_PLANO_AULA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_MATERIA" />
+    </Key>
+    <Property Name="ID_PLANO_AULA" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_PLANO_AULA" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="DT_PLANEJ_ATIVI_PLANO" Type="datetime" Nullable="false" />
+    <Property Name="QT_PLANEJ_HORAS_ATIVI_PLANO" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="ID_PROFE_REALIZ_ATIVI_PLANO" Type="int" Nullable="false" />
+    <Property Name="HR_INICI_AULA_PLANE" Type="varchar" MaxLength="5" />
+    <Property Name="HR_FIM_AULA_PLANE" Type="varchar" MaxLength="5" />
+    <Property Name="CO_ANO_REF_PLA" Type="int" Nullable="false" />
+    <Property Name="DE_TITUL_ATIVI_PLANO" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="DE_OBJET_ATIVI_PLANO" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="DE_METOD_ATIVI_PLANO" Type="varchar" MaxLength="1000" />
+    <Property Name="DE_MATER_ATIVI_PLANO" Type="varchar" MaxLength="1000" />
+    <Property Name="DT_REALIZ_ATIVI_PLANO" Type="datetime" />
+    <Property Name="HR_REALIZ_ATIVI_PLANO" Type="varchar" MaxLength="5" />
+    <Property Name="QT_REALIZ_HORAS_ATIVI_PLANO" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="DE_CONTE_REALIZ_ATIVI_PLANO" Type="varchar" MaxLength="200" />
+    <Property Name="NU_TEMP_PLA_AULA" Type="int" />
+    <Property Name="CO_STATUS_ATIVI_PLANO" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ID_ACERVO_AULA" Type="int" />
+    <Property Name="ID_TIPO_ATIV" Type="int" />
+  </EntityType>
+  <EntityType Name="GW108_ATIVID_CASA">
+    <Key>
+      <PropertyRef Name="ID_ATIVI_CASA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+    </Key>
+    <Property Name="ID_ATIVI_CASA" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="DT_ATIVI_CASA" Type="datetime" Nullable="false" />
+    <Property Name="DT_LANCA_ATIVI_CASA" Type="datetime" Nullable="false" />
+    <Property Name="DT_PRAZO_ATIVI_CASA" Type="datetime" />
+    <Property Name="DE_TITULO_ATIVI_CASA" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="DE_OBJET_ATIVI_CASA" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="DE_PESQU_ATIVI_CASA" Type="varchar" MaxLength="200" />
+    <Property Name="ID_PROFES_ATIVI_CASA" Type="int" Nullable="false" />
+    <Property Name="CO_STATUS_ATIVI_CASA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FL_TIPO_AVALI_ATIVI_CASA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_MATERIA" Type="int" />
+  </EntityType>
+  <EntityType Name="GW109_PROVAS_TURMA">
+    <Key>
+      <PropertyRef Name="ID_PROVA_TURMA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+    </Key>
+    <Property Name="ID_PROVA_TURMA" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_COLAB_REALIZ_PROVA" Type="int" />
+    <Property Name="DT_PROVA_TURMA" Type="datetime" Nullable="false" />
+    <Property Name="NU_TEMPO_AULA" Type="numeric" Precision="1" />
+    <Property Name="HR_PROVA_INICIO" Type="varchar" MaxLength="5" />
+    <Property Name="HR_PROVA_FIM" Type="varchar" MaxLength="5" />
+    <Property Name="CO_STATUS_PROVA_TURMA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_CONTE_PROVA" Type="varchar" MaxLength="256" />
+    <Property Name="DE_TIPO_PROVA" Type="varchar" MaxLength="20" />
+    <Property Name="DT_REALIZ_PROVA_TURMA" Type="datetime" />
+    <Property Name="ID_MATERIA" Type="int" />
+    <Property Name="CO_ANO_REF" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW110_CALENDARIO">
+    <Key>
+      <PropertyRef Name="ID_CALEN_ATIVID" />
+    </Key>
+    <Property Name="ID_CALEN_ATIVID" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_REFER_GEDUC_CALEND" Type="int" Nullable="false" />
+    <Property Name="ID_CALEND_TIPO" Type="int" Nullable="false" />
+    <Property Name="TP_DIA_ATIVID_CALEND" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NM_ATIVID_CALEND" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="DE_OBSER_ATIVID_CALEND" Type="varchar" MaxLength="100" />
+    <Property Name="DT_ATIVID_CALEND" Type="datetime" Nullable="false" />
+    <Property Name="HR_ATIVID_CALEND" Type="datetime" />
+    <Property Name="DE_URL_ATIVID_CALEND" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GW111_MSG_UNIDAD">
+    <Key>
+      <PropertyRef Name="ID_MSG_UNIDADE" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+    </Key>
+    <Property Name="ID_MSG_UNIDADE" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_MSGUNID" Type="int" />
+    <Property Name="TP_MSG_UNIDAD" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_CADAS_MSG_UNIDAD" Type="datetime" Nullable="false" />
+    <Property Name="DT_INICIO_PUBLIC_MSG" Type="datetime" Nullable="false" />
+    <Property Name="DT_TERMIN_PUBLIC_MSG" Type="datetime" />
+    <Property Name="DE_MSG_UNIDAD" Type="varchar" Nullable="false" MaxLength="120" />
+    <Property Name="DE_URL_MSG_UNIDAD" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GW112_CALEND_TIPO">
+    <Key>
+      <PropertyRef Name="ID_CALEND_TIPO" />
+    </Key>
+    <Property Name="ID_CALEND_TIPO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NO_CALEND_TIPO" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="GW113_ATIVI_AULA">
+    <Key>
+      <PropertyRef Name="ID_ATIVI_AULA" />
+    </Key>
+    <Property Name="ID_ATIVI_AULA" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA" Type="int" Nullable="false" />
+    <Property Name="ID_CODIG_COLAB" Type="int" Nullable="false" />
+    <Property Name="ID_RESPO_COLAB" Type="int" Nullable="false" />
+    <Property Name="ID_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_PLANO_AULA" Type="int" />
+    <Property Name="DT_REALI_ATIVI" Type="datetime" Nullable="false" />
+    <Property Name="NO_TEMPO_AULA" Type="char" MaxLength="2" />
+    <Property Name="DE_TEMA_AULA" Type="varchar" MaxLength="256" />
+    <Property Name="FL_AULA_PLANE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_REGIS_ATVI" Type="datetime" Nullable="false" />
+    <Property Name="NU_SEMES_LETIV" Type="int" />
+    <Property Name="HR_INICI_ATIVI" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="HR_TERMI_ATIVI" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="DE_RESUMO_ATIVI" Type="varchar" MaxLength="1000" />
+    <Property Name="CO_ANO_REF" Type="int" />
+    <Property Name="FL_LANCA_NOTA" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW114_ATIVI_ESCOL">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Name="ID_ATIV_ESCOLA" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE" Type="int" Nullable="false" />
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+    <Property Name="DE_TIPO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DE_ATIVI_ESCOLA" Type="varchar" Nullable="false" MaxLength="256" />
+    <Property Name="DT_CADAS" Type="datetime" />
+    <Property Name="FL_AVALI" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="VL_NOTA_AVALI" Type="numeric" Precision="4" Scale="2" />
+    <Property Name="DT_PREVI_AVALI" Type="datetime" />
+    <Property Name="DT_ENTRE_AVALI" Type="datetime" />
+    <Property Name="FL_JUSTI_AVALI" Type="char" MaxLength="1" />
+    <Property Name="DE_JUSTI_AVALI" Type="varchar" MaxLength="200" />
+    <Property Name="CO_STATUS" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CO_ANO_REF" Type="int" />
+    <Property Name="ID_REGISTRO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW115_PLANO_AULA_CONTE_BIBLI">
+    <Key>
+      <PropertyRef Name="ID_PLANO_AULA" />
+      <PropertyRef Name="ID_REFER_CONTE" />
+    </Key>
+    <Property Name="ID_PLANO_AULA" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_CONTE" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_TIPO_REFER_CONTE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NO_TITUL_REFER_CONTE" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_REFER_CONTE" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="CO_NIVEL_APREN" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_LINK_EXTER" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="GW116_TEMPO_AULA">
+    <Key>
+      <PropertyRef Name="ID_TEMPO_AULA" />
+    </Key>
+    <Property Name="ID_TEMPO_AULA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="TP_TURNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NR_TEMPO" Type="int" Nullable="false" />
+    <Property Name="HR_INICIO" Type="varchar" MaxLength="8" />
+    <Property Name="HR_TERMI" Type="varchar" MaxLength="8" />
+    <Property Name="ID_INSTIT" Type="char" MaxLength="14" />
+  </EntityType>
+  <EntityType Name="GW130_INFOR_RESPON">
+    <Key>
+      <PropertyRef Name="ID_INFORM_RESP" />
+    </Key>
+    <Property Name="ID_INFORM_RESP" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_RESP" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NR_NIS_RESP" Type="varchar" MaxLength="20" />
+    <Property Name="DE_ENDER_FOTO_RESP" Type="varchar" MaxLength="80" />
+    <Property Name="NO_RESP" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="NO_APELID_RESP" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CO_SEXO_RESP" Type="varchar" Nullable="false" MaxLength="9" />
+    <Property Name="DT_NASC_RESP" Type="datetime" Nullable="false" />
+    <Property Name="NO_CIDA_RESP" Type="varchar" MaxLength="60" />
+    <Property Name="CO_ESTA_RESP" Type="char" MaxLength="2" />
+    <Property Name="CO_SANGU_TIPO_RESP" Type="char" MaxLength="2" />
+    <Property Name="CO_SANGU_FATOR_RESP" Type="char" MaxLength="1" />
+    <Property Name="DE_ESTAD_CIVIL_RESP" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="DE_GRAU_INSTR_RESP" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CO_STATUS_GRAU_INSTR_RESP" Type="char" MaxLength="1" />
+    <Property Name="DE_CURSO_FORM_RESP" Type="varchar" MaxLength="60" />
+    <Property Name="NR_TELEF_FIXO_RESP" Type="char" MaxLength="10" />
+    <Property Name="NR_TELEF_CELUL_RESP" Type="char" MaxLength="10" />
+    <Property Name="NR_TELEF_TRABA_RESP" Type="char" MaxLength="10" />
+    <Property Name="NR_TELEF_RAMAL_RESP" Type="varchar" MaxLength="6" />
+    <Property Name="DE_EMAIL_RESP" Type="varchar" MaxLength="100" />
+    <Property Name="NR_CPF_RESP" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="NR_CARTEI_SAUDE_RESP" Type="varchar" MaxLength="20" />
+    <Property Name="CO_RG_NUMER_RESP" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CO_RG_ORGAO_RESP" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="DT_RG_EMISSA_RESP" Type="datetime" />
+    <Property Name="CO_RG_ESTAD_RESP" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="CO_PASSA_NUMER_RESP" Type="varchar" MaxLength="20" />
+    <Property Name="NO_PASSA_PAIS_RESP" Type="varchar" MaxLength="60" />
+    <Property Name="NR_TITUL_NUMER_RESP" Type="varchar" MaxLength="15" />
+    <Property Name="NR_TITUL_SECAO_RESP" Type="varchar" MaxLength="6" />
+    <Property Name="NR_TITUL_ZONA_RESP" Type="varchar" MaxLength="6" />
+    <Property Name="NO_TITUL_CIDAD_RESP" Type="varchar" MaxLength="60" />
+    <Property Name="CO_TITUL_ESTAD_RESP" Type="char" MaxLength="2" />
+    <Property Name="NO_CONJU_RESP" Type="varchar" MaxLength="80" />
+    <Property Name="DT_CONJU_NASCI_RESP" Type="datetime" />
+    <Property Name="CO_CONJU_SEXO_RESP" Type="varchar" MaxLength="9" />
+    <Property Name="NR_CONJU_CPF_RESP" Type="char" MaxLength="11" />
+    <Property Name="CO_CONJU_SANGU_TIPO_RESP" Type="char" MaxLength="2" />
+    <Property Name="CO_CONJU_SANGU_FATOR_RESP" Type="char" MaxLength="1" />
+    <Property Name="CO_ENDER_CEP_RESP" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="DE_ENDER_LOCAL_RESP" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NU_ENDER_NUMER_RESP" Type="numeric" Precision="5" />
+    <Property Name="DE_ENDER_COMPL_RESP" Type="varchar" MaxLength="40" />
+    <Property Name="CO_ENDER_BAIRR_RESP" Type="int" Nullable="false" />
+    <Property Name="CO_ENDER_CIDAD_RESP" Type="int" Nullable="false" />
+    <Property Name="CO_ENDER_ESTAD_RESP" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="CO_ENDER_LATIT_RESP" Type="varchar" MaxLength="30" />
+    <Property Name="CO_ENDER_LONGI_RESP" Type="varchar" MaxLength="30" />
+    <Property Name="CO_SITUA_RESP" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW150_INFOR_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+    </Key>
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NR_NIS_ALUNO" Type="float" />
+    <Property Name="NR_NIRE_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NO_ALUNO" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="NO_APELIDO_ALUNO" Type="varchar" MaxLength="20" />
+    <Property Name="DT_NASC_ALUNO" Type="datetime" Nullable="false" />
+    <Property Name="CO_SEXO_ALUNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FL_DEFIC_ALUNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NM_DEFIC_ALUNO" Type="varchar" MaxLength="20" />
+    <Property Name="DE_ENDER_LOCAL_ALUNO" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_ENDER_COMPL_ALUNO" Type="varchar" MaxLength="40" />
+    <Property Name="DE_ENDER_BAIRR_ALUNO" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_ENDER_CIDAD_ALUNO" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_ENDER_ESTAD_ALUNO" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="CO_ENDER_CEP_ALUNO" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="NR_TELEF_FIXO_ALUNO" Type="char" MaxLength="10" />
+    <Property Name="NR_TELEF_CELUL_ALUNO" Type="char" MaxLength="10" />
+    <Property Name="NO_GRAU_PAREN_ALUNO" Type="varchar" MaxLength="20" />
+    <Property Name="DE_EMAIL_ALUNO" Type="varchar" MaxLength="100" />
+    <Property Name="CO_SITUA_ALUNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_ENDER_FOTO_ALUNO" Type="varchar" MaxLength="80" />
+    <Property Name="CO_TIPO_SANGUE_ALUNO" Type="char" MaxLength="2" />
+    <Property Name="CO_STATUS_SANGUE_ALUNO" Type="char" MaxLength="1" />
+    <Property Name="DE_NATU_ALUNO" Type="varchar" MaxLength="40" />
+    <Property Name="CO_UF_NATU_ALUNO" Type="char" MaxLength="2" />
+    <Property Name="ID_INFORM_RESP" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW151_DADOS_MATRIC">
+    <Key>
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+      <PropertyRef Name="NR_MATRIC" />
+    </Key>
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NR_MATRIC" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_TURNO_MATRIC" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_MATRIC" Type="datetime" Nullable="false" />
+    <Property Name="NR_PAUTA_CHAMA" Type="numeric" Precision="2" />
+    <Property Name="NR_POSIC_SALA" Type="numeric" Precision="2" />
+    <Property Name="CO_ANO_REF" Type="int" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" />
+    <Property Name="ID_INFOR_UNID" Type="int" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" />
+    <Property Name="CO_SITUA_MATRIC" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW152_ALUNO_FREQU">
+    <Key>
+      <PropertyRef Name="ID_FREQ_ALUNO" />
+    </Key>
+    <Property Name="ID_FREQ_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="DE_TEMA_AULA" Type="varchar" MaxLength="256" />
+    <Property Name="DT_FREQU_ALUNO" Type="datetime" Nullable="false" />
+    <Property Name="HR_INICI_ATIVI" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="HR_FIM_ATIVI" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="NR_MATRIC" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="TP_FREQU_ALUNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="QT_CARGA_HORAR" Type="int" Nullable="false" />
+    <Property Name="FL_JUSTIF_FREQU" Type="char" MaxLength="1" />
+    <Property Name="CO_CLASS_FREQU" Type="char" MaxLength="1" />
+    <Property Name="NR_TEMPO_AULA_FREQU" Type="numeric" Nullable="false" Precision="1" />
+  </EntityType>
+  <EntityType Name="GW153_ATIVID_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_ATIVI_ALUNO" />
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+      <PropertyRef Name="NR_MATRIC" />
+    </Key>
+    <Property Name="ID_ATIVI_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NR_MATRIC" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DT_ENTRE_ATIVI_ALUNO" Type="datetime" Nullable="false" />
+    <Property Name="HR_ENTRE_ATIVI_ALUNO" Type="datetime" />
+    <Property Name="DE_OBSER_ATIVI_ALUNO" Type="varchar" MaxLength="100" />
+    <Property Name="DE_AVALI_ATIVI_ALUNO" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="NR_NOTA_AVALI_ALUNO" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="CO_STATUS_ATIVI_ALUNO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_ATIVI_CASA" Type="int" />
+    <Property Name="ID_INFOR_UNID" Type="int" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" />
+  </EntityType>
+  <EntityType Name="GW154_PROVAS_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_PROVAS_ALUNO" />
+    </Key>
+    <Property Name="ID_PROVAS_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_PROVA_TURMA" Type="int" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NR_MATRIC" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DT_REALIZ_PROVA_ALUNO" Type="datetime" Nullable="false" />
+    <Property Name="HR_REALIZ_PROVA_ALUNO" Type="varchar" MaxLength="5" />
+    <Property Name="DE_AVALIA_PROVA_ALUNO" Type="varchar" MaxLength="256" />
+    <Property Name="VL_NOTA_PROVA_ALUNO" Type="numeric" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="DE_OBSER_PROVA_ALUNO" Type="varchar" MaxLength="200" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_ANO_REF" Type="int" Nullable="false" />
+    <Property Name="ID_MATERIA" Type="int" />
+    <Property Name="ID_ATIVI_AULA" Type="int" />
+  </EntityType>
+  <EntityType Name="GW155_HISTOR_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+      <PropertyRef Name="ID_HISTOR_ALUNO" />
+      <PropertyRef Name="NR_MATRIC" />
+    </Key>
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_HISTOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NR_MATRIC" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="VL_MEDIA_BIM1_HISTOR" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_BIM2_HISTOR" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_BIM3_HISTOR" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_BIM4_HISTOR" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_BIM2_HISTOR" Type="numeric" Precision="2" />
+    <Property Name="QT_FALTAS_BIM3_HISTOR" Type="numeric" Precision="2" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" />
+    <Property Name="VL_CONCEITO_BIM1" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="ID_MATERIA" Type="int" />
+    <Property Name="VL_CONCEITO_BIM2" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_BIM1_HISTOR" Type="numeric" Precision="2" />
+    <Property Name="VL_CONCEITO_BIM3" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_BIM4_HISTOR" Type="numeric" Precision="2" />
+    <Property Name="VL_CONCEITO_BIM4" Type="numeric" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="GW156_OCORR_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_OCORR_ALUNO" />
+    </Key>
+    <Property Name="ID_OCORR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="DT_OCORR_ALUNO" Type="datetime" Nullable="false" />
+    <Property Name="CO_SIGL_OCORR" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="DE_OCORR_ALUNO" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_ACAO_OCORR" Type="varchar" MaxLength="100" />
+    <Property Name="FL_AVISO_RESP_OCORR" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW157_CUIDAD_SAUDE">
+    <Key>
+      <PropertyRef Name="ID_MEDICACAO" />
+    </Key>
+    <Property Name="ID_MEDICACAO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="TP_CUIDADO_SAUDE" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="TP_APLICAC_CUIDADO" Type="char" Nullable="false" MaxLength="30" />
+    <Property Name="HR_APLICAC_CUIDADO" Type="char" MaxLength="5" />
+    <Property Name="NM_REMEDIO_CUIDADO" Type="varchar" MaxLength="50" />
+    <Property Name="DE_OBSERV_CUIDADO" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="DE_DOSE_REMEDIO_CUIDADO" Type="int" />
+    <Property Name="NM_MEDICO_CUIDADO" Type="varchar" MaxLength="60" />
+    <Property Name="NR_CRM_MEDICO_CUIDADO" Type="varchar" MaxLength="12" />
+    <Property Name="DT_RECEITA_CUIDADO" Type="datetime" />
+    <Property Name="NR_TELEF_FIXO_MEDICO" Type="char" MaxLength="10" />
+    <Property Name="NR_TELEF_CELUL_MEDICO" Type="char" MaxLength="10" />
+    <Property Name="FL_RECEITA_CUIDADO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_STATUS_MEDICAC" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW158_OCORR_SAUDE">
+    <Key>
+      <PropertyRef Name="ID_OCORR_SAUDE" />
+    </Key>
+    <Property Name="ID_OCORR_SAUDE" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_USU" Type="int" Nullable="false" />
+    <Property Name="TP_USU" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_HOSPI_CONSU" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DT_CONSU" Type="datetime" Nullable="false" />
+    <Property Name="NO_MEDIC" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="NU_CRM_MEDIC" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DE_RECEI" Type="varchar" MaxLength="250" />
+    <Property Name="QT_DIAS_LICEN" Type="int" />
+    <Property Name="NO_CID" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_DOENC" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_OBS" Type="varchar" MaxLength="100" />
+    <Property Name="DT_ENTRE_ATEST" Type="datetime" Nullable="false" />
+    <Property Name="DT_CADAS" Type="datetime" Nullable="false" />
+    <Property Name="ID_CODIG_COLAB" Type="int" Nullable="false" />
+    <Property Name="CO_UNID_FUNC" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW159_ALTER_ENDER">
+    <Key>
+      <PropertyRef Name="CO_ALTER_ENDER" />
+    </Key>
+    <Property Name="CO_ALTER_ENDER" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CO_ENDER_CEP_ATUAL" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="DE_ENDER_LOCAL_ATUAL" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NU_ENDER_NUMER_ATUAL" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="DE_ENDER_COMPL_ATUAL" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CO_ENDER_BAIRR_ATUAL" Type="int" Nullable="false" />
+    <Property Name="CO_ENDER_CIDAD_ATUAL" Type="int" Nullable="false" />
+    <Property Name="CO_ENDER_ESTAD_ATUAL" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="CO_ENDER_CEP_NOVO" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="DE_ENDER_LOCAL_NOVO" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NU_ENDER_NUMER_NOVO" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="DE_ENDER_COMPL_NOVO" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CO_ENDER_BAIRR_NOVO" Type="int" Nullable="false" />
+    <Property Name="CO_ENDER_CIDAD_NOVO" Type="int" Nullable="false" />
+    <Property Name="CO_ENDER_ESTAD_NOVO" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="CO_TIPO_USUAR" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_ALTER_ENDER" Type="datetime" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="IP_USER" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="FLA_ALTER_ENDER" Type="char" MaxLength="1" />
+    <Property Name="NR_CPF_USR" Type="numeric" Precision="11" />
+  </EntityType>
+  <EntityType Name="GW201_AREA_CONHEC">
+    <Key>
+      <PropertyRef Name="ID_AREA_CONHEC" />
+    </Key>
+    <Property Name="ID_AREA_CONHEC" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_AREA_CONHEC" Type="varchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="GW202_CLASS_CONHEC">
+    <Key>
+      <PropertyRef Name="ID_CLASS_CONHEC" />
+    </Key>
+    <Property Name="ID_CLASS_CONHEC" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_AREA_CONHEC" Type="int" Nullable="false" />
+    <Property Name="NM_CLASS_CONHEC" Type="varchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GW203_EDITORA">
+    <Key>
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_EDITORA" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="GW204_AUTOR">
+    <Key>
+      <PropertyRef Name="ID_AUTOR" />
+    </Key>
+    <Property Name="ID_AUTOR" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="NM_AUTOR" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GW205_ACERVO_BIBL">
+    <Key>
+      <PropertyRef Name="ID_INSTIT" />
+      <PropertyRef Name="CO_ISBN_ACERVO_BIBL" />
+    </Key>
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="CO_ISBN_ACERVO_BIBL" Type="numeric" Nullable="false" Precision="13" />
+    <Property Name="NO_TITULO_ACERVO_BIBL" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="NR_PAG_ACERVO_BIBL" Type="numeric" Precision="5" />
+    <Property Name="CO_ANO_EDICAO_ACERVO_BIBL" Type="numeric" Precision="4" />
+    <Property Name="DE_SINOPSE_ACERVO_BIBL" Type="varchar" MaxLength="500" />
+    <Property Name="QT_ACERV_DISPO" Type="int" />
+    <Property Name="QT_ACERV_EMPRE" Type="int" />
+    <Property Name="CO_STATUS_ACERVO_BIBL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_CLASS_CONHEC" Type="int" />
+    <Property Name="ID_AREA_CONHEC" Type="int" />
+    <Property Name="ID_EDITORA" Type="int" />
+    <Property Name="ID_AUTOR1" Type="int" />
+    <Property Name="ID_AUTOR2" Type="int" />
+    <Property Name="ID_AUTOR3" Type="int" />
+    <Property Name="ID_AUTOR4" Type="int" />
+    <Property Name="ID_AUTOR5" Type="int" />
+    <Property Name="NR_EDICAO_ACERVO_BIBL" Type="numeric" Precision="2" />
+    <Property Name="FL_RESER_TECNI_ACERVO_BIBL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="TP_MIDIA_ACERVO_BIBL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="QT_RESER_TECNI_ACERVO_BIBLI" Type="numeric" Precision="3" />
+    <Property Name="NM_LOCAL_MIDIA_ACERVO_BIBL" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GW206_ACERVO_AULA">
+    <Key>
+      <PropertyRef Name="ID_ACERVO_AULA" />
+    </Key>
+    <Property Name="ID_ACERVO_AULA" Type="int" Nullable="false" />
+    <Property Name="NO_TITULO_AULA" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="DE_SINOPSE_AULA" Type="varchar" MaxLength="200" />
+    <Property Name="DE_OBSERV_AULA" Type="varchar" MaxLength="200" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" />
+    <Property Name="ID_MATERIA" Type="int" />
+    <Property Name="ID_AREA_CONHEC" Type="int" />
+    <Property Name="ID_CLASS_CONHEC" Type="int" />
+    <Property Name="ID_REGIAO_APLICA" Type="varchar" MaxLength="2" />
+    <Property Name="FL_AS3" Type="bit" />
+    <Property Name="FL_INSTAL_SERVID" Type="char" MaxLength="1" />
+    <Property Name="TP_ARQUI_MIDIA_AULA" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="NM_ARQUI_MIDIA_AULA" Type="varchar" MaxLength="100" />
+    <Property Name="DT_CADAST_AULA" Type="datetime" Nullable="false" />
+    <Property Name="DT_CRIACAO_AULA" Type="datetime" />
+    <Property Name="DT_STATUS_AULA" Type="datetime" Nullable="false" />
+    <Property Name="CO_STATUS_AULA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="XX_CLASSE" Type="varchar" MaxLength="50" />
+    <Property Name="XX_DISCIPLINA" Type="varchar" MaxLength="100" />
+    <Property Name="QT_DURAC_AULA" Type="time" />
+  </EntityType>
+  <EntityType Name="GW211_RESER_BIBL">
+    <Key>
+      <PropertyRef Name="ID_RESER_BIBL" />
+      <PropertyRef Name="CO_CTRL_INTERNO" />
+    </Key>
+    <Property Name="ID_RESER_BIBL" Type="int" Nullable="false" />
+    <Property Name="CO_CTRL_INTERNO" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="CO_ISBN_ACERVO_BIBL" Type="numeric" Nullable="false" Precision="13" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="TP_USUARIO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_RESER_BIBL" Type="datetime" Nullable="false" />
+    <Property Name="DT_NECES_MAXIM_RESER_BIBL" Type="datetime" />
+    <Property Name="DE_OBSER_RESER_BIBL" Type="varchar" MaxLength="100" />
+    <Property Name="CO_STATUS_RESER_BIBL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_STATUS_RESER_BIBL" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW212_EMPREST_BIBL">
+    <Key>
+      <PropertyRef Name="ID_EMPRE_BIBL" />
+    </Key>
+    <Property Name="ID_EMPRE_BIBL" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="CO_ISBN_ACERVO_BIBL" Type="numeric" Nullable="false" Precision="13" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="TP_USUARIO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_EMPRE_BIBL" Type="datetime" Nullable="false" />
+    <Property Name="CO_CTRL_INTERNO" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="NR_EMPRE_BIBL" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DT_DEVOL_EMPRE_BIBL" Type="datetime" />
+    <Property Name="DE_OBSER_DEVOL_EMPRE_BIBL" Type="varchar" MaxLength="100" />
+    <Property Name="DT_PREVI_DEVOL_EMPRE_BIBL" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW301_REFEICOES">
+    <Key>
+      <PropertyRef Name="ID_REFEICAO" />
+    </Key>
+    <Property Name="ID_REFEICAO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_REFEIC" Type="int" Nullable="false" />
+    <Property Name="NM_REFEIC" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="NM_REDUZ_REFEIC" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CO_IDENT_REFEIC" Type="varchar" MaxLength="12" />
+    <Property Name="TP_REFEIC" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_SINOPSE_REFEIC" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="QT_KCAL_REFEIC" Type="numeric" Precision="6" Scale="3" />
+  </EntityType>
+  <EntityType Name="GW302_REFEI_INGRED">
+    <Key>
+      <PropertyRef Name="ID_INGRED_REFEIC" />
+      <PropertyRef Name="ID_REFEICAO" />
+    </Key>
+    <Property Name="ID_INGRED_REFEIC" Type="int" Nullable="false" />
+    <Property Name="ID_REFEICAO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_INGRED_REFEIC" Type="int" Nullable="false" />
+    <Property Name="NM_INGRED_REFEIC" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="NM_REDUZ_INGRED_REFEIC" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CO_INGRED_REFEIC" Type="varchar" MaxLength="12" />
+    <Property Name="CO_UNIDAD_INGRED" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="QT_KCAL_INGRED" Type="numeric" Precision="6" Scale="3" />
+  </EntityType>
+  <EntityType Name="GW303_CALEND_REFEI">
+    <Key>
+      <PropertyRef Name="ID_CALEND_REFEIC" />
+    </Key>
+    <Property Name="ID_CALEND_REFEIC" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_CALEND_REFEIC" Type="int" />
+    <Property Name="DT_CALEND_REFEIC" Type="datetime" Nullable="false" />
+    <Property Name="ID_REFEICAO" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW304_SUGEST_REFEI">
+    <Key>
+      <PropertyRef Name="ID_SUGES_REFEIC" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_SUGES_REFEIC" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="NM_SUGES_REFEIC" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="DE_SUGES_REFEIC" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="ID_REFEICAO" Type="int" />
+  </EntityType>
+  <EntityType Name="GW305_RESTR_ALIMEN">
+    <Key>
+      <PropertyRef Name="ID_RESTR_ALIMEN" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_RESTR_ALIMEN" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_RESTR_ALIMEN" Type="int" Nullable="false" />
+    <Property Name="TP_RESTR_ALIMEN" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NM_RESTR_ALIMEN" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="DE_RESTR_ALIMEN" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="DT_INFORM_RESTR_ALIMEN" Type="datetime" Nullable="false" />
+    <Property Name="DT_INICIO_RESTR_ALIMEN" Type="datetime" Nullable="false" />
+    <Property Name="DT_TERMI_RESTR_ALIMEN" Type="datetime" />
+    <Property Name="CO_GRAU_RESTR_ALIMEN" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW306_REFEIC_USR">
+    <Key>
+      <PropertyRef Name="ID_REFEIC_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_REFEIC_USR" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_REFEIC_USR" Type="int" />
+    <Property Name="DT_REFEIC_USR" Type="datetime" Nullable="false" />
+    <Property Name="HR_REFEIC_USR" Type="datetime" Nullable="false" />
+    <Property Name="ID_REFEICAO" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW401_LINHA_TRANSP">
+    <Key>
+      <PropertyRef Name="ID_LINHA_TRANSP" />
+    </Key>
+    <Property Name="ID_LINHA_TRANSP" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="TP_TRANSP_LINHA" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="NU_LINHA" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="NO_TITUL_LINHA" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="DE_ROTEI_LINHA" Type="varchar" MaxLength="200" />
+    <Property Name="DE_HORAR_LINHA" Type="varchar" MaxLength="200" />
+    <Property Name="DE_OBSER_LINHA" Type="varchar" MaxLength="100" />
+    <Property Name="VL_TARIFA_LINHA" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="FL_INTEGR_LINHA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_SITUA_LINHA" Type="datetime" Nullable="false" />
+    <Property Name="CO_SITUA_LINHA" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW402_LINHA_USR">
+    <Key>
+      <PropertyRef Name="ID_LINHA_TRANSP_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_LINHA_TRANSP_USR" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_LINHA_USR" Type="int" Nullable="false" />
+    <Property Name="ID_LINHA_TRANSP" Type="int" />
+  </EntityType>
+  <EntityType Name="GW451_ROTA_TRANSP">
+    <Key>
+      <PropertyRef Name="ID_ROTA_TRANSP" />
+    </Key>
+    <Property Name="ID_ROTA_TRANSP" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_ROTAS" Type="int" />
+    <Property Name="TP_ROTA_TRANSP" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_ROTA_TRANSP" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="NM_ROTA_TRANSP" Type="varchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="GW452_ROTA_ITENS">
+    <Key>
+      <PropertyRef Name="ID_ROTA_TRANSP" />
+    </Key>
+    <Property Name="ID_ROTA_TRANSP" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_RUAS" Type="int" />
+    <Property Name="NM_RUA_ROTA" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="CO_CEP_RUA_ROTA" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="NR_ORDEM_RUA_ROTA" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW452_ROTA_USR">
+    <Key>
+      <PropertyRef Name="ID_ROTA_TRANSP_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_ROTA_TRANSP_USR" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_ROTAUSR" Type="int" />
+    <Property Name="ID_ROTA_TRANSP" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW501_TIPO_SOLIC">
+    <Key>
+      <PropertyRef Name="ID_TIPO_SOLIC" />
+    </Key>
+    <Property Name="ID_TIPO_SOLIC" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_TIPO_SOLIC" Type="int" Nullable="false" />
+    <Property Name="NO_TIPO_SOLIC" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="CO_SIGLA_TIPO_SOLIC" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="VL_TIPO_SOLIC" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="NO_PROCED_TIPO_SOLIC" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GW502_SOLIC_USR">
+    <Key>
+      <PropertyRef Name="ID_SOLIC_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Name="ID_SOLIC_USR" Type="int" Nullable="false" />
+    <Property Name="ID_USUARIO" Type="int" Nullable="false" />
+    <Property Name="ID_REFER_GEDUC_SOLIC_USR" Type="int" Nullable="false" />
+    <Property Name="DT_SOLIC_USR" Type="datetime" Nullable="false" />
+    <Property Name="HR_SOLIC_USR" Type="datetime" Nullable="false" />
+    <Property Name="DE_OBSER_SOLIC_USR" Type="varchar" MaxLength="100" />
+    <Property Name="NR_TELEF_SOLIC_USR" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="FL_AVISAR_SMS_SOLIC_USR" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_FINAL_SOLIC_USR" Type="datetime" />
+    <Property Name="DT_ENTRE_SOLIC_USR" Type="datetime" />
+    <Property Name="HR_ENTRE_SOLIC_USR" Type="datetime" />
+    <Property Name="NM_SOLIC_RECEB_SOLIC_USR" Type="varchar" MaxLength="80" />
+    <Property Name="CO_STATUS_SOLIC_USR" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NR_GEDUC_SOLIC_USR" Type="varchar" MaxLength="18" />
+    <Property Name="ID_TIPO_SOLIC" Type="int" />
+  </EntityType>
+  <EntityType Name="GW551_FREQU">
+    <Key>
+      <PropertyRef Name="ID_FREQU" />
+    </Key>
+    <Property Name="ID_FREQU" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_INSTIT" Type="char" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" />
+    <Property Name="ID_GRADE_MATER" Type="int" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" />
+    <Property Name="ID_COLAB_LANCA_FREQU" Type="int" />
+    <Property Name="DT_FREQU" Type="date" />
+    <Property Name="TP_FREQU" Type="char" MaxLength="1" />
+    <Property Name="NR_IP_LANCA_FREQU" Type="varchar" MaxLength="15" />
+    <Property Name="DT_CADAS_FREQU" Type="datetime" />
+    <Property Name="ID_COLAB_BAIXA_FREQU" Type="int" />
+    <Property Name="FL_BAIXA_FREQU" Type="char" MaxLength="1" />
+    <Property Name="DT_BAIXA_FREQU" Type="datetime" />
+    <Property Name="CO_REFER_FREQU" Type="char" MaxLength="2" />
+    <Property Name="DT_ANO_REFER" Type="char" MaxLength="4" />
+    <Property Name="ID_MATERIA" Type="int" />
+    <Property Name="NR_TEMPO" Type="int" />
+    <Property Name="NR_IP_BAIXA_FREQU" Type="varchar" MaxLength="15" />
+    <Property Name="CO_ATIV_PROF_TUR" Type="int" />
+  </EntityType>
+  <EntityType Name="GW551_LANCA_FREQU">
+    <Key>
+      <PropertyRef Name="ID_LANCA_FREQU" />
+    </Key>
+    <Property Name="ID_LANCA_FREQU" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_GRADE_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_COLAB_LANCA_FREQU" Type="int" Nullable="false" />
+    <Property Name="DT_FREQU" Type="datetime" Nullable="false" />
+    <Property Name="TP_FREQU" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NR_IP_LANCA_FREQU" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="DT_CADAS_FREQU" Type="datetime" Nullable="false" />
+    <Property Name="ID_COLAB_BAIXA_FREQU" Type="int" />
+    <Property Name="NR_IP_BAIXA_FREQU" Type="varchar" MaxLength="15" />
+    <Property Name="FL_BAIXA_FREQU" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_BAIXA_FREQU" Type="datetime" />
+    <Property Name="CO_REFER_FREQU" Type="char" MaxLength="2" />
+    <Property Name="NR_TEMPO" Type="int" />
+    <Property Name="CO_ATIV_PROF_TUR" Type="int" />
+    <Property Name="ID_FREQU" Type="int" />
+  </EntityType>
+  <EntityType Name="GW552_LANCA_NOTA">
+    <Key>
+      <PropertyRef Name="ID_LANCA_NOTA" />
+    </Key>
+    <Property Name="ID_LANCA_NOTA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_NOTA" Type="int" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_GRADE_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_COLAB_LANCA_NOTA" Type="int" Nullable="false" />
+    <Property Name="DT_LANCA_NOTA" Type="datetime" Nullable="false" />
+    <Property Name="VL_NOTA" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="ID_TIPO_ATIV" Type="int" Nullable="false" />
+    <Property Name="FL_TIPO_NOTA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NR_IP_LANCA_NOTA" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ID_COLAB_BAIXA_NOTA" Type="int" />
+    <Property Name="NR_IP_COLAB_BAIXA_NOTA" Type="varchar" MaxLength="15" />
+    <Property Name="FL_BAIXA_NOTA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_BAIXA_NOTA" Type="datetime" />
+    <Property Name="DT_NOTA_CADAS" Type="datetime" Nullable="false" />
+    <Property Name="CO_REFER_NOTA" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="FL_LANCA_MEDIA" Type="char" MaxLength="1" />
+    <Property Name="QT_FALTA_MEDIA" Type="int" />
+    <Property Name="CO_ANO_REFER" Type="numeric" Precision="4" />
+  </EntityType>
+  <EntityType Name="GW552_NOTA">
+    <Key>
+      <PropertyRef Name="ID_NOTA" />
+    </Key>
+    <Property Name="ID_NOTA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DT_LANCA_NOTA" Type="date" />
+    <Property Name="CO_REFER_NOTA" Type="char" MaxLength="2" />
+    <Property Name="ID_MATERIA" Type="varchar" MaxLength="20" />
+    <Property Name="ID_INSTIT" Type="varchar" MaxLength="20" />
+    <Property Name="ID_INFOR_UNID" Type="varchar" MaxLength="50" />
+    <Property Name="ID_COLAB_LANCA_NOTA" Type="varchar" MaxLength="20" />
+    <Property Name="CO_TIPO_ATIVI" Type="varchar" MaxLength="20" />
+    <Property Name="ID_GRADE_MATER" Type="varchar" MaxLength="20" />
+    <Property Name="ID_MODAL_ENSINO" Type="varchar" MaxLength="10" />
+    <Property Name="ID_SERIE_ENSINO" Type="varchar" MaxLength="10" />
+    <Property Name="ID_TURMA_ENSINO" Type="varchar" MaxLength="10" />
+    <Property Name="ID_TIPO_ATIV" Type="varchar" MaxLength="5" />
+    <Property Name="FL_LANCA_MEDIA" Type="char" MaxLength="1" />
+    <Property Name="CO_ANO_REFER" Type="numeric" Precision="4" />
+    <Property Name="FL_BAIXA_NOTA" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW554_ATIV_PROF_TURMA">
+    <Key>
+      <PropertyRef Name="CO_ATIV_PROF_TUR" />
+    </Key>
+    <Property Name="CO_EMP" Type="int" Nullable="false" />
+    <Property Name="CO_CUR" Type="int" Nullable="false" />
+    <Property Name="CO_TUR" Type="int" Nullable="false" />
+    <Property Name="CO_COL" Type="int" Nullable="false" />
+    <Property Name="CO_MAT" Type="int" Nullable="false" />
+    <Property Name="CO_ATIV_PROF_TUR" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CO_COL_ATIV" Type="int" Nullable="false" />
+    <Property Name="DT_ATIV_REAL" Type="date" Nullable="false" />
+    <Property Name="DT_ATIV_REAL_TERM" Type="date" Nullable="false" />
+    <Property Name="CO_TIPO_ATIV" Type="char" MaxLength="3" />
+    <Property Name="DE_TEMA_AULA" Type="varchar" MaxLength="256" />
+    <Property Name="DE_FORMA_AVALI_ATIV" Type="varchar" MaxLength="15" />
+    <Property Name="FLA_AULA_PLAN" Type="bit" Nullable="false" />
+    <Property Name="FL_AVALIA_ATIV" Type="char" MaxLength="1" />
+    <Property Name="FL_LANCA_NOTA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="created" Type="date" />
+    <Property Name="CO_PLA_AULA" Type="int" />
+    <Property Name="CO_ANO_MES_MAT" Type="char" MaxLength="6" />
+    <Property Name="CO_MODU_CUR" Type="int" />
+    <Property Name="NU_SEM_LET" Type="char" MaxLength="1" />
+    <Property Name="HR_INI_ATIV" Type="char" MaxLength="5" />
+    <Property Name="HR_TER_ATIV" Type="char" MaxLength="5" />
+    <Property Name="DE_RES_ATIV" Type="varchar" MaxLength="2000" />
+    <Property Name="CO_IP_CADAST" Type="varchar" MaxLength="20" />
+    <Property Name="ID_TIPO_ATIV" Type="int" />
+    <Property Name="CO_REFER_ATIV" Type="char" MaxLength="2" />
+    <Property Name="FL_BAIXA_ATIV" Type="char" MaxLength="1" />
+    <Property Name="ID_COLAB_BAIXA_NOTA" Type="int" />
+    <Property Name="NR_IP_COLAB_BAIXA_NOTA" Type="varchar" MaxLength="15" />
+    <Property Name="DT_BAIXA_NOTA" Type="datetime" />
+    <Property Name="FL_BAIXA_NOTA" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW555_END_NOVO">
+    <Key>
+      <PropertyRef Name="ID_ENDERECO" />
+    </Key>
+    <Property Name="ID_ENDERECO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CO_ENDER_CEP_NOVO" Type="varchar" MaxLength="10" />
+    <Property Name="DE_ENDER_LOCAL_NOVO" Type="varchar" MaxLength="150" />
+    <Property Name="NU_ENDER_NUMER_NOVO" Type="int" />
+    <Property Name="DE_ENDER_COMPL_NOVO" Type="varchar" MaxLength="150" />
+    <Property Name="CO_ENDER_BAIRR_NOVO" Type="varchar" MaxLength="100" />
+    <Property Name="CO_ENDER_CIDAD_NOVO" Type="varchar" MaxLength="50" />
+    <Property Name="CO_ENDER_ESTAD_NOVO" Type="varchar" MaxLength="50" />
+    <Property Name="CO_RESP" Type="int" />
+    <Property Name="CO_ALUNO" Type="int" />
+    <Property Name="IP_USER" Type="varchar" MaxLength="17" />
+    <Property Name="CO_TIPO_USUAR" Type="varchar" MaxLength="20" />
+    <Property Name="NR_CPF_USR" Type="varchar" MaxLength="15" />
+    <Property Name="FL_ALTERA" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW601_HISTO_DESEMP">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_UNIDADE" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_ALU" Type="int" Nullable="false" />
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE" Type="int" Nullable="false" />
+    <Property Name="CO_ANO_REF" Type="int" Nullable="false" />
+    <Property Name="VL_MEDIA_ALUNO_B1" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_TURMA_B1" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_FALTAS_B1" Type="int" />
+    <Property Name="VL_MEDIA_ALUNO_B2" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_TURMA_B2" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_FALTAS_B2" Type="int" />
+    <Property Name="VL_MEDIA_ALUNO_B3" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_TURMA_B3" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_FALTAS_B3" Type="int" />
+    <Property Name="VL_MEDIA_ALUNO_B4" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_MEDIA_TURMA_B4" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="VL_FALTAS_B4" Type="int" />
+    <Property Name="VL_PROVA_FINAL" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="ST_SITUA" Type="char" MaxLength="1" />
+    <Property Name="ID_REGISTRO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW602_BOLET_ESCOL">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+    <Property Name="ID_ALUNO" Type="int" Nullable="false" />
+    <Property Name="NU_MATRICULA" Type="varchar" MaxLength="20" />
+    <Property Name="ID_UNID" Type="int" Nullable="false" />
+    <Property Name="VL_NOTA_B1" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_RECUP_B1" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_B1" Type="int" />
+    <Property Name="VL_FREQU_B1" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_COMPOR_B1" Type="char" MaxLength="1" />
+    <Property Name="VL_NOTA_B2" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_RECUP_B2" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_B2" Type="int" />
+    <Property Name="VL_FREQU_B2" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_COMPOR_B2" Type="char" MaxLength="1" />
+    <Property Name="VL_NOTA_B3" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_RECUP_B3" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_B3" Type="int" />
+    <Property Name="VL_FREQU_B3" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_COMPOR_B3" Type="char" MaxLength="1" />
+    <Property Name="VL_NOTA_B4" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_RECUP_B4" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="QT_FALTAS_B4" Type="int" />
+    <Property Name="VL_FREQU_B4" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_NOTA_COMPOR_B4" Type="char" MaxLength="1" />
+    <Property Name="VL_MEDIA_TURMA" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VL_PROVA_FINAL" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="CO_ANO_REF" Type="int" Nullable="false" />
+    <Property Name="DE_END_IMG_BOLETIM" Type="varchar" MaxLength="250" />
+    <Property Name="DE_END_PDF_BOLETIM" Type="varchar" MaxLength="250" />
+    <Property Name="ID_REGISTRO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW603_DADO_BOLETO">
+    <Key>
+      <PropertyRef Name="NU_DOC" />
+      <PropertyRef Name="NU_PAR" />
+      <PropertyRef Name="DT_CAD_DOC" />
+      <PropertyRef Name="CO_EMP" />
+    </Key>
+    <Property Name="NU_DOC" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="NU_PAR" Type="int" Nullable="false" />
+    <Property Name="DT_CAD_DOC" Type="datetime" Nullable="false" />
+    <Property Name="CO_EMP" Type="int" Nullable="false" />
+    <Property Name="ID_INSTIT" Type="char" MaxLength="14" />
+    <Property Name="ID_INFOR_ALUNO" Type="int" />
+    <Property Name="ID_INFORM_RESP" Type="int" />
+    <Property Name="DT_VEN_DOC" Type="datetime" />
+    <Property Name="VR_PAR_DOC" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="CO_NOS_NUM" Type="char" MaxLength="20" />
+    <Property Name="CO_BARRA_DOC" Type="char" MaxLength="60" />
+    <Property Name="VR_DES_DOC" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="CO_CARTEIRA" Type="char" MaxLength="6" />
+    <Property Name="CO_EMP_UNID_CONT" Type="int" />
+    <Property Name="CO_AGENCIA" Type="int" />
+    <Property Name="DI_AGENCIA" Type="char" MaxLength="1" />
+    <Property Name="IDEBANCO" Type="char" MaxLength="3" />
+    <Property Name="CO_CEDENTE" Type="char" MaxLength="10" />
+    <Property Name="DE_CORPO_BOLETO" Type="text" />
+    <Property Name="CO_CONTA" Type="char" MaxLength="10" />
+    <Property Name="DI_CONTA" Type="char" MaxLength="1" />
+    <Property Name="NU_CONVENIO" Type="int" />
+    <Property Name="ID_MODAL_ENSINO" Type="int" />
+    <Property Name="ID_SERIE_ENSINO" Type="int" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" />
+    <Property Name="CO_ANO_REF" Type="int" />
+    <Property Name="DE_HISTORICO" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GW700_INSTITUICAO">
+    <Key>
+      <PropertyRef Name="ID_INSTIT" />
+    </Key>
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="TP_INSTIT" Type="int" Nullable="false" />
+    <Property Name="CO_SIGLA_INSTIT" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="NO_INSTIT" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NO_REDUZ_INSTIT" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="DE_ENDER_FOTO_INSTIT" Type="varchar" MaxLength="80" />
+    <Property Name="DE_ENDER_LOCAL_INSTIT" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DE_ENDER_COMPL_INSTIT" Type="varchar" MaxLength="40" />
+    <Property Name="DE_ENDER_BAIRR_INSTIT" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_ENDER_CIDAD_INSTIT" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_ENDER_ESTAD_INSTIT" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="DE_ENDER_CEP_INSTIT" Type="char" Nullable="false" MaxLength="8" />
+    <Property Name="DE_EMAIL_GERAL_INSTIT" Type="varchar" MaxLength="100" />
+    <Property Name="DE_EMAIL_CONT_INSTIT" Type="varchar" MaxLength="100" />
+    <Property Name="NR_TELEF_FIXO_INSTIT" Type="char" MaxLength="10" />
+    <Property Name="DE_WEB_PAGE_INSTIT" Type="varchar" MaxLength="100" />
+    <Property Name="DE_HORAR_ATEND_INSTIT" Type="varchar" MaxLength="30" />
+    <Property Name="IM_LOGO" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GW800_FALE_CONOSCO">
+    <Key>
+      <PropertyRef Name="ID_FALE_CONOS" />
+    </Key>
+    <Property Name="ID_FALE_CONOS" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="ID_ASSUN_CONTAT" Type="int" Nullable="false" />
+    <Property Name="ID_CODIG_COLAB" Type="int" />
+    <Property Name="DT_SOLIC_FALE_CONOS" Type="datetime" />
+    <Property Name="IP_USUAR_FALE_CONOS" Type="varchar" MaxLength="20" />
+    <Property Name="NO_USUAR_FALE_CONOS" Type="varchar" MaxLength="80" />
+    <Property Name="NR_TELEF_FALE_CONOS" Type="varchar" MaxLength="30" />
+    <Property Name="NR_CELUL_FALE_CONOS" Type="varchar" MaxLength="30" />
+    <Property Name="DE_EMAIL_FALE_CONOS" Type="varchar" MaxLength="100" />
+    <Property Name="NO_EMPRE_FALE_CONOS" Type="varchar" MaxLength="80" />
+    <Property Name="CO_CPFCNPJ_FALE_CONOS" Type="varchar" MaxLength="19" />
+    <Property Name="DE_CARGO_USUAR_FALE_CONOS" Type="varchar" MaxLength="60" />
+    <Property Name="DE_ASSUN_FALE_CONOS" Type="varchar" MaxLength="80" />
+    <Property Name="DE_MENSA_FALE_CONOS" Type="text" />
+    <Property Name="FL_ANEXO_FALE_CONOS" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW801_SMS">
+    <Key>
+      <PropertyRef Name="ID_MENSAG_SMS" />
+    </Key>
+    <Property Name="ID_MENSAG_SMS" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CO_EMISSOR" Type="int" Nullable="false" />
+    <Property Name="CO_UNID_EMISSOR" Type="nchar" MaxLength="10" />
+    <Property Name="TP_EMISSOR" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_RECEPTOR" Type="int" />
+    <Property Name="CO_UNID_RECEPT" Type="nchar" MaxLength="10" />
+    <Property Name="TP_RECEPT" Type="char" MaxLength="1" />
+    <Property Name="NR_TELEF_RECEPT" Type="char" MaxLength="10" />
+    <Property Name="NO_RECEPT_SMS" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="ID_MENSAG_OPERAD" Type="int" Nullable="false" />
+    <Property Name="DE_MENSAG_SMS" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="DT_ENVIO_SMS" Type="datetime" Nullable="false" />
+    <Property Name="CO_STATUS" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FL_SMS_SUCESS" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW802_ARQUIVOS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW802_ARQUIVOS">
+    <Key>
+      <PropertyRef Name="ID_ARQUIVO" />
+      <PropertyRef Name="CO_UNID_ORIGEM" />
+      <PropertyRef Name="NO_ARQUIVO" />
+      <PropertyRef Name="NO_AUTOR" />
+      <PropertyRef Name="DE_TIPO_ARQUIVO" />
+      <PropertyRef Name="DE_URL_ARQUIVO" />
+      <PropertyRef Name="DT_CRIACAO" />
+      <PropertyRef Name="DT_PUBLICACAO" />
+      <PropertyRef Name="DT_VALIDADE" />
+      <PropertyRef Name="CO_ATIVO" />
+      <PropertyRef Name="ID_TIPO_ASSUNTO" />
+    </Key>
+    <Property Name="ID_ARQUIVO" Type="int" Nullable="false" />
+    <Property Name="ID_INSTI" Type="int" />
+    <Property Name="CO_UNID_ORIGEM" Type="int" Nullable="false" />
+    <Property Name="NO_ARQUIVO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NO_AUTOR" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="DE_ARQUIVO" Type="varchar" MaxLength="1024" />
+    <Property Name="DE_TIPO_ARQUIVO" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DE_URL_ARQUIVO" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="DT_CRIACAO" Type="datetime" Nullable="false" />
+    <Property Name="DT_PUBLICACAO" Type="datetime" Nullable="false" />
+    <Property Name="DT_VALIDADE" Type="datetime" Nullable="false" />
+    <Property Name="CO_ATIVO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_TIPO_ASSUNTO" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW803_ASSUN_CONTA">
+    <Key>
+      <PropertyRef Name="ID_ASSUN_CONTAT" />
+    </Key>
+    <Property Name="ID_ASSUN_CONTAT" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DE_ASSUN_CONTAT" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="CO_TIPO_ASSUN_CONTAT" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SITU_ASSUNTO" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_INSTIT" Type="char" MaxLength="14" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW804_MIDIAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW804_MIDIAS">
+    <Key>
+      <PropertyRef Name="ID_MIDIA" />
+      <PropertyRef Name="ID_INST" />
+      <PropertyRef Name="ID_CLASS_MIDIA" />
+      <PropertyRef Name="TP_MIDIA" />
+      <PropertyRef Name="DT_INICI" />
+      <PropertyRef Name="DT_TERMI" />
+      <PropertyRef Name="CO_SITU_MIDIA" />
+      <PropertyRef Name="NO_TITUL_MIDIA" />
+      <PropertyRef Name="DE_CONTE_MIDIA" />
+      <PropertyRef Name="FL_ENDER_MIDIA" />
+      <PropertyRef Name="DE_ENDER_MIDIA" />
+      <PropertyRef Name="DT_CRIAC_MIDIA" />
+    </Key>
+    <Property Name="ID_MIDIA" Type="int" Nullable="false" />
+    <Property Name="ID_INST" Type="int" Nullable="false" />
+    <Property Name="ID_UNID_INFOR" Type="int" />
+    <Property Name="ID_MODAL_ENSIN" Type="int" />
+    <Property Name="ID_SERIE" Type="int" />
+    <Property Name="ID_TURMA" Type="int" />
+    <Property Name="ID_MATER" Type="int" />
+    <Property Name="ID_CLASS_MATER" Type="int" />
+    <Property Name="ID_EVENT_SOCIA" Type="int" />
+    <Property Name="ID_CLASS_MIDIA" Type="int" Nullable="false" />
+    <Property Name="TP_MIDIA" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DT_INICI" Type="datetime" Nullable="false" />
+    <Property Name="DT_TERMI" Type="datetime" Nullable="false" />
+    <Property Name="CO_SITU_MIDIA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NO_TITUL_MIDIA" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DE_CONTE_MIDIA" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="FL_ENDER_MIDIA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_ENDER_MIDIA" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="DT_CRIAC_MIDIA" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW805_CLASSI_MATER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW805_CLASSI_MATER">
+    <Key>
+      <PropertyRef Name="ID_CLASS_MATER" />
+      <PropertyRef Name="ID_MATER" />
+      <PropertyRef Name="NO_CLASS_MATER" />
+      <PropertyRef Name="NO_REDUZ_CLASS_MATER" />
+    </Key>
+    <Property Name="ID_CLASS_MATER" Type="int" Nullable="false" />
+    <Property Name="ID_MATER" Type="int" Nullable="false" />
+    <Property Name="NO_CLASS_MATER" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NO_REDUZ_CLASS_MATER" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW806_CLASS_MIDIA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW806_CLASS_MIDIA">
+    <Key>
+      <PropertyRef Name="ID_CLASS_MIDIA" />
+      <PropertyRef Name="NO_CLASS_MIDIA" />
+      <PropertyRef Name="NO_REDUZ_CLASS_MIDIA" />
+    </Key>
+    <Property Name="ID_CLASS_MIDIA" Type="int" Nullable="false" />
+    <Property Name="NO_CLASS_MIDIA" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NO_REDUZ_CLASS_MIDIA" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="GW807_MURAL">
+    <Key>
+      <PropertyRef Name="ID_MURAL_TURMA" />
+    </Key>
+    <Property Name="ID_MURAL_TURMA" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA_ENSINO" Type="int" Nullable="false" />
+    <Property Name="ID_SERIE" Type="int" Nullable="false" />
+    <Property Name="TP_MURAL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NO_TITUL_MURAL" Type="varchar" Nullable="false" MaxLength="80" />
+    <Property Name="DE_AVISO_MURAL" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="NU_POSIC_MURAL" Type="int" Nullable="false" />
+    <Property Name="DT_CADAS_MURAL" Type="datetime" Nullable="false" />
+    <Property Name="DT_INICIO_MURAL" Type="datetime" Nullable="false" />
+    <Property Name="DT_FINAL_MURAL" Type="datetime" Nullable="false" />
+    <Property Name="TP_URL_MURAL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DE_URL_MURAL" Type="varchar" MaxLength="255" />
+    <Property Name="ORG_CODIGO_ORGAO" Type="int" Nullable="false" />
+    <Property Name="CO_MODU_CUR" Type="int" />
+    <Property Name="CO_CUR" Type="int" />
+    <Property Name="CO_COL" Type="int" Nullable="false" />
+    <Property Name="CO_EMP_COL" Type="int" Nullable="false" />
+    <Property Name="CO_STATUS_MURAL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_STATUS_MURAL" Type="datetime" Nullable="false" />
+    <Property Name="FL_ATUAL_PORTAL" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DT_ATUAL_PORTAL" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW808_EVENTOS_SOCIAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW808_EVENTOS_SOCIAS">
+    <Key>
+      <PropertyRef Name="ID_EVENT_SOCIA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="NO_EVENT_SOCIA" />
+      <PropertyRef Name="DE_EVENT_SOCIA" />
+      <PropertyRef Name="DT_INIC" />
+      <PropertyRef Name="DT_TERMI" />
+      <PropertyRef Name="CO_STATU" />
+    </Key>
+    <Property Name="ID_EVENT_SOCIA" Type="int" Nullable="false" />
+    <Property Name="ID_INFOR_UNID" Type="int" Nullable="false" />
+    <Property Name="ID_TURMA" Type="int" />
+    <Property Name="ID_SERIE" Type="int" />
+    <Property Name="NO_EVENT_SOCIA" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DE_EVENT_SOCIA" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="DT_INIC" Type="datetime" Nullable="false" />
+    <Property Name="DT_TERMI" Type="datetime" Nullable="false" />
+    <Property Name="CO_STATU" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'BDPRGE.dbo.GW809_AULAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GW809_AULAS">
+    <Key>
+      <PropertyRef Name="ID_AULA" />
+      <PropertyRef Name="ID_MATERIA" />
+      <PropertyRef Name="DE_TITULO_AULA" />
+    </Key>
+    <Property Name="ID_AULA" Type="int" Nullable="false" />
+    <Property Name="ID_MATERIA" Type="int" Nullable="false" />
+    <Property Name="DE_TITULO_AULA" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GW901_TIPO_LOGRADOURO">
+    <Key>
+      <PropertyRef Name="ID_TIPO_LOGRA" />
+    </Key>
+    <Property Name="ID_TIPO_LOGRA" Type="int" Nullable="false" />
+    <Property Name="CO_TIPO_LOGRA" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="DE_TIPO_LOGRA" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GW902_TIPO_OCORR">
+    <Key>
+      <PropertyRef Name="CO_SIGL_OCORR" />
+      <PropertyRef Name="ID_INSTIT" />
+    </Key>
+    <Property Name="CO_SIGL_OCORR" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="ID_INSTIT" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="DE_TIPO_OCORR" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="TP_USU" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GW903_TIPO_ATIVI">
+    <Key>
+      <PropertyRef Name="ID_TIPO_ATIV" />
+    </Key>
+    <Property Name="ID_TIPO_ATIV" Type="int" Nullable="false" />
+    <Property Name="NO_TIPO_ATIV" Type="varchar" MaxLength="60" />
+    <Property Name="DE_TIPO_ATIV" Type="varchar" MaxLength="200" />
+    <Property Name="CO_SIGLA_ATIV" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="CO_CLASS_ATIV" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_PESO_ATIV" Type="int" Nullable="false" />
+    <Property Name="FL_LANCA_NOTA_ATIV" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CO_SITUA_ATIV" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'BDPRGE.dbo.GW012_CEP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="GW012_CEP">
+        <Property Name="ID_BAIRR_CEP" Type="int" />
+        <Property Name="ID_CEP" Type="int" />
+        <Property Name="NO_ENDER_CEP" Type="text" />
+        <Property Name="NO_ENDER_COMP_CEP" Type="text" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'BDPRGE.dbo.GW013_CIDADE' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="GW013_CIDADE">
+        <Property Name="ID_CIDADE" Type="int" />
+        <Property Name="CO_UF" Type="int" />
+        <Property Name="NO_CIDADE" Type="text" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'BDPRGE.dbo.GW014_BAIRRO' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="GW014_BAIRRO">
+        <Property Name="ID_BAIRRO" Type="int" />
+        <Property Name="ID_CIDAD_BAIRRO" Type="int" />
+        <Property Name="NO_BAIRRO" Type="text" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'BDPRGE.dbo.GW015_UF' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="GW015_UF">
+        <Property Name="ID_UF" Type="int" />
+        <Property Name="CO_SIGLA_UF" Type="text" />
+        <Property Name="NO_UF" Type="text" />
+      </EntityType>-->
+</Schema>

@@ -1,0 +1,273 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PadraoBuscas.Master.cs"
+    Inherits="C2BR.GestorEducacao.UI.App_Masters.PadraoBuscas" %>
+<%@ Register Src="~/Library/Componentes/BarraBusca.ascx" TagName="BarraBusca" TagPrefix="sab" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+<head runat="server">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Busca</title>
+    <link href="/Library/CSS/default.css" rel="stylesheet" type="text/css" />
+    <link href="/Library/CSS/intern.css" rel="stylesheet" type="text/css" />
+    <link href="/Library/CSS/Jquery.UI/customtheme/default.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Library/JS/jquery.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.ui.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.form.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.corner.js" type="text/javascript"></script>
+    <script src="/Library/JS/ui.datepicker-pt-BR.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.jScrollPane.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.defaults.js" type="text/javascript"></script>
+     <style type="text/css">        
+        .ulParamsFormBusca
+        {
+        	margin-top:10px;
+            margin: 0 auto;
+            padding: 50px 0 0;
+        }
+        .ulParamsFormBusca li
+        {
+        	margin-bottom:5px;            
+        	margin-left:8px;
+            clear: both;
+        }
+        input[type="text"]  { margin-bottom:0px !important; }
+        .divBotaoPesquisa span:hover { color: #F60; }
+        #fldParametrosBusca { border: 0; }
+        .fldParametrosBusca legend, .fldGrid legend { display: none; }
+        .fldParametrosBusca li legend, .fldGrid li legend { display: block; }
+        .divBotaoPesquisa
+        {
+            margin: 0 auto;
+            text-align: center;
+        }
+        #divBotaoPesquisa
+        {
+            clear: both;
+            padding: 15px;
+        }
+        .divBarraPesquisa
+        {
+            position: absolute;
+            right: 0;
+            top: 50px;
+        }
+        .grdBusca
+        {
+            border-color: #CCCCCC;
+            overflow: hidden;
+            font: 1.1em;
+            color: #000000;
+            margin: 10px auto;
+            width: 600px !important;
+        }
+        table tr th
+        {
+            border: solid 1px #CCCCCC;    
+        }
+        table tr td
+        {
+	        border: solid 1px #CCCCCC;
+        }
+        .selectedRowStyle td { background-color: #E6E6FA;}        
+        .boxCornerTitle 
+        {
+            background-color:#DFF1FF;
+            color:#999;
+            padding: 2px 0;
+            margin-bottom:4px;
+        }        
+        .divFormData { margin-top: 10px; }
+        .ulDados { margin: 0 auto; }
+        
+        #divPageContainer #divFormData #divSearchForm
+        {
+            width: 310px;
+            height: 510px;
+            float: left;
+        }
+        #divPageContainer #divFormData #divSeta
+        {
+            padding-top: 90px;
+            float: left;
+        }
+        #divPageContainer #divFormData #divGrid
+        {
+        	margin-top: 45px;
+            float: right;            
+            height:460px;
+            width: 680px;
+            background: url("/Library/IMG/Gestor_SetaBusca.png") no-repeat scroll 0 0 transparent;
+        }
+        #divPageContainer #divFormData #divGrid .fldGrid { border: 0; }
+        #divMensagGenerica {padding-top:1px;padding-bottom:2px;width:310px;background-color:#EFF8FF;text-align:center;}        
+        #divHeaderGrid {padding-top:1px;padding-bottom:2px;float: right;width: 680px;background-color:#EFF8FF;text-align:center;}           
+        #divHeaderFormData h1
+        {
+        	color: #666666 !important;
+            font: normal normal bold 1.1em Arial;
+            margin-top: 1px;
+        }
+        .divValidationSummary
+        {
+            cursor: move;
+            padding: 10px;
+            display: none;
+            width: 210px;
+            position: absolute;
+            top: 35px;
+            left: 0;
+        }
+        .divValidationSummary .divButtons { text-align: right; }
+        .divValidationSummary .vsValidation { margin-left: 10px; }
+        .divValidationSummary #divValidationSummaryContent { margin-bottom: 10px; }        
+        .divValidationSummary li
+        {
+            color: #666666;
+            line-height: 11px;
+            border-bottom: 1px solid #CFCFCF;
+            list-style-type: circle;
+            padding-bottom: 2px;
+        }        
+        .requiredFieldStyle { border-left: solid 3px #F99 !important; }
+        .validatorField { display: none !important; }
+</style>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <div id="divPageContainer" class="divPageContainer">
+        <form id="frmMain" runat="server" defaultbutton="btnBusca">
+        <div id="divFormData" class="divFormData">        
+        <div id="divHeaderFormData" class="boxCornerTitle">
+            <h1><%= Request.QueryString["moduloNome"] %></h1>            
+        </div>
+            <div id="divSearchForm">
+                <fieldset id="fldParametrosBusca">                    
+                    <div id="divMensagGenerica">
+                        <!--<asp:Label runat="server" ID="lblMensagGenerica"></asp:Label>-->
+                        <label class="lblHeaderSearch">PARÂMETROS DE PESQUISA</label>                        
+                        <!--<div id="divMensagCamposObrig">
+                            <asp:Label runat="server" ID="lblMensagCampoObrig"></asp:Label>
+                        </div>-->                        
+                    </div>      
+                    <div id="divMsgParamPesq" class="divMsgGrid">
+                        <asp:Label runat="server" ID="lblMensagParamPesquisa" CssClass="divMsgGrid"></asp:Label>
+                    </div>                                  
+                    <asp:ContentPlaceHolder ID="content" runat="server" />
+                    <div id="divBotaoPesquisa" class="divBotaoPesquisa">
+                        <asp:LinkButton ID="btnBusca" runat="server" Style="margin: 0 auto;" OnClick="btnBusca_Click" ToolTip="Pesquisar">
+                            <img src='/Library/IMG/Gestor_IcoPesquisa.png' alt="Icone Pesquisa" title="Realiza uma Pesquisa a partir dos Parametros de Pesquisa Informado." />
+                            <asp:Label runat="server" ID="lblBtnSearchText" Text="Pesquisar"></asp:Label>
+                        </asp:LinkButton>
+                    </div>
+                </fieldset>
+            </div>
+            <!--<div id="divSeta">
+                <img src="/Library/IMG/Gestor_SetaBusca.png" alt="" />
+            </div>-->
+            <div id="divHeaderGrid">
+                <label class="lblHeaderGrid">GRADE DE RESULTADOS DA PESQUISA</label>                
+            </div>
+            <div id="divMsgGrid" class="divMsgGrid">
+                <asp:Label runat="server" ID="lblMensagGrid" CssClass="divMsgGrid" style="width:370px;float:left;margin-left:40px;"></asp:Label>
+            </div>
+            <div id="divGrid">
+                <fieldset runat="Server" id="fldGrid" class="fldGrid" visible="false">
+                        <legend>Resultado da Pesquisa</legend>                                                
+                        <asp:GridView runat="server" ID="grdBusca" CssClass="grdBusca" 
+                            AutoGenerateColumns="False" AllowPaging="True" OnPageIndexChanging="grdBusca_PageIndexChanging"
+                            OnRowDataBound="grdBusca_RowDataBound" OnDataBound="grdBusca_DataBound"
+                            OnRowEditing="grdBusca_RowEditing" EnableModelValidation="True" 
+                            PageSize="12">
+                            <RowStyle CssClass="rowStyle" />
+                            <AlternatingRowStyle CssClass="alternatingRowStyle" />
+                            <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
+                            <EmptyDataTemplate>
+                                Nenhum registro encontrado.<br />
+                            </EmptyDataTemplate>
+                            <PagerStyle CssClass="grdFooter" />
+                            <PagerTemplate>
+                                <table id="tblGridFooter" class="tblGridFooter">
+                                    <tr>
+                                        <td>
+                                            <asp:ImageButton runat="server" ID="btnFirst" CssClass="btnFirst" CommandName="Page"
+                                                Visible='<%# (grdBusca.PageIndex > 0) ? true : false %>' CommandArgument="First"
+                                                ImageUrl="~/Library/IMG/GridView/Gestor_GridFirst.png" />
+                                            <asp:ImageButton runat="server" ID="btnPrev" CssClass="btnPrev" CommandName="Page"
+                                                Visible='<%# (grdBusca.PageIndex > 0) ? true : false %>' CommandArgument="Prev"
+                                                ImageUrl="~/Library/IMG/GridView/Gestor_GridPrev.png" />
+                                            <span>Página:&nbsp;
+                                                <asp:DropDownList runat="server" ID="ddlGrdPaginas" OnSelectedIndexChanged="ddlGrdPaginas_SelectedIndexChanged"
+                                                    AutoPostBack="true">
+                                                </asp:DropDownList>
+                                                &nbsp;de
+                                                <%# grdBusca.PageCount %></span>
+                                            <asp:ImageButton runat="server" ID="btnNext" CssClass="btnNext" CommandName="Page"
+                                                Visible='<%# (grdBusca.PageIndex.Equals(grdBusca.PageCount - 1)) ? false : true %>'
+                                                CommandArgument="Next" ImageUrl="~/Library/IMG/GridView/Gestor_GridNext.png" />
+                                            <asp:ImageButton runat="server" ID="btnLast" CssClass="btnLast" CommandName="Page"
+                                                Visible='<%# (grdBusca.PageIndex.Equals(grdBusca.PageCount - 1)) ? false : true %>'
+                                                CommandArgument="Last" ImageUrl="~/Library/IMG/GridView/Gestor_GridLast.png" />
+                                            <span>
+                                                <%# String.Format("- Registro(s): de {0} até {1} de {2}",  
+                                                                    ((grdBusca.PageIndex * grdBusca.PageSize) == 0) ? 1 : (grdBusca.PageIndex * grdBusca.PageSize),
+                                                                    ((grdBusca.PageIndex * grdBusca.PageSize) + grdBusca.Rows.Count),
+                                                                    grdBusca.Rows.Count)%>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </PagerTemplate>
+                        </asp:GridView>
+                    </fieldset>
+            </div>
+            <div id="divBarraPesquisa" class="divBarraPesquisa">                            
+                <sab:BarraBusca ID="BarraBuscaRef" runat="server" />
+            </div>
+        </div>
+        <div id="divValidationSummary"  class="divValidationSummary ui-state-error ui-corner-all">
+            <div id="divButtons" class="divButtons">
+                <a id="lnkClose" class="lnkClose" title="Fechar" href="#">
+                    [x]</a>
+            </div>
+            <div id="divValidationSummaryContent">
+                <span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
+                <strong>Inconsistências Encontradas:</strong>
+            </div>
+            <asp:ValidationSummary ID="vsValidation" CssClass="vsValidation" runat="server" />
+            <asp:Label runat="server" ID="lblMensagemErro" CssClass="errorMessage"></asp:Label>
+            <asp:Label runat="server" ID="lblMensagemSucesso" CssClass="successMessage"></asp:Label>
+        </div>
+        <asp:HiddenField runat="server" ID="HFSelectedRow" EnableViewState="false" Value="-1" />
+        </form>
+    </div>
+
+    <script src="/Library/JS/jquery.form.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.ui.js" type="text/javascript"></script>
+    <script src="/Library/JS/ui.datepicker-pt-BR.js" type="text/javascript"></script>
+    <script src="/Library/JS/jquery.maskedinput-1.2.2.min.js" type="text/javascript"></script>
+    <script src="/Library/JS/FormValidation.js" type="text/javascript"></script>
+    <script src="/Library/JS/Grid.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $('.rowStyle, .alternatingRowStyle').dblclick(function() {
+            __doPostBack('ctl00$grdBusca', 'Edit$0');
+        });
+
+        $(document).ready(function() {
+            if ($(".grdBusca tbody tr").length == 1) {
+                setTimeout("$('.emptyDataRowStyle').fadeOut('slow', SetInputFocus)", 2500);
+            }
+        });
+
+        function SetInputFocus() { $('form:not(.filter) :input:visible:enabled:first').focus(); };
+
+        $(document).ready(function() {
+            $(".lnkClose").click(function(event) {
+                $(".divValidationSummary").attr("style", "display: none;");
+            });
+        });
+        </script>
+    <asp:ContentPlaceHolder ID="footer" runat="server" />
+</body>
+</html>

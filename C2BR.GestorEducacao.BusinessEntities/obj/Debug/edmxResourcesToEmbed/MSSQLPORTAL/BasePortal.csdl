@@ -1,0 +1,1834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDPRGEModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="BasePortal">
+    <EntitySet Name="GW000_USUARIOS" EntityType="BDPRGEModel.GW000_USUARIOS" />
+    <EntitySet Name="GW000_USUHISTPSW" EntityType="BDPRGEModel.GW000_USUHISTPSW" />
+    <EntitySet Name="GW000_USUXACESS" EntityType="BDPRGEModel.GW000_USUXACESS" />
+    <EntitySet Name="GW001_UNID_INFORM" EntityType="BDPRGEModel.GW001_UNID_INFORM" />
+    <EntitySet Name="GW002_UNID_GESTOR" EntityType="BDPRGEModel.GW002_UNID_GESTOR" />
+    <EntitySet Name="GW003_UNID_MIDIA" EntityType="BDPRGEModel.GW003_UNID_MIDIA" />
+    <EntitySet Name="GW004_UNID_PERFIL" EntityType="BDPRGEModel.GW004_UNID_PERFIL" />
+    <EntitySet Name="GW005_UNID_COLAB" EntityType="BDPRGEModel.GW005_UNID_COLAB" />
+    <EntitySet Name="GW006_UNID_COLAB_MATER" EntityType="BDPRGEModel.GW006_UNID_COLAB_MATER" />
+    <EntitySet Name="GW007_UNID_SERVI" EntityType="BDPRGEModel.GW007_UNID_SERVI" />
+    <EntitySet Name="GW008_UNID_CONCE" EntityType="BDPRGEModel.GW008_UNID_CONCE" />
+    <EntitySet Name="GW010_UF" EntityType="BDPRGEModel.GW010_UF" />
+    <EntitySet Name="GW011_CIDADE" EntityType="BDPRGEModel.GW011_CIDADE" />
+    <EntitySet Name="GW012_BAIRRO" EntityType="BDPRGEModel.GW012_BAIRRO" />
+    <EntitySet Name="GW013_CEP" EntityType="BDPRGEModel.GW013_CEP" />
+    <EntitySet Name="GW1000_GRAFI_FREQU_PRESE" EntityType="BDPRGEModel.GW1000_GRAFI_FREQU_PRESE" />
+    <EntitySet Name="GW1001_GRAFI_FREQU_FALTAS" EntityType="BDPRGEModel.GW1001_GRAFI_FREQU_FALTAS" />
+    <EntitySet Name="GW101_MODAL_ENSINO" EntityType="BDPRGEModel.GW101_MODAL_ENSINO" />
+    <EntitySet Name="GW102_SERIE_ENSINO" EntityType="BDPRGEModel.GW102_SERIE_ENSINO" />
+    <EntitySet Name="GW103_TURMA_ENSINO" EntityType="BDPRGEModel.GW103_TURMA_ENSINO" />
+    <EntitySet Name="GW104_MATERIAS" EntityType="BDPRGEModel.GW104_MATERIAS" />
+    <EntitySet Name="GW105_GRADE_MATER" EntityType="BDPRGEModel.GW105_GRADE_MATER" />
+    <EntitySet Name="GW106_GRADE_HORAR" EntityType="BDPRGEModel.GW106_GRADE_HORAR" />
+    <EntitySet Name="GW107_PLANO_AULAS" EntityType="BDPRGEModel.GW107_PLANO_AULAS" />
+    <EntitySet Name="GW108_ATIVID_CASA" EntityType="BDPRGEModel.GW108_ATIVID_CASA" />
+    <EntitySet Name="GW109_PROVAS_TURMA" EntityType="BDPRGEModel.GW109_PROVAS_TURMA" />
+    <EntitySet Name="GW110_CALENDARIO" EntityType="BDPRGEModel.GW110_CALENDARIO" />
+    <EntitySet Name="GW111_MSG_UNIDAD" EntityType="BDPRGEModel.GW111_MSG_UNIDAD" />
+    <EntitySet Name="GW112_CALEND_TIPO" EntityType="BDPRGEModel.GW112_CALEND_TIPO" />
+    <EntitySet Name="GW113_ATIVI_AULA" EntityType="BDPRGEModel.GW113_ATIVI_AULA" />
+    <EntitySet Name="GW114_ATIVI_ESCOL" EntityType="BDPRGEModel.GW114_ATIVI_ESCOL" />
+    <EntitySet Name="GW115_PLANO_AULA_CONTE_BIBLI" EntityType="BDPRGEModel.GW115_PLANO_AULA_CONTE_BIBLI" />
+    <EntitySet Name="GW116_TEMPO_AULA" EntityType="BDPRGEModel.GW116_TEMPO_AULA" />
+    <EntitySet Name="GW130_INFOR_RESPON" EntityType="BDPRGEModel.GW130_INFOR_RESPON" />
+    <EntitySet Name="GW150_INFOR_ALUNO" EntityType="BDPRGEModel.GW150_INFOR_ALUNO" />
+    <EntitySet Name="GW151_DADOS_MATRIC" EntityType="BDPRGEModel.GW151_DADOS_MATRIC" />
+    <EntitySet Name="GW152_ALUNO_FREQU" EntityType="BDPRGEModel.GW152_ALUNO_FREQU" />
+    <EntitySet Name="GW153_ATIVID_ALUNO" EntityType="BDPRGEModel.GW153_ATIVID_ALUNO" />
+    <EntitySet Name="GW154_PROVAS_ALUNO" EntityType="BDPRGEModel.GW154_PROVAS_ALUNO" />
+    <EntitySet Name="GW155_HISTOR_ALUNO" EntityType="BDPRGEModel.GW155_HISTOR_ALUNO" />
+    <EntitySet Name="GW156_OCORR_ALUNO" EntityType="BDPRGEModel.GW156_OCORR_ALUNO" />
+    <EntitySet Name="GW157_CUIDAD_SAUDE" EntityType="BDPRGEModel.GW157_CUIDAD_SAUDE" />
+    <EntitySet Name="GW158_OCORR_SAUDE" EntityType="BDPRGEModel.GW158_OCORR_SAUDE" />
+    <EntitySet Name="GW159_ALTER_ENDER" EntityType="BDPRGEModel.GW159_ALTER_ENDER" />
+    <EntitySet Name="GW201_AREA_CONHEC" EntityType="BDPRGEModel.GW201_AREA_CONHEC" />
+    <EntitySet Name="GW202_CLASS_CONHEC" EntityType="BDPRGEModel.GW202_CLASS_CONHEC" />
+    <EntitySet Name="GW203_EDITORA" EntityType="BDPRGEModel.GW203_EDITORA" />
+    <EntitySet Name="GW204_AUTOR" EntityType="BDPRGEModel.GW204_AUTOR" />
+    <EntitySet Name="GW205_ACERVO_BIBL" EntityType="BDPRGEModel.GW205_ACERVO_BIBL" />
+    <EntitySet Name="GW206_ACERVO_AULA" EntityType="BDPRGEModel.GW206_ACERVO_AULA" />
+    <EntitySet Name="GW211_RESER_BIBL" EntityType="BDPRGEModel.GW211_RESER_BIBL" />
+    <EntitySet Name="GW212_EMPREST_BIBL" EntityType="BDPRGEModel.GW212_EMPREST_BIBL" />
+    <EntitySet Name="GW301_REFEICOES" EntityType="BDPRGEModel.GW301_REFEICOES" />
+    <EntitySet Name="GW302_REFEI_INGRED" EntityType="BDPRGEModel.GW302_REFEI_INGRED" />
+    <EntitySet Name="GW303_CALEND_REFEI" EntityType="BDPRGEModel.GW303_CALEND_REFEI" />
+    <EntitySet Name="GW304_SUGEST_REFEI" EntityType="BDPRGEModel.GW304_SUGEST_REFEI" />
+    <EntitySet Name="GW305_RESTR_ALIMEN" EntityType="BDPRGEModel.GW305_RESTR_ALIMEN" />
+    <EntitySet Name="GW306_REFEIC_USR" EntityType="BDPRGEModel.GW306_REFEIC_USR" />
+    <EntitySet Name="GW401_LINHA_TRANSP" EntityType="BDPRGEModel.GW401_LINHA_TRANSP" />
+    <EntitySet Name="GW402_LINHA_USR" EntityType="BDPRGEModel.GW402_LINHA_USR" />
+    <EntitySet Name="GW451_ROTA_TRANSP" EntityType="BDPRGEModel.GW451_ROTA_TRANSP" />
+    <EntitySet Name="GW452_ROTA_ITENS" EntityType="BDPRGEModel.GW452_ROTA_ITENS" />
+    <EntitySet Name="GW452_ROTA_USR" EntityType="BDPRGEModel.GW452_ROTA_USR" />
+    <EntitySet Name="GW501_TIPO_SOLIC" EntityType="BDPRGEModel.GW501_TIPO_SOLIC" />
+    <EntitySet Name="GW502_SOLIC_USR" EntityType="BDPRGEModel.GW502_SOLIC_USR" />
+    <EntitySet Name="GW551_FREQU" EntityType="BDPRGEModel.GW551_FREQU" />
+    <EntitySet Name="GW551_LANCA_FREQU" EntityType="BDPRGEModel.GW551_LANCA_FREQU" />
+    <EntitySet Name="GW552_LANCA_NOTA" EntityType="BDPRGEModel.GW552_LANCA_NOTA" />
+    <EntitySet Name="GW552_NOTA" EntityType="BDPRGEModel.GW552_NOTA" />
+    <EntitySet Name="GW554_ATIV_PROF_TURMA" EntityType="BDPRGEModel.GW554_ATIV_PROF_TURMA" />
+    <EntitySet Name="GW555_END_NOVO" EntityType="BDPRGEModel.GW555_END_NOVO" />
+    <EntitySet Name="GW601_HISTO_DESEMP" EntityType="BDPRGEModel.GW601_HISTO_DESEMP" />
+    <EntitySet Name="GW602_BOLET_ESCOL" EntityType="BDPRGEModel.GW602_BOLET_ESCOL" />
+    <EntitySet Name="GW603_DADO_BOLETO" EntityType="BDPRGEModel.GW603_DADO_BOLETO" />
+    <EntitySet Name="GW700_INSTITUICAO" EntityType="BDPRGEModel.GW700_INSTITUICAO" />
+    <EntitySet Name="GW800_FALE_CONOSCO" EntityType="BDPRGEModel.GW800_FALE_CONOSCO" />
+    <EntitySet Name="GW801_SMS" EntityType="BDPRGEModel.GW801_SMS" />
+    <EntitySet Name="GW802_ARQUIVOS" EntityType="BDPRGEModel.GW802_ARQUIVOS" />
+    <EntitySet Name="GW803_ASSUN_CONTA" EntityType="BDPRGEModel.GW803_ASSUN_CONTA" />
+    <EntitySet Name="GW804_MIDIAS" EntityType="BDPRGEModel.GW804_MIDIAS" />
+    <EntitySet Name="GW805_CLASSI_MATER" EntityType="BDPRGEModel.GW805_CLASSI_MATER" />
+    <EntitySet Name="GW806_CLASS_MIDIA" EntityType="BDPRGEModel.GW806_CLASS_MIDIA" />
+    <EntitySet Name="GW807_MURAL" EntityType="BDPRGEModel.GW807_MURAL" />
+    <EntitySet Name="GW808_EVENTOS_SOCIAS" EntityType="BDPRGEModel.GW808_EVENTOS_SOCIAS" />
+    <EntitySet Name="GW809_AULAS" EntityType="BDPRGEModel.GW809_AULAS" />
+    <EntitySet Name="GW901_TIPO_LOGRADOURO" EntityType="BDPRGEModel.GW901_TIPO_LOGRADOURO" />
+    <EntitySet Name="GW902_TIPO_OCORR" EntityType="BDPRGEModel.GW902_TIPO_OCORR" />
+    <EntitySet Name="GW903_TIPO_ATIVI" EntityType="BDPRGEModel.GW903_TIPO_ATIVI" />
+  </EntityContainer>
+  <EntityType Name="GW000_USUARIOS">
+    <Key>
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_UNID" Nullable="false" />
+    <Property Type="String" Name="TP_USUARIO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_USUARIO" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_LOGIN_USUARIO" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VL_SENHA_USUARIO" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VL_CONTR_SENHA_USR" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_EXPIR_SENHA_USR" Nullable="false" />
+    <Property Type="String" Name="NR_IP_FIXO_USR" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_USR" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_NASCI_USR" Nullable="false" />
+    <Property Type="String" Name="NM_MAE_USR" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_MATRI_USR" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NR_CPF_USR" Precision="11" Scale="0" />
+    <Property Type="String" Name="FL_USR_BIBLIOTECA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_USR_MERENDA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_USR_TRANSP_ESCOL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_USR_REDE_RELAC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_USUARIO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" />
+    <Property Type="Int32" Name="ID_INFORM_RESP" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" />
+    <Property Type="String" Name="DE_EMAIL_USR" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAS_USR" Nullable="false" />
+    <Property Type="String" Name="NR_TELEF_USR" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_STATUS_USR" Nullable="false" />
+    <Property Type="Int32" Name="QT_SMS_MAXIM_USR" />
+    <Property Type="Int32" Name="QT_SMS_MES_USR" />
+    <Property Type="Int32" Name="QT_SMS_TOTAL_USR" />
+  </EntityType>
+  <EntityType Name="GW000_USUHISTPSW">
+    <Key>
+      <PropertyRef Name="ID_PSW_ANTIGAS" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_PSW_ANTIGAS" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="DateTime" Name="DT_INICIO_PSW_ANTIGA" Nullable="false" />
+    <Property Type="DateTime" Name="DT_TERMI_PSW_ANTIGA" Nullable="false" />
+    <Property Type="String" Name="VL_SENHA_ANTIGA" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW000_USUXACESS">
+    <Key>
+      <PropertyRef Name="DT_ACESSO_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="DateTime" Name="DT_ACESSO_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="String" Name="CO_IP_ACESSO_USR" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="HR_INICIO_ACESSO_USR" Nullable="false" />
+    <Property Type="Int32" Name="NR_ACESSO_USR" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW001_UNID_INFORM">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="NR_NIS_UNID" Nullable="false" />
+    <Property Type="String" Name="TP_UNID" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_REDUZ_UNID" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_UNID" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_COMPL_UNID" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_BAIRR_UNID" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_CIDAD_UNID" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_ESTAD_UNID" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_CEP_UNID" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_GERAL_UNID" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_DIRET_UNID" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_COORD_UNID" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_SECRE_UNID" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_GERAL_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_DIRET_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_COORD_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_SECRET_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_WEB_PAGE_UNID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_MUNIC_IBGE_UNID" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_FOTO_UNID" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_MANHA_ENTRA" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_MANHA_SAIDA" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_TARDE_ENTRA" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_TARDE_SAIDA" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_NOITE_ENTRA" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_NOITE_SAIDA" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_QUEM_SOMOS" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_NOSSA_HISTO" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_PROPO_PEDAG" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_DIRET" />
+    <Property Type="Int32" Name="CO_SECT" />
+    <Property Type="String" Name="FL_TIPO_NOTA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_PERIO_INICI_BIM1" />
+    <Property Type="DateTime" Name="DT_PERIO_INICI_BIM2" />
+    <Property Type="DateTime" Name="DT_PERIO_INICI_BIM3" />
+    <Property Type="DateTime" Name="DT_PERIO_INICI_BIM4" />
+    <Property Type="DateTime" Name="DT_PERIO_FINAL_BIM1" />
+    <Property Type="DateTime" Name="DT_PERIO_FINAL_BIM2" />
+    <Property Type="DateTime" Name="DT_PERIO_FINAL_BIM3" />
+    <Property Type="DateTime" Name="DT_PERIO_FINAL_BIM4" />
+    <Property Type="DateTime" Name="DT_LACTO_INICI_BIM1" />
+    <Property Type="DateTime" Name="DT_LACTO_INICI_BIM2" />
+    <Property Type="DateTime" Name="DT_LACTO_INICI_BIM3" />
+    <Property Type="DateTime" Name="DT_LACTO_INICI_BIM4" />
+    <Property Type="DateTime" Name="DT_LACTO_FINAL_BIM1" />
+    <Property Type="DateTime" Name="DT_LACTO_FINAL_BIM2" />
+    <Property Type="DateTime" Name="DT_LACTO_FINAL_BIM3" />
+    <Property Type="DateTime" Name="DT_LACTO_FINAL_BIM4" />
+  </EntityType>
+  <EntityType Name="GW002_UNID_GESTOR">
+    <Key>
+      <PropertyRef Name="ID_UNID_GESTOR" />
+    </Key>
+    <Property Type="Int32" Name="ID_UNID_GESTOR" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_GESTOR" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_APELIDO_GESTOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_CARGO_GESTOR" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_CELUL_GESTOR" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_FIXO_GESTOR" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_GESTOR" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_FOTO_GESTOR" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_INICI_ATIVI" />
+    <Property Type="DateTime" Name="DT_TERMI_ATIVI" />
+  </EntityType>
+  <EntityType Name="GW003_UNID_MIDIA">
+    <Key>
+      <PropertyRef Name="ID_UNID_MIDIA" />
+    </Key>
+    <Property Type="Int32" Name="ID_UNID_MIDIA" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="CO_TIPO_MIDIA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_MIDIA" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAS_MIDIA" Nullable="false" />
+    <Property Type="String" Name="FL_SITUA_MIDIA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_SITUA_MIDIA" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW004_UNID_PERFIL">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="CO_TIPO_UNIDA" />
+      <PropertyRef Name="CO_TIPO_OCUPA" />
+      <PropertyRef Name="CO_FLAG_BIBLI" />
+      <PropertyRef Name="CO_FLAG_ENERG" />
+      <PropertyRef Name="CO_FLAG_ESPOR" />
+      <PropertyRef Name="CO_FLAG_ESTAC" />
+      <PropertyRef Name="CO_TERRE_TIPO" />
+      <PropertyRef Name="CO_TERRE_TIPO_DELIM" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="CO_TIPO_UNIDA" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_OCUPA" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_FLAG_BIBLI" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_FLAG_ENERG" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_FLAG_ESPOR" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_FLAG_ESTAC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_TERRE_TIPO" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_TERRE_TIPO_DELIM" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="QT_TERRE_AREA_CONST" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="QT_TERRE_AREA_LIVRE" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="QT_TERRE_AREA_TOTAL" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="QT_TERRE_AREA_VERDE" Precision="18" Scale="2" />
+    <Property Type="String" Name="DE_TERRE_AVALI" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TERRE_LATITU_NUMER" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TERRE_LATITU_SIGLA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_TERRE_LONGI_NUMER" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TERRE_LONGI_SIGLA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_TERRE_OBSER" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW005_UNID_COLAB">
+    <Key>
+      <PropertyRef Name="ID_INSTIT" />
+      <PropertyRef Name="ID_CODIG_COLAB" />
+    </Key>
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" Nullable="false" />
+    <Property Type="Int32" Name="CO_UNID_FUNC" Nullable="false" />
+    <Property Type="String" Name="CO_MATRI_COLAB" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TP_COLAB" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_CPF_COLAB" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_COMPL_COLAB" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_APELID_COLAB" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_NASCIM_COLAB" Nullable="false" />
+    <Property Type="String" Name="CO_SEXO_COLAB" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_NATUR_LOCAL_COLAB" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_NATUR_UF_COLAB" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_ESTAD_CIVIL_COLAB" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_BAIRRO_COLAB" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_COLAB" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_COLAB" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_CELUL_COLAB" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_IMAG_COLAB" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SITUA_COLAB" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_SITUA_COLAB" Nullable="false" />
+    <Property Type="String" Name="CO_SANGU_FATOR_COLAB" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SANGU_TIPO_COLAB" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_GRAU_INSTR_COLAB" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_GRAU_INSTR_COLAB" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_CURSO_FORM_COLAB" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_TRABA_COLAB" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_RAMAL_COLAB" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_RG_NUMER_COLAB" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_RG_ORGAO_COLAB" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_RG_EMISSA_COLAB" />
+    <Property Type="String" Name="CO_RG_ESTAD_COLAB" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_PASSA_NUMER_COLAB" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_PASSA_PAIS_COLAB" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TITUL_NUMER_COLAB" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TITUL_SECAO_COLAB" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TITUL_ZONA_COLAB" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_TITUL_CIDAD_COLAB" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_TITUL_ESTAD_COLAB" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_CARTEI_SAUDE_COLAB" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_CONJU_COLAB" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CONJU_NASCI_COLAB" />
+    <Property Type="String" Name="CO_CONJU_SEXO_COLAB" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_CONJU_CPF_COLAB" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_CONJU_SANGU_TIPO_COLAB" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_CONJU_SANGU_FATOR_COLAB" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_CEP_COLAB" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_COLAB" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NU_ENDER_NUMER_COLAB" Precision="5" Scale="0" />
+    <Property Type="String" Name="DE_ENDER_COMPL_COLAB" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ENDER_BAIRR_COLAB" />
+    <Property Type="Int32" Name="CO_ENDER_CIDAD_COLAB" />
+    <Property Type="String" Name="CO_ENDER_ESTAD_COLAB" MaxLength="2" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW006_UNID_COLAB_MATER">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_UNID_COLAB_MATER" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_UNID_COLAB_MATER" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_ANO_REF" Nullable="false" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATER_COLAB" />
+    <Property Type="String" Name="CO_CLASS_COLAB" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_INICIO_COLAB" />
+    <Property Type="DateTime" Name="DT_FINAL_COLAB" />
+    <Property Type="String" Name="DE_OBSER_COLAB" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SITUA_COLAB" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW007_UNID_SERVI">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="CO_SERVI_ATIVI_COMUN" />
+      <PropertyRef Name="CO_SERVI_COLET_LIXO" />
+      <PropertyRef Name="CO_SERVI_CLINI" />
+      <PropertyRef Name="CO_SERVI_ODONT" />
+      <PropertyRef Name="CO_SERVI_TRANSP_ESCOL" />
+      <PropertyRef Name="CO_SERVI_TRANSP_FUNCI" />
+      <PropertyRef Name="CO_SERVI_MEREN" />
+      <PropertyRef Name="CO_SERVI_VIGIA" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="CO_SERVI_ATIVI_COMUN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SERVI_COLET_LIXO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SERVI_CLINI" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SERVI_ODONT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SERVI_TRANSP_ESCOL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="QT_SERVI_TRANSP_ESCOL" />
+    <Property Type="String" Name="CO_SERVI_TRANSP_FUNCI" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="QT_SERVI_TRANSP_FUNCI" />
+    <Property Type="String" Name="CO_SERVI_MEREN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="QT_SERVI_MEREN_CAPAC" />
+    <Property Type="String" Name="CO_SERVI_VIGIA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SERVI_ARMAR" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW008_UNID_CONCE">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_UNID_CONCE" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_CONCE" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VL_NOTA_MIN" Nullable="false" Precision="4" Scale="2" />
+    <Property Type="Decimal" Name="VL_NOTA_MAX" Nullable="false" Precision="4" Scale="2" />
+    <Property Type="Int32" Name="ID_REGISTRO" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW010_UF">
+    <Key>
+      <PropertyRef Name="CODUF" />
+    </Key>
+    <Property Type="String" Name="CODUF" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DESCRICAOUF" MaxLength="30" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW011_CIDADE">
+    <Key>
+      <PropertyRef Name="CO_CIDADE" />
+    </Key>
+    <Property Type="Int32" Name="CO_CIDADE" Nullable="false" />
+    <Property Type="String" Name="NO_CIDADE" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_UF" MaxLength="2" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW012_BAIRRO">
+    <Key>
+      <PropertyRef Name="CO_BAIRRO" />
+    </Key>
+    <Property Type="Int32" Name="CO_BAIRRO" Nullable="false" />
+    <Property Type="Int32" Name="CO_CIDADE" Nullable="false" />
+    <Property Type="String" Name="NO_BAIRRO" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_UF" MaxLength="2" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW013_CEP">
+    <Key>
+      <PropertyRef Name="CO_CEP" />
+    </Key>
+    <Property Type="Int32" Name="CO_CEP" Nullable="false" />
+    <Property Type="String" Name="DE_TIPO_LOGRA" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_ENDER_CEP" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_CIDAD_CEP" Nullable="false" />
+    <Property Type="Int32" Name="CO_BAIRR_CEP" Nullable="false" />
+    <Property Type="Decimal" Name="NR_LATIT_CEP" Precision="10" Scale="7" />
+    <Property Type="String" Name="TP_LATIT_CEP" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="NR_LONGI_CEP" Precision="10" Scale="7" />
+    <Property Type="String" Name="TP_LONGI_CEP" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW1000_GRAFI_FREQU_PRESE">
+    <Key>
+      <PropertyRef Name="ID_UNIDADE" />
+      <PropertyRef Name="ID_TURMA" />
+      <PropertyRef Name="CO_ANO_REF" />
+    </Key>
+    <Property Type="Int32" Name="ID_UNIDADE" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA" Nullable="false" />
+    <Property Type="Int32" Name="CO_ANO_REF" Nullable="false" />
+    <Property Type="Decimal" Name="B1_PORCE_FALTAS" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="B1_PORCE_PRESEN" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="B1_PORCE_ATESTA" Precision="5" Scale="2" />
+    <Property Type="String" Name="B2_PORCE_FALTAS" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B2_PORCE_PRESEN" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B2_PORCE_ATESTA" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B3_PORCE_FALTAS" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B3_PORCE_PRESEN" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B3_PORCE_ATESTA" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B4_PORCE_FALTAS" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B4_PORCE_PRESEN" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="B4_PORCE_ATESTA" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GW1001_GRAFI_FREQU_FALTAS">
+    <Key>
+      <PropertyRef Name="ID_ALUNO" />
+      <PropertyRef Name="NU_MATRICULA" />
+    </Key>
+    <Property Type="Int32" Name="ID_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NU_MATRICULA" Nullable="false" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="FALTAS_B1" />
+    <Property Type="Int32" Name="FALTAS_B2" />
+    <Property Type="Int32" Name="FALTAS_B3" />
+    <Property Type="Int32" Name="FALTAS_B4" />
+  </EntityType>
+  <EntityType Name="GW101_MODAL_ENSINO">
+    <Key>
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+    </Key>
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_MODAL" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_MODAL" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_MODAL" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NR_IMPRE_MODAL" Precision="2" Scale="0" />
+  </EntityType>
+  <EntityType Name="GW102_SERIE_ENSINO">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_SERIE" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_SERIE" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_SERIE" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NR_IMPRE_SERIE" Precision="2" Scale="0" />
+    <Property Type="String" Name="CO_PARAM_FREQ_TIPO" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW103_TURMA_ENSINO">
+    <Key>
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+    </Key>
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_TURMA" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_TURMA" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_TURMA" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NR_IMPRE_TURMA" Precision="2" Scale="0" />
+    <Property Type="String" Name="CO_MULTI_SERIE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_IDENT_SALA_AULA" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_REFER_SALA_AULA" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_RESP_UNICO_TURMA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="IM_FOTO1" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IM_FOTO2" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="QT_ALUNO_TURMA" />
+    <Property Type="String" Name="CO_PERI_TUR" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW104_MATERIAS">
+    <Key>
+      <PropertyRef Name="ID_MATERIA" />
+    </Key>
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_MATER" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_MATER" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_MATER" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="CO_CLASS_BOLETIM" Nullable="false" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="GW105_GRADE_MATER">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_GRADE_MATER" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_GRADE_MATER" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_CLASS_APLIC_MATER" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="QT_AULAS_ANO_MATER" Precision="4" Scale="0" />
+    <Property Type="Decimal" Name="QT_HORAS_ANO_MATER" Precision="4" Scale="0" />
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW106_GRADE_HORAR">
+    <Key>
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_GRADE_MATER" />
+      <PropertyRef Name="CO_DIA_SEMAN_HORAR" />
+      <PropertyRef Name="TP_TURNO" />
+      <PropertyRef Name="NR_TEMPO_AULA_HORAR" />
+      <PropertyRef Name="CO_ANOREF_HORAR" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_GRADE_MATER" Nullable="false" />
+    <Property Type="Decimal" Name="CO_DIA_SEMAN_HORAR" Nullable="false" Precision="1" Scale="0" />
+    <Property Type="String" Name="TP_TURNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="NR_TEMPO_AULA_HORAR" Nullable="false" Precision="1" Scale="0" />
+    <Property Type="Decimal" Name="CO_ANOREF_HORAR" Nullable="false" Precision="4" Scale="0" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="HR_INICIO_AULA_HORAR" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_TERMI_AULA_HORAR" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW107_PLANO_AULAS">
+    <Key>
+      <PropertyRef Name="ID_PLANO_AULA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+      <PropertyRef Name="ID_MATERIA" />
+    </Key>
+    <Property Type="Int32" Name="ID_PLANO_AULA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_PLANO_AULA" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_PLANEJ_ATIVI_PLANO" Nullable="false" />
+    <Property Type="Decimal" Name="QT_PLANEJ_HORAS_ATIVI_PLANO" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="ID_PROFE_REALIZ_ATIVI_PLANO" Nullable="false" />
+    <Property Type="String" Name="HR_INICI_AULA_PLANE" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_FIM_AULA_PLANE" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ANO_REF_PLA" Nullable="false" />
+    <Property Type="String" Name="DE_TITUL_ATIVI_PLANO" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBJET_ATIVI_PLANO" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_METOD_ATIVI_PLANO" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_MATER_ATIVI_PLANO" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_REALIZ_ATIVI_PLANO" />
+    <Property Type="String" Name="HR_REALIZ_ATIVI_PLANO" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="QT_REALIZ_HORAS_ATIVI_PLANO" Precision="5" Scale="2" />
+    <Property Type="String" Name="DE_CONTE_REALIZ_ATIVI_PLANO" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NU_TEMP_PLA_AULA" />
+    <Property Type="String" Name="CO_STATUS_ATIVI_PLANO" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_ACERVO_AULA" />
+    <Property Type="Int32" Name="ID_TIPO_ATIV" />
+  </EntityType>
+  <EntityType Name="GW108_ATIVID_CASA">
+    <Key>
+      <PropertyRef Name="ID_ATIVI_CASA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+    </Key>
+    <Property Type="Int32" Name="ID_ATIVI_CASA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="DateTime" Name="DT_ATIVI_CASA" Nullable="false" />
+    <Property Type="DateTime" Name="DT_LANCA_ATIVI_CASA" Nullable="false" />
+    <Property Type="DateTime" Name="DT_PRAZO_ATIVI_CASA" />
+    <Property Type="String" Name="DE_TITULO_ATIVI_CASA" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBJET_ATIVI_CASA" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_PESQU_ATIVI_CASA" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_PROFES_ATIVI_CASA" Nullable="false" />
+    <Property Type="String" Name="CO_STATUS_ATIVI_CASA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_TIPO_AVALI_ATIVI_CASA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_MATERIA" />
+  </EntityType>
+  <EntityType Name="GW109_PROVAS_TURMA">
+    <Key>
+      <PropertyRef Name="ID_PROVA_TURMA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="ID_MODAL_ENSINO" />
+      <PropertyRef Name="ID_SERIE_ENSINO" />
+      <PropertyRef Name="ID_TURMA_ENSINO" />
+    </Key>
+    <Property Type="Int32" Name="ID_PROVA_TURMA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_COLAB_REALIZ_PROVA" />
+    <Property Type="DateTime" Name="DT_PROVA_TURMA" Nullable="false" />
+    <Property Type="Decimal" Name="NU_TEMPO_AULA" Precision="1" Scale="0" />
+    <Property Type="String" Name="HR_PROVA_INICIO" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_PROVA_FIM" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_PROVA_TURMA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_CONTE_PROVA" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TIPO_PROVA" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_REALIZ_PROVA_TURMA" />
+    <Property Type="Int32" Name="ID_MATERIA" />
+    <Property Type="Int32" Name="CO_ANO_REF" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW110_CALENDARIO">
+    <Key>
+      <PropertyRef Name="ID_CALEN_ATIVID" />
+    </Key>
+    <Property Type="Int32" Name="ID_CALEN_ATIVID" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_CALEND" Nullable="false" />
+    <Property Type="Int32" Name="ID_CALEND_TIPO" Nullable="false" />
+    <Property Type="String" Name="TP_DIA_ATIVID_CALEND" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_ATIVID_CALEND" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBSER_ATIVID_CALEND" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_ATIVID_CALEND" Nullable="false" />
+    <Property Type="DateTime" Name="HR_ATIVID_CALEND" />
+    <Property Type="String" Name="DE_URL_ATIVID_CALEND" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW111_MSG_UNIDAD">
+    <Key>
+      <PropertyRef Name="ID_MSG_UNIDADE" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+    </Key>
+    <Property Type="Int32" Name="ID_MSG_UNIDADE" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_MSGUNID" />
+    <Property Type="String" Name="TP_MSG_UNIDAD" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAS_MSG_UNIDAD" Nullable="false" />
+    <Property Type="DateTime" Name="DT_INICIO_PUBLIC_MSG" Nullable="false" />
+    <Property Type="DateTime" Name="DT_TERMIN_PUBLIC_MSG" />
+    <Property Type="String" Name="DE_MSG_UNIDAD" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_URL_MSG_UNIDAD" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW112_CALEND_TIPO">
+    <Key>
+      <PropertyRef Name="ID_CALEND_TIPO" />
+    </Key>
+    <Property Type="Int32" Name="ID_CALEND_TIPO" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_CALEND_TIPO" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW113_ATIVI_AULA">
+    <Key>
+      <PropertyRef Name="ID_ATIVI_AULA" />
+    </Key>
+    <Property Type="Int32" Name="ID_ATIVI_AULA" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA" Nullable="false" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" Nullable="false" />
+    <Property Type="Int32" Name="ID_RESPO_COLAB" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATER" Nullable="false" />
+    <Property Type="Int32" Name="ID_PLANO_AULA" />
+    <Property Type="DateTime" Name="DT_REALI_ATIVI" Nullable="false" />
+    <Property Type="String" Name="NO_TEMPO_AULA" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_TEMA_AULA" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_AULA_PLANE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_REGIS_ATVI" Nullable="false" />
+    <Property Type="Int32" Name="NU_SEMES_LETIV" />
+    <Property Type="String" Name="HR_INICI_ATIVI" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_TERMI_ATIVI" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_RESUMO_ATIVI" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ANO_REF" />
+    <Property Type="String" Name="FL_LANCA_NOTA" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW114_ATIVI_ESCOL">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Type="Int32" Name="ID_ATIV_ESCOLA" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+    <Property Type="String" Name="DE_TIPO" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ATIVI_ESCOLA" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAS" />
+    <Property Type="String" Name="FL_AVALI" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="VL_NOTA_AVALI" Precision="4" Scale="2" />
+    <Property Type="DateTime" Name="DT_PREVI_AVALI" />
+    <Property Type="DateTime" Name="DT_ENTRE_AVALI" />
+    <Property Type="String" Name="FL_JUSTI_AVALI" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_JUSTI_AVALI" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ANO_REF" />
+    <Property Type="Int32" Name="ID_REGISTRO" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW115_PLANO_AULA_CONTE_BIBLI">
+    <Key>
+      <PropertyRef Name="ID_PLANO_AULA" />
+      <PropertyRef Name="ID_REFER_CONTE" />
+    </Key>
+    <Property Type="Int32" Name="ID_PLANO_AULA" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_CONTE" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_REFER_CONTE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_TITUL_REFER_CONTE" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_REFER_CONTE" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_NIVEL_APREN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_LINK_EXTER" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW116_TEMPO_AULA">
+    <Key>
+      <PropertyRef Name="ID_TEMPO_AULA" />
+    </Key>
+    <Property Type="Int32" Name="ID_TEMPO_AULA" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="String" Name="TP_TURNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="NR_TEMPO" Nullable="false" />
+    <Property Type="String" Name="HR_INICIO" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_TERMI" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" MaxLength="14" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW130_INFOR_RESPON">
+    <Key>
+      <PropertyRef Name="ID_INFORM_RESP" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFORM_RESP" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_RESP" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_NIS_RESP" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_FOTO_RESP" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_RESP" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_APELID_RESP" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SEXO_RESP" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_NASC_RESP" Nullable="false" />
+    <Property Type="String" Name="NO_CIDA_RESP" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_ESTA_RESP" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SANGU_TIPO_RESP" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SANGU_FATOR_RESP" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ESTAD_CIVIL_RESP" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_GRAU_INSTR_RESP" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_GRAU_INSTR_RESP" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_CURSO_FORM_RESP" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_FIXO_RESP" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_CELUL_RESP" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_TRABA_RESP" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_RAMAL_RESP" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_RESP" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_CPF_RESP" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_CARTEI_SAUDE_RESP" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_RG_NUMER_RESP" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_RG_ORGAO_RESP" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_RG_EMISSA_RESP" />
+    <Property Type="String" Name="CO_RG_ESTAD_RESP" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_PASSA_NUMER_RESP" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_PASSA_PAIS_RESP" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TITUL_NUMER_RESP" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TITUL_SECAO_RESP" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TITUL_ZONA_RESP" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_TITUL_CIDAD_RESP" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_TITUL_ESTAD_RESP" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_CONJU_RESP" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CONJU_NASCI_RESP" />
+    <Property Type="String" Name="CO_CONJU_SEXO_RESP" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_CONJU_CPF_RESP" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_CONJU_SANGU_TIPO_RESP" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_CONJU_SANGU_FATOR_RESP" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_CEP_RESP" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_RESP" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NU_ENDER_NUMER_RESP" Precision="5" Scale="0" />
+    <Property Type="String" Name="DE_ENDER_COMPL_RESP" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ENDER_BAIRR_RESP" Nullable="false" />
+    <Property Type="Int32" Name="CO_ENDER_CIDAD_RESP" Nullable="false" />
+    <Property Type="String" Name="CO_ENDER_ESTAD_RESP" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_LATIT_RESP" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_LONGI_RESP" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SITUA_RESP" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW150_INFOR_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_ALUNO" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Double" Name="NR_NIS_ALUNO" />
+    <Property Type="Int32" Name="NR_NIRE_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NO_ALUNO" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_APELIDO_ALUNO" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_NASC_ALUNO" Nullable="false" />
+    <Property Type="String" Name="CO_SEXO_ALUNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_DEFIC_ALUNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_DEFIC_ALUNO" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_ALUNO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_COMPL_ALUNO" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_BAIRR_ALUNO" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_CIDAD_ALUNO" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_ESTAD_ALUNO" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_CEP_ALUNO" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_FIXO_ALUNO" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_CELUL_ALUNO" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_GRAU_PAREN_ALUNO" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_ALUNO" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SITUA_ALUNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_FOTO_ALUNO" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_SANGUE_ALUNO" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_SANGUE_ALUNO" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_NATU_ALUNO" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_UF_NATU_ALUNO" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFORM_RESP" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW151_DADOS_MATRIC">
+    <Key>
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+      <PropertyRef Name="NR_MATRIC" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NR_MATRIC" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_TURNO_MATRIC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_MATRIC" Nullable="false" />
+    <Property Type="Decimal" Name="NR_PAUTA_CHAMA" Precision="2" Scale="0" />
+    <Property Type="Decimal" Name="NR_POSIC_SALA" Precision="2" Scale="0" />
+    <Property Type="Int32" Name="CO_ANO_REF" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" />
+    <Property Type="String" Name="CO_SITUA_MATRIC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW152_ALUNO_FREQU">
+    <Key>
+      <PropertyRef Name="ID_FREQ_ALUNO" />
+    </Key>
+    <Property Type="Int32" Name="ID_FREQ_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATER" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_TEMA_AULA" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_FREQU_ALUNO" Nullable="false" />
+    <Property Type="String" Name="HR_INICI_ATIVI" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="HR_FIM_ATIVI" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_MATRIC" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TP_FREQU_ALUNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="QT_CARGA_HORAR" Nullable="false" />
+    <Property Type="String" Name="FL_JUSTIF_FREQU" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_CLASS_FREQU" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="NR_TEMPO_AULA_FREQU" Nullable="false" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="GW153_ATIVID_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_ATIVI_ALUNO" />
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+      <PropertyRef Name="NR_MATRIC" />
+    </Key>
+    <Property Type="Int32" Name="ID_ATIVI_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NR_MATRIC" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_ENTRE_ATIVI_ALUNO" Nullable="false" />
+    <Property Type="DateTime" Name="HR_ENTRE_ATIVI_ALUNO" />
+    <Property Type="String" Name="DE_OBSER_ATIVI_ALUNO" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_AVALI_ATIVI_ALUNO" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NR_NOTA_AVALI_ALUNO" Precision="5" Scale="2" />
+    <Property Type="String" Name="CO_STATUS_ATIVI_ALUNO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_ATIVI_CASA" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" />
+  </EntityType>
+  <EntityType Name="GW154_PROVAS_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_PROVAS_ALUNO" />
+    </Key>
+    <Property Type="Int32" Name="ID_PROVAS_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_PROVA_TURMA" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NR_MATRIC" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_REALIZ_PROVA_ALUNO" Nullable="false" />
+    <Property Type="String" Name="HR_REALIZ_PROVA_ALUNO" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_AVALIA_PROVA_ALUNO" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VL_NOTA_PROVA_ALUNO" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="String" Name="DE_OBSER_PROVA_ALUNO" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_ANO_REF" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATERIA" />
+    <Property Type="Int32" Name="ID_ATIVI_AULA" />
+  </EntityType>
+  <EntityType Name="GW155_HISTOR_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_INFOR_ALUNO" />
+      <PropertyRef Name="ID_HISTOR_ALUNO" />
+      <PropertyRef Name="NR_MATRIC" />
+    </Key>
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_HISTOR_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NR_MATRIC" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VL_MEDIA_BIM1_HISTOR" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_BIM2_HISTOR" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_BIM3_HISTOR" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_BIM4_HISTOR" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="QT_FALTAS_BIM2_HISTOR" Precision="2" Scale="0" />
+    <Property Type="Decimal" Name="QT_FALTAS_BIM3_HISTOR" Precision="2" Scale="0" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" />
+    <Property Type="Decimal" Name="VL_CONCEITO_BIM1" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="ID_MATERIA" />
+    <Property Type="Decimal" Name="VL_CONCEITO_BIM2" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="QT_FALTAS_BIM1_HISTOR" Precision="2" Scale="0" />
+    <Property Type="Decimal" Name="VL_CONCEITO_BIM3" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="QT_FALTAS_BIM4_HISTOR" Precision="2" Scale="0" />
+    <Property Type="Decimal" Name="VL_CONCEITO_BIM4" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="GW156_OCORR_ALUNO">
+    <Key>
+      <PropertyRef Name="ID_OCORR_ALUNO" />
+    </Key>
+    <Property Type="Int32" Name="ID_OCORR_ALUNO" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="DateTime" Name="DT_OCORR_ALUNO" Nullable="false" />
+    <Property Type="String" Name="CO_SIGL_OCORR" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_OCORR_ALUNO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ACAO_OCORR" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_AVISO_RESP_OCORR" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW157_CUIDAD_SAUDE">
+    <Key>
+      <PropertyRef Name="ID_MEDICACAO" />
+    </Key>
+    <Property Type="Int32" Name="ID_MEDICACAO" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="String" Name="TP_CUIDADO_SAUDE" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TP_APLICAC_CUIDADO" Nullable="false" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="HR_APLICAC_CUIDADO" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_REMEDIO_CUIDADO" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBSERV_CUIDADO" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="DE_DOSE_REMEDIO_CUIDADO" />
+    <Property Type="String" Name="NM_MEDICO_CUIDADO" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_CRM_MEDICO_CUIDADO" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_RECEITA_CUIDADO" />
+    <Property Type="String" Name="NR_TELEF_FIXO_MEDICO" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_CELUL_MEDICO" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_RECEITA_CUIDADO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_MEDICAC" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW158_OCORR_SAUDE">
+    <Key>
+      <PropertyRef Name="ID_OCORR_SAUDE" />
+    </Key>
+    <Property Type="Int32" Name="ID_OCORR_SAUDE" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_USU" Nullable="false" />
+    <Property Type="String" Name="TP_USU" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_HOSPI_CONSU" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CONSU" Nullable="false" />
+    <Property Type="String" Name="NO_MEDIC" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NU_CRM_MEDIC" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_RECEI" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="QT_DIAS_LICEN" />
+    <Property Type="String" Name="NO_CID" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_DOENC" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBS" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_ENTRE_ATEST" Nullable="false" />
+    <Property Type="DateTime" Name="DT_CADAS" Nullable="false" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" Nullable="false" />
+    <Property Type="Int32" Name="CO_UNID_FUNC" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW159_ALTER_ENDER">
+    <Key>
+      <PropertyRef Name="CO_ALTER_ENDER" />
+    </Key>
+    <Property Type="Int32" Name="CO_ALTER_ENDER" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CO_ENDER_CEP_ATUAL" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_ATUAL" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NU_ENDER_NUMER_ATUAL" Nullable="false" Precision="5" Scale="0" />
+    <Property Type="String" Name="DE_ENDER_COMPL_ATUAL" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ENDER_BAIRR_ATUAL" Nullable="false" />
+    <Property Type="Int32" Name="CO_ENDER_CIDAD_ATUAL" Nullable="false" />
+    <Property Type="String" Name="CO_ENDER_ESTAD_ATUAL" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_CEP_NOVO" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_NOVO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NU_ENDER_NUMER_NOVO" Nullable="false" Precision="5" Scale="0" />
+    <Property Type="String" Name="DE_ENDER_COMPL_NOVO" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ENDER_BAIRR_NOVO" Nullable="false" />
+    <Property Type="Int32" Name="CO_ENDER_CIDAD_NOVO" Nullable="false" />
+    <Property Type="String" Name="CO_ENDER_ESTAD_NOVO" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_USUAR" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_ALTER_ENDER" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="String" Name="IP_USER" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FLA_ALTER_ENDER" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="NR_CPF_USR" Precision="11" Scale="0" />
+  </EntityType>
+  <EntityType Name="GW201_AREA_CONHEC">
+    <Key>
+      <PropertyRef Name="ID_AREA_CONHEC" />
+    </Key>
+    <Property Type="Int32" Name="ID_AREA_CONHEC" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_AREA_CONHEC" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW202_CLASS_CONHEC">
+    <Key>
+      <PropertyRef Name="ID_CLASS_CONHEC" />
+    </Key>
+    <Property Type="Int32" Name="ID_CLASS_CONHEC" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_AREA_CONHEC" Nullable="false" />
+    <Property Type="String" Name="NM_CLASS_CONHEC" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW203_EDITORA">
+    <Key>
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Type="Int32" Name="ID_EDITORA" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_EDITORA" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW204_AUTOR">
+    <Key>
+      <PropertyRef Name="ID_AUTOR" />
+    </Key>
+    <Property Type="Int32" Name="ID_AUTOR" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_AUTOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW205_ACERVO_BIBL">
+    <Key>
+      <PropertyRef Name="ID_INSTIT" />
+      <PropertyRef Name="CO_ISBN_ACERVO_BIBL" />
+    </Key>
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="CO_ISBN_ACERVO_BIBL" Nullable="false" Precision="13" Scale="0" />
+    <Property Type="String" Name="NO_TITULO_ACERVO_BIBL" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="NR_PAG_ACERVO_BIBL" Precision="5" Scale="0" />
+    <Property Type="Decimal" Name="CO_ANO_EDICAO_ACERVO_BIBL" Precision="4" Scale="0" />
+    <Property Type="String" Name="DE_SINOPSE_ACERVO_BIBL" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="QT_ACERV_DISPO" />
+    <Property Type="Int32" Name="QT_ACERV_EMPRE" />
+    <Property Type="String" Name="CO_STATUS_ACERVO_BIBL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_CLASS_CONHEC" />
+    <Property Type="Int32" Name="ID_AREA_CONHEC" />
+    <Property Type="Int32" Name="ID_EDITORA" />
+    <Property Type="Int32" Name="ID_AUTOR1" />
+    <Property Type="Int32" Name="ID_AUTOR2" />
+    <Property Type="Int32" Name="ID_AUTOR3" />
+    <Property Type="Int32" Name="ID_AUTOR4" />
+    <Property Type="Int32" Name="ID_AUTOR5" />
+    <Property Type="Decimal" Name="NR_EDICAO_ACERVO_BIBL" Precision="2" Scale="0" />
+    <Property Type="String" Name="FL_RESER_TECNI_ACERVO_BIBL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="TP_MIDIA_ACERVO_BIBL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="QT_RESER_TECNI_ACERVO_BIBLI" Precision="3" Scale="0" />
+    <Property Type="String" Name="NM_LOCAL_MIDIA_ACERVO_BIBL" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW206_ACERVO_AULA">
+    <Key>
+      <PropertyRef Name="ID_ACERVO_AULA" />
+    </Key>
+    <Property Type="Int32" Name="ID_ACERVO_AULA" Nullable="false" />
+    <Property Type="String" Name="NO_TITULO_AULA" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_SINOPSE_AULA" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBSERV_AULA" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" />
+    <Property Type="Int32" Name="ID_MATERIA" />
+    <Property Type="Int32" Name="ID_AREA_CONHEC" />
+    <Property Type="Int32" Name="ID_CLASS_CONHEC" />
+    <Property Type="String" Name="ID_REGIAO_APLICA" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="FL_AS3" />
+    <Property Type="String" Name="FL_INSTAL_SERVID" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="TP_ARQUI_MIDIA_AULA" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_ARQUI_MIDIA_AULA" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAST_AULA" Nullable="false" />
+    <Property Type="DateTime" Name="DT_CRIACAO_AULA" />
+    <Property Type="DateTime" Name="DT_STATUS_AULA" Nullable="false" />
+    <Property Type="String" Name="CO_STATUS_AULA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="XX_CLASSE" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="XX_DISCIPLINA" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Time" Name="QT_DURAC_AULA" />
+  </EntityType>
+  <EntityType Name="GW211_RESER_BIBL">
+    <Key>
+      <PropertyRef Name="ID_RESER_BIBL" />
+      <PropertyRef Name="CO_CTRL_INTERNO" />
+    </Key>
+    <Property Type="Int32" Name="ID_RESER_BIBL" Nullable="false" />
+    <Property Type="String" Name="CO_CTRL_INTERNO" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Decimal" Name="CO_ISBN_ACERVO_BIBL" Nullable="false" Precision="13" Scale="0" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="String" Name="TP_USUARIO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_RESER_BIBL" Nullable="false" />
+    <Property Type="DateTime" Name="DT_NECES_MAXIM_RESER_BIBL" />
+    <Property Type="String" Name="DE_OBSER_RESER_BIBL" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_RESER_BIBL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_STATUS_RESER_BIBL" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW212_EMPREST_BIBL">
+    <Key>
+      <PropertyRef Name="ID_EMPRE_BIBL" />
+    </Key>
+    <Property Type="Int32" Name="ID_EMPRE_BIBL" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Decimal" Name="CO_ISBN_ACERVO_BIBL" Nullable="false" Precision="13" Scale="0" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="String" Name="TP_USUARIO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_EMPRE_BIBL" Nullable="false" />
+    <Property Type="String" Name="CO_CTRL_INTERNO" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_EMPRE_BIBL" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_DEVOL_EMPRE_BIBL" />
+    <Property Type="String" Name="DE_OBSER_DEVOL_EMPRE_BIBL" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_PREVI_DEVOL_EMPRE_BIBL" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW301_REFEICOES">
+    <Key>
+      <PropertyRef Name="ID_REFEICAO" />
+    </Key>
+    <Property Type="Int32" Name="ID_REFEICAO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_REFEIC" Nullable="false" />
+    <Property Type="String" Name="NM_REFEIC" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_REFEIC" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_IDENT_REFEIC" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TP_REFEIC" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_SINOPSE_REFEIC" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="QT_KCAL_REFEIC" Precision="6" Scale="3" />
+  </EntityType>
+  <EntityType Name="GW302_REFEI_INGRED">
+    <Key>
+      <PropertyRef Name="ID_INGRED_REFEIC" />
+      <PropertyRef Name="ID_REFEICAO" />
+    </Key>
+    <Property Type="Int32" Name="ID_INGRED_REFEIC" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFEICAO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_INGRED_REFEIC" Nullable="false" />
+    <Property Type="String" Name="NM_INGRED_REFEIC" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_REDUZ_INGRED_REFEIC" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_INGRED_REFEIC" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_UNIDAD_INGRED" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="QT_KCAL_INGRED" Precision="6" Scale="3" />
+  </EntityType>
+  <EntityType Name="GW303_CALEND_REFEI">
+    <Key>
+      <PropertyRef Name="ID_CALEND_REFEIC" />
+    </Key>
+    <Property Type="Int32" Name="ID_CALEND_REFEIC" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_CALEND_REFEIC" />
+    <Property Type="DateTime" Name="DT_CALEND_REFEIC" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFEICAO" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW304_SUGEST_REFEI">
+    <Key>
+      <PropertyRef Name="ID_SUGES_REFEIC" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_SUGES_REFEIC" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="String" Name="NM_SUGES_REFEIC" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_SUGES_REFEIC" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_REFEICAO" />
+  </EntityType>
+  <EntityType Name="GW305_RESTR_ALIMEN">
+    <Key>
+      <PropertyRef Name="ID_RESTR_ALIMEN" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_RESTR_ALIMEN" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_RESTR_ALIMEN" Nullable="false" />
+    <Property Type="String" Name="TP_RESTR_ALIMEN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NM_RESTR_ALIMEN" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_RESTR_ALIMEN" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_INFORM_RESTR_ALIMEN" Nullable="false" />
+    <Property Type="DateTime" Name="DT_INICIO_RESTR_ALIMEN" Nullable="false" />
+    <Property Type="DateTime" Name="DT_TERMI_RESTR_ALIMEN" />
+    <Property Type="String" Name="CO_GRAU_RESTR_ALIMEN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW306_REFEIC_USR">
+    <Key>
+      <PropertyRef Name="ID_REFEIC_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_REFEIC_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_REFEIC_USR" />
+    <Property Type="DateTime" Name="DT_REFEIC_USR" Nullable="false" />
+    <Property Type="DateTime" Name="HR_REFEIC_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFEICAO" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW401_LINHA_TRANSP">
+    <Key>
+      <PropertyRef Name="ID_LINHA_TRANSP" />
+    </Key>
+    <Property Type="Int32" Name="ID_LINHA_TRANSP" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="TP_TRANSP_LINHA" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NU_LINHA" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_TITUL_LINHA" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ROTEI_LINHA" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_HORAR_LINHA" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_OBSER_LINHA" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VL_TARIFA_LINHA" Precision="5" Scale="2" />
+    <Property Type="String" Name="FL_INTEGR_LINHA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_SITUA_LINHA" Nullable="false" />
+    <Property Type="String" Name="CO_SITUA_LINHA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW402_LINHA_USR">
+    <Key>
+      <PropertyRef Name="ID_LINHA_TRANSP_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_LINHA_TRANSP_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_LINHA_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_LINHA_TRANSP" />
+  </EntityType>
+  <EntityType Name="GW451_ROTA_TRANSP">
+    <Key>
+      <PropertyRef Name="ID_ROTA_TRANSP" />
+    </Key>
+    <Property Type="Int32" Name="ID_ROTA_TRANSP" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_ROTAS" />
+    <Property Type="String" Name="TP_ROTA_TRANSP" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_ROTA_TRANSP" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_ROTA_TRANSP" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW452_ROTA_ITENS">
+    <Key>
+      <PropertyRef Name="ID_ROTA_TRANSP" />
+    </Key>
+    <Property Type="Int32" Name="ID_ROTA_TRANSP" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_RUAS" />
+    <Property Type="String" Name="NM_RUA_ROTA" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_CEP_RUA_ROTA" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_ORDEM_RUA_ROTA" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW452_ROTA_USR">
+    <Key>
+      <PropertyRef Name="ID_ROTA_TRANSP_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_ROTA_TRANSP_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_ROTAUSR" />
+    <Property Type="Int32" Name="ID_ROTA_TRANSP" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW501_TIPO_SOLIC">
+    <Key>
+      <PropertyRef Name="ID_TIPO_SOLIC" />
+    </Key>
+    <Property Type="Int32" Name="ID_TIPO_SOLIC" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_TIPO_SOLIC" Nullable="false" />
+    <Property Type="String" Name="NO_TIPO_SOLIC" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_TIPO_SOLIC" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VL_TIPO_SOLIC" Precision="5" Scale="2" />
+    <Property Type="String" Name="NO_PROCED_TIPO_SOLIC" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW502_SOLIC_USR">
+    <Key>
+      <PropertyRef Name="ID_SOLIC_USR" />
+      <PropertyRef Name="ID_USUARIO" />
+    </Key>
+    <Property Type="Int32" Name="ID_SOLIC_USR" Nullable="false" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="Int32" Name="ID_REFER_GEDUC_SOLIC_USR" Nullable="false" />
+    <Property Type="DateTime" Name="DT_SOLIC_USR" Nullable="false" />
+    <Property Type="DateTime" Name="HR_SOLIC_USR" Nullable="false" />
+    <Property Type="String" Name="DE_OBSER_SOLIC_USR" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_SOLIC_USR" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_AVISAR_SMS_SOLIC_USR" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_FINAL_SOLIC_USR" />
+    <Property Type="DateTime" Name="DT_ENTRE_SOLIC_USR" />
+    <Property Type="DateTime" Name="HR_ENTRE_SOLIC_USR" />
+    <Property Type="String" Name="NM_SOLIC_RECEB_SOLIC_USR" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_STATUS_SOLIC_USR" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_GEDUC_SOLIC_USR" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_TIPO_SOLIC" />
+  </EntityType>
+  <EntityType Name="GW551_FREQU">
+    <Key>
+      <PropertyRef Name="ID_FREQU" />
+    </Key>
+    <Property Type="Int32" Name="ID_FREQU" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ID_INSTIT" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" />
+    <Property Type="Int32" Name="ID_GRADE_MATER" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" />
+    <Property Type="Int32" Name="ID_COLAB_LANCA_FREQU" />
+    <Property Type="DateTime" Name="DT_FREQU" />
+    <Property Type="String" Name="TP_FREQU" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_IP_LANCA_FREQU" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAS_FREQU" />
+    <Property Type="Int32" Name="ID_COLAB_BAIXA_FREQU" />
+    <Property Type="String" Name="FL_BAIXA_FREQU" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_BAIXA_FREQU" />
+    <Property Type="String" Name="CO_REFER_FREQU" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DT_ANO_REFER" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_MATERIA" />
+    <Property Type="Int32" Name="NR_TEMPO" />
+    <Property Type="String" Name="NR_IP_BAIXA_FREQU" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_ATIV_PROF_TUR" />
+  </EntityType>
+  <EntityType Name="GW551_LANCA_FREQU">
+    <Key>
+      <PropertyRef Name="ID_LANCA_FREQU" />
+    </Key>
+    <Property Type="Int32" Name="ID_LANCA_FREQU" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_GRADE_MATER" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_COLAB_LANCA_FREQU" Nullable="false" />
+    <Property Type="DateTime" Name="DT_FREQU" Nullable="false" />
+    <Property Type="String" Name="TP_FREQU" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_IP_LANCA_FREQU" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CADAS_FREQU" Nullable="false" />
+    <Property Type="Int32" Name="ID_COLAB_BAIXA_FREQU" />
+    <Property Type="String" Name="NR_IP_BAIXA_FREQU" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_BAIXA_FREQU" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_BAIXA_FREQU" />
+    <Property Type="String" Name="CO_REFER_FREQU" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="NR_TEMPO" />
+    <Property Type="Int32" Name="CO_ATIV_PROF_TUR" />
+    <Property Type="Int32" Name="ID_FREQU" />
+  </EntityType>
+  <EntityType Name="GW552_LANCA_NOTA">
+    <Key>
+      <PropertyRef Name="ID_LANCA_NOTA" />
+    </Key>
+    <Property Type="Int32" Name="ID_LANCA_NOTA" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_NOTA" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_GRADE_MATER" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" Nullable="false" />
+    <Property Type="Int32" Name="ID_COLAB_LANCA_NOTA" Nullable="false" />
+    <Property Type="DateTime" Name="DT_LANCA_NOTA" Nullable="false" />
+    <Property Type="String" Name="VL_NOTA" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_TIPO_ATIV" Nullable="false" />
+    <Property Type="String" Name="FL_TIPO_NOTA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_IP_LANCA_NOTA" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_COLAB_BAIXA_NOTA" />
+    <Property Type="String" Name="NR_IP_COLAB_BAIXA_NOTA" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_BAIXA_NOTA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_BAIXA_NOTA" />
+    <Property Type="DateTime" Name="DT_NOTA_CADAS" Nullable="false" />
+    <Property Type="String" Name="CO_REFER_NOTA" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_LANCA_MEDIA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="QT_FALTA_MEDIA" />
+    <Property Type="Decimal" Name="CO_ANO_REFER" Precision="4" Scale="0" />
+  </EntityType>
+  <EntityType Name="GW552_NOTA">
+    <Key>
+      <PropertyRef Name="ID_NOTA" />
+    </Key>
+    <Property Type="Int32" Name="ID_NOTA" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="DT_LANCA_NOTA" />
+    <Property Type="String" Name="CO_REFER_NOTA" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ID_MATERIA" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_INFOR_UNID" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_COLAB_LANCA_NOTA" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_ATIVI" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_GRADE_MATER" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_MODAL_ENSINO" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_SERIE_ENSINO" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_TURMA_ENSINO" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ID_TIPO_ATIV" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_LANCA_MEDIA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="CO_ANO_REFER" Precision="4" Scale="0" />
+    <Property Type="String" Name="FL_BAIXA_NOTA" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW554_ATIV_PROF_TURMA">
+    <Key>
+      <PropertyRef Name="CO_ATIV_PROF_TUR" />
+    </Key>
+    <Property Type="Int32" Name="CO_EMP" Nullable="false" />
+    <Property Type="Int32" Name="CO_CUR" Nullable="false" />
+    <Property Type="Int32" Name="CO_TUR" Nullable="false" />
+    <Property Type="Int32" Name="CO_COL" Nullable="false" />
+    <Property Type="Int32" Name="CO_MAT" Nullable="false" />
+    <Property Type="Int32" Name="CO_ATIV_PROF_TUR" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CO_COL_ATIV" Nullable="false" />
+    <Property Type="DateTime" Name="DT_ATIV_REAL" Nullable="false" />
+    <Property Type="DateTime" Name="DT_ATIV_REAL_TERM" Nullable="false" />
+    <Property Type="String" Name="CO_TIPO_ATIV" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_TEMA_AULA" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_FORMA_AVALI_ATIV" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="FLA_AULA_PLAN" Nullable="false" />
+    <Property Type="String" Name="FL_AVALIA_ATIV" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_LANCA_NOTA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="created" />
+    <Property Type="Int32" Name="CO_PLA_AULA" />
+    <Property Type="String" Name="CO_ANO_MES_MAT" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_MODU_CUR" />
+    <Property Type="String" Name="NU_SEM_LET" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="HR_INI_ATIV" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="HR_TER_ATIV" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_RES_ATIV" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_IP_CADAST" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_TIPO_ATIV" />
+    <Property Type="String" Name="CO_REFER_ATIV" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_BAIXA_ATIV" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_COLAB_BAIXA_NOTA" />
+    <Property Type="String" Name="NR_IP_COLAB_BAIXA_NOTA" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_BAIXA_NOTA" />
+    <Property Type="String" Name="FL_BAIXA_NOTA" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW555_END_NOVO">
+    <Key>
+      <PropertyRef Name="ID_ENDERECO" />
+    </Key>
+    <Property Type="Int32" Name="ID_ENDERECO" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CO_ENDER_CEP_NOVO" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_NOVO" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NU_ENDER_NUMER_NOVO" />
+    <Property Type="String" Name="DE_ENDER_COMPL_NOVO" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_BAIRR_NOVO" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_CIDAD_NOVO" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_ENDER_ESTAD_NOVO" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CO_RESP" />
+    <Property Type="Int32" Name="CO_ALUNO" />
+    <Property Type="String" Name="IP_USER" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_USUAR" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_CPF_USR" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_ALTERA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW601_HISTO_DESEMP">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_UNIDADE" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALU" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE" Nullable="false" />
+    <Property Type="Int32" Name="CO_ANO_REF" Nullable="false" />
+    <Property Type="Decimal" Name="VL_MEDIA_ALUNO_B1" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_TURMA_B1" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="VL_FALTAS_B1" />
+    <Property Type="Decimal" Name="VL_MEDIA_ALUNO_B2" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_TURMA_B2" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="VL_FALTAS_B2" />
+    <Property Type="Decimal" Name="VL_MEDIA_ALUNO_B3" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_TURMA_B3" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="VL_FALTAS_B3" />
+    <Property Type="Decimal" Name="VL_MEDIA_ALUNO_B4" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_MEDIA_TURMA_B4" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="VL_FALTAS_B4" />
+    <Property Type="Decimal" Name="VL_PROVA_FINAL" Precision="5" Scale="2" />
+    <Property Type="String" Name="ST_SITUA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_REGISTRO" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW602_BOLET_ESCOL">
+    <Key>
+      <PropertyRef Name="ID_REGISTRO" />
+    </Key>
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+    <Property Type="Int32" Name="ID_ALUNO" Nullable="false" />
+    <Property Type="String" Name="NU_MATRICULA" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_UNID" Nullable="false" />
+    <Property Type="Decimal" Name="VL_NOTA_B1" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_NOTA_RECUP_B1" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="QT_FALTAS_B1" />
+    <Property Type="Decimal" Name="VL_FREQU_B1" Precision="5" Scale="2" />
+    <Property Type="String" Name="VL_NOTA_COMPOR_B1" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="VL_NOTA_B2" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_NOTA_RECUP_B2" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="QT_FALTAS_B2" />
+    <Property Type="Decimal" Name="VL_FREQU_B2" Precision="5" Scale="2" />
+    <Property Type="String" Name="VL_NOTA_COMPOR_B2" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="VL_NOTA_B3" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_NOTA_RECUP_B3" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="QT_FALTAS_B3" />
+    <Property Type="Decimal" Name="VL_FREQU_B3" Precision="5" Scale="2" />
+    <Property Type="String" Name="VL_NOTA_COMPOR_B3" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="VL_NOTA_B4" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_NOTA_RECUP_B4" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="QT_FALTAS_B4" />
+    <Property Type="Decimal" Name="VL_FREQU_B4" Precision="5" Scale="2" />
+    <Property Type="String" Name="VL_NOTA_COMPOR_B4" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="VL_MEDIA_TURMA" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VL_PROVA_FINAL" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="CO_ANO_REF" Nullable="false" />
+    <Property Type="String" Name="DE_END_IMG_BOLETIM" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_END_PDF_BOLETIM" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_REGISTRO" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GW603_DADO_BOLETO">
+    <Key>
+      <PropertyRef Name="NU_DOC" />
+      <PropertyRef Name="NU_PAR" />
+      <PropertyRef Name="DT_CAD_DOC" />
+      <PropertyRef Name="CO_EMP" />
+    </Key>
+    <Property Type="String" Name="NU_DOC" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NU_PAR" Nullable="false" />
+    <Property Type="DateTime" Name="DT_CAD_DOC" Nullable="false" />
+    <Property Type="Int32" Name="CO_EMP" Nullable="false" />
+    <Property Type="String" Name="ID_INSTIT" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_INFOR_ALUNO" />
+    <Property Type="Int32" Name="ID_INFORM_RESP" />
+    <Property Type="DateTime" Name="DT_VEN_DOC" />
+    <Property Type="Decimal" Name="VR_PAR_DOC" Precision="10" Scale="2" />
+    <Property Type="String" Name="CO_NOS_NUM" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_BARRA_DOC" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="VR_DES_DOC" Precision="10" Scale="2" />
+    <Property Type="String" Name="CO_CARTEIRA" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_EMP_UNID_CONT" />
+    <Property Type="Int32" Name="CO_AGENCIA" />
+    <Property Type="String" Name="DI_AGENCIA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="IDEBANCO" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_CEDENTE" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_CORPO_BOLETO" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_CONTA" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DI_CONTA" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="NU_CONVENIO" />
+    <Property Type="Int32" Name="ID_MODAL_ENSINO" />
+    <Property Type="Int32" Name="ID_SERIE_ENSINO" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" />
+    <Property Type="Int32" Name="CO_ANO_REF" />
+    <Property Type="String" Name="DE_HISTORICO" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW700_INSTITUICAO">
+    <Key>
+      <PropertyRef Name="ID_INSTIT" />
+    </Key>
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="TP_INSTIT" Nullable="false" />
+    <Property Type="String" Name="CO_SIGLA_INSTIT" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_INSTIT" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_REDUZ_INSTIT" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_FOTO_INSTIT" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_LOCAL_INSTIT" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_COMPL_INSTIT" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_BAIRR_INSTIT" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_CIDAD_INSTIT" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_ESTAD_INSTIT" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_CEP_INSTIT" Nullable="false" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_GERAL_INSTIT" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_CONT_INSTIT" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_FIXO_INSTIT" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_WEB_PAGE_INSTIT" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_HORAR_ATEND_INSTIT" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IM_LOGO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW800_FALE_CONOSCO">
+    <Key>
+      <PropertyRef Name="ID_FALE_CONOS" />
+    </Key>
+    <Property Type="Int32" Name="ID_FALE_CONOS" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_ASSUN_CONTAT" Nullable="false" />
+    <Property Type="Int32" Name="ID_CODIG_COLAB" />
+    <Property Type="DateTime" Name="DT_SOLIC_FALE_CONOS" />
+    <Property Type="String" Name="IP_USUAR_FALE_CONOS" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_USUAR_FALE_CONOS" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_FALE_CONOS" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NR_CELUL_FALE_CONOS" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EMAIL_FALE_CONOS" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_EMPRE_FALE_CONOS" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_CPFCNPJ_FALE_CONOS" MaxLength="19" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_CARGO_USUAR_FALE_CONOS" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ASSUN_FALE_CONOS" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_MENSA_FALE_CONOS" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_ANEXO_FALE_CONOS" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW801_SMS">
+    <Key>
+      <PropertyRef Name="ID_MENSAG_SMS" />
+    </Key>
+    <Property Type="Int32" Name="ID_MENSAG_SMS" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CO_EMISSOR" Nullable="false" />
+    <Property Type="String" Name="CO_UNID_EMISSOR" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="TP_EMISSOR" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_RECEPTOR" />
+    <Property Type="String" Name="CO_UNID_RECEPT" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="TP_RECEPT" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NR_TELEF_RECEPT" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_RECEPT_SMS" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID_MENSAG_OPERAD" Nullable="false" />
+    <Property Type="String" Name="DE_MENSAG_SMS" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_ENVIO_SMS" Nullable="false" />
+    <Property Type="String" Name="CO_STATUS" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FL_SMS_SUCESS" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW802_ARQUIVOS">
+    <Key>
+      <PropertyRef Name="ID_ARQUIVO" />
+      <PropertyRef Name="CO_UNID_ORIGEM" />
+      <PropertyRef Name="NO_ARQUIVO" />
+      <PropertyRef Name="NO_AUTOR" />
+      <PropertyRef Name="DE_TIPO_ARQUIVO" />
+      <PropertyRef Name="DE_URL_ARQUIVO" />
+      <PropertyRef Name="DT_CRIACAO" />
+      <PropertyRef Name="DT_PUBLICACAO" />
+      <PropertyRef Name="DT_VALIDADE" />
+      <PropertyRef Name="CO_ATIVO" />
+      <PropertyRef Name="ID_TIPO_ASSUNTO" />
+    </Key>
+    <Property Type="Int32" Name="ID_ARQUIVO" Nullable="false" />
+    <Property Type="Int32" Name="ID_INSTI" />
+    <Property Type="Int32" Name="CO_UNID_ORIGEM" Nullable="false" />
+    <Property Type="String" Name="NO_ARQUIVO" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_AUTOR" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_ARQUIVO" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TIPO_ARQUIVO" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_URL_ARQUIVO" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="DateTime" Name="DT_CRIACAO" Nullable="false" />
+    <Property Type="DateTime" Name="DT_PUBLICACAO" Nullable="false" />
+    <Property Type="DateTime" Name="DT_VALIDADE" Nullable="false" />
+    <Property Type="String" Name="CO_ATIVO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="ID_TIPO_ASSUNTO" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW803_ASSUN_CONTA">
+    <Key>
+      <PropertyRef Name="ID_ASSUN_CONTAT" />
+    </Key>
+    <Property Type="Int32" Name="ID_ASSUN_CONTAT" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DE_ASSUN_CONTAT" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_TIPO_ASSUN_CONTAT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SITU_ASSUNTO" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" MaxLength="14" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW804_MIDIAS">
+    <Key>
+      <PropertyRef Name="ID_MIDIA" />
+      <PropertyRef Name="ID_INST" />
+      <PropertyRef Name="ID_CLASS_MIDIA" />
+      <PropertyRef Name="TP_MIDIA" />
+      <PropertyRef Name="DT_INICI" />
+      <PropertyRef Name="DT_TERMI" />
+      <PropertyRef Name="CO_SITU_MIDIA" />
+      <PropertyRef Name="NO_TITUL_MIDIA" />
+      <PropertyRef Name="DE_CONTE_MIDIA" />
+      <PropertyRef Name="FL_ENDER_MIDIA" />
+      <PropertyRef Name="DE_ENDER_MIDIA" />
+      <PropertyRef Name="DT_CRIAC_MIDIA" />
+    </Key>
+    <Property Type="Int32" Name="ID_MIDIA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INST" Nullable="false" />
+    <Property Type="Int32" Name="ID_UNID_INFOR" />
+    <Property Type="Int32" Name="ID_MODAL_ENSIN" />
+    <Property Type="Int32" Name="ID_SERIE" />
+    <Property Type="Int32" Name="ID_TURMA" />
+    <Property Type="Int32" Name="ID_MATER" />
+    <Property Type="Int32" Name="ID_CLASS_MATER" />
+    <Property Type="Int32" Name="ID_EVENT_SOCIA" />
+    <Property Type="Int32" Name="ID_CLASS_MIDIA" Nullable="false" />
+    <Property Type="String" Name="TP_MIDIA" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_INICI" Nullable="false" />
+    <Property Type="DateTime" Name="DT_TERMI" Nullable="false" />
+    <Property Type="String" Name="CO_SITU_MIDIA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_TITUL_MIDIA" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_CONTE_MIDIA" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FL_ENDER_MIDIA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_ENDER_MIDIA" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_CRIAC_MIDIA" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GW805_CLASSI_MATER">
+    <Key>
+      <PropertyRef Name="ID_CLASS_MATER" />
+      <PropertyRef Name="ID_MATER" />
+      <PropertyRef Name="NO_CLASS_MATER" />
+      <PropertyRef Name="NO_REDUZ_CLASS_MATER" />
+    </Key>
+    <Property Type="Int32" Name="ID_CLASS_MATER" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATER" Nullable="false" />
+    <Property Type="String" Name="NO_CLASS_MATER" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_REDUZ_CLASS_MATER" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW806_CLASS_MIDIA">
+    <Key>
+      <PropertyRef Name="ID_CLASS_MIDIA" />
+      <PropertyRef Name="NO_CLASS_MIDIA" />
+      <PropertyRef Name="NO_REDUZ_CLASS_MIDIA" />
+    </Key>
+    <Property Type="Int32" Name="ID_CLASS_MIDIA" Nullable="false" />
+    <Property Type="String" Name="NO_CLASS_MIDIA" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NO_REDUZ_CLASS_MIDIA" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW807_MURAL">
+    <Key>
+      <PropertyRef Name="ID_MURAL_TURMA" />
+    </Key>
+    <Property Type="Int32" Name="ID_MURAL_TURMA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA_ENSINO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SERIE" Nullable="false" />
+    <Property Type="String" Name="TP_MURAL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NO_TITUL_MURAL" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_AVISO_MURAL" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NU_POSIC_MURAL" Nullable="false" />
+    <Property Type="DateTime" Name="DT_CADAS_MURAL" Nullable="false" />
+    <Property Type="DateTime" Name="DT_INICIO_MURAL" Nullable="false" />
+    <Property Type="DateTime" Name="DT_FINAL_MURAL" Nullable="false" />
+    <Property Type="String" Name="TP_URL_MURAL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_URL_MURAL" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ORG_CODIGO_ORGAO" Nullable="false" />
+    <Property Type="Int32" Name="CO_MODU_CUR" />
+    <Property Type="Int32" Name="CO_CUR" />
+    <Property Type="Int32" Name="CO_COL" Nullable="false" />
+    <Property Type="Int32" Name="CO_EMP_COL" Nullable="false" />
+    <Property Type="String" Name="CO_STATUS_MURAL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_STATUS_MURAL" Nullable="false" />
+    <Property Type="String" Name="FL_ATUAL_PORTAL" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="DT_ATUAL_PORTAL" />
+  </EntityType>
+  <EntityType Name="GW808_EVENTOS_SOCIAS">
+    <Key>
+      <PropertyRef Name="ID_EVENT_SOCIA" />
+      <PropertyRef Name="ID_INFOR_UNID" />
+      <PropertyRef Name="NO_EVENT_SOCIA" />
+      <PropertyRef Name="DE_EVENT_SOCIA" />
+      <PropertyRef Name="DT_INIC" />
+      <PropertyRef Name="DT_TERMI" />
+      <PropertyRef Name="CO_STATU" />
+    </Key>
+    <Property Type="Int32" Name="ID_EVENT_SOCIA" Nullable="false" />
+    <Property Type="Int32" Name="ID_INFOR_UNID" Nullable="false" />
+    <Property Type="Int32" Name="ID_TURMA" />
+    <Property Type="Int32" Name="ID_SERIE" />
+    <Property Type="String" Name="NO_EVENT_SOCIA" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_EVENT_SOCIA" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DT_INIC" Nullable="false" />
+    <Property Type="DateTime" Name="DT_TERMI" Nullable="false" />
+    <Property Type="String" Name="CO_STATU" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW809_AULAS">
+    <Key>
+      <PropertyRef Name="ID_AULA" />
+      <PropertyRef Name="ID_MATERIA" />
+      <PropertyRef Name="DE_TITULO_AULA" />
+    </Key>
+    <Property Type="Int32" Name="ID_AULA" Nullable="false" />
+    <Property Type="Int32" Name="ID_MATERIA" Nullable="false" />
+    <Property Type="String" Name="DE_TITULO_AULA" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW901_TIPO_LOGRADOURO">
+    <Key>
+      <PropertyRef Name="ID_TIPO_LOGRA" />
+    </Key>
+    <Property Type="Int32" Name="ID_TIPO_LOGRA" Nullable="false" />
+    <Property Type="String" Name="CO_TIPO_LOGRA" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TIPO_LOGRA" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW902_TIPO_OCORR">
+    <Key>
+      <PropertyRef Name="CO_SIGL_OCORR" />
+      <PropertyRef Name="ID_INSTIT" />
+    </Key>
+    <Property Type="String" Name="CO_SIGL_OCORR" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ID_INSTIT" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DE_TIPO_OCORR" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TP_USU" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GW903_TIPO_ATIVI">
+    <Key>
+      <PropertyRef Name="ID_TIPO_ATIV" />
+    </Key>
+    <Property Type="Int32" Name="ID_TIPO_ATIV" Nullable="false" />
+    <Property Type="String" Name="NO_TIPO_ATIV" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DE_TIPO_ATIV" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_SIGLA_ATIV" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CO_CLASS_ATIV" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CO_PESO_ATIV" Nullable="false" />
+    <Property Type="String" Name="FL_LANCA_NOTA_ATIV" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="CO_SITUA_ATIV" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+</Schema>
