@@ -68,3 +68,16 @@ C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.dll
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.pdb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.csprojResolveAssemblyReference.cache
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\bin\Debug\C2BR.GestorEducacao.LicenseValidator.dll
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\bin\Debug\C2BR.GestorEducacao.LicenseValidator.pdb
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\bin\Debug\C2BR.GestorEducacao.BusinessEntities.dll
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\bin\Debug\System.Linq.Dynamic.dll
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\bin\Debug\C2BR.GestorEducacao.BusinessEntities.pdb
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\bin\Debug\C2BR.GestorEducacao.BusinessEntities.dll.config
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.csproj.AssemblyReference.cache
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.Properties.Resources.resources
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.csproj.GenerateResource.cache
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.csproj.CoreCompileInputs.cache
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.csproj.CopyComplete
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.dll
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.LicenseValidator\obj\Debug\C2BR.GestorEducacao.LicenseValidator.pdb
