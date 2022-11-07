@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/App_Masters/PadraoCadastros.Master"
     AutoEventWireup="true" CodeBehind="Cadastro_B.aspx.cs" Inherits="C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_ControleAtendimentoUsuario._3203_RegistroPreAtendimentoUsuario.Cadastro_B" %>
 
-<%@ Register TagPrefix="myGestante" TagName="gestante" Src="~/Componentes/Gestante.ascx" %>
-
+<%@ Register TagPrefix="myprocedimento" TagName="procedimento" Src="~/Componentes/CadastroProcedimento.ascx" %>
+      
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<style type="text/css">
+
+    <style type="text/css">
+
     .total {
         width: 100%;        
     }
@@ -30,8 +32,6 @@
         float:left;
         margin-left:5px;
     }
-</style>
-    <style type="text/css">
         #divEnvioSMSContent {
             margin: auto;
             width: 340px;
@@ -226,7 +226,6 @@
             border-radius: 10px;
             overflow: scroll;
         }
-
         .windowGestante {
             display: none;
             width: 800px;
@@ -397,9 +396,12 @@
         </asp:UpdatePanel>
         <li style="margin-top: 5px !important; height: 17px; width: 100%; text-align: center; text-transform: uppercase; margin-top: 0px; margin-left: auto; background-color: #B4EEB4; margin-bottom: 6px;">
 
-            <a href="#janela1" rel="modal" style="background-color: #ffff99; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">SIGTAP  </a>
+            <asp:Button runat="server" ID="btn_SIGTAP" Text="PROCEDIMENTOS" Style="background-color: #ffff99; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 15PX; border-width: 0px; height: 17px !important;" OnClick="btn_SIGTAP_Click" ToolTip="Pesquisar códigos procedimento" />
+            <%--<a href="#janela1" rel="modal" style="background-color: #ffff99; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">SIGTAP  </a>--%>
 
-            <a href="#janela2" rel="modal" style="background-color: yellow; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">GESTANTE  </a>
+            <asp:Button runat="server" ID="btn_GESTANTE" Text="GESTANTE" Style="background-color: yellow; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 16PX; border-width: 0px; height: 17px !important;" OnClick="btn_GESTANTE_Click" ToolTip="Inserir dados da Gestante" />
+            <%--<a href="#janela2" rel="modal" style="background-color: yellow; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">GESTANTE  </a>--%>
+
 
             <label style="font-size: 1.1em; font-family: Tahoma; margin-top: 2px; float: left; margin-left: 40%;">Avaliação do Paciente</label>
         </li>
@@ -714,15 +716,25 @@
 
     </ul>
     <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- DIV MODAL PARA ESCOLHER OS SIGTAP -->
-    <div class="window" id="janela1">
-        <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="false" OnSelectedIndexChanged="grdListarSIGTAP_SelectedIndexChanged">
+    <%--<div class="window" id="janela1">--%>
+    <div id="divLoadInfosSigtap" style="display: none; height: 435px !important;">
+        <myprocedimento:gestante ID="procedimento" runat="server" />
+
+       <%-- <asp:Label runat="server" ID="lblpesquisasigtab" Text="  Pesquisa  "></asp:Label>
+        <asp:TextBox runat="server" ID="tbpesquisasigtab" Style="width: 530px;"></asp:TextBox>
+        <asp:ImageButton ID="imgCpfResp" runat="server" ImageUrl="~/Library/IMG/Gestor_BtnPesquisa.png" OnClick="imgCpfResp_Click" />
+        <br />
+        <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" PageSize="10" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging" CssClass="grdBusca">
             <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
             <EmptyDataTemplate>
                 Nenhum Paciente Encontrado<br />
             </EmptyDataTemplate>
             <HeaderStyle Height="20px" BackColor="#667AB3" ForeColor="White" CssClass="headerStyleLA" />
             <AlternatingRowStyle CssClass="alternateRowStyleLA" Height="15" />
-            <RowStyle CssClass="rowStyleLA" Height="15" />
+            <RowStyle CssClass="rowStyle" Height="15" />
+            <AlternatingRowStyle CssClass="alternatingRowStyle" />
+            <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
+            <PagerStyle CssClass="grdFooter" />
             <Columns>
 
                 <asp:TemplateField>
@@ -743,207 +755,208 @@
         <br />
         <div>
             <center>
-                <asp:Button runat="server" CssClass="btn" ID="btnclose" Text="  Fechar  " />
-                <asp:Button runat="server" CssClass="btn" ID="btnincluir" Text=" Inserir SIGTAP no atendimento " OnClick="btnincluir_Click" />
+                <asp:Button runat="server" CssClass="btn" ID="btnclose" Text="  Fechar  " Style="height: 30px  !important; width: 80px !important;" />
+                <asp:Button runat="server" CssClass="btn" ID="btnincluir" Text=" Inserir CÓDIGO no atendimento " OnClick="btnincluir_Click" Style="height: 31px !important; width: 160px !important;" />
             </center>
         </div>
         <br />
         <div id="divHelpTxtLA">
             <p id="pAcesso" class="pAcesso">
-                Verifique os SIDTAP existentes no quadro acima para incluir no atendimento.
+                Verificar acima os códigos que deseja associar ao atendimento deste usuário.
             </p>
-        </div>
+        </div>--%>
     </div>
-    <div class="windowGestante" id="janela2" style="top: 65px; left: 85px; !important;">
-        <%--<myGestante:Gestante ID="WebUserControl1" runat="server" />--%>
+    <%--<div class="windowGestante" id="janela2" style="top: 65px; left: 85px; !important;">--%>
+    <div id="divLoadInfosGestante" style="display: none; height: 400px !important; left: 15px !important;">
+        <ul class="ulDados" style="width: 400px !important; margin-top: 7px !important;">
+            <div class="DivResp" runat="server" id="divResp">
+                <ul class="ulDadosResp" style="margin-left: -177px !important; width: 746px !important;">
 
-        <div id="total" class="total" style="font: font:bold bold Trebuchet MS; !important;">
-            <div style="background-color: #1A73E8; border-radius: 10px; color: white; width: 100%; height: 51px;">
-                <br />
-                <asp:Label runat="server" ID="lbl098" Text="   INFORMAÇÕES DE GESTANTES" Style="position: relative; font-weight: bold; font-size: 20px; margin-top: 5px; !important;"></asp:Label>
-            </div>
-            <div id="Titulo" class="dvtitulo">
-                <asp:Label runat="server" ID="titulo" Text="DADOS GESTACIONAIS DO(A) PACIENTE" CssClass="titulo"></asp:Label>
-            </div>
-            <div id="dados" class="dados">
-                <div class="divtexto">
-                    DUM<br />
-                    <asp:TextBox runat="server" ID="tbdum"></asp:TextBox>
-                </div>
+                    <li>
+                        <asp:Label runat="server" ID="titulo" Text="DADOS GESTACIONAIS DO(A) PACIENTE" Font-Bold="true"></asp:Label>
+                    </li>
+                    <br /><br />
 
-                <div class="divtexto">
-                    Observações DUM<br />
-                    <asp:TextBox runat="server" ID="tbobsdum" Width="500px"></asp:TextBox>
-                </div>
+                    <li>DUM<br />
+                        <asp:TextBox runat="server" ID="tbdum"></asp:TextBox>
+                    </li>
 
-                <div class="divtexto">
-                    DPP<br />
-                    <asp:TextBox runat="server" ID="tbdpp"></asp:TextBox>
-                </div>
-                <div style="clear: both"></div>
+                    <li>Observações DUM<br />
+                        <asp:TextBox runat="server" ID="tbobsdum" Width="430px"></asp:TextBox>
+                    </li>
 
-                <div class="dvtitulo" style="margin-top: 10px;">
-                    <asp:Label runat="server" ID="Label1" Text="ESCUTA TRIAGEM - SINAIS VITAIS DA PACIENTE" CssClass="titulo"></asp:Label>
-                </div>
-                <div class="divtexto">
-                    Altura<br />
-                    <asp:TextBox runat="server" ID="tbaltura" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>DPP<br />
+                        <asp:TextBox runat="server" ID="tbdpp"></asp:TextBox>
+                    </li>
+                    <li style="clear: both"></li>
 
-                <div class="divtexto">
-                    Peso (Kg)<br />
-                    <asp:TextBox runat="server" ID="tbpeso" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>
+                        <br /><asp:Label runat="server" ID="Label1" Text="ESCUTA TRIAGEM - SINAIS VITAIS DA PACIENTE" Font-Bold="true"></asp:Label><br /><br />
+                    </li>
+                    <li style="clear: both"></li>
+                    
 
-                <div class="divtexto">
-                    IMC<br />
-                    <asp:TextBox runat="server" ID="tbimc" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>Altura<br />
+                        <asp:TextBox runat="server" ID="tbaltura" style="width:40px"></asp:TextBox>
+                    </li>
 
-                <div class="divtexto">
-                    PA<br />
-                    <asp:TextBox runat="server" ID="tbpa" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>Peso (Kg)<br />
+                        <asp:TextBox runat="server" ID="tbpeso" style="width:45px"></asp:TextBox>
+                    </li>
 
-                <div class="divtexto">
-                    BC(bpm)<br />
-                    <asp:TextBox runat="server" ID="tbbcbpm" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>IMC<br />
+                        <asp:TextBox runat="server" ID="tbimc" style="width:40px"></asp:TextBox>
+                    </li>
 
-                <div class="divtexto">
-                    Saturação<br />
-                    <asp:TextBox runat="server" ID="TextBox1" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>PA<br />
+                        <asp:TextBox runat="server" ID="tbpa" style="width:40px"></asp:TextBox>
+                    </li>
 
-                <div class="divtexto">
-                    Glicemia<br />
-                    <asp:TextBox runat="server" ID="tbglicemia" CssClass="largurali"></asp:TextBox>
-                </div>
+                    <li>BC(bpm)<br />
+                        <asp:TextBox runat="server" ID="tbbcbpm" style="width:50px"></asp:TextBox>
+                    </li>
 
-                <div style="float: left; width: 10%; margin-left: 5px;">
-                    Leitura Glicemia<br />
-                    <asp:DropDownList runat="server" ID="ddlleitura" Width="236px" Height="16px"></asp:DropDownList>
-                </div>
-                <div style="clear: both"></div>
+                    <li>Saturação<br />
+                        <asp:TextBox runat="server" ID="TextBox1" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>Glicemia<br />
+                        <asp:TextBox runat="server" ID="tbglicemia" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>Leitura Glicemia<br />
+                        <asp:DropDownList runat="server" ID="ddlleitura" Width="255px" Height="16px"></asp:DropDownList>
+                    </li>
+                    <li style="clear: both"></li>
+
+                    <li style="width:100%;">
+                        <br /><asp:Label runat="server" ID="Label3" Text="REGISTRO PRÉ-NATAL" Font-Bold="true" ></asp:Label><br /><br />
+                    </li>
+
+                    <li>edma<br />
+                        <asp:DropDownList runat="server" ID="ddledma" Style="width: 68px;"></asp:DropDownList>
+                    </li>
+
+                    <li>AU (cm)<br />
+                        <asp:TextBox runat="server" ID="tbau" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>BCF (bpm)<br />
+                        <asp:TextBox runat="server" ID="tbbcf" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>MF<br />
+                        <asp:TextBox runat="server" ID="tbmf" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>Observação MF<br />
+                        <asp:TextBox runat="server" ID="tbobsmf" Width="385px"></asp:TextBox>
+                    </li>
+
+                    <li style="clear: both"></li>
+
+                     <li style="width:100%;">
+                        <br /><asp:Label runat="server" ID="Label6" Text="REGISTRO ANTROPOMETRIA" Font-Bold="true" ></asp:Label><br /><br />
+                    </li>
+                    <br /><br />
+
+                    <li>PC (cm)<br />
+                        <asp:TextBox runat="server" ID="tbpc" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>Peso (Kg)<br />
+                        <asp:TextBox runat="server" ID="tbpesoantropometria" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>Altura (cm)<br />
+                        <asp:TextBox runat="server" ID="tbautura" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>PP (cm)<br />
+                        <asp:TextBox runat="server" ID="tbpp" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>IMC<br />
+                        <asp:TextBox runat="server" ID="TextBox2" CssClass="largurali"></asp:TextBox>
+                    </li>
+
+                    <li>Observação Antropometria<br />
+                        <asp:TextBox runat="server" ID="tbobsantropometria" Width="294px"></asp:TextBox>
+                    </li>
+
+                    <li style="clear: both"></li>
+                    <li style="width:100%;">
+                       <br /> <asp:Label runat="server" ID="Label7" Text="REGISTRO DE PROBLEMAS E CONDIÇÕES ATIVAS" Font-Bold="true"></asp:Label><br /><br />
+                    </li>
+                    <br /><br />
+                    <li>Tipo Registro<br />
+                        <asp:DropDownList ID="ddltiporegistro" runat="server" Width="114px"></asp:DropDownList>
+                    </li>
+
+                    <li>Dados do Registro<br />
+                        <asp:TextBox runat="server" ID="tbdataregistro" CssClass="largurali" Style="width: 90px; !important;"></asp:TextBox>
+                    </li>
+
+                    <li>Idade da Gestante<br />
+                        <asp:TextBox runat="server" ID="tbidadegestante" CssClass="largurali" Style="width: 83px; !important;"></asp:TextBox>
+                    </li>
+
+                    <li>Código<br />
+                        <asp:DropDownList runat="server" ID="ddlcodigo" Style="width: 52px; !important;"></asp:DropDownList>
+                    </li>
+
+                    <li class="divtexto">Descrição Complemento<br />
+                        <asp:TextBox runat="server" ID="tbobservacaocomplemento" Width="326px"></asp:TextBox>
+                    </li>
+                    <li style="clear: both"></li>
+                </ul>
 
 
-                <div class="dvtitulo" style="margin-top: 10px;">
-                    <asp:Label runat="server" ID="Label3" Text="REGISTRO PRÉ-NATAL" CssClass="titulo"></asp:Label>
-                </div>
-                <div class="divtexto">
-                    edma<br />
-                    <asp:DropDownList runat="server" ID="ddledma" Style="width: 68px;"></asp:DropDownList>
-                </div>
-
-                <div class="divtexto">
-                    AU (cm)<br />
-                    <asp:TextBox runat="server" ID="tbau" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div style="float: left; width: 71px; margin-left: 5px;">
-                    BCF (bpm)<br />
-                    <asp:TextBox runat="server" ID="tbbcf" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    MF<br />
-                    <asp:TextBox runat="server" ID="tbmf" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    Observação MF<br />
-                    <asp:TextBox runat="server" ID="tbobsmf" Width="470px"></asp:TextBox>
-                </div>
-
-                <div style="clear: both"></div>
-                <div class="dvtitulo" style="margin-top: 10px;">
-                    <asp:Label runat="server" ID="Label6" Text="REGISTRO ANTROPOMETRIA" CssClass="titulo"></asp:Label>
-                </div>
-                <div class="divtexto">
-                    PC (cm)<br />
-                    <asp:TextBox runat="server" ID="tbpc" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    Peso (Kg)<br />
-                    <asp:TextBox runat="server" ID="tbpesoantropometria" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div style="float: left; width: 76px; margin-left: 5px;">
-                    Altura (cm)<br />
-                    <asp:TextBox runat="server" ID="tbautura" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    PP (cm)<br />
-                    <asp:TextBox runat="server" ID="tbpp" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    IMC<br />
-                    <asp:TextBox runat="server" ID="TextBox2" CssClass="largurali"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    Observação Antropometria<br />
-                    <asp:TextBox runat="server" ID="tbobsantropometria" Width="385px"></asp:TextBox>
-                </div>
-                <div style="clear: both"></div>
-                <div class="dvtitulo" style="margin-top: 10px;">
-                    <asp:Label runat="server" ID="Label7" Text="REGISTRO DE PROBLEMAS E CONDIÇÕES ATIVAS" CssClass="titulo"></asp:Label>
-                </div>
-                <div style="float: left; width: 123px">
-                    Tipo Registro<br />
-                    <asp:DropDownList ID="ddltiporegistro" runat="server" Width="114px"></asp:DropDownList>
-                </div>
-
-                <div style="float: left; width: 100px">
-                    Dados do Registro<br />
-                    <asp:TextBox runat="server" ID="tbdataregistro" CssClass="largurali" Style="width: 90px; !important;"></asp:TextBox>
-                </div>
-
-                <div style="float: left; width: 88px;">
-                    Idade da Gestante<br />
-                    <asp:TextBox runat="server" ID="tbidadegestante" CssClass="largurali" Style="width: 83px; !important;"></asp:TextBox>
-                </div>
-
-                <div class="divtexto">
-                    Código<br />
-                    <asp:DropDownList runat="server" ID="ddlcodigo" Style="width: 13px; !important;"></asp:DropDownList>
-                </div>
-
-                <div class="divtexto">
-                    Descrição Complemento<br />
-                    <asp:TextBox runat="server" ID="tbobservacaocomplemento" Width="326px"></asp:TextBox>
-                </div>
-                <div style="clear: both"></div>
-
-                <br />
-                <br />
-                <div id="botoes" style="height: 100px;">
-                    <div style="width: 162px; float: left;">
-                        <asp:Button runat="server" ID="btnhistorico" Text="HISTÓRICO DE MEDICAÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; width:150px; height:30px !Important;" />
+                
+                <div id="botoes" style="height: 0px;margin-left: 20px;">
+                    <br /><br /><br /><br />
+                    <div >
+                        <asp:Button runat="server" ID="btnhistorico" Text="HISTÓRICO DE MEDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; background-color: #a7c9d5;border-style: none;float: left;font-family: Trebuchet MS;margin-left: -166px;height: 31px !important;width: 142px;"/>
                     </div>
                     <div style="width: 160px; float: left;">
-                        <asp:Button runat="server" ID="btnproblemas" Text="PROBLEMAS E CONDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; width:150px; height:30px !Important;" />
+                        <asp:Button runat="server" ID="btnproblemas" Text="PROBLEMAS E CONDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; height: 31px !important;width: 130px !important; "/>
                     </div>
                     <div style="width: 200px; float: left;">
-                        <asp:Button runat="server" ID="btnresultados" Text="RESULTADO DE EXAMES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; width:130px; height:30px !Important;" />
+                        <asp:Button runat="server" ID="btnresultados" Text="RESULTADO DE EXAMES" Style="background-color: #a7c9d5;border-style: none;float: left;font-family: Trebuchet MS;margin-left: 23px;width: 130px !important;height: 31px !important;" />
                     </div>
+
                     <div style="width: 20px; float: left;">
-                        <asp:Button runat="server" ID="Button1" Text="SALVAR" Style="background-color: #ffd700; border-style: none; float: left; font-family: Trebuchet MS; font-weight: bold; width:120px; height:30px !Important;" OnClick="Button1_Click" />
+                        <asp:Button runat="server" ID="Button1" Text="SALVAR" Style="background-color: #ffd700;border-style: none;float: left;font-family: Trebuchet MS;font-weight: bold;height: 30px !important;width: 165px !important;" OnClick="Button1_Click" />
                     </div>
+
                 </div>
             </div>
-        </div>
-
-
     </div>
 
     <!-- FIM -------------------------------------------------------------------------------------------------------------------------------------DIV MODAL PARA ESCOLHER OS SIGTAP -->
     <div id="DivSIGTAP" style="display: none; height: 305px !important;" />
 
     <script type="text/javascript">
+        function AbreModalInfosGestante() {
+            $('#divLoadInfosGestante').dialog({ autoopen: false, modal: true, width: 810, height: 420, resizable: false, title: "GESTANTE - CADASTRO",
+                //                open: function () { $('#divLoadInfosCadas').show(); }
+                open: function (type, data) { $(this).parent().appendTo("form"); },
+                close: function (type, data) { ($(this).parent().replaceWith("")); }
+            });
+        }
+
+
+
+
+        function AbreModalInfosSigtap() {
+            $('#divLoadInfosSigtap').dialog({
+                autoopen: false, modal: true, width: 652, height: 350, resizable: false, title: "CÓDIGO FATURAMENTO - PESQUISA",
+                open: function () { $('#divLoadInfosCadas').load("/Componentes/CadastroProcedimento.aspx"); }
+               // open: function (type, data) { $(this).parent().appendTo("form"); },
+                //close: function (type, data) { ($(this).parent().replaceWith("")); }
+            });
+        }
+
         $(document).ready(function () {
             $(".campoCpf").mask("999.999.999-99");
             $(".campoTel").mask("(99)9999-9999");

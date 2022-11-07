@@ -345,11 +345,15 @@
                         <asp:DropDownList ID="drpProfissional" Width="160px" runat="server" OnSelectedIndexChanged="drpProfissional_OnSelectedIndexChanged"
                             AutoPostBack="true" />
                     </li>
+                    
+                    <!-- andre - Copiar -->
                     <li style="margin: 10px -3px 0 0;">
                         <asp:ImageButton ID="imgCadPac" runat="server" ImageUrl="~/Library/IMG/PGN_IconeTelaCadastro2.png"
                             OnClick="imgCadPac_OnClick" Style="width: 18px !important; height: 17px !important;"
                             ToolTip="Cadastro de Pacientes" />
                     </li>
+
+
                     <li style="margin-left: 8px">
                         <label for="ddlNomeUsuAteMed" title="Nome do usuário selecionado" class="lblObrigatorio">
                             Paciente</label>
@@ -798,6 +802,7 @@
             <div id="divLoadShowResponsaveis" style="display: none; height: 335px !important;" />
         </li>
         <li>
+            <!-- André = Tela sem intensão se der reaproveitada, escrita junto com a principal -->
             <div id="divLoadInfosCadas" style="display: none; height: 350px !important;">
                 <asp:HiddenField runat="server" ID="hidCoAluMod" />
                 <asp:HiddenField runat="server" ID="hidCoRespMod" />
@@ -1656,6 +1661,7 @@
             });
         }
 
+        //<!-- Andre - Copiar -->
         function AbreModalInfosCadas() {
             $('#divLoadInfosCadas').dialog({ autoopen: false, modal: true, width: 652, height: 380, resizable: false, title: "USUÁRIO DE SAÚDE - CADASTRO",
                 //                open: function () { $('#divLoadInfosCadas').show(); }

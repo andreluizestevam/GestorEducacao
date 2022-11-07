@@ -2793,8 +2793,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
 
         protected void imgCadPac_OnClick(object sender, EventArgs e)
         {
-
-
+            // André Janela PopUp
             if (!String.IsNullOrEmpty(ddlNomeUsu.SelectedValue))
             {
                 var tb07 = TB07_ALUNO.RetornaPelaChavePrimaria(int.Parse(ddlNomeUsu.SelectedValue), LoginAuxili.CO_EMP);

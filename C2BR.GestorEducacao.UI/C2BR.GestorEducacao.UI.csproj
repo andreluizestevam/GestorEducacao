@@ -353,6 +353,20 @@
     <Compile Include="Componentes\AlterarSenha.aspx.designer.cs">
       <DependentUpon>AlterarSenha.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Componentes\CadastroProcedimento.ascx.cs">
+      <DependentUpon>CadastroProcedimento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\CadastroProcedimento.ascx.designer.cs">
+      <DependentUpon>CadastroProcedimento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CadastroProcedimento.aspx.cs">
+      <DependentUpon>CadastroProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\CadastroProcedimento.aspx.designer.cs">
+      <DependentUpon>CadastroProcedimento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Componentes\CadastroRespUsuario.ascx.cs">
       <DependentUpon>CadastroRespUsuario.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -9315,6 +9329,8 @@
     <Content Include="BrowserDesatualizado.aspx" />
     <Content Include="Componentes\AgendaAtividades.aspx" />
     <Content Include="Componentes\AlterarSenha.aspx" />
+    <Content Include="Componentes\CadastroProcedimento.ascx" />
+    <Content Include="Componentes\CadastroProcedimento.aspx" />
     <Content Include="Componentes\CadastroRespUsuario.ascx" />
     <Content Include="Componentes\ComoFazer.aspx" />
     <Content Include="Componentes\AgendaContatos.aspx" />

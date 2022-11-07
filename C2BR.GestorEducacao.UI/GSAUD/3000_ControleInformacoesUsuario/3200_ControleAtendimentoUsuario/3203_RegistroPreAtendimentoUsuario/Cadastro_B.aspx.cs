@@ -79,10 +79,11 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
 
                 C2BR.GestorEducacao.BusinessEntities.Auxiliar.SQLDirectAcess direc = new C2BR.GestorEducacao.BusinessEntities.Auxiliar.SQLDirectAcess();
                 System.Data.DataTable dt = new System.Data.DataTable();
-                dt = direc.retornacolunas("select ID_PROC_MEDI_PROCE, CO_PROC_MEDI, NM_PROC_MEDI from TBS356_PROC_MEDIC_PROCE where LEN(co_proc_medi) = 10");
+                dt = direc.retornacolunas("select ID_PROC_MEDI_PROCE, CO_PROC_MEDI, NM_PROC_MEDI from TBS356_PROC_MEDIC_PROCE where LEN(co_proc_medi) = 10 ORDER BY NM_PROC_MEDI");
 
-                grdListarSIGTAP.DataSource = dt;
-                grdListarSIGTAP.DataBind();
+                //grdListarSIGTAP.DataSource = dt;
+                //grdListarSIGTAP.DataBind();
+                //Session["temp"] = grdListarSIGTAP.DataSource;
 
             }
         }
@@ -92,31 +93,31 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         }
         protected void btnincluir_Click(object sender, EventArgs e)
         {
-            DataTable mDataTable = new DataTable();
+            //DataTable mDataTable = new DataTable();
 
-            DataColumn mDataColumn;
-            mDataColumn = new DataColumn();
-            mDataColumn.DataType = Type.GetType("System.String");
-            mDataColumn.ColumnName = "Codigo";
-            mDataTable.Columns.Add(mDataColumn);
+            //DataColumn mDataColumn;
+            //mDataColumn = new DataColumn();
+            //mDataColumn.DataType = Type.GetType("System.String");
+            //mDataColumn.ColumnName = "Codigo";
+            //mDataTable.Columns.Add(mDataColumn);
 
-            mDataColumn = new DataColumn();
-            mDataColumn.DataType = Type.GetType("System.String");
-            mDataColumn.ColumnName = "Nome";
-            mDataTable.Columns.Add(mDataColumn);
+            //mDataColumn = new DataColumn();
+            //mDataColumn.DataType = Type.GetType("System.String");
+            //mDataColumn.ColumnName = "Nome";
+            //mDataTable.Columns.Add(mDataColumn);
 
-            DataRow linha;
-            foreach (GridViewRow linha2 in grdListarSIGTAP.Rows)
-            {
-                if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
-                {
-                    linha = mDataTable.NewRow();
-                    linha["Codigo"] = linha2.Cells[1].Text;
-                    linha["Nome"] = linha2.Cells[2].Text;
-                    mDataTable.Rows.Add(linha);
-                }
-            }
-            Session["dtsigtab"] = mDataTable;
+            //DataRow linha;
+            //foreach (GridViewRow linha2 in grdListarSIGTAP.Rows)
+            //{
+            //    if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
+            //    {
+            //        linha = mDataTable.NewRow();
+            //        linha["Codigo"] = linha2.Cells[1].Text;
+            //        linha["Nome"] = linha2.Cells[2].Text;
+            //        mDataTable.Rows.Add(linha);
+            //    }
+            //}
+            //Session["dtsigtab"] = mDataTable;
             //resDirec.CO_ALU
         }
 
@@ -504,7 +505,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
 
                                   CO_SEXO = tb07.CO_SEXO_ALU,
                                   dataEncamMed = tbs174.DT_ENCAM,
-
                                   CO_ALU = tb07.CO_ALU,
                                   //CO_RESP = tbs174.CO_RESP,
                                   CO_COL = tbs174.CO_COL,
@@ -1165,9 +1165,16 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                 }
                 grdEncamMedic.DataSource = res;
                 grdEncamMedic.DataBind();
-                Session["temp"] = null;
+                //Session["temp"] = grdEncamMedic.DataSource;
                 #endregion
             }
+        }
+        protected void grdListarSIGTAP_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            //grdListarSIGTAP.PageIndex = e.NewPageIndex;
+            //grdListarSIGTAP.DataSource = Session["temp"];
+            //grdListarSIGTAP.DataBind();
+            //AbreModalPadrao("AbreModalInfosSigtap();");
         }
 
         protected void grdEncamMedic_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -1257,12 +1264,31 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         {
             try
             {
-                Object.TBS478_ATEND_GESTANTE_BO BO = new Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
                 BO.GLICEMIA = txtGlicem.Text;
                 Session["TBS478_ATEND_GESTANTE_BO"] = BO;
             }
             catch { }
+        }
+        protected void btn_GESTANTE_Click(object sender, EventArgs e)
+        {
+            AbreModalPadrao("AbreModalInfosGestante();");
+        }
+
+        protected void btn_SIGTAP_Click(object sender, EventArgs e)
+        {
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        private void AbreModalPadrao(string funcao)
+        {
+            ScriptManager.RegisterStartupScript(
+                this.Page,
+                this.GetType(),
+                "Acao",
+                funcao,
+                true
+            );
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -1296,6 +1322,18 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             BO.LEITURAGLICEMICA = ddlleitura.SelectedValue;
             Session["TBS478_ATEND_GESTANTE_BO"] = BO;
             //insere.InsereTBS478(BO);
+        }
+
+        protected void imgCpfResp_Click(object sender, ImageClickEventArgs e)
+        {
+            C2BR.GestorEducacao.BusinessEntities.Auxiliar.SQLDirectAcess direc = new C2BR.GestorEducacao.BusinessEntities.Auxiliar.SQLDirectAcess();
+            System.Data.DataTable dt = new System.Data.DataTable();
+            //dt = direc.retornacolunas("select ID_PROC_MEDI_PROCE, CO_PROC_MEDI, NM_PROC_MEDI from TBS356_PROC_MEDIC_PROCE where LEN(co_proc_medi) = 10 and NM_PROC_MEDI like '%" + tbpesquisasigtab.Text + "%'");
+
+            //grdListarSIGTAP.DataSource = dt;
+            //grdListarSIGTAP.DataBind();
+            //Session["temp"] = grdListarSIGTAP.DataSource;
+            //AbreModalPadrao("AbreModalInfosSigtap();");
         }
     }
 }
