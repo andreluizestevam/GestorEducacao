@@ -753,7 +753,9 @@
     <Compile Include="3000_CtrlOperacionalPedagogico\3050_CtrlEmail\RptDemonEnvioEmail.designer.cs">
       <DependentUpon>RptDemonEnvioEmail.cs</DependentUpon>
     </Compile>
-    <Compile Include="3000_CtrlOperacionalPedagogico\3100_ControleInformacoesCadastraisUsuario\RptCarteiraIdentificacaoBeneficiario.cs" />
+    <Compile Include="3000_CtrlOperacionalPedagogico\3100_ControleInformacoesCadastraisUsuario\RptCarteiraIdentificacaoBeneficiario.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="3000_CtrlOperacionalPedagogico\3100_ControleInformacoesCadastraisUsuario\RptCarteiraIdentificacaoBeneficiario.Designer.cs">
       <DependentUpon>RptCarteiraIdentificacaoBeneficiario.cs</DependentUpon>
     </Compile>
