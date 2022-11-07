@@ -5,3 +5,6 @@ C2BRGestorEducacao/
 .vs/C2BR.GestorEducacao/FileContentIndex/f34d47d1-3537-46ec-bea1-256e13148054.vsidx
 .vs/C2BR.GestorEducacao/FileContentIndex/49d263ab-dee4-420e-b35b-8013770e4ae9.vsidx
 *.vsidx
+*.lock
+*.sln
+*.bak
