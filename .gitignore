@@ -278,3 +278,5 @@ C2BR.GestorEducacao.UI/obj/Debug/C2BR.GestorEducacao.UI.csproj.AssemblyReference
 C2BR.GestorEducacao.UI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 C2BR.GestorEducacao.WebService/obj/Debug/C2BR.GestorEducacao.WebService.csproj.AssemblyReference.cache
 C2BR.GestorEducacao.WebService/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
+*.cache
