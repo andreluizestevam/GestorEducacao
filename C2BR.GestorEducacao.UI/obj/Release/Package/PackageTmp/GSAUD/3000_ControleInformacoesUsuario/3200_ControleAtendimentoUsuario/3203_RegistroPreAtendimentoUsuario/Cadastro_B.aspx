@@ -7,6 +7,11 @@
 
     <style type="text/css">
 
+    .lblSubInfos
+    {
+        color: Orange;
+        font-size: 8px;
+    }
     .total {
         width: 100%;        
     }
@@ -396,7 +401,7 @@
         </asp:UpdatePanel>
         <li style="margin-top: 5px !important; height: 17px; width: 100%; text-align: center; text-transform: uppercase; margin-top: 0px; margin-left: auto; background-color: #B4EEB4; margin-bottom: 6px;">
 
-            <asp:Button runat="server" ID="btn_SIGTAP" Text="PROCEDIMENTOS" Style="background-color: #ffff99; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 15PX; border-width: 0px; height: 17px !important;" OnClick="btn_SIGTAP_Click" ToolTip="Pesquisar códigos procedimento" />
+            <%--<asp:Button runat="server" ID="btn_SIGTAP" Text="PROCEDIMENTOS" Style="background-color: #ffff99; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 15PX; border-width: 0px; height: 17px !important;" OnClick="btn_SIGTAP_Click" ToolTip="Pesquisar códigos procedimento" />--%>
             <%--<a href="#janela1" rel="modal" style="background-color: #ffff99; margin-top: 4px; font-size: 13px; font-weight: bold; margin-left: 15PX;">SIGTAP  </a>--%>
 
             <asp:Button runat="server" ID="btn_GESTANTE" Text="GESTANTE" Style="background-color: yellow; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 16PX; border-width: 0px; height: 17px !important;" OnClick="btn_GESTANTE_Click" ToolTip="Inserir dados da Gestante" />
@@ -773,147 +778,170 @@
                 <ul class="ulDadosResp" style="margin-left: -177px !important; width: 746px !important;">
 
                     <li>
-                        <asp:Label runat="server" ID="titulo" Text="DADOS GESTACIONAIS DO(A) PACIENTE" Font-Bold="true"></asp:Label>
+                        <asp:Label runat="server" ID="titulo" Text="DADOS GESTACIONAIS DO(A) PACIENTE" Font-Bold="false" CssClass="lblSubInfos"></asp:Label>
                     </li>
                     <br /><br />
 
                     <li>DUM<br />
-                        <asp:TextBox runat="server" ID="tbdum"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbdum" ToolTip="Data da última mestruação" class="campoData"></asp:TextBox>
                     </li>
 
                     <li>Observações DUM<br />
-                        <asp:TextBox runat="server" ID="tbobsdum" Width="430px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbobsdum" Width="545px" ToolTip="Observação sobre a última mestruação"></asp:TextBox>
                     </li>
 
                     <li>DPP<br />
-                        <asp:TextBox runat="server" ID="tbdpp"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbdpp" ToolTip="Data Provável do Parto" class="campoData"></asp:TextBox>
                     </li>
                     <li style="clear: both"></li>
 
                     <li>
-                        <br /><asp:Label runat="server" ID="Label1" Text="ESCUTA TRIAGEM - SINAIS VITAIS DA PACIENTE" Font-Bold="true"></asp:Label><br /><br />
+                        <br /><asp:Label runat="server" ID="Label1" Text="ESCUTA TRIAGEM - SINAIS VITAIS DA PACIENTE" Font-Bold="false" CssClass="lblSubInfos"></asp:Label><br /><br />
                     </li>
                     <li style="clear: both"></li>
                     
 
                     <li>Altura<br />
-                        <asp:TextBox runat="server" ID="tbaltura" style="width:40px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbaltura" style="width:40px" CssClass="campoGlicem" ToolTip="Altura da Gestante" ></asp:TextBox>
                     </li>
 
                     <li>Peso (Kg)<br />
-                        <asp:TextBox runat="server" ID="tbpeso" style="width:45px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbpeso" style="width:45px" CssClass="campoGlicem" ToolTip="Peso da Gestante"></asp:TextBox>
                     </li>
 
                     <li>IMC<br />
-                        <asp:TextBox runat="server" ID="tbimc" style="width:40px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbimc" style="width:40px" ToolTip="Índice de Massa Corporal" CssClass="campoGlicem" MaxLength="3"></asp:TextBox>
                     </li>
 
-                    <li>PA<br />
-                        <asp:TextBox runat="server" ID="tbpa" style="width:40px"></asp:TextBox>
+                    <li>Pressão Arterial<br />
+                        <asp:TextBox runat="server" ID="tbpa" style="width:40px" ToolTip="Pressão Arterial" CssClass="campoPressArteri"></asp:TextBox>
                     </li>
 
-                    <li>BC(bpm)<br />
-                        <asp:TextBox runat="server" ID="tbbcbpm" style="width:50px"></asp:TextBox>
+                    <li>Bat. Card.(bpm)<br />
+                        <asp:TextBox runat="server" ID="tbbcbpm" style="width:50px" CssClass="campoGlicem" ToolTip="Batimento cardíaco"></asp:TextBox>
                     </li>
 
                     <li>Saturação<br />
-                        <asp:TextBox runat="server" ID="TextBox1" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbsaturacao2" CssClass="campoGlicem"  ToolTip="Saturação" style="width:50px !important;"></asp:TextBox>
                     </li>
 
                     <li>Glicemia<br />
-                        <asp:TextBox runat="server" ID="tbglicemia" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbglicemia" CssClass="campoGlicem" style="width:50px !important;"></asp:TextBox>
                     </li>
 
                     <li>Leitura Glicemia<br />
-                        <asp:DropDownList runat="server" ID="ddlleitura" Width="255px" Height="16px"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="ddlleitura" Width="250px" Height="16px"  ToolTip="Informe a Glicemia">
+                            <asp:ListItem Text="(NE) Não especificado" Value="N"></asp:ListItem>
+                            <asp:ListItem Text="(EJ) Em Jejum" Value="E"></asp:ListItem>
+                            <asp:ListItem Text="(PR) Pré-Prandia" Value="P"></asp:ListItem>
+                            <asp:ListItem Text="(PO) Pós-Prandial" Value="R"></asp:ListItem>
+                        </asp:DropDownList>
                     </li>
                     <li style="clear: both"></li>
 
                     <li style="width:100%;">
-                        <br /><asp:Label runat="server" ID="Label3" Text="REGISTRO PRÉ-NATAL" Font-Bold="true" ></asp:Label><br /><br />
+                        <br /><asp:Label runat="server" ID="Label3" Text="REGISTRO PRÉ-NATAL" Font-Bold="false" CssClass="lblSubInfos" ></asp:Label><br /><br />
                     </li>
 
-                    <li>edma<br />
-                        <asp:DropDownList runat="server" ID="ddledma" Style="width: 68px;"></asp:DropDownList>
+                    <li>EDMA<br />
+                        <asp:DropDownList runat="server" ID="ddledma" Style="width: 68px;" ToolTip="EDMA">
+                            <asp:ListItem Text="Tipo 001" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 002" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 003" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 004" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 005" Value="5"></asp:ListItem>
+                        </asp:DropDownList>
                     </li>
 
                     <li>AU (cm)<br />
-                        <asp:TextBox runat="server" ID="tbau" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbau" CssClass="campoGlicem" ToolTip="Medição do Feto" style="width:50px !important;"></asp:TextBox>
                     </li>
 
                     <li>BCF (bpm)<br />
-                        <asp:TextBox runat="server" ID="tbbcf" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbbcf" CssClass="campoGlicem" ToolTip="Presença dos batimentos cardíacos fetais" style="width:50px !important;"></asp:TextBox>
                     </li>
 
-                    <li>MF<br />
-                        <asp:TextBox runat="server" ID="tbmf" CssClass="largurali"></asp:TextBox>
+                    <li>Movimentos Fetais<br />
+                        <asp:TextBox runat="server" ID="tbmf" CssClass="largurali" ToolTip="Movimentos Fetais"></asp:TextBox>
                     </li>
 
                     <li>Observação MF<br />
-                        <asp:TextBox runat="server" ID="tbobsmf" Width="385px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbobsmf" Width="415px"  ToolTip="Observações sobre os Movimentos Fetais"></asp:TextBox>
                     </li>
 
                     <li style="clear: both"></li>
 
                      <li style="width:100%;">
-                        <br /><asp:Label runat="server" ID="Label6" Text="REGISTRO ANTROPOMETRIA" Font-Bold="true" ></asp:Label><br /><br />
+                        <br /><asp:Label runat="server" ID="Label6" Text="REGISTRO ANTROPOMETRIA" Font-Bold="false" CssClass="lblSubInfos" ></asp:Label><br /><br />
                     </li>
                     <br /><br />
 
                     <li>PC (cm)<br />
-                        <asp:TextBox runat="server" ID="tbpc" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbpc" CssClass="largurali campoAltu" ToolTip="Perímetro Cefálico"></asp:TextBox>
                     </li>
 
                     <li>Peso (Kg)<br />
-                        <asp:TextBox runat="server" ID="tbpesoantropometria" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbpesoantropometria" CssClass="largurali campoAltu"  ToolTip="Peso atual"></asp:TextBox>
                     </li>
 
                     <li>Altura (cm)<br />
-                        <asp:TextBox runat="server" ID="tbautura" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbautura" CssClass="largurali campoAltu" ToolTip="Altura atual"></asp:TextBox>
                     </li>
 
                     <li>PP (cm)<br />
-                        <asp:TextBox runat="server" ID="tbpp" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbpp" CssClass="campoAltu largurali" ToolTip="Placenta Prévia"></asp:TextBox>
                     </li>
 
                     <li>IMC<br />
-                        <asp:TextBox runat="server" ID="TextBox2" CssClass="largurali"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbimcF" CssClass="campoAltu largurali" ToolTip="Índice de massa corporal"></asp:TextBox>
                     </li>
 
                     <li>Observação Antropometria<br />
-                        <asp:TextBox runat="server" ID="tbobsantropometria" Width="294px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbobsantropometria" Width="294px" ToolTip="Observação Antropometria"></asp:TextBox>
                     </li>
 
                     <li style="clear: both"></li>
                     <li style="width:100%;">
-                       <br /> <asp:Label runat="server" ID="Label7" Text="REGISTRO DE PROBLEMAS E CONDIÇÕES ATIVAS" Font-Bold="true"></asp:Label><br /><br />
+                       <br /> <asp:Label runat="server" ID="Label7" Text="REGISTRO DE PROBLEMAS E CONDIÇÕES ATIVAS" Font-Bold="false" CssClass="lblSubInfos"></asp:Label><br /><br />
                     </li>
                     <br /><br />
                     <li>Tipo Registro<br />
-                        <asp:DropDownList ID="ddltiporegistro" runat="server" Width="114px"></asp:DropDownList>
+                        <asp:DropDownList ID="ddltiporegistro" runat="server" Width="114px">
+                            <asp:ListItem Text="Tipo 001" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 002" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 003" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 004" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 005" Value="5"></asp:ListItem>
+                        </asp:DropDownList>
                     </li>
 
                     <li>Dados do Registro<br />
-                        <asp:TextBox runat="server" ID="tbdataregistro" CssClass="largurali" Style="width: 90px; !important;"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbdataregistro" CssClass="largurali" Style="width: 90px; !important;" ToolTip="Dados do Registro"></asp:TextBox>
                     </li>
 
                     <li>Idade da Gestante<br />
-                        <asp:TextBox runat="server" ID="tbidadegestante" CssClass="largurali" Style="width: 83px; !important;"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbidadegestante" CssClass="largurali" Style="width: 83px; !important;" ToolTip="Idade da Gestante"></asp:TextBox>
                     </li>
 
                     <li>Código<br />
-                        <asp:DropDownList runat="server" ID="ddlcodigo" Style="width: 52px; !important;"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="ddlcodigo" Style="width: 52px; !important;" ToolTip="Código">
+                            <asp:ListItem Text="Código 1" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Código 2" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Código 3" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Código 4" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Código 5" Value="5"></asp:ListItem>
+                        </asp:DropDownList>
                     </li>
 
                     <li class="divtexto">Descrição Complemento<br />
-                        <asp:TextBox runat="server" ID="tbobservacaocomplemento" Width="326px"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tbobservacaocomplemento" Width="326px" ToolTip="Descrição Complementar"></asp:TextBox>
                     </li>
                     <li style="clear: both"></li>
                 </ul>
 
 
-                
-                <div id="botoes" style="height: 0px;margin-left: 20px;">
+                <br /><br /><br /><br />
+                <div id="botoes" style="height: 0px;margin-left: 20px; margin-top:170px;">
                     <br /><br /><br /><br />
                     <div >
                         <asp:Button runat="server" ID="btnhistorico" Text="HISTÓRICO DE MEDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; background-color: #a7c9d5;border-style: none;float: left;font-family: Trebuchet MS;margin-left: -166px;height: 31px !important;width: 142px;"/>

@@ -339,12 +339,40 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                 {
                     //André Grava telas criadas
                     C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+                    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS insere = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS();
                     BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
                     BO.CO_ALUNO = Convert.ToInt16(resDirec.CO_ALU);
                     BO.COD_GESTANTE = Convert.ToInt16(resDirec.CO_ALU);
                     BO.CO_PRE_ATEND = Convert.ToInt16(tbs194.CO_PRE_ATEND);
-                    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS insere = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS();
+                    //try { BO.DUM = Convert.ToDateTime(tbdum.Text); } catch { BO.DUM = DateTime.Now; }
+                    //try { BO.OBS_DUM = tbobsdum.Text; } catch { BO.OBS_DUM = ""; }
+                    //try { BO.DPP = Convert.ToDateTime(tbdpp.Text); } catch { BO.DPP = DateTime.Now; }
+                    //try { BO.EDMA = ddledma.SelectedValue; } catch { BO.EDMA = ""; }
+                    //try { BO.AUTURA_RPN = tbau.Text; } catch { BO.AUTURA_RPN = ""; }
+                    //try { BO.BCF = tbbcf.Text; } catch { BO.BCF = ""; }
+                    //try { BO.MF = tbmf.Text; } catch { BO.MF = ""; }
+                    //try { BO.OBS_MF = tbobsmf.Text; } catch { BO.OBS_MF = ""; }
+                    //try { BO.PC = tbpc.Text; } catch { BO.PC = ""; }
+                    //try { BO.PESO = tbpesoantropometria.Text; } catch { BO.PESO = ""; }
+                    //try { BO.AUTURA_RA = tbautura.Text; } catch { BO.AUTURA_RA = ""; }
+                    //try { BO.PP = tbpp.Text; } catch { BO.PP = ""; }
+                    //try { BO.IMC = tbimcF.Text; } catch { BO.IMC = ""; }
+                    //try { BO.OBS_ANTRO = tbobsantropometria.Text; } catch { BO.OBS_ANTRO = ""; }
+                    //try { BO.TIPO_REG = ddltiporegistro.SelectedValue; } catch { BO.TIPO_REG = ""; }
+                    //try { BO.DT_REGISTRO = tbdataregistro.Text; } catch { BO.DT_REGISTRO = ""; }
+                    //try { BO.IDADE_GESTANTE = tbidadegestante.Text; } catch { BO.IDADE_GESTANTE = ""; }
+                    //try { BO.COD_GESTANTE = Convert.ToInt32(ddlcodigo.SelectedValue); } catch { BO.COD_GESTANTE = 0; }
+                    //try { BO.OBS_COMPLEMENTO = tbobservacaocomplemento.Text; } catch { BO.OBS_COMPLEMENTO = ""; }
+                    //try { BO.SATURACAO = tbsaturacao2.Text; } catch { BO.SATURACAO = ""; }
+                    //try { BO.LEITURAGLICEMICA = ddlleitura.SelectedValue; } catch { BO.LEITURAGLICEMICA = ""; }
+                    //try { BO.GLICEMIA = tbglicemia.Text; } catch { BO.GLICEMIA = ""; }
+                    //try { BO.PA = ""; } catch { BO.PA = ""; }
                     insere.InsereTBS478(BO);
+
+                    Session["CO_ALUNO"] = null;
+                    Session["IDADE"] = null;
+                    Session["SEXO"] = null;
+
 
                     DataTable dt = new DataTable();
                     dt = (DataTable)Session["dtsigtab"];
@@ -1184,96 +1212,110 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                 if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
                 {
                     Session["CO_ALUNO"] = linha2.Cells[11].Text;
+                    Session["IDADE"] = linha2.Cells[6].Text;
+                    Session["SEXO"] = linha2.Cells[5].Text;
+                    try { tbidadegestante.Text = linha2.Cells[6].Text; }catch { }
                 }
             }
         }
 
         protected void ddlglicemia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.LEITURAGLICEMICA = ddlglicemia.SelectedValue;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            //try
+            //{
+            //    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+            //    BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+            //    BO.LEITURAGLICEMICA = ddlglicemia.SelectedValue;
+            //    Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
 
         protected void txtAltura_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.AUTURA_RA = txtAltura.Text;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            //try
+            //{
+                try { tbaltura.Text = txtAltura.Text; } catch { }
+                //C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+                //BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+                //BO.AUTURA_RA = txtAltura.Text;
+                //Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
 
         protected void txtPeso_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.PESO = txtPeso.Text;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            try { tbpeso.Text = txtPeso.Text; } catch { }
+            //try
+            //{
+            //    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+            //    BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+            //    BO.PESO = txtPeso.Text;
+            //    Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
 
         protected void txtPressArt_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.PA = txtPressArt.Text;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            try { tbpa.Text = txtPressArt.Text; } catch { }
+            //try
+            //{
+            //    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+            //    BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+            //    BO.PA = txtPressArt.Text;
+            //    Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
 
         protected void tbbatimento_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.BCF = tbbatimento.Text;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            try { tbbcbpm.Text = tbbatimento.Text; } catch { }
+            //try
+            //{
+            //    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+            //    BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+            //    BO.BCF = tbbatimento.Text;
+            //    Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
 
         protected void tbsaturacao_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.SATURACAO = tbbatimento.Text;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            try { tbsaturacao2.Text = tbsaturacao.Text; } catch { }
+            //try
+            //{
+            //    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+            //    BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+            //    BO.SATURACAO = tbbatimento.Text;
+            //    Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
 
         protected void txtGlicem_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
-                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                BO.GLICEMIA = txtGlicem.Text;
-                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
-            }
-            catch { }
+            try { tbglicemia.Text = txtGlicem.Text; } catch { }
+            //try
+            //{
+            //    C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+            //    BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+            //    BO.GLICEMIA = txtGlicem.Text;
+            //    Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            //}
+            //catch { }
         }
         protected void btn_GESTANTE_Click(object sender, EventArgs e)
         {
-            AbreModalPadrao("AbreModalInfosGestante();");
+            if(Session["SEXO"] is null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente, e este ser do sexo Feminino.");
+            else if ((Session["CO_ALUNO"] == null) || (Session["SEXO"].ToString() == "M"))
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente, e este ser do sexo Feminino.");
+            else
+                AbreModalPadrao("AbreModalInfosGestante();");
         }
 
         protected void btn_SIGTAP_Click(object sender, EventArgs e)
@@ -1292,35 +1334,53 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(tbdum.Text))
+            {
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário inserir a data da últrima mestruação!");
+                AbreModalPadrao("AbreModalInfosGestante();");
+            }
+            if (string.IsNullOrWhiteSpace(tbdpp.Text))
+            {
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário inserir a Data Provável do Parto!");
+                AbreModalPadrao("AbreModalInfosGestante();");
+            }
+
+            
             //string TEMP = 
             Object.TBS478_ATEND_GESTANTE_BO BO = new Object.TBS478_ATEND_GESTANTE_BO();
             //TBS478_ATEND_GESTANTE_BUSINESS insere = new TBS478_ATEND_GESTANTE_BUSINESS();
-            BO.AUTURA_RA = tbaltura.Text;
-            BO.AUTURA_RPN = tbautura.Text;
-            BO.BCF = tbbcf.Text;
-            BO.CO_ALUNO = 0;
-            BO.COD_GESTANTE = 0;
-            BO.DPP = Convert.ToDateTime(tbdpp.Text);
-            BO.DT_REGISTRO = tbdataregistro.Text;
-            BO.DUM = Convert.ToDateTime(tbdum.Text);
-            BO.EDMA = ddledma.SelectedValue;
-            BO.ID_ATEND_GESTANTE = 0;
-            BO.IDADE_GESTANTE = tbidadegestante.Text;
-            BO.IMC = tbimc.Text;
-            BO.MF = tbmf.Text;
-            BO.OBS_ANTRO = tbobsantropometria.Text;
-            BO.OBS_COMPLEMENTO = tbobservacaocomplemento.Text;
-            BO.OBS_DUM = tbobsdum.Text;
-            BO.OBS_MF = tbobsmf.Text;
-            BO.PC = tbpc.Text;
-            BO.PESO = tbpeso.Text;
-            BO.PP = tbpp.Text;
-            BO.TIPO_REG = ddltiporegistro.SelectedValue;
-            BO.PA = tbpa.Text;
-            BO.SATURACAO = tbsaturacao.Text;
-            BO.GLICEMIA = tbglicemia.Text;
-            BO.LEITURAGLICEMICA = ddlleitura.SelectedValue;
-            Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+
+            if (Session["CO_ALUNO"] == null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente!");
+            else
+            {
+                try { BO.AUTURA_RA = tbaltura.Text; } catch { }
+                try { BO.AUTURA_RPN = tbautura.Text; } catch { }
+                try { BO.BCF = tbbcf.Text; } catch { }
+                try { BO.CO_ALUNO = Convert.ToInt32(Session["CO_ALUNO"]); } catch { }
+                try { BO.COD_GESTANTE = 0; } catch { }
+                try { BO.DPP = Convert.ToDateTime(tbdpp.Text); } catch { }
+                try { BO.DADOS_REGISTRO = tbdataregistro.Text; } catch { }
+                try { BO.DUM = Convert.ToDateTime(tbdum.Text); } catch { }
+                try { BO.EDMA = ddledma.SelectedValue; } catch { }
+                try { BO.ID_ATEND_GESTANTE = 0; } catch { }
+                try { BO.IDADE_GESTANTE = tbidadegestante.Text; } catch { }
+                try { BO.IMC = tbimc.Text; } catch { }
+                try { BO.MF = tbmf.Text; } catch { }
+                try { BO.OBS_ANTRO = tbobsantropometria.Text; } catch { }
+                try { BO.OBS_COMPLEMENTO = tbobservacaocomplemento.Text; } catch { }
+                try { BO.OBS_DUM = tbobsdum.Text; } catch { }
+                try { BO.OBS_MF = tbobsmf.Text; } catch { }
+                try { BO.PC = tbpc.Text; } catch { }
+                try { BO.PESO = tbpeso.Text; } catch { }
+                try { BO.PP = tbpp.Text; } catch { }
+                try { BO.TIPO_REG = ddltiporegistro.SelectedValue; } catch { }
+                try { BO.PA = tbpa.Text; } catch { }
+                try { BO.SATURACAO = tbsaturacao.Text; } catch { }
+                try { BO.GLICEMIA = tbglicemia.Text; } catch { }
+                try { BO.LEITURAGLICEMICA = ddlleitura.SelectedValue; } catch { }
+                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            }
             //insere.InsereTBS478(BO);
         }
 

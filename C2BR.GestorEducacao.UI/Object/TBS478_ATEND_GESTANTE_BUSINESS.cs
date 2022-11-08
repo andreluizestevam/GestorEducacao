@@ -30,31 +30,37 @@ namespace C2BR.GestorEducacao.UI.Object
                              ",[IMC]                                    " +
                              ",[OBS_ANTRO]                              " +
                              ",[TIPO_REG]                               " +
-                             ",[DT_REGISTRO]                            " +
+                             ",[DADOS_REGISTRO]                         " +
                              ",[IDADE_GESTANTE]                         " +
                              ",[COD_GESTANTE]                           " +
-                             ",[OBS_COMPLEMENTO])                       " +
+                             ",[OBS_COMPLEMENTO]                        " +
+                             ",[SATURACAO]                              " +
+                             ",[LEITURAGLICEMICA]                       " +
+                             ",[PA])                                    " +
                              " VALUES(" + BO.CO_ALUNO +
-                                         ",'" + BO.DUM + "'" +
-                                         ",'" + BO.OBS_DUM + "'" +
-                                         ",'" + BO.DPP + "'" +
-                                         ",'" + BO.EDMA + "'" +
-                                         ",'" + BO.EDMA + "'" +
-                                         ",'" + BO.AUTURA_RPN + "'" +
-                                         ",'" + BO.BCF + "'" +
-                                         ",'" + BO.MF + "'" +
-                                         ",'" + BO.OBS_MF + "'" +
-                                         ",'" + BO.PC + "'" +
-                                         ",'" + BO.PESO + "'" +
-                                         ",'" + BO.AUTURA_RA + "'" +
-                                         ",'" + BO.IMC + "'" +
-                                         ",'" + BO.OBS_ANTRO + "'" +
-                                         ",'" + BO.TIPO_REG + "'" +
-                                         ",'" + BO.DT_REGISTRO + "'" +
-                                         ",'" + BO.IDADE_GESTANTE + "'" +
-                                         ",'" + BO.COD_GESTANTE + "'" +
-                                         ",'" + BO.OBS_COMPLEMENTO + "')";
-                direct.InsereAltera(SQL);
+                                   ",'" + BO.DUM + "'" +
+                                   ",'" + BO.OBS_DUM + "'" +
+                                   ",'" + BO.DPP + "'" +
+                                   ",'" + BO.EDMA + "'" +
+                                   ",'" + BO.AUTURA_RPN + "'" +
+                                   ",'" + BO.BCF + "'" +
+                                   ",'" + BO.MF + "'" +
+                                   ",'" + BO.OBS_MF + "'" +
+                                   ",'" + BO.PC + "'" +
+                                   ",'" + BO.PESO + "'" +
+                                   ",'" + BO.AUTURA_RA + "'" +
+                                   ",'" + BO.PP + "'" +
+                                   ",'" + BO.IMC + "'" +
+                                   ",'" + BO.OBS_ANTRO + "'" +
+                                   ",'" + BO.TIPO_REG + "'" +
+                                   ",'" + BO.DADOS_REGISTRO + "'" +
+                                   ",'" + BO.IDADE_GESTANTE + "'" +
+                                   ",'" + BO.COD_GESTANTE + "'" +
+                                   ",'" + BO.OBS_COMPLEMENTO + "'" +
+                                   ",'" + BO.SATURACAO + "'" +
+                                   ",'" + BO.LEITURAGLICEMICA + "'" +
+                                   ",'" + BO.PA + "')";
+                direct.InsereAltera(SQL);               
                 return true;
             }
             catch { return false; }

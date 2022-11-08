@@ -105,15 +105,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.GridView grdEncamMedic;
 
         /// <summary>
-        /// Controle btn_SIGTAP.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_SIGTAP;
-
-        /// <summary>
         /// Controle btn_GESTANTE.
         /// </summary>
         /// <remarks>
@@ -708,13 +699,13 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.TextBox tbbcbpm;
 
         /// <summary>
-        /// Controle TextBox1.
+        /// Controle tbsaturacao2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox tbsaturacao2;
 
         /// <summary>
         /// Controle tbglicemia.
@@ -834,13 +825,13 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.TextBox tbpp;
 
         /// <summary>
-        /// Controle TextBox2.
+        /// Controle tbimcF.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox tbimcF;
 
         /// <summary>
         /// Controle tbobsantropometria.

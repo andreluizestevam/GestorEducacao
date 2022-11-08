@@ -27,6 +27,7 @@ namespace C2BR.GestorEducacao.UI.Object
         public string OBS_ANTRO { get; set; }
         public string TIPO_REG { get; set; }
         public string DT_REGISTRO { get; set; }
+        public string DADOS_REGISTRO { get; set; }
         public string IDADE_GESTANTE { get; set; }
         public string GLICEMIA { get; set; }
         public string LEITURAGLICEMICA { get; set; }
