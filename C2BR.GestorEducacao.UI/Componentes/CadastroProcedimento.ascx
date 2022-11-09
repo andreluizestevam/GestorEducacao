@@ -1,6 +1,16 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CadastroProcedimento.ascx.cs" Inherits="C2BR.GestorEducacao.UI.Componentes.CadastroProcedimento1" %>
 <link href="../Library/CSS/interno.css" rel="stylesheet" />
 
+<script type="text/javascript">
+    function AbreModalProcedHorar() {
+        $('#divLoadProcedHorar').dialog({
+            autoopen: false, modal: true, width: 990, height: 350, top: 87, left: 4, resizable: false, title: "AÇÃO APLICADA AO PACIENTE E SUA FORMA DE CONTRATAÇÃO",
+            //                open: function () { $('#divLoadInfosCadas').show(); }
+            open: function (type, data) { $(this).parent().appendTo("form"); },
+            close: function (type, data) { ($(this).parent().replaceWith("")); }
+        });
+    }
+</script>
 <ul class="ulDados">
     <li>
         <ul style="width: 766px; margin-top: -10px;">
@@ -15,10 +25,10 @@
             </li>
             <li id="Li1" runat="server" title="Marque para recuperar procedimentos anteriores"
                 class="" style="float: right; margin: -15px -161px 2px 2px; height: 15px; width: 96px;">
-                <asp:Label ID="Label1" Style="font-family: Tahoma; font-weight: bold; margin-top: -16px;" runat="server"
+                <asp:Label Style="font-family: Tahoma; font-weight: bold; margin-top: -16px;" runat="server"
                     Text="Retornar anteriores"></asp:Label>
             </li>
-            <li id="Li2" runat="server" title="Marque para recuperar procedimentos anteriores" class=""
+            <li runat="server" title="Marque para recuperar procedimentos anteriores" class=""
                 style="float: right; margin: -17px -170px 2px 2px; height: 15px; width: 12px;">
                 <asp:CheckBox ID="chkRetornaProced" ToolTip="Recuperar procedimentos anteriores"
                     runat="server" Style="margin-top: -5px;" AutoPostBack="true" OnCheckedChanged="chkRetornaProced_OnCheckedChanged" />
@@ -134,4 +144,3 @@
         </asp:LinkButton>
     </li>
 </ul>
-

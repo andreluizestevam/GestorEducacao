@@ -1308,8 +1308,8 @@
                                     <asp:TemplateField HeaderText="CORT">
                                         <ItemStyle Width="10px" HorizontalAlign="Center" />
                                         <ItemTemplate>
-                                            <asp:CheckBox runat="server" ID="chkCortProc" OnCheckedChanged="chkCortProc_OnChanged"
-                                                AutoPostBack="true"></asp:CheckBox>
+                                            <asp:CheckBox runat="server" ID="chkCortProc"
+                                                AutoPostBack="false"></asp:CheckBox>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="R$ UNIT">

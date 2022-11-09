@@ -443,11 +443,11 @@
                             </asp:DropDownList>
                         </li>
                         <li style="margin-left: 40px; margin-right: -123px;">
-                            <label>
+                            <label style="margin-left:-38px;">
                                 Profissional Responsável</label>
-                            <asp:DropDownList ID="drpProfResp" Width="185px" runat="server" />
+                            <asp:DropDownList ID="drpProfResp" Width="185px" runat="server" style="margin-left:-39px;" />
                         </li>
-                        <li style="margin-left: 170px;">
+                        <li style="margin-left: 146px;">
                             <label>
                                 Dt. Atendimento</label>
                             <asp:TextBox ID="txtDtAtend" runat="server" CssClass="campoData" />

@@ -253,6 +253,10 @@ Boleto.Net/obj/Debug/*.*
 **/C2BR.GestorEducacao.DataBaseManagement/obj/Debug/C2BR.GestorEducacao.DataBaseManagement.csproj.AssemblyReference.cache
 **/C2BR.GestorEducacao.UI/obj/*.*
 **/C2BR.GestorEducacao.UI/obj/Debug/*.cache
+**/C2BR.GestorEducacao.UI/obj/Debug/*.dll
+**/C2BR.GestorEducacao.UI/obj/Debug/*.pdb
+**/C2BR.GestorEducacao.UI/bin/*.pdb
+**/C2BR.GestorEducacao.UI/bin/*.dll
 C2BR.GestorEducacao.Bios/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 C2BR.GestorEducacao.BusinessEntities/obj/Debug/C2BR.GestorEducacao.BusinessEntities.csproj.AssemblyReference.cache
 C2BR.GestorEducacao.BusinessEntities/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

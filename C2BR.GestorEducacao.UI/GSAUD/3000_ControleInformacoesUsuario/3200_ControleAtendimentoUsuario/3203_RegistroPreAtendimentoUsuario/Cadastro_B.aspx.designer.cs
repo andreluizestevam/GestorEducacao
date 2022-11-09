@@ -105,6 +105,15 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.GridView grdEncamMedic;
 
         /// <summary>
+        /// Controle btn_SIGTAP.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_SIGTAP;
+
+        /// <summary>
         /// Controle btn_GESTANTE.
         /// </summary>
         /// <remarks>
@@ -591,13 +600,67 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.TextBox txtObserPreAtend;
 
         /// <summary>
-        /// Controle procedimento.
+        /// Controle li4.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::C2BR.GestorEducacao.UI.Componentes.CadastroProcedimento1 procedimento;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li4;
+
+        /// <summary>
+        /// Controle LinkButton1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+
+        /// <summary>
+        /// Controle hidCoPaciProced.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hidCoPaciProced;
+
+        /// <summary>
+        /// Controle hidCoAgendProced.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hidCoAgendProced;
+
+        /// <summary>
+        /// Controle grdProcedimentos.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdProcedimentos;
+
+        /// <summary>
+        /// Controle btnConfirmarProced.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnConfirmarProced;
+
+        /// <summary>
+        /// Controle lblConfirmarProced.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConfirmarProced;
 
         /// <summary>
         /// Controle divResp.
