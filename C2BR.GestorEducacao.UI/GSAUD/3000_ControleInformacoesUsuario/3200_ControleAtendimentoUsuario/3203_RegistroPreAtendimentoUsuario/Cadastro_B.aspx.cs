@@ -33,6 +33,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
     public partial class Cadastro_B : System.Web.UI.Page
     {
         int qtdLinhasGrid = 0;
+        ProcedimentosClinicos proc = new ProcedimentosClinicos();
 
         public PadraoCadastros CurrentPadraoCadastros { get { return (PadraoCadastros)Page.Master; } }
 
@@ -84,6 +85,8 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                 //grdListarSIGTAP.DataSource = dt;
                 //grdListarSIGTAP.DataBind();
                 //Session["temp"] = grdListarSIGTAP.DataSource;
+                ddlgrupoprocedimento = proc.DropGrupo(ddlgrupoprocedimento);
+                ddlsubgrupoprocedimento.Items.Insert(0, new ListItem("Todos", "0"));
 
             }
         }
@@ -197,7 +200,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                 //tbs194.CO_RESP = resDirec.CO_RESP;
                 tbs194.CO_ALU = resDirec.CO_ALU;
                 
-                Session["CO_ALU"] = resDirec.CO_ALU;
+                //Session["CO_ALU"] = resDirec.CO_ALU;
 
                 tbs194.CO_SITUA_PRE_ATEND = "A";
                 //tbs194.DT_SITUA_PRE_ATEND = DateTime.Now;
@@ -337,46 +340,40 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
 
                 try
                 {
+                    //foreach (GridViewRow linha2 in grdEncamMedic.Rows)
+                    //{
+                    //    if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
+                    //    {
+                    //        Session["CO_ALUNO"] = linha2.Cells[11].Text;
+                    //        Session["IDADE"] = linha2.Cells[6].Text;
+                    //        Session["SEXO"] = linha2.Cells[5].Text;
+                    //        try { tbidadegestante.Text = linha2.Cells[6].Text; } catch { }
+                    //    }
+                    //}
                     //André Grava telas criadas
                     C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
                     C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS insere = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS();
                     BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
-                    BO.CO_ALUNO = Convert.ToInt16(resDirec.CO_ALU);
-                    BO.COD_GESTANTE = Convert.ToInt16(resDirec.CO_ALU);
-                    BO.CO_PRE_ATEND = Convert.ToInt16(tbs194.CO_PRE_ATEND);
-                    //try { BO.DUM = Convert.ToDateTime(tbdum.Text); } catch { BO.DUM = DateTime.Now; }
-                    //try { BO.OBS_DUM = tbobsdum.Text; } catch { BO.OBS_DUM = ""; }
-                    //try { BO.DPP = Convert.ToDateTime(tbdpp.Text); } catch { BO.DPP = DateTime.Now; }
-                    //try { BO.EDMA = ddledma.SelectedValue; } catch { BO.EDMA = ""; }
-                    //try { BO.AUTURA_RPN = tbau.Text; } catch { BO.AUTURA_RPN = ""; }
-                    //try { BO.BCF = tbbcf.Text; } catch { BO.BCF = ""; }
-                    //try { BO.MF = tbmf.Text; } catch { BO.MF = ""; }
-                    //try { BO.OBS_MF = tbobsmf.Text; } catch { BO.OBS_MF = ""; }
-                    //try { BO.PC = tbpc.Text; } catch { BO.PC = ""; }
-                    //try { BO.PESO = tbpesoantropometria.Text; } catch { BO.PESO = ""; }
-                    //try { BO.AUTURA_RA = tbautura.Text; } catch { BO.AUTURA_RA = ""; }
-                    //try { BO.PP = tbpp.Text; } catch { BO.PP = ""; }
-                    //try { BO.IMC = tbimcF.Text; } catch { BO.IMC = ""; }
-                    //try { BO.OBS_ANTRO = tbobsantropometria.Text; } catch { BO.OBS_ANTRO = ""; }
-                    //try { BO.TIPO_REG = ddltiporegistro.SelectedValue; } catch { BO.TIPO_REG = ""; }
-                    //try { BO.DT_REGISTRO = tbdataregistro.Text; } catch { BO.DT_REGISTRO = ""; }
-                    //try { BO.IDADE_GESTANTE = tbidadegestante.Text; } catch { BO.IDADE_GESTANTE = ""; }
-                    //try { BO.COD_GESTANTE = Convert.ToInt32(ddlcodigo.SelectedValue); } catch { BO.COD_GESTANTE = 0; }
-                    //try { BO.OBS_COMPLEMENTO = tbobservacaocomplemento.Text; } catch { BO.OBS_COMPLEMENTO = ""; }
-                    //try { BO.SATURACAO = tbsaturacao2.Text; } catch { BO.SATURACAO = ""; }
-                    //try { BO.LEITURAGLICEMICA = ddlleitura.SelectedValue; } catch { BO.LEITURAGLICEMICA = ""; }
-                    //try { BO.GLICEMIA = tbglicemia.Text; } catch { BO.GLICEMIA = ""; }
-                    //try { BO.PA = ""; } catch { BO.PA = ""; }
-                    insere.InsereTBS478(BO);
-
-                    Session["CO_ALUNO"] = null;
-                    Session["IDADE"] = null;
-                    Session["SEXO"] = null;
-
-
+                    if (BO is null){}
+                    else
+                    {
+                        try { BO.CO_ALUNO = Convert.ToInt32(Session["CO_ALU"].ToString()); } catch { }
+                        try { BO.COD_GESTANTE = Convert.ToInt16(resDirec.CO_ALU); } catch { }
+                        try { BO.CO_PRE_ATEND = Convert.ToInt16(tbs194.CO_PRE_ATEND); } catch { }
+                        insere.InsereTBS478(BO);
+                    }
                     DataTable dt = new DataTable();
                     dt = (DataTable)Session["dtsigtab"];
-
+                    if(dt.Rows.Count > 0)
+                    {
+                        for(int i = 0; i < dt.Rows.Count;i++)
+                        {
+                            proc.InsereProcedimentos(Session["CO_ALU"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString());
+                        }
+                    }
+                    Session["CO_ALU"] = null;
+                    Session["IDADE"] = null;
+                    Session["SEXO"] = null;
                 }
                 catch { }
 
@@ -412,7 +409,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             System.Data.DataTable dt = new System.Data.DataTable();
             dt = direct.retornacolunas(" select 'dataEncamMed' =  A.DT_ENCAM,'DTHREncamMed' = A.dt_encam, 'A.ID_AGEND_HORA' = A.ID_AGEND_HORAR,'CO_TIPO_RISCO' = A.CO_CLASS_RISCO, 'NO_ESPEC' = B.DE_FUNC_COL, "+
                                        " 'CO_ESPEC' = B.CO_FUN, 'dt_nascimento' = C.DT_NASC_ALU, 'CO_SEXO' = C.CO_SEXO_ALU, 'dataEncamMed' = A.DT_ENCAM, " +
-                                       " 'CO_COL' = A.CO_COL, 'NM_OPER' = C.NU_REGI_SUS_ALU, 'NO_COL' = B.NO_COL, A.DT_AGEND_HORAR, 'ID_AGEND_HORA' = A.ID_AGEND_HORAR, C.CO_RESP, c.ID_OPER, C.ID_PLAN, 'ANTIGO' = null, A.CO_ALU,C.CO_ALU AS cod_aluno " + 
+                                       " 'CO_COL' = A.CO_COL, 'NM_OPER' = C.NU_REGI_SUS_ALU, 'NO_COL' = B.NO_COL, A.DT_AGEND_HORAR, 'ID_AGEND_HORA' = A.ID_AGEND_HORAR, C.CO_RESP, c.ID_OPER, C.ID_PLAN, 'ANTIGO' = null, A.CO_ALU,'CO_ALUN' = CONCAT(C.CO_ALU,':',A.ID_AGEND_HORAR) " + 
                                        " from TBS174_AGEND_HORAR A  " +
                                        " inner join TB03_COLABOR B on b.CO_COL = a.CO_COL  " +
                                        " inner join TB07_ALUNO C on C.CO_ALU = A.CO_ALU  " +
@@ -422,7 +419,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                                        " union all  " +
                                        " select 'dataEncamMed' =  A.DT_ENCAM,'DTHREncamMed' = A.dt_encam, 'A.ID_AGEND_HORA' = A.ID_AGEND_HORAR,'CO_TIPO_RISCO' = A.CO_CLASS_RISCO, 'NO_ESPEC' = B.DE_FUNC_COL, " +
                                        " 'CO_ESPEC' = B.CO_FUN, 'dt_nascimento' = C.DT_NASC_ALU, 'CO_SEXO' = C.CO_SEXO_ALU, 'dataEncamMed' = A.DT_ENCAM, " +
-                                       " 'CO_COL' = A.CO_COL, 'NM_OPER' = C.NU_REGI_SUS_ALU, 'NO_COL' = B.NO_COL, A.DT_AGEND_HORAR, 'ID_AGEND_HORA' = A.ID_AGEND_HORAR, C.CO_RESP, c.ID_OPER, C.ID_PLAN, 'ANTIGO' = null, A.CO_ALU,C.CO_ALU AS cod_aluno" + 
+                                       " 'CO_COL' = A.CO_COL, 'NM_OPER' = C.NU_REGI_SUS_ALU, 'NO_COL' = B.NO_COL, A.DT_AGEND_HORAR, 'ID_AGEND_HORA' = A.ID_AGEND_HORAR, C.CO_RESP, c.ID_OPER, C.ID_PLAN, 'ANTIGO' = null, A.CO_ALU,'CO_ALUN' = CONCAT(C.CO_ALU,':',A.ID_AGEND_HORAR) " +
                                        " from TBS174_AGEND_HORAR A  " +
                                        " inner join TB03_COLABOR B on b.CO_COL = a.CO_COL  " +
                                        " inner join TB07_ALUNO C on C.CO_ALU = A.CO_ALU  " +
@@ -463,7 +460,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
 
                        select new EncaminhamentosMedicos
                        {
-
+                           CO_ALUNO_ID_AGEND_HORAR = tbs174.ID_AGEND_HORAR,
                            TP_AGEND_HORA = tbs174.TP_AGEND_HORAR,
                            CO_TIPO_RISCO = tbs174.CO_CLASS_RISCO != null? tbs174.CO_CLASS_RISCO:0,
                            __ALTURA = "1.50",
@@ -515,6 +512,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
 
                               select new EncaminhamentosMedicos
                               {
+                                  CO_ALUNO_ID_AGEND_HORAR = tbs174.ID_AGEND_HORAR,
                                   TP_AGEND_HORA = tbs174.TP_AGEND_HORAR,
                                   CO_TIPO_RISCO = tbs174.CO_CLASS_RISCO != null ? tbs174.CO_CLASS_RISCO : 0,
                                   __ALTURA = "1.50",
@@ -621,6 +619,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         public class EncaminhamentosMedicos
         {
             public string CO_ALUNO { get; set; }
+            public int CO_ALUNO_ID_AGEND_HORAR { get; set; }
             public int ANTIGO { get; set; }
             public string  __ALTURA { get; set; }
             public string TP_AGEND_HORA { get; set; }
@@ -1211,13 +1210,17 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             {
                 if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
                 {
-                    Session["CO_ALUNO"] = linha2.Cells[11].Text;
+                    string temp = ((HiddenField)linha2.Cells[0].FindControl("hidCoAgen")).Value;
+                    string temp2 = ((HiddenField)linha2.Cells[0].FindControl("hidCoAgen")).Value;
+                    Session["CO_ALU"] = ((HiddenField)linha2.Cells[0].FindControl("hidCoAlu")).Value;
+                    Session["CO_ALUNO_ID_AGEND_HORAR"] = ((Label)linha2.Cells[0].FindControl("lblgrid")).Text.Substring(((Label)linha2.Cells[0].FindControl("lblgrid")).Text.IndexOf(":") + 1, 2);
                     Session["IDADE"] = linha2.Cells[6].Text;
                     Session["SEXO"] = linha2.Cells[5].Text;
-                    try { tbidadegestante.Text = linha2.Cells[6].Text; }catch { }
+                    try { tbidadegestante.Text = linha2.Cells[6].Text; } catch { }
                 }
             }
         }
+        //TextBox x = ((TextBox)e.Row.Cells[i].FindControl("ctl" + tx.PadLeft(2,'0')))x.Enable = False;
 
         protected void ddlglicemia_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1312,7 +1315,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         {
             if(Session["SEXO"] is null)
                 AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente, e este ser do sexo Feminino.");
-            else if ((Session["CO_ALUNO"] == null) || (Session["SEXO"].ToString() == "M"))
+            else if ((Session["CO_ALU"] == null) || (Session["SEXO"].ToString() == "M"))
                 AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente, e este ser do sexo Feminino.");
             else
                 AbreModalPadrao("AbreModalInfosGestante();");
@@ -1322,13 +1325,12 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         {
             if (Session["SEXO"] is null)
                 AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente.");
-            else if (Session["CO_ALUNO"] == null)
+            else if (Session["CO_ALU"] == null)
                 AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente.");
             else
             {
-                for (int i = 0; i < 10; i++)
-                    CriaNovaLinhaGridProced(Convert.ToInt32(Session["CO_ALUNO"]));
-
+                //for (int i = 0; i < 10; i++)
+                  //  CriaNovaLinhaGridProced(Convert.ToInt32(Session["CO_ALUNO"]));
                 AbreModalPadrao("AbreModalInfosSigtap();");
             }
         }
@@ -1360,14 +1362,14 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             Object.TBS478_ATEND_GESTANTE_BO BO = new Object.TBS478_ATEND_GESTANTE_BO();
             //TBS478_ATEND_GESTANTE_BUSINESS insere = new TBS478_ATEND_GESTANTE_BUSINESS();
 
-            if (Session["CO_ALUNO"] == null)
+            if (Session["CO_ALU"] == null)
                 AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente!");
             else
             {
                 try { BO.AUTURA_RA = tbaltura.Text; } catch { }
                 try { BO.AUTURA_RPN = tbautura.Text; } catch { }
                 try { BO.BCF = tbbcf.Text; } catch { }
-                try { BO.CO_ALUNO = Convert.ToInt32(Session["CO_ALUNO"]); } catch { }
+                try { BO.CO_ALUNO = Convert.ToInt32(Session["CO_ALU"]); } catch { }
                 try { BO.COD_GESTANTE = 0; } catch { }
                 try { BO.DPP = Convert.ToDateTime(tbdpp.Text); } catch { }
                 try { BO.DADOS_REGISTRO = tbdataregistro.Text; } catch { }
@@ -1416,7 +1418,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected void lnkAddProcPla_OnClick(object sender, EventArgs e)
         {
             for(int i = 0; i < 10; i++)
-                CriaNovaLinhaGridProced(Convert.ToInt32(Session["CO_ALUNO"]));
+                CriaNovaLinhaGridProced(Convert.ToInt32(Session["CO_ALU"]));
 
             AbreModalPadrao("AbreModalInfosSigtap();");
         }
@@ -1981,13 +1983,13 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         {
             try
             {
-                if (Session["CO_ALUNO"] is null)
+                if (Session["CO_ALU"] is null)
                 {
                     AuxiliPagina.EnvioMensagemErroPopUp(this.Page, "Selecione um paciente antes de atribuir procedimentos");
                     return;
                 }
 
-                int coPaci = int.Parse(Session["CO_ALUNO"].ToString());
+                int coPaci = int.Parse(Session["CO_ALU"].ToString());
                 int coAgend = int.Parse(hidCoAgendProced.Value);
 
                 int qntItensSelecionados = 0;
@@ -2130,13 +2132,76 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             }
             catch (Exception) { }
         }
+
         #endregion
 
         #endregion
         /*FIM TELA DE PROCEDIMENTOS*/
 
+        /*TELA DE PROCEDIMENTOS 2*/
+        #region Segunda tela para carregar Procedimentos
+        protected void ddlgrupoprocedimento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlsubgrupoprocedimento = proc.DropSubGrupo(ddlsubgrupoprocedimento, Convert.ToInt32(ddlgrupoprocedimento.SelectedValue));
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
 
+        protected void imgPesqProcedimentos_Click(object sender, ImageClickEventArgs e)
+        {
+            grdListarSIGTAP.DataSource = proc.PreencheGrigProcedimento(Convert.ToInt32(ddlgrupoprocedimento.SelectedValue), Convert.ToInt32(ddlsubgrupoprocedimento.SelectedValue), tbtextolivreprocedimento.Text);
+            grdListarSIGTAP.DataBind();
+            Session["temp"] = grdListarSIGTAP.DataSource;
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
 
+        protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
+        {
+            grdListarSIGTAP.PageIndex = e.NewPageIndex;
+            grdListarSIGTAP.DataSource = Session["temp"];
+            grdListarSIGTAP.DataBind();
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+
+        protected void btnincluir_Click1(object sender, EventArgs e)
+        {
+            DataTable mDataTable = new DataTable();
+
+            DataColumn mDataColumn;
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "ID_PROCEDIMENTO";
+            mDataTable.Columns.Add(mDataColumn);
+
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "CO_ALUNO";
+            mDataTable.Columns.Add(mDataColumn);
+
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "CO_ALUNO_ID_AGEND_HORAR";
+            mDataTable.Columns.Add(mDataColumn);
+
+            DataRow linha;
+
+            foreach (GridViewRow linha2 in grdListarSIGTAP.Rows)
+            {
+                if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
+                {
+                    linha = mDataTable.NewRow();
+                    linha["ID_PROCEDIMENTO"] = linha2.Cells[1].Text;
+                    linha["CO_ALUNO"] = Session["CO_ALU"].ToString();
+                    linha["CO_ALUNO_ID_AGEND_HORAR"] = Session["CO_ALUNO_ID_AGEND_HORAR"].ToString();
+
+                    mDataTable.Rows.Add(linha);                    
+                }
+            }
+            
+            Session["dtsigtab"] = mDataTable;
+        }
+
+        #endregion
+        /*FIM TELA DE PROCEDIMENTOS 2*/
 
 
     }

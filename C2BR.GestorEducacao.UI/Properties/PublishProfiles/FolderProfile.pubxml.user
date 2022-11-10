@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Build\08112022_1322</_PublishTargetUrl>
-    <History>True|2022-11-08T16:26:09.4807807Z;True|2022-11-07T17:54:58.7529874-03:00;True|2022-11-05T16:57:43.3389579-03:00;True|2022-11-04T12:41:25.1328378-03:00;True|2022-11-03T10:07:16.4193289-03:00;True|2022-10-31T16:59:07.7114176-03:00;True|2022-10-27T15:41:14.4871875-03:00;True|2022-10-27T14:54:16.4565520-03:00;True|2022-10-25T14:56:57.6306548-03:00;False|2022-10-25T14:54:22.3567505-03:00;</History>
+    <_PublishTargetUrl>C:\Build\09112022_2223</_PublishTargetUrl>
+    <History>True|2022-11-10T01:26:34.6788848Z;True|2022-11-08T13:26:09.4807807-03:00;True|2022-11-07T17:54:58.7529874-03:00;True|2022-11-05T16:57:43.3389579-03:00;True|2022-11-04T12:41:25.1328378-03:00;True|2022-11-03T10:07:16.4193289-03:00;True|2022-10-31T16:59:07.7114176-03:00;True|2022-10-27T15:41:14.4871875-03:00;True|2022-10-27T14:54:16.4565520-03:00;True|2022-10-25T14:56:57.6306548-03:00;False|2022-10-25T14:54:22.3567505-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_GlobalResources/AppSettings.resx">
@@ -207,13 +207,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/07/2022 13:59:37</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.BusinessEntities.dll">
-      <publishTime>11/07/2022 17:53:38</publishTime>
+      <publishTime>11/09/2022 22:25:13</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.BusinessEntities.dll.config">
       <publishTime>11/07/2022 13:59:38</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.BusinessEntities.pdb">
-      <publishTime>11/07/2022 17:53:38</publishTime>
+      <publishTime>11/09/2022 22:25:13</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.DataBaseManagement.dll">
       <publishTime>11/07/2022 13:59:42</publishTime>
@@ -228,22 +228,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/07/2022 13:59:42</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.LicenseValidator.dll">
-      <publishTime>11/07/2022 17:53:43</publishTime>
+      <publishTime>11/09/2022 22:25:16</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.LicenseValidator.pdb">
-      <publishTime>11/07/2022 17:53:43</publishTime>
+      <publishTime>11/09/2022 22:25:16</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.Reports.dll">
-      <publishTime>11/07/2022 17:54:10</publishTime>
+      <publishTime>11/09/2022 22:25:46</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.Reports.pdb">
-      <publishTime>11/07/2022 17:54:10</publishTime>
+      <publishTime>11/09/2022 22:25:46</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.UI.dll">
-      <publishTime>11/08/2022 13:25:47</publishTime>
+      <publishTime>11/09/2022 22:26:17</publishTime>
     </File>
     <File Include="bin/C2BR.GestorEducacao.UI.pdb">
-      <publishTime>11/08/2022 13:25:47</publishTime>
+      <publishTime>11/09/2022 22:26:17</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v12.1.resources.dll">
       <publishTime>10/12/2022 13:07:23</publishTime>
@@ -624,7 +624,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2021 16:13:21</publishTime>
     </File>
     <File Include="Componentes/CadastroProcedimento.ascx">
-      <publishTime>11/07/2022 15:26:13</publishTime>
+      <publishTime>11/08/2022 23:34:58</publishTime>
     </File>
     <File Include="Componentes/CadastroProcedimento.aspx">
       <publishTime>11/07/2022 10:38:32</publishTime>
@@ -3639,7 +3639,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2021 16:13:53</publishTime>
     </File>
     <File Include="GSAUD/3000_ControleInformacoesUsuario/3200_ControleAtendimentoUsuario/3203_RegistroPreAtendimentoUsuario/Cadastro_B.aspx">
-      <publishTime>11/08/2022 12:26:36</publishTime>
+      <publishTime>11/09/2022 22:07:25</publishTime>
     </File>
     <File Include="GSAUD/3000_ControleInformacoesUsuario/3200_ControleAtendimentoUsuario/3203_RegistroPreAtendimentoUsuario/Cadastro_C.aspx">
       <publishTime>11/15/2021 16:13:53</publishTime>
@@ -3930,7 +3930,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/25/2022 11:04:59</publishTime>
     </File>
     <File Include="GSAUD/8000_GestaoAtendimento/8100_CtrlAgendaMedica/8120_RegistroConsulMedMod22/Cadastro.aspx">
-      <publishTime>11/07/2022 14:22:36</publishTime>
+      <publishTime>11/09/2022 08:05:15</publishTime>
     </File>
     <File Include="GSAUD/8000_GestaoAtendimento/8100_CtrlAgendaMedica/8130_ManutAgendamento/EdicaoAgendamento.aspx">
       <publishTime>11/15/2021 16:13:56</publishTime>
@@ -4077,7 +4077,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2021 16:13:58</publishTime>
     </File>
     <File Include="GSAUD/8000_GestaoAtendimento/8200_CtrlClinicas/8260_Atendimento/8266_AtendimentoClinico/Cadastro.aspx">
-      <publishTime>10/22/2022 14:57:18</publishTime>
+      <publishTime>11/08/2022 20:46:02</publishTime>
     </File>
     <File Include="GSAUD/8000_GestaoAtendimento/8200_CtrlClinicas/8260_Atendimento/8267_AtendimentoEndocrSimp/Cadastro.aspx">
       <publishTime>10/22/2022 14:49:22</publishTime>

@@ -114,6 +114,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GestorEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="MSSQL\ProcedimentosClinicos.cs" />
     <Compile Include="MSSQL\TB232_PATRI_CARGA_ITEM.cs" />
     <Compile Include="MSSQL\TBG076_FAMIL_BENEF.cs" />
     <Compile Include="MSSQL\TBG101_ATESTADOS.cs" />
