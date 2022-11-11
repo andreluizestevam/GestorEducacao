@@ -638,14 +638,14 @@
                 <li style="clear: both">
                     <label title="Medicação de uso contínuo do(a) paciente">
                         Medicação de Uso Contínuo</label>
-                    <asp:TextBox runat="server" ID="txtMedicContinuo" TextMode="MultiLine" Style="width: 177px; height: 47px;"
+                    <asp:TextBox runat="server" ID="txtMedicContinuo" TextMode="MultiLine" Style="width: 177px; height: 40px;"
                         MaxLength="200" ToolTip="Medicação de uso contínuo do(a) paciente"></asp:TextBox>
                 </li>
                 <li>
                     <label title="Medicação administrada no acolhimento no(a) paciente">
                         Medicação
                     </label>
-                    <asp:TextBox runat="server" ID="txtMedicacaoAdmin" TextMode="MultiLine" Style="width: 177px; height: 47px;"
+                    <asp:TextBox runat="server" ID="txtMedicacaoAdmin" TextMode="MultiLine" Style="width: 177px; height: 40px;"
                         MaxLength="200" ToolTip="Medicação administrada no acolhimento no(a) paciente"></asp:TextBox>
                 </li>
             </ul>
@@ -658,7 +658,7 @@
                 <li style="clear: both;">
                     <label>
                         Sintomas</label>
-                    <asp:TextBox runat="server" ID="txtSintomas" TextMode="MultiLine" Style="width: 289px; height: 45px;"
+                    <asp:TextBox runat="server" ID="txtSintomas" TextMode="MultiLine" Style="width: 289px; height: 40px;"
                         MaxLength="200"></asp:TextBox><br />
                 </li>
             </ul>
@@ -908,7 +908,7 @@
                     <ItemStyle Width="100px" HorizontalAlign="Center"></ItemStyle>
                 </asp:BoundField>
                 <asp:BoundField HeaderText="Procedimento" DataField="NM_PROC_MEDI">
-                    <ItemStyle Width="500px" HorizontalAlign="Center"></ItemStyle>
+                    <ItemStyle Width="500px" HorizontalAlign="Left"></ItemStyle>
                 </asp:BoundField>
             </Columns>
         </asp:GridView>
@@ -1138,6 +1138,7 @@
 
                 </div>
             </div>
+            </ul>
     </div>
 
     <!-- FIM -------------------------------------------------------------------------------------------------------------------------------------DIV MODAL PARA ESCOLHER OS SIGTAP -->

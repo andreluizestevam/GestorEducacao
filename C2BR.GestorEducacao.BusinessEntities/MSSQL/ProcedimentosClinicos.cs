@@ -45,9 +45,9 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
             ddlist.Items.Insert(0, new ListItem("Todos", "0"));
             return ddlist;
         }
-        public bool InsereProcedimentos(string CO_ALUNO, string ID_PROCEDIMENTO, string CO_ALUNO_ID_AGEND_HORAR)
+        public bool InsereProcedimentos(string CO_ALUNO, string ID_PROCEDIMENTO, string CO_ALUNO_ID_AGEND_HORAR, string PROF_ATENDIMENTO, string ID_profissional_enfermagem)
         {
-            string SQL = "insert into TBS479_PROCEDIMENTOS_PESSOA(CO_ALUNO, ID_PROCEDIMENTO, CO_ALUNO_ID_AGEND_HORAR) values('" + CO_ALUNO + "','" + ID_PROCEDIMENTO + "','" + CO_ALUNO_ID_AGEND_HORAR +"')";
+            string SQL = "insert into TBS479_PROCEDIMENTOS_PESSOA(CO_ALUNO, ID_PROCEDIMENTO, CO_ALUNO_ID_AGEND_HORAR, ID_profissional_saude, ID_profissional_enfermagem) values('" + CO_ALUNO + "','" + ID_PROCEDIMENTO + "','" + CO_ALUNO_ID_AGEND_HORAR +"','" + PROF_ATENDIMENTO + "','" + ID_profissional_enfermagem + "')";
             dir.InsereAltera(SQL);
             return true;
         }

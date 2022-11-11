@@ -4,84 +4,77 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!--CSS-->
     <style type="text/css">
-        .divAvisoPermissao
-        {
+        .lblSubInfos {
+            color: Orange;
+            font-size: 10px;
+            border-width: 1px;
+            border-color: Orange;
+        }
+        .divAvisoPermissao {
             top: 516px !important;
             left: 390px !important;
         }
-        
-        .ulDados
-        {
+
+        .ulDados {
             width: 1050px;
         }
-        .ulDados li
-        {
-            margin-left: 5px;
-            margin-bottom: 5px;
-        }
-        
-        .ulDadosLog li
-        {
+
+            .ulDados li {
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+
+        .ulDadosLog li {
             float: left;
             margin-left: 10px;
         }
-        
-        .ulPer label
-        {
+
+        .ulPer label {
             text-align: left;
         }
-        
-        label
-        {
+
+        label {
             margin-bottom: 1px;
         }
-        
-        input
-        {
+
+        input {
         }
-        
-        .ulDadosGerais li
-        {
+
+        .ulDadosGerais li {
             margin-left: 5px;
         }
-        
-        .liBtnAddA
-        {
+
+        .liBtnAddA {
             background-color: #F1FFEF;
             border: 1px solid #D2DFD1;
             margin-top: 5px;
             margin-left: 295px !important;
             padding: 2px 3px 1px 3px;
         }
-        
-        .grdBusca th
-        {
+
+        .grdBusca th {
             background-color: #CCCCCC;
             color: Black;
             text-align: left;
         }
-        
-        .liBtnAddA
-        {
+
+        .liBtnAddA {
             background-color: #F1FFEF;
             border: 1px solid #D2DFD1;
             margin-top: 5px;
             padding: 2px 3px 1px 3px;
         }
-        
-        .chk label
-        {
+
+        .chk label {
             display: inline;
             margin-left: -4px;
         }
-        
-        .chk label
-        {
+
+        .chk label {
             display: inline;
         }
-        
-        .liBtnConfirmarCiencia
-        {
+
+        .liBtnConfirmarCiencia {
             width: 47px;
             background-color: #d09ad1;
             margin-left: 115px;
@@ -90,18 +83,16 @@
             border: 1px solid #8B8989;
             padding: 4px 3px 3px;
         }
-        
-        .liBtnConfirm
-        {
+
+        .liBtnConfirm {
             margin-top: 10px;
             margin-left: 2px;
             padding: 4px 3px 3px;
             background-color: #EE9572;
             border: 1px solid #8B8989;
         }
-        
-        #divCronometro
-        {
+
+        #divCronometro {
             text-align: center;
             background-color: #FFE1E1;
             float: left;
@@ -111,15 +102,13 @@
             margin-right: -130px;
             display: none;
         }
-        
-        .LabelHora
-        {
+
+        .LabelHora {
             margin-top: 4px;
             font-size: 10px;
         }
-        
-        .Hora
-        {
+
+        .Hora {
             font-family: Trebuchet MS;
             font-size: 23px;
             color: #9C3535;
@@ -144,14 +133,11 @@
             runat="server" />
     </div>
     <ul class="ulDados">
-        <li style="float: left; margin-left: 3px; width: 461px !important; border-right: 2px solid #EE9A00;
-            padding-right: 10px;">
+        <li style="float: left; margin-left: 3px; width: 461px !important; border-right: 2px solid #EE9A00; padding-right: 10px;">
             <ul>
                 <li>
                     <ul>
-                        <li class="liTituloGrid" style="width: 450px !important; height: 20px !important;
-                            margin-right: 0px; background-color: #ADD8E6; text-align: center; font-weight: bold;
-                            margin-bottom: 2px; padding-top: 2px;">
+                        <li class="liTituloGrid" style="width: 450px !important; height: 20px !important; margin-right: 0px; background-color: #ADD8E6; text-align: center; font-weight: bold; margin-bottom: 2px; padding-top: 2px;">
                             <ul>
                                 <li style="margin: 0px 0 0 10px; float: left">
                                     <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px; color: #FFF">
@@ -184,8 +170,8 @@
                                 id="divAgendasRecp">
                                 <input type="hidden" id="divAgendasRecp_posicao" name="divAgendasRecp_posicao" />
                                 <asp:HiddenField runat="server" ID="hidIdAgenda" />
-                                <asp:GridView ID="grdPacientes" CssClass="grdBusca" runat="server" Style="width: 100%;
-                                    cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                                <asp:GridView ID="grdPacientes" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                                    AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                                     ShowHeaderWhenEmpty="true">
                                     <RowStyle CssClass="rowStyle" />
                                     <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -233,8 +219,8 @@
                                             <ItemStyle Width="10px" HorizontalAlign="Center" />
                                             <ItemTemplate>
                                                 <asp:ImageButton runat="server" ID="imgSituacao" ImageUrl='<%# Eval("imagem_URL") %>'
-                                                    ToolTip='<%# Eval("imagem_TIP") %>' Style="width: 18px !important; height: 18px !important;
-                                                    margin: 0 0 0 0 !important" OnClick="imgSituacao_OnClick" />
+                                                    ToolTip='<%# Eval("imagem_TIP") %>' Style="width: 18px !important; height: 18px !important; margin: 0 0 0 0 !important"
+                                                    OnClick="imgSituacao_OnClick" />
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                     </Columns>
@@ -245,9 +231,7 @@
                 </li>
                 <li style="clear: both">
                     <ul style="float: left;">
-                        <li class="liTituloGrid" style="width: 450px; height: 20px !important; margin-right: 0px;
-                            background-color: #c1ffc1; text-align: center; font-weight: bold; margin-bottom: 2px;
-                            padding-top: 2px; margin-left: 5px">
+                        <li class="liTituloGrid" style="width: 450px; height: 20px !important; margin-right: 0px; background-color: #c1ffc1; text-align: center; font-weight: bold; margin-bottom: 2px; padding-top: 2px; margin-left: 5px">
                             <ul>
                                 <li style="margin: 0px 0 0 10px; float: left">
                                     <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px;">
@@ -267,11 +251,10 @@
                                     </ul>
                                 </li>
                                 <li style="clear: both; margin: -14px 0 0 0px;">
-                                    <div id="divDemonAge" style="width: 448px; height: 105px; border: 1px solid #CCC;
-                                        overflow-y: scroll">
+                                    <div id="divDemonAge" style="width: 448px; height: 105px; border: 1px solid #CCC; overflow-y: scroll">
                                         <input type="hidden" id="divDemonAge_posicao" name="divDemonAge_posicao" />
-                                        <asp:GridView ID="grdHistoricoAgenda" CssClass="grdBusca" runat="server" Style="width: 100%;
-                                            cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                                        <asp:GridView ID="grdHistoricoAgenda" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                                            AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                                             ShowHeaderWhenEmpty="true">
                                             <RowStyle CssClass="rowStyle" />
                                             <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -291,8 +274,8 @@
                                                 <asp:TemplateField HeaderText="ST">
                                                     <ItemStyle Width="10px" HorizontalAlign="Center" />
                                                     <ItemTemplate>
-                                                        <asp:ImageButton runat="server" ID="imgSituacaoHistorico" Style="width: 18px !important;
-                                                            height: 18px !important; margin: 0 0 0 0 !important" ImageUrl='<%# Eval("imagem_URL") %>'
+                                                        <asp:ImageButton runat="server" ID="imgSituacaoHistorico" Style="width: 18px !important; height: 18px !important; margin: 0 0 0 0 !important"
+                                                            ImageUrl='<%# Eval("imagem_URL") %>'
                                                             OnClick="imgSituacaoHistorico_OnClick" ToolTip='<%# Eval("imagem_TIP") %>' />
                                                         <asp:HiddenField runat="server" ID="hidIdAgenda" Value='<%# Eval("ID_AGENDA") %>' />
                                                     </ItemTemplate>
@@ -313,8 +296,7 @@
                                                     <HeaderStyle HorizontalAlign="Center" />
                                                     <ItemTemplate>
                                                         <asp:ImageButton runat="server" ID="imgbFicha" ImageUrl="/BarrasFerramentas/Icones/Imprimir.png"
-                                                            ToolTip="Ficha de Atendimento" Style="width: 18px !important; height: 18px !important;
-                                                            margin: 0 0 0 0 !important" />
+                                                            ToolTip="Ficha de Atendimento" Style="width: 18px !important; height: 18px !important; margin: 0 0 0 0 !important" />
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>
@@ -402,25 +384,18 @@
                         </li>
                         <li>
                             <asp:HiddenField runat="server" ID="hidDivAberta" ClientIDMode="Static" />
-                            <div id="divClassRisc" title="Selecione a Classificação de risco pela cor" style="cursor: pointer;
-                                margin: -20px 0 0 94px; width: 35px; height: 9px; border: 1px solid #CCCCCC;
-                                position: absolute; background-color: White; padding: 2px">
+                            <div id="divClassRisc" title="Selecione a Classificação de risco pela cor" style="cursor: pointer; margin: -20px 0 0 94px; width: 35px; height: 9px; border: 1px solid #CCCCCC; position: absolute; background-color: White; padding: 2px">
                                 <div id="divClassRiscCorSelec" style="height: 9px; width: 100%">
                                 </div>
-                                <div id="divClass1" title="Emergência" style="display: none; height: 100%; width: 40px;
-                                    background-color: Red; cursor: pointer; float: left;">
+                                <div id="divClass1" title="Emergência" style="display: none; height: 100%; width: 40px; background-color: Red; cursor: pointer; float: left;">
                                 </div>
-                                <div id="divClass2" title="Muito Urgente" style="display: none; height: 100%; width: 40px;
-                                    background-color: Orange; cursor: pointer; float: left; margin-left: 5px;">
+                                <div id="divClass2" title="Muito Urgente" style="display: none; height: 100%; width: 40px; background-color: Orange; cursor: pointer; float: left; margin-left: 5px;">
                                 </div>
-                                <div id="divClass3" title="Urgente" style="display: none; height: 100%; width: 40px;
-                                    background-color: Yellow; cursor: pointer; float: left; margin-left: 5px;">
+                                <div id="divClass3" title="Urgente" style="display: none; height: 100%; width: 40px; background-color: Yellow; cursor: pointer; float: left; margin-left: 5px;">
                                 </div>
-                                <div id="divClass4" title="Pouco Urgente" style="display: none; height: 100%; width: 40px;
-                                    background-color: Green; cursor: pointer; float: left; margin-left: 5px;">
+                                <div id="divClass4" title="Pouco Urgente" style="display: none; height: 100%; width: 40px; background-color: Green; cursor: pointer; float: left; margin-left: 5px;">
                                 </div>
-                                <div id="divClass5" title="Não Urgente" style="display: none; height: 100%; width: 40px;
-                                    background-color: Blue; cursor: pointer; float: left; margin-left: 5px;">
+                                <div id="divClass5" title="Não Urgente" style="display: none; height: 100%; width: 40px; background-color: Blue; cursor: pointer; float: left; margin-left: 5px;">
                                 </div>
                                 <div id="divFecha" title="Fechar paleta" style="display: none; float: right; margin-left: 5px;">
                                     <a id="lnkClose" class="lnkClose" title="Fechar paleta" href="#">[x]</a>
@@ -443,9 +418,9 @@
                             </asp:DropDownList>
                         </li>
                         <li style="margin-left: 40px; margin-right: -123px;">
-                            <label style="margin-left:-38px;">
+                            <label style="margin-left: -38px;">
                                 Profissional Responsável</label>
-                            <asp:DropDownList ID="drpProfResp" Width="185px" runat="server" style="margin-left:-39px;" />
+                            <asp:DropDownList ID="drpProfResp" Width="185px" runat="server" Style="margin-left: -39px;" />
                         </li>
                         <li style="margin-left: 146px;">
                             <label>
@@ -462,9 +437,8 @@
                                 SENHA</label>
                             <asp:TextBox ID="txtSenha" Width="35px" BackColor="Yellow" runat="server" />
                         </li>
-                        <li style="width: 508px; color: Blue; border-bottom: 2px solid #58ACFA; margin-bottom: 0px;
-                            margin-top: -11px;">
-                            <label style="font-size: 12px;">
+                        <li style="width: 508px; color: Blue; border-bottom: 2px solid #58ACFA; margin-bottom: 0px; margin-top: -11px;">
+                            <label style="font-size: 12px; float: left;">
                                 Informações Prévias</label>
                         </li>
                         <li style="clear: both; margin-left: 7px; margin-bottom: -8px; width: 25px;">
@@ -472,39 +446,34 @@
                                 Altura</label>
                             <asp:TextBox ID="txtAltura" CssClass="campoAltura" Width="30" runat="server" />
                         </li>
-                        <li style="margin: 3px -2px 0 6px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -2px 0 6px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; width: 25px;">
                             <label>
                                 Peso</label>
                             <asp:TextBox ID="txtPeso" CssClass="campoPeso" Width="32" runat="server" />
                         </li>
-                        <li style="margin: 3px -2px 0 6px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -2px 0 6px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 70px;">
                             <label>
                                 Pressão Val/HR</label>
                             <asp:TextBox ID="txtPressao" Width="30" CssClass="campoPressArteri" runat="server" />
                             <asp:TextBox ID="txtHrPressao" Width="30" CssClass="campoHora" runat="server" />
                         </li>
-                        <li style="margin: 3px -2px 0 1px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -2px 0 1px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 70px;">
                             <label>
                                 Temp Val/HR</label>
                             <asp:TextBox ID="txtTemp" Width="30" CssClass="campoTemp" runat="server" />
                             <asp:TextBox ID="txtHrTemp" Width="30" CssClass="campoHora" runat="server" />
                         </li>
-                        <li style="margin: 3px -2px 0 1px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -2px 0 1px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 70px;">
                             <label>
                                 Glicem Val/HR</label>
                             <asp:TextBox ID="txtGlic" Width="30" CssClass="campoGlicem" runat="server" />
                             <asp:TextBox ID="txtHrGlic" Width="30" CssClass="campoHora" runat="server" />
                         </li>
-                        <li style="margin: 3px -2px 0 1px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -2px 0 1px; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 45px;">
                             <label>
                                 Dores?</label>
@@ -513,8 +482,7 @@
                                 <asp:ListItem Value="N" Text="Não" Selected="True" />
                             </asp:DropDownList>
                         </li>
-                        <li style="margin: 3px -1px 0 0; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -1px 0 0; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 45px;">
                             <label>
                                 Enjôos?</label>
@@ -523,8 +491,7 @@
                                 <asp:ListItem Value="N" Text="Não" Selected="True" />
                             </asp:DropDownList>
                         </li>
-                        <li style="margin: 3px -1px 0 0; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -1px 0 0; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 45px;">
                             <label>
                                 Vômitos?</label>
@@ -533,8 +500,7 @@
                                 <asp:ListItem Value="N" Text="Não" Selected="True" />
                             </asp:DropDownList>
                         </li>
-                        <li style="margin: 3px -1px 0 0; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;">
-                        </li>
+                        <li style="margin: 3px -1px 0 0; height: 23px; width: 1px; border-left: 1px solid #BDBDBD;"></li>
                         <li style="margin-bottom: -8px; margin-right: 0px; width: 45px;">
                             <label>
                                 Febre?</label>
@@ -543,20 +509,29 @@
                                 <asp:ListItem Value="N" Text="Não" Selected="True" />
                             </asp:DropDownList>
                         </li>
-                        <li class="liTituloGrid" style="width: 508px !important; height: 20px !important;
-                            clear: both; margin-right: 0px; background-color: #FFEC8B; text-align: center;
-                            font-weight: bold; margin-bottom: 2px; padding-top: 2px;">
-                            <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px; color: Black;
-                                float: left; margin-left: 10px;">
+                        <li style="clear: both"></li>
+                        <li style="margin-bottom: -8px; margin-right: 0px; width: 70px; margin-left: -2px;">
+                            <label>Pressão Arterial</label>
+                            <asp:TextBox runat="server" ID="tbpressaoarterial" Style="width: 67px; margin-left: 0px" CssClass="campoPressArteri"></asp:TextBox>
+                        </li>
+                        <li style="margin-bottom: -8px; margin-right: 0px; width: 70px; margin-left: 5px;">
+                            <label>Saturação</label>
+                            <asp:TextBox runat="server" ID="tbsaturacao" Style="width: 40px; margin-left: 0px" CssClass="campoGlicem"></asp:TextBox>
+                        </li>
+
+                        <li class="liTituloGrid" style="width: 508px !important; height: 20px !important; clear: both; margin-right: 0px; background-color: #FFEC8B; text-align: center; font-weight: bold; margin-bottom: 2px; padding-top: 2px;">
+                            <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px; color: Black; float: left; margin-left: 10px;">
                                 REGISTRO DO ATENDIMENTO</label>
-                            <div style="margin-right: 3px; float: right; margin-top: 4px;">
+                            <asp:Button runat="server" ID="btn_SIGTAP" Text="PROCEDIMENTOS" Style="background-color: #ffa07a; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: -10PX; border-width: 0px; height: 17px !important;" OnClick="btn_SIGTAP_Click" ToolTip="Pesquisar códigos procedimento" />
+                            <asp:Button runat="server" ID="btn_GESTANTE" Text="GESTANTE" Style="background-color: yellow; margin-top: 0px; font-size: 13px; font-weight: normal; margin-left: 10PX; border-width: 0px; height: 17px !important;" OnClick="btn_GESTANTE_Click" ToolTip="Inserir dados da Gestante" />
+
+                            &nbsp;<div style="margin-right: 3px; float: right; margin-top: 4px;">
                                 <img title="Emitir Prontuário do Paciente" style="margin-top: -2px" src="/BarrasFerramentas/Icones/Imprimir.png"
                                     height="16px" width="16px" />
                                 <asp:LinkButton ID="lnkbProntuario" runat="server" OnClick="lnkbProntuario_OnClick"
                                     ForeColor="#0099ff">PRONTUÁRIO</asp:LinkButton>
                             </div>
-                            <div id="divBtnOdontograma" runat="server" style="margin-right: 5px; float: right;
-                                margin-top: 4px;">
+                            <div id="divBtnOdontograma" runat="server" style="margin-right: 5px; float: right; margin-top: 4px;">
                                 <img title="Emitir Odontograma do Paciente" style="margin-top: -2px" src="/Library/IMG/PGS_IC_Anexo.png"
                                     height="16px" width="16px" />
                                 <asp:LinkButton ID="lnkbOdontograma" runat="server" ForeColor="#0099ff">HISTÓRICO</asp:LinkButton>
@@ -568,50 +543,50 @@
                                     <label style="color: Orange; margin-left: 3px; font-size: 9px;">
                                         QUEIXA PRINCIPAL</label>
                                     <asp:TextBox runat="server" ID="txtQueixa" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="2" Style="width: 496px; margin-top: 1px; border-top: 1px solid #BDBDBD;
-                                        border-left: 0; border-right: 0; border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="2" Style="width: 496px; margin-top: 1px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                                 <li style="clear: both; margin-top: -6px;">
                                     <label style="color: Orange; margin-left: 3px; font-size: 9px;">
                                         ANAMNESE / HDA (História da Doença Atual)</label>
                                     <asp:TextBox runat="server" ID="txtHDA" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="4" Style="width: 496px; margin-top: 1px; border-top: 1px solid #BDBDBD;
-                                        border-left: 0; border-right: 0; border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="4" Style="width: 496px; margin-top: 1px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0; height: 50px;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                                 <li style="clear: both; margin-top: -6px;">
                                     <label style="color: Orange; margin-left: 3px; font-size: 9px;">
                                         AÇÃO PLANEJADA</label>
                                     <asp:TextBox runat="server" ID="txtAcaoPlanejada" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="2" Style="width: 496px; margin-top: 1px; border-top: 1px solid #BDBDBD;
-                                        border-left: 0; border-right: 0; border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="2" Style="width: 496px; margin-top: 1px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                                 <li style="clear: both; margin-top: -6px;">
                                     <label style="color: Orange; margin-left: 3px; font-size: 9px;">
                                         HIPÓTESE DIAGNÓSTICA / AÇÃO REALIZADA</label>
                                     <asp:TextBox runat="server" ID="txtHipotese" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="3" Style="width: 400px; border-top: 1px solid #BDBDBD; border-left: 0;
-                                        border-right: 0; border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="3" Style="width: 400px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                                 <li style="margin-top: 6px; margin-left: 0px; width: 90px;">
                                     <asp:Button ID="btnCid" Style="background-color: #8DE4E4; font-size: 9px; width: 90px"
                                         runat="server" Text="DEFINIÇÃO DE CID" Height="14px" />
                                     <asp:TextBox runat="server" ID="txtCids" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="2" Style="width: 90px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0;
-                                        border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="2" Style="width: 90px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                                 <li style="clear: both; margin-top: -6px;">
                                     <label style="color: Orange; margin-left: 3px; font-size: 9px;">
                                         RESULTADO DE EXAMES</label>
                                     <asp:TextBox runat="server" ID="txtExameFis" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="3" Style="width: 245px; border-top: 1px solid #BDBDBD; border-left: 0;
-                                        border-right: 0; border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="3" Style="width: 245px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0; height: 26px;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                                 <li style="margin-top: -6px; margin-left: 0px;">
                                     <label style="color: Orange; margin-left: 3px; font-size: 9px;">
                                         CONDUTA / OBSERVAÇÕES</label>
                                     <asp:TextBox runat="server" ID="txtObserAtend" BackColor="#FAFAFA" TextMode="MultiLine"
-                                        Rows="3" Style="width: 245px; border-top: 1px solid #BDBDBD; border-left: 0;
-                                        border-right: 0; border-bottom: 0;" Font-Size="12px"></asp:TextBox>
+                                        Rows="3" Style="width: 245px; border-top: 1px solid #BDBDBD; border-left: 0; border-right: 0; border-bottom: 0; height: 26px;"
+                                        Font-Size="12px"></asp:TextBox>
                                 </li>
                             </ul>
                         </li>
@@ -624,8 +599,8 @@
                                 <img class="imgAnexos" style="width: 16px; height: 16px !important;" src="/Library/IMG/PGS_IC_Anexo.png" alt="Icone" />
                                 <span style="margin: 3px 22px 0 5px;">ANEXOS</span>
                     </asp:LinkButton>
-                    <asp:Button ID="BtnProntuCon" runat="server" Style="background-color: #D8D8D8; margin-left: 0px;
-                        width: 85px" ToolTip="Prontuário Convencional" Text="PRONTU.CONVE." Height="20px"
+                    <asp:Button ID="BtnProntuCon" runat="server" Style="background-color: #D8D8D8; margin-left: 0px; width: 85px"
+                        ToolTip="Prontuário Convencional" Text="PRONTU.CONVE." Height="20px"
                         OnClick="BtnProntuCon_Click" />
                     <asp:Button ID="lnkAmbul" Style="background-color: #D8D8D8; margin-left: 0px; width: 85px"
                         runat="server" Text="AMBULATÓRIO" Height="20px" OnClick="lnkAmbul_OnClick" />
@@ -633,26 +608,26 @@
                         runat="server" Text="MEDICAMENTOS" Height="20px" OnClick="lnkMedic_OnClick" />
                     <asp:Button ID="lnkExame" Style="background-color: #D8D8D8; margin-left: 2px; width: 70px"
                         runat="server" Text="EXAMES" Height="20px" OnClick="lnkExame_OnClick" />
-                    <asp:Button ID="lnkOrcamento" Style="background-color: #D8D8D8; margin-left: 2px;
-                        width: 80px" runat="server" Text="ORÇAMENTO" Height="20px" OnClick="lnkOrcamento_OnClick" />
+                    <asp:Button ID="lnkOrcamento" Style="background-color: #D8D8D8; margin-left: 2px; width: 80px"
+                        runat="server" Text="ORÇAMENTO" Height="20px" OnClick="lnkOrcamento_OnClick" />
                 </li>
                 <li style="margin: 15px 0 0 0px;">
                     <ul>
                         <li style="margin: -5px 0 0 0px; padding-left: 10px; clear: both">
-                            <asp:Button ID="BtnObserv" Style="background-color: #0099ff; color: #FFFAFA; margin-left: 0px;
-                                width: 80px" runat="server" Text="CAMPO LIVRE" Height="20px" OnClick="BtnObserv_OnClick" />
-                            <asp:Button ID="BtnFicha" Style="background-color: #0099ff; color: #FFFAFA; margin-left: 2px;
-                                width: 80px" runat="server" Text="FICHA ATEND." Height="20px" OnClick="lnkFicha_OnClick" />
-                            <asp:Button ID="BtnAtestado" runat="server" Style="background-color: #FF9933; color: #FFFAFA;
-                                margin-left: 9px; width: 69px" Text="ATESTADO" Height="20px" OnClick="BtnAtestado_Click" />
-                            <asp:Button ID="BtnLaudo" runat="server" Style="background-color: #FF9933; color: #FFFAFA;
-                                margin-left: 2px; width: 70px" Text="RELATÓRIO" Height="20px" OnClick="BtnLaudo_Click" />
-                            <asp:Button ID="BtnGuia" runat="server" Style="background-color: #FF9933; color: #FFFAFA;
-                                margin-left: 2px; width: 35px" Text="GUIA" Height="20px" OnClick="BtnGuia_OnClick" />
-                            <asp:Button ID="BtnSalvar" Style="background-color: #006600; color: #FFFAFA; width: 60px;
-                                margin-left: 9px;" runat="server" Text="SALVAR" Height="20px" OnClick="BtnSalvar_OnClick" />
-                            <asp:Button ID="BtnFinalizar" Style="background-color: #880000; color: #FFFAFA; width: 70px;
-                                margin-left: 2px;" runat="server" Text="FINALIZAR" Height="20px" OnClick="BtnFinalizar_OnClick" />
+                            <asp:Button ID="BtnObserv" Style="background-color: #0099ff; color: #FFFAFA; margin-left: 0px; width: 80px"
+                                runat="server" Text="CAMPO LIVRE" Height="20px" OnClick="BtnObserv_OnClick" />
+                            <asp:Button ID="BtnFicha" Style="background-color: #0099ff; color: #FFFAFA; margin-left: 2px; width: 80px"
+                                runat="server" Text="FICHA ATEND." Height="20px" OnClick="lnkFicha_OnClick" />
+                            <asp:Button ID="BtnAtestado" runat="server" Style="background-color: #FF9933; color: #FFFAFA; margin-left: 9px; width: 69px"
+                                Text="ATESTADO" Height="20px" OnClick="BtnAtestado_Click" />
+                            <asp:Button ID="BtnLaudo" runat="server" Style="background-color: #FF9933; color: #FFFAFA; margin-left: 2px; width: 70px"
+                                Text="RELATÓRIO" Height="20px" OnClick="BtnLaudo_Click" />
+                            <asp:Button ID="BtnGuia" runat="server" Style="background-color: #FF9933; color: #FFFAFA; margin-left: 2px; width: 35px"
+                                Text="GUIA" Height="20px" OnClick="BtnGuia_OnClick" />
+                            <asp:Button ID="BtnSalvar" Style="background-color: #006600; color: #FFFAFA; width: 60px; margin-left: 9px;"
+                                runat="server" Text="SALVAR" Height="20px" OnClick="BtnSalvar_OnClick" />
+                            <asp:Button ID="BtnFinalizar" Style="background-color: #880000; color: #FFFAFA; width: 70px; margin-left: 2px;"
+                                runat="server" Text="FINALIZAR" Height="20px" OnClick="BtnFinalizar_OnClick" />
                         </li>
                     </ul>
                 </li>
@@ -678,8 +653,8 @@
                     </li>
                     <li style="clear: both; margin-left: -5px !important; margin-top: -2px;">
                         <div style="width: 890px; height: 305px; border: 1px solid #CCC; overflow-y: scroll">
-                            <asp:GridView ID="grdLogAgendamento" CssClass="grdBusca" runat="server" Style="width: 100%;
-                                cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                            <asp:GridView ID="grdLogAgendamento" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                                AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                                 ShowHeaderWhenEmpty="true">
                                 <RowStyle CssClass="rowStyle" />
                                 <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -703,8 +678,8 @@
                                     <asp:TemplateField>
                                         <ItemStyle Width="18px" HorizontalAlign="Center" />
                                         <ItemTemplate>
-                                            <img src='<%# Eval("CAMINHO_IMAGEM") %>' alt="" style="width: 16px !important; height: 16px !important;
-                                                margin: 0 0 0 0 !important" title="Representação gráfica da Ação" />
+                                            <img src='<%# Eval("CAMINHO_IMAGEM") %>' alt="" style="width: 16px !important; height: 16px !important; margin: 0 0 0 0 !important"
+                                                title="Representação gráfica da Ação" />
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:BoundField DataField="DE_TIPO" HeaderText="AÇÃO">
@@ -714,8 +689,8 @@
                                     <asp:TemplateField HeaderText="Observação">
                                         <ItemStyle Width="30px" HorizontalAlign="Left" />
                                         <ItemTemplate>
-                                            <asp:TextBox runat="server" ID="txtObser" TextMode="MultiLine" Style="margin: 0 0 0 0 !important;
-                                                height: 23px !important; width: 180px" ReadOnly="true" Text='<%# Eval("OBS") %>'></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="txtObser" TextMode="MultiLine" Style="margin: 0 0 0 0 !important; height: 23px !important; width: 180px"
+                                                ReadOnly="true" Text='<%# Eval("OBS") %>'></asp:TextBox>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>
@@ -769,10 +744,9 @@
                 </ul>
                 <ul class="ulDados" style="width: 500px; margin-top: 0px !important; margin-left: 0px !important;">
                     <li>
-                        <div style="border: 1px solid #CCCCCC; width: 480px; height: 240px; overflow-y: scroll;
-                            margin-top: 10px;">
-                            <asp:GridView ID="grdPacAtestado" CssClass="grdBusca" runat="server" Style="width: 100% !important;
-                                cursor: default" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical">
+                        <div style="border: 1px solid #CCCCCC; width: 480px; height: 240px; overflow-y: scroll; margin-top: 10px;">
+                            <asp:GridView ID="grdPacAtestado" CssClass="grdBusca" runat="server" Style="width: 100% !important; cursor: default"
+                                AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical">
                                 <RowStyle CssClass="rowStyle" />
                                 <AlternatingRowStyle CssClass="alternatingRowStyle" />
                                 <EmptyDataRowStyle HorizontalAlign="Center" CssClass="emptyDataRowStyle" />
@@ -806,8 +780,7 @@
                             </asp:GridView>
                         </div>
                     </li>
-                    <li id="li10" runat="server" class="liBtnAddA" style="margin-top: 10px !important;
-                        margin-left: 230px !important; height: 15px;">
+                    <li id="li10" runat="server" class="liBtnAddA" style="margin-top: 10px !important; margin-left: 230px !important; height: 15px;">
                         <asp:LinkButton ID="lnkbGerarAtestado" OnClick="lnkbGerarAtestado_Click" runat="server"
                             ValidationGroup="atestado" ToolTip="Emitir documento">
                             <asp:Label runat="server" ID="Label12" Text="EMITIR" Style="margin-left: 5px; margin-right: 5px;"></asp:Label>
@@ -843,8 +816,7 @@
                         <asp:TextBox ID="txtObsGuia" Width="410px" Height="40px" TextMode="MultiLine" MaxLength="180"
                             runat="server" />
                     </li>
-                    <li class="liBtnAddA" style="clear: none !important; margin-left: 180px !important;
-                        margin-top: 8px !important; height: 15px;">
+                    <li class="liBtnAddA" style="clear: none !important; margin-left: 180px !important; margin-top: 8px !important; height: 15px;">
                         <asp:LinkButton ID="lnkbImprimirGuia" runat="server" ValidationGroup="guia" OnClick="lnkbImprimirGuia_OnClick"
                             ToolTip="Imprimir guia do plano de saúde">
                             <asp:Label runat="server" ID="lblEmitirGuia" Text="EMITIR" Style="margin-left: 4px;"></asp:Label>
@@ -888,8 +860,7 @@
                         <asp:ImageButton ID="imgbPesqMedic" OnClick="imgbPesqMedic_OnClick" runat="server"
                             ImageUrl="~/Library/IMG/Gestor_BtnPesquisa.png" />
                     </li>
-                    <li title="Clique para cadastrar um novo medicamento" class="liBtnAddA" style="margin: 5px 0 0 65px !important;
-                        width: 40px;">
+                    <li title="Clique para cadastrar um novo medicamento" class="liBtnAddA" style="margin: 5px 0 0 65px !important; width: 40px;">
                         <img alt="" style="margin: -1px 0 1px 0;" title="Adicionar Medicamento" src="/Library/IMG/Gestor_BtnEdit.png"
                             height="15px" width="15px" />
                         <asp:LinkButton ID="lnkNovoMedicam" runat="server" OnClick="lnkNovoMedicam_OnClick">Novo</asp:LinkButton>
@@ -897,10 +868,9 @@
                 </ul>
             </li>
             <li>
-                <div style="margin-left: 5px; width: 755px; height: 100px; border: 1px solid #CCC;
-                    overflow-y: scroll">
-                    <asp:GridView ID="grdPesqMedic" CssClass="grdBusca" runat="server" Style="width: 100%;
-                        cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                <div style="margin-left: 5px; width: 755px; height: 100px; border: 1px solid #CCC; overflow-y: scroll">
+                    <asp:GridView ID="grdPesqMedic" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                        AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                         ShowHeaderWhenEmpty="true">
                         <RowStyle CssClass="rowStyle" />
                         <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -969,8 +939,7 @@
                             ValidationGroup="AddMedic" ErrorMessage="O campo uso é obrigatório" ControlToValidate="txtUso"
                             Display="Dynamic" />
                     </li>
-                    <li title="Clique para adicionar o medicamento" class="liBtnAddA" style="clear: both;
-                        margin-top: -4px; margin-left: 350px !important; width: 75px;">
+                    <li title="Clique para adicionar o medicamento" class="liBtnAddA" style="clear: both; margin-top: -4px; margin-left: 350px !important; width: 75px;">
                         <img alt="" style="margin: -1px 0 1px 0;" title="Adicionar Medicamento" src="/Library/IMG/Gestor_SaudeEscolar.png"
                             height="15px" width="15px" />
                         <asp:LinkButton ID="lnkAddMedicamm" runat="server" OnClick="lnkAddMedicam_OnClick"
@@ -982,8 +951,7 @@
                 <ul>
                     <li>
                         <ul style="width: 745px;">
-                            <li class="liTituloGrid" style="height: 20px !important; width: 735px; margin-left: -10px;
-                                background-color: #A9D0F5; text-align: center; font-weight: bold; float: left">
+                            <li class="liTituloGrid" style="height: 20px !important; width: 735px; margin-left: -10px; background-color: #A9D0F5; text-align: center; font-weight: bold; float: left">
                                 <ul>
                                     <li style="margin: 0 0 0 10px; float: left">
                                         <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px;">
@@ -991,8 +959,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li title="Clique para emitir o Receituario do atendimento" class="liBtnAddA" style="float: right;
-                                margin: -25px -2px 3px 0px; width: 12px; height: 15px;">
+                            <li title="Clique para emitir o Receituario do atendimento" class="liBtnAddA" style="float: right; margin: -25px -2px 3px 0px; width: 12px; height: 15px;">
                                 <asp:ImageButton ID="BtnReceituario" runat="server" OnClick="BtnReceituario_Click"
                                     ToolTip="Emitir Receituario do Paciente" Style="margin-top: -2px; margin-left: -3px;"
                                     ImageUrl="/BarrasFerramentas/Icones/Imprimir.png" Height="18px" Width="18px" />
@@ -1001,8 +968,8 @@
                     </li>
                     <li style="clear: both; margin: -7px 0 0 -5px;">
                         <div style="width: 755px; height: 80px; border: 1px solid #CCC; overflow-y: scroll">
-                            <asp:GridView ID="grdMedicamentos" CssClass="grdBusca" runat="server" Style="width: 100%;
-                                cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                            <asp:GridView ID="grdMedicamentos" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                                AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                                 ShowHeaderWhenEmpty="true">
                                 <RowStyle CssClass="rowStyle" />
                                 <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -1069,8 +1036,7 @@
         <ul class="ulDados">
             <li>
                 <ul style="width: 766px">
-                    <li class="liTituloGrid" style="width: 673px; height: 20px !important; margin-left: -0px;
-                        background-color: #EEEEE0; text-align: center; font-weight: bold; float: left">
+                    <li class="liTituloGrid" style="width: 673px; height: 20px !important; margin-left: -0px; background-color: #EEEEE0; text-align: center; font-weight: bold; float: left">
                         <ul>
                             <li style="margin: 0 0 0 10px; float: left">
                                 <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px;">
@@ -1101,14 +1067,12 @@
                         <asp:LinkButton ID="imgNovoExam" runat="server" OnClick="imgNovoExam_OnClick">Novo</asp:LinkButton>
                     </li>
                     <li id="li4" runat="server" title="Clique para adicionar um exame ao atendimento"
-                        class="liBtnAddA" style="float: right; margin: -25px 22px 3px 5px; height: 15px;
-                        width: 12px;">
-                        <asp:ImageButton ID="lnkAddProcPla" Height="15px" Width="15px" Style="margin-top: -1px;
-                            margin-left: -2px;" ImageUrl="/Library/IMG/Gestor_SaudeEscolar.png" OnClick="lnkAddProcPla_OnClick"
+                        class="liBtnAddA" style="float: right; margin: -25px 22px 3px 5px; height: 15px; width: 12px;">
+                        <asp:ImageButton ID="lnkAddProcPla" Height="15px" Width="15px" Style="margin-top: -1px; margin-left: -2px;"
+                            ImageUrl="/Library/IMG/Gestor_SaudeEscolar.png" OnClick="lnkAddProcPla_OnClick"
                             runat="server" />
                     </li>
-                    <li title="Clique para emitir os exames do paciente" class="liBtnAddA" style="float: right;
-                        margin: -25px -2px 3px 0px; width: 12px; height: 15px;">
+                    <li title="Clique para emitir os exames do paciente" class="liBtnAddA" style="float: right; margin: -25px -2px 3px 0px; width: 12px; height: 15px;">
                         <asp:ImageButton ID="BtnExames" runat="server" OnClick="BtnExames_OnClick" ToolTip="Emitir Exames do Paciente"
                             Style="margin-top: -2px; margin-left: -3px;" ImageUrl="/BarrasFerramentas/Icones/Imprimir.png"
                             Height="18px" Width="18px" />
@@ -1117,8 +1081,8 @@
             </li>
             <li style="clear: both; margin: -7px 0 0 5px !important;">
                 <div style="width: 766px; border: 1px solid #CCC; overflow-y: scroll">
-                    <asp:GridView ID="grdExame" CssClass="grdBusca" runat="server" Style="width: 100%;
-                        cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                    <asp:GridView ID="grdExame" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                        AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                         ShowHeaderWhenEmpty="true">
                         <RowStyle CssClass="rowStyle" />
                         <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -1138,15 +1102,15 @@
                             <asp:TemplateField HeaderText="DESCRIÇÃO">
                                 <ItemStyle Width="250px" HorizontalAlign="Center" />
                                 <ItemTemplate>
-                                    <asp:TextBox runat="server" ID="txtCodigProcedPla" Width="100%" Style="margin-left: -4px;
-                                        margin-bottom: 0px;" Enabled="false"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="txtCodigProcedPla" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"
+                                        Enabled="false"></asp:TextBox>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="VALOR">
                                 <ItemStyle Width="50px" HorizontalAlign="Center" />
                                 <ItemTemplate>
-                                    <asp:TextBox runat="server" ID="txtValorProced" Width="100%" Style="margin-left: -4px;
-                                        margin-bottom: 0px;" Enabled="false"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="txtValorProced" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"
+                                        Enabled="false"></asp:TextBox>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="EX">
@@ -1165,8 +1129,7 @@
                 <asp:TextBox runat="server" ID="txtObserExame" TextMode="MultiLine" ClientIDMode="Static"
                     Style="width: 766px; height: 15px;" Font-Size="11px" placeholder=" Digite as observações sobre Exames"></asp:TextBox>
             </li>
-            <li class="liBtnAddA" style="clear: none !important; margin-left: 727px !important;
-                margin-top: 8px !important; height: 15px;">
+            <li class="liBtnAddA" style="clear: none !important; margin-left: 727px !important; margin-top: 8px !important; height: 15px;">
                 <asp:LinkButton ID="btnGuiaExames" runat="server" OnClick="BtnGuiaExames_OnClick"
                     ToolTip="Imprimir laudo técnico">
                     <asp:Label runat="server" ID="Label7" Text="EMITIR" Style="margin-left: 4px;"></asp:Label>
@@ -1180,8 +1143,7 @@
         <ul class="ulDados">
             <li>
                 <ul style="width: 869px">
-                    <li class="liTituloGrid" style="width: 769px; height: 20px !important; margin-left: -0px;
-                        background-color: #EEEEE0; text-align: center; font-weight: bold; float: left">
+                    <li class="liTituloGrid" style="width: 769px; height: 20px !important; margin-left: -0px; background-color: #EEEEE0; text-align: center; font-weight: bold; float: left">
                         <ul>
                             <li style="margin: 0 0 0 10px; float: left">
                                 <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px;">
@@ -1212,14 +1174,12 @@
                         <asp:LinkButton ID="LinkButton1" runat="server" OnClick="imgNovoExam_OnClick" Enabled="false">Novo</asp:LinkButton>
                     </li>
                     <li id="li3" runat="server" title="Clique para adicionar um serviço ambulatorial ao atendimento"
-                        class="liBtnAddA" style="float: right; margin: -25px 22px 3px 5px; height: 15px;
-                        width: 12px;">
-                        <asp:ImageButton ID="ImageButton1" Height="15px" Width="15px" Style="margin-top: -1px;
-                            margin-left: -2px;" ImageUrl="/Library/IMG/Gestor_SaudeEscolar.png" runat="server"
+                        class="liBtnAddA" style="float: right; margin: -25px 22px 3px 5px; height: 15px; width: 12px;">
+                        <asp:ImageButton ID="ImageButton1" Height="15px" Width="15px" Style="margin-top: -1px; margin-left: -2px;"
+                            ImageUrl="/Library/IMG/Gestor_SaudeEscolar.png" runat="server"
                             OnClick="lnkAddProcPlaAmbulatorial_OnClick" />
                     </li>
-                    <li title="Clique para emitir os serviços ambulatoriais" class="liBtnAddA" style="float: right;
-                        margin: -25px -2px 3px 0px; width: 12px; height: 15px;">
+                    <li title="Clique para emitir os serviços ambulatoriais" class="liBtnAddA" style="float: right; margin: -25px -2px 3px 0px; width: 12px; height: 15px;">
                         <asp:ImageButton ID="ImageButton" runat="server" OnClick="btnGuiaServAmbulatoriais_OnClick"
                             Style="margin-top: -2px; margin-left: -3px;" ImageUrl="/BarrasFerramentas/Icones/Imprimir.png"
                             Height="18px" Width="18px" />
@@ -1230,8 +1190,8 @@
                 <ul>
                     <li style="clear: both; margin: -7px 0 0 0 !important;">
                         <div style="width: 869px; border: 1px solid #CCC; overflow-y: scroll">
-                            <asp:GridView ID="grdServAmbulatoriais" CssClass="grdBusca" runat="server" Style="width: 100%;
-                                cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                            <asp:GridView ID="grdServAmbulatoriais" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                                AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                                 ShowHeaderWhenEmpty="true">
                                 <RowStyle CssClass="rowStyle" />
                                 <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -1291,15 +1251,14 @@
                                     <asp:TemplateField HeaderText="VALOR">
                                         <ItemStyle Width="20px" HorizontalAlign="Center" />
                                         <ItemTemplate>
-                                            <asp:TextBox runat="server" ID="txtValorServAmbulatorial" Width="100%" Style="margin-left: -4px;
-                                                margin-bottom: 0px;" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="txtValorServAmbulatorial" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"
+                                                Enabled="false"></asp:TextBox>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="COMPLEMENTO">
                                         <ItemStyle Width="70px" HorizontalAlign="Center" />
                                         <ItemTemplate>
-                                            <asp:TextBox runat="server" ID="txtComplementoServAmbulatorial" Width="100%" Style="margin-left: -4px;
-                                                margin-bottom: 0px;"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="txtComplementoServAmbulatorial" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"></asp:TextBox>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="EX">
@@ -1321,8 +1280,8 @@
                 </ul>
             </li>
             <li style="clear: both; margin-left: 816px;">
-                <asp:Button runat="server" ID="Button3" Text="SALVAR" Style="height: 20px; background-color: #0b3e6f;
-                    color: #fff; cursor: pointer; width: 56px" Font-Bold="true" OnClick="btnSalvarServAmbulatorial_OnClick" />
+                <asp:Button runat="server" ID="Button3" Text="SALVAR" Style="height: 20px; background-color: #0b3e6f; color: #fff; cursor: pointer; width: 56px"
+                    Font-Bold="true" OnClick="btnSalvarServAmbulatorial_OnClick" />
             </li>
         </ul>
     </div>
@@ -1333,8 +1292,7 @@
         <ul class="ulDados">
             <li>
                 <ul style="width: 443px">
-                    <li class="liTituloGrid" style="width: 300px; height: 20px !important; margin-left: -5px;
-                        background-color: #EEEEE0; text-align: center; font-weight: bold; float: left">
+                    <li class="liTituloGrid" style="width: 300px; height: 20px !important; margin-left: -5px; background-color: #EEEEE0; text-align: center; font-weight: bold; float: left">
                         <ul>
                             <li style="margin-left: 5px; float: left; width: 60px;">
                                 <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px; color: #FF6347">
@@ -1357,14 +1315,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li title="Clique para Adicionar um item de orçamento" class="liBtnAddA" style="float: right;
-                        margin: -25px 77px 3px 0px; width: 61px">
+                    <li title="Clique para Adicionar um item de orçamento" class="liBtnAddA" style="float: right; margin: -25px 77px 3px 0px; width: 61px">
                         <img alt="" style="margin: -1px 0 1px 0;" title="Adicionar Formulário" src="../../../../../Library/IMG/Gestor_SaudeEscolar.png"
                             height="15px" width="15px" />
                         <asp:LinkButton ID="btnAddProcOrc" runat="server" OnClick="btnAddProcOrc_OnClick">Adicionar</asp:LinkButton>
                     </li>
-                    <li title="Clique para emitir o orçamento do paciente" class="liBtnAddA" style="float: right;
-                        margin: -25px -2px 3px 5px; width: 70px">
+                    <li title="Clique para emitir o orçamento do paciente" class="liBtnAddA" style="float: right; margin: -25px -2px 3px 5px; width: 70px">
                         <img title="Emitir Orçamento do Paciente" style="margin-top: -1px" src="/BarrasFerramentas/Icones/Imprimir.png"
                             height="16px" width="16px" />
                         <asp:LinkButton ID="lnkbOrcamento" runat="server" OnClick="lnkbOrcamento_Click">Orçamento</asp:LinkButton>
@@ -1373,8 +1329,8 @@
             </li>
             <li style="clear: both; margin: -7px 0 0 0;">
                 <div style="width: 448px; height: 85px; border: 1px solid #CCC; overflow-y: scroll">
-                    <asp:GridView ID="grdProcedOrcam" CssClass="grdBusca" runat="server" Style="width: 100%;
-                        cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                    <asp:GridView ID="grdProcedOrcam" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                        AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                         ShowHeaderWhenEmpty="true">
                         <RowStyle CssClass="rowStyle" />
                         <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -1395,15 +1351,15 @@
                             <asp:TemplateField HeaderText="PROCEDIMENTO">
                                 <ItemStyle Width="180px" HorizontalAlign="Center" />
                                 <ItemTemplate>
-                                    <asp:TextBox runat="server" ID="txtCodigProcedOrc" Width="100%" Style="margin-left: -4px;
-                                        margin-bottom: 0px;" Enabled="false"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="txtCodigProcedOrc" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"
+                                        Enabled="false"></asp:TextBox>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="QTD">
                                 <ItemStyle Width="20px" HorizontalAlign="Center" />
                                 <ItemTemplate>
-                                    <asp:TextBox runat="server" ID="txtQtdProcedOrc" Width="100%" Style="margin-left: -4px;
-                                        margin-bottom: 0px;" OnTextChanged="txtQtdProcedOrc_OnTextChanged" AutoPostBack="true"></asp:TextBox>
+                                    <asp:TextBox runat="server" ID="txtQtdProcedOrc" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"
+                                        OnTextChanged="txtQtdProcedOrc_OnTextChanged" AutoPostBack="true"></asp:TextBox>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="VALOR">
@@ -1438,14 +1394,14 @@
                     </li>
                     <li>
                         <asp:Label ID="Label2" runat="server">DESCONTO - R$</asp:Label>
-                        <asp:TextBox runat="server" ID="txtVlDscto" Style="margin-top: 4px; height: 16px !important;
-                            width: 45px" CssClass="campoDecimal campoMoeda" OnTextChanged="txtVlDscto_OnTextChanged"
+                        <asp:TextBox runat="server" ID="txtVlDscto" Style="margin-top: 4px; height: 16px !important; width: 45px"
+                            CssClass="campoDecimal campoMoeda" OnTextChanged="txtVlDscto_OnTextChanged"
                             AutoPostBack="true"></asp:TextBox>
                     </li>
                     <li>
                         <asp:Label ID="Label33" runat="server">TOTAL - R$</asp:Label>
-                        <asp:TextBox runat="server" ID="txtVlTotalOrcam" Enabled="false" Style="margin-top: 4px;
-                            height: 16px !important; width: 47px" CssClass="campoMoeda"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="txtVlTotalOrcam" Enabled="false" Style="margin-top: 4px; height: 16px !important; width: 47px"
+                            CssClass="campoMoeda"></asp:TextBox>
                     </li>
                     <li style="margin-top: 5px; margin-left: 2px;">
                         <asp:CheckBox ID="chkAprovado" CssClass="chk" runat="server" Text="Aprovado" ToolTip="Marque se o orçamento foi aprovado para o faturamento"
@@ -1555,8 +1511,7 @@
                     CssClass="validatorField" ErrorMessage="A unidade do produto é obrigatória" ControlToValidate="ddlUnidade"
                     Display="Dynamic" />
             </li>
-            <li id="li6" runat="server" class="liBtnAddA" style="margin-top: 0px !important;
-                clear: both !important; height: 15px; margin-left: 140px !important;">
+            <li id="li6" runat="server" class="liBtnAddA" style="margin-top: 0px !important; clear: both !important; height: 15px; margin-left: 140px !important;">
                 <asp:LinkButton ID="lnkNovoMedic" runat="server" ValidationGroup="novoMedicamento"
                     OnClick="lnkNovoMedic_OnClick" ToolTip="Armazena as informações na prescrição em questão">
                     <asp:Label runat="server" ID="Label10" Text="SALVAR" Style="margin-left: 4px; margin-right: 4px;"></asp:Label>
@@ -1667,8 +1622,7 @@
                 <asp:TextBox runat="server" ID="txtObsProced" TextMode="MultiLine" Width="463px"
                     Height="60px" ToolTip="Observação do Procedimento de Saúde"></asp:TextBox>
             </li>
-            <li id="li7" runat="server" class="liBtnAddA" style="margin-top: 0px !important;
-                clear: both !important; height: 15px; margin-left: 230px !important;">
+            <li id="li7" runat="server" class="liBtnAddA" style="margin-top: 0px !important; clear: both !important; height: 15px; margin-left: 230px !important;">
                 <asp:LinkButton ID="lnkNovoExam" runat="server" ValidationGroup="novoProcedimento"
                     OnClick="lnkNovoExam_OnClick" ToolTip="Armazena as informações na prescrição em questão">
                     <asp:Label runat="server" ID="Label11" Text="SALVAR" Style="margin-left: 4px;"></asp:Label>
@@ -1703,8 +1657,7 @@
                     LAUDO TÉCNICO</label>
                 <asp:TextBox ID="txtObsLaudo" Width="520px" Height="200px" TextMode="MultiLine" runat="server" />
             </li>
-            <li class="liBtnAddA" style="clear: none !important; margin-left: 250px !important;
-                margin-top: 8px !important; height: 15px;">
+            <li class="liBtnAddA" style="clear: none !important; margin-left: 250px !important; margin-top: 8px !important; height: 15px;">
                 <asp:LinkButton ID="lnkbImprimirLaudo" ValidationGroup="laudo" runat="server" OnClick="lnkbImprimirLaudo_OnClick"
                     ToolTip="Imprimir laudo técnico">
                     <asp:Label runat="server" ID="Label14" Text="EMITIR" Style="margin-left: 4px;"></asp:Label>
@@ -1719,14 +1672,14 @@
                 <label>
                     Nº PRONTUÁRIO</label>
                 <%--<asp:CheckBox runat="server" Checked="true" ID="chkNumPront" OnCheckedChanged="chkNumPront_CheckedChanged" AutoPostBack="true" style="margin: 0 -7px 0 -6px;" />--%>
-                <asp:TextBox runat="server" ID="txtNumPront" MaxLength="20" style="width:60px;"></asp:TextBox>
+                <asp:TextBox runat="server" ID="txtNumPront" MaxLength="20" Style="width: 60px;"></asp:TextBox>
             </li>
             <li>
                 <label>
                     Nº PASTA</label>
-               <%-- <asp:CheckBox runat="server" ID="chkNumPasta" Enabled="false" OnCheckedChanged="chkNumPasta_CheckedChanged" AutoPostBack="true" style="margin: 0 -7px 0 -6px;"/>--%>
-                <asp:TextBox runat="server" ID="txtNumPasta" MaxLength="20" style="width:60px;"></asp:TextBox>
-            </li>            
+                <%-- <asp:CheckBox runat="server" ID="chkNumPasta" Enabled="false" OnCheckedChanged="chkNumPasta_CheckedChanged" AutoPostBack="true" style="margin: 0 -7px 0 -6px;"/>--%>
+                <asp:TextBox runat="server" ID="txtNumPasta" MaxLength="20" Style="width: 60px;"></asp:TextBox>
+            </li>
             <li style="">
                 <label for="drpPacienteProntuCon" title="Paciente" class="lblObrigatorio">
                     Paciente</label>
@@ -1736,16 +1689,16 @@
                     runat="server" />
             </li>
             <li style="margin-top: 11px; margin-left: -4px;">
-                <asp:ImageButton ID="imgbPesqPacienteProntuCon" style="width: 16px;" runat="server" ImageUrl="~/Library/IMG/IC_PGS_Recepcao_CadPacien.png"
+                <asp:ImageButton ID="imgbPesqPacienteProntuCon" Style="width: 16px;" runat="server" ImageUrl="~/Library/IMG/IC_PGS_Recepcao_CadPacien.png"
                     OnClick="imgbPesqPacNome_OnClick" />
                 <asp:ImageButton ID="imgbVoltPacienteProntuCon" Width="16px" Height="16px" ImageUrl="~/Library/IMG/PGS_Desfazeer.ico"
                     OnClick="imgbVoltarPesq_OnClick" Visible="false" runat="server" />
             </li>
             <li>
                 <label>Qualificação Prontuário</label>
-                <asp:DropDownList runat="server" ID="ddlQualifPront" Width="150px" ></asp:DropDownList>
+                <asp:DropDownList runat="server" ID="ddlQualifPront" Width="150px"></asp:DropDownList>
             </li>
-             <li>
+            <li>
                 <label>
                     Início</label>
                 <asp:TextBox runat="server" ID="txtIniPront" CssClass="campoData"></asp:TextBox>
@@ -1763,12 +1716,11 @@
             <li style="clear: both;">
                 <label title="DESCRIÇÃO" style="color: Blue;">
                     DESCRIÇÃO</label>
-                    <asp:ImageButton ID="imgBRel" runat="server" ToolTip="Emitir relatório dos prontuários selecionados"
-                    ImageUrl="~/Library/IMG/Gestor_IcoImpres.ico" Width="15px" Height="15px" style="margin: -26px 14px 7px 688px;" OnClick="imgBRel_OnClick" />
+                <asp:ImageButton ID="imgBRel" runat="server" ToolTip="Emitir relatório dos prontuários selecionados"
+                    ImageUrl="~/Library/IMG/Gestor_IcoImpres.ico" Width="15px" Height="15px" Style="margin: -26px 14px 7px 688px;" OnClick="imgBRel_OnClick" />
                 <%--<asp:TextBox ReadOnly="true" Font-Size="12px" ID="txtObsProntuCon" Width="600px"
                     Height="200px" TextMode="MultiLine" runat="server" />--%>
-                <div runat="server" id="divObsProntuCon" style="font-size: 12px; width: 707px; height: 182px;
-                    overflow: auto; border: 1px solid #BBBBBB;">
+                <div runat="server" id="divObsProntuCon" style="font-size: 12px; width: 707px; height: 182px; overflow: auto; border: 1px solid #BBBBBB;">
                 </div>
             </li>
             <li style="clear: both;">
@@ -1777,8 +1729,7 @@
                 <asp:TextBox ID="txtCadObsProntuCon" Font-Size="12px" Width="707px" Height="100px"
                     TextMode="MultiLine" runat="server" />
             </li>
-            <li class="liBtnAddA" style="clear: none !important; margin-left: 316px !important;
-                margin-top: 8px !important; height: 15px;">
+            <li class="liBtnAddA" style="clear: none !important; margin-left: 316px !important; margin-top: 8px !important; height: 15px;">
                 <asp:LinkButton ID="lnkbImprimirProntuCon" ValidationGroup="prontu" runat="server"
                     OnClick="lnkbImprimirProntuCon_OnClick  " ToolTip="Confirmar prontuário convencional">
                     <asp:Label runat="server" ID="Label9" Text="CONFIRMAR" StyltxtCadObsProntuCone="margin-left: 2px;"></asp:Label>
@@ -1808,8 +1759,8 @@
     <div id="divObservacao" style="display: none; height: 300px !important; width: 580px">
         <ul>
             <li>
-                <asp:TextBox runat="server" ID="txtObservacoes" TextMode="MultiLine" Style="width: 530px;
-                    height: 240px;" Font-Size="13px" ToolTip="Digite as observações sobre o Atendimento"></asp:TextBox>
+                <asp:TextBox runat="server" ID="txtObservacoes" TextMode="MultiLine" Style="width: 530px; height: 240px;"
+                    Font-Size="13px" ToolTip="Digite as observações sobre o Atendimento"></asp:TextBox>
             </li>
             <li class="liBtnConfirm" style="margin: 10px 0 0 240px; width: 45px;">
                 <asp:LinkButton ID="lnkbSalvarObserv" runat="server" OnClick="lnkbSalvarObserv_OnClick">
@@ -1853,8 +1804,7 @@
                     Observação</label>
                 <asp:TextBox runat="server" ID="txtObsFicha" TextMode="MultiLine" Width="400px" Height="50px"></asp:TextBox>
             </li>
-            <li id="li5" runat="server" class="liBtnAddA" style="float: right; margin-top: 10px !important;
-                clear: none !important; height: 15px;">
+            <li id="li5" runat="server" class="liBtnAddA" style="float: right; margin-top: 10px !important; clear: none !important; height: 15px;">
                 <asp:LinkButton ID="lnkbImprimirFicha" runat="server" OnClick="lnkbImprimirFicha_Click"
                     ToolTip="Imprimir ficha de atendimento">
                     <asp:Label runat="server" ID="lblEmitirFicha" Text="EMITIR" Style="margin-left: 4px;"></asp:Label>
@@ -1867,8 +1817,8 @@
         <ul class="ulDados" style="width: 880px; margin-left: -10px !important; margin-top: 0px !important">
             <li style="clear: both; margin: 0 0 0 5px !important;">
                 <div style="width: 862px; height: 215px; border: 1px solid #CCC; overflow-y: scroll">
-                    <asp:GridView ID="grdAnexos" CssClass="grdBusca" runat="server" Style="width: 100%;
-                        cursor: default;" AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
+                    <asp:GridView ID="grdAnexos" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
+                        AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
                         ShowHeaderWhenEmpty="true">
                         <RowStyle CssClass="rowStyle" />
                         <AlternatingRowStyle CssClass="alternatingRowStyle" />
@@ -1927,11 +1877,8 @@
                     </asp:GridView>
                 </div>
             </li>
-            <li class="liTituloGrid" style="width: 865px !important; height: 20px !important;
-                margin-top: 15px; background-color: #A9E2F3; margin-bottom: 2px; padding-top: 2px;
-                clear: both;">
-                <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px; float: left;
-                    margin-left: 10px;">
+            <li class="liTituloGrid" style="width: 865px !important; height: 20px !important; margin-top: 15px; background-color: #A9E2F3; margin-bottom: 2px; padding-top: 2px; clear: both;">
+                <label style="font-family: Tahoma; font-weight: bold; margin-top: 3px; float: left; margin-left: 10px;">
                     INCLUSÃO DE ARQUIVO AO PACIENTE</label>
             </li>
             <li style="clear: both;">
@@ -1966,6 +1913,269 @@
                 </asp:LinkButton>
             </li>
         </ul>
+        <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- INICIO MODAL PROCEDIMENTOS -->
+        <div id="divLoadInfosSigtap" style="display: none; left: 1px !important; width: 995px !important; overflow-x: hidden !important;">
+            <div style="width: 100%;">
+                <asp:Label runat="server" ID="Label15" Text="Pesquisa" CssClass="lblSubInfos"></asp:Label>
+            </div>
+            <br />
+            <div style="float: left;">
+                <asp:Label runat="server" ID="lbl12456" Text="Grupo do Procedimento"></asp:Label><br />
+                <asp:DropDownList runat="server" ID="ddlgrupoprocedimento" Style="width: 200px;" ToolTip="Escolha o grupo do procedimento." AutoPostBack="True" OnSelectedIndexChanged="ddlgrupoprocedimento_SelectedIndexChanged"></asp:DropDownList>
+            </div>
+            <div style="float: left;">
+                <asp:Label runat="server" ID="Label16" Text="Sub-Grupo do Procedimento" Style="margin-left: 13px;"></asp:Label><br />
+                <asp:DropDownList runat="server" ID="ddlsubgrupoprocedimento" Style="width: 200px; margin-left: 13px;" ToolTip="Escolha o grupo do procedimento."></asp:DropDownList>
+            </div>
+            <div style="float: left;">
+                <asp:Label runat="server" ID="Label17" Text="Texto Livre" Style="margin-left: 13px;"></asp:Label><br />
+                <asp:TextBox runat="server" ID="tbtextolivreprocedimento" Style="margin-left: 13px; width: 340px;"></asp:TextBox>
+            </div>
+            <div style="margin-top: 12px; margin-left: 0px; float: right;">
+                <asp:ImageButton ID="imgPesqProcedimentos" runat="server" ImageUrl="~/Library/IMG/Gestor_BtnPesquisa.png" OnClick="imgPesqProcedimentos_Click" />
+            </div>
+            <div style="clear: both"></div>
+
+            <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14" Width="770">
+                <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
+                <EmptyDataTemplate>
+                    Nenhum Paciente Encontrado<br />
+                </EmptyDataTemplate>
+                <HeaderStyle Height="20px" BackColor="#667AB3" ForeColor="White" CssClass="headerStyleLA" />
+                <AlternatingRowStyle CssClass="alternateRowStyleLA" Height="15" />
+                <RowStyle CssClass="rowStyleLA" Height="15" />
+                <Columns>
+
+                    <asp:TemplateField>
+                        <ItemStyle Width="15px" HorizontalAlign="Center" />
+                        <ItemTemplate>
+                            <asp:CheckBox ID="chkselectEn" runat="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+
+                    <asp:BoundField HeaderText="Cód. SIGTAP" DataField="CO_PROC_MEDI">
+                        <ItemStyle Width="100px" HorizontalAlign="Center"></ItemStyle>
+                    </asp:BoundField>
+                    <asp:BoundField HeaderText="Procedimento" DataField="NM_PROC_MEDI">
+                        <ItemStyle Width="500px" HorizontalAlign="Left"></ItemStyle>
+                    </asp:BoundField>
+                </Columns>
+            </asp:GridView>
+            <br />
+            <div>
+                <center>
+                    <asp:Button runat="server" CssClass="btn" ID="btnclose" Text="  Fechar  " Style="height: 30px !important;" />
+                    <asp:Button runat="server" CssClass="btn" ID="btnincluir" Text=" Inserir Procedimento no atendimento " Style="height: 30px !important; width: 180px !important" OnClick="btnincluir_Click1" />
+                </center>
+            </div>
+            <br />
+            <div id="divHelpTxtLA">
+                <p id="pAcesso" class="pAcesso">
+                    Verifique os SIDTAP existentes no quadro acima para incluir no atendimento.
+                </p>
+            </div>
+        </div>
+        <!-- FIM ------------------------------------------------------------------------------------------------------------------------------------- DIV MODAL PROCEDIMENTOS -->
+        <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- INICIO MODAL GESTANTE -->
+        <div id="divLoadInfosGestante" style="display: none; height: 400px !important; left: 15px !important;">
+        <ul class="ulDados" style="width: 400px !important; margin-top: 7px !important;">
+            <div class="DivResp" runat="server" id="divResp">
+                <ul class="ulDadosResp" style="margin-left: -177px !important; width: 746px !important;">
+
+                    <li>
+                        <asp:Label runat="server" ID="titulo" Text="DADOS GESTACIONAIS DO(A) PACIENTE" Font-Bold="false" CssClass="lblSubInfos"></asp:Label>
+                    </li>
+                    <br />
+                    <br />
+
+                    <li>DUM<br />
+                        <asp:TextBox runat="server" ID="tbdum" ToolTip="Data da última mestruação" class="campoData"></asp:TextBox>
+                    </li>
+
+                    <li>Observações DUM<br />
+                        <asp:TextBox runat="server" ID="tbobsdum" Width="545px" ToolTip="Observação sobre a última mestruação"></asp:TextBox>
+                    </li>
+
+                    <li>DPP<br />
+                        <asp:TextBox runat="server" ID="tbdpp" ToolTip="Data Provável do Parto" class="campoData"></asp:TextBox>
+                    </li>
+                    <li style="clear: both"></li>
+
+                    <li style="margin-left:-5px;">
+                        <asp:Label runat="server" ID="Label18" Text="ESCUTA TRIAGEM - SINAIS VITAIS DA PACIENTE" Font-Bold="false" CssClass="lblSubInfos" style="width:-5px !important;"></asp:Label><br />
+                    </li>
+                    <li style="clear: both"></li>
+
+
+                    <li style="margin-left: -7px;">Altura<br />
+                        <asp:TextBox runat="server" ID="tbaltura" CssClass="campoGlicem" ToolTip="Altura da Gestante" style="width:-5px;width: 33px;"></asp:TextBox>
+                    </li>
+
+                    <li>Peso (Kg)<br />
+                        <asp:TextBox runat="server" ID="tbpeso" Style="width: 45px" CssClass="campoGlicem" ToolTip="Peso da Gestante"></asp:TextBox>
+                    </li>
+
+                    <li>IMC<br />
+                        <asp:TextBox runat="server" ID="tbimc" Style="width: 40px" ToolTip="Índice de Massa Corporal" CssClass="campoGlicem" MaxLength="3"></asp:TextBox>
+                    </li>
+
+                    <li>Pressão Arterial<br />
+                        <asp:TextBox runat="server" ID="tbpa" Style="width: 40px" ToolTip="Pressão Arterial" CssClass="campoPressArteri"></asp:TextBox>
+                    </li>
+
+                    <li>Bat. Card.(bpm)<br />
+                        <asp:TextBox runat="server" ID="tbbcbpm" Style="width: 50px" CssClass="campoGlicem" ToolTip="Batimento cardíaco"></asp:TextBox>
+                    </li>
+
+                    <li>Saturação<br />
+                        <asp:TextBox runat="server" ID="tbsaturacao2" CssClass="campoGlicem" ToolTip="Saturação" Style="width: 50px !important;"></asp:TextBox>
+                    </li>
+
+                    <li>Glicemia<br />
+                        <asp:TextBox runat="server" ID="tbglicemia" CssClass="campoGlicem" Style="width: 50px !important;"></asp:TextBox>
+                    </li>
+
+                    <li>Leitura Glicemia<br />
+                        <asp:DropDownList runat="server" ID="ddlleitura" Width="281px" Height="16px" ToolTip="Informe a Glicemia">
+                            <asp:ListItem Text="(NE) Não especificado" Value="N"></asp:ListItem>
+                            <asp:ListItem Text="(EJ) Em Jejum" Value="E"></asp:ListItem>
+                            <asp:ListItem Text="(PR) Pré-Prandia" Value="P"></asp:ListItem>
+                            <asp:ListItem Text="(PO) Pós-Prandial" Value="R"></asp:ListItem>
+                        </asp:DropDownList>
+                    </li>
+                    <li style="clear: both"></li>
+
+                    <li style="width: 100%;">
+                        <asp:Label runat="server" ID="Label19" Text="REGISTRO PRÉ-NATAL" Font-Bold="false" CssClass="lblSubInfos"></asp:Label><br />
+                    </li>
+
+                    <li>EDMA<br />
+                        <asp:DropDownList runat="server" ID="ddledma" Style="width: 68px;" ToolTip="EDMA">
+                            <asp:ListItem Text="Tipo 001" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 002" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 003" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 004" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 005" Value="5"></asp:ListItem>
+                        </asp:DropDownList>
+                    </li>
+
+                    <li>AU (cm)<br />
+                        <asp:TextBox runat="server" ID="tbau" CssClass="campoGlicem" ToolTip="Medição do Feto" Style="width: 50px !important;"></asp:TextBox>
+                    </li>
+
+                    <li>BCF (bpm)<br />
+                        <asp:TextBox runat="server" ID="tbbcf" CssClass="campoGlicem" ToolTip="Presença dos batimentos cardíacos fetais" Style="width: 50px !important;"></asp:TextBox>
+                    </li>
+
+                    <li>Movimentos Fetais<br />
+                        <asp:TextBox runat="server" ID="tbmf" CssClass="largurali" ToolTip="Movimentos Fetais"></asp:TextBox>
+                    </li>
+
+                    <li>Observação MF<br />
+                        <asp:TextBox runat="server" ID="tbobsmf" Width="372px" ToolTip="Observações sobre os Movimentos Fetais"></asp:TextBox>
+                    </li>
+
+                    <li style="clear: both"></li>
+
+                    <li style="width: 100%;">
+
+                        <asp:Label runat="server" ID="Label20" Text="REGISTRO ANTROPOMETRIA" Font-Bold="false" CssClass="lblSubInfos"></asp:Label><br />
+
+                    </li>
+                    <br />
+                    <br />
+
+                    <li>PC (cm)<br />
+                        <asp:TextBox runat="server" ID="tbpc" CssClass="largurali campoAltu" ToolTip="Perímetro Cefálico"></asp:TextBox>
+                    </li>
+
+                    <li>Peso (Kg)<br />
+                        <asp:TextBox runat="server" ID="tbpesoantropometria" CssClass="largurali campoAltu" ToolTip="Peso atual" style="width:50px;"></asp:TextBox>
+                    </li>
+
+                    <li>Altura (cm)<br />
+                        <asp:TextBox runat="server" ID="tbautura" CssClass="largurali campoAltu" ToolTip="Altura atual" style="width:50px;"></asp:TextBox>
+                    </li>
+
+                    <li>PP (cm)<br />
+                        <asp:TextBox runat="server" ID="tbpp" CssClass="campoAltu largurali" ToolTip="Placenta Prévia" style="width:50px;"></asp:TextBox>
+                    </li>
+
+                    <li>IMC<br />
+                        <asp:TextBox runat="server" ID="tbimcF" CssClass="campoAltu largurali" ToolTip="Índice de massa corporal" style="width:50px;"></asp:TextBox>
+                    </li>
+
+                    <li>Observação Antropometria<br />
+                        <asp:TextBox runat="server" ID="tbobsantropometria" Width="325px" ToolTip="Observação Antropometria"></asp:TextBox>
+                    </li>
+
+                    <li style="clear: both"></li>
+                    <li style="width: 100%;">                        
+                        <asp:Label runat="server" ID="Label21" Text="REGISTRO DE PROBLEMAS E CONDIÇÕES ATIVAS" Font-Bold="false" CssClass="lblSubInfos"></asp:Label><br />
+
+                    </li>
+                    <br />
+                    <br />
+                    <li>Tipo Registro<br />
+                        <asp:DropDownList ID="ddltiporegistro" runat="server" Width="114px">
+                            <asp:ListItem Text="Tipo 001" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 002" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 003" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 004" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Tipo 005" Value="5"></asp:ListItem>
+                        </asp:DropDownList>
+                    </li>
+
+                    <li>Dados do Registro<br />
+                        <asp:TextBox runat="server" ID="tbdataregistro" CssClass="largurali" Style="width: 90px; !important;" ToolTip="Dados do Registro"></asp:TextBox>
+                    </li>
+
+                    <li>Idade da Gestante<br />
+                        <asp:TextBox runat="server" ID="tbidadegestante" CssClass="largurali" Style="width: 83px; !important;" ToolTip="Idade da Gestante"></asp:TextBox>
+                    </li>
+
+                    <li>Código<br />
+                        <asp:DropDownList runat="server" ID="ddlcodigo" Style="width: 52px; !important;" ToolTip="Código">
+                            <asp:ListItem Text="Código 1" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Código 2" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Código 3" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Código 4" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Código 5" Value="5"></asp:ListItem>
+                        </asp:DropDownList>
+                    </li>
+
+                    <li class="divtexto">Descrição Complemento<br />
+                        <asp:TextBox runat="server" ID="tbobservacaocomplemento" Width="335px" ToolTip="Descrição Complementar"></asp:TextBox>
+                    </li>
+                    <li style="clear: both"></li>
+                </ul>
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <div id="botoes" style="height: 0px; margin-left: 20px; margin-top: 170px;">
+ 
+                    <div>
+                        <asp:Button runat="server" ID="btnhistorico" Text="HISTÓRICO DE MEDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; margin-left: -166px; height: 31px !important; width: 142px;" />
+                    </div>
+                    <div style="width: 160px; float: left;">
+                        <asp:Button runat="server" ID="btnproblemas" Text="PROBLEMAS E CONDIÇÕES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; height: 31px !important; width: 130px !important;" />
+                    </div>
+                    <div style="width: 200px; float: left;">
+                        <asp:Button runat="server" ID="btnresultados" Text="RESULTADO DE EXAMES" Style="background-color: #a7c9d5; border-style: none; float: left; font-family: Trebuchet MS; margin-left: 23px; width: 130px !important; height: 31px !important;" />
+                    </div>
+
+                    <div style="width: 20px; float: left;">
+                        <asp:Button runat="server" ID="Button1" Text="SALVAR" Style="background-color: #ffd700; border-style: none; float: left; font-family: Trebuchet MS; font-weight: bold; height: 30px !important; width: 165px !important;" OnClick="Button1_Click" />
+                    </div>
+
+                </div>
+            </div>
+            </ul>
+    </div>
+        <!-- FIM ------------------------------------------------------------------------------------------------------------------------------------- INICIO MODAL GESTANTE -->
     </div>
     <script src="/Library/JS/Cronometro.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -2016,6 +2226,23 @@
         function AbreModalLog() {
             $('#divLoadShowLogAgenda').dialog({
                 autoopen: false, modal: true, width: 902, height: 340, resizable: false, title: "HISTÓRICO DO AGENDAMENTO DE ATENDIMENTO",
+                //                open: function () { $('#divLoadInfosCadas').show(); }
+                open: function (type, data) { $(this).parent().appendTo("form"); },
+                close: function (type, data) { ($(this).parent().replaceWith("")); }
+            });
+        }
+        function AbreModalInfosGestante() {
+            $('#divLoadInfosGestante').dialog({
+                autoopen: false, modal: true, width: 810, height: 405, resizable: false, title: "GESTANTE - CADASTRO",
+                //                open: function () { $('#divLoadInfosCadas').show(); }
+                open: function (type, data) { $(this).parent().appendTo("form"); },
+                close: function (type, data) { ($(this).parent().replaceWith("")); }
+            });
+        }
+
+        function AbreModalInfosSigtap() {
+            $('#divLoadInfosSigtap').dialog({
+                autoopen: false, modal: true, width: 810, height: 420, resizable: false, title: "CÓDIGO PROCEDIMENTO - PESQUISA",
                 //                open: function () { $('#divLoadInfosCadas').show(); }
                 open: function (type, data) { $(this).parent().appendTo("form"); },
                 close: function (type, data) { ($(this).parent().replaceWith("")); }

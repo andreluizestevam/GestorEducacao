@@ -340,16 +340,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
 
                 try
                 {
-                    //foreach (GridViewRow linha2 in grdEncamMedic.Rows)
-                    //{
-                    //    if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
-                    //    {
-                    //        Session["CO_ALUNO"] = linha2.Cells[11].Text;
-                    //        Session["IDADE"] = linha2.Cells[6].Text;
-                    //        Session["SEXO"] = linha2.Cells[5].Text;
-                    //        try { tbidadegestante.Text = linha2.Cells[6].Text; } catch { }
-                    //    }
-                    //}
                     //André Grava telas criadas
                     C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
                     C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS insere = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS();
@@ -368,7 +358,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                     {
                         for(int i = 0; i < dt.Rows.Count;i++)
                         {
-                            proc.InsereProcedimentos(Session["CO_ALU"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString());
+                            proc.InsereProcedimentos(Session["CO_ALU"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString(), ddlprofatendimento.SelectedValue, ddlProfResp.SelectedValue);
                         }
                     }
                     Session["CO_ALU"] = null;
@@ -377,15 +367,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
                 }
                 catch { }
 
-                //TBS195_ENCAM_MEDIC tbs195 = TBS195_ENCAM_MEDIC.RetornaPelaChavePrimaria(resDirec.ID_ENCAM_MEDIC);
-                //tbs195.ID_PRE_ATEND = tbs194.ID_PRE_ATEND;
-                //tbs195.CO_PRE_ATEND = tbs194.CO_PRE_ATEND;
-                //tbs195.CO_SITUA_ENCAM_MEDIC = "E";
-                //TBS195_ENCAM_MEDIC.SaveOrUpdate(tbs195, true);
-
                 AuxiliPagina.RedirecionaParaPaginaSucesso("Pré-Atendimento Registrado com sucesso.", HttpContext.Current.Request.Url.AbsoluteUri.ToLower());
-
-                //CurrentPadraoCadastros.CurrentEntity = tbs194;
             }
         }
         #endregion
@@ -1314,19 +1296,22 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected void btn_GESTANTE_Click(object sender, EventArgs e)
         {
             if(Session["SEXO"] is null)
-                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente, e este ser do sexo Feminino.");
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente, e este ser do sexo Feminino.");
             else if ((Session["CO_ALU"] == null) || (Session["SEXO"].ToString() == "M"))
-                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente, e este ser do sexo Feminino.");
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente, e este ser do sexo Feminino.");
             else
                 AbreModalPadrao("AbreModalInfosGestante();");
         }
 
         protected void btn_SIGTAP_Click(object sender, EventArgs e)
         {
-            if (Session["SEXO"] is null)
-                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente.");
+            if (ddlprofatendimento.SelectedValue == "")
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um(a) profissional do Atendimento.");
             else if (Session["CO_ALU"] == null)
-                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente.");
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente.");
+            else if (ddlProfResp.SelectedValue == "")
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um Profissional responsável pela triagem.");
+
             else
             {
                 //for (int i = 0; i < 10; i++)

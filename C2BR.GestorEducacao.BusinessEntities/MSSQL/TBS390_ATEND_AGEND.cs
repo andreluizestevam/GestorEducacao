@@ -64,9 +64,17 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
         /// </summary>
         /// <param name="entity">A entidade na qual será executada a ação.</param>
         /// <returns>A própria entidade TBS390_ATEND_AGEND.</returns>
-        public static TBS390_ATEND_AGEND SaveOrUpdate(TBS390_ATEND_AGEND entity)
+        public static TBS390_ATEND_AGEND SaveOrUpdate(TBS390_ATEND_AGEND entity, string NU_PRESSAO = "", string NU_SATURACAO = "")
         {
             SaveOrUpdate(entity, true);
+
+            if (string.IsNullOrEmpty(NU_PRESSAO)){ NU_PRESSAO = "0"; }
+            if (string.IsNullOrEmpty(NU_SATURACAO)) { NU_SATURACAO = "0"; }
+
+            TBS390_ATEND_AGEND tmp = new TBS390_ATEND_AGEND();
+            tmp = entity;
+            BusinessEntities.Auxiliar.SQLDirectAcess dir = new BusinessEntities.Auxiliar.SQLDirectAcess();
+            dir.InsereAltera("UPDATE TBS390_ATEND_AGEND SET NU_PRESSAO = '" + NU_PRESSAO + "', NU_SATURACAO = '" + NU_SATURACAO + "' where ID_ATEND_AGEND = '" + entity.EntityKey.EntityKeyValues[0].Value + "'") ;
 
             return GetByEntityKey(entity.EntityKey);
         }
@@ -111,6 +119,13 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
         public static TBS390_ATEND_AGEND RetornaPelaChavePrimaria(int ID_ATEND_AGEND)
         {
             return GestorEntities.CurrentContext.TBS390_ATEND_AGEND.FirstOrDefault(p => p.ID_ATEND_AGEND == ID_ATEND_AGEND);
+        }
+        public static DataTable RetornaCamposNovosTBS390(int? ID_ATEND_AGEND, string CO_ALU)
+        {
+            BusinessEntities.Auxiliar.SQLDirectAcess dir = new BusinessEntities.Auxiliar.SQLDirectAcess();
+            DataTable dt = new DataTable();
+            dt = dir.retornacolunas("select NU_PRESSAO, NU_SATURACAO from TBS390_ATEND_AGEND where ID_AGEND_HORAR = '" + ID_ATEND_AGEND + "',' and CO_ALU = '"+ CO_ALU + "'");
+            return dt;
         }
 
         #endregion

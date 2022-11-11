@@ -39,6 +39,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 {
     public partial class Cadastro : System.Web.UI.Page
     {
+        ProcedimentosClinicos proc = new ProcedimentosClinicos();
         public PadraoCadastros CurrentPadraoCadastros { get { return (PadraoCadastros)Page.Master; } }
         public PadraoCadastros CurrentCadastroMasterPage { get { return (PadraoCadastros)Page.Master; } }
 
@@ -117,6 +118,9 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
                 if (TB03_COLABOR.RetornaPeloCoCol(LoginAuxili.CO_COL).CO_CLASS_PROFI != "D")
                     divBtnOdontograma.Visible = false;
+
+                ddlgrupoprocedimento = proc.DropGrupo(ddlgrupoprocedimento);
+                ddlsubgrupoprocedimento.Items.Insert(0, new ListItem("Todos", "0"));
             }
         }
 
@@ -303,7 +307,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                 tbs390.CO_EMP_SITUA = LoginAuxili.CO_EMP;
                 tbs390.IP_SITUA = Request.UserHostAddress;
 
-                TBS390_ATEND_AGEND.SaveOrUpdate(tbs390);
+                TBS390_ATEND_AGEND.SaveOrUpdate(tbs390, tbpressaoarterial.Text, tbsaturacao.Text);
                 hidIdAtendimento.Value = tbs390.ID_ATEND_AGEND.ToString();
                 #endregion
 
@@ -462,6 +466,32 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                 }
 
                 #endregion
+
+                //André Grava telas criadas
+                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO BO = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO();
+                C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS insere = new C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BUSINESS();
+                BO = (C2BR.GestorEducacao.UI.Object.TBS478_ATEND_GESTANTE_BO)Session["TBS478_ATEND_GESTANTE_BO"];
+                if (BO is null) { }
+                else
+                {
+                    try { BO.CO_ALUNO = Convert.ToInt32(Session["CO_ALU"].ToString()); } catch { }
+                    try { BO.COD_GESTANTE = Convert.ToInt32(Session["CO_ALU"].ToString()); } catch { }
+                    try { BO.CO_PRE_ATEND = Convert.ToInt16(drpProfResp.SelectedValue); } catch { }
+                    insere.InsereTBS478(BO);
+                }
+
+                DataTable dt = new DataTable();
+                dt = (DataTable)Session["dtsigtab"];
+                if (dt.Rows.Count > 0)
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        proc.InsereProcedimentos(Session["CO_ALU"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString(), drpProfResp.SelectedValue, "");
+                    }
+                }
+                Session["CO_ALU"] = null;
+                Session["IDADE"] = null;
+                Session["SEXO"] = null;
 
                 #endregion
 
@@ -1671,7 +1701,21 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                 drpEnjoos.SelectedValue = (tbs194.FL_SINTO_ENJOO);
                 drpVomitos.SelectedValue = (tbs194.FL_SINTO_VOMIT);
                 drpFebre.SelectedValue = (tbs194.FL_SINTO_FEBRE);
+
                 ddlClassRisco.SelectedValue = (tbs194.CO_TIPO_RISCO.ToString() ?? "");
+
+                //André
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt = TBS390_ATEND_AGEND.RetornaCamposNovosTBS390(tbs194.ID_AGEND_HORAR, Convert.ToString(tbs194.CO_ALU));
+                    if (dt != null)
+                    {
+                        tbpressaoarterial.Text = dt.Rows[0]["NU_PRESSAO"].ToString();
+                        tbsaturacao.Text = dt.Rows[0]["NU_SATURACAO"].ToString();
+                    }
+                }
+                catch { } 
             }
 
             txtHrAtend.Text = DateTime.Now.ToShortTimeString();
@@ -2154,6 +2198,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
                         if (chk.Checked)
                         {
+                            Session["CO_ALU"] = tbs174.CO_ALU.Value;
                             CarregaAgendaPlanejamento(tbs174.CO_ALU.Value);
 
                             //Percorre a grid de histórico de atendimento, e ao achar a 
@@ -3114,7 +3159,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                                 tbs333.ID_DOCUM = 0;
 
                                 HiddenField paciente = (HiddenField)li.Cells[0].FindControl("hidCoALuAtes");
-                                HiddenField coResp = (HiddenField)li.Cells[0].FindControl("hidCoRespAtest");
+                                HiddenField coResp = (HiddenField)li.Cells[0].FindControl("hidCoRespAtest");                                
 
                                 tbs333.IDE_CID = !string.IsNullOrEmpty(txtCid.Text) ? int.Parse(txtCid.Text) : 0;
                                 tbs333.ID_ATEND_MEDIC = !string.IsNullOrEmpty(hidIdAtendimento.Value) ? int.Parse(hidIdAtendimento.Value) : tbs390.ID_ATEND_AGEND;
@@ -4420,6 +4465,147 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
             CarregaAgendamentos();
         }
 
+
+        /*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbdum.Text))
+            {
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário inserir a data da últrima mestruação!");
+                AbreModalPadrao("AbreModalInfosGestante();");
+            }
+            if (string.IsNullOrWhiteSpace(tbdpp.Text))
+            {
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário inserir a Data Provável do Parto!");
+                AbreModalPadrao("AbreModalInfosGestante();");
+            }
+
+
+            //string TEMP = 
+            Object.TBS478_ATEND_GESTANTE_BO BO = new Object.TBS478_ATEND_GESTANTE_BO();
+            //TBS478_ATEND_GESTANTE_BUSINESS insere = new TBS478_ATEND_GESTANTE_BUSINESS();
+
+            if (Session["CO_ALU"] == null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar uma paciente!");
+            else
+            {
+                try { BO.AUTURA_RA = tbaltura.Text; } catch { }
+                try { BO.AUTURA_RPN = tbautura.Text; } catch { }
+                try { BO.BCF = tbbcf.Text; } catch { }
+                try { BO.CO_ALUNO = Convert.ToInt32(Session["CO_ALU"]); } catch { }
+                try { BO.COD_GESTANTE = 0; } catch { }
+                try { BO.DPP = Convert.ToDateTime(tbdpp.Text); } catch { }
+                try { BO.DADOS_REGISTRO = tbdataregistro.Text; } catch { }
+                try { BO.DUM = Convert.ToDateTime(tbdum.Text); } catch { }
+                try { BO.EDMA = ddledma.SelectedValue; } catch { }
+                try { BO.ID_ATEND_GESTANTE = 0; } catch { }
+                try { BO.IDADE_GESTANTE = tbidadegestante.Text; } catch { }
+                try { BO.IMC = tbimc.Text; } catch { }
+                try { BO.MF = tbmf.Text; } catch { }
+                try { BO.OBS_ANTRO = tbobsantropometria.Text; } catch { }
+                try { BO.OBS_COMPLEMENTO = tbobservacaocomplemento.Text; } catch { }
+                try { BO.OBS_DUM = tbobsdum.Text; } catch { }
+                try { BO.OBS_MF = tbobsmf.Text; } catch { }
+                try { BO.PC = tbpc.Text; } catch { }
+                try { BO.PESO = tbpeso.Text; } catch { }
+                try { BO.PP = tbpp.Text; } catch { }
+                try { BO.TIPO_REG = ddltiporegistro.SelectedValue; } catch { }
+                try { BO.PA = tbpa.Text; } catch { }
+                try { BO.SATURACAO = tbsaturacao.Text; } catch { }
+                try { BO.GLICEMIA = tbglicemia.Text; } catch { }
+                try { BO.LEITURAGLICEMICA = ddlleitura.SelectedValue; } catch { }
+                Session["TBS478_ATEND_GESTANTE_BO"] = BO;
+            }
+            //insere.InsereTBS478(BO);
+        }
+        /*TELA DE PROCEDIMENTOS 2*/
+        #region Segunda tela para carregar Procedimentos
+        protected void btn_SIGTAP_Click(object sender, EventArgs e)
+        {
+            if (drpProfResp.SelectedValue == "")
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um(a) profissional do Atendimento.");
+            else if (Session["CO_ALU"] == null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente.");
+            else
+                AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        protected void btn_GESTANTE_Click(object sender, EventArgs e)
+        {
+            if (drpProfResp.SelectedValue == "")
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um(a) profissional do Atendimento.");
+            else if (Session["CO_ALU"] == null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente.");
+
+            //else if ((Session["CO_ALU"] == null) || (Session["SEXO"].ToString() == "M"))
+            //    AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente, e este ser do sexo Feminino.");
+            else
+                AbreModalPadrao("AbreModalInfosGestante();");
+        }
+
+        protected void ddlgrupoprocedimento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlsubgrupoprocedimento = proc.DropSubGrupo(ddlsubgrupoprocedimento, Convert.ToInt32(ddlgrupoprocedimento.SelectedValue));
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+
+        protected void imgPesqProcedimentos_Click(object sender, ImageClickEventArgs e)
+        {
+            grdListarSIGTAP.DataSource = proc.PreencheGrigProcedimento(Convert.ToInt32(ddlgrupoprocedimento.SelectedValue), Convert.ToInt32(ddlsubgrupoprocedimento.SelectedValue), tbtextolivreprocedimento.Text);
+            grdListarSIGTAP.DataBind();
+            Session["temp"] = grdListarSIGTAP.DataSource;
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+
+        protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
+        {
+            grdListarSIGTAP.PageIndex = e.NewPageIndex;
+            grdListarSIGTAP.DataSource = Session["temp"];
+            grdListarSIGTAP.DataBind();
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+
+        protected void btnincluir_Click1(object sender, EventArgs e)
+        {
+            DataTable mDataTable = new DataTable();
+
+            DataColumn mDataColumn;
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "ID_PROCEDIMENTO";
+            mDataTable.Columns.Add(mDataColumn);
+
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "CO_ALUNO";
+            mDataTable.Columns.Add(mDataColumn);
+
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "CO_ALUNO_ID_AGEND_HORAR";
+            mDataTable.Columns.Add(mDataColumn);
+
+            DataRow linha;
+
+            foreach (GridViewRow linha2 in grdListarSIGTAP.Rows)
+            {
+                if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
+                {
+                    linha = mDataTable.NewRow();
+                    linha["ID_PROCEDIMENTO"] = linha2.Cells[1].Text;
+                    linha["CO_ALUNO"] = Session["CO_ALU"].ToString();
+                    linha["CO_ALUNO_ID_AGEND_HORAR"] = hidIdAgenda.Value;
+
+                    mDataTable.Rows.Add(linha);
+                }
+            }
+
+            Session["dtsigtab"] = mDataTable;
+        }
+
         #endregion
+        /*FIM TELA DE PROCEDIMENTOS 2*/
+        #endregion
+        /*******************************************************************************************************************************************************************************************************************************************************************************************************************/
     }
 }
