@@ -48,3 +48,13 @@ C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Deb
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.AssemblyReference.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.CoreCompileInputs.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.CopyComplete
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.exe.config
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.exe
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.pdb
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.dll
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\bin\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.pdb
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.AssemblyReference.cache
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.CoreCompileInputs.cache
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.csproj.CopyComplete
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.exe
+C:\Sistemas\GestorEducacao\C2BR.GestorEducacao.DLLWebReport.Console\obj\Debug\C2BR.GestorEducacao.DLLRelatorioWeb.Console.pdb

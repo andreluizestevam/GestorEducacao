@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------------------------
 // <gerado automaticamente>
-//     Este código foi gerado por uma ferramenta.
+//     Esse código foi gerado por uma ferramenta.
 //
 //     As alterações ao arquivo poderão causar comportamento incorreto e serão perdidas se
 //     o código for recriado
@@ -19,7 +19,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManager1;
 
@@ -28,7 +28,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlescolheunidade;
 
@@ -37,7 +37,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox IniPeri;
 
@@ -46,7 +46,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvIniPeri;
 
@@ -55,7 +55,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
 
@@ -64,7 +64,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FimPeri;
 
@@ -73,7 +73,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFimPeri;
 
@@ -82,7 +82,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgPesqGrid;
 
@@ -91,7 +91,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
@@ -100,7 +100,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdEncamMedic;
 
@@ -109,7 +109,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_SIGTAP;
 
@@ -118,7 +118,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_GESTANTE;
 
@@ -127,7 +127,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
 
@@ -136,7 +136,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAltura;
 
@@ -145,7 +145,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPeso;
 
@@ -154,7 +154,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPressArt;
 
@@ -163,7 +163,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHoraPressArt;
 
@@ -172,7 +172,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTemper;
 
@@ -181,7 +181,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHoraTemper;
 
@@ -190,7 +190,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtGlicem;
 
@@ -199,7 +199,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHoraGlicem;
 
@@ -208,7 +208,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlglicemia;
 
@@ -217,7 +217,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
 
@@ -226,7 +226,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbbatimento;
 
@@ -235,7 +235,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbvalorbatimento;
 
@@ -244,7 +244,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbsaturacao;
 
@@ -253,7 +253,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbvalorsaturacao;
 
@@ -262,7 +262,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkDiabetes;
 
@@ -271,7 +271,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDiabetes;
 
@@ -280,7 +280,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkHibert;
 
@@ -289,7 +289,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHiper;
 
@@ -298,7 +298,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlFumante;
 
@@ -307,7 +307,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTempoFumante;
 
@@ -316,7 +316,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlAlcool;
 
@@ -325,7 +325,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTempoBebidas;
 
@@ -334,7 +334,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkCiru;
 
@@ -343,7 +343,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCiru;
 
@@ -352,7 +352,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkAlergia;
 
@@ -361,7 +361,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAlergia;
 
@@ -370,7 +370,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkMarcPass;
 
@@ -379,7 +379,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMarcPass;
 
@@ -388,7 +388,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkValvulas;
 
@@ -397,7 +397,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtValvula;
 
@@ -406,7 +406,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlFebre;
 
@@ -415,7 +415,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlEnjoos;
 
@@ -424,7 +424,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlVomitos;
 
@@ -433,7 +433,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDores;
 
@@ -442,7 +442,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDtDor;
 
@@ -451,7 +451,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHrDor;
 
@@ -460,7 +460,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDor1;
 
@@ -469,7 +469,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDor2;
 
@@ -478,7 +478,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDor3;
 
@@ -487,7 +487,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDor4;
 
@@ -496,7 +496,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label9;
 
@@ -505,7 +505,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMedicContinuo;
 
@@ -514,7 +514,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMedicacaoAdmin;
 
@@ -523,7 +523,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label8;
 
@@ -532,7 +532,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSintomas;
 
@@ -541,7 +541,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlProfResp;
 
@@ -550,7 +550,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlEncamP;
 
@@ -559,7 +559,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlprofatendimento;
 
@@ -568,7 +568,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlClassRisco;
 
@@ -577,7 +577,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidDivAberta;
 
@@ -586,7 +586,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlEspec;
 
@@ -595,7 +595,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtObserPreAtend;
 
@@ -604,7 +604,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl li4;
 
@@ -613,7 +613,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
 
@@ -622,7 +622,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidCoPaciProced;
 
@@ -631,7 +631,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidCoAgendProced;
 
@@ -640,7 +640,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdProcedimentos;
 
@@ -649,7 +649,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnConfirmarProced;
 
@@ -658,7 +658,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblConfirmarProced;
 
@@ -667,7 +667,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label12;
 
@@ -676,7 +676,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl12456;
 
@@ -685,7 +685,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlgrupoprocedimento;
 
@@ -694,7 +694,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label10;
 
@@ -703,7 +703,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlsubgrupoprocedimento;
 
@@ -712,7 +712,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label11;
 
@@ -721,7 +721,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbtextolivreprocedimento;
 
@@ -730,7 +730,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgPesqProcedimentos;
 
@@ -739,7 +739,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdListarSIGTAP;
 
@@ -748,7 +748,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnclose;
 
@@ -757,7 +757,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnincluir;
 
@@ -766,7 +766,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divResp;
 
@@ -775,7 +775,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label titulo;
 
@@ -784,7 +784,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbdum;
 
@@ -793,7 +793,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbobsdum;
 
@@ -802,7 +802,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbdpp;
 
@@ -811,7 +811,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
 
@@ -820,7 +820,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbaltura;
 
@@ -829,7 +829,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbpeso;
 
@@ -838,7 +838,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbimc;
 
@@ -847,7 +847,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbpa;
 
@@ -856,7 +856,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbbcbpm;
 
@@ -865,7 +865,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbsaturacao2;
 
@@ -874,7 +874,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbglicemia;
 
@@ -883,7 +883,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlleitura;
 
@@ -892,7 +892,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
 
@@ -901,7 +901,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddledma;
 
@@ -910,7 +910,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbau;
 
@@ -919,7 +919,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbbcf;
 
@@ -928,7 +928,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbmf;
 
@@ -937,7 +937,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbobsmf;
 
@@ -946,7 +946,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label6;
 
@@ -955,7 +955,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbpc;
 
@@ -964,7 +964,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbpesoantropometria;
 
@@ -973,7 +973,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbautura;
 
@@ -982,7 +982,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbpp;
 
@@ -991,7 +991,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbimcF;
 
@@ -1000,7 +1000,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbobsantropometria;
 
@@ -1009,7 +1009,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label7;
 
@@ -1018,7 +1018,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddltiporegistro;
 
@@ -1027,7 +1027,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbdataregistro;
 
@@ -1036,7 +1036,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbidadegestante;
 
@@ -1045,7 +1045,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlcodigo;
 
@@ -1054,7 +1054,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbobservacaocomplemento;
 
@@ -1063,7 +1063,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnhistorico;
 
@@ -1072,7 +1072,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnproblemas;
 
@@ -1081,7 +1081,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnresultados;
 
@@ -1090,7 +1090,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
     }

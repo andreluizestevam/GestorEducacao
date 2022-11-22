@@ -573,9 +573,14 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             {
                 get
                 {
+                    string[] nome;
                     //Coleta apenas o primeiro nome
-                    string[] nome = this.NO_RESP.Split(' ');
-                    return nome[0];
+                    try
+                    {
+                        nome = this.NO_RESP.Split(' ');
+                        return nome[0];
+                    }
+                    catch { return null; }
                 }
             }
 

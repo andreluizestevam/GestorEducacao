@@ -1662,7 +1662,8 @@
                          <input type="hidden" id="divAgendaAt_posicao" name="divAgendaAt_posicao" />
                         <asp:GridView ID="grdAgendamentos" CssClass="grdBusca headFixo" runat="server" Style="width: 100%;
                             height: 260px; position: relative;" AutoGenerateColumns="false" AllowPaging="false"
-                            GridLines="Vertical" OnRowDataBound="grdAgendamentos_OnRowDataBound" OnRowCommand="grdAgendamentos_RowCommand" OnPageIndexChanged="grdAgendamentos_PageIndexChanged" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1">
+                            GridLines="Vertical" OnRowDataBound="grdAgendamentos_OnRowDataBound" 
+                            OnRowCommand="grdAgendamentos_RowCommand" OnPageIndexChanged="grdAgendamentos_PageIndexChanged">
                             <RowStyle CssClass="rowStyle" />
                             <AlternatingRowStyle CssClass="alternatingRowStyle" />
                             <EmptyDataRowStyle HorizontalAlign="Center" CssClass="emptyDataRowStyle" />
@@ -3841,7 +3842,8 @@
             </div>
             <div style="clear: both"></div>
 
-            <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14" Width="770">
+            <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true"  DataKeyNames="ID_PROC_MEDI_PROCE"
+                OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14" Width="770">
                 <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
                 <EmptyDataTemplate>
                     Nenhum Paciente Encontrado<br />
@@ -3854,7 +3856,7 @@
                     <asp:TemplateField>
                         <ItemStyle Width="15px" HorizontalAlign="Center" />
                         <ItemTemplate>
-                            <asp:CheckBox ID="chkselectEn" runat="server" />
+                            <asp:CheckBox ID="chkselectEn" runat="server"/>
                         </ItemTemplate>
                     </asp:TemplateField>
 

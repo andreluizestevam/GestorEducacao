@@ -45,6 +45,7 @@ using System.Reflection;
 using C2BR.GestorEducacao.Reports.GSAUD._8000_GestaoAtendimento._8200_CtrlExames;
 using C2BR.GestorEducacao.Reports.GSAUD._8000_GestaoAtendimento._8100_CtrlAtendimetoMedico;
 using C2BR.GestorEducacao.Reports.GSAUD._3000_ControleInformacoesUsuario._3400_CtrlAtendimentoUsuario;
+using System.Collections;
 
 namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinicas._8250_RecepcaoEncaminhamento
 {
@@ -5962,6 +5963,16 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
         {
             //Andre            
             AbreModalPadrao("AbreModalInfosSigtap();");
+
+            //verificar se o usuário tem procedimentos agendados e marcar no gridview os ja existentes
+            //Session["CommandName"]
+            //Session["CommandArgument"] co_alu
+            DataTable dt = new DataTable();
+            dt = proc.Procedimentosdousuario(Session["CommandArgument"].ToString(), Session["CommandName"].ToString());
+            if(dt != null)
+            {
+                // se houver tem de marcar, e na hora de gravar, deletar o existente e gravar tudo novamente.
+            }
         }
         protected void btn_SIGTAP_Click(object sender, EventArgs e)
         {
@@ -5994,98 +6005,97 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
         }
 
         protected void imgPesqProcedimentos_Click(object sender, ImageClickEventArgs e)
-        {
-         AQUI   
+        {            
             LoadGridProducts();
             AbreModalPadrao("AbreModalInfosSigtap();");
         }
         private void LoadGridProducts()
         {
+            
             grdListarSIGTAP.DataSource = proc.PreencheGrigProcedimento(Convert.ToInt32(ddlgrupoprocedimento.SelectedValue), Convert.ToInt32(ddlsubgrupoprocedimento.SelectedValue), tbtextolivreprocedimento.Text);
             grdListarSIGTAP.DataBind();
             Session["temp"] = grdListarSIGTAP.DataSource;
+            
         }
+        #region necessário para quando paginar o chkbox continua checado
+        private void RememberOldValues()
+        {
+            ArrayList categoryIDList = new ArrayList();
+            int index = -1;
+            foreach (GridViewRow row in grdListarSIGTAP.Rows)
+            {
+                try
+                {
+                    index = (int)grdListarSIGTAP.DataKeys[row.RowIndex].Value;
+                    //index = row.RowIndex;
+                    bool result = ((CheckBox)row.FindControl("chkselectEn")).Checked;
 
+                    // Check in the Session
+                    if (Session["CHECKED_ITEMS"] != null)
+                        categoryIDList = (ArrayList)Session["CHECKED_ITEMS"];
+                    if (result)
+                    {
+                        if (!categoryIDList.Contains(index))
+                            categoryIDList.Add(index);
+                    }
+                    else
+                        categoryIDList.Remove(index);
+                }
+                catch { }
+            }
+            if (categoryIDList != null && categoryIDList.Count > 0)
+                Session["CHECKED_ITEMS"] = categoryIDList;
+            }
+        private void RePopulateValues()
+        {
+            ArrayList categoryIDList = (ArrayList)Session["CHECKED_ITEMS"];
+            if (categoryIDList != null && categoryIDList.Count > 0)
+            {
+                foreach (GridViewRow row in grdListarSIGTAP.Rows)
+                {
+                    //int index = row.RowIndex;
+                    int index = (int)grdListarSIGTAP.DataKeys[row.RowIndex].Value;
+                    if (categoryIDList.Contains(index))
+                    {
+                        CheckBox myCheckBox = (CheckBox)row.FindControl("chkselectEn");
+                        myCheckBox.Checked = true;
+                    }
+                }
+            }
+        }
+        #endregion
         protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
         {
-            KeepSelection(grdListarSIGTAP);
-
+            RememberOldValues();
             grdListarSIGTAP.PageIndex = e.NewPageIndex;
             LoadGridProducts();
-            //recuperar os checados Andre
+            RePopulateValues();
             AbreModalPadrao("AbreModalInfosSigtap();");
+
+            //KeepSelection(grdListarSIGTAP);
+            //RememberOldValues();
+            //grdListarSIGTAP.PageIndex = e.NewPageIndex;
+            //LoadGridProducts();
+            ////recuperar os checados Andre
+            //AbreModalPadrao("AbreModalInfosSigtap();");
         }
         protected void grdAgendamentos_PageIndexChanged(object sender, EventArgs e)
         {
-            RestoreSelection((GridView)sender);
+           // RestoreSelection(grdListarSIGTAP);
         }
         public static void KeepSelection(GridView grid)
         {
-            //
-            // se obtienen los id de producto checkeados de la pagina actual
-            //
-            CheckBox chk = new CheckBox();
-            List<int> checkedProd = new List<int>();
-            for (int i = 0;i< grid.Rows.Count; i++)
-            {
-                chk = (CheckBox)grid.Rows[i].Cells[0].FindControl("chkselectEn");
-                if (chk.Checked)
-                    checkedProd.Add(Convert.ToInt32(grid.Rows[i].Cells[1].Text));
-            }
-            //
-            // se recupera de session la lista de seleccionados previamente
-            //
-            List<int> productsIdSel = HttpContext.Current.Session["ProdSelection"] as List<int>;
+            //CheckBox chk = new CheckBox();
+            //List<int> checkedProd = new List<int>();
+            //for (int i = 0;i< grid.Rows.Count; i++)
+            //{
+            //    chk = (CheckBox)grid.Rows[i].Cells[0].FindControl("chkselectEn");
+            //    if (chk.Checked)
+            //        checkedProd.Add(Convert.ToInt32(grid.Rows[i].Cells[1].Text));
+            //}
+            ////          productsIdSel.AddRange(checkedProd);
 
-            if (productsIdSel == null)
-                productsIdSel = new List<int>();
-
-            //
-            // se cruzan todos los registros de la pagina actual del gridview con la lista de seleccionados,
-            // si algun item de esa pagina fue marcado previamente no se devuelve
-            //
-            for (int i = 0; i < grid.Rows.Count; i++)
-            {
-                chk = (CheckBox)grid.Rows[i].Cells[0].FindControl("chkselectEn");
-                if (chk.Checked)
-                    productsIdSel.Add(Convert.ToInt32(grid.Rows[i].Cells[1].Text));
-            }
-            //productsIdSel = (from item in productsIdSel
-            //                 join item2 in grid.Rows.Cast<GridViewRow>()
-            //                    on item equals Convert.ToInt32(grid.DataKeys[item2.RowIndex].Value) into g
-            //                 where !g.Any()
-            //                 select item).ToList();
-
-            //
-            // se agregan los seleccionados
-            //
-            productsIdSel.AddRange(checkedProd);
-
-            HttpContext.Current.Session["ProdSelection"] = productsIdSel;
-
-        }
-        public static void RestoreSelection(GridView grid)
-        {
-
-            List<int> productsIdSel = HttpContext.Current.Session["ProdSelection"] as List<int>;
-
-            if (productsIdSel == null)
-                return;
-
-            //
-            // se comparan los registros de la pagina del grid con los recuperados de la Session
-            // los coincidentes se devuelven para ser seleccionados
-            //
-            List<GridViewRow> result = (from item in grid.Rows.Cast<GridViewRow>()
-                                        join item2 in productsIdSel
-                                        on Convert.ToInt32(grid.DataKeys[item.RowIndex].Value) equals item2 into g
-                                        where g.Any()
-                                        select item).ToList();
-
-            //
-            // se recorre cada item para marcarlo
-            //
-            result.ForEach(x => ((CheckBox)x.FindControl("chkselectEn")).Checked = true);
+            //HttpContext.Current.Session["checkedProd"] = checkedProd;
 
         }
 
@@ -6119,12 +6129,11 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                     linha = mDataTable.NewRow();
                     linha["ID_PROCEDIMENTO"] = linha2.Cells[1].Text;
                     linha["CO_ALUNO"] = Session["CommandArgument"].ToString();
-                    linha["CO_ALUNO_ID_AGEND_HORAR"] = (((HiddenField)linha2.Cells[0].FindControl("hidAgendaSolic")).Value);
+                    linha["CO_ALUNO_ID_AGEND_HORAR"] = Session["CommandName"].ToString();
                     //IDAGENDA.Value;
                     mDataTable.Rows.Add(linha);
                 }
             }
-
             Session["dtsigtab"] = mDataTable;
         }
 

@@ -34,6 +34,7 @@ using C2BR.GestorEducacao.Reports.GSAUD._8000_GestaoAtendimento._8400_CtrlClinic
 using C2BR.GestorEducacao.Reports.GSAUD._8000_GestaoAtendimento._8100_CtrlAtendimetoMedico;
 using C2BR.GestorEducacao.Reports.GSAUD._3000_ControleInformacoesUsuario._3400_CtrlAtendimentoUsuario;
 using C2BR.GestorEducacao.Reports.GSAUD._8000_GestaoAtendimento._8200_CtrlExames;
+using System.Collections;
 
 namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinicas._8260_Atendimento._8266_AtendimentoClinico
 {
@@ -4559,10 +4560,57 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
         protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
         {
+            RememberOldValues();
             grdListarSIGTAP.PageIndex = e.NewPageIndex;
             grdListarSIGTAP.DataSource = Session["temp"];
             grdListarSIGTAP.DataBind();
+            RePopulateValues();
             AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        private void RememberOldValues()
+        {
+            ArrayList categoryIDList = new ArrayList();
+            int index = -1;
+            foreach (GridViewRow row in grdListarSIGTAP.Rows)
+            {
+                try
+                {
+                    index = (int)grdListarSIGTAP.DataKeys[row.RowIndex].Value;
+                    //index = row.RowIndex;
+                    bool result = ((CheckBox)row.FindControl("chkselectEn")).Checked;
+
+                    // Check in the Session
+                    if (Session["CHECKED_ITEMS"] != null)
+                        categoryIDList = (ArrayList)Session["CHECKED_ITEMS"];
+                    if (result)
+                    {
+                        if (!categoryIDList.Contains(index))
+                            categoryIDList.Add(index);
+                    }
+                    else
+                        categoryIDList.Remove(index);
+                }
+                catch { }
+            }
+            if (categoryIDList != null && categoryIDList.Count > 0)
+                Session["CHECKED_ITEMS"] = categoryIDList;
+        }
+        private void RePopulateValues()
+        {
+            ArrayList categoryIDList = (ArrayList)Session["CHECKED_ITEMS"];
+            if (categoryIDList != null && categoryIDList.Count > 0)
+            {
+                foreach (GridViewRow row in grdListarSIGTAP.Rows)
+                {
+                    //int index = row.RowIndex;
+                    int index = (int)grdListarSIGTAP.DataKeys[row.RowIndex].Value;
+                    if (categoryIDList.Contains(index))
+                    {
+                        CheckBox myCheckBox = (CheckBox)row.FindControl("chkselectEn");
+                        myCheckBox.Checked = true;
+                    }
+                }
+            }
         }
 
         protected void btnincluir_Click1(object sender, EventArgs e)

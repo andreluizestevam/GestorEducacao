@@ -27,6 +27,7 @@ using C2BR.GestorEducacao.UI.Library;
 using System.Data.Objects;
 using C2BR.GestorEducacao.UI.App_Masters;
 using System.Data;
+using System.Collections;
 
 namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_ControleAtendimentoUsuario._3203_RegistroPreAtendimentoUsuario
 {
@@ -2139,11 +2140,61 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             AbreModalPadrao("AbreModalInfosSigtap();");
         }
 
+        #region necessário para quando paginar o chkbox continua checado
+        // colocar no gridview a chave DataKeyNames, o autoincremento da tabela que esta carregando o grid
+        private void RememberOldValues()
+        {
+            ArrayList categoryIDList = new ArrayList();
+            int index = -1;
+            foreach (GridViewRow row in grdListarSIGTAP.Rows)
+            {
+                try
+                {
+                    index = (int)grdListarSIGTAP.DataKeys[row.RowIndex].Value;
+                    //index = row.RowIndex;
+                    bool result = ((CheckBox)row.FindControl("chkselectEn")).Checked;
+
+                    // Check in the Session
+                    if (Session["CHECKED_ITEMS"] != null)
+                        categoryIDList = (ArrayList)Session["CHECKED_ITEMS"];
+                    if (result)
+                    {
+                        if (!categoryIDList.Contains(index))
+                            categoryIDList.Add(index);
+                    }
+                    else
+                        categoryIDList.Remove(index);
+                }
+                catch { }
+            }
+            if (categoryIDList != null && categoryIDList.Count > 0)
+                Session["CHECKED_ITEMS"] = categoryIDList;
+        }
+        private void RePopulateValues()
+        {
+            ArrayList categoryIDList = (ArrayList)Session["CHECKED_ITEMS"];
+            if (categoryIDList != null && categoryIDList.Count > 0)
+            {
+                foreach (GridViewRow row in grdListarSIGTAP.Rows)
+                {
+                    //int index = row.RowIndex;
+                    int index = (int)grdListarSIGTAP.DataKeys[row.RowIndex].Value;
+                    if (categoryIDList.Contains(index))
+                    {
+                        CheckBox myCheckBox = (CheckBox)row.FindControl("chkselectEn");
+                        myCheckBox.Checked = true;
+                    }
+                }
+            }
+        }
+        #endregion
         protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
         {
+            RememberOldValues();
             grdListarSIGTAP.PageIndex = e.NewPageIndex;
             grdListarSIGTAP.DataSource = Session["temp"];
             grdListarSIGTAP.DataBind();
+            RePopulateValues();
             AbreModalPadrao("AbreModalInfosSigtap();");
         }
 

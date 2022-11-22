@@ -887,7 +887,9 @@
         </div>
         <div style="clear: both"></div>
 
-        <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="16" Width="770">
+        <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" 
+            OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" DataKeyNames="ID_PROC_MEDI_PROCE"
+            PageSize="16" Width="770">
             <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
             <EmptyDataTemplate>
                 Nenhum Paciente Encontrado<br />
