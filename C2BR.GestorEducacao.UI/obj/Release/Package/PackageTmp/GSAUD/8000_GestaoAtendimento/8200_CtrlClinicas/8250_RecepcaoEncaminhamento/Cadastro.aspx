@@ -1659,10 +1659,10 @@
                     <div style="width: 985px; height: 260px; border: 1px solid #CCC; margin-bottom: 2px;"
                         id="divAgendaAt">
                      <div style="overflow-y: scroll; height: 100%; width: 100%">
-                        <input type="hidden" id="divAgendaAt_posicao" name="divAgendaAt_posicao" />
+                         <input type="hidden" id="divAgendaAt_posicao" name="divAgendaAt_posicao" />
                         <asp:GridView ID="grdAgendamentos" CssClass="grdBusca headFixo" runat="server" Style="width: 100%;
                             height: 260px; position: relative;" AutoGenerateColumns="false" AllowPaging="false"
-                            GridLines="Vertical" OnRowDataBound="grdAgendamentos_OnRowDataBound">
+                            GridLines="Vertical" OnRowDataBound="grdAgendamentos_OnRowDataBound" OnRowCommand="grdAgendamentos_RowCommand">
                             <RowStyle CssClass="rowStyle" />
                             <AlternatingRowStyle CssClass="alternatingRowStyle" />
                             <EmptyDataRowStyle HorizontalAlign="Center" CssClass="emptyDataRowStyle" />
@@ -1708,9 +1708,9 @@
                                 <asp:BoundField DataField="NO_CLASS_PROFI" HeaderText="ESPECIALIDADE">
                                     <ItemStyle Width="90px" HorizontalAlign="Left" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="NU_TELEFONE_PROFI_V" HeaderText="TEL PROF">
+<%--                                <asp:BoundField DataField="NU_TELEFONE_PROFI_V" HeaderText="TEL PROF">
                                     <ItemStyle Width="70px" HorizontalAlign="Left" />
-                                </asp:BoundField>
+                                </asp:BoundField>--%>
                                 <asp:TemplateField HeaderText="CONTRAT">
                                     <ItemStyle Width="50px" />
                                     <ItemTemplate>
@@ -1721,6 +1721,22 @@
                                 <asp:BoundField DataField="TP_CONSUL_VALID" HeaderText="TIPO">
                                     <ItemStyle Width="70px" HorizontalAlign="Left" />
                                 </asp:BoundField>
+
+                                                    <asp:TemplateField>                                                        
+                                                        <HeaderTemplate>
+                                                            <label title="Procedimentos agendados e suas respectivas formas de contratação">
+                                                                RP</label>
+                                                        </HeaderTemplate>
+                                                        <ItemTemplate>             
+                                                            <asp:HiddenField runat="server" ID="hidIdAgenda2" Value='<%# Eval("CO_AGEND_MEDIC") %>' />
+                                                            <asp:ImageButton ID="imgProcedHistor" ImageUrl="~/Library/IMG/BlueCheck.jpeg" CommandName='<%# Eval("CO_AGEND_MEDIC") %>' CommandArgument='<%# Eval("CO_ALU") %>'
+                                                                ToolTip="Lista os procedimentos e suas formas de contratação" runat="server"
+                                                                Style="width: 19px !important; height: 19px !important;" OnClick="imgProcedHistor_Click" />
+                                                        </ItemTemplate>
+                                                        <ItemStyle Width="10px" HorizontalAlign="Center" />
+                                                    </asp:TemplateField>
+
+
                                 <asp:TemplateField HeaderText="PR">
                                     <ItemStyle Width="10px" HorizontalAlign="Center" />
                                     <ItemTemplate>
@@ -3801,7 +3817,72 @@
                 </ul>
             </div>
         </li>
+
+        <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- INICIO MODAL PROCEDIMENTOS -->
+        <div id="divLoadInfosSigtap" style="display: none; left: 1px !important; width: 995px !important; overflow-x: hidden !important;">
+            <div style="width: 100%;">
+                <asp:Label runat="server" ID="Label27" Text="Pesquisa" CssClass="lblSubInfos"></asp:Label>
+            </div>
+            <br />
+            <div style="float: left;">
+                <asp:Label runat="server" ID="lbl12456" Text="Grupo do Procedimento"></asp:Label><br />
+                <asp:DropDownList runat="server" ID="ddlgrupoprocedimento" Style="width: 200px;" ToolTip="Escolha o grupo do procedimento." AutoPostBack="True" OnSelectedIndexChanged="ddlgrupoprocedimento_SelectedIndexChanged"></asp:DropDownList>
+            </div>
+            <div style="float: left;">
+                <asp:Label runat="server" ID="Label28" Text="Sub-Grupo do Procedimento" Style="margin-left: 13px;"></asp:Label><br />
+                <asp:DropDownList runat="server" ID="ddlsubgrupoprocedimento" Style="width: 200px; margin-left: 13px;" ToolTip="Escolha o grupo do procedimento."></asp:DropDownList>
+            </div>
+            <div style="float: left;">
+                <asp:Label runat="server" ID="Label29" Text="Texto Livre" Style="margin-left: 13px;"></asp:Label><br />
+                <asp:TextBox runat="server" ID="tbtextolivreprocedimento" Style="margin-left: 13px; width: 340px;"></asp:TextBox>
+            </div>
+            <div style="margin-top: 12px; margin-left: 0px; float: right;">
+                <asp:ImageButton ID="imgPesqProcedimentos" runat="server" ImageUrl="~/Library/IMG/Gestor_BtnPesquisa.png" OnClick="imgPesqProcedimentos_Click" />
+            </div>
+            <div style="clear: both"></div>
+
+            <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14" Width="770">
+                <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
+                <EmptyDataTemplate>
+                    Nenhum Paciente Encontrado<br />
+                </EmptyDataTemplate>
+                <HeaderStyle Height="20px" BackColor="#667AB3" ForeColor="White" CssClass="headerStyleLA" />
+                <AlternatingRowStyle CssClass="alternateRowStyleLA" Height="15" />
+                <RowStyle CssClass="rowStyleLA" Height="15" />
+                <Columns>
+
+                    <asp:TemplateField>
+                        <ItemStyle Width="15px" HorizontalAlign="Center" />
+                        <ItemTemplate>
+                            <asp:CheckBox ID="chkselectEn" runat="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+
+                    <asp:BoundField HeaderText="Cód. SIGTAP" DataField="CO_PROC_MEDI">
+                        <ItemStyle Width="100px" HorizontalAlign="Center"></ItemStyle>
+                    </asp:BoundField>
+                    <asp:BoundField HeaderText="Procedimento" DataField="NM_PROC_MEDI">
+                        <ItemStyle Width="500px" HorizontalAlign="Left"></ItemStyle>
+                    </asp:BoundField>
+                </Columns>
+            </asp:GridView>
+            <br />
+            <div>
+                <center>
+                    <asp:Button runat="server" CssClass="btn" ID="btnclose" Text="  Fechar  " Style="height: 30px !important;" />
+                    <asp:Button runat="server" CssClass="btn" ID="btnincluir" Text=" Inserir Procedimento no atendimento " Style="height: 30px !important; width: 180px !important" OnClick="btnincluir_Click1" />
+                </center>
+            </div>
+            <br />
+            <div id="divHelpTxtLA">
+                <p id="pAcesso" class="pAcesso">
+                    Verifique os SIDTAP existentes no quadro acima para incluir no atendimento.
+                </p>
+            </div>
+        </div>
+        <!-- FIM ------------------------------------------------------------------------------------------------------------------------------------- DIV MODAL PROCEDIMENTOS -->
     </ul>
+
     <script type="text/javascript">
         window.onload = function () {
             $("#divOcorrencia").show();
@@ -3957,6 +4038,14 @@
             });
         }
 
+        function AbreModalInfosSigtap() {
+            $('#divLoadInfosSigtap').dialog({
+                autoopen: false, modal: true, width: 810, height: 420, resizable: false, title: "CÓDIGO PROCEDIMENTO - PESQUISA",
+                //                open: function () { $('#divLoadInfosCadas').show(); }
+                open: function (type, data) { $(this).parent().appendTo("form"); },
+                close: function (type, data) { ($(this).parent().replaceWith("")); }
+            });
+        }
         function attrLocalAtend(eval) {
             var valor = $('#' + eval.id + '').val();
             $('#ctl00_content_LocalAtend').val(valor);

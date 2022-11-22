@@ -3626,6 +3626,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
 
         protected void lnkConfirmarProced_OnClick(object sender, EventArgs e)
         {
+            // André lnkConfirmarProced_OnClick
             try
             {
                 if (string.IsNullOrEmpty(hidCoPaciProced.Value))

@@ -51,6 +51,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
     public partial class Cadastro : System.Web.UI.Page
     {
         public PadraoCadastros CurrentPadraoCadastros { get { return (PadraoCadastros)Page.Master; } }
+        ProcedimentosClinicos proc = new ProcedimentosClinicos();
         private static Dictionary<string, string> tipoDeficiencia = AuxiliBaseApoio.chave(tipoDeficienciaAluno.ResourceManager);
 
         #region Eventos
@@ -153,6 +154,9 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                 CarregaPlanos();
                 CarregaCategorias();
                 CarregaBotoes();
+
+                ddlgrupoprocedimento = proc.DropGrupo(ddlgrupoprocedimento);
+                ddlsubgrupoprocedimento.Items.Insert(0, new ListItem("Todos", "0"));
             }
 
         }
@@ -165,9 +169,14 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
             LiMovimentacao.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_MOVIM == "S";
             LiGuia.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_GUIA == "S";
             LiFichaAten.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_FICHA == "S";
-            LiRecSimples.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_ATEND == "S";
-            LiRecContrato.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CONTR == "S";
-            LiRecCaixa.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CAIXA == "S";
+            
+            //LiRecSimples.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_ATEND == "S";
+            //LiRecContrato.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CONTR == "S";
+            //LiRecCaixa.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CAIXA == "S";
+            LiRecCaixa.Visible = LoginAuxili.FLA_ALT_BOL_ALU == "S";
+            LiRecSimples.Visible =  LoginAuxili.FLA_ALT_BOL_ALU == "S";
+            LiRecContrato.Visible = LoginAuxili.FLA_ALT_BOL_ALU == "S";
+
         }
 
         //====> Processo de Inclusão, Alteração e Exclusão de Registros na Entidade do BD, após a ação de salvar
@@ -3181,7 +3190,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                 // Passa por todos os registros da grid de atividades
                 foreach (GridViewRow linha in grdMedicosPlanto.Rows)
                 {
-                    chk = (CheckBox)linha.Cells[0].FindControl("chkselect2");
+                    chk = (CheckBox)linha.Cells[0].FindControl("chkselectEn");
 
                     // Desmarca todos os registros menos o que foi clicado
                     if (chk.ClientID != atual.ClientID)
@@ -5946,6 +5955,183 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
         #region Finalizar Atendimento
 
+
+        /*TELA DE PROCEDIMENTOS 2*/
+        #region Segunda tela para carregar Procedimentos
+        protected void imgProcedHistor_Click(object sender, EventArgs e)
+        {
+            //Andre            
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        protected void btn_SIGTAP_Click(object sender, EventArgs e)
+        {
+            //if (drpProfResp.SelectedValue == "")
+            //    AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um(a) profissional do Atendimento.");
+            //else 
+            if (Session["CO_ALU"] == null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente.");
+            else
+                AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        protected void btn_GESTANTE_Click(object sender, EventArgs e)
+        {
+            //if (drpProfResp.SelectedValue == "")
+            //    AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um(a) profissional do Atendimento.");
+            //else 
+            if (Session["CO_ALU"] == null)
+                AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente.");
+
+            //else if ((Session["CO_ALU"] == null) || (Session["SEXO"].ToString() == "M"))
+            //    AuxiliPagina.EnvioMensagemErro(this.Page, "É necessário selecionar um paciente, e este ser do sexo Feminino.");
+            else
+                AbreModalPadrao("AbreModalInfosGestante();");
+        }
+
+        protected void ddlgrupoprocedimento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlsubgrupoprocedimento = proc.DropSubGrupo(ddlsubgrupoprocedimento, Convert.ToInt32(ddlgrupoprocedimento.SelectedValue));
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+
+        protected void imgPesqProcedimentos_Click(object sender, ImageClickEventArgs e)
+        {
+         AQUI   
+            LoadGridProducts();
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        private void LoadGridProducts()
+        {
+            grdListarSIGTAP.DataSource = proc.PreencheGrigProcedimento(Convert.ToInt32(ddlgrupoprocedimento.SelectedValue), Convert.ToInt32(ddlsubgrupoprocedimento.SelectedValue), tbtextolivreprocedimento.Text);
+            grdListarSIGTAP.DataBind();
+            Session["temp"] = grdListarSIGTAP.DataSource;
+        }
+
+        protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
+        {
+            KeepSelection(grdListarSIGTAP);
+
+            grdListarSIGTAP.PageIndex = e.NewPageIndex;
+            LoadGridProducts();
+            //recuperar os checados Andre
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
+        protected void grdAgendamentos_PageIndexChanged(object sender, EventArgs e)
+        {
+            RestoreSelection((GridView)sender);
+        }
+        public static void KeepSelection(GridView grid)
+        {
+            //
+            // se obtienen los id de producto checkeados de la pagina actual
+            //
+            CheckBox chk = new CheckBox();
+            List<int> checkedProd = new List<int>();
+            for (int i = 0;i< grid.Rows.Count; i++)
+            {
+                chk = (CheckBox)grid.Rows[i].Cells[0].FindControl("chkselectEn");
+                if (chk.Checked)
+                    checkedProd.Add(Convert.ToInt32(grid.Rows[i].Cells[1].Text));
+            }
+            //
+            // se recupera de session la lista de seleccionados previamente
+            //
+            List<int> productsIdSel = HttpContext.Current.Session["ProdSelection"] as List<int>;
+
+            if (productsIdSel == null)
+                productsIdSel = new List<int>();
+
+            //
+            // se cruzan todos los registros de la pagina actual del gridview con la lista de seleccionados,
+            // si algun item de esa pagina fue marcado previamente no se devuelve
+            //
+            for (int i = 0; i < grid.Rows.Count; i++)
+            {
+                chk = (CheckBox)grid.Rows[i].Cells[0].FindControl("chkselectEn");
+                if (chk.Checked)
+                    productsIdSel.Add(Convert.ToInt32(grid.Rows[i].Cells[1].Text));
+            }
+            //productsIdSel = (from item in productsIdSel
+            //                 join item2 in grid.Rows.Cast<GridViewRow>()
+            //                    on item equals Convert.ToInt32(grid.DataKeys[item2.RowIndex].Value) into g
+            //                 where !g.Any()
+            //                 select item).ToList();
+
+            //
+            // se agregan los seleccionados
+            //
+            productsIdSel.AddRange(checkedProd);
+
+            HttpContext.Current.Session["ProdSelection"] = productsIdSel;
+
+        }
+        public static void RestoreSelection(GridView grid)
+        {
+
+            List<int> productsIdSel = HttpContext.Current.Session["ProdSelection"] as List<int>;
+
+            if (productsIdSel == null)
+                return;
+
+            //
+            // se comparan los registros de la pagina del grid con los recuperados de la Session
+            // los coincidentes se devuelven para ser seleccionados
+            //
+            List<GridViewRow> result = (from item in grid.Rows.Cast<GridViewRow>()
+                                        join item2 in productsIdSel
+                                        on Convert.ToInt32(grid.DataKeys[item.RowIndex].Value) equals item2 into g
+                                        where g.Any()
+                                        select item).ToList();
+
+            //
+            // se recorre cada item para marcarlo
+            //
+            result.ForEach(x => ((CheckBox)x.FindControl("chkselectEn")).Checked = true);
+
+        }
+
+        protected void btnincluir_Click1(object sender, EventArgs e)
+        {
+            DataTable mDataTable = new DataTable();
+
+            DataColumn mDataColumn;
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "ID_PROCEDIMENTO";
+            mDataTable.Columns.Add(mDataColumn);
+
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "CO_ALUNO";
+            mDataTable.Columns.Add(mDataColumn);
+
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "CO_ALUNO_ID_AGEND_HORAR";
+            mDataTable.Columns.Add(mDataColumn);
+
+            DataRow linha;
+
+            foreach (GridViewRow linha2 in grdListarSIGTAP.Rows)
+            {
+                //Andre
+                if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
+                {
+                    linha = mDataTable.NewRow();
+                    linha["ID_PROCEDIMENTO"] = linha2.Cells[1].Text;
+                    linha["CO_ALUNO"] = Session["CommandArgument"].ToString();
+                    linha["CO_ALUNO_ID_AGEND_HORAR"] = (((HiddenField)linha2.Cells[0].FindControl("hidAgendaSolic")).Value);
+                    //IDAGENDA.Value;
+                    mDataTable.Rows.Add(linha);
+                }
+            }
+
+            Session["dtsigtab"] = mDataTable;
+        }
+
+        #endregion
+        /*FIM TELA DE PROCEDIMENTOS 2*/
+
+
         protected void imgPesqAgendMod_OnClick(object sender, EventArgs e)
         {
             int coCol = !string.IsNullOrEmpty(drpProSolicitado.SelectedValue) ? int.Parse(drpProSolicitado.SelectedValue) : 0;
@@ -6021,6 +6207,18 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                         count += 1;
                         #endregion
                     }
+
+                    DataTable dt = new DataTable();
+                    dt = (DataTable)Session["dtsigtab"];
+                    if (dt.Rows.Count > 0)
+                    {
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            proc.InsereProcedimentos(Session["CommandArgument"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString(), "0", "");
+                        }
+                    }
+                    Session["CommandArgument"] = null;
+                    Session["CommandName"] = null;
                 }
                 catch (Exception ex)
                 {
@@ -6258,5 +6456,13 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
         }
 
         #endregion
+
+        protected void grdAgendamentos_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            // Andre
+            Session["CommandName"] = e.CommandName;
+            Session["CommandArgument"] = e.CommandArgument;
+        }
+
     }
 }
