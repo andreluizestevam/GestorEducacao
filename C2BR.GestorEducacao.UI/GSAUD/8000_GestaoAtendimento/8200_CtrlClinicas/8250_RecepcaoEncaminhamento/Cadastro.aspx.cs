@@ -5956,7 +5956,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
         #region Finalizar Atendimento
 
-
         /*TELA DE PROCEDIMENTOS 2*/
         #region Segunda tela para carregar Procedimentos
         protected void imgProcedHistor_Click(object sender, EventArgs e)
