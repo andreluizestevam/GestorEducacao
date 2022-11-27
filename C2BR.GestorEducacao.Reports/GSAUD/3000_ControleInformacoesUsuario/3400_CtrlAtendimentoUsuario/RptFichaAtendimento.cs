@@ -79,7 +79,6 @@ namespace C2BR.GestorEducacao.Reports.GSAUD._3000_ControleInformacoesUsuario._34
                            join tb904 in TB904_CIDADE.RetornaTodosRegistros() on lbar.CO_CIDADE equals tb904.CO_CIDADE into l2
                            from lcid in l2.DefaultIfEmpty()
                            //Coleta unidade de referência do paciente caso haja
-                           //Andre
                            //join tb25 in TB25_EMPRESA.RetornaTodosRegistros() on tb07.CO_EMP_ORIGEM equals tb25.CO_EMP into lea
                            //from lempOrgPac in lea.DefaultIfEmpty()
                            //Coleta Acolhimento caso haja

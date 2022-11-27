@@ -28,7 +28,13 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
         }
         public DataTable Procedimentosdousuario(string CO_ALU = "", string ID_AGENDA = "")
         {
-            string SQL = "select * from TBS479_PROCEDIMENTOS_PESSOA where co_aluno = '" + CO_ALU + "' and co_aluno_id_agend_horar = '" + ID_AGENDA + "'";
+            string SQL = " select distinct TBS479.ID_PROCEDIMENTO, TBS479.ID_PROC_MEDI_PROCE                                 " +
+                         " from TBS479_PROCEDIMENTOS_PESSOA TBS479                                                  " +
+                         " inner                                                                                    " +
+                         " join TBS356_PROC_MEDIC_PROCE TBS356 on TBS356.CO_PROC_MEDI = TBS479.ID_PROCEDIMENTO      " +
+                         " where TBS479.CO_ALUNO = '" + CO_ALU + "' and TBS479.CO_ALUNO_ID_AGEND_HORAR = '" + ID_AGENDA + "'";
+
+                //"select * from TBS479_PROCEDIMENTOS_PESSOA where co_aluno = '" + CO_ALU + "' and co_aluno_id_agend_horar = '" + ID_AGENDA + "'";
             return dir.retornacolunas(SQL);
         }
         public DropDownList DropGrupo(DropDownList ddlist)
@@ -51,7 +57,12 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
             ddlist.Items.Insert(0, new ListItem("Todos", "0"));
             return ddlist;
         }
-        public bool InsereProcedimentos(string CO_ALUNO, string ID_PROCEDIMENTO, string CO_ALUNO_ID_AGEND_HORAR, string PROF_ATENDIMENTO, string ID_profissional_enfermagem, int CO_COL = 0, int CO_EMP = 0)
+        public bool AtualizaProcedimentos(string CO_ALUNO_ID_AGEND_HORAR)
+        {
+            dir.InsereAltera("delete from TBS479_PROCEDIMENTOS_PESSOA where CO_ALUNO_ID_AGEND_HORAR = '" + CO_ALUNO_ID_AGEND_HORAR + "'");
+            return true;
+        }
+        public bool InsereProcedimentos(string CO_ALUNO, string ID_PROCEDIMENTO, string CO_ALUNO_ID_AGEND_HORAR, string PROF_ATENDIMENTO, string ID_profissional_enfermagem, int CO_COL = 0, int CO_EMP = 0, int ID_PROC_MEDI_PROCE = 0)
         {
 
             //Pesquisar pelo texto André lnkConfirmarProced_OnClick para continuar a gravar no local correto
@@ -74,16 +85,31 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
 
 
 
-            string SQL = "insert into TBS479_PROCEDIMENTOS_PESSOA(CO_ALUNO, ID_PROCEDIMENTO, CO_ALUNO_ID_AGEND_HORAR, ID_profissional_saude, ID_profissional_enfermagem) values('" + CO_ALUNO + "','" + ID_PROCEDIMENTO + "','" + CO_ALUNO_ID_AGEND_HORAR +"','" + PROF_ATENDIMENTO + "','" + ID_profissional_enfermagem + "')";
+            string SQL = " insert into TBS479_PROCEDIMENTOS_PESSOA(CO_ALUNO, ID_PROCEDIMENTO, CO_ALUNO_ID_AGEND_HORAR, ID_profissional_saude, ID_profissional_enfermagem,ID_PROC_MEDI_PROCE)  " + 
+                         " values('" + CO_ALUNO + "','" + ID_PROCEDIMENTO + "','" + CO_ALUNO_ID_AGEND_HORAR +"','" + PROF_ATENDIMENTO + "','" + ID_profissional_enfermagem + "','" + ID_PROC_MEDI_PROCE + "')";
             dir.InsereAltera(SQL);
             return true;
         }
         public DataTable RecuperaProcedimentos(string CO_ALUNO, string CO_ALUNO_ID_AGEND_HORAR)
         {
             DataTable dt = new DataTable();
-            string SQL = "select * from TBS479_PROCEDIMENTOS_PESSOA where CO_ALUNO = '" + CO_ALUNO + "' and CO_ALUNO_ID_AGEND_HORAR = '" + CO_ALUNO_ID_AGEND_HORAR + "'";
+            string SQL = "select * from TBS479_PROCEDIMENTOS_PESSOA where TBS479.CO_ALUNO = '" + CO_ALUNO + "' and TBS479.CO_ALUNO_ID_AGEND_HORAR = '" + CO_ALUNO_ID_AGEND_HORAR + "'";
             dt = dir.retornacolunas(SQL);
             return dt;
+        }
+        public string RecuperaValorBase(string ID_PROC_MEDI_PROCE)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                string SQL = "select VL_BASE from TBS353_VALOR_PROC_MEDIC_PROCE where ID_PROC_MEDI_PROCE = '" + ID_PROC_MEDI_PROCE + "'";
+                dt = dir.retornacolunas(SQL);
+                if (dt is null)
+                    return "0,00";
+                else
+                    return dt.Rows[0]["VL_BASE"].ToString();
+            }
+            catch { return "0,00"; }
         }
     }
 }

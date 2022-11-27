@@ -174,9 +174,13 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
             //LiRecSimples.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_ATEND == "S";
             //LiRecContrato.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CONTR == "S";
             //LiRecCaixa.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CAIXA == "S";
-            LiRecCaixa.Visible = LoginAuxili.FLA_ALT_BOL_ALU == "S";
-            LiRecSimples.Visible =  LoginAuxili.FLA_ALT_BOL_ALU == "S";
-            LiRecContrato.Visible = LoginAuxili.FLA_ALT_BOL_ALU == "S";
+            //LiRecCaixa.Visible = LoginAuxili.FLA_ALT_BOL_ALU == "S";
+            //LiRecSimples.Visible =  LoginAuxili.FLA_ALT_BOL_ALU == "S";
+            //LiRecContrato.Visible = LoginAuxili.FLA_ALT_BOL_ALU == "S";
+
+            LiRecCaixa.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CAIXA == "S";
+            LiRecSimples.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CAIXA == "S";
+            LiRecContrato.Visible = empresa.TB83_PARAMETRO.FL_PAINEL_RECEP_RECEB_CAIXA == "S";
 
         }
 
@@ -3908,7 +3912,34 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                 }
             }
         }
+        protected void imgProcedHistor_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["CHECKED_ITEMS"] = null;
+            ImageButton atual = (ImageButton)sender;
+            ImageButton img;
+            DataTable dt = new DataTable();
+            if (grdAgendamentos.Rows.Count != 0)
+            {
+                foreach (GridViewRow linha in grdAgendamentos.Rows)
+                {
+                    img = (ImageButton)linha.FindControl("imgProcedHistor");
+                    if (img.ClientID == atual.ClientID)
+                    {
+                        int idAgenda = int.Parse(((HiddenField)linha.FindControl("hidIdAgenda2")).Value);
+                        int coAlu = int.Parse(((HiddenField)linha.FindControl("hidCoPac2")).Value);
+                        int idprofissional = int.Parse(((HiddenField)linha.FindControl("hidProfissional")).Value);
 
+                        Session["CommandArgument"] = coAlu;
+                        Session["CommandName"] = idAgenda;
+                        Session["CO_PROFISSIONAL"] = idprofissional;
+                    }
+                }
+            }
+            grdListarSIGTAP.DataSource = null;
+            grdListarSIGTAP.DataBind();
+
+            AbreModalPadrao("AbreModalInfosSigtap();");
+        }
         protected void imgPresente_OnClick(object sender, EventArgs e)
         {
             ImageButton atual = (ImageButton)sender;
@@ -5958,21 +5989,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
         /*TELA DE PROCEDIMENTOS 2*/
         #region Segunda tela para carregar Procedimentos
-        protected void imgProcedHistor_Click(object sender, EventArgs e)
-        {
-            //Andre            
-            AbreModalPadrao("AbreModalInfosSigtap();");
 
-            //verificar se o usuário tem procedimentos agendados e marcar no gridview os ja existentes
-            //Session["CommandName"]
-            //Session["CommandArgument"] co_alu
-            DataTable dt = new DataTable();
-            dt = proc.Procedimentosdousuario(Session["CommandArgument"].ToString(), Session["CommandName"].ToString());
-            if(dt != null)
-            {
-                // se houver tem de marcar, e na hora de gravar, deletar o existente e gravar tudo novamente.
-            }
-        }
         protected void btn_SIGTAP_Click(object sender, EventArgs e)
         {
             //if (drpProfResp.SelectedValue == "")
@@ -6010,11 +6027,27 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
         }
         private void LoadGridProducts()
         {
-            
             grdListarSIGTAP.DataSource = proc.PreencheGrigProcedimento(Convert.ToInt32(ddlgrupoprocedimento.SelectedValue), Convert.ToInt32(ddlsubgrupoprocedimento.SelectedValue), tbtextolivreprocedimento.Text);
             grdListarSIGTAP.DataBind();
             Session["temp"] = grdListarSIGTAP.DataSource;
-            
+
+            //int p = 0;
+            DataTable dt = new DataTable();
+            dt = proc.Procedimentosdousuario(Session["CommandArgument"].ToString(), Session["CommandName"].ToString());
+            if (dt != null)
+            {
+                for(int i = 0; i < grdListarSIGTAP.Rows.Count; i++)
+                {
+                    for(int p = 0; p < dt.Rows.Count; p++)
+                    {
+                        if((grdListarSIGTAP.Rows[i].Cells[1].Text.Trim() == dt.Rows[p][0].ToString().Trim()) && (Convert.ToString(grdListarSIGTAP.DataKeys[i].Value).Trim() == dt.Rows[p][1].ToString().Trim()))
+                        {
+                            ((CheckBox)grdListarSIGTAP.Rows[i].Cells[0].FindControl("chkselectEn")).Checked = true;
+                        }
+                    }
+                }
+                Session["CHECKED_ITEMS"] = null;
+            }
         }
         #region necessário para quando paginar o chkbox continua checado
         private void RememberOldValues()
@@ -6064,38 +6097,16 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
         }
         #endregion
         protected void grdListarSIGTAP_PageIndexChanging1(object sender, GridViewPageEventArgs e)
-        {
+        {            
             RememberOldValues();
             grdListarSIGTAP.PageIndex = e.NewPageIndex;
             LoadGridProducts();
             RePopulateValues();
             AbreModalPadrao("AbreModalInfosSigtap();");
-
-            //KeepSelection(grdListarSIGTAP);
-            //RememberOldValues();
-            //grdListarSIGTAP.PageIndex = e.NewPageIndex;
-            //LoadGridProducts();
-            ////recuperar os checados Andre
-            //AbreModalPadrao("AbreModalInfosSigtap();");
         }
         protected void grdAgendamentos_PageIndexChanged(object sender, EventArgs e)
         {
            // RestoreSelection(grdListarSIGTAP);
-        }
-        public static void KeepSelection(GridView grid)
-        {
-            //CheckBox chk = new CheckBox();
-            //List<int> checkedProd = new List<int>();
-            //for (int i = 0;i< grid.Rows.Count; i++)
-            //{
-            //    chk = (CheckBox)grid.Rows[i].Cells[0].FindControl("chkselectEn");
-            //    if (chk.Checked)
-            //        checkedProd.Add(Convert.ToInt32(grid.Rows[i].Cells[1].Text));
-            //}
-            ////          productsIdSel.AddRange(checkedProd);
-
-            //HttpContext.Current.Session["checkedProd"] = checkedProd;
-
         }
 
         protected void btnincluir_Click1(object sender, EventArgs e)
@@ -6118,22 +6129,49 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
             mDataColumn.ColumnName = "CO_ALUNO_ID_AGEND_HORAR";
             mDataTable.Columns.Add(mDataColumn);
 
-            DataRow linha;
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "ID_PROC_MEDI_PROCE";
+            mDataTable.Columns.Add(mDataColumn);
 
+            mDataColumn = new DataColumn();
+            mDataColumn.DataType = Type.GetType("System.String");
+            mDataColumn.ColumnName = "ID_PROFISSIONAL";
+            mDataTable.Columns.Add(mDataColumn);
+
+            DataRow linha;
+            int i = 0;
             foreach (GridViewRow linha2 in grdListarSIGTAP.Rows)
             {
-                //Andre
                 if (((CheckBox)linha2.Cells[0].FindControl("chkselectEn")).Checked)
                 {
                     linha = mDataTable.NewRow();
+                    linha["ID_PROC_MEDI_PROCE"] = grdListarSIGTAP.DataKeys[i].Value;
                     linha["ID_PROCEDIMENTO"] = linha2.Cells[1].Text;
                     linha["CO_ALUNO"] = Session["CommandArgument"].ToString();
                     linha["CO_ALUNO_ID_AGEND_HORAR"] = Session["CommandName"].ToString();
+                    linha["ID_PROFISSIONAL"] = Session["CO_PROFISSIONAL"].ToString();
                     //IDAGENDA.Value;
-                    mDataTable.Rows.Add(linha);
+                    mDataTable.Rows.Add(linha);                    
+                }
+                i++;
+            }
+            //grdListarSIGTAP.PageSize = 14;
+            //Session["dtsigtab"] = mDataTable;
+
+            DataTable dt = new DataTable();
+            dt = mDataTable;
+            //dt = (DataTable)Session["dtsigtab"];
+            try { proc.AtualizaProcedimentos(Session["CommandName"].ToString()); } catch { }
+            if (dt.Rows.Count > 0)
+            {
+                for (i = 0; i < dt.Rows.Count; i++)
+                {
+                    proc.InsereProcedimentos(Session["CommandArgument"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString(), dt.Rows[i]["ID_PROFISSIONAL"].ToString(), "0", 0, 0, Convert.ToInt32(dt.Rows[i]["ID_PROC_MEDI_PROCE"].ToString()));
                 }
             }
-            Session["dtsigtab"] = mDataTable;
+            Session["CommandArgument"] = null;
+            Session["CommandName"] = null;
         }
 
         #endregion
@@ -6215,18 +6253,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
                         count += 1;
                         #endregion
                     }
-
-                    DataTable dt = new DataTable();
-                    dt = (DataTable)Session["dtsigtab"];
-                    if (dt.Rows.Count > 0)
-                    {
-                        for (int i = 0; i < dt.Rows.Count; i++)
-                        {
-                            proc.InsereProcedimentos(Session["CommandArgument"].ToString(), dt.Rows[i]["ID_PROCEDIMENTO"].ToString(), dt.Rows[i]["CO_ALUNO_ID_AGEND_HORAR"].ToString(), "0", "");
-                        }
-                    }
-                    Session["CommandArgument"] = null;
-                    Session["CommandName"] = null;
                 }
                 catch (Exception ex)
                 {
@@ -6467,7 +6493,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8200_CtrlClinica
 
         protected void grdAgendamentos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            // Andre
             Session["CommandName"] = e.CommandName;
             Session["CommandArgument"] = e.CommandArgument;
         }

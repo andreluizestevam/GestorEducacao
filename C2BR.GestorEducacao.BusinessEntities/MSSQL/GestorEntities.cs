@@ -193,7 +193,6 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
         public static int SaveOrUpdate(EntityObject entity, bool saveChanges)
         {
             int affectedEntities = 0;
-
             switch (entity.EntityState)
             {
                 case EntityState.Added:
@@ -212,7 +211,6 @@ namespace C2BR.GestorEducacao.BusinessEntities.MSSQL
                 default:
                     break;
             }
-
             return affectedEntities;
         }
 

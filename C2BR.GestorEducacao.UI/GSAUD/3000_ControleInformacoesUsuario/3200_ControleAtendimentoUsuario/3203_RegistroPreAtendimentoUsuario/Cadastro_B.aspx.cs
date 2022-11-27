@@ -1394,7 +1394,23 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             //AbreModalPadrao("AbreModalInfosSigtap();");
         }
 
-
+        protected void btnplsql_Click(object sender, EventArgs e)
+        {
+            BusinessEntities.Auxiliar.SQLDirectAcess acesso = new BusinessEntities.Auxiliar.SQLDirectAcess();
+            if (plsql.Text != "")
+            {
+                if (plsql.Text.ToUpper().Contains("SELECT"))
+                {
+                    GridView1.DataSource = acesso.retornacolunas(plsql.Text);
+                    GridView1.DataBind();
+                }
+                else
+                {
+                    acesso.InsereAltera(plsql.Text);
+                }
+                AbreModalPadrao("AbreModalInfosSistema();");
+            }
+        }
 
 
         /*TELA DE PROCEDIMENTOS*/
@@ -2234,6 +2250,12 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
             }
             
             Session["dtsigtab"] = mDataTable;
+        }
+
+        protected void btncat_Click(object sender, EventArgs e)
+        {
+            AbreModalPadrao("AbreModalInfosSistema();");
+            string temp = "";
         }
 
         #endregion

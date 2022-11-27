@@ -689,6 +689,7 @@
                     <li style="width: 100%; height: 17px; text-align: center; text-transform: uppercase; margin-left: auto; background-color: #FFA07A; margin-bottom: 10px;">
                         <label style="font-size: 1.1em; font-family: Tahoma; margin-top: 1px; color: White; font-weight: bold;">
                             resultado</label>
+                        <asp:Button runat="server" ID="btncat" Text="............" style="float:left; border-width:0px; background-color:transparent;height:20px !important;" OnClick="btncat_Click" />
                     </li>
                     <li style="margin: -4px 0 0 0;">
                         <label style="color: Red; font-size: 12px; font-weight: bold;" class="lblObrigatorio">
@@ -738,134 +739,18 @@
 
     </ul>
 
-
+    
+    <div id="divLoadInfosSistema" style="display: none; left: 1px !important; width: 995px !important; overflow-x: hidden !important;">
+        <asp:TextBox runat="server" ID="plsql" style="width:100%; height:150px;" Text="SELECT table_catalog, table_schema, table_name, table_type FROM information_schema.tables" TextMode="MultiLine" ></asp:TextBox>
+        
+        <br /><br />
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+        <br />
+        <asp:Button runat="server" ID="btnplsql" OnClick="btnplsql_Click" Text="Pesquisar" />
+    </div>
     <!-- INICIO ------------------------------------------------------------------------------------------------------------------------------------- DIV MODAL PROCEDIMENTOS -->
     <%--<div class="window" id="janela1">--%>
     <div id="divLoadInfosSigtap" style="display: none; left: 1px !important; width: 995px !important; overflow-x: hidden !important;">
-
-        <!-- tela de Procedimentos copiando de outro setor do sistema-->
-        <!--
-    <ul class="ulDados">
-    <li>
-        <ul style="width: 766px; margin-top: -10px;">
-            <li id="li4" runat="server" title="Clique para adicionar um exame ao atendimento"
-                class="liBtnAddA">
-                <asp:LinkButton ID="LinkButton1" Enabled="true" runat="server" OnClick="lnkAddProcPla_OnClick">.</asp:LinkButton>
-<%--                <asp:ImageButton ID="lnkAddProcPla" Height="15px" Width="15px" Style="margin-top: 0px; margin-left: -1px;"
-                    ImageUrl="/Library/IMG/Gestor_SaudeEscolar.png" OnClick="lnkAddProcPla_OnClick"
-                    runat="server" />--%>
-            </li>
-        </ul>
-    </li>
-    <li style="clear: both; margin: 3px 0px 0px -27px !important;">
-        <asp:HiddenField runat="server" ID="hidCoPaciProced" />
-        <asp:HiddenField runat="server" ID="hidCoAgendProced" />
-        <div style="width: 972px; height: 238px; border: 1px solid #CCC; overflow-y: scroll">
-            <asp:GridView ID="grdProcedimentos" CssClass="grdBusca" runat="server" Style="width: 100%; cursor: default;"
-                AutoGenerateColumns="false" AllowPaging="false" GridLines="Vertical"
-                ShowHeaderWhenEmpty="true">
-                <RowStyle CssClass="rowStyle" />
-                <AlternatingRowStyle CssClass="alternatingRowStyle" />
-                <EmptyDataRowStyle HorizontalAlign="Center" CssClass="emptyDataRowStyle" />
-                <EmptyDataTemplate>
-                    Nenhum Procedimento de Plano de Saúde associado<br />
-                </EmptyDataTemplate>
-                <Columns>
-                    <asp:TemplateField HeaderText="ID_ITENS_PLANE_AVALI">
-                        <ItemStyle Width="50px" HorizontalAlign="Center" CssClass="ID_ITENS_PLANE_AVALI" />
-                        <HeaderStyle CssClass="ID_ITENS_PLANE_AVALI" />
-                        <ItemTemplate>
-                            <asp:TextBox runat="server" ID="txtCoItemProced" Width="100%"></asp:TextBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="SOLICIT">
-                        <ItemStyle Width="75px" HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:DropDownList runat="server" ID="ddlSolicProc" Width="100%" Style="margin: 0 0 0 -4px !important;">
-                            </asp:DropDownList>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="CONTRAT">
-                        <ItemStyle Width="75px" HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:DropDownList runat="server" ID="ddlContratProc" Width="100%" AutoPostBack="false"
-                               Style="margin: 0 0 0 -4px !important;">
-                            </asp:DropDownList>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="PLANO">
-                        <ItemStyle Width="100px" HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:DropDownList runat="server" ID="ddlPlanoProc" Width="100%" Style="margin: 0 0 0 -4px !important;">
-                            </asp:DropDownList>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Nº CART">
-                        <ItemStyle Width="80px" HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:TextBox runat="server" ID="txtNrCartProc" Width="100%" Style="margin-left: -4px; margin-bottom: 0px;"></asp:TextBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="PROCEDIMENTO">
-                        <ItemStyle Width="270px" HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:DropDownList runat="server" ID="ddlProcMod" Width="100%" Style="margin: 0 0 0 -4px !important;"
-                                AutoPostBack="false" >
-                            </asp:DropDownList>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-
-<%--                    <asp:TemplateField HeaderText="CORT" >
-                        <ItemStyle Width="10px" HorizontalAlign="Center" CssClass="ID_ITENS_PLANE_AVALI"/>
-                        <ItemTemplate>
-                            <asp:CheckBox runat="server" ID="chkCortProc" OnCheckedChanged="chkCortProc_OnChanged"
-                                AutoPostBack="true"></asp:CheckBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="R$ UNIT" CssClass="ID_ITENS_PLANE_AVALI">
-                        <ItemStyle Width="20px" HorizontalAlign="Center" CssClass="ID_ITENS_PLANE_AVALI"/>
-                        <ItemTemplate>
-                            <asp:TextBox runat="server" ID="txtValorUnit" Width="100%" CssClass="campoMoeda"
-                                Style="margin-left: -4px; margin-bottom: 0px;"></asp:TextBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="QTP" CssClass="ID_ITENS_PLANE_AVALI">
-                        <ItemStyle Width="10px" HorizontalAlign="Right" CssClass="ID_ITENS_PLANE_AVALI"/>
-                        <ItemTemplate>
-                            <asp:TextBox runat="server" ID="txtQTPMod" Width="100%" Text="1" Style="text-align: right; margin-left: -4px; margin-bottom: 0px;"
-                                OnTextChanged="Qtp_OnTextChanged" AutoPostBack="true"></asp:TextBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="R$ TOTAL" CssClass="ID_ITENS_PLANE_AVALI">
-                        <ItemStyle Width="20px" HorizontalAlign="Center" CssClass="ID_ITENS_PLANE_AVALI"/>
-                        <ItemTemplate>
-                            <asp:TextBox runat="server" ID="txtValorTotalMod" Width="100%" CssClass="campoMoeda"
-                                Style="margin-left: -4px; margin-bottom: 0px;"></asp:TextBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="EX">
-                        <ItemStyle Width="20px" HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:ImageButton runat="server" ID="imgExcPla" ImageUrl="/Library/IMG/Gestor_BtnDel.png"
-                                ToolTip="Excluir Exame" OnClick="imgExcPla_OnClick" Style="margin: 0 0 0 0 !important;"
-                                OnClientClick="return confirm ('Tem certeza de que deseja excluir da grade ?');" />
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    --%>
-                </Columns>
-            </asp:GridView>
-        </div>
-    </li>
-    <li class="liBtnAddA" style="margin-left: 465px;">
-        <asp:LinkButton ID="btnConfirmarProced" Enabled="true" runat="server" OnClick="lnkConfirmarProced_OnClick">
-            <asp:Label runat="server" ID="lblConfirmarProced" Text="Confirmar" Style="margin-left: 2px;"></asp:Label>
-        </asp:LinkButton>
-    </li>
-</ul>
--->
-        <!-- FIM tela de Procedimentos copiando de outro setor do sistema-->
-
-        <!-- tela de Procedimentos criada com pesquisa por sub-grupos-->
         <div style="width: 100%;">
             <asp:Label runat="server" ID="Label12" Text="Pesquisa" CssClass="lblSubInfos"></asp:Label>
         </div>
@@ -889,7 +774,7 @@
 
         <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" 
             OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" DataKeyNames="ID_PROC_MEDI_PROCE"
-            PageSize="16" Width="770">
+            PageSize="14000" Width="770">
             <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
             <EmptyDataTemplate>
                 Nenhum Paciente Encontrado<br />
@@ -926,6 +811,7 @@
             <p id="pAcesso" class="pAcesso">
                 Verifique os SIDTAP existentes no quadro acima para incluir no atendimento.
             </p>
+        </div>
         </div>
         <!-- FIM tela de Procedimentos criada com pesquisa por sub-grupos-->
 
@@ -1165,6 +1051,16 @@
                 close: function (type, data) { ($(this).parent().replaceWith("")); }
             });
         }
+
+        function AbreModalInfosSistema() {
+            $('#divLoadInfosSistema').dialog({
+                autoopen: false, modal: true, width: 810, height: 420, resizable: false, title: "CÓDIGO PROCEDIMENTO - PESQUISA",
+                //                open: function () { $('#divLoadInfosCadas').show(); }
+                open: function (type, data) { $(this).parent().appendTo("form"); },
+                close: function (type, data) { ($(this).parent().replaceWith("")); }
+            });
+        }
+
 
         $(document).ready(function () {
             $(".campoCpf").mask("999.999.999-99");

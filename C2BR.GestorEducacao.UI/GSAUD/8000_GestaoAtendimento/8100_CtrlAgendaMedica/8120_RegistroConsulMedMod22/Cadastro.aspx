@@ -346,7 +346,6 @@
                             AutoPostBack="true" />
                     </li>
                     
-                    <!-- andre - Copiar -->
                     <li style="margin: 10px -3px 0 0;">
                         <asp:ImageButton ID="imgCadPac" runat="server" ImageUrl="~/Library/IMG/PGN_IconeTelaCadastro2.png"
                             OnClick="imgCadPac_OnClick" Style="width: 18px !important; height: 17px !important;"
@@ -465,7 +464,7 @@
                                                 </EmptyDataTemplate>
                                                 <Columns>
                                                     <asp:BoundField DataField="DT_HORAR" HeaderText="DATA/HORA">
-                                                        <ItemStyle Width="100px" HorizontalAlign="Left" />
+                                                        <ItemStyle Width="70px" HorizontalAlign="Left" />
                                                     </asp:BoundField>
                                                     <asp:BoundField DataField="LOCAL" HeaderText="LOCAL">
                                                         <ItemStyle Width="60px" HorizontalAlign="Left" />
@@ -489,6 +488,12 @@
                                                     <asp:BoundField DataField="ESPEC" HeaderText="FUNÇÃO">
                                                         <ItemStyle Width="20px" HorizontalAlign="Left" />
                                                     </asp:BoundField>
+
+                                                    <asp:BoundField DataField="TIPO" HeaderText="Tipo">
+                                                        <ItemStyle Width="20px" HorizontalAlign="Left" />
+                                                    </asp:BoundField>
+
+
                                                     <asp:BoundField DataField="STATUS_V" HeaderText="STATUS">
                                                         <ItemStyle Width="20px" HorizontalAlign="Left" />
                                                     </asp:BoundField>
@@ -1229,7 +1234,7 @@
                                 </li>
                             </li>
                             <li id="Li1" runat="server" title="Marque para recuperar procedimentos anteriores"
-                                class="" style="float: right; margin: -15px -161px 2px 2px; height: 15px; width: 96px;">
+                                class="" style="float: right; margin: -15px -161px 2px 2px; height: 15px; width: 150px;">
                                 <asp:Label Style="font-family: Tahoma; font-weight: bold; margin-top: -16px;" runat="server"
                                     Text="Retornar anteriores"></asp:Label>
                             </li>
@@ -1661,7 +1666,6 @@
             });
         }
 
-        //<!-- Andre - Copiar -->
         function AbreModalInfosCadas() {
             $('#divLoadInfosCadas').dialog({ autoopen: false, modal: true, width: 652, height: 380, resizable: false, title: "USUÁRIO DE SAÚDE - CADASTRO",
                 //                open: function () { $('#divLoadInfosCadas').show(); }
@@ -1679,7 +1683,7 @@
         }
 
         function AbreModalProcedHistor() {
-            $('#divLoadProcedHistor').dialog({ autoopen: false, modal: true, width: 795, height: 350, resizable: false, title: "PROCEDIMENTOS E SUAS FORMAS DE CONTRATAÇÃO",
+            $('#divLoadProcedHistor').dialog({ autoopen: false, modal: true, width: 795, height: 350, resizable: false, title: "PROCEDIMENTOS",
                 //                open: function () { $('#divLoadInfosCadas').show(); }
                 open: function (type, data) { $(this).parent().appendTo("form"); },
                 close: function (type, data) { ($(this).parent().replaceWith("")); }

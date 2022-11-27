@@ -45,10 +45,10 @@ C:\C2BR.GestorEducacao\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debu
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\bin\Debug\C2BR.GestorEducacao.Bios.exe.config
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\bin\Debug\C2BR.GestorEducacao.Bios.exe
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\bin\Debug\C2BR.GestorEducacao.Bios.pdb
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.csproj.AssemblyReference.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.Main.resources
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.Properties.Resources.resources
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.csproj.GenerateResource.cache
+C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.csproj.CoreCompileInputs.cache
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.exe
 C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.pdb
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.csproj.AssemblyReference.cache
-C:\Sistemas\C2BR.GestorEducacao\C2BR.GestorEducacao.Bios\obj\x86\Debug\C2BR.GestorEducacao.Bios.csproj.CoreCompileInputs.cache

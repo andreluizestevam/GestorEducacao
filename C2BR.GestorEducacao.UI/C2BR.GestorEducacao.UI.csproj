@@ -6875,6 +6875,13 @@
     <Compile Include="GEDUC\9000_CtrlResultados\9230_IndicesEducacaoEducacenso\ResCenEscMatIniParam.aspx.designer.cs">
       <DependentUpon>ResCenEscMatIniParam.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GEDUC\9000_CtrlResultados\9240_IndicesEducacaoProvaBrasil\Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GEDUC\9000_CtrlResultados\9240_IndicesEducacaoProvaBrasil\Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GEDUC\9000_CtrlResultados\9240_IndicesEducacaoProvaBrasil\ResulSAEBProvaBrasil.aspx.cs">
       <DependentUpon>ResulSAEBProvaBrasil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -10266,6 +10273,7 @@
     <Content Include="GEDUC\9000_CtrlResultados\9230_IndicesEducacaoEducacenso\MapaEscolas.aspx" />
     <Content Include="GEDUC\9000_CtrlResultados\9230_IndicesEducacaoEducacenso\ResCenEscMatIniLocal.aspx" />
     <Content Include="GEDUC\9000_CtrlResultados\9230_IndicesEducacaoEducacenso\ResCenEscMatIniParam.aspx" />
+    <Content Include="GEDUC\9000_CtrlResultados\9240_IndicesEducacaoProvaBrasil\Cadastro.aspx" />
     <Content Include="GEDUC\9000_CtrlResultados\9240_IndicesEducacaoProvaBrasil\ResulSAEBProvaBrasil.aspx" />
     <Content Include="Componentes\BreadCrumb.aspx" />
     <Content Include="GSAUD\1000_ConfiguracaoAmbiente\1100_TabelasGeraisAmbiente\1101_CadastroRegiao\Busca.aspx" />

@@ -1114,7 +1114,9 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
                            Situacao = tbs174.CO_SITUA_AGEND_HORAR,
                            agendaConfirm = tbs174.FL_CONF_AGEND,
                            agendaEncamin = tbs174.FL_AGEND_ENCAM,
-                           faltaJustif = tbs174.FL_JUSTI_CANCE
+                           faltaJustif = tbs174.FL_JUSTI_CANCE,
+                           TIPO = tbs174.TP_CONSU.Equals("O") ? "Outros" : tbs174.TP_CONSU.Equals("P") ? "Procedimento" : tbs174.TP_CONSU.Equals("F") ? "Farmácia" : tbs174.TP_CONSU.Equals("V") ? "Vacina" : tbs174.TP_CONSU.Equals("S") ? "Ambulatório" : tbs174.TP_CONSU.Equals("E") ? "Exame" : tbs174.TP_CONSU.Equals("G") ? "Cons. Gestante" : tbs174.TP_CONSU.Equals("R") ? "Retorno" : tbs174.TP_CONSU.Equals("N") ? "Normal" : tbs174.TP_CONSU.Equals("I") ? "Inicial" : tbs174.TP_CONSU.Equals("M") ? "Emergencial" : "-",
+
                        }).Concat(from tbs174 in TBS174_AGEND_HORAR.RetornaTodosRegistros()
                                  join tb14 in TB14_DEPTO.RetornaTodosRegistros() on tbs174.CO_EMP equals tb14.TB25_EMPRESA.CO_EMP
                                  join tb03 in TB03_COLABOR.RetornaTodosRegistros() on tbs174.CO_COL equals tb03.CO_COL
@@ -1142,7 +1144,9 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
                                      Situacao = tbs174.CO_SITUA_AGEND_HORAR,
                                      agendaConfirm = tbs174.FL_CONF_AGEND,
                                      agendaEncamin = tbs174.FL_AGEND_ENCAM,
-                                     faltaJustif = tbs174.FL_JUSTI_CANCE
+                                     faltaJustif = tbs174.FL_JUSTI_CANCE,
+                                     TIPO = tbs174.TP_CONSU.Equals("O") ? "Outros" : tbs174.TP_CONSU.Equals("P") ? "Procedimento" : tbs174.TP_CONSU.Equals("F") ? "Farmácia" : tbs174.TP_CONSU.Equals("V") ? "Vacina" : tbs174.TP_CONSU.Equals("S") ? "Ambulatório" : tbs174.TP_CONSU.Equals("E") ? "Exame" : tbs174.TP_CONSU.Equals("G") ? "Cons. Gestante" : tbs174.TP_CONSU.Equals("R") ? "Retorno" : tbs174.TP_CONSU.Equals("N") ? "Normal" : tbs174.TP_CONSU.Equals("I") ? "Inicial" : tbs174.TP_CONSU.Equals("M") ? "Emergencial" : "-",
+
                                  }).DistinctBy(x => x.CO_AGEND).OrderBy(w => w.DT).ThenBy(w => w.HR).ThenBy(w => w.LOCAL).ToList();
             
             grdHistorPaciente.DataSource = res;
@@ -1812,6 +1816,7 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
         public class HorarioHistoricoPaciente
         {
             public int CO_AGEND { get; set; }
+            public string TIPO { get; set; }
             public string LOCAL { get; set; }
             public string ESPEC { get; set; }
             public string TP_PROCED { get { return this.TP_PROCED_X + " - " + this.TP_PROCED_V; } }
@@ -2279,11 +2284,12 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
         {
             CarregaPacientes();
             PesquisaPaciente();
-            OcultarPesquisa(true);
+            OcultarPesquisa(true);            
         }
 
         protected void imgCpfResp_OnClick(object sender, EventArgs e)
         {
+            Session["update"] = true;
             PesquisaCarregaResp(null);
         }
 
@@ -2793,7 +2799,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
 
         protected void imgCadPac_OnClick(object sender, EventArgs e)
         {
-            // André Janela PopUp
             if (!String.IsNullOrEmpty(ddlNomeUsu.SelectedValue))
             {
                 var tb07 = TB07_ALUNO.RetornaPelaChavePrimaria(int.Parse(ddlNomeUsu.SelectedValue), LoginAuxili.CO_EMP);
@@ -2805,7 +2810,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
             VerificarNireAutomatico();
             divResp.Visible = true;
             divSuccessoMessage.Visible = false;
-            //updCadasUsuario.Update();
             AbreModalPadrao("AbreModalInfosCadas();");
 
         }
@@ -3150,7 +3154,11 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
                     tb07.NU_NIRE = nirTot;
                     tb07.DE_PASTA_CONTR = !string.IsNullOrEmpty(txtPastaControle.Text) ? nirTot.ToString() : txtPastaControle.Text;
                     tb07.TEL_MIGRAR = txtTelMigrado.Text;
-                    tb07 = TB07_ALUNO.SaveOrUpdate(tb07);
+
+
+                    TB07_ALUNO.SaveOrUpdate(tb07);
+                    //tb07 = TB07_ALUNO.SaveChanges()
+                    //SaveOrUpdate(tb07);
                 }
                 else
                     tb07 = TB07_ALUNO.RetornaPeloCoAlu(int.Parse(hidCoPac.Value));
@@ -3173,7 +3181,8 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
             }
             catch (Exception ex)
             {
-                AuxiliPagina.EnvioMensagemErro(this.Page, ex.Message);
+                //André, verificar como alterar o status para alteração.
+                //AuxiliPagina.EnvioMensagemErro(this.Page, ex.Message);
             }
 
         }
@@ -3300,9 +3309,11 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
 
         protected void ddlProcedAgend_OnSelectedIndexChanged(object sender, EventArgs e)
         {
+            ProcedimentosClinicos proc = new ProcedimentosClinicos();
             DropDownList atual = (DropDownList)sender;
             DropDownList ddlOper, ddlPlan, ddlProc;
-
+            Label lblValorUnit = (Label)sender;
+            try { lblValorUnit.Text = proc.RecuperaValorBase(atual.SelectedValue); } catch { }
             int qntProced = 0;
             bool existeProcedimento = false; //Define se existe um procedimento igual já selecionado
 
@@ -3311,7 +3322,8 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
                 foreach (GridViewRow linha in grdProcedimentos.Rows)
                 {
                     ddlProc = (DropDownList)linha.FindControl("ddlProcMod");
-
+                    lblValorUnit = (Label)linha.FindControl("lblValorUnitProced");
+                    
                     if (ddlProc.SelectedValue.Equals(atual.SelectedValue))
                     {
                         qntProced++;
@@ -3550,6 +3562,13 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
 
         protected void imgProcedHorar_OnClick(object sender, EventArgs e)
         {
+            //imgProcedHorar_OnClick
+            if(ddlTipoAgendHistPaciente.SelectedValue == "0")
+            {
+                AuxiliPagina.EnvioMensagemErro(this.Page, "MSG: Selecione antes o tipo de agendamento.");
+                return;
+            }
+
             ImageButton atual = (ImageButton)sender;
             ImageButton img;
 
@@ -3626,7 +3645,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
 
         protected void lnkConfirmarProced_OnClick(object sender, EventArgs e)
         {
-            // André lnkConfirmarProced_OnClick
             try
             {
                 if (string.IsNullOrEmpty(hidCoPaciProced.Value))
@@ -4363,7 +4381,8 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
                 AuxiliCarregamentos.CarregaProfissionaisSaude(ddlSolic, LoginAuxili.CO_EMP, false, "0");
                 //SelecionaOperadoraPlanoPaciente();
                 //ddlContrat.SelectedValue = contrat;
-                ddlSolic.SelectedValue = solic;
+                ddlSolic.SelectedIndex = ddlSolic.Items.IndexOf(ddlSolic.Items.FindByText(LoginAuxili.NOME_USU_LOGADO));
+                //ddlSolic.SelectedValue = solic;
                 ddlPlan.SelectedValue = plano;
                 CalcularPreencherValoresTabelaECalculado(ddlProced, ddlContrat, ddlPlan, valorUnit);
                 txtCart.Text = cart;
@@ -4477,7 +4496,6 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
             dtV = null;
             dtV = CriarColunasELinhaGridProcedHistor();
             Session["Grid_PROC_HISTOR"] = dtV;
-
             int coPaci = String.IsNullOrEmpty(ddlNomeUsu.SelectedValue) ? 0 : int.Parse(ddlNomeUsu.SelectedValue);
 
             if (coAgend != 0 && coPaci != 0)
@@ -4494,7 +4512,8 @@ namespace C2BR.GestorEducacao.UI.GSAUD._8000_GestaoAtendimento._8100_CtrlAgendaM
                            select new
                            {
                                CODIGO = tbs386.TBS356_PROC_MEDIC_PROCE.CO_PROC_MEDI,
-                               TIPO = tbs174.TP_CONSU.Equals("N") ? "Consulta" : tbs174.TP_CONSU.Equals("E") ? "Exame" : tbs174.TP_CONSU.Equals("P") ? "Procedimento" : tbs174.TP_CONSU.Equals("V") ? "Vacina" : "-",
+                               TIPO = tbs174.TP_CONSU.Equals("O") ? "Outros" : tbs174.TP_CONSU.Equals("P") ? "Procedimento" : tbs174.TP_CONSU.Equals("F") ? "Farmácia" : tbs174.TP_CONSU.Equals("V") ? "Vacina" : tbs174.TP_CONSU.Equals("S") ? "Ambulatório" : tbs174.TP_CONSU.Equals("E") ? "Exame" : tbs174.TP_CONSU.Equals("G") ? "Cons. Gestante" : tbs174.TP_CONSU.Equals("R") ? "Retorno" : tbs174.TP_CONSU.Equals("N") ? "Normal" : tbs174.TP_CONSU.Equals("I") ? "Inicial" : tbs174.TP_CONSU.Equals("M") ? "Emergencial" : "-",
+                               //TIPO = tbs174.TP_CONSU.Equals("N") ? "Consulta Normal" : tbs174.TP_CONSU.Equals("E") ? "Exame" : tbs174.TP_CONSU.Equals("P") ? "Procedimento" : tbs174.TP_CONSU.Equals("V") ? "Vacina" : "-",
                                DESC = tbs386.TBS356_PROC_MEDIC_PROCE.NM_PROC_MEDI,
                                CONTRAT = tb250.NM_SIGLA_OPER,
                                PROCED = tbs356.ID_PROC_MEDI_PROCE,

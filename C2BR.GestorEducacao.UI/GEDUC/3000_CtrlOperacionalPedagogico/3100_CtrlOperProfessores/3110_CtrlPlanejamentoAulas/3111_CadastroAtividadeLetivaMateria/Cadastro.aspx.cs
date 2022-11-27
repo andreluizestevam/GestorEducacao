@@ -525,7 +525,6 @@ namespace C2BR.GestorEducacao.UI.GEDUC.F3000_CtrlOperacionalPedagogico.F3100_Ctr
             int coCur = ddlSerieCurso.SelectedValue != "" ? int.Parse(ddlSerieCurso.SelectedValue) : 0;
             int idMateria = ddlDisciplina.SelectedValue != "" ? int.Parse(ddlDisciplina.SelectedValue) : 0;
 
-            // André
             if (System.Configuration.ConfigurationManager.AppSettings["Testes"] != null)
             {
                 if (System.Configuration.ConfigurationManager.AppSettings["Testes"] == "Sim")
@@ -583,17 +582,6 @@ namespace C2BR.GestorEducacao.UI.GEDUC.F3000_CtrlOperacionalPedagogico.F3100_Ctr
                         };
             grdbncc.DataSource = tb310;
             grdbncc.DataBind();
-
-            // André
-            // Temporário enquanto não resolve o problema do EDMX
-            //string SQL = " select ID_REFER_CONTE, no_titul_refer_conte, cod_bncc, substring(de_refer_conte,1,15) as de_refer_conte, de_link_exter, " +
-            //             " case  when(de_link_exter is not null) then '_blank' else de_link_exter end as TARGET " +
-            //             " from tb310_refer_conteudo where co_status = 'A' and BNCC='Sim' ";
-            //C2BR.GestorEducacao.BusinessEntities.Auxiliar.SQLDirectAcess SQLAcess = new C2BR.GestorEducacao.BusinessEntities.Auxiliar.SQLDirectAcess();
-            //System.Data.DataTable dt = new System.Data.DataTable();
-            //dt = SQLAcess.retornacolunas(SQL);
-            //grdbncc.DataSource = dt;
-            //grdbncc.DataBind();            
         }
 
         private void CarregaGrideConteudoProgra()
@@ -612,14 +600,6 @@ namespace C2BR.GestorEducacao.UI.GEDUC.F3000_CtrlOperacionalPedagogico.F3100_Ctr
                     idMateria = 3402;
                 }
             }
-            //if (idMateria != 0)
-            //{
-            //    var tb02 = (from lTb02 in TB02_MATERIA.RetornaTodosRegistros()
-            //                where lTb02.CO_MAT == idMateria
-            //                select new { lTb02.ID_MATERIA }).FirstOrDefault();
-            //    idMateria = tb02 != null ? tb02.ID_MATERIA : 0;
-            //}
-
             var tb310 = from lTb310 in TB310_REFER_CONTEUDO.RetornaTodosRegistros()
                         where (coModuCur != 0 ? (lTb310.CO_MODU_CUR == coModuCur || lTb310.CO_MODU_CUR == null) : coModuCur == 0) && lTb310.CO_TIPO_REFER_CONTE == "C" &&
                         (coCur != 0 ? (lTb310.CO_CUR == coCur || lTb310.CO_CUR == null) : coCur == 0) && lTb310.ID_MATERIA == idMateria

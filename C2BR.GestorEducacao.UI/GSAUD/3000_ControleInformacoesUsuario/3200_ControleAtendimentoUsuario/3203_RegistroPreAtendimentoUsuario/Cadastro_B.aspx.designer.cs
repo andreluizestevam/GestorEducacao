@@ -564,6 +564,15 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.DropDownList ddlprofatendimento;
 
         /// <summary>
+        /// Controle btncat.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btncat;
+
+        /// <summary>
         /// Controle ddlClassRisco.
         /// </summary>
         /// <remarks>
@@ -600,67 +609,31 @@ namespace C2BR.GestorEducacao.UI.GSAUD._3000_ControleInformacoesUsuario._3200_Co
         protected global::System.Web.UI.WebControls.TextBox txtObserPreAtend;
 
         /// <summary>
-        /// Controle li4.
+        /// Controle plsql.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li4;
+        protected global::System.Web.UI.WebControls.TextBox plsql;
 
         /// <summary>
-        /// Controle LinkButton1.
+        /// Controle GridView1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Controle hidCoPaciProced.
+        /// Controle btnplsql.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidCoPaciProced;
-
-        /// <summary>
-        /// Controle hidCoAgendProced.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidCoAgendProced;
-
-        /// <summary>
-        /// Controle grdProcedimentos.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdProcedimentos;
-
-        /// <summary>
-        /// Controle btnConfirmarProced.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnConfirmarProced;
-
-        /// <summary>
-        /// Controle lblConfirmarProced.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblConfirmarProced;
+        protected global::System.Web.UI.WebControls.Button btnplsql;
 
         /// <summary>
         /// Controle Label12.

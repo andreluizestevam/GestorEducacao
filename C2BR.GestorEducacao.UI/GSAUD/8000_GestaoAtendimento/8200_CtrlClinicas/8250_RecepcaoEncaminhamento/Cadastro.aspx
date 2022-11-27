@@ -1730,6 +1730,9 @@
                                                         </HeaderTemplate>
                                                         <ItemTemplate>             
                                                             <asp:HiddenField runat="server" ID="hidIdAgenda2" Value='<%# Eval("CO_AGEND_MEDIC") %>' />
+                                                            <asp:HiddenField runat="server" ID="hidCoPac2" Value='<%# Eval("CO_ALU") %>' />
+                                                            <asp:HiddenField runat="server" ID="hidProfissional" Value='<%# Eval("CO_COL") %>' />
+                                                            
                                                             <asp:ImageButton ID="imgProcedHistor" ImageUrl="~/Library/IMG/BlueCheck.jpeg" CommandName='<%# Eval("CO_AGEND_MEDIC") %>' CommandArgument='<%# Eval("CO_ALU") %>'
                                                                 ToolTip="Lista os procedimentos e suas formas de contratação" runat="server"
                                                                 Style="width: 19px !important; height: 19px !important;" OnClick="imgProcedHistor_Click" />
@@ -3842,12 +3845,12 @@
             </div>
             <div style="clear: both"></div>
 
+
+            <div style="overflow-y: scroll; height: 240px; width: 100%">
+
             <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true"  DataKeyNames="ID_PROC_MEDI_PROCE"
-                OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14" Width="770">
+                OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14000" Width="770">
                 <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
-                <EmptyDataTemplate>
-                    Nenhum Paciente Encontrado<br />
-                </EmptyDataTemplate>
                 <HeaderStyle Height="20px" BackColor="#667AB3" ForeColor="White" CssClass="headerStyleLA" />
                 <AlternatingRowStyle CssClass="alternateRowStyleLA" Height="15" />
                 <RowStyle CssClass="rowStyleLA" Height="15" />
@@ -3868,6 +3871,7 @@
                     </asp:BoundField>
                 </Columns>
             </asp:GridView>
+                </div>
             <br />
             <div>
                 <center>

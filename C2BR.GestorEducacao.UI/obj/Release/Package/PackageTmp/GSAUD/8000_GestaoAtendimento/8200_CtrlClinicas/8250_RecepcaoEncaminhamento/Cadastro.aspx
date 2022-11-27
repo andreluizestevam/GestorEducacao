@@ -1662,7 +1662,8 @@
                          <input type="hidden" id="divAgendaAt_posicao" name="divAgendaAt_posicao" />
                         <asp:GridView ID="grdAgendamentos" CssClass="grdBusca headFixo" runat="server" Style="width: 100%;
                             height: 260px; position: relative;" AutoGenerateColumns="false" AllowPaging="false"
-                            GridLines="Vertical" OnRowDataBound="grdAgendamentos_OnRowDataBound" OnRowCommand="grdAgendamentos_RowCommand">
+                            GridLines="Vertical" OnRowDataBound="grdAgendamentos_OnRowDataBound" 
+                            OnRowCommand="grdAgendamentos_RowCommand" OnPageIndexChanged="grdAgendamentos_PageIndexChanged">
                             <RowStyle CssClass="rowStyle" />
                             <AlternatingRowStyle CssClass="alternatingRowStyle" />
                             <EmptyDataRowStyle HorizontalAlign="Center" CssClass="emptyDataRowStyle" />
@@ -1729,6 +1730,9 @@
                                                         </HeaderTemplate>
                                                         <ItemTemplate>             
                                                             <asp:HiddenField runat="server" ID="hidIdAgenda2" Value='<%# Eval("CO_AGEND_MEDIC") %>' />
+                                                            <asp:HiddenField runat="server" ID="hidCoPac2" Value='<%# Eval("CO_ALU") %>' />
+                                                            <asp:HiddenField runat="server" ID="hidProfissional" Value='<%# Eval("CO_COL") %>' />
+                                                            
                                                             <asp:ImageButton ID="imgProcedHistor" ImageUrl="~/Library/IMG/BlueCheck.jpeg" CommandName='<%# Eval("CO_AGEND_MEDIC") %>' CommandArgument='<%# Eval("CO_ALU") %>'
                                                                 ToolTip="Lista os procedimentos e suas formas de contratação" runat="server"
                                                                 Style="width: 19px !important; height: 19px !important;" OnClick="imgProcedHistor_Click" />
@@ -3841,11 +3845,12 @@
             </div>
             <div style="clear: both"></div>
 
-            <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14" Width="770">
+
+            <div style="overflow-y: scroll; height: 240px; width: 100%">
+
+            <asp:GridView runat="server" ID="grdListarSIGTAP" AutoGenerateColumns="false" AllowPaging="true"  DataKeyNames="ID_PROC_MEDI_PROCE"
+                OnPageIndexChanging="grdListarSIGTAP_PageIndexChanging1" PageSize="14000" Width="770">
                 <EmptyDataRowStyle CssClass="emptyDataRowStyle" />
-                <EmptyDataTemplate>
-                    Nenhum Paciente Encontrado<br />
-                </EmptyDataTemplate>
                 <HeaderStyle Height="20px" BackColor="#667AB3" ForeColor="White" CssClass="headerStyleLA" />
                 <AlternatingRowStyle CssClass="alternateRowStyleLA" Height="15" />
                 <RowStyle CssClass="rowStyleLA" Height="15" />
@@ -3854,7 +3859,7 @@
                     <asp:TemplateField>
                         <ItemStyle Width="15px" HorizontalAlign="Center" />
                         <ItemTemplate>
-                            <asp:CheckBox ID="chkselectEn" runat="server" />
+                            <asp:CheckBox ID="chkselectEn" runat="server"/>
                         </ItemTemplate>
                     </asp:TemplateField>
 
@@ -3866,6 +3871,7 @@
                     </asp:BoundField>
                 </Columns>
             </asp:GridView>
+                </div>
             <br />
             <div>
                 <center>
